@@ -1,7 +1,7 @@
 {
-  "generatorVersion": "2.1.0",
-  "schemaVersion": "4.0.0",
-  "generatedAt": "2026-10-26T12:07:37.073Z",
+  "generatorVersion": "2.2.0",
+  "schemaVersion": "5.0.0",
+  "generatedAt": "2026-10-23T19:14:42.089Z",
   "languages": [
     "en",
     "fa"
@@ -76,12 +76,12 @@
             "en": {
               "path": "frontend/vue/en.json",
               "total": 120,
-              "hash": "12aa7bd4a0"
+              "hash": "e50ae76ecd"
             },
             "fa": {
               "path": "frontend/vue/fa.json",
               "total": 120,
-              "hash": "b81f12c4f0"
+              "hash": "1a71b1a960"
             }
           }
         }

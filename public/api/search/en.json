@@ -1,0 +1,5340 @@
+[
+  {
+    "id": "css-001",
+    "slug": "what-is-the-css-box-model-and-what-are-its-components",
+    "title": "What is the CSS box model and what are its components?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-002",
+    "slug": "what-is-the-difference-between-block-inline-and-inline-block-display-values",
+    "title": "What is the difference between `block`, `inline`, and `inline-block` display values?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Easy",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-003",
+    "slug": "what-is-specificity-in-css-and-how-is-it-calculated",
+    "title": "What is specificity in CSS and how is it calculated?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-004",
+    "slug": "what-is-the-difference-between-position-relative-absolute-fixed-and-sticky",
+    "title": "What is the difference between `position: relative`, `absolute`, `fixed`, and `sticky`?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-005",
+    "slug": "what-is-the-difference-between-flexbox-and-grid",
+    "title": "What is the difference between Flexbox and Grid?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-006",
+    "slug": "what-is-the-css-cascade-and-how-does-the-browser-decide-which-rule-to-apply",
+    "title": "What is the CSS cascade and how does the browser decide which rule to apply?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-007",
+    "slug": "what-is-a-stacking-context-and-how-is-it-created",
+    "title": "What is a stacking context and how is it created?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-008",
+    "slug": "what-is-the-difference-between-overflow-hidden-auto-and-scroll",
+    "title": "What is the difference between `overflow: hidden`, `auto`, and `scroll`?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-009",
+    "slug": "what-is-a-block-formatting-context-bfc-and-why-is-it-useful",
+    "title": "What is a Block Formatting Context (BFC) and why is it useful?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-010",
+    "slug": "what-is-margin-collapsing-and-when-does-it-occur",
+    "title": "What is margin collapsing and when does it occur?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-011",
+    "slug": "what-is-the-difference-between-em-rem-vh-and-vw-units",
+    "title": "What is the difference between `em`, `rem`, `%`, `vh`, and `vw` units?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-012",
+    "slug": "what-is-the-difference-between-min-width-max-width-and-width",
+    "title": "What is the difference between `min-width`, `max-width`, and `width`?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-013",
+    "slug": "what-is-the-difference-between-reflow-layout-and-repaint-in-css-rendering",
+    "title": "What is the difference between `reflow` (layout) and `repaint` in CSS rendering?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-014",
+    "slug": "what-are-css-custom-properties-css-variables-and-what-are-their-advantages",
+    "title": "What are CSS Custom Properties (CSS Variables) and what are their advantages?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-015",
+    "slug": "what-are-css-logical-properties-and-why-are-they-important",
+    "title": "What are CSS logical properties and why are they important?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-016",
+    "slug": "what-are-css-cascade-layers-layer-and-why-were-they-introduced",
+    "title": "What are CSS cascade layers (`@layer`) and why were they introduced?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Architecture"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-017",
+    "slug": "what-are-container-queries-and-how-do-they-differ-from-media-queries",
+    "title": "What are container queries and how do they differ from media queries?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-018",
+    "slug": "what-is-the-difference-between-nth-child-and-nth-of-type",
+    "title": "What is the difference between `:nth-child()` and `:nth-of-type()`?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Selectors & Specificity"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-019",
+    "slug": "how-does-will-change-affect-performance-and-when-should-it-be-used",
+    "title": "How does `will-change` affect performance and when should it be used?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-020",
+    "slug": "what-is-the-difference-between-bem-and-utility-first-css-architecture",
+    "title": "What is the difference between BEM and utility-first CSS architecture?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-021",
+    "slug": "what-is-css-subgrid-how-does-it-differ-from-nested-grids-and-when-should-you-use",
+    "title": "What is CSS subgrid, how does it differ from nested grids, and when should you use it?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-022",
+    "slug": "explain-scroll-snap-properties-and-how-to-create-a-full-page-carousel-with-pure",
+    "title": "Explain scroll-snap properties and how to create a full-page carousel with pure CSS.",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-023",
+    "slug": "what-is-the-aspect-ratio-property-and-how-does-it-help-prevent-cumulative-layout",
+    "title": "What is the aspect-ratio property, and how does it help prevent Cumulative Layout Shift (CLS)?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance",
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-024",
+    "slug": "how-do-has-pseudo-class-and-relational-selectors-change-css-architecture-and-com",
+    "title": "How do :has() pseudo-class and relational selectors change CSS architecture and component styling?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Selectors & Specificity"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-025",
+    "slug": "what-is-accent-color-and-how-does-it-interact-with-form-controls-in-modern-brows",
+    "title": "What is accent-color and how does it interact with form controls in modern browsers?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Fundamentals",
+      "Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-026",
+    "slug": "what-is-the-difference-between-vh-dvh-svh-and-lvh-viewport-units-and-why-were-th",
+    "title": "What is the difference between `vh`, `dvh`, `svh`, and `lvh` viewport units, and why were the new ones introduced?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-027",
+    "slug": "explain-the-differences-between-opacity-0-visibility-hidden-and-display-none-in",
+    "title": "Explain the differences between `opacity: 0`, `visibility: hidden`, and `display: none` in terms of layout, performance, accessibility, and interactivity.",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-028",
+    "slug": "how-do-margins-behave-on-elements-with-display-inline-flex-or-display-inline-gri",
+    "title": "How do margins behave on elements with `display: inline-flex` or `display: inline-grid`, and why do vertical margins not collapse or apply as expected?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-029",
+    "slug": "what-is-the-color-mix-function-in-css-and-how-can-it-be-used-for-dynamic-theming",
+    "title": "What is the `color-mix()` function in CSS, and how can it be used for dynamic theming or accessibility?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-030",
+    "slug": "what-is-property-in-css-and-how-does-it-enable-better-custom-property-animations",
+    "title": "What is `@property` in CSS and how does it enable better custom property animations/transitions?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance",
+      "Architecture"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-031",
+    "slug": "what-is-the-difference-between-css-transitions-and-css-animations",
+    "title": "What is the difference between CSS transitions and CSS animations?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-032",
+    "slug": "what-is-scroll-driven-animation-in-css-and-how-does-animation-timeline-scroll-wo",
+    "title": "What is scroll-driven animation in CSS, and how does `animation-timeline: scroll()` work?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-033",
+    "slug": "explain-advanced-usage-of-object-fit-and-object-position-with-aspect-ratio-for-r",
+    "title": "Explain advanced usage of `object-fit` and `object-position` with `aspect-ratio` for responsive media without CLS.",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-034",
+    "slug": "what-are-the-differences-between-physical-properties-margin-top-and-logical-prop",
+    "title": "What are the differences between physical properties (margin-top) and logical properties (margin-block-start) in depth, including writing-mode and direction impact?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Responsive Design"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-035",
+    "slug": "how-can-gap-property-be-used-in-flexbox-and-grid-and-what-are-browser-difference",
+    "title": "How can gap property be used in Flexbox and Grid, and what are browser differences in row-gap/column-gap fallback?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Hard",
+    "categories": [
+      "Layout"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "css-036",
+    "slug": "what-are-css-pseudo-elements-and-how-do-before-and-after-work",
+    "title": "What are CSS pseudo-elements and how do `::before` and `::after` work?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Selectors & Specificity"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "css-037",
+    "slug": "what-are-prefers-color-scheme-and-prefers-reduced-motion-media-features-and-why",
+    "title": "What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?",
+    "domain": "frontend",
+    "topic": "css",
+    "difficulty": "Medium",
+    "categories": [
+      "Responsive Design",
+      "Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-001",
+    "slug": "what-is-the-difference-between-div-and-span",
+    "title": "What is the difference between `<div>` and `<span>`?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-002",
+    "slug": "what-is-the-purpose-of-the-doctype-declaration",
+    "title": "What is the purpose of the `doctype` declaration?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-003",
+    "slug": "what-is-the-difference-between-block-and-inline-elements",
+    "title": "What is the difference between block and inline elements?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-004",
+    "slug": "what-are-semantic-html-elements",
+    "title": "What are semantic HTML elements?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Semantic & Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-005",
+    "slug": "what-is-the-difference-between-id-and-class",
+    "title": "What is the difference between `id` and `class`?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-006",
+    "slug": "what-is-the-purpose-of-the-alt-attribute-in-img-tags",
+    "title": "What is the purpose of the `alt` attribute in `<img>` tags?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Semantic & Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-007",
+    "slug": "explain-semantic-html-elements-like-article-section-aside-and-when-to-use-them-i",
+    "title": "Explain semantic HTML elements like `<article>`, `<section>`, `<aside>`, and when to use them instead of `<div>`.",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Semantic & Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-008",
+    "slug": "what-are-the-differences-between-input-type-number-and-input-type-tel",
+    "title": "What are the differences between `<input type=\"number\">` and `<input type=\"tel\">`?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Forms"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-009",
+    "slug": "how-can-you-improve-page-performance-using-html-attributes-or-techniques",
+    "title": "How can you improve page performance using HTML attributes or techniques?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-010",
+    "slug": "what-is-the-meta-name-viewport-tag-and-why-is-it-important-for-responsive-design",
+    "title": "What is the `<meta name=\"viewport\">` tag and why is it important for responsive design?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Easy",
+    "categories": [
+      "Browser Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-011",
+    "slug": "what-is-the-difference-between-async-and-defer-attributes-on-script-tags-explain",
+    "title": "What is the difference between `async` and `defer` attributes on `<script>` tags? Explain their impact on the Critical Rendering Path.",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-012",
+    "slug": "what-is-the-difference-between-meta-tags-and-http-headers-and-when-should-each-b",
+    "title": "What is the difference between `<meta>` tags and HTTP headers, and when should each be used?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "SEO & Meta"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-013",
+    "slug": "what-are-some-common-aria-mistakes-developers-make-and-how-should-you-prioritize",
+    "title": "What are some common ARIA mistakes developers make, and how should you prioritize native HTML over ARIA?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Semantic & Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-014",
+    "slug": "what-is-the-critical-rendering-path-and-what-role-does-html-play-in-it",
+    "title": "What is the Critical Rendering Path and what role does HTML play in it?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-015",
+    "slug": "what-is-the-difference-between-id-and-data-attributes-in-html-and-when-should-ea",
+    "title": "What is the difference between `id` and `data-*` attributes in HTML, and when should each be used?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-016",
+    "slug": "what-is-the-difference-between-section-and-div-from-a-document-outline-perspecti",
+    "title": "What is the difference between `<section>` and `<div>` from a document outline perspective?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Semantic & Accessibility"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-017",
+    "slug": "how-do-html-templates-template-and-shadow-dom-work-together-in-web-components-an",
+    "title": "How do HTML templates (`<template>`) and Shadow DOM work together in Web Components, and what problems do they solve?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Browser Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-018",
+    "slug": "how-does-the-sandbox-attribute-work-on-iframe-and-why-is-it-important-for-securi",
+    "title": "How does the sandbox attribute work on `<iframe>` and why is it important for security?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Browser Behavior",
+      "Security"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-019",
+    "slug": "what-is-the-difference-between-link-and-a-in-html",
+    "title": "What is the difference between `<link>` and `<a>` in HTML?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-020",
+    "slug": "what-are-web-components-in-html-and-what-core-technologies-enable-them",
+    "title": "What are Web Components in HTML and what core technologies enable them?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Browser Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-021",
+    "slug": "explain-how-picture-srcset-sizes-work-together-for-responsive-images-and-why-the",
+    "title": "Explain how `<picture>` + `srcset` + `sizes` work together for responsive images, and why they are better than CSS media queries for images.",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-022",
+    "slug": "how-does-html5-form-validation-work-and-how-can-you-implement-custom-validation",
+    "title": "How does HTML5 form validation work, and how can you implement custom validation using the Constraint Validation API?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Forms"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-023",
+    "slug": "how-can-you-implement-structured-data-in-html-using-schema-org-and-what-benefits",
+    "title": "How can you implement structured data in HTML using schema.org, and what benefits does it provide for SEO?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "SEO & Meta"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-024",
+    "slug": "what-is-the-contenteditable-attribute-what-are-its-common-pitfalls-and-how-can-y",
+    "title": "What is the `contenteditable` attribute, what are its common pitfalls, and how can you make it accessible?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Browser Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-025",
+    "slug": "explain-resource-hints-in-html-preload-prefetch-preconnect-dns-prefetch-and-when",
+    "title": "Explain resource hints in HTML (`preload`, `prefetch`, `preconnect`, `dns-prefetch`) and when to use each for performance optimization.",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "html-026",
+    "slug": "why-should-you-use-rel-noopener-noreferrer-on-links-with-target-blank",
+    "title": "Why should you use `rel=\"noopener noreferrer\"` on links with `target=\"_blank\"`?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Browser Behavior",
+      "Security"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-027",
+    "slug": "what-is-the-difference-between-canvas-and-svg",
+    "title": "What is the difference between `<canvas>` and `<svg>`?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "Browser Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "html-028",
+    "slug": "what-are-open-graph-meta-tags-and-why-are-they-important",
+    "title": "What are Open Graph meta tags and why are they important?",
+    "domain": "frontend",
+    "topic": "html",
+    "difficulty": "Medium",
+    "categories": [
+      "SEO & Meta"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "javascript-001",
+    "slug": "what-is-javascript-and-how-does-it-differ-from-compiled-languages",
+    "title": "What is JavaScript and how does it differ from compiled languages?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-002",
+    "slug": "what-are-the-primitive-data-types-in-javascript",
+    "title": "What are the primitive data types in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-003",
+    "slug": "what-is-the-difference-between-null-and-undefined",
+    "title": "What is the difference between null and undefined?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-004",
+    "slug": "what-is-the-difference-between-var-let-and-const",
+    "title": "What is the difference between var, let, and const?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-005",
+    "slug": "what-is-scope-in-javascript",
+    "title": "What is scope in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-006",
+    "slug": "what-is-hoisting-in-javascript",
+    "title": "What is hoisting in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-007",
+    "slug": "what-is-the-difference-between-primitive-values-and-reference-values",
+    "title": "What is the difference between primitive values and reference values?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Memory & References"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-008",
+    "slug": "how-does-memory-management-work-in-javascript",
+    "title": "How does memory management work in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Memory & References"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-009",
+    "slug": "what-is-a-closure-in-javascript",
+    "title": "What is a closure in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-010",
+    "slug": "what-is-the-event-loop-in-javascript",
+    "title": "What is the event loop in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-011",
+    "slug": "what-is-an-execution-context-in-javascript",
+    "title": "What is an execution context in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-012",
+    "slug": "what-happens-during-the-creation-phase-of-an-execution-context",
+    "title": "What happens during the creation phase of an execution context?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-013",
+    "slug": "what-is-the-call-stack-and-how-does-it-work",
+    "title": "What is the call stack and how does it work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-014",
+    "slug": "what-is-the-temporal-dead-zone-tdz",
+    "title": "What is the Temporal Dead Zone (TDZ)?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-015",
+    "slug": "how-does-the-this-keyword-work-in-javascript",
+    "title": "How does the `this` keyword work in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-016",
+    "slug": "what-is-the-difference-between-regular-functions-and-arrow-functions",
+    "title": "What is the difference between regular functions and arrow functions?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-017",
+    "slug": "what-is-the-difference-between-shallow-copy-and-deep-copy",
+    "title": "What is the difference between shallow copy and deep copy?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Memory & References"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-018",
+    "slug": "what-are-microtasks-and-macrotasks-in-the-event-loop",
+    "title": "What are microtasks and macrotasks in the event loop?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-019",
+    "slug": "what-are-the-different-states-of-a-promise",
+    "title": "What are the different states of a Promise?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-020",
+    "slug": "how-does-async-await-work-internally",
+    "title": "How does async/await work internally?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-021",
+    "slug": "what-is-a-prototype-in-javascript",
+    "title": "What is a prototype in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-022",
+    "slug": "what-is-the-prototype-chain-and-how-does-property-lookup-work",
+    "title": "What is the prototype chain and how does property lookup work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-023",
+    "slug": "what-is-the-difference-between-proto-and-prototype",
+    "title": "What is the difference between `__proto__` and `prototype`?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-024",
+    "slug": "how-does-inheritance-work-in-javascript",
+    "title": "How does inheritance work in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-025",
+    "slug": "what-is-strict-mode-in-javascript-and-why-is-it-important",
+    "title": "What is strict mode in JavaScript and why is it important?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-026",
+    "slug": "what-are-javascript-modules-and-how-do-they-work",
+    "title": "What are JavaScript modules and how do they work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-027",
+    "slug": "what-is-a-memory-leak-and-how-can-it-happen-in-javascript",
+    "title": "What is a memory leak and how can it happen in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Memory & References"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-028",
+    "slug": "what-are-weakmap-and-weakset-and-how-are-they-different-from-map-and-set",
+    "title": "What are WeakMap and WeakSet and how are they different from Map and Set?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "javascript-029",
+    "slug": "how-does-javascript-handle-object-property-descriptors",
+    "title": "How does JavaScript handle object property descriptors?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-030",
+    "slug": "how-do-javascript-engines-optimize-code-execution",
+    "title": "How do JavaScript engines optimize code execution?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-031",
+    "slug": "what-is-the-execution-context-in-javascript-and-what-are-its-main-components",
+    "title": "What is the Execution Context in JavaScript and what are its main components?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-032",
+    "slug": "what-is-the-difference-between-the-creation-phase-and-execution-phase-of-an-exec",
+    "title": "What is the difference between the creation phase and execution phase of an execution context?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-033",
+    "slug": "how-does-the-scope-chain-work-during-variable-resolution",
+    "title": "How does the Scope Chain work during variable resolution?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-034",
+    "slug": "what-is-the-difference-between-lexical-scope-and-dynamic-scope-and-which-one-doe",
+    "title": "What is the difference between Lexical Scope and Dynamic Scope, and which one does JavaScript use?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-035",
+    "slug": "what-is-a-closure-in-javascript-and-how-does-it-relate-to-lexical-scoping",
+    "title": "What is a Closure in JavaScript and how does it relate to lexical scoping?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions",
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-036",
+    "slug": "why-can-closures-cause-memory-leaks-in-certain-situations",
+    "title": "Why can closures cause memory leaks in certain situations?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Functions",
+      "Memory & References"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-037",
+    "slug": "what-is-the-temporal-dead-zone-tdz-and-how-does-it-work-with-let-and-const",
+    "title": "What is the Temporal Dead Zone (TDZ) and how does it work with let and const?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-038",
+    "slug": "how-does-block-scope-differ-from-function-scope",
+    "title": "How does block scope differ from function scope?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-039",
+    "slug": "what-happens-internally-when-a-function-is-returned-from-another-function",
+    "title": "What happens internally when a function is returned from another function?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Functions",
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-040",
+    "slug": "how-does-javascript-handle-variable-lookup-when-multiple-nested-scopes-exist",
+    "title": "How does JavaScript handle variable lookup when multiple nested scopes exist?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Execution Context & Scope"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-041",
+    "slug": "what-is-the-difference-between-and-in-javascript",
+    "title": "What is the difference between == and === in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-042",
+    "slug": "how-do-call-apply-and-bind-work",
+    "title": "How do call(), apply(), and bind() work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-043",
+    "slug": "what-is-an-iife-in-javascript",
+    "title": "What is an IIFE in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-044",
+    "slug": "what-is-currying-in-javascript",
+    "title": "What is currying in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-045",
+    "slug": "what-is-the-difference-between-map-filter-and-reduce",
+    "title": "What is the difference between map(), filter(), and reduce()?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-046",
+    "slug": "what-is-destructuring-in-javascript",
+    "title": "What is destructuring in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-047",
+    "slug": "what-are-the-spread-and-rest-operators-in-javascript",
+    "title": "What are the spread and rest operators in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-048",
+    "slug": "what-is-the-difference-between-promise-all-promise-race-promise-allsettled-and-p",
+    "title": "What is the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-049",
+    "slug": "what-is-event-delegation-in-javascript",
+    "title": "What is event delegation in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-050",
+    "slug": "what-is-type-coercion-in-javascript",
+    "title": "What is type coercion in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-051",
+    "slug": "what-is-optional-chaining-in-javascript",
+    "title": "What is optional chaining (?.) in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-052",
+    "slug": "what-is-the-nullish-coalescing-operator-and-how-does-it-differ-from",
+    "title": "What is the nullish coalescing operator (??) and how does it differ from ||?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-053",
+    "slug": "how-does-the-typeof-operator-work-and-what-are-its-quirks",
+    "title": "How does the typeof operator work and what are its quirks?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-054",
+    "slug": "what-is-the-instanceof-operator-and-how-does-it-differ-from-typeof",
+    "title": "What is the instanceof operator and how does it differ from typeof?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-055",
+    "slug": "what-are-symbols-in-javascript-and-when-are-they-used",
+    "title": "What are Symbols in JavaScript and when are they used?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-056",
+    "slug": "what-are-generator-functions-in-javascript",
+    "title": "What are generator functions in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-057",
+    "slug": "what-is-the-iterator-protocol-in-javascript",
+    "title": "What is the iterator protocol in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-058",
+    "slug": "what-is-proxy-in-javascript",
+    "title": "What is Proxy in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-059",
+    "slug": "what-is-the-reflect-api-in-javascript",
+    "title": "What is the Reflect API in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-060",
+    "slug": "what-are-default-parameters-in-javascript",
+    "title": "What are default parameters in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-061",
+    "slug": "what-are-object-keys-object-values-and-object-entries",
+    "title": "What are Object.keys(), Object.values(), and Object.entries()?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-062",
+    "slug": "what-is-the-difference-between-object-assign-and-the-spread-operator-for-merging",
+    "title": "What is the difference between Object.assign() and the spread operator for merging objects?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-063",
+    "slug": "what-is-the-difference-between-object-freeze-and-object-seal",
+    "title": "What is the difference between Object.freeze() and Object.seal()?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-064",
+    "slug": "what-are-array-from-and-array-isarray",
+    "title": "What are Array.from() and Array.isArray()?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-065",
+    "slug": "what-are-flat-and-flatmap-in-javascript",
+    "title": "What are flat() and flatMap() in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-066",
+    "slug": "what-are-find-and-findindex-in-javascript",
+    "title": "What are find() and findIndex() in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-067",
+    "slug": "what-are-some-and-every-in-javascript",
+    "title": "What are some() and every() in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-068",
+    "slug": "how-does-array-sort-work-and-what-are-its-common-pitfalls",
+    "title": "How does Array.sort() work and what are its common pitfalls?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-069",
+    "slug": "what-is-memoization-in-javascript",
+    "title": "What is memoization in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-070",
+    "slug": "what-are-javascript-error-types-and-how-do-you-create-custom-errors",
+    "title": "What are JavaScript error types and how do you create custom errors?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-071",
+    "slug": "what-is-debounce-in-javascript",
+    "title": "What is debounce in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-072",
+    "slug": "what-is-throttle-in-javascript",
+    "title": "What is throttle in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-073",
+    "slug": "what-is-the-difference-between-event-bubbling-and-event-capturing",
+    "title": "What is the difference between event bubbling and event capturing?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-074",
+    "slug": "what-is-the-difference-between-localstorage-sessionstorage-and-cookies",
+    "title": "What is the difference between localStorage, sessionStorage, and cookies?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-075",
+    "slug": "what-is-the-difference-between-settimeout-and-setinterval",
+    "title": "What is the difference between setTimeout and setInterval?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Easy",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-076",
+    "slug": "what-is-requestanimationframe-in-javascript",
+    "title": "What is requestAnimationFrame in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-077",
+    "slug": "what-are-pure-functions-and-immutability-in-javascript",
+    "title": "What are pure functions and immutability in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-078",
+    "slug": "what-is-function-composition-in-javascript",
+    "title": "What is function composition in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-079",
+    "slug": "what-are-web-workers-in-javascript",
+    "title": "What are Web Workers in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-080",
+    "slug": "how-does-error-handling-work-with-async-await",
+    "title": "How does error handling work with async/await?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-081",
+    "slug": "what-are-hidden-classes-in-javascript-engines-and-how-do-they-affect-performance",
+    "title": "What are hidden classes in JavaScript engines and how do they affect performance?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-082",
+    "slug": "what-is-inline-caching-and-how-does-it-optimize-property-access",
+    "title": "What is inline caching and how does it optimize property access?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-083",
+    "slug": "how-does-generational-garbage-collection-work-in-modern-javascript-engines",
+    "title": "How does generational garbage collection work in modern JavaScript engines?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Memory & References",
+      "Engine & Runtime"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-084",
+    "slug": "what-is-partial-application-and-how-does-it-differ-from-currying",
+    "title": "What is partial application and how does it differ from currying?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-085",
+    "slug": "what-are-higher-order-functions-and-why-are-they-important",
+    "title": "What are higher-order functions and why are they important?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-086",
+    "slug": "what-is-referential-transparency-in-javascript",
+    "title": "What is referential transparency in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Functions"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-087",
+    "slug": "what-is-starvation-in-the-javascript-event-loop",
+    "title": "What is starvation in the JavaScript event loop?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-088",
+    "slug": "why-is-typeof-null-equal-to-object",
+    "title": "Why is `typeof null` equal to \"object\"?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-089",
+    "slug": "what-is-nan-and-why-is-nan-nan",
+    "title": "What is NaN and why is `NaN !== NaN`?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-090",
+    "slug": "what-is-structuredclone-and-when-should-it-be-used",
+    "title": "What is structuredClone and when should it be used?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-091",
+    "slug": "what-is-the-observer-pattern-and-how-can-it-be-implemented-in-javascript",
+    "title": "What is the Observer pattern and how can it be implemented in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "javascript-092",
+    "slug": "what-is-the-difference-between-deep-equality-and-reference-equality",
+    "title": "What is the difference between deep equality and reference equality?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-093",
+    "slug": "what-are-getters-and-setters-and-how-do-they-work-internally",
+    "title": "What are getters and setters and how do they work internally?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-094",
+    "slug": "what-are-well-known-symbols-in-javascript",
+    "title": "What are well-known Symbols in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-095",
+    "slug": "what-is-async-iteration-and-how-does-for-await-of-work",
+    "title": "What is async iteration and how does `for await...of` work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-096",
+    "slug": "what-is-the-difference-between-object-create-and-class-based-instantiation",
+    "title": "What is the difference between Object.create() and class-based instantiation?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Objects & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-097",
+    "slug": "what-are-the-pitfalls-of-automatic-semicolon-insertion-asi",
+    "title": "What are the pitfalls of Automatic Semicolon Insertion (ASI)?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-098",
+    "slug": "how-does-the-browser-handle-rendering-between-tasks-in-the-event-loop",
+    "title": "How does the browser handle rendering between tasks in the event loop?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Hard",
+    "categories": [
+      "Asynchronous & Event Loop"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-099",
+    "slug": "what-is-the-difference-between-for-in-and-for-of",
+    "title": "What is the difference between `for...in` and `for...of`?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Language Behavior"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-100",
+    "slug": "what-are-tagged-template-literals-and-how-do-they-work",
+    "title": "What are tagged template literals and how do they work?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-101",
+    "slug": "what-is-dynamic-import-and-how-does-it-differ-from-static-import",
+    "title": "What is dynamic `import()` and how does it differ from static import?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "javascript-102",
+    "slug": "what-are-logical-assignment-operators-in-javascript",
+    "title": "What are logical assignment operators in JavaScript?",
+    "domain": "frontend",
+    "topic": "javascript",
+    "difficulty": "Medium",
+    "categories": [
+      "Fundamentals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "react-001",
+    "slug": "what-is-react-and-what-problem-does-it-solve",
+    "title": "What is React and what problem does it solve?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-002",
+    "slug": "what-is-the-virtual-dom-and-how-does-react-use-it",
+    "title": "What is the Virtual DOM and how does React use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-003",
+    "slug": "what-is-jsx-and-how-does-it-work-under-the-hood",
+    "title": "What is JSX and how does it work under the hood?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-004",
+    "slug": "what-are-functional-components-in-react",
+    "title": "What are functional components in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-005",
+    "slug": "what-are-props-in-react-and-how-do-they-work",
+    "title": "What are props in React and how do they work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Props & State"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-006",
+    "slug": "what-is-state-in-react-and-how-is-it-different-from-props",
+    "title": "What is state in React and how is it different from props?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Props & State"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-007",
+    "slug": "how-does-react-handle-events",
+    "title": "How does React handle events?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-008",
+    "slug": "how-does-conditional-rendering-work-in-react",
+    "title": "How does conditional rendering work in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-009",
+    "slug": "how-do-you-render-lists-in-react-and-why-is-the-key-prop-important",
+    "title": "How do you render lists in React and why is the `key` prop important?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-010",
+    "slug": "what-are-controlled-and-uncontrolled-components-in-react",
+    "title": "What are controlled and uncontrolled components in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-011",
+    "slug": "what-is-a-react-fragment-and-when-should-you-use-it",
+    "title": "What is a React Fragment and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-012",
+    "slug": "what-is-the-difference-between-class-components-and-functional-components",
+    "title": "What is the difference between class components and functional components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-013",
+    "slug": "what-is-reconciliation-in-react",
+    "title": "What is reconciliation in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-014",
+    "slug": "what-is-prop-drilling-and-how-do-you-solve-it",
+    "title": "What is prop drilling and how do you solve it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Props & State"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-015",
+    "slug": "what-is-the-strictmode-component-and-what-does-it-do",
+    "title": "What is the `StrictMode` component and what does it do?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-016",
+    "slug": "what-is-react-memo-and-when-does-it-help",
+    "title": "What is `React.memo` and when does it help?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-017",
+    "slug": "what-is-the-useeffect-hook-and-how-does-the-dependency-array-work",
+    "title": "What is the `useEffect` hook and how does the dependency array work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-018",
+    "slug": "what-is-usestate-and-how-does-state-updating-work",
+    "title": "What is `useState` and how does state updating work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-019",
+    "slug": "what-is-useref-and-when-should-you-use-it",
+    "title": "What is `useRef` and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-020",
+    "slug": "what-is-usememo-and-when-should-you-use-it",
+    "title": "What is `useMemo` and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-021",
+    "slug": "what-is-usecallback-and-when-should-you-use-it",
+    "title": "What is `useCallback` and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-022",
+    "slug": "what-are-the-rules-of-hooks",
+    "title": "What are the rules of hooks?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-023",
+    "slug": "what-are-custom-hooks-and-how-do-you-write-them",
+    "title": "What are custom hooks and how do you write them?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-024",
+    "slug": "what-is-the-context-api-and-how-do-you-use-it",
+    "title": "What is the Context API and how do you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Context API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-025",
+    "slug": "what-is-usereducer-and-when-should-you-use-it-instead-of-usestate",
+    "title": "What is `useReducer` and when should you use it instead of `useState`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-026",
+    "slug": "what-is-uselayouteffect-and-how-does-it-differ-from-useeffect",
+    "title": "What is `useLayoutEffect` and how does it differ from `useEffect`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-027",
+    "slug": "what-are-error-boundaries-in-react",
+    "title": "What are Error Boundaries in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-028",
+    "slug": "what-are-portals-in-react",
+    "title": "What are Portals in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-029",
+    "slug": "what-is-useimperativehandle-and-when-do-you-need-forwardref",
+    "title": "What is `useImperativeHandle` and when do you need `forwardRef`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-030",
+    "slug": "what-is-react-lazy-and-how-does-it-work-with-suspense",
+    "title": "What is `React.lazy` and how does it work with `Suspense`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-031",
+    "slug": "how-does-react-batch-state-updates",
+    "title": "How does React batch state updates?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-032",
+    "slug": "what-is-usetransition-and-when-should-you-use-it",
+    "title": "What is `useTransition` and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-033",
+    "slug": "what-is-usedeferredvalue-and-how-does-it-differ-from-debouncing",
+    "title": "What is `useDeferredValue` and how does it differ from debouncing?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-034",
+    "slug": "what-are-react-server-components",
+    "title": "What are React Server Components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-035",
+    "slug": "what-is-hydration-in-react-ssr-and-what-causes-hydration-mismatches",
+    "title": "What is hydration in React SSR and what causes hydration mismatches?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-036",
+    "slug": "what-is-react-fiber",
+    "title": "What is React Fiber?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-037",
+    "slug": "what-is-the-difference-between-the-render-phase-and-the-commit-phase-in-react",
+    "title": "What is the difference between the render phase and the commit phase in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-038",
+    "slug": "what-is-concurrent-react-and-what-does-it-enable",
+    "title": "What is Concurrent React and what does it enable?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-039",
+    "slug": "what-is-suspense-in-react-and-how-does-it-work",
+    "title": "What is `Suspense` in React and how does it work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-040",
+    "slug": "what-is-the-key-prop-and-what-happens-when-you-use-index-as-a-key",
+    "title": "What is the `key` prop and what happens when you use index as a key?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-041",
+    "slug": "what-is-useid-and-when-do-you-need-it",
+    "title": "What is `useId` and when do you need it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-042",
+    "slug": "what-is-usesyncexternalstore-and-when-should-you-use-it",
+    "title": "What is `useSyncExternalStore` and when should you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-043",
+    "slug": "what-is-useinsertioneffect-and-when-is-it-used",
+    "title": "What is `useInsertionEffect` and when is it used?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-044",
+    "slug": "what-is-usedebugvalue-and-how-is-it-used",
+    "title": "What is `useDebugValue` and how is it used?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-045",
+    "slug": "what-is-the-difference-between-createelement-and-jsx",
+    "title": "What is the difference between `createElement` and JSX?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "JSX & Rendering"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-046",
+    "slug": "what-is-the-children-prop-and-what-patterns-can-you-use-with-it",
+    "title": "What is the `children` prop and what patterns can you use with it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-047",
+    "slug": "what-are-higher-order-components-hocs-and-when-are-they-used",
+    "title": "What are Higher-Order Components (HOCs) and when are they used?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-048",
+    "slug": "what-is-the-render-prop-pattern",
+    "title": "What is the render prop pattern?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-049",
+    "slug": "what-is-state-colocation-and-why-does-it-matter",
+    "title": "What is state colocation and why does it matter?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-050",
+    "slug": "what-is-the-compound-component-pattern",
+    "title": "What is the compound component pattern?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-051",
+    "slug": "how-does-useeffect-cleanup-work-and-why-is-it-important",
+    "title": "How does `useEffect` cleanup work and why is it important?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-052",
+    "slug": "what-is-lifting-state-up-in-react",
+    "title": "What is lifting state up in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Props & State"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-053",
+    "slug": "what-is-react-s-reconciliation-diffing-algorithm-in-detail",
+    "title": "What is React's reconciliation diffing algorithm in detail?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-054",
+    "slug": "what-is-react-cloneelement-and-when-is-it-used",
+    "title": "What is `React.cloneElement` and when is it used?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-055",
+    "slug": "how-do-you-handle-forms-in-react-with-validation",
+    "title": "How do you handle forms in React with validation?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-056",
+    "slug": "what-is-forwardref-in-react",
+    "title": "What is `forwardRef` in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-057",
+    "slug": "what-is-the-react-profiler-and-how-do-you-use-it-to-find-performance-issues",
+    "title": "What is the React profiler and how do you use it to find performance issues?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-058",
+    "slug": "what-is-windowing-virtualization-and-when-do-you-need-it-in-react",
+    "title": "What is windowing (virtualization) and when do you need it in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-059",
+    "slug": "what-are-the-differences-between-react-17-and-react-18",
+    "title": "What are the differences between React 17 and React 18?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-060",
+    "slug": "what-is-starttransition-and-how-is-it-different-from-usetransition",
+    "title": "What is `startTransition` and how is it different from `useTransition`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-061",
+    "slug": "how-does-react-s-synthetic-event-system-work",
+    "title": "How does React's synthetic event system work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-062",
+    "slug": "what-is-flushsync-and-when-do-you-need-it",
+    "title": "What is `flushSync` and when do you need it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-063",
+    "slug": "what-is-the-use-hook-in-react-19",
+    "title": "What is the `use()` hook in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-064",
+    "slug": "what-is-useoptimistic-in-react-19",
+    "title": "What is `useOptimistic` in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-065",
+    "slug": "what-is-useactionstate-in-react-19",
+    "title": "What is `useActionState` in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-066",
+    "slug": "what-are-react-server-actions",
+    "title": "What are React Server Actions?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-067",
+    "slug": "what-is-useformstatus-in-react-19",
+    "title": "What is `useFormStatus` in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-068",
+    "slug": "what-are-the-ref-improvements-in-react-19",
+    "title": "What are the ref improvements in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-069",
+    "slug": "how-does-suspense-work-for-data-fetching-and-how-does-it-integrate-with-framewor",
+    "title": "How does `Suspense` work for data fetching and how does it integrate with frameworks?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Concurrent React"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-070",
+    "slug": "how-does-error-handling-work-with-suspense-and-error-boundaries",
+    "title": "How does error handling work with Suspense and Error Boundaries?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-071",
+    "slug": "what-is-react-cache-in-react-19",
+    "title": "What is `React.cache()` in React 19?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-072",
+    "slug": "what-is-lazy-initialization-in-usestate",
+    "title": "What is lazy initialization in `useState`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-073",
+    "slug": "how-do-you-prevent-memory-leaks-in-react-components",
+    "title": "How do you prevent memory leaks in React components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-074",
+    "slug": "what-is-react-children-and-when-do-you-use-it",
+    "title": "What is `React.Children` and when do you use it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-075",
+    "slug": "what-is-displayname-in-react-and-why-does-it-matter",
+    "title": "What is `displayName` in React and why does it matter?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-076",
+    "slug": "how-do-you-test-react-components-with-react-testing-library",
+    "title": "How do you test React components with React Testing Library?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-077",
+    "slug": "how-do-you-test-custom-hooks-in-react",
+    "title": "How do you test custom hooks in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Hooks"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-078",
+    "slug": "what-is-act-in-react-testing-and-why-is-it-necessary",
+    "title": "What is `act()` in React testing and why is it necessary?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-079",
+    "slug": "why-does-usecontext-cause-unnecessary-re-renders-and-how-do-you-solve-it",
+    "title": "Why does `useContext` cause unnecessary re-renders and how do you solve it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-080",
+    "slug": "what-is-the-key-prop-trick-for-resetting-component-state",
+    "title": "What is the `key` prop trick for resetting component state?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-081",
+    "slug": "what-is-the-headless-component-pattern",
+    "title": "What is the headless component pattern?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-082",
+    "slug": "what-is-the-provider-pattern-in-react",
+    "title": "What is the Provider pattern in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-083",
+    "slug": "what-are-presentational-and-container-components",
+    "title": "What are Presentational and Container components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-084",
+    "slug": "what-is-feature-based-folder-structure-in-react",
+    "title": "What is feature-based folder structure in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-085",
+    "slug": "what-are-barrel-files-and-what-are-their-trade-offs",
+    "title": "What are barrel files and what are their trade-offs?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-086",
+    "slug": "why-does-react-favor-composition-over-inheritance",
+    "title": "Why does React favor composition over inheritance?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-087",
+    "slug": "how-do-you-choose-between-local-state-lifted-state-context-and-external-stores",
+    "title": "How do you choose between local state, lifted state, Context, and external stores?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-088",
+    "slug": "what-is-zustand-and-how-does-it-work",
+    "title": "What is Zustand and how does it work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-089",
+    "slug": "what-is-redux-toolkit-and-how-does-it-modernize-redux",
+    "title": "What is Redux Toolkit and how does it modernize Redux?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-090",
+    "slug": "what-is-tanstack-query-and-how-does-it-manage-server-state",
+    "title": "What is TanStack Query and how does it manage server state?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-091",
+    "slug": "how-do-you-implement-optimistic-updates-with-tanstack-query",
+    "title": "How do you implement optimistic updates with TanStack Query?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-092",
+    "slug": "how-do-you-build-a-multi-step-form-in-react",
+    "title": "How do you build a multi-step form in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-093",
+    "slug": "what-is-the-polymorphic-component-pattern-as-prop",
+    "title": "What is the polymorphic component pattern (\"as\" prop)?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-094",
+    "slug": "what-is-the-slot-pattern-in-react",
+    "title": "What is the slot pattern in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "react-095",
+    "slug": "how-do-you-handle-accessibility-a11y-in-react",
+    "title": "How do you handle accessibility (a11y) in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-096",
+    "slug": "how-do-you-implement-internationalization-i18n-in-react",
+    "title": "How do you implement internationalization (i18n) in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-097",
+    "slug": "what-is-a-design-system-in-the-context-of-react-component-libraries",
+    "title": "What is a design system in the context of React component libraries?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-098",
+    "slug": "what-is-a-good-testing-strategy-for-a-react-application",
+    "title": "What is a good testing strategy for a React application?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-099",
+    "slug": "how-do-you-design-a-good-component-api-in-react",
+    "title": "How do you design a good component API in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-100",
+    "slug": "what-is-micro-frontend-architecture-with-react",
+    "title": "What is micro-frontend architecture with React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-101",
+    "slug": "how-does-code-splitting-work-in-react-beyond-basic-react-lazy",
+    "title": "How does code splitting work in React beyond basic `React.lazy`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-102",
+    "slug": "how-do-you-analyze-and-reduce-a-react-app-s-bundle-size",
+    "title": "How do you analyze and reduce a React app's bundle size?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-103",
+    "slug": "how-do-core-web-vitals-apply-to-react-applications",
+    "title": "How do Core Web Vitals apply to React applications?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-104",
+    "slug": "what-are-the-pitfalls-of-react-memo-and-how-do-you-use-its-comparison-function",
+    "title": "What are the pitfalls of `React.memo` and how do you use its comparison function?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-105",
+    "slug": "how-do-you-implement-debounce-and-throttle-in-react-hooks",
+    "title": "How do you implement debounce and throttle in React hooks?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-106",
+    "slug": "how-do-you-implement-infinite-scroll-in-react",
+    "title": "How do you implement infinite scroll in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-107",
+    "slug": "how-do-you-use-the-react-profiler-to-find-performance-bottlenecks",
+    "title": "How do you use the React Profiler to find performance bottlenecks?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-108",
+    "slug": "what-are-the-performance-trade-offs-of-css-in-js-vs-css-modules",
+    "title": "What are the performance trade-offs of CSS-in-JS vs CSS Modules?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-109",
+    "slug": "how-do-you-optimize-images-in-a-react-application",
+    "title": "How do you optimize images in a React application?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-110",
+    "slug": "how-does-streaming-ssr-work-in-react-18",
+    "title": "How does Streaming SSR work in React 18?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-111",
+    "slug": "what-is-tree-shaking-and-how-do-you-ensure-it-works-in-a-react-project",
+    "title": "What is tree shaking and how do you ensure it works in a React project?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-112",
+    "slug": "how-do-you-optimize-animation-performance-in-react",
+    "title": "How do you optimize animation performance in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-113",
+    "slug": "what-is-partial-hydration-and-the-islands-architecture",
+    "title": "What is partial hydration and the islands architecture?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-114",
+    "slug": "how-do-you-handle-long-tasks-and-keep-react-apps-responsive",
+    "title": "How do you handle long tasks and keep React apps responsive?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-115",
+    "slug": "how-do-you-monitor-react-application-performance-in-production",
+    "title": "How do you monitor React application performance in production?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-116",
+    "slug": "what-is-the-complete-checklist-for-avoiding-unnecessary-re-renders-in-react",
+    "title": "What is the complete checklist for avoiding unnecessary re-renders in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance Optimization"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-117",
+    "slug": "how-do-you-use-typescript-with-react-for-advanced-type-safety",
+    "title": "How do you use TypeScript with React for advanced type safety?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Architecture & Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-118",
+    "slug": "what-are-the-key-differences-between-react-dom-and-react-native",
+    "title": "What are the key differences between React DOM and React Native?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "React Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-119",
+    "slug": "what-does-strictmode-actually-do-in-react-18-and-why-do-effects-run-twice",
+    "title": "What does `StrictMode` actually do in React 18 and why do effects run twice?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-120",
+    "slug": "what-are-react-s-priority-lanes-and-how-does-the-concurrent-scheduler-work",
+    "title": "What are React's priority lanes and how does the concurrent scheduler work?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-121",
+    "slug": "what-is-a-stale-closure-in-react-and-how-does-it-cause-bugs-in-useeffect",
+    "title": "What is a stale closure in React and how does it cause bugs in `useEffect`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-122",
+    "slug": "what-causes-infinite-re-render-loops-in-react-and-how-do-you-fix-them",
+    "title": "What causes infinite re-render loops in React and how do you fix them?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-123",
+    "slug": "why-do-object-and-array-literals-in-jsx-cause-unnecessary-re-renders",
+    "title": "Why do object and array literals in JSX cause unnecessary re-renders?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-124",
+    "slug": "what-happens-when-you-update-state-inside-a-render-function",
+    "title": "What happens when you update state inside a render function?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-125",
+    "slug": "how-do-race-conditions-occur-in-useeffect-data-fetching-and-how-do-you-prevent-t",
+    "title": "How do race conditions occur in `useEffect` data fetching and how do you prevent them?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-126",
+    "slug": "what-are-common-mistakes-when-updating-objects-and-arrays-in-react-state",
+    "title": "What are common mistakes when updating objects and arrays in React state?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-127",
+    "slug": "how-does-reading-stale-state-inside-async-callbacks-lead-to-bugs",
+    "title": "How does reading stale state inside async callbacks lead to bugs?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-128",
+    "slug": "what-is-the-exhaustive-deps-eslint-rule-and-when-if-ever-should-you-suppress-it",
+    "title": "What is the `exhaustive-deps` ESLint rule and when (if ever) should you suppress it?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Edge Cases & Pitfalls"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-129",
+    "slug": "how-do-you-split-and-compose-multiple-context-providers-to-avoid-unnecessary-re",
+    "title": "How do you split and compose multiple Context providers to avoid unnecessary re-renders?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Context API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-130",
+    "slug": "how-do-you-combine-usecontext-and-usereducer-as-a-lightweight-global-state-solut",
+    "title": "How do you combine `useContext` and `useReducer` as a lightweight global state solution?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Context API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-131",
+    "slug": "what-are-context-selectors-and-why-does-react-not-have-them-natively",
+    "title": "What are context selectors and why does React not have them natively?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Context API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-132",
+    "slug": "how-do-you-test-a-component-that-consumes-a-react-context",
+    "title": "How do you test a component that consumes a React Context?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Context API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-133",
+    "slug": "how-does-react-hook-form-work-and-why-does-it-outperform-controlled-components",
+    "title": "How does React Hook Form work and why does it outperform controlled components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-134",
+    "slug": "how-do-you-handle-dynamic-form-fields-add-remove-rows-in-react",
+    "title": "How do you handle dynamic form fields (add/remove rows) in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-135",
+    "slug": "how-do-you-handle-file-uploads-in-react",
+    "title": "How do you handle file uploads in React?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Forms & Events"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-136",
+    "slug": "how-do-you-cancel-a-fetch-request-when-a-component-unmounts-using-abortcontrolle",
+    "title": "How do you cancel a fetch request when a component unmounts using `AbortController`?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-137",
+    "slug": "what-is-the-synchronization-mental-model-for-useeffect-and-how-is-it-different-f",
+    "title": "What is the synchronization mental model for `useEffect` and how is it different from lifecycle thinking?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-138",
+    "slug": "how-do-you-migrate-class-component-lifecycle-methods-to-hooks",
+    "title": "How do you migrate class component lifecycle methods to hooks?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Easy",
+    "categories": [
+      "Effects & Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-139",
+    "slug": "what-are-the-rules-of-the-client-server-boundary-and-the-use-client-directive",
+    "title": "What are the rules of the Client/Server boundary and the `\"use client\"` directive?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-140",
+    "slug": "how-do-react-server-components-handle-data-fetching-compared-to-client-component",
+    "title": "How do React Server Components handle data fetching compared to client components?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-141",
+    "slug": "how-do-you-pass-data-from-a-server-component-to-a-client-component",
+    "title": "How do you pass data from a Server Component to a Client Component?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Server Components"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-142",
+    "slug": "what-is-the-difference-between-server-state-and-client-state-and-which-tools-han",
+    "title": "What is the difference between server state and client state, and which tools handle each?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-143",
+    "slug": "what-is-normalized-state-and-why-does-it-matter-in-large-react-applications",
+    "title": "What is normalized state and why does it matter in large React applications?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-144",
+    "slug": "how-does-jotai-s-atomic-model-differ-from-redux-and-zustand",
+    "title": "How does Jotai's atomic model differ from Redux and Zustand?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-145",
+    "slug": "how-are-react-hooks-implemented-internally-using-a-linked-list",
+    "title": "How are React hooks implemented internally using a linked list?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-146",
+    "slug": "why-must-hooks-be-called-in-the-same-order-every-render-what-breaks-internally-i",
+    "title": "Why must hooks be called in the same order every render — what breaks internally if you don't?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-147",
+    "slug": "how-does-suspense-work-internally-what-is-the-throw-a-promise-mechanism",
+    "title": "How does Suspense work internally — what is the \"throw a Promise\" mechanism?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-148",
+    "slug": "how-would-you-build-a-minimal-react-renderer-from-scratch",
+    "title": "How would you build a minimal React renderer from scratch?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "React Internals"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-149",
+    "slug": "what-triggers-a-re-render-in-react-and-how-can-you-prevent-unnecessary-ones",
+    "title": "What triggers a re-render in React, and how can you prevent unnecessary ones?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-150",
+    "slug": "walk-through-the-react-rendering-pipeline-from-state-change-to-painted-pixels",
+    "title": "Walk through the React rendering pipeline from state change to painted pixels.",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-151",
+    "slug": "how-does-react-18-s-concurrent-scheduler-work-and-what-are-priority-lanes",
+    "title": "How does React 18's concurrent scheduler work and what are priority lanes?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-152",
+    "slug": "why-does-react-strictmode-call-render-and-effect-functions-twice-in-development",
+    "title": "Why does React.StrictMode call render and effect functions twice in development?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering Behavior"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-153",
+    "slug": "what-is-the-useid-hook-and-how-does-it-solve-ssr-hydration-mismatches",
+    "title": "What is the `useId` hook and how does it solve SSR hydration mismatches?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-154",
+    "slug": "what-are-the-data-fetching-strategies-in-next-js-app-router-and-when-do-you-use",
+    "title": "What are the data fetching strategies in Next.js App Router and when do you use each?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "react-155",
+    "slug": "how-do-you-safely-use-browser-only-apis-window-localstorage-document-in-an-ssr-a",
+    "title": "How do you safely use browser-only APIs (window, localStorage, document) in an SSR app?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Medium",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-156",
+    "slug": "how-does-selective-hydration-work-with-suspense-in-react-18",
+    "title": "How does selective hydration work with Suspense in React 18?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "react-157",
+    "slug": "how-do-you-handle-authentication-in-ssr-cookie-based-auth-and-middleware-pattern",
+    "title": "How do you handle authentication in SSR — cookie-based auth and middleware patterns?",
+    "domain": "frontend",
+    "topic": "react",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 3
+  },
+  {
+    "id": "vue-001",
+    "slug": "what-is-vue-js-and-what-problem-does-it-solve",
+    "title": "What is Vue.js and what problem does it solve?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-002",
+    "slug": "what-are-the-core-features-of-vue-js",
+    "title": "What are the core features of Vue.js?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-003",
+    "slug": "how-does-vue-differ-from-react-and-angular",
+    "title": "How does Vue differ from React and Angular?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-004",
+    "slug": "what-is-the-vue-instance",
+    "title": "What is the Vue instance?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-005",
+    "slug": "what-is-the-difference-between-vue-2-and-vue-3",
+    "title": "What is the difference between Vue 2 and Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-006",
+    "slug": "what-is-vue-reactivity-and-why-is-it-important",
+    "title": "What is Vue reactivity and why is it important?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-007",
+    "slug": "how-does-vue-track-reactive-dependencies",
+    "title": "How does Vue track reactive dependencies?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-008",
+    "slug": "what-are-ref-and-reactive-in-vue-3",
+    "title": "What are `ref` and `reactive` in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-009",
+    "slug": "what-is-the-difference-between-ref-and-reactive",
+    "title": "What is the difference between `ref` and `reactive`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-010",
+    "slug": "what-are-computed-properties-and-how-do-they-differ-from-methods",
+    "title": "What are computed properties and how do they differ from methods?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-011",
+    "slug": "what-are-vue-components-and-why-are-they-important",
+    "title": "What are Vue components and why are they important?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-012",
+    "slug": "how-do-props-work-in-vue",
+    "title": "How do props work in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-013",
+    "slug": "what-is-prop-validation-in-vue",
+    "title": "What is prop validation in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-014",
+    "slug": "what-are-slots-in-vue-and-why-are-they-useful",
+    "title": "What are slots in Vue and why are they useful?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-015",
+    "slug": "what-are-scoped-slots-and-how-do-they-differ-from-regular-slots",
+    "title": "What are scoped slots and how do they differ from regular slots?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-016",
+    "slug": "what-is-the-composition-api-in-vue-and-why-was-it-introduced",
+    "title": "What is the Composition API in Vue and why was it introduced?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-017",
+    "slug": "what-is-the-setup-function-in-vue",
+    "title": "What is the `setup()` function in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-018",
+    "slug": "what-is-a-composable-in-vue",
+    "title": "What is a composable in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-019",
+    "slug": "what-is-the-difference-between-watch-and-watcheffect",
+    "title": "What is the difference between `watch` and `watchEffect`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-020",
+    "slug": "what-are-lifecycle-hooks-in-vue",
+    "title": "What are lifecycle hooks in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Lifecycle"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-021",
+    "slug": "what-are-the-most-common-lifecycle-hooks-in-vue-3",
+    "title": "What are the most common lifecycle hooks in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Lifecycle"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-022",
+    "slug": "what-is-v-if-and-how-does-it-differ-from-v-show",
+    "title": "What is `v-if` and how does it differ from `v-show`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-023",
+    "slug": "what-is-v-for-and-how-does-vue-track-list-updates",
+    "title": "What is `v-for` and how does Vue track list updates?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-024",
+    "slug": "what-is-v-model-and-how-does-it-work-internally",
+    "title": "What is `v-model` and how does it work internally?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-025",
+    "slug": "what-are-custom-directives-in-vue",
+    "title": "What are custom directives in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-026",
+    "slug": "what-is-provide-and-inject-in-vue",
+    "title": "What is `provide` and `inject` in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-027",
+    "slug": "what-are-dynamic-components-in-vue",
+    "title": "What are dynamic components in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-028",
+    "slug": "what-is-the-keepalive-component-in-vue",
+    "title": "What is the `<KeepAlive>` component in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-029",
+    "slug": "what-is-teleport-in-vue",
+    "title": "What is Teleport in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-030",
+    "slug": "what-is-suspense-in-vue",
+    "title": "What is Suspense in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-031",
+    "slug": "what-is-script-setup-in-vue-3",
+    "title": "What is `<script setup>` in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-032",
+    "slug": "what-are-toref-and-torefs-and-when-should-you-use-them",
+    "title": "What are `toRef()` and `toRefs()` and when should you use them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-033",
+    "slug": "what-is-the-purpose-of-computed-in-vue",
+    "title": "What is the purpose of `computed()` in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-034",
+    "slug": "what-is-defineemits-and-how-do-you-emit-custom-events-in-vue-3",
+    "title": "What is `defineEmits()` and how do you emit custom events in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-035",
+    "slug": "what-is-the-virtual-dom-and-how-does-vue-use-it",
+    "title": "What is the Virtual DOM and how does Vue use it?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-036",
+    "slug": "what-is-vue-router-and-how-do-you-set-up-routing-in-a-vue-application",
+    "title": "What is Vue Router and how do you set up routing in a Vue application?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-037",
+    "slug": "what-are-render-functions-in-vue",
+    "title": "What are render functions in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-038",
+    "slug": "what-are-navigation-guards-in-vue-router",
+    "title": "What are navigation guards in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-039",
+    "slug": "how-does-v-model-work-on-custom-components-in-vue-3",
+    "title": "How does `v-model` work on custom components in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-040",
+    "slug": "what-is-the-purpose-of-the-key-attribute-in-vue-lists",
+    "title": "What is the purpose of the `key` attribute in Vue lists?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-041",
+    "slug": "what-are-async-components-in-vue",
+    "title": "What are async components in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-042",
+    "slug": "what-is-code-splitting-in-vue-applications",
+    "title": "What is code splitting in Vue applications?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-043",
+    "slug": "what-is-pinia-and-why-is-it-used-in-vue-applications",
+    "title": "What is Pinia and why is it used in Vue applications?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-044",
+    "slug": "what-is-server-side-rendering-ssr-in-vue",
+    "title": "What is server-side rendering (SSR) in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-045",
+    "slug": "what-is-hydration-in-vue-ssr",
+    "title": "What is hydration in Vue SSR?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-046",
+    "slug": "what-is-the-transition-component-and-how-does-it-work-in-vue",
+    "title": "What is the `<Transition>` component and how does it work in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-047",
+    "slug": "how-does-vue-handle-errors-and-what-is-onerrorcaptured",
+    "title": "How does Vue handle errors and what is `onErrorCaptured`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-048",
+    "slug": "what-are-shallowref-and-shallowreactive-in-vue",
+    "title": "What are `shallowRef()` and `shallowReactive()` in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-049",
+    "slug": "what-is-defineexpose-in-vue-3-and-why-is-it-needed",
+    "title": "What is `defineExpose()` in Vue 3 and why is it needed?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-050",
+    "slug": "what-is-programmatic-navigation-in-vue-router",
+    "title": "What is programmatic navigation in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-051",
+    "slug": "what-is-nexttick-and-why-is-it-needed-in-vue",
+    "title": "What is `nextTick()` and why is it needed in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-052",
+    "slug": "what-are-the-deep-immediate-and-flush-options-in-watch",
+    "title": "What are the `deep`, `immediate`, and `flush` options in `watch`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-053",
+    "slug": "what-are-markraw-and-toraw-and-when-should-you-use-them",
+    "title": "What are `markRaw()` and `toRaw()` and when should you use them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-054",
+    "slug": "what-is-readonly-in-vue-and-when-should-you-use-it",
+    "title": "What is `readonly()` in Vue and when should you use it?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-055",
+    "slug": "what-is-the-vue-plugin-system-and-how-do-you-create-a-plugin",
+    "title": "What is the Vue plugin system and how do you create a plugin?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-056",
+    "slug": "what-is-effectscope-and-when-is-it-useful",
+    "title": "What is `effectScope()` and when is it useful?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-057",
+    "slug": "what-are-deep-slotted-and-global-in-scoped-styles",
+    "title": "What are `:deep()`, `:slotted()`, and `:global()` in scoped styles?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-058",
+    "slug": "how-do-you-lazy-load-routes-in-vue-router-for-code-splitting",
+    "title": "How do you lazy-load routes in Vue Router for code splitting?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-059",
+    "slug": "what-are-functional-components-in-vue-3-and-when-should-you-use-them",
+    "title": "What are functional components in Vue 3 and when should you use them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-060",
+    "slug": "what-are-useattrs-and-useslots-in-the-composition-api",
+    "title": "What are `useAttrs()` and `useSlots()` in the Composition API?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-061",
+    "slug": "how-do-you-clean-up-side-effects-inside-watcheffect",
+    "title": "How do you clean up side effects inside `watchEffect`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-062",
+    "slug": "what-are-named-views-in-vue-router",
+    "title": "What are named views in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-063",
+    "slug": "how-does-app-provide-differ-from-component-level-provide",
+    "title": "How does `app.provide()` differ from component-level `provide`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-064",
+    "slug": "how-does-vue-3-s-reactivity-system-work-internally-using-javascript-proxy",
+    "title": "How does Vue 3's reactivity system work internally using JavaScript Proxy?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-065",
+    "slug": "what-are-recursive-components-in-vue-and-how-do-you-implement-them",
+    "title": "What are recursive components in Vue and how do you implement them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-066",
+    "slug": "what-is-the-difference-between-created-onbeforemount-and-mounted-lifecycle-hooks",
+    "title": "What is the difference between `created`, `onBeforeMount`, and `mounted` lifecycle hooks?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Lifecycle"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-067",
+    "slug": "what-happens-internally-when-a-vue-3-component-mounts",
+    "title": "What happens internally when a Vue 3 component mounts?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-068",
+    "slug": "what-are-the-key-differences-between-vuex-and-pinia",
+    "title": "What are the key differences between Vuex and Pinia?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-069",
+    "slug": "how-do-dynamic-route-parameters-work-in-vue-router",
+    "title": "How do dynamic route parameters work in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-070",
+    "slug": "what-is-the-difference-between-route-params-and-query-params-in-vue-router",
+    "title": "What is the difference between route params and query params in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-071",
+    "slug": "how-does-vue-compile-vue-templates-into-render-functions",
+    "title": "How does Vue compile `.vue` templates into render functions?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-072",
+    "slug": "how-does-the-vue-scheduler-batch-and-defer-reactive-updates",
+    "title": "How does the Vue scheduler batch and defer reactive updates?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-073",
+    "slug": "how-does-vue-3-s-effect-tracking-work-internally-activeeffect-and-dependency-set",
+    "title": "How does Vue 3's effect tracking work internally (activeEffect and dependency sets)?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-074",
+    "slug": "what-is-the-difference-between-client-side-rendering-csr-and-server-side-renderi",
+    "title": "What is the difference between Client-Side Rendering (CSR) and Server-Side Rendering (SSR) in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-075",
+    "slug": "what-are-advanced-patterns-for-provide-inject-symbol-keys-reactive-injection-and",
+    "title": "What are advanced patterns for `provide` / `inject` — Symbol keys, reactive injection, and defaults?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-076",
+    "slug": "what-is-the-vue-rendering-pipeline-from-state-change-to-dom-update",
+    "title": "What is the Vue rendering pipeline from state change to DOM update?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-077",
+    "slug": "what-are-the-different-component-communication-patterns-in-vue",
+    "title": "What are the different component communication patterns in Vue?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-078",
+    "slug": "what-is-teleport-and-when-should-you-use-it",
+    "title": "What is `<Teleport>` and when should you use it?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-079",
+    "slug": "what-is-suspense-and-how-does-it-handle-async-components",
+    "title": "What is `<Suspense>` and how does it handle async components?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-080",
+    "slug": "what-are-v-model-modifiers-and-how-do-you-create-custom-ones",
+    "title": "What are `v-model` modifiers and how do you create custom ones?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-081",
+    "slug": "what-is-transitiongroup-and-how-does-it-differ-from-transition",
+    "title": "What is `<TransitionGroup>` and how does it differ from `<Transition>`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-082",
+    "slug": "how-do-you-use-vue-3-with-typescript-for-props-and-emits",
+    "title": "How do you use Vue 3 with TypeScript for props and emits?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-083",
+    "slug": "what-are-composables-in-vue-3-and-what-are-best-practices-for-writing-them",
+    "title": "What are composables in Vue 3 and what are best practices for writing them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-084",
+    "slug": "what-are-template-refs-and-how-do-you-use-them-in-composition-api",
+    "title": "What are template refs and how do you use them in Composition API?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-085",
+    "slug": "what-is-the-watch-flush-option-and-when-does-each-flush-timing-run",
+    "title": "What is the `watch` flush option and when does each flush timing run?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-086",
+    "slug": "what-is-defineoptions-and-what-problems-does-it-solve",
+    "title": "What is `defineOptions` and what problems does it solve?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-087",
+    "slug": "what-causes-hydration-mismatches-in-vue-ssr-and-how-do-you-fix-them",
+    "title": "What causes hydration mismatches in Vue SSR and how do you fix them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-088",
+    "slug": "how-does-vue-handle-array-mutation-reactivity",
+    "title": "How does Vue handle array mutation reactivity?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-089",
+    "slug": "what-is-shallowref-and-when-should-you-use-it-over-ref",
+    "title": "What is `shallowRef` and when should you use it over `ref`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-090",
+    "slug": "what-are-multi-root-components-fragments-in-vue-3",
+    "title": "What are multi-root components (fragments) in Vue 3?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-091",
+    "slug": "what-is-app-config-errorhandler-and-how-do-you-use-it-for-global-error-handling",
+    "title": "What is `app.config.errorHandler` and how do you use it for global error handling?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-092",
+    "slug": "what-is-the-difference-between-v-if-and-v-show-at-the-dom-level",
+    "title": "What is the difference between `v-if` and `v-show` at the DOM level?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-093",
+    "slug": "how-does-vue-s-virtual-dom-diffing-patching-algorithm-work",
+    "title": "How does Vue's virtual DOM diffing (patching) algorithm work?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-094",
+    "slug": "what-is-the-options-api-vs-composition-api-and-when-should-you-choose-each",
+    "title": "What is the `Options API` vs `Composition API` and when should you choose each?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Easy",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-095",
+    "slug": "how-do-you-implement-route-level-code-splitting-with-dynamic-imports-in-vue-rout",
+    "title": "How do you implement route-level code splitting with dynamic imports in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-096",
+    "slug": "what-is-a-computed-setter-in-vue-and-when-would-you-use-one",
+    "title": "What is a computed setter in Vue and when would you use one?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-097",
+    "slug": "how-does-keepalive-work-and-what-lifecycle-hooks-does-it-add",
+    "title": "How does `<KeepAlive>` work and what lifecycle hooks does it add?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-098",
+    "slug": "what-is-onserverprefetch-and-how-is-it-used-in-vue-ssr",
+    "title": "What is `onServerPrefetch` and how is it used in Vue SSR?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-099",
+    "slug": "how-do-you-test-vue-components-with-vue-test-utils",
+    "title": "How do you test Vue components with Vue Test Utils?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 1
+  },
+  {
+    "id": "vue-100",
+    "slug": "what-strategies-can-you-use-to-optimize-a-vue-application-s-performance",
+    "title": "What strategies can you use to optimize a Vue application's performance?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-101",
+    "slug": "what-is-the-definemodel-macro-and-how-does-it-simplify-two-way-binding",
+    "title": "What is the `defineModel` macro and how does it simplify two-way binding?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-102",
+    "slug": "how-do-multiple-v-model-bindings-work-on-a-single-component",
+    "title": "How do multiple `v-model` bindings work on a single component?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-103",
+    "slug": "what-is-customref-and-when-would-you-use-it",
+    "title": "What is `customRef` and when would you use it?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-104",
+    "slug": "what-is-css-v-bind-in-style-blocks-and-how-does-it-work",
+    "title": "What is CSS `v-bind` in `<style>` blocks and how does it work?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-105",
+    "slug": "what-are-css-modules-in-vue-sfcs",
+    "title": "What are CSS Modules in Vue SFCs?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Vue Basics"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-106",
+    "slug": "how-does-vue-s-scoped-css-work-internally",
+    "title": "How does Vue's scoped CSS work internally?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Rendering & Internals"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-107",
+    "slug": "what-is-the-v-memo-directive-and-how-does-it-optimize-rendering",
+    "title": "What is the `v-memo` directive and how does it optimize rendering?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Performance"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-108",
+    "slug": "what-options-does-defineasynccomponent-support-for-loading-error-and-timeout-sta",
+    "title": "What options does `defineAsyncComponent` support for loading, error, and timeout states?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-109",
+    "slug": "what-are-all-the-lifecycle-hooks-available-in-a-custom-vue-directive",
+    "title": "What are all the lifecycle hooks available in a custom Vue directive?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Directives"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-110",
+    "slug": "how-do-you-use-pinia-s-patch-subscribe-and-onaction",
+    "title": "How do you use Pinia's `$patch`, `$subscribe`, and `$onAction`?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-111",
+    "slug": "how-can-pinia-stores-use-other-stores-store-composition",
+    "title": "How can Pinia stores use other stores (store composition)?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "State Management"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-112",
+    "slug": "what-are-isref-isreactive-unref-and-tovalue-and-when-do-you-use-them",
+    "title": "What are `isRef`, `isReactive`, `unref`, and `toValue` and when do you use them?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Reactivity System"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-113",
+    "slug": "what-are-vue-router-route-meta-fields-and-how-are-they-used",
+    "title": "What are Vue Router route meta fields and how are they used?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-114",
+    "slug": "how-do-you-control-scroll-behavior-in-vue-router",
+    "title": "How do you control scroll behavior in Vue Router?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Routing"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-115",
+    "slug": "what-is-ssr-streaming-in-vue-and-how-does-it-improve-performance",
+    "title": "What is SSR streaming in Vue and how does it improve performance?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-116",
+    "slug": "what-is-definecustomelement-and-how-does-vue-support-web-components",
+    "title": "What is `defineCustomElement` and how does Vue support Web Components?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-117",
+    "slug": "what-is-getcurrentinstance-and-when-should-you-use-it",
+    "title": "What is `getCurrentInstance` and when should you use it?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Advanced Patterns"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-118",
+    "slug": "what-is-usetemplateref-and-how-does-it-differ-from-using-ref-for-template-refs",
+    "title": "What is `useTemplateRef` and how does it differ from using `ref` for template refs?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Medium",
+    "categories": [
+      "Composition API"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-119",
+    "slug": "what-are-vue-3-5-s-lazy-hydration-strategies",
+    "title": "What are Vue 3.5's lazy hydration strategies?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "SSR / Hydration"
+    ],
+    "readingTime": 2
+  },
+  {
+    "id": "vue-120",
+    "slug": "how-do-you-forward-slots-from-a-parent-component-to-a-deeply-nested-child",
+    "title": "How do you forward slots from a parent component to a deeply nested child?",
+    "domain": "frontend",
+    "topic": "vue",
+    "difficulty": "Hard",
+    "categories": [
+      "Components"
+    ],
+    "readingTime": 2
+  }
+]
