@@ -157,7 +157,6 @@ export const FIELD_ALIASES = {
   title: ['Title', 'عنوان'],
   difficulty: ['Difficulty', 'سطح دشواری'],
   category: ['Category', 'دسته‌بندی'],
-  tags: ['Tags', 'برچسب‌ها'],
 } as const;
 
 export function getField(

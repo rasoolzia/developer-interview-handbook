@@ -72,7 +72,7 @@ export class MDGenerator {
     const accumulator: Accumulator = {
       languages: new Set<string>(),
       domains: {},
-      searchIndex: [],
+      searchIndex: {},
     };
 
     this.walk(CONTENT_DIR, accumulator, OUTPUT_DIR);
@@ -90,9 +90,10 @@ export class MDGenerator {
 
     const ms = Date.now() - startMs;
     console.log(`\n✅ manifest.json`);
-    console.log(
-      `✅ search-index.json — ${accumulator.searchIndex.length} questions`,
-    );
+    for (const language of this.config.supportedLanguages) {
+      const count = (accumulator.searchIndex[language] ?? []).length;
+      console.log(`✅ search/${language}.json — ${count} questions`);
+    }
     console.log(
       `\n   Languages : ${[...accumulator.languages].sort().join(', ')}`,
     );
@@ -218,20 +219,21 @@ export class MDGenerator {
         hash: output.topic.hash,
       };
 
+      if (!accumulator.searchIndex[meta.language]) {
+        accumulator.searchIndex[meta.language] = [];
+      }
+
       for (const q of output.topic.questions) {
-        const searchItem: GeneratedSearchItem = {
+        accumulator.searchIndex[meta.language].push({
           id: q.id,
           slug: q.slug,
           title: q.title,
           domain: meta.domain,
           topic,
-          language,
           difficulty: q.difficulty,
           categories: q.categories,
           readingTime: q.readingTime,
-        };
-
-        accumulator.searchIndex.push(searchItem);
+        });
       }
     }
   }
@@ -374,12 +376,6 @@ export class MDGenerator {
       const rawCategory = MarkdownParser.getField(fields, 'category');
       const categories = this.parseCategories(rawCategory);
 
-      const rawTags = MarkdownParser.getField(fields, 'tags') || '';
-      const tags = rawTags
-        .split(',')
-        .map((t) => t.trim())
-        .filter(Boolean);
-
       const answerMarkdown = MarkdownParser.extractAnswer(section.content);
 
       const question: GeneratedQuestion = {
@@ -388,14 +384,10 @@ export class MDGenerator {
         title,
         difficulty: difficulty || 'unknown',
         categories,
-        domain: meta.domain,
-        topic: meta.topic,
-        language: meta.language,
         markdown: answerMarkdown ?? '',
         readingTime: this.readingTime(answerMarkdown),
       };
 
-      if (tags.length > 0) question.tags = tags;
       questions.push(question);
     });
 
@@ -533,15 +525,17 @@ export class MDGenerator {
   }
 
   private writeSearchIndex(accumulator: Accumulator, OUTPUT_DIR: string): void {
-    accumulator.searchIndex.sort((a, b) =>
-      `${a.language}/${a.domain}/${a.topic}/${a.slug}`.localeCompare(
-        `${b.language}/${b.domain}/${b.topic}/${b.slug}`,
-      ),
-    );
-    fs.writeFileSync(
-      path.join(OUTPUT_DIR, 'search-index.json'),
-      JSON.stringify(accumulator.searchIndex, null, 2),
-      'utf-8',
-    );
+    const searchDir = path.join(OUTPUT_DIR, 'search');
+    this.ensureDir(searchDir);
+
+    for (const language of this.config.supportedLanguages) {
+      const items = accumulator.searchIndex[language] ?? [];
+
+      fs.writeFileSync(
+        path.join(searchDir, `${language}.json`),
+        JSON.stringify(items, null, 2),
+        'utf-8',
+      );
+    }
   }
 }

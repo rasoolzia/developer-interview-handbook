@@ -82,19 +82,19 @@ interface QuestionBase {
   id: string;
   slug: string;
   title: string;
-  domain: string;
-  topic: string;
-  language: string;
   difficulty: string;
   categories: string[];
   readingTime: number;
 }
+
 export interface GeneratedQuestion extends QuestionBase {
   markdown: string;
-  tags?: string[];
 }
 
-export interface GeneratedSearchItem extends QuestionBase {}
+export interface GeneratedSearchItem extends QuestionBase {
+  domain: string;
+  topic: string;
+}
 
 export interface GeneratedTopic {
   version: number;
@@ -129,5 +129,5 @@ export interface Accumulator {
       >;
     }
   >;
-  searchIndex: GeneratedSearchItem[];
+  searchIndex: Record<string, GeneratedSearchItem[]>;
 }

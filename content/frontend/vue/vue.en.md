@@ -501,7 +501,7 @@ The `setup()` function receives two arguments:
 
 It is commonly used to define component logic in Vue 3 applications.
 
-Example (Q16–Q17):
+Example:
 
 ```js
 //Composition API with setup()
@@ -1292,7 +1292,7 @@ Pinia provides:
 - modular store architecture
 - improved developer experience
 
-### Example (Q43): Pinia Store
+### Example: Pinia Store
 
 ```js
 import { defineStore } from 'pinia';
