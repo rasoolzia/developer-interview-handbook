@@ -415,17 +415,7 @@ export class MDGenerator {
       html: 'HTML',
       javascript: 'JavaScript',
       react: 'React',
-      typescript: 'TypeScript',
-      node: 'Node.js',
-      python: 'Python',
-      java: 'Java',
-      csharp: 'C#',
-      php: 'PHP',
-      ruby: 'Ruby',
-      go: 'Go',
-      rust: 'Rust',
-      swift: 'Swift',
-      kotlin: 'Kotlin',
+      vue: 'Vue',
     };
     return (
       labels[slug.toLowerCase()] ?? slug.charAt(0).toUpperCase() + slug.slice(1)
