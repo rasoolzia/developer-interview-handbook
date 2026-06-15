@@ -15,6 +15,16 @@ Live site: **https://interview.mrzd.ir**
 
 ---
 
+## Features
+
+- Curated interview questions for frontend and backend developers
+- Software engineering and architecture topics
+- Searchable website powered by JSON files
+- Public API for the companion UI
+- Structured content organization
+- Easily extensible format
+- Open-source and community friendly
+
 ## What’s inside
 
 Topics include (and will expand over time):
