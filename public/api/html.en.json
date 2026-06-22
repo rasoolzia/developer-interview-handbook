@@ -2,9 +2,9 @@
   "meta": {
     "topic": "html",
     "language": "en",
-    "version": 1.2
+    "version": 1.4
   },
-  "total": 25,
+  "total": 28,
   "questions": [
     {
       "id": "67e92588",
@@ -53,14 +53,14 @@
       "title": "Explain semantic HTML elements like `<article>`, `<section>`, `<aside>`, and when to use them instead of `<div>`.",
       "difficulty": "Medium",
       "category": "Semantic & Accessibility",
-      "description": "Semantic elements describe their meaning clearly to browsers, developers, and assistive technologies.\r\n\r\n- `<article>`: Self-contained content that can stand alone (e.g., blog post, news story)\r\n- `<section>`: Thematic grouping of content (e.g., chapter, introduction)\r\n- `<aside>`: Content indirectly related to main content (e.g., sidebar, related links, ads)\r\n\r\nBenefits over `<div>`:\r\n\r\n- Better accessibility (screen readers announce roles)\r\n- Improved SEO (search engines understand structure)\r\n- More maintainable code"
+      "description": "Semantic elements describe their meaning clearly to browsers, developers, and assistive technologies.\r\n\r\n- `<article>`: Self-contained content that can stand alone (e.g., blog post, news story)\r\n- `<section>`: Thematic grouping of content (e.g., chapter, introduction)\r\n- `<aside>`: Content indirectly related to main content (e.g., sidebar, related links, ads)\r\n\r\nBenefits over `<div>`:\r\n\r\n- Better accessibility (screen readers announce roles)\r\n- Improved SEO (search engines understand structure)\r\n- More maintainable code\r\n\r\nExample:\r\n\r\n```html\r\n<article>\r\n  <h2>How JavaScript Works</h2>\r\n  <p>A self-contained post about JS internals...</p>\r\n</article>\r\n\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>Thematic content grouped together...</p>\r\n</section>\r\n\r\n<aside>\r\n  <h3>Related Articles</h3>\r\n  <ul>\r\n    <li><a href=\"#\">Deep dive into closures</a></li>\r\n  </ul>\r\n</aside>\r\n```"
     },
     {
       "id": "0eae1847",
       "title": "What are the differences between `<input type=\"number\">` and `<input type=\"tel\">`?",
       "difficulty": "Medium",
       "category": "Forms",
-      "description": "Both input types are used for numeric-like input, but they behave differently.\r\n\r\n**`type=\"number\"`**\r\n\r\n- Accepts only numeric values\r\n- Provides built-in validation\r\n- Shows increment/decrement arrows in some browsers\r\n- May reject characters like \"+\" or \"-\" depending on configuration\r\n\r\n**`type=\"tel\"`**\r\n\r\n- Intended for telephone numbers\r\n- Does not enforce numeric validation\r\n- Triggers numeric keypad on mobile devices\r\n- Allows flexible formatting (e.g., +1-800-123-4567)\r\n\r\nUse `type=\"tel\"` for phone numbers and `type=\"number\"` for actual numeric data."
+      "description": "Both input types are used for numeric-like input, but they behave differently.\r\n\r\n**`type=\"number\"`**\r\n\r\n- Accepts only numeric values\r\n- Provides built-in validation\r\n- Shows increment/decrement arrows in some browsers\r\n- May reject characters like \"+\" or \"-\" depending on configuration\r\n\r\n**`type=\"tel\"`**\r\n\r\n- Intended for telephone numbers\r\n- Does not enforce numeric validation\r\n- Triggers numeric keypad on mobile devices\r\n- Allows flexible formatting (e.g., +1-800-123-4567)\r\n\r\nUse `type=\"tel\"` for phone numbers and `type=\"number\"` for actual numeric data.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Accepts only numbers, shows increment arrows -->\r\n<input type=\"number\" min=\"1\" max=\"100\" value=\"10\" />\r\n\r\n<!-- Triggers numeric keypad on mobile, allows flexible format -->\r\n<input type=\"tel\" placeholder=\"+1-800-123-4567\" />\r\n```"
     },
     {
       "id": "542a10b6",
@@ -81,14 +81,14 @@
       "title": "What is the difference between `async` and `defer` attributes on `<script>` tags? Explain their impact on the Critical Rendering Path.",
       "difficulty": "Hard",
       "category": "Performance",
-      "description": "Both `async` and `defer` allow non-blocking script loading, but they differ in execution timing:\r\n\r\n- **async**:\r\n  - Downloads in parallel\r\n  - Executes as soon as download finishes (may interrupt HTML parsing)\r\n  - No guarantee of order between multiple async scripts\r\n  - Good for independent scripts (analytics, ads)\r\n\r\n- **defer**:\r\n  - Downloads in parallel\r\n  - Executes only after HTML parsing is complete (just before DOMContentLoaded)\r\n  - Preserves script order\r\n  - Ideal for scripts that depend on DOM (most app scripts)\r\n\r\n**Impact on Critical Rendering Path (CRP)**:\r\n\r\n- Without attributes → render-blocking (parsing pauses)\r\n- async → may still block render if executes early\r\n- defer → truly non-blocking for rendering\r\n\r\nBest practice: Use `defer` for most cases unless you need immediate execution.\r\n\r\nExample:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```\r\n\r\nBest for application scripts that rely on DOM structure."
+      "description": "Both `async` and `defer` allow non-blocking script loading, but they differ in execution timing:\r\n\r\n- **async**:\r\n  - Downloads in parallel\r\n  - Executes as soon as download finishes (may interrupt HTML parsing)\r\n  - No guarantee of order between multiple async scripts\r\n  - Good for independent scripts (analytics, ads)\r\n\r\n- **defer**:\r\n  - Downloads in parallel\r\n  - Executes only after HTML parsing is complete (just before DOMContentLoaded)\r\n  - Preserves script order\r\n  - Ideal for scripts that depend on DOM (most app scripts)\r\n\r\n**Impact on Critical Rendering Path (CRP)**:\r\n\r\n- Without attributes → render-blocking (parsing pauses)\r\n- async → may still block render if executes early\r\n- defer → truly non-blocking for rendering\r\n\r\nBest practice: Use `defer` for most cases unless you need immediate execution.\r\n\r\nExample:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```"
     },
     {
       "id": "c73644f2",
       "title": "What is the difference between `<meta>` tags and HTTP headers, and when should each be used?",
       "difficulty": "Hard",
       "category": "SEO & Meta",
-      "description": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.\r\n\r\n---\r\n\r\n### `<meta>` Tags\r\n\r\n- Defined inside the `<head>` section of an HTML document\r\n- Provide metadata interpreted by browsers and search engines\r\n- Processed after the HTML document begins loading\r\n\r\nCommon examples:\r\n\r\n```html\r\n<meta charset=\"UTF-8\" />\r\n<meta name=\"description\" content=\"HTML interview questions\" />\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\nUse cases:\r\n\r\n- Page description for SEO\r\n- Character encoding\r\n- Viewport configuration\r\n\r\n---\r\n\r\n### HTTP Headers\r\n\r\n- Sent by the server before the HTML document\r\n- Control browser behavior at the protocol level\r\n- More authoritative than meta tags\r\n\r\nExamples:\r\n\r\n- `Content-Type`\r\n- `Cache-Control`\r\n- `Content-Security-Policy`\r\n- `Set-Cookie`\r\n\r\nUse cases:\r\n\r\n- Security policies\r\n- Caching control\r\n- Redirection\r\n- Content negotiation"
+      "description": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.\r\n\r\n### `<meta>` Tags\r\n\r\n- Defined inside the `<head>` section of an HTML document\r\n- Provide metadata interpreted by browsers and search engines\r\n- Processed after the HTML document begins loading\r\n\r\nCommon examples:\r\n\r\n```html\r\n<meta charset=\"UTF-8\" />\r\n<meta name=\"description\" content=\"HTML interview questions\" />\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\nUse cases:\r\n\r\n- Page description for SEO\r\n- Character encoding\r\n- Viewport configuration\r\n\r\n### HTTP Headers\r\n\r\n- Sent by the server before the HTML document\r\n- Control browser behavior at the protocol level\r\n- More authoritative than meta tags\r\n\r\nExamples:\r\n\r\n- `Content-Type`\r\n- `Cache-Control`\r\n- `Content-Security-Policy`\r\n- `Set-Cookie`\r\n\r\nUse cases:\r\n\r\n- Security policies\r\n- Caching control\r\n- Redirection\r\n- Content negotiation"
     },
     {
       "id": "40587cf2",
@@ -109,14 +109,14 @@
       "title": "What is the difference between `id` and `data-*` attributes in HTML, and when should each be used?",
       "difficulty": "Medium",
       "category": "Fundamentals",
-      "description": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.\r\n\r\n---\r\n\r\n### `id`\r\n\r\n- Must be unique within the document\r\n- Used for:\r\n  - Fragment navigation (`#section`)\r\n  - JavaScript DOM selection\r\n  - Label associations (`for` attribute)\r\n- Has semantic meaning in document structure\r\n\r\nExample:\r\n\r\n```html\r\n<section id=\"pricing\"></section>\r\n```\r\n\r\n### `data-*` attributes\r\n\r\n- Custom attributes for storing extra data\r\n- Do not affect semantics\r\n- Accessible via JavaScript (`element.dataset`)\r\n\r\nExample:\r\n\r\n```html\r\n<button data-user-id=\"42\"></button>\r\n```\r\n\r\nUse `id` for document identity.  \r\nUse `data-*` for storing custom metadata."
+      "description": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.\r\n\r\n### `id`\r\n\r\n- Must be unique within the document\r\n- Used for:\r\n  - Fragment navigation (`#section`)\r\n  - JavaScript DOM selection\r\n  - Label associations (`for` attribute)\r\n- Has semantic meaning in document structure\r\n\r\nExample:\r\n\r\n```html\r\n<section id=\"pricing\"></section>\r\n```\r\n\r\n### `data-*` attributes\r\n\r\n- Custom attributes for storing extra data\r\n- Do not affect semantics\r\n- Accessible via JavaScript (`element.dataset`)\r\n\r\nExample:\r\n\r\n```html\r\n<button data-user-id=\"42\"></button>\r\n```\r\n\r\nUse `id` for document identity.  \r\nUse `data-*` for storing custom metadata."
     },
     {
       "id": "99fdb263",
       "title": "What is the difference between `<section>` and `<div>` from a document outline perspective?",
       "difficulty": "Medium",
       "category": "Semantic & Accessibility",
-      "description": "`<div>` is a generic container with no semantic meaning.\r\n\r\n`<section>` represents a thematic grouping of content and contributes to the document outline.\r\n\r\nKey differences:\r\n\r\n- `<section>` should typically contain a heading\r\n- It signals structure to assistive technologies and search engines\r\n- `<div>` is purely structural with no semantic value\r\n\r\nUse `<section>` when the content represents a logical section of the document.  \r\nUse `<div>` only when no semantic element is appropriate."
+      "description": "`<div>` is a generic container with no semantic meaning.\r\n\r\n`<section>` represents a thematic grouping of content and contributes to the document outline.\r\n\r\nKey differences:\r\n\r\n- `<section>` should typically contain a heading\r\n- It signals structure to assistive technologies and search engines\r\n- `<div>` is purely structural with no semantic value\r\n\r\nUse `<section>` when the content represents a logical section of the document.\r\nUse `<div>` only when no semantic element is appropriate.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- div: pure layout container, no semantic role -->\r\n<div class=\"card-wrapper\">\r\n  <div class=\"card\">...</div>\r\n</div>\r\n\r\n<!-- section: thematic document section, should have a heading -->\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>We offer web development, design, and consulting.</p>\r\n</section>\r\n```"
     },
     {
       "id": "12c81adc",
@@ -130,14 +130,14 @@
       "title": "How does the sandbox attribute work on `<iframe>` and why is it important for security?",
       "difficulty": "Hard",
       "category": "Browser Behavior & Security",
-      "description": "The sandbox attribute restricts what an embedded iframe can do, adding a security layer against malicious content.\r\n\r\nCommon values (space-separated):\r\n\r\n- (empty) → full restrictions (very safe)\r\n- `allow-scripts` → allows JS execution\r\n- `allow-same`-origin → treats iframe as same-origin (dangerous!)\r\n- `allow-popups` → allows new windows\r\n- `allow-forms` → allows form submission\r\n\r\nDefault (sandbox=\"\"): Disables:\r\n\r\n- Navigation\r\n- Scripts\r\n- Forms\r\n- Plugins\r\n- Same-origin policy bypass\r\n\r\nUse case: Embedding third-party content (ads, user-generated HTML, previews).\r\n\r\nExample (safe embed):\r\n\r\nHTML\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nWithout sandbox → potential XSS or clickjacking risk."
+      "description": "The sandbox attribute restricts what an embedded iframe can do, adding a security layer against malicious content.\r\n\r\nCommon values (space-separated):\r\n\r\n- (empty) → full restrictions (very safe)\r\n- `allow-scripts` → allows JS execution\r\n- `allow-same-origin` → treats iframe as same-origin (dangerous!)\r\n- `allow-popups` → allows new windows\r\n- `allow-forms` → allows form submission\r\n\r\nDefault (sandbox=\"\"): Disables:\r\n\r\n- Navigation\r\n- Scripts\r\n- Forms\r\n- Plugins\r\n- Same-origin policy bypass\r\n\r\nUse case: Embedding third-party content (ads, user-generated HTML, previews).\r\n\r\nExample (safe embed):\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nWithout sandbox → potential XSS or clickjacking risk."
     },
     {
       "id": "f1a6810d",
       "title": "What is the difference between `<link>` and `<a>` in HTML?",
       "difficulty": "Medium",
       "category": "Fundamentals",
-      "description": "Both create relationships, but they serve different purposes.\r\n\r\n---\r\n\r\n### `<a>` (Anchor)\r\n\r\n- Creates hyperlinks within page content\r\n- Visible and interactive\r\n- Used for navigation\r\n\r\nExample:\r\n\r\n```html\r\n<a href=\"/about\">About</a>\r\n```\r\n\r\n### `<link>`\r\n\r\n- Defines relationships between the document and external resources\r\n- Placed inside `<head>`\r\n- Not visible to users\r\n\r\nCommon uses:\r\n\r\n- Stylesheets\r\n- Preload / Prefetch\r\n- Icons\r\n\r\nExample:\r\n\r\n```html\r\n<link rel=\"stylesheet\" href=\"styles.css\" />\r\n```\r\n\r\n`<a>` is for user navigation.  \r\n`<link>` is for document-level resource relationships."
+      "description": "Both create relationships, but they serve different purposes.\r\n\r\n### `<a>` (Anchor)\r\n\r\n- Creates hyperlinks within page content\r\n- Visible and interactive\r\n- Used for navigation\r\n\r\nExample:\r\n\r\n```html\r\n<a href=\"/about\">About</a>\r\n```\r\n\r\n### `<link>`\r\n\r\n- Defines relationships between the document and external resources\r\n- Placed inside `<head>`\r\n- Not visible to users\r\n\r\nCommon uses:\r\n\r\n- Stylesheets\r\n- Preload / Prefetch\r\n- Icons\r\n\r\nExample:\r\n\r\n```html\r\n<link rel=\"stylesheet\" href=\"styles.css\" />\r\n```\r\n\r\n`<a>` is for user navigation.  \r\n`<link>` is for document-level resource relationships."
     },
     {
       "id": "be5f57a5",
@@ -180,6 +180,27 @@
       "difficulty": "Hard",
       "category": "Performance",
       "description": "Resource hints (`<link rel=\"...\">`) tell browsers to proactively fetch/resolve resources, reducing latency.\r\n\r\n- **preload**: Fetch critical resources early (e.g., fonts, scripts needed soon). Mandatory as=\"type\" for priority.\r\n- **prefetch**: Fetch resources for next navigation (e.g., next page assets) – low priority, speculative.\r\n- **preconnect**: Establish TCP connection + TLS/SSL handshake early (for third-party domains).\r\n- **dns-prefetch**: Resolve DNS only (cheaper than preconnect, for many domains).\r\n\r\nOrder of cost: dns-prefetch (cheapest) < preconnect < prefetch < preload (highest priority).\r\n\r\nBenefits: Faster TTFB, better FCP/LCP in Core Web Vitals.\r\n\r\nPitfalls: Overuse wastes bandwidth; test with Lighthouse.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nUse preload for above-the-fold; prefetch for navigation flows."
+    },
+    {
+      "id": "256256b7",
+      "title": "Why should you use `rel=\"noopener noreferrer\"` on links with `target=\"_blank\"`?",
+      "difficulty": "Medium",
+      "category": "Browser Behavior & Security",
+      "description": "When a link opens in a new tab using `target=\"_blank\"`, the new page can access the opener via `window.opener`.\r\n\r\nThis creates two risks:\r\n\r\n- **Tabnapping**: The new page can redirect the original tab to a phishing page via `window.opener.location`\r\n- **Referrer leakage**: The `Referer` HTTP header exposes the source URL to the destination site\r\n\r\n`rel=\"noopener\"` — severs the `window.opener` reference, preventing tabnapping\r\n\r\n`rel=\"noreferrer\"` — also prevents the `Referer` header from being sent (implies `noopener`)\r\n\r\nModern browsers apply `noopener` automatically for `target=\"_blank\"`, but explicit declaration is still best practice for clarity and compatibility.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Risky: opens opener access + leaks referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\">Visit</a>\r\n\r\n<!-- Safe: no opener access, no referrer leak -->\r\n<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\"\r\n  >Visit</a\r\n>\r\n```"
+    },
+    {
+      "id": "eafc5af5",
+      "title": "What is the difference between `<canvas>` and `<svg>`?",
+      "difficulty": "Medium",
+      "category": "Browser Behavior",
+      "description": "Both are used for graphics, but they operate differently.\r\n\r\n**`<canvas>`**\r\n\r\n- Raster-based (pixel drawing)\r\n- Rendered via JavaScript (imperative API)\r\n- No DOM nodes for drawn shapes\r\n- Better for real-time rendering, games, image manipulation\r\n- Not accessible by default\r\n\r\n**`<svg>`**\r\n\r\n- Vector-based (mathematical shapes)\r\n- Declarative markup (XML-based)\r\n- Each shape is a DOM node (scriptable and styleable)\r\n- Better for icons, charts, illustrations that need to scale\r\n- Accessible and indexable by search engines\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Canvas: draw imperatively -->\r\n<canvas id=\"c\" width=\"200\" height=\"200\"></canvas>\r\n<script>\r\n  const ctx = document.getElementById('c').getContext('2d');\r\n  ctx.fillStyle = 'blue';\r\n  ctx.fillRect(10, 10, 100, 100);\r\n</script>\r\n\r\n<!-- SVG: declarative vector shapes -->\r\n<svg width=\"200\" height=\"200\">\r\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"blue\" />\r\n</svg>\r\n```\r\n\r\nUse `<canvas>` for dynamic pixel rendering; use `<svg>` for scalable, interactive, or accessible graphics."
+    },
+    {
+      "id": "34419074",
+      "title": "What are Open Graph meta tags and why are they important?",
+      "difficulty": "Medium",
+      "category": "SEO & Meta",
+      "description": "Open Graph (OG) tags are meta tags that control how a page appears when shared on social media platforms like Facebook, Twitter/X, LinkedIn, and WhatsApp.\r\n\r\nThey define properties like title, description, image, and URL for the link preview card.\r\n\r\nWithout OG tags, platforms guess content from the page, often producing poor previews.\r\n\r\nKey OG properties:\r\n\r\n- `og:title` — title shown in the preview\r\n- `og:description` — summary shown in the preview\r\n- `og:image` — thumbnail image URL\r\n- `og:url` — canonical URL of the page\r\n- `og:type` — content type (website, article, video, etc.)\r\n\r\nExample:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"HTML Interview Questions\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"A complete guide to HTML interview preparation.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- Twitter-specific (now X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"HTML Interview Questions\" />\r\n```\r\n\r\nOG tags directly improve click-through rates on social media by providing rich, controlled previews."
     }
   ]
 }
