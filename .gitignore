@@ -2,16 +2,13 @@
 logs
 *.log
 pnpm-debug.log*
-.prettierrc.json
 
 node_modules
 dist
 dist-ssr
-scripts
+# scripts
 *.local
 pnpm-lock.yaml
-
-package.json
 package-lock.json
 
 # Editor directories and files
