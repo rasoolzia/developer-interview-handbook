@@ -1,0 +1,9 @@
+{
+  "allowedDifficulties": {
+    "fa": ["آسان", "متوسط", "سخت"],
+    "en": ["Easy", "Medium", "Hard"]
+  },
+  "requiredFields": ["id", "title", "difficulty", "category"],
+  "strictMode": true,
+  "checkConsistency": true
+}
