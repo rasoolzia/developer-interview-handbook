@@ -702,7 +702,7 @@ Browser support: Good in modern browsers (2024+ full).
 **ID**: css-022  
 **Title**: Explain scroll-snap properties and how to create a full-page carousel with pure CSS.  
 **Difficulty**: Hard  
-**Category**: Layout & UX
+**Category**: Layout
 
 ### Answer 📄
 
@@ -739,7 +739,7 @@ Pitfalls: User can still scroll freely unless combined with overscroll-behavior.
 **ID**: css-023  
 **Title**: What is the aspect-ratio property, and how does it help prevent Cumulative Layout Shift (CLS)?  
 **Difficulty**: Hard  
-**Category**: Performance & Responsive Design
+**Category**: Performance, Responsive Design
 
 ### Answer 📄
 
@@ -809,7 +809,7 @@ Browser support: Excellent in 2025+ (Chrome 105+, Safari 15.4+, Firefox 121+)
 **ID**: css-025  
 **Title**: What is accent-color and how does it interact with form controls in modern browsers?  
 **Difficulty**: Hard  
-**Category**: Fundamentals & Accessibility
+**Category**: Fundamentals, Accessibility
 
 ### Answer 📄
 
@@ -928,7 +928,7 @@ Browser support: Excellent in 2025+ (Chrome 111+, Safari 16.4+, Firefox 113+). F
 **ID**: css-030  
 **Title**: What is `@property` in CSS and how does it enable better custom property animations/transitions?  
 **Difficulty**: Hard  
-**Category**: Performance & Architecture
+**Category**: Performance, Architecture
 
 ### Answer 📄
 
@@ -1181,7 +1181,7 @@ Pseudo-elements are not part of the DOM — they cannot be selected with JavaScr
 **ID**: css-037
 **Title**: What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?
 **Difficulty**: Medium
-**Category**: Responsive Design & Accessibility
+**Category**: Responsive Design, Accessibility
 
 ### Answer 📄
 
