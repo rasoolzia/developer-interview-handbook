@@ -59,10 +59,15 @@ export class MDValidator {
   // ============================================
 
   validateTopic(topicPath: string): TopicComparison | null {
+    console.log(`\n🔍 Scanning: ${topicPath}`);
+
     const files = fs
       .readdirSync(topicPath)
       .filter((file) => file.endsWith('.md'))
       .map((file) => path.join(topicPath, file));
+
+    console.log(`   Found ${files.length} MD files:`);
+    files.forEach((f) => console.log(`      - ${path.basename(f)}`));
 
     if (files.length === 0) {
       console.error(`❌ No MD files found in ${topicPath}`);
@@ -100,17 +105,24 @@ export class MDValidator {
 
   private parseFile(filePath: string): MDDocument | null {
     try {
+      console.log(`\n📖 Parsing: ${path.basename(filePath)}`);
       const content = fs.readFileSync(filePath, 'utf-8');
+      const cleanContent = content.replace(/^\uFEFF/, '');
 
-      // Extract frontmatter
-      const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+      // Frontmatter
+      const frontmatterMatch = cleanContent.match(
+        /^---\r?\n([\s\S]*?)\r?\n---/,
+      );
       if (!frontmatterMatch) {
+        console.log(`   ❌ No frontmatter found`);
         this.addError('FRONTMATTER_MISSING', 'Frontmatter not found', filePath);
         return null;
       }
+      console.log(`   ✅ Frontmatter found`);
 
       const frontmatter = this.parseFrontmatter(frontmatterMatch[1]);
       if (!frontmatter) {
+        console.log(`   ❌ Invalid frontmatter`);
         this.addError(
           'FRONTMATTER_INVALID',
           'Invalid frontmatter format',
@@ -118,10 +130,12 @@ export class MDValidator {
         );
         return null;
       }
+      console.log(`   ✅ Frontmatter valid: ${JSON.stringify(frontmatter)}`);
 
-      // Extract categories
-      const categories = this.extractCategories(content);
+      // Categories
+      const categories = this.extractCategories(cleanContent);
       if (!categories) {
+        console.log(`   ❌ No categories found`);
         this.addError(
           'CATEGORIES_MISSING',
           'Categories section not found',
@@ -129,10 +143,12 @@ export class MDValidator {
         );
         return null;
       }
+      console.log(`   ✅ Categories found: ${categories.length}`);
 
-      // Extract difficulties
-      const difficulties = this.extractDifficulties(content);
+      // Difficulties
+      const difficulties = this.extractDifficulties(cleanContent);
       if (!difficulties) {
+        console.log(`   ❌ No difficulties found`);
         this.addError(
           'DIFFICULTIES_MISSING',
           'Difficulties section not found',
@@ -140,23 +156,28 @@ export class MDValidator {
         );
         return null;
       }
+      console.log(`   ✅ Difficulties found: ${difficulties.length}`);
 
-      // Extract questions
-      const questions = this.extractQuestions(content);
+      // Questions
+      console.log(`   🔍 Extracting questions...`);
+      const questions = this.extractQuestions(cleanContent);
       if (questions.length === 0) {
+        console.log(`   ❌ No questions found`);
         this.addError('QUESTIONS_MISSING', 'No questions found', filePath);
         return null;
       }
+      console.log(`   ✅ Questions found: ${questions.length}`);
 
       return {
         frontmatter,
         categories,
         difficulties,
         questions,
-        rawContent: content,
+        rawContent: cleanContent,
         filePath,
       };
     } catch (error) {
+      console.log(`   ❌ Error: ${error}`);
       this.addError(
         'FILE_READ_ERROR',
         `Error reading file: ${error}`,
@@ -167,7 +188,7 @@ export class MDValidator {
   }
 
   private parseFrontmatter(frontmatterText: string): Frontmatter | null {
-    const lines = frontmatterText.split('\n');
+    const lines = frontmatterText.split(/\r?\n/);
     const result: any = {};
 
     for (const line of lines) {
@@ -190,12 +211,12 @@ export class MDValidator {
 
   private extractCategories(content: string): string[] | null {
     const pattern =
-      /##\s*(?:دسته‌بندی‌ها|Available Categories)\s*\n([\s\S]*?)(?=\n##|$)/;
+      /##\s*(?:دسته‌بندی‌ها|Available Categories)\s*\r?\n([\s\S]*?)(?=\r?\n##|$)/;
     const match = content.match(pattern);
 
     if (!match) return null;
 
-    const lines = match[1].split('\n');
+    const lines = match[1].split(/\r?\n/);
     const categories = lines
       .filter((line) => line.trim().startsWith('- '))
       .map((line) => line.replace('- ', '').trim())
@@ -206,12 +227,12 @@ export class MDValidator {
 
   private extractDifficulties(content: string): string[] | null {
     const pattern =
-      /##\s*(?:سطح سوال‌ها|Difficulty Levels)\s*\n([\s\S]*?)(?=\n##|$)/;
+      /##\s*(?:سطح سوال‌ها|Difficulty Levels)\s*\r?\n([\s\S]*?)(?=\r?\n##|$)/;
     const match = content.match(pattern);
 
     if (!match) return null;
 
-    const lines = match[1].split('\n');
+    const lines = match[1].split(/\r?\n/);
     const difficulties = lines
       .filter((line) => line.trim().startsWith('- '))
       .map((line) => line.replace('- ', '').trim())
@@ -222,38 +243,65 @@ export class MDValidator {
 
   private extractQuestions(content: string): Question[] {
     const questions: Question[] = [];
-    const lines = content.split('\n');
 
-    // find questions
-    const questionRegex = /##\s*🧠\s*(?:سوال|Question)\s*(\d+)/g;
+    const questionRegex = /##\s*(?:🧠\s*)?(?:سوال|Question)\s*([۰-۹0-9]+)/g;
+
+    const matches: { index: number; number: string }[] = [];
     let match;
-    let lastIndex = 0;
-
     while ((match = questionRegex.exec(content)) !== null) {
-      const startIndex = match.index;
-      const number = parseInt(match[1]);
-      const startLine = content.substring(0, startIndex).split('\n').length;
+      matches.push({
+        index: match.index,
+        number: match[1],
+      });
+    }
 
-      // Find the end of the question (start of the next question or end of the file)
-      const nextMatch = questionRegex.exec(content);
-      const endIndex = nextMatch ? nextMatch.index : content.length;
-      const endLine = content.substring(0, endIndex).split('\n').length;
+    if (matches.length === 0) {
+      console.log(`   ❌ No questions found`);
+      return questions;
+    }
+
+    console.log(`   🔍 Found ${matches.length} questions`);
+
+    for (let i = 0; i < matches.length; i++) {
+      const current = matches[i];
+      const next = matches[i + 1];
+
+      const startIndex = current.index;
+      const endIndex = next ? next.index : content.length;
 
       const qContent = content.substring(startIndex, endIndex);
 
-      // Extract fields
+      // تبدیل عدد فارسی به انگلیسی
+      const persianToEnglish: { [key: string]: string } = {
+        '۰': '0',
+        '۱': '1',
+        '۲': '2',
+        '۳': '3',
+        '۴': '4',
+        '۵': '5',
+        '۶': '6',
+        '۷': '7',
+        '۸': '8',
+        '۹': '9',
+      };
+      const numberStr = current.number.replace(
+        /[۰-۹]/g,
+        (d) => persianToEnglish[d] || d,
+      );
+      const number = parseInt(numberStr);
+
       const idMatch =
-        qContent.match(/\*\*آیدی\*\*:\s*(.+?)(?:\n|$)/) ||
-        qContent.match(/\*\*ID\*\*:\s*(.+?)(?:\n|$)/);
+        qContent.match(/\*\*آیدی\*\*:\s*(.+?)(?:\r?\n|$)/) ||
+        qContent.match(/\*\*ID\*\*:\s*(.+?)(?:\r?\n|$)/);
       const titleMatch =
-        qContent.match(/\*\*عنوان\*\*:\s*(.+?)(?:\n|$)/) ||
-        qContent.match(/\*\*Title\*\*:\s*(.+?)(?:\n|$)/);
+        qContent.match(/\*\*عنوان\*\*:\s*(.+?)(?:\r?\n|$)/) ||
+        qContent.match(/\*\*Title\*\*:\s*(.+?)(?:\r?\n|$)/);
       const diffMatch =
-        qContent.match(/\*\*سطح دشواری\*\*:\s*(.+?)(?:\n|$)/) ||
-        qContent.match(/\*\*Difficulty\*\*:\s*(.+?)(?:\n|$)/);
+        qContent.match(/\*\*سطح دشواری\*\*:\s*(.+?)(?:\r?\n|$)/) ||
+        qContent.match(/\*\*Difficulty\*\*:\s*(.+?)(?:\r?\n|$)/);
       const catMatch =
-        qContent.match(/\*\*دسته‌بندی\*\*:\s*(.+?)(?:\n|$)/) ||
-        qContent.match(/\*\*Category\*\*:\s*(.+?)(?:\n|$)/);
+        qContent.match(/\*\*دسته‌بندی\*\*:\s*(.+?)(?:\r?\n|$)/) ||
+        qContent.match(/\*\*Category\*\*:\s*(.+?)(?:\r?\n|$)/);
 
       if (idMatch && titleMatch && diffMatch && catMatch) {
         questions.push({
@@ -263,17 +311,15 @@ export class MDValidator {
           category: catMatch[1].trim(),
           content: qContent.trim(),
           number,
-          lineStart: startLine,
-          lineEnd: endLine,
+          lineStart: content.substring(0, startIndex).split(/\r?\n/).length,
+          lineEnd: content.substring(0, endIndex).split(/\r?\n/).length,
         });
-      }
-
-      // Revert index to previous state to find next question
-      if (nextMatch) {
-        questionRegex.lastIndex = nextMatch.index;
+      } else {
+        console.log(`   ⚠️ Question ${number} missing required fields`);
       }
     }
 
+    console.log(`   ✅ Extracted ${questions.length} questions`);
     return questions;
   }
 

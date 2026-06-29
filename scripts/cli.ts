@@ -22,9 +22,8 @@ Options:
   --config, -c     Path to config file
 
 Examples:
-  node dist/cli.js file ./content/css/css.fa.md
-  node dist/cli.js topic ./content/css
-  node dist/cli.js topic ./content/css --config ./config/custom.json
+  node dist/cli.js file content/frontend/css/css.fa.md
+  node dist/cli.js topic content/frontend/css
   `);
 }
 
