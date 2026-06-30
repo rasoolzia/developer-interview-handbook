@@ -359,8 +359,16 @@ export class MDValidator {
   }
 
   private validateCategories(doc: MDDocument) {
-    const categoriesUsed = doc.questions.map((q) => q.category);
-    const uniqueCategoriesUsed = [...new Set(categoriesUsed)];
+    const allUsedCategories: string[] = [];
+    for (const question of doc.questions) {
+      const categories = question.category
+        .split(',')
+        .map((cat) => cat.trim())
+        .filter((cat) => cat.length > 0);
+      allUsedCategories.push(...categories);
+    }
+
+    const uniqueCategoriesUsed = [...new Set(allUsedCategories)];
 
     // Check if all categories in the list are used
     for (const category of doc.categories) {
@@ -455,6 +463,23 @@ export class MDValidator {
           `Question ${question.number} is missing field: ${field}`,
           doc.filePath,
           question.id,
+        );
+      }
+    }
+
+    const categories = question.category
+      .split(',')
+      .map((cat) => cat.trim())
+      .filter((cat) => cat.length > 0);
+
+    for (const category of categories) {
+      if (!doc.categories.includes(category)) {
+        this.addError(
+          'CATEGORY_NOT_DEFINED',
+          `Category "${category}" in question ${question.number} is not defined in the category list`,
+          doc.filePath,
+          question.id,
+          `Add "${category}" to the categories list or use an existing category`,
         );
       }
     }
