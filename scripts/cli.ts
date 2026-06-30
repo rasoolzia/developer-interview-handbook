@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import fs from 'fs';
 import path from 'path';
 import { MDValidator } from './core/validator.js';
@@ -27,6 +25,14 @@ Examples:
   `);
 }
 
+function getArgValue(flags: string[]): string | undefined {
+  for (const flag of flags) {
+    const idx = args.indexOf(flag);
+    if (idx !== -1) return args[idx + 1];
+  }
+  return undefined;
+}
+
 function main() {
   if (args.includes('--help') || args.includes('-h') || args.length === 0) {
     showHelp();
@@ -35,10 +41,7 @@ function main() {
 
   const command = args[0];
   const pathArg = args[1];
-  const configArg =
-    args.includes('--config') || args.includes('-c')
-      ? args[args.indexOf('--config') + 1] || args[args.indexOf('-c') + 1]
-      : undefined;
+  const configArg = getArgValue(['--config', '-c']);
 
   if (!pathArg) {
     console.error('❌ Path is required');
@@ -46,7 +49,7 @@ function main() {
     process.exit(1);
   }
 
-  const fullPath = path.resolve(process.cwd(), pathArg);
+  const fullPath = path.resolve(process.cwd(), 'content', pathArg);
 
   if (!fs.existsSync(fullPath)) {
     console.error(`❌ Path does not exist: ${fullPath}`);
