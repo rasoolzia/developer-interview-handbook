@@ -3,6 +3,8 @@ import path from 'path';
 import { MDValidator } from './core/validator.js';
 
 const args = process.argv.slice(2);
+const isVerbose = args.includes('--verbose') || args.includes('-v');
+const isQuiet = args.includes('--quiet') || args.includes('-q');
 
 function showHelp() {
   console.log(`
@@ -56,7 +58,10 @@ function main() {
     process.exit(1);
   }
 
-  const validator = new MDValidator(configArg);
+  const validator = new MDValidator(configArg, {
+    quiet: isQuiet,
+    verbose: isVerbose,
+  });
 
   let result;
 
