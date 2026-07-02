@@ -14,6 +14,7 @@ version: 1.4
 - SEO & Meta
 - Browser Behavior
 - Performance
+- Security
 
 ## Difficulty Levels
 
@@ -542,10 +543,10 @@ Example:
 
 ## 🧠 Question 17
 
-**ID**: html-017
+**ID**: html-017  
 **Title**: How do HTML templates (`<template>`) and Shadow DOM work together in Web Components, and what problems do they solve?  
 **Difficulty**: Hard  
-**Category**: Browser Behavior & Modern HTML
+**Category**: Browser Behavior
 
 ### Answer 📄
 
@@ -597,7 +598,7 @@ Benefits: Framework-agnostic, performant, future-proof components.
 **ID**: html-018  
 **Title**: How does the sandbox attribute work on `<iframe>` and why is it important for security?  
 **Difficulty**: Hard  
-**Category**: Browser Behavior & Security
+**Category**: Browser Behavior, Security
 
 ### Answer 📄
 
@@ -942,10 +943,10 @@ Use preload for above-the-fold; prefetch for navigation flows.
 
 ## 🧠 Question 26
 
-**ID**: html-026
-**Title**: Why should you use `rel="noopener noreferrer"` on links with `target="_blank"`?
-**Difficulty**: Medium
-**Category**: Browser Behavior & Security
+**ID**: html-026  
+**Title**: Why should you use `rel="noopener noreferrer"` on links with `target="_blank"`?  
+**Difficulty**: Medium  
+**Category**: Browser Behavior, Security
 
 ### Answer 📄
 
@@ -976,9 +977,9 @@ Example:
 
 ## 🧠 Question 27
 
-**ID**: html-027
-**Title**: What is the difference between `<canvas>` and `<svg>`?
-**Difficulty**: Medium
+**ID**: html-027  
+**Title**: What is the difference between `<canvas>` and `<svg>`?  
+**Difficulty**: Medium  
 **Category**: Browser Behavior
 
 ### Answer 📄
@@ -1022,9 +1023,9 @@ Use `<canvas>` for dynamic pixel rendering; use `<svg>` for scalable, interactiv
 
 ## 🧠 Question 28
 
-**ID**: html-028
-**Title**: What are Open Graph meta tags and why are they important?
-**Difficulty**: Medium
+**ID**: html-028  
+**Title**: What are Open Graph meta tags and why are they important?  
+**Difficulty**: Medium  
 **Category**: SEO & Meta
 
 ### Answer 📄
