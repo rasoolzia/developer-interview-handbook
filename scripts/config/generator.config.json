@@ -1,0 +1,8 @@
+{
+  "supportedLanguages": ["en", "fa"],
+  "validation": {
+    "requireDifficulty": false,
+    "requireCategory": false,
+    "requireAnswer": false
+  }
+}

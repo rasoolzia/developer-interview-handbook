@@ -10,12 +10,15 @@
     "validate:file": "pnpm build && node dist/cli.js file",
     "validate:topic": "pnpm build && node dist/cli.js topic",
     "validate": "pnpm build && node dist/cli.js",
+    "generate": "pnpm build && node dist/cli.js generate",
+    "generate:strict": "pnpm build && node dist/cli.js generate --strict",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "interview",
     "questions",
-    "validator"
+    "validator",
+    "generator"
   ],
   "author": "RasoolZia",
   "license": "ISC",
