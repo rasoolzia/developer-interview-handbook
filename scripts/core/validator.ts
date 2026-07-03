@@ -580,18 +580,19 @@ export class MDValidator {
     const contentLines = doc.rawContent.split(/\r?\n/);
 
     for (const question of doc.questions) {
-      const lineStart = question.lineStart || 0;
-      const lineEnd = question.lineEnd || contentLines.length;
+      const lineIndex = (question.lineStart || 1) - 1;
 
-      // Check if there's a blank line before each question
-      if (lineStart > 0 && contentLines[lineStart - 1]?.trim() !== '') {
-        this.addWarning(
-          'STRUCTURE_FORMAT',
-          `No blank line before question ${question.number}`,
-          doc.filePath,
-          question.id,
-          'Add a blank line before each question',
-        );
+      if (lineIndex > 0) {
+        const prevLine = contentLines[lineIndex - 1]?.trim() || '';
+        if (prevLine !== '') {
+          this.addWarning(
+            'STRUCTURE_FORMAT',
+            `No blank line before question ${question.number}`,
+            doc.filePath,
+            question.id,
+            'Add a blank line before each question',
+          );
+        }
       }
 
       // Check if question has an answer
@@ -835,9 +836,11 @@ export class MDValidator {
       }
     }
 
-    this.log(
-      `\n   Summary: ${errors.length} errors, ${warnings.length} warnings`,
-    );
+    if (errors.length > 0 || warnings.length > 0) {
+      this.log(
+        `\n   Summary:${errors.length > 0 ? ` ${errors.length} errors` : ''}${warnings.length > 0 ? ` ${warnings.length} warnings` : ''}`,
+      );
+    }
     this.log('-'.repeat(60));
   }
 
