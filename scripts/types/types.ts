@@ -70,3 +70,53 @@ export interface ValidatorConfig {
   strictMode: boolean;
   checkConsistency: boolean;
 }
+
+// ============================================
+// Generator types
+// ============================================
+
+export interface GeneratorConfig {
+  supportedLanguages: string[];
+  validation?: {
+    requireDifficulty?: boolean;
+    requireCategory?: boolean;
+    requireAnswer?: boolean;
+  };
+}
+
+export interface GeneratedQuestion {
+  id: string;
+  slug: string;
+  title: string;
+  difficulty: string;
+  categories: string[];
+  domain: string;
+  topic: string;
+  language: string;
+  answer: {
+    markdown: string;
+    readingTime: number;
+  };
+  tags?: string[];
+}
+
+export interface GeneratedTopic {
+  version: number;
+  meta: {
+    domain: string;
+    topic: string;
+    language: string;
+    label: string;
+  };
+  hash: string;
+  stats: {
+    total: number;
+    byDifficulty: {
+      easy: number;
+      medium: number;
+      hard: number;
+    };
+    categories: string[];
+  };
+  questions: GeneratedQuestion[];
+}
