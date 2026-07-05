@@ -30,15 +30,7 @@ export class MDValidator {
     if (fs.existsSync(configFile)) {
       this.config = JSON.parse(fs.readFileSync(configFile, 'utf-8'));
     } else {
-      this.config = {
-        allowedDifficulties: {
-          fa: ['آسان', 'متوسط', 'سخت'],
-          en: ['Easy', 'Medium', 'Hard'],
-        },
-        requiredFields: ['id', 'title', 'difficulty', 'category'],
-        strictMode: true,
-        checkConsistency: true,
-      };
+      throw new Error(`Config file not found: ${configFile}`);
     }
 
     if (options) {
