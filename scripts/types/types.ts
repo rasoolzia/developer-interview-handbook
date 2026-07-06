@@ -78,9 +78,7 @@ export interface ValidatorConfig {
 export interface GeneratorConfig {
   supportedLanguages: string[];
   validation?: {
-    requireDifficulty?: boolean;
-    requireCategory?: boolean;
-    requireAnswer?: boolean;
+    validateBeforeGenerate?: boolean;
   };
 }
 
@@ -119,4 +117,38 @@ export interface GeneratedTopic {
     categories: string[];
   };
   questions: GeneratedQuestion[];
+}
+
+export interface GeneratedSearchItem {
+  id: string;
+  slug: string;
+  title: string;
+  domain: string;
+  topic: string;
+  label: string;
+  language: string;
+  path: string;
+  difficulty: string;
+  categories: string[];
+  readingTime: number;
+  tags?: string[];
+}
+
+export interface Accumulator {
+  languages: Set<string>;
+  domains: Record<
+    string,
+    {
+      topics: Record<
+        string,
+        {
+          languages: Record<
+            string,
+            { path: string; total: number; hash: string }
+          >;
+        }
+      >;
+    }
+  >;
+  searchIndex: GeneratedSearchItem[];
 }
