@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import * as MarkdownParser from '../parsers/MarkdownParser.js';
 import {
   Frontmatter,
   MDDocument,
@@ -52,8 +53,7 @@ export class MDValidator {
       return null;
     }
 
-    const result = this.validateDocument(doc);
-    return result;
+    return this.validateDocument(doc);
   }
 
   // ============================================
@@ -76,7 +76,6 @@ export class MDValidator {
       return null;
     }
 
-    // Validate each file
     const results: ValidationResult[] = [];
     for (const file of files) {
       const result = this.validateFile(file);
@@ -85,11 +84,8 @@ export class MDValidator {
       }
     }
 
-    // Extract topic name from path
     const topic = path.basename(topicPath);
     const languages = results.map((r) => r.language || 'unknown');
-
-    // Check consistency between files
     const consistency = this.checkConsistency(results);
 
     return {
@@ -102,27 +98,25 @@ export class MDValidator {
   }
 
   // ============================================
-  // helpers
+  // parsing (delegates to MarkdownParser for shared logic)
   // ============================================
 
   private parseFile(filePath: string): MDDocument | null {
     try {
       this.log(`\n📖 Parsing: ${path.basename(filePath)}`);
-      const content = fs.readFileSync(filePath, 'utf-8');
-      const cleanContent = content.replace(/^\uFEFF/, '');
+      const raw = fs.readFileSync(filePath, 'utf-8');
+      const cleanContent = MarkdownParser.stripBOM(raw);
 
-      // Frontmatter
-      const frontmatterMatch = cleanContent.match(
-        /^---\r?\n([\s\S]*?)\r?\n---/,
-      );
-      if (!frontmatterMatch) {
+      const frontmatterBlock =
+        MarkdownParser.extractFrontmatterBlock(cleanContent);
+      if (!frontmatterBlock) {
         this.log(`   ❌ No frontmatter found`);
         this.addError('FRONTMATTER_MISSING', 'Frontmatter not found', filePath);
         return null;
       }
       this.log(`   ✅ Frontmatter found`);
 
-      const frontmatter = this.parseFrontmatter(frontmatterMatch[1]);
+      const frontmatter = this.parseFrontmatter(frontmatterBlock);
       if (!frontmatter) {
         this.log(`   ❌ Invalid frontmatter`);
         this.addError(
@@ -134,8 +128,9 @@ export class MDValidator {
       }
       this.log(`   ✅ Frontmatter valid: ${JSON.stringify(frontmatter)}`);
 
-      // Categories
-      const categories = this.extractCategories(cleanContent);
+      const content = MarkdownParser.stripFrontmatter(cleanContent);
+
+      const categories = MarkdownParser.extractCategories(content);
       if (!categories) {
         this.log(`   ❌ No categories found`);
         this.addError(
@@ -147,8 +142,7 @@ export class MDValidator {
       }
       this.log(`   ✅ Categories found: ${categories.length}`);
 
-      // Difficulties
-      const difficulties = this.extractDifficulties(cleanContent);
+      const difficulties = MarkdownParser.extractDifficulties(content);
       if (!difficulties) {
         this.log(`   ❌ No difficulties found`);
         this.addError(
@@ -160,9 +154,10 @@ export class MDValidator {
       }
       this.log(`   ✅ Difficulties found: ${difficulties.length}`);
 
-      // Questions
       this.log(`   🔍 Extracting questions...`);
-      const questions = this.extractQuestions(cleanContent);
+      const sections = MarkdownParser.extractQuestionSections(content);
+      this.log(`   🔍 Found ${sections.length} question headings`);
+      const questions = this.buildQuestions(sections);
       if (questions.length === 0) {
         this.log(`   ❌ No questions found`);
         this.addError('QUESTIONS_MISSING', 'No questions found', filePath);
@@ -175,7 +170,7 @@ export class MDValidator {
         categories,
         difficulties,
         questions,
-        rawContent: cleanContent,
+        rawContent: content,
         filePath,
       };
     } catch (error) {
@@ -190,189 +185,50 @@ export class MDValidator {
   }
 
   private parseFrontmatter(frontmatterText: string): Frontmatter | null {
-    const lines = frontmatterText.split(/\r?\n/);
-    const result: any = {};
-
-    for (const line of lines) {
-      const match = line.match(/^(\w+):\s*(.+)/);
-      if (match) {
-        result[match[1]] = match[2].trim();
-      }
-    }
+    const result = MarkdownParser.parseFrontmatterFields(frontmatterText);
 
     if (!result.topic || !result.language || !result.version) {
       return null;
     }
-
     if (!['fa', 'en'].includes(result.language)) {
       return null;
     }
-
-    return result as Frontmatter;
+    return result as unknown as Frontmatter;
   }
 
-  private extractCategories(content: string): string[] | null {
-    const pattern =
-      /##\s*(?:دسته‌بندی‌ها|Available Categories)\s*\r?\n([\s\S]*?)(?=\r?\n##|$)/;
-    const match = content.match(pattern);
-
-    if (!match) return null;
-
-    const lines = match[1].split(/\r?\n/);
-    const categories = lines
-      .filter((line) => line.trim().startsWith('- '))
-      .map((line) => line.replace('- ', '').trim())
-      .filter((cat) => cat.length > 0);
-
-    return categories.length > 0 ? categories : null;
+  private buildQuestions(
+    sections: MarkdownParser.ParsedQuestionSection[],
+  ): Question[] {
+    return sections.map((section) => ({
+      id: MarkdownParser.getField(section.fields, 'id') || '',
+      title: MarkdownParser.getField(section.fields, 'title') || '',
+      difficulty: MarkdownParser.getField(section.fields, 'difficulty') || '',
+      category: MarkdownParser.getField(section.fields, 'category') || '',
+      content: section.content.trim(),
+      number: section.headingNumber,
+      lineStart: section.lineStart,
+      lineEnd: section.lineEnd,
+    }));
   }
 
-  private extractDifficulties(content: string): string[] | null {
-    const pattern =
-      /##\s*(?:سطح سوال‌ها|Difficulty Levels)\s*\r?\n([\s\S]*?)(?=\r?\n##|$)/;
-    const match = content.match(pattern);
-
-    if (!match) return null;
-
-    const lines = match[1].split(/\r?\n/);
-    const difficulties = lines
-      .filter((line) => line.trim().startsWith('- '))
-      .map((line) => line.replace('- ', '').trim())
-      .filter((diff) => diff.length > 0);
-
-    return difficulties.length > 0 ? difficulties : null;
-  }
-
-  private extractField(content: string, fieldMap: Record<string, string[]>) {
-    for (const [key, variants] of Object.entries(fieldMap)) {
-      for (const variant of variants) {
-        const regex = new RegExp(
-          `\\*\\*${variant}\\*\\*:\\s*(.+?)(?:\\r?\\n|$)`,
-        );
-        const match = content.match(regex);
-        if (match) {
-          return { key, value: match[1].trim() };
-        }
-      }
-    }
-    return null;
-  }
-
-  private extractQuestions(content: string): Question[] {
-    const questions: Question[] = [];
-
-    const questionRegex = /##\s*(?:🧠\s*)?(?:سوال|Question)\s*([۰-۹0-9]+)/g;
-
-    const matches: { index: number; number: string }[] = [];
-    let match;
-    while ((match = questionRegex.exec(content)) !== null) {
-      matches.push({
-        index: match.index,
-        number: match[1],
-      });
-    }
-
-    if (matches.length === 0) {
-      this.log(`   ❌ No questions found`);
-      return questions;
-    }
-
-    this.log(`   🔍 Found ${matches.length} questions`);
-
-    for (let i = 0; i < matches.length; i++) {
-      const current = matches[i];
-      const next = matches[i + 1];
-
-      const startIndex = current.index;
-      const endIndex = next ? next.index : content.length;
-
-      const qContent = content.substring(startIndex, endIndex);
-
-      // تبدیل عدد فارسی به انگلیسی
-      const persianToEnglish: { [key: string]: string } = {
-        '۰': '0',
-        '۱': '1',
-        '۲': '2',
-        '۳': '3',
-        '۴': '4',
-        '۵': '5',
-        '۶': '6',
-        '۷': '7',
-        '۸': '8',
-        '۹': '9',
-      };
-      const numberStr = current.number.replace(
-        /[۰-۹]/g,
-        (d) => persianToEnglish[d] || d,
-      );
-      const number = parseInt(numberStr);
-
-      const idResult = this.extractField(qContent, {
-        id: ['آیدی', 'ID'],
-      });
-      const titleResult = this.extractField(qContent, {
-        title: ['عنوان', 'Title'],
-      });
-      const diffResult = this.extractField(qContent, {
-        difficulty: ['سطح دشواری', 'Difficulty'],
-      });
-      const catResult = this.extractField(qContent, {
-        category: ['دسته‌بندی', 'Category'],
-      });
-
-      if (idResult && titleResult && diffResult && catResult) {
-        questions.push({
-          id: idResult.value,
-          title: titleResult.value,
-          difficulty: diffResult.value,
-          category: catResult.value,
-          content: qContent.trim(),
-          number,
-          lineStart: content.substring(0, startIndex).split(/\r?\n/).length,
-          lineEnd: content.substring(0, endIndex).split(/\r?\n/).length,
-        });
-      } else {
-        this.log(`   ⚠️ Question ${number} missing required fields`);
-      }
-    }
-
-    this.log(`   ✅ Extracted ${questions.length} questions`);
-    return questions;
-  }
+  // ============================================
+  // document validation
+  // ============================================
 
   private validateDocument(doc: MDDocument): ValidationResult {
     const language = doc.frontmatter.language;
 
-    // 1. Check categories
     this.validateCategories(doc);
-
-    // 2. Check difficulties
     this.validateDifficulties(doc, language);
-
-    // 3. Check each question
     for (const question of doc.questions) {
       this.validateQuestion(question, doc, language);
     }
-
-    // 4. Check question numbers
     this.validateQuestionNumbers(doc);
-
-    // 5. Check duplicate IDs
     this.validateDuplicateIds(doc);
-
-    // 6. Check structure (Farsi vs English)
     this.validateStructure(doc);
-
-    // 7. Check for unbalanced code
     this.validateCodeBlocks(doc);
-
-    // 8. Check short answers or placeholders
     this.validateAnswerContent(doc);
-
-    // 9. Check for duplicate titles
     this.validateDuplicateTitles(doc);
-
-    // 10. Check sequential IDs
     this.validateIdSequential(doc);
 
     return {
@@ -390,16 +246,15 @@ export class MDValidator {
   private validateCategories(doc: MDDocument) {
     const allUsedCategories: string[] = [];
     for (const question of doc.questions) {
-      const categories = question.category
-        .split(',')
-        .map((cat) => cat.trim())
-        .filter((cat) => cat.length > 0);
-      allUsedCategories.push(...categories);
+      allUsedCategories.push(
+        ...question.category
+          .split(',')
+          .map((c) => c.trim())
+          .filter(Boolean),
+      );
     }
-
     const uniqueCategoriesUsed = [...new Set(allUsedCategories)];
 
-    // Check if all categories in the list are used
     for (const category of doc.categories) {
       if (!uniqueCategoriesUsed.includes(category)) {
         this.addWarning(
@@ -411,8 +266,6 @@ export class MDValidator {
         );
       }
     }
-
-    // Check if all used categories are in the list
     for (const category of uniqueCategoriesUsed) {
       if (!doc.categories.includes(category)) {
         this.addError(
@@ -429,10 +282,10 @@ export class MDValidator {
   private validateDifficulties(doc: MDDocument, language: string) {
     const allowedDifficulties =
       this.config.allowedDifficulties[language as 'fa' | 'en'] || [];
-    const difficultiesUsed = doc.questions.map((q) => q.difficulty);
-    const uniqueDifficultiesUsed = [...new Set(difficultiesUsed)];
+    const uniqueDifficultiesUsed = [
+      ...new Set(doc.questions.map((q) => q.difficulty)),
+    ];
 
-    // Check if all defined difficulties are used
     for (const difficulty of doc.difficulties) {
       if (!uniqueDifficultiesUsed.includes(difficulty)) {
         this.addWarning(
@@ -442,8 +295,6 @@ export class MDValidator {
         );
       }
     }
-
-    // Check if all used difficulties are valid
     for (const difficulty of uniqueDifficultiesUsed) {
       if (!doc.difficulties.includes(difficulty)) {
         this.addError(
@@ -455,8 +306,6 @@ export class MDValidator {
         );
       }
     }
-
-    // Check if difficulty is in allowed list for this language
     for (const difficulty of uniqueDifficultiesUsed) {
       if (!allowedDifficulties.includes(difficulty)) {
         this.addError(
@@ -478,7 +327,6 @@ export class MDValidator {
     const allowedDifficulties =
       this.config.allowedDifficulties[language as 'fa' | 'en'] || [];
 
-    // Check required fields
     for (const field of this.config.requiredFields) {
       const fieldMap: { [key: string]: string } = {
         id: question.id,
@@ -498,9 +346,8 @@ export class MDValidator {
 
     const categories = question.category
       .split(',')
-      .map((cat) => cat.trim())
-      .filter((cat) => cat.length > 0);
-
+      .map((c) => c.trim())
+      .filter(Boolean);
     for (const category of categories) {
       if (!doc.categories.includes(category)) {
         this.addError(
@@ -513,8 +360,12 @@ export class MDValidator {
       }
     }
 
-    // Check difficulty is allowed
-    if (!allowedDifficulties.includes(question.difficulty)) {
+    // Only flag an invalid value if a value was actually provided —
+    // an empty difficulty is already reported by FIELD_MISSING above.
+    if (
+      question.difficulty &&
+      !allowedDifficulties.includes(question.difficulty)
+    ) {
       this.addError(
         'DIFFICULTY_INVALID',
         `Question "${question.id}" has invalid difficulty: "${question.difficulty}"`,
@@ -524,9 +375,8 @@ export class MDValidator {
       );
     }
 
-    // Check ID format
     const expectedPrefix = doc.frontmatter.topic;
-    if (!question.id.startsWith(expectedPrefix)) {
+    if (question.id && !question.id.startsWith(expectedPrefix)) {
       this.addWarning(
         'ID_FORMAT_INVALID',
         `Question ID "${question.id}" should start with "${expectedPrefix}"`,
@@ -568,7 +418,6 @@ export class MDValidator {
   }
 
   private validateStructure(doc: MDDocument) {
-    // Check if question sections are properly formatted
     const contentLines = doc.rawContent.split(/\r?\n/);
 
     for (const question of doc.questions) {
@@ -587,9 +436,7 @@ export class MDValidator {
         }
       }
 
-      // Check if question has an answer
-      const answerPattern = /###\s*(?:پاسخ|Answer)/;
-      if (!question.content.match(answerPattern)) {
+      if (!MarkdownParser.hasAnswer(question.content)) {
         this.addError(
           'ANSWER_MISSING',
           `Question "${question.id}" has no answer section`,
@@ -618,38 +465,33 @@ export class MDValidator {
 
   private validateAnswerContent(doc: MDDocument) {
     for (const question of doc.questions) {
-      const answerMatch = question.content.match(
-        /###\s*(?:پاسخ|Answer)\s*([\s\S]*?)(?=\n###|$)/,
-      );
-      if (answerMatch) {
-        const answerContent = answerMatch[1].trim();
-        if (answerContent.length < 10) {
-          this.addWarning(
-            'ANSWER_TOO_SHORT',
-            `Question "${question.id}" has a very short answer (${answerContent.length} chars)`,
-            doc.filePath,
-            question.id,
-            'Consider expanding the answer',
-          );
-        }
-        if (answerContent.match(/TODO|FIXME|TBD|XXX/i)) {
-          this.addWarning(
-            'ANSWER_PLACEHOLDER',
-            `Question "${question.id}" contains placeholder text (TODO/FIXME/TBD)`,
-            doc.filePath,
-            question.id,
-            'Replace placeholder with actual content',
-          );
-        }
+      const answerContent = MarkdownParser.extractAnswer(question.content);
+      if (answerContent === null) continue;
+
+      if (answerContent.length < 10) {
+        this.addWarning(
+          'ANSWER_TOO_SHORT',
+          `Question "${question.id}" has a very short answer (${answerContent.length} chars)`,
+          doc.filePath,
+          question.id,
+          'Consider expanding the answer',
+        );
+      }
+      if (answerContent.match(/TODO|FIXME|TBD|XXX/i)) {
+        this.addWarning(
+          'ANSWER_PLACEHOLDER',
+          `Question "${question.id}" contains placeholder text (TODO/FIXME/TBD)`,
+          doc.filePath,
+          question.id,
+          'Replace placeholder with actual content',
+        );
       }
     }
   }
 
   private validateDuplicateTitles(doc: MDDocument) {
     const titles = doc.questions.map((q) => q.title);
-    const duplicateTitles = titles.filter(
-      (title, index) => titles.indexOf(title) !== index,
-    );
+    const duplicateTitles = titles.filter((t, i) => titles.indexOf(t) !== i);
     if (duplicateTitles.length > 0) {
       this.addWarning(
         'DUPLICATE_TITLES',
@@ -670,7 +512,7 @@ export class MDValidator {
         const match = id.match(new RegExp(`${topic}-(\\d+)`));
         return match ? parseInt(match[1]) : null;
       })
-      .filter((n) => n !== null);
+      .filter((n): n is number => n !== null);
 
     if (numbers.length > 0) {
       const sorted = [...numbers].sort((a, b) => a - b);
@@ -715,15 +557,11 @@ export class MDValidator {
       (r) => r.difficultiesCount === first.difficultiesCount,
     );
 
-    const allSameLanguage = results.every((r) => r.language === first.language);
-
-    let categoriesMatch = true;
-    let difficultiesMatch = true;
-
-    if (allSameLanguage && results.length > 1) {
-      // اینجا باید دسته‌بندی‌های واقعی رو از فایل بخونیم
-      // فعلاً همینجا میمونیم
-    }
+    // NOTE: still a stub — count-only, doesn't compare actual category/
+    // difficulty content across languages. Flagged in earlier review, not
+    // touched in this refactor.
+    const categoriesMatch = true;
+    const difficultiesMatch = true;
 
     return {
       questionsCount: allQuestionsCount,
@@ -737,7 +575,7 @@ export class MDValidator {
   }
 
   // ============================================
-  // Error handling methods
+  // logging / error handling
   // ============================================
 
   private log(message: string, level: 'info' | 'debug' = 'info') {
@@ -781,15 +619,13 @@ export class MDValidator {
   }
 
   // ============================================
-  // Print report
+  // print report
   // ============================================
 
   printResult(result: ValidationResult | TopicComparison) {
     if ('files' in result) {
-      // Topic comparison
       this.printTopicComparison(result);
     } else {
-      // Single file
       this.printFileResult(result);
     }
   }
@@ -809,25 +645,18 @@ export class MDValidator {
       this.log(`\n   ❌ Errors (${errors.length}):`);
       for (const error of errors) {
         this.log(`      - ${error.message}`);
-        if (error.suggestion) {
-          this.log(`        💡 ${error.suggestion}`);
-        }
-        if (error.questionId) {
+        if (error.suggestion) this.log(`        💡 ${error.suggestion}`);
+        if (error.questionId)
           this.log(`        📌 Question: ${error.questionId}`);
-        }
       }
     }
-
     if (warnings.length > 0) {
       this.log(`\n   ⚠️ Warnings (${warnings.length}):`);
       for (const warning of warnings) {
         this.log(`      - ${warning.message}`);
-        if (warning.suggestion) {
-          this.log(`        💡 ${warning.suggestion}`);
-        }
+        if (warning.suggestion) this.log(`        💡 ${warning.suggestion}`);
       }
     }
-
     if (errors.length > 0 || warnings.length > 0) {
       this.log(
         `\n   Summary:${errors.length > 0 ? ` ${errors.length} errors` : ''}${warnings.length > 0 ? ` ${warnings.length} warnings` : ''}`,
@@ -845,22 +674,16 @@ export class MDValidator {
     if (!comparison.isConsistent) {
       this.log('\n   🔍 Differences found:');
       const diffs = comparison.differences;
-
-      if (!diffs.questionsCount) {
+      if (!diffs.questionsCount)
         this.log('      - Different number of questions between languages');
-      }
-      if (!diffs.categoriesCount) {
+      if (!diffs.categoriesCount)
         this.log('      - Different number of categories between languages');
-      }
-      if (!diffs.difficultiesCount) {
+      if (!diffs.difficultiesCount)
         this.log('      - Different number of difficulties between languages');
-      }
-      if (!diffs.categoriesMatch) {
+      if (!diffs.categoriesMatch)
         this.log('      - Categories do not match between languages');
-      }
-      if (!diffs.difficultiesMatch) {
+      if (!diffs.difficultiesMatch)
         this.log('      - Difficulties do not match between languages');
-      }
     }
 
     this.log('\n   📄 Individual file results:');
@@ -870,7 +693,6 @@ export class MDValidator {
         `      ${icon} ${file.filePath} (${file.questionsCount} questions)`,
       );
     }
-
     this.log('-'.repeat(60));
   }
 }

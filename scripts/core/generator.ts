@@ -1,42 +1,21 @@
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
-import { GeneratedQuestion, GeneratorConfig } from '../types/types.js';
-
-// ─── Types ──────────────────────────────────────────────────────────────────
-
-type Accumulator = {
-  languages: Set<string>;
-  domains: Record<
-    string,
-    {
-      topics: Record<
-        string,
-        {
-          languages: Record<
-            string,
-            {
-              path: string;
-              total: number;
-              hash: string;
-            }
-          >;
-        }
-      >;
-    }
-  >;
-  searchIndex: any[];
-};
-
-// ─── Main Class ────────────────────────────────────────────────────────────
+import * as MarkdownParser from '../parsers/MarkdownParser.js';
+import {
+  Accumulator,
+  GeneratedQuestion,
+  GeneratedSearchItem,
+  GeneratedTopic,
+  GeneratorConfig,
+} from '../types/types.js';
+import { MDValidator } from './validator.js';
 
 export class MDGenerator {
   private config: GeneratorConfig;
   private errors: string[] = [];
   private warnings: string[] = [];
   private strictMode: boolean;
-
-  // ─── Constructor ──────────────────────────────────────────────────────────
 
   constructor(configPath?: string, strictMode: boolean = false) {
     this.strictMode = strictMode;
@@ -71,7 +50,10 @@ export class MDGenerator {
       process.exit(1);
     }
 
-    // Clean output
+    if (this.config.validation?.validateBeforeGenerate) {
+      this.runPreGenerationValidation(CONTENT_DIR);
+    }
+
     fs.rmSync(OUTPUT_DIR, { recursive: true, force: true });
     this.ensureDir(OUTPUT_DIR);
 
@@ -109,6 +91,47 @@ export class MDGenerator {
     if (this.warnings.length)
       console.log(`   Warnings  : ${this.warnings.length}`);
     console.log('\n✨ Done! Output in public/api/\n');
+  }
+
+  // ─── Pre-generation validation ──────────────────────────────────────────
+  // Content-quality rules (required fields, allowed difficulties, answer
+  // presence, etc.) live in MDValidator now — the generator no longer
+  // duplicates them. This just runs the validator over every .md file
+  // before touching the filesystem, and refuses to build on failure.
+
+  private runPreGenerationValidation(contentDir: string): void {
+    console.log('🔎 Running pre-generation validation...\n');
+    const validator = new MDValidator(undefined, { quiet: true });
+    const invalidFiles: string[] = [];
+
+    const scan = (dir: string) => {
+      for (const entry of fs.readdirSync(dir)) {
+        const fullPath = path.join(dir, entry);
+        if (fs.statSync(fullPath).isDirectory()) {
+          scan(fullPath);
+          continue;
+        }
+        if (!entry.endsWith('.md')) continue;
+
+        const result = validator.validateFile(fullPath);
+        if (!result || !result.isValid) {
+          invalidFiles.push(path.relative(process.cwd(), fullPath));
+        }
+      }
+    };
+    scan(contentDir);
+
+    if (invalidFiles.length > 0) {
+      console.error(
+        `❌ Validation failed for ${invalidFiles.length} file(s) — fix before generating:\n`,
+      );
+      invalidFiles.forEach((f) => console.error(`   - ${f}`));
+      console.error('\n   Run the validator directly for details:');
+      console.error('   node dist/cli.js file <path> --verbose\n');
+      process.exit(1);
+    }
+
+    console.log('✅ Pre-generation validation passed\n');
   }
 
   // ─── Directory Walker ────────────────────────────────────────────────────
@@ -162,54 +185,34 @@ export class MDGenerator {
       const output = this.processFile(fullPath, meta);
       if (!output) continue;
 
-      // Write topic file
       const outDir = path.join(OUTPUT_DIR, meta.domain, topic);
       this.ensureDir(outDir);
+
       fs.writeFileSync(
         path.join(outDir, `${language}.json`),
-        JSON.stringify(
-          {
-            version: 2,
-            meta: {
-              domain: meta.domain,
-              topic,
-              language,
-              label: this.getLabel(topic),
-            },
-            hash: output.hash,
-            stats: output.stats,
-            questions: output.questions,
-          },
-          null,
-          2,
-        ),
+        JSON.stringify(output.topic, null, 2),
         'utf-8',
       );
 
-      const d = output.stats.byDifficulty;
+      const d = output.topic.stats.byDifficulty;
       console.log(
-        `     ✅ ${output.stats.total} questions (easy ${d.easy} · medium ${d.medium} · hard ${d.hard})`,
+        `     ✅ ${output.topic.stats.total} questions (easy ${d.easy} · medium ${d.medium} · hard ${d.hard})`,
       );
 
-      // Accumulate manifest
       accumulator.languages.add(language);
-
-      if (!accumulator.domains[meta.domain]) {
+      if (!accumulator.domains[meta.domain])
         accumulator.domains[meta.domain] = { topics: {} };
-      }
       if (!accumulator.domains[meta.domain].topics[topic]) {
         accumulator.domains[meta.domain].topics[topic] = { languages: {} };
       }
-
       accumulator.domains[meta.domain].topics[topic].languages[language] = {
         path: `${meta.domain}/${topic}/${language}.json`,
-        total: output.stats.total,
-        hash: output.hash,
+        total: output.topic.stats.total,
+        hash: output.topic.hash,
       };
 
-      // Accumulate search index
-      for (const q of output.questions) {
-        accumulator.searchIndex.push({
+      for (const q of output.topic.questions) {
+        const searchItem: GeneratedSearchItem = {
           id: q.id,
           slug: q.slug,
           title: q.title,
@@ -221,8 +224,13 @@ export class MDGenerator {
           difficulty: q.difficulty,
           categories: q.categories,
           readingTime: q.answer.readingTime,
-          ...(q.tags?.length ? { tags: q.tags } : {}),
-        });
+        };
+
+        if (q.tags?.length) {
+          searchItem.tags = q.tags;
+        }
+
+        accumulator.searchIndex.push(searchItem);
       }
     }
   }
@@ -233,34 +241,26 @@ export class MDGenerator {
     filePath: string,
     meta: { domain: string; topic: string; language: string },
   ): {
-    questions: GeneratedQuestion[];
-    stats: {
-      total: number;
-      byDifficulty: Record<string, number>;
-      categories: string[];
-    };
+    topic: GeneratedTopic;
     hash: string;
   } | null {
     try {
       const raw = fs.readFileSync(filePath, 'utf-8');
-      const cleanContent = raw.replace(/^\uFEFF/, '');
+      const cleanContent = MarkdownParser.stripBOM(raw);
       const relPath = path.relative(process.cwd(), filePath);
 
-      // Extract frontmatter
-      const frontmatterMatch = cleanContent.match(
-        /^---\r?\n([\s\S]*?)\r?\n---/,
-      );
-      if (!frontmatterMatch) {
+      const frontmatterBlock =
+        MarkdownParser.extractFrontmatterBlock(cleanContent);
+      if (!frontmatterBlock) {
         this.reportWarning(relPath, null, 'No frontmatter found');
         return null;
       }
 
-      // Remove frontmatter from content
-      const content = cleanContent.replace(
-        /^---\r?\n[\s\S]*?\r?\n---\r?\n/,
-        '',
-      );
+      const frontmatter =
+        MarkdownParser.parseFrontmatterFields(frontmatterBlock);
+      const version = parseFloat(frontmatter.version) || 1.0;
 
+      const content = MarkdownParser.stripFrontmatter(cleanContent);
       const questions = this.parseQuestions(content, meta, relPath);
 
       if (!questions.length) {
@@ -277,10 +277,26 @@ export class MDGenerator {
         ...new Set(questions.flatMap((q) => q.categories)),
       ].sort();
 
-      return {
-        questions,
-        stats: { total: questions.length, byDifficulty, categories },
+      const topicData: GeneratedTopic = {
+        version,
+        meta: {
+          domain: meta.domain,
+          topic: meta.topic,
+          language: meta.language,
+          label: this.getLabel(meta.topic),
+        },
         hash: this.contentHash(content),
+        stats: {
+          total: questions.length,
+          byDifficulty,
+          categories,
+        },
+        questions,
+      };
+
+      return {
+        topic: topicData,
+        hash: topicData.hash,
       };
     } catch (err) {
       this.reportError(
@@ -293,44 +309,37 @@ export class MDGenerator {
   }
 
   // ─── Question Parser ─────────────────────────────────────────────────────
+  // Structural/generation-invariant checks stay here (missing title,
+  // duplicate id/slug — these would break the generated JSON's integrity).
+  // Content-quality checks (missing difficulty/category/answer) were removed:
+  // that's the validator's job now, run as a gate in runPreGenerationValidation.
 
   private parseQuestions(
     markdown: string,
     meta: { domain: string; topic: string; language: string },
     relPath: string,
   ): GeneratedQuestion[] {
-    const questionRegex =
-      /^##\s+(?:🧠\s*)?(?:Question|سوال)\s+\d+[\s\S]*?(?=^##\s+(?:🧠\s*)?(?:Question|سوال)\s+\d+|\Z)/gim;
-    const sections = markdown.match(questionRegex) ?? [];
+    const sections = MarkdownParser.extractQuestionSections(markdown);
     const localIds = new Set<string>();
     const localSlugs = new Set<string>();
     const questions: GeneratedQuestion[] = [];
 
-    for (let i = 0; i < sections.length; i++) {
-      const section = sections[i];
+    sections.forEach((section, i) => {
       const sectionLabel = `section ${i + 1}`;
+      const fields = section.fields;
 
-      // Extract all metadata fields
-      const fields = Object.fromEntries(
-        [...section.matchAll(/\*\*(.+?)\*\*:\s*(.+)/g)].map(
-          ([, key, value]) => [key.trim(), value.trim()],
-        ),
-      );
-
-      // Title
-      const headingText = section
+      const headingText = section.content
         .split('\n')[0]
         .replace(/^[🧠💡🔥⚡️🎯✅📌\s]+/, '')
         .trim();
-      const title = (fields.Title ?? fields['عنوان']) || headingText;
+      const title = MarkdownParser.getField(fields, 'title') || headingText;
 
       if (!title) {
         this.reportError(relPath, sectionLabel, 'Missing title');
-        continue;
+        return;
       }
 
-      // ID
-      const idField = fields.ID ?? fields['شناسه'];
+      const idField = MarkdownParser.getField(fields, 'id');
       const id =
         idField ||
         crypto
@@ -341,61 +350,31 @@ export class MDGenerator {
 
       if (localIds.has(id)) {
         this.reportError(relPath, title, `Duplicate ID: "${id}"`);
-        continue;
+        return;
       }
 
-      // Slug
-      const slug = this.slugify(title);
+      const slug = MarkdownParser.slugify(title);
       if (localSlugs.has(slug)) {
         this.reportError(relPath, title, `Duplicate slug: "${slug}"`);
-        continue;
+        return;
       }
 
       localIds.add(id);
       localSlugs.add(slug);
 
-      // Difficulty
-      const rawDiff = fields.Difficulty ?? fields['سطح دشواری'] ?? null;
+      const rawDiff = MarkdownParser.getField(fields, 'difficulty');
       const difficulty = this.normalizeDifficulty(rawDiff);
 
-      if (this.config.validation?.requireDifficulty && !difficulty) {
-        this.reportError(
-          relPath,
-          title,
-          rawDiff
-            ? `Unknown difficulty: "${rawDiff}" — must be easy / medium / hard`
-            : 'Missing difficulty',
-        );
-        continue;
-      }
-
-      // Categories
-      const rawCategory = fields.Category ?? fields['دسته‌بندی'] ?? null;
+      const rawCategory = MarkdownParser.getField(fields, 'category');
       const categories = this.parseCategories(rawCategory);
 
-      if (this.config.validation?.requireCategory && categories.length === 0) {
-        this.reportError(relPath, title, 'Missing category');
-        continue;
-      }
-
-      // Tags (optional)
-      const tagsRaw = fields.Tags ?? fields['برچسب‌ها'] ?? '';
-      const tags = tagsRaw
+      const rawTags = MarkdownParser.getField(fields, 'tags') || '';
+      const tags = rawTags
         .split(',')
         .map((t) => t.trim())
         .filter(Boolean);
 
-      // Answer
-      const answerMarkdown = this.extractAnswer(section);
-
-      if (this.config.validation?.requireAnswer && !answerMarkdown) {
-        this.reportError(
-          relPath,
-          title,
-          'Missing answer (expected ### Answer)',
-        );
-        continue;
-      }
+      const answerMarkdown = MarkdownParser.extractAnswer(section.content);
 
       const question: GeneratedQuestion = {
         id,
@@ -414,9 +393,8 @@ export class MDGenerator {
 
       if (tags.length > 0) question.tags = tags;
       questions.push(question);
-    }
+    });
 
-    questions.sort((a, b) => a.id.localeCompare(b.id));
     return questions;
   }
 
@@ -448,26 +426,6 @@ export class MDGenerator {
       .split(',')
       .map((c) => c.trim())
       .filter(Boolean);
-  }
-
-  private extractAnswer(section: string): string | null {
-    const match = section.match(
-      /^###\s*(?:Answer|پاسخ|جواب|Solution|Explanation|راه.?حل)/im,
-    );
-    if (!match) return null;
-    const startIndex = section.indexOf(match[0]) + match[0].length;
-    return section.slice(startIndex).trim();
-  }
-
-  private slugify(str: string): string {
-    return str
-      .trim()
-      .toLowerCase()
-      .normalize('NFKC')
-      .replace(/[ـ]/g, '')
-      .replace(/[^\p{Letter}\p{Number}]+/gu, '-')
-      .replace(/^-+|-+$/g, '')
-      .replace(/-{2,}/g, '-');
   }
 
   private getLabel(slug: string): string {
@@ -549,7 +507,6 @@ export class MDGenerator {
 
   private writeManifest(accumulator: Accumulator, OUTPUT_DIR: string): void {
     const domains: Record<string, any> = {};
-
     for (const [domainSlug, domainData] of Object.entries(
       accumulator.domains,
     )) {
