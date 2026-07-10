@@ -14,6 +14,7 @@ version: 1.6
 - Responsive Design
 - Performance
 - Architecture
+- Accessibility
 
 ## Difficulty Levels
 
