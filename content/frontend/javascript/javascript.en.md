@@ -14,6 +14,8 @@ version: 3.0
 - Functions
 - Asynchronous & Event Loop
 - Engine & Runtime
+- Language Behavior
+- Objects & Internals
 
 ## Difficulty Levels
 
@@ -23,7 +25,7 @@ version: 3.0
 
 ## 🧠 Question 1
 
-**ID**: js-001  
+**ID**: javascript-001  
 **Title**: What is JavaScript and how does it differ from compiled languages?  
 **Difficulty**: Easy  
 **Category**: Fundamentals
@@ -38,7 +40,7 @@ Modern JavaScript engines internally use Just-In-Time (JIT) compilation to optim
 
 ## 🧠 Question 2
 
-**ID**: js-002  
+**ID**: javascript-002  
 **Title**: What are the primitive data types in JavaScript?  
 **Difficulty**: Easy  
 **Category**: Fundamentals
@@ -59,7 +61,7 @@ Primitive values are immutable and are stored directly in memory. When assigned 
 
 ## 🧠 Question 3
 
-**ID**: js-003  
+**ID**: javascript-003  
 **Title**: What is the difference between null and undefined?  
 **Difficulty**: Easy  
 **Category**: Fundamentals
@@ -77,7 +79,7 @@ In short:
 
 ## 🧠 Question 4
 
-**ID**: js-004  
+**ID**: javascript-004  
 **Title**: What is the difference between var, let, and const?  
 **Difficulty**: Easy  
 **Category**: Fundamentals
@@ -107,7 +109,7 @@ console.log(y); // ReferenceError
 
 ## 🧠 Question 5
 
-**ID**: js-005  
+**ID**: javascript-005  
 **Title**: What is scope in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Execution Context & Scope
@@ -143,7 +145,7 @@ function example() {
 
 ## 🧠 Question 6
 
-**ID**: js-006  
+**ID**: javascript-006  
 **Title**: What is hoisting in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Execution Context & Scope
@@ -172,7 +174,7 @@ let b = 10;
 
 ## 🧠 Question 7
 
-**ID**: js-007  
+**ID**: javascript-007  
 **Title**: What is the difference between primitive values and reference values?  
 **Difficulty**: Medium  
 **Category**: Memory & References
@@ -207,7 +209,7 @@ console.log(obj1.name); // Sara
 
 ## 🧠 Question 8
 
-**ID**: js-008  
+**ID**: javascript-008  
 **Title**: How does memory management work in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Memory & References
@@ -230,7 +232,7 @@ user = null; // reference removed → eligible for garbage collection
 
 ## 🧠 Question 9
 
-**ID**: js-009  
+**ID**: javascript-009  
 **Title**: What is a closure in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Functions
@@ -264,7 +266,7 @@ console.log(counter()); // 2
 
 ## 🧠 Question 10
 
-**ID**: js-010  
+**ID**: javascript-010  
 **Title**: What is the event loop in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Asynchronous & Event Loop
@@ -300,7 +302,7 @@ console.log('End');
 
 ## 🧠 Question 11
 
-**ID**: js-011  
+**ID**: javascript-011  
 **Title**: What is an execution context in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Execution Context & Scope
@@ -342,7 +344,7 @@ console.log(greet()); // Hello Rasool
 
 ## 🧠 Question 12
 
-**ID**: js-012  
+**ID**: javascript-012  
 **Title**: What happens during the creation phase of an execution context?  
 **Difficulty**: Medium  
 **Category**: Execution Context & Scope
@@ -373,7 +375,7 @@ function test() {}
 
 ## 🧠 Question 13
 
-**ID**: js-013  
+**ID**: javascript-013  
 **Title**: What is the call stack and how does it work?  
 **Difficulty**: Medium  
 **Category**: Engine & Runtime
@@ -410,7 +412,7 @@ first();
 
 ## 🧠 Question 14
 
-**ID**: js-014  
+**ID**: javascript-014  
 **Title**: What is the Temporal Dead Zone (TDZ)?  
 **Difficulty**: Medium  
 **Category**: Execution Context & Scope
@@ -436,7 +438,7 @@ Example:
 
 ## 🧠 Question 15
 
-**ID**: js-015  
+**ID**: javascript-015  
 **Title**: How does the `this` keyword work in JavaScript?  
 **Difficulty**: Medium  
 **Category**: Functions
@@ -468,7 +470,7 @@ obj.greet(); // Ali
 
 ## 🧠 Question 16
 
-**ID**: js-016  
+**ID**: javascript-016  
 **Title**: What is the difference between regular functions and arrow functions?  
 **Difficulty**: Medium  
 **Category**: Functions
@@ -505,7 +507,7 @@ obj.arrow(); // undefined
 
 ## 🧠 Question 17
 
-**ID**: js-017  
+**ID**: javascript-017  
 **Title**: What is the difference between shallow copy and deep copy?  
 **Difficulty**: Medium  
 **Category**: Memory & References
@@ -544,7 +546,7 @@ console.log(original.info.age); // 20 (original is unchanged)
 
 ## 🧠 Question 18
 
-**ID**: js-018  
+**ID**: javascript-018  
 **Title**: What are microtasks and macrotasks in the event loop?  
 **Difficulty**: Hard  
 **Category**: Asynchronous & Event Loop
@@ -584,7 +586,7 @@ console.log('End');
 
 ## 🧠 Question 19
 
-**ID**: js-019  
+**ID**: javascript-019  
 **Title**: What are the different states of a Promise?  
 **Difficulty**: Medium  
 **Category**: Asynchronous & Event Loop
@@ -615,7 +617,7 @@ promise.then((result) => console.log(result));
 
 ## 🧠 Question 20
 
-**ID**: js-020  
+**ID**: javascript-020  
 **Title**: How does async/await work internally?  
 **Difficulty**: Hard  
 **Category**: Asynchronous & Event Loop
@@ -656,10 +658,10 @@ console.log('This runs immediately');
 
 ## 🧠 Question 21
 
-**ID**: js-021  
+**ID**: javascript-021  
 **Title**: What is a prototype in JavaScript?  
 **Difficulty**: Medium  
-**Category**: Objects & Prototypes
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -688,10 +690,10 @@ console.log(user.__proto__ === Person.prototype); // true
 
 ## 🧠 Question 22
 
-**ID**: js-022  
+**ID**: javascript-022  
 **Title**: What is the prototype chain and how does property lookup work?  
 **Difficulty**: Hard  
-**Category**: Objects & Prototypes
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -724,10 +726,10 @@ console.log(dog.hasOwnProperty('eats')); // false
 
 ## 🧠 Question 23
 
-**ID**: js-023  
+**ID**: javascript-023  
 **Title**: What is the difference between `__proto__` and `prototype`?  
 **Difficulty**: Hard  
-**Category**: Objects & Prototypes
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -757,10 +759,10 @@ console.log(typeof myCar.prototype); // undefined
 
 ## 🧠 Question 24
 
-**ID**: js-024  
+**ID**: javascript-024  
 **Title**: How does inheritance work in JavaScript?  
 **Difficulty**: Medium  
-**Category**: Objects & Prototypes
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -796,7 +798,7 @@ Behind the scenes, it works the same with prototype, only the syntax is cleaner.
 
 ## 🧠 Question 25
 
-**ID**: js-025  
+**ID**: javascript-025  
 **Title**: What is strict mode in JavaScript and why is it important?  
 **Difficulty**: Medium  
 **Category**: Language Behavior
@@ -831,10 +833,10 @@ With strict mode, the engine throws immediately, making bugs easier to detect.
 
 ## 🧠 Question 26
 
-**ID**: js-026  
+**ID**: javascript-026  
 **Title**: What are JavaScript modules and how do they work?  
 **Difficulty**: Medium  
-**Category**: Modules & Architecture
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -869,10 +871,10 @@ The load is only done once.
 
 ## 🧠 Question 27
 
-**ID**: js-027  
+**ID**: javascript-027  
 **Title**: What is a memory leak and how can it happen in JavaScript?  
 **Difficulty**: Hard  
-**Category**: Memory & Performance
+**Category**: Memory & References
 
 ### Answer 📄
 
@@ -916,10 +918,10 @@ clearInterval(interval);
 
 ## 🧠 Question 28
 
-**ID**: js-028  
+**ID**: javascript-028  
 **Title**: What are WeakMap and WeakSet and how are they different from Map and Set?  
 **Difficulty**: Hard  
-**Category**: Memory & Performance
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -968,7 +970,7 @@ user = null;
 
 ## 🧠 Question 29
 
-**ID**: js-029  
+**ID**: javascript-029  
 **Title**: How does JavaScript handle object property descriptors?  
 **Difficulty**: Hard  
 **Category**: Objects & Internals
@@ -1009,7 +1011,7 @@ The descriptor determines how the property behaves.
 
 ## 🧠 Question 30
 
-**ID**: js-030  
+**ID**: javascript-030  
 **Title**: How do JavaScript engines optimize code execution?  
 **Difficulty**: Hard  
 **Category**: Engine & Runtime
@@ -1050,10 +1052,10 @@ Adding properties sporadically will change the hidden class and may be de-opted.
 
 ## 🧠 Question 31
 
-**ID**: js-031  
+**ID**: javascript-031  
 **Title**: What is the Execution Context in JavaScript and what are its main components?  
 **Difficulty**: Hard  
-**Category**: Execution Context
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1088,10 +1090,10 @@ foo();
 
 ## 🧠 Question 32
 
-**ID**: js-032  
+**ID**: javascript-032  
 **Title**: What is the difference between the creation phase and execution phase of an execution context?  
 **Difficulty**: Hard  
-**Category**: Execution Context
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1117,10 +1119,10 @@ var a = 5;
 
 ## 🧠 Question 33
 
-**ID**: js-033  
+**ID**: javascript-033  
 **Title**: How does the Scope Chain work during variable resolution?  
 **Difficulty**: Hard  
-**Category**: Scope
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1156,10 +1158,10 @@ outer();
 
 ## 🧠 Question 34
 
-**ID**: js-034  
+**ID**: javascript-034  
 **Title**: What is the difference between Lexical Scope and Dynamic Scope, and which one does JavaScript use?  
 **Difficulty**: Medium  
-**Category**: Scope
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1190,10 +1192,10 @@ fn(); // 10
 
 ## 🧠 Question 35
 
-**ID**: js-035  
+**ID**: javascript-035  
 **Title**: What is a Closure in JavaScript and how does it relate to lexical scoping?  
 **Difficulty**: Medium  
-**Category**: Closures
+**Category**: Functions, Execution Context & Scope
 
 ### Answer 📄
 
@@ -1223,10 +1225,10 @@ console.log(increment()); // 2
 
 ## 🧠 Question 36
 
-**ID**: js-036  
+**ID**: javascript-036  
 **Title**: Why can closures cause memory leaks in certain situations?  
 **Difficulty**: Hard  
-**Category**: Memory & Performance
+**Category**: Functions, Memory & References
 
 ### Answer 📄
 
@@ -1272,10 +1274,10 @@ const handler = createHandler();
 
 ## 🧠 Question 37
 
-**ID**: js-037  
+**ID**: javascript-037  
 **Title**: What is the Temporal Dead Zone (TDZ) and how does it work with let and const?  
 **Difficulty**: Medium  
-**Category**: Scope
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1296,10 +1298,10 @@ Example:
 
 ## 🧠 Question 38
 
-**ID**: js-038  
+**ID**: javascript-038  
 **Title**: How does block scope differ from function scope?  
 **Difficulty**: Medium  
-**Category**: Scope
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1323,10 +1325,10 @@ console.log(y); // ReferenceError
 
 ## 🧠 Question 39
 
-**ID**: js-039  
+**ID**: javascript-039  
 **Title**: What happens internally when a function is returned from another function?  
 **Difficulty**: Hard  
-**Category**: Closures
+**Category**: Functions, Execution Context & Scope
 
 ### Answer 📄
 
@@ -1351,10 +1353,10 @@ sayHello(); // Hello Rasool
 
 ## 🧠 Question 40
 
-**ID**: js-040  
+**ID**: javascript-040  
 **Title**: How does JavaScript handle variable lookup when multiple nested scopes exist?  
 **Difficulty**: Hard  
-**Category**: Scope
+**Category**: Execution Context & Scope
 
 ### Answer 📄
 
@@ -1386,9 +1388,9 @@ first(); // "first"
 
 ## 🧠 Question 41
 
-**ID**: js-041
-**Title**: What is the difference between == and === in JavaScript?
-**Difficulty**: Easy
+**ID**: javascript-041  
+**Title**: What is the difference between == and === in JavaScript?  
+**Difficulty**: Easy  
 **Category**: Fundamentals
 
 ### Answer 📄
@@ -1414,9 +1416,9 @@ console.log(0 === false); // false
 
 ## 🧠 Question 42
 
-**ID**: js-042
-**Title**: How do call(), apply(), and bind() work?
-**Difficulty**: Medium
+**ID**: javascript-042  
+**Title**: How do call(), apply(), and bind() work?  
+**Difficulty**: Medium  
 **Category**: Functions
 
 ### Answer 📄
@@ -1445,9 +1447,9 @@ console.log(boundGreet('?')); // Hey, Rasool?
 
 ## 🧠 Question 43
 
-**ID**: js-043
-**Title**: What is an IIFE in JavaScript?
-**Difficulty**: Medium
+**ID**: javascript-043  
+**Title**: What is an IIFE in JavaScript?  
+**Difficulty**: Medium  
 **Category**: Functions
 
 ### Answer 📄
@@ -1471,9 +1473,9 @@ Example:
 
 ## 🧠 Question 44
 
-**ID**: js-044
-**Title**: What is currying in JavaScript?
-**Difficulty**: Hard
+**ID**: javascript-044  
+**Title**: What is currying in JavaScript?  
+**Difficulty**: Hard  
 **Category**: Functions
 
 ### Answer 📄
@@ -1504,10 +1506,10 @@ console.log(add5(10)); // 15
 
 ## 🧠 Question 45
 
-**ID**: js-045
-**Title**: What is the difference between map(), filter(), and reduce()?
-**Difficulty**: Medium
-**Category**: Arrays
+**ID**: javascript-045  
+**Title**: What is the difference between map(), filter(), and reduce()?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -1534,10 +1536,10 @@ console.log(sum); // 15
 
 ## 🧠 Question 46
 
-**ID**: js-046
-**Title**: What is destructuring in JavaScript?
-**Difficulty**: Easy
-**Category**: ES6+
+**ID**: javascript-046  
+**Title**: What is destructuring in JavaScript?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -1563,10 +1565,10 @@ console.log(second); // green
 
 ## 🧠 Question 47
 
-**ID**: js-047
-**Title**: What are the spread and rest operators in JavaScript?
-**Difficulty**: Easy
-**Category**: ES6+
+**ID**: javascript-047  
+**Title**: What are the spread and rest operators in JavaScript?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -1597,9 +1599,9 @@ console.log(sum(1, 2, 3, 4)); // 10
 
 ## 🧠 Question 48
 
-**ID**: js-048
-**Title**: What is the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any?
-**Difficulty**: Medium
+**ID**: javascript-048  
+**Title**: What is the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any?  
+**Difficulty**: Medium  
 **Category**: Asynchronous & Event Loop
 
 ### Answer 📄
@@ -1633,10 +1635,10 @@ Promise.any([p1, p2, p3]).then(console.log);
 
 ## 🧠 Question 49
 
-**ID**: js-049
-**Title**: What is event delegation in JavaScript?
-**Difficulty**: Medium
-**Category**: DOM & Events
+**ID**: javascript-049  
+**Title**: What is event delegation in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Language Behavior
 
 ### Answer 📄
 
@@ -1662,9 +1664,9 @@ document.querySelector('#list').addEventListener('click', (event) => {
 
 ## 🧠 Question 50
 
-**ID**: js-050
-**Title**: What is type coercion in JavaScript?
-**Difficulty**: Medium
+**ID**: javascript-050  
+**Title**: What is type coercion in JavaScript?  
+**Difficulty**: Medium  
 **Category**: Fundamentals
 
 ### Answer 📄
@@ -1692,10 +1694,10 @@ console.log(Boolean(0)); // false
 
 ## 🧠 Question 51
 
-**ID**: js-051
-**Title**: What is optional chaining (?.) in JavaScript?
-**Difficulty**: Easy
-**Category**: ES6+
+**ID**: javascript-051  
+**Title**: What is optional chaining (?.) in JavaScript?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -1725,10 +1727,10 @@ console.log(user?.getName?.()); // undefined (no error thrown)
 
 ## 🧠 Question 52
 
-**ID**: js-052
-**Title**: What is the nullish coalescing operator (??) and how does it differ from ||?
-**Difficulty**: Easy
-**Category**: ES6+
+**ID**: javascript-052  
+**Title**: What is the nullish coalescing operator (??) and how does it differ from ||?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -1753,9 +1755,9 @@ console.log('' || 'fallback'); // 'fallback' (empty string is falsy)
 
 ## 🧠 Question 53
 
-**ID**: js-053
-**Title**: How does the typeof operator work and what are its quirks?
-**Difficulty**: Easy
+**ID**: javascript-053  
+**Title**: How does the typeof operator work and what are its quirks?  
+**Difficulty**: Easy  
 **Category**: Fundamentals
 
 ### Answer 📄
@@ -1786,9 +1788,9 @@ console.log(typeof null); // 'object' ← known quirk
 
 ## 🧠 Question 54
 
-**ID**: js-054
-**Title**: What is the instanceof operator and how does it differ from typeof?
-**Difficulty**: Easy
+**ID**: javascript-054  
+**Title**: What is the instanceof operator and how does it differ from typeof?  
+**Difficulty**: Easy  
 **Category**: Fundamentals
 
 ### Answer 📄
@@ -1820,10 +1822,10 @@ console.log([] instanceof Object); // true
 
 ## 🧠 Question 55
 
-**ID**: js-055
-**Title**: What are Symbols in JavaScript and when are they used?
-**Difficulty**: Medium
-**Category**: ES6+
+**ID**: javascript-055  
+**Title**: What are Symbols in JavaScript and when are they used?  
+**Difficulty**: Medium  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -1862,9 +1864,9 @@ console.log([...iterable]); // [0, 1, 2]
 
 ## 🧠 Question 56
 
-**ID**: js-056
-**Title**: What are generator functions in JavaScript?
-**Difficulty**: Hard
+**ID**: javascript-056  
+**Title**: What are generator functions in JavaScript?  
+**Difficulty**: Hard  
 **Category**: Functions
 
 ### Answer 📄
@@ -1894,10 +1896,10 @@ console.log(gen.next()); // { value: undefined, done: true }
 
 ## 🧠 Question 57
 
-**ID**: js-057
-**Title**: What is the iterator protocol in JavaScript?
-**Difficulty**: Hard
-**Category**: ES6+
+**ID**: javascript-057  
+**Title**: What is the iterator protocol in JavaScript?  
+**Difficulty**: Hard  
+**Category**: Language Behavior
 
 ### Answer 📄
 
@@ -1933,10 +1935,10 @@ console.log([...range]); // [1, 2, 3]
 
 ## 🧠 Question 58
 
-**ID**: js-058
-**Title**: What is Proxy in JavaScript?
-**Difficulty**: Hard
-**Category**: ES6+
+**ID**: javascript-058  
+**Title**: What is Proxy in JavaScript?  
+**Difficulty**: Hard  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -1970,10 +1972,10 @@ proxy.age = 30; // valid
 
 ## 🧠 Question 59
 
-**ID**: js-059
-**Title**: What is the Reflect API in JavaScript?
-**Difficulty**: Hard
-**Category**: ES6+
+**ID**: javascript-059  
+**Title**: What is the Reflect API in JavaScript?  
+**Difficulty**: Hard  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -2003,9 +2005,9 @@ console.log(user.name); // Ali
 
 ## 🧠 Question 60
 
-**ID**: js-060
-**Title**: What are default parameters in JavaScript?
-**Difficulty**: Easy
+**ID**: javascript-060  
+**Title**: What are default parameters in JavaScript?  
+**Difficulty**: Easy  
 **Category**: Functions
 
 ### Answer 📄
@@ -2029,10 +2031,10 @@ console.log(greet(undefined, 'Hey')); // Hey, Guest! (undefined triggers default
 
 ## 🧠 Question 61
 
-**ID**: js-061
-**Title**: What are Object.keys(), Object.values(), and Object.entries()?
-**Difficulty**: Easy
-**Category**: Objects
+**ID**: javascript-061  
+**Title**: What are Object.keys(), Object.values(), and Object.entries()?  
+**Difficulty**: Easy  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -2059,10 +2061,10 @@ Object.entries(user).forEach(([key, value]) => {
 
 ## 🧠 Question 62
 
-**ID**: js-062
-**Title**: What is the difference between Object.assign() and the spread operator for merging objects?
-**Difficulty**: Easy
-**Category**: Objects
+**ID**: javascript-062  
+**Title**: What is the difference between Object.assign() and the spread operator for merging objects?  
+**Difficulty**: Easy  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -2090,10 +2092,10 @@ console.log(config2); // { theme: 'light', lang: 'fa' }
 
 ## 🧠 Question 63
 
-**ID**: js-063
-**Title**: What is the difference between Object.freeze() and Object.seal()?
-**Difficulty**: Medium
-**Category**: Objects
+**ID**: javascript-063  
+**Title**: What is the difference between Object.freeze() and Object.seal()?  
+**Difficulty**: Medium  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -2122,10 +2124,10 @@ console.log(sealed); // { name: 'Ali', age: 28 }
 
 ## 🧠 Question 64
 
-**ID**: js-064
-**Title**: What are Array.from() and Array.isArray()?
-**Difficulty**: Easy
-**Category**: Arrays
+**ID**: javascript-064  
+**Title**: What are Array.from() and Array.isArray()?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -2149,10 +2151,10 @@ console.log(Array.isArray({ length: 3 })); // false
 
 ## 🧠 Question 65
 
-**ID**: js-065
-**Title**: What are flat() and flatMap() in JavaScript?
-**Difficulty**: Medium
-**Category**: Arrays
+**ID**: javascript-065  
+**Title**: What are flat() and flatMap() in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -2176,10 +2178,10 @@ console.log(words); // ['Hello', 'world', 'Foo', 'bar']
 
 ## 🧠 Question 66
 
-**ID**: js-066
-**Title**: What are find() and findIndex() in JavaScript?
-**Difficulty**: Easy
-**Category**: Arrays
+**ID**: javascript-066  
+**Title**: What are find() and findIndex() in JavaScript?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -2210,10 +2212,10 @@ console.log(users.findIndex((u) => u.id === 99)); // -1
 
 ## 🧠 Question 67
 
-**ID**: js-067
-**Title**: What are some() and every() in JavaScript?
-**Difficulty**: Easy
-**Category**: Arrays
+**ID**: javascript-067  
+**Title**: What are some() and every() in JavaScript?  
+**Difficulty**: Easy  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -2237,10 +2239,10 @@ console.log(numbers.every((n) => n > 3)); // false (not all pass)
 
 ## 🧠 Question 68
 
-**ID**: js-068
-**Title**: How does Array.sort() work and what are its common pitfalls?
-**Difficulty**: Medium
-**Category**: Arrays
+**ID**: javascript-068  
+**Title**: How does Array.sort() work and what are its common pitfalls?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -2267,10 +2269,10 @@ console.log([10, 1, 5, 2].sort((a, b) => b - a)); // [10, 5, 2, 1] — descendin
 
 ## 🧠 Question 69
 
-**ID**: js-069
-**Title**: What is memoization in JavaScript?
-**Difficulty**: Medium
-**Category**: Performance
+**ID**: javascript-069  
+**Title**: What is memoization in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2307,10 +2309,10 @@ console.log(add(4, 5)); // 9
 
 ## 🧠 Question 70
 
-**ID**: js-070
-**Title**: What are JavaScript error types and how do you create custom errors?
-**Difficulty**: Medium
-**Category**: Error Handling
+**ID**: javascript-070  
+**Title**: What are JavaScript error types and how do you create custom errors?  
+**Difficulty**: Medium  
+**Category**: Language Behavior
 
 ### Answer 📄
 
@@ -2355,10 +2357,10 @@ try {
 
 ## 🧠 Question 71
 
-**ID**: js-071
-**Title**: What is debounce in JavaScript?
-**Difficulty**: Medium
-**Category**: Performance
+**ID**: javascript-071  
+**Title**: What is debounce in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -2389,10 +2391,10 @@ handleSearch('java'); // only this one actually triggers the search
 
 ## 🧠 Question 72
 
-**ID**: js-072
-**Title**: What is throttle in JavaScript?
-**Difficulty**: Medium
-**Category**: Performance
+**ID**: javascript-072  
+**Title**: What is throttle in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -2424,10 +2426,10 @@ window.addEventListener('scroll', handleScroll);
 
 ## 🧠 Question 73
 
-**ID**: js-073
-**Title**: What is the difference between event bubbling and event capturing?
-**Difficulty**: Medium
-**Category**: DOM & Events
+**ID**: javascript-073  
+**Title**: What is the difference between event bubbling and event capturing?  
+**Difficulty**: Medium  
+**Category**: Language Behavior
 
 ### Answer 📄
 
@@ -2467,10 +2469,10 @@ document.querySelector('#parent').addEventListener(
 
 ## 🧠 Question 74
 
-**ID**: js-074
-**Title**: What is the difference between localStorage, sessionStorage, and cookies?
-**Difficulty**: Medium
-**Category**: Browser Behavior
+**ID**: javascript-074  
+**Title**: What is the difference between localStorage, sessionStorage, and cookies?  
+**Difficulty**: Medium  
+**Category**: Engine & Runtime
 
 ### Answer 📄
 
@@ -2518,9 +2520,9 @@ document.cookie = 'token=abc123; Secure; SameSite=Strict';
 
 ## 🧠 Question 75
 
-**ID**: js-075
-**Title**: What is the difference between setTimeout and setInterval?
-**Difficulty**: Easy
+**ID**: javascript-075  
+**Title**: What is the difference between setTimeout and setInterval?  
+**Difficulty**: Easy  
 **Category**: Asynchronous & Event Loop
 
 ### Answer 📄
@@ -2550,10 +2552,10 @@ clearInterval(intervalId);
 
 ## 🧠 Question 76
 
-**ID**: js-076
-**Title**: What is requestAnimationFrame in JavaScript?
-**Difficulty**: Medium
-**Category**: Performance
+**ID**: javascript-076  
+**Title**: What is requestAnimationFrame in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -2580,10 +2582,10 @@ requestAnimationFrame(animate);
 
 ## 🧠 Question 77
 
-**ID**: js-077
-**Title**: What are pure functions and immutability in JavaScript?
-**Difficulty**: Medium
-**Category**: Functional Programming
+**ID**: javascript-077  
+**Title**: What are pure functions and immutability in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2621,10 +2623,10 @@ function addItemPure(arr, item) {
 
 ## 🧠 Question 78
 
-**ID**: js-078
-**Title**: What is function composition in JavaScript?
-**Difficulty**: Medium
-**Category**: Functional Programming
+**ID**: javascript-078  
+**Title**: What is function composition in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2655,10 +2657,10 @@ console.log(transform(3)); // 256
 
 ## 🧠 Question 79
 
-**ID**: js-079
-**Title**: What are Web Workers in JavaScript?
-**Difficulty**: Medium
-**Category**: Performance
+**ID**: javascript-079  
+**Title**: What are Web Workers in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Engine & Runtime
 
 ### Answer 📄
 
@@ -2689,10 +2691,10 @@ self.onmessage = (event) => {
 
 ## 🧠 Question 80
 
-**ID**: js-080
-**Title**: How does error handling work with async/await?
-**Difficulty**: Medium
-**Category**: Error Handling
+**ID**: javascript-080  
+**Title**: How does error handling work with async/await?  
+**Difficulty**: Medium  
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -2727,7 +2729,7 @@ fetchUser(1)
 
 ## 🧠 Question 81
 
-**ID**: js-081  
+**ID**: javascript-081  
 **Title**: What are hidden classes in JavaScript engines and how do they affect performance?  
 **Difficulty**: Hard  
 **Category**: Engine & Runtime
@@ -2761,7 +2763,7 @@ user.age = 30;
 
 ## 🧠 Question 82
 
-**ID**: js-082  
+**ID**: javascript-082  
 **Title**: What is inline caching and how does it optimize property access?  
 **Difficulty**: Hard  
 **Category**: Engine & Runtime
@@ -2793,10 +2795,10 @@ getName(u2);
 
 ## 🧠 Question 83
 
-**ID**: js-083  
+**ID**: javascript-083  
 **Title**: How does generational garbage collection work in modern JavaScript engines?  
 **Difficulty**: Hard  
-**Category**: Memory & Performance
+**Category**: Memory & References, Engine & Runtime
 
 ### Answer 📄
 
@@ -2828,10 +2830,10 @@ for (let i = 0; i < 100000; i++) {
 
 ## 🧠 Question 84
 
-**ID**: js-084  
+**ID**: javascript-084  
 **Title**: What is partial application and how does it differ from currying?  
 **Difficulty**: Medium  
-**Category**: Functional Programming
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2859,10 +2861,10 @@ console.log(double(3, 4)); // 24
 
 ## 🧠 Question 85
 
-**ID**: js-085  
+**ID**: javascript-085  
 **Title**: What are higher-order functions and why are they important?  
 **Difficulty**: Medium  
-**Category**: Functional Programming
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2892,10 +2894,10 @@ console.log(processUser('Rasool', greet));
 
 ## 🧠 Question 86
 
-**ID**: js-086  
+**ID**: javascript-086  
 **Title**: What is referential transparency in JavaScript?  
 **Difficulty**: Hard  
-**Category**: Functional Programming
+**Category**: Functions
 
 ### Answer 📄
 
@@ -2921,10 +2923,10 @@ const result = add(2, 3);
 
 ## 🧠 Question 87
 
-**ID**: js-087  
+**ID**: javascript-087  
 **Title**: What is starvation in the JavaScript event loop?  
 **Difficulty**: Hard  
-**Category**: Event Loop
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -2947,7 +2949,7 @@ loop();
 
 ## 🧠 Question 88
 
-**ID**: js-088  
+**ID**: javascript-088  
 **Title**: Why is `typeof null` equal to "object"?  
 **Difficulty**: Medium  
 **Category**: Language Behavior
@@ -2968,7 +2970,7 @@ console.log(typeof null); // "object"
 
 ## 🧠 Question 89
 
-**ID**: js-089  
+**ID**: javascript-089  
 **Title**: What is NaN and why is `NaN !== NaN`?  
 **Difficulty**: Medium  
 **Category**: Language Behavior
@@ -2990,7 +2992,7 @@ console.log(Number.isNaN(NaN)); // true
 
 ## 🧠 Question 90
 
-**ID**: js-090  
+**ID**: javascript-090  
 **Title**: What is structuredClone and when should it be used?  
 **Difficulty**: Medium  
 **Category**: Objects & Internals
@@ -3025,10 +3027,10 @@ console.log(clone.nested !== obj.nested); // true
 
 ## 🧠 Question 91
 
-**ID**: js-091
-**Title**: What is the Observer pattern and how can it be implemented in JavaScript?
-**Difficulty**: Hard
-**Category**: Design Patterns
+**ID**: javascript-091  
+**Title**: What is the Observer pattern and how can it be implemented in JavaScript?  
+**Difficulty**: Hard  
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -3083,7 +3085,7 @@ emitter.emit('login', 'Ali'); // (no output)
 
 ## 🧠 Question 92
 
-**ID**: js-092  
+**ID**: javascript-092  
 **Title**: What is the difference between deep equality and reference equality?  
 **Difficulty**: Medium  
 **Category**: Objects & Internals
@@ -3115,7 +3117,7 @@ console.log(deepEqual(a, b)); // true (structure match)
 
 ## 🧠 Question 93
 
-**ID**: js-093  
+**ID**: javascript-093  
 **Title**: What are getters and setters and how do they work internally?  
 **Difficulty**: Hard  
 **Category**: Objects & Internals
@@ -3155,10 +3157,10 @@ console.log(user.firstName);
 
 ## 🧠 Question 94
 
-**ID**: js-094  
+**ID**: javascript-094  
 **Title**: What are well-known Symbols in JavaScript?  
 **Difficulty**: Hard  
-**Category**: Advanced Language Features
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -3190,10 +3192,10 @@ for (const value of obj) {
 
 ## 🧠 Question 95
 
-**ID**: js-095
-**Title**: What is async iteration and how does `for await...of` work?
-**Difficulty**: Hard
-**Category**: Async & Concurrency
+**ID**: javascript-095  
+**Title**: What is async iteration and how does `for await...of` work?  
+**Difficulty**: Hard  
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -3229,10 +3231,10 @@ main();
 
 ## 🧠 Question 96
 
-**ID**: js-096  
+**ID**: javascript-096  
 **Title**: What is the difference between Object.create() and class-based instantiation?  
 **Difficulty**: Medium  
-**Category**: Objects & Prototypes
+**Category**: Objects & Internals
 
 ### Answer 📄
 
@@ -3259,7 +3261,7 @@ console.log(dog.speak());
 
 ## 🧠 Question 97
 
-**ID**: js-097  
+**ID**: javascript-097  
 **Title**: What are the pitfalls of Automatic Semicolon Insertion (ASI)?  
 **Difficulty**: Medium  
 **Category**: Language Behavior
@@ -3287,10 +3289,10 @@ console.log(test()); // undefined
 
 ## 🧠 Question 98
 
-**ID**: js-098  
+**ID**: javascript-098  
 **Title**: How does the browser handle rendering between tasks in the event loop?  
 **Difficulty**: Hard  
-**Category**: Event Loop
+**Category**: Asynchronous & Event Loop
 
 ### Answer 📄
 
@@ -3314,10 +3316,10 @@ The browser cannot render updates while the main thread is blocked.
 
 ## 🧠 Question 99
 
-**ID**: js-099
-**Title**: What is the difference between `for...in` and `for...of`?
-**Difficulty**: Medium
-**Category**: Iteration
+**ID**: javascript-099  
+**Title**: What is the difference between `for...in` and `for...of`?  
+**Difficulty**: Medium  
+**Category**: Language Behavior
 
 ### Answer 📄
 
@@ -3356,10 +3358,10 @@ for (const key in obj) {
 
 ## 🧠 Question 100
 
-**ID**: js-100
-**Title**: What are tagged template literals and how do they work?
-**Difficulty**: Medium
-**Category**: ES6+ Features
+**ID**: javascript-100  
+**Title**: What are tagged template literals and how do they work?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -3387,10 +3389,10 @@ console.log(highlight`Player ${name} scored ${score} points.`);
 
 ## 🧠 Question 101
 
-**ID**: js-101
-**Title**: What is dynamic `import()` and how does it differ from static import?
-**Difficulty**: Medium
-**Category**: Modules
+**ID**: javascript-101  
+**Title**: What is dynamic `import()` and how does it differ from static import?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
@@ -3421,10 +3423,10 @@ if (userNeedsChart) {
 
 ## 🧠 Question 102
 
-**ID**: js-102
-**Title**: What are logical assignment operators in JavaScript?
-**Difficulty**: Medium
-**Category**: ES2021 Features
+**ID**: javascript-102  
+**Title**: What are logical assignment operators in JavaScript?  
+**Difficulty**: Medium  
+**Category**: Fundamentals
 
 ### Answer 📄
 
