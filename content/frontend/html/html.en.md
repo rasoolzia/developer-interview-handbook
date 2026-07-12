@@ -96,7 +96,7 @@ Examples: `<span>`, `<a>`, `<strong>`
 **ID**: html-004  
 **Title**: What are semantic HTML elements?  
 **Difficulty**: Easy  
-**Category**: Fundamentals
+**Category**: Semantic & Accessibility
 
 ### Answer 📄
 
