@@ -957,9 +957,9 @@ Support: Chrome/Edge 85+, Firefox 128+, Safari 16.4+.
 
 ## 🧠 Question 31
 
-**ID**: css-031
-**Title**: What is the difference between CSS transitions and CSS animations?
-**Difficulty**: Medium
+**ID**: css-031  
+**Title**: What is the difference between CSS transitions and CSS animations?  
+**Difficulty**: Medium  
 **Category**: Performance
 
 ### Answer 📄
@@ -1134,9 +1134,9 @@ This difference is important when working with precise layouts.
 
 ## 🧠 Question 36
 
-**ID**: css-036
-**Title**: What are CSS pseudo-elements and how do `::before` and `::after` work?
-**Difficulty**: Medium
+**ID**: css-036  
+**Title**: What are CSS pseudo-elements and how do `::before` and `::after` work?  
+**Difficulty**: Medium  
 **Category**: Selectors & Specificity
 
 ### Answer 📄
@@ -1179,9 +1179,9 @@ Pseudo-elements are not part of the DOM — they cannot be selected with JavaScr
 
 ## 🧠 Question 37
 
-**ID**: css-037
-**Title**: What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?
-**Difficulty**: Medium
+**ID**: css-037  
+**Title**: What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?  
+**Difficulty**: Medium  
 **Category**: Responsive Design, Accessibility
 
 ### Answer 📄
