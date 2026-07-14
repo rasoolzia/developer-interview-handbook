@@ -711,7 +711,7 @@ Example:
 **ID**: vue-024  
 **Title**: What is `v-model` and how does it work internally?  
 **Difficulty**: Medium  
-**Category**: Forms
+**Category**: Components
 
 ### Answer 📄
 
@@ -776,7 +776,7 @@ app.directive('focus', {
 **ID**: vue-026  
 **Title**: What is `provide` and `inject` in Vue?  
 **Difficulty**: Medium  
-**Category**: Dependency Injection
+**Category**: Advanced Patterns
 
 ### Answer 📄
 
@@ -851,7 +851,7 @@ Example:
 **ID**: vue-029  
 **Title**: What is Teleport in Vue?  
 **Difficulty**: Medium  
-**Category**: Advanced Components
+**Category**: Components
 
 ### Answer 📄
 
@@ -878,7 +878,7 @@ Example:
 **ID**: vue-030  
 **Title**: What is Suspense in Vue?  
 **Difficulty**: Hard  
-**Category**: Advanced Components
+**Category**: Components
 
 ### Answer 📄
 
@@ -930,9 +930,9 @@ function increment() {
 
 ## 🧠 Question 32
 
-**ID**: vue-032
-**Title**: What are `toRef()` and `toRefs()` and when should you use them?
-**Difficulty**: Medium
+**ID**: vue-032  
+**Title**: What are `toRef()` and `toRefs()` and when should you use them?  
+**Difficulty**: Medium  
 **Category**: Reactivity System
 
 ### Answer 📄
@@ -996,9 +996,9 @@ const discountedPrice = computed(() => price.value * 0.9);
 
 ## 🧠 Question 34
 
-**ID**: vue-034
-**Title**: What is `defineEmits()` and how do you emit custom events in Vue 3?
-**Difficulty**: Medium
+**ID**: vue-034  
+**Title**: What is `defineEmits()` and how do you emit custom events in Vue 3?  
+**Difficulty**: Medium  
 **Category**: Components
 
 ### Answer 📄
@@ -1036,7 +1036,7 @@ function handleClick() {
 **ID**: vue-035  
 **Title**: What is the Virtual DOM and how does Vue use it?  
 **Difficulty**: Medium  
-**Category**: Rendering
+**Category**: Rendering & Internals
 
 ### Answer 📄
 
@@ -1052,9 +1052,9 @@ This process improves performance by avoiding unnecessary DOM updates.
 
 ## 🧠 Question 36
 
-**ID**: vue-036
-**Title**: What is Vue Router and how do you set up routing in a Vue application?
-**Difficulty**: Medium
+**ID**: vue-036  
+**Title**: What is Vue Router and how do you set up routing in a Vue application?  
+**Difficulty**: Medium  
 **Category**: Routing
 
 ### Answer 📄
@@ -1103,7 +1103,7 @@ export default router;
 **ID**: vue-037  
 **Title**: What are render functions in Vue?  
 **Difficulty**: Hard  
-**Category**: Rendering
+**Category**: Rendering & Internals
 
 ### Answer 📄
 
@@ -1134,9 +1134,9 @@ export default {
 
 ## 🧠 Question 38
 
-**ID**: vue-038
-**Title**: What are navigation guards in Vue Router?
-**Difficulty**: Medium
+**ID**: vue-038  
+**Title**: What are navigation guards in Vue Router?  
+**Difficulty**: Medium  
 **Category**: Routing
 
 ### Answer 📄
@@ -1170,9 +1170,9 @@ router.beforeEach((to, from) => {
 
 ## 🧠 Question 39
 
-**ID**: vue-039
-**Title**: How does `v-model` work on custom components in Vue 3?
-**Difficulty**: Medium
+**ID**: vue-039  
+**Title**: How does `v-model` work on custom components in Vue 3?  
+**Difficulty**: Medium  
 **Category**: Components
 
 ### Answer 📄
@@ -1210,7 +1210,7 @@ const emit = defineEmits(['update:modelValue']);
 **ID**: vue-040  
 **Title**: What is the purpose of the `key` attribute in Vue lists?  
 **Difficulty**: Easy  
-**Category**: Rendering
+**Category**: Rendering & Internals
 
 ### Answer 📄
 
@@ -1314,7 +1314,7 @@ export const useCounterStore = defineStore('counter', {
 **ID**: vue-044  
 **Title**: What is server-side rendering (SSR) in Vue?  
 **Difficulty**: Hard  
-**Category**: Rendering
+**Category**: Rendering & Internals
 
 ### Answer 📄
 
@@ -1333,7 +1333,7 @@ Benefits include:
 **ID**: vue-045  
 **Title**: What is hydration in Vue SSR?  
 **Difficulty**: Hard  
-**Category**: Rendering
+**Category**: Rendering & Internals
 
 ### Answer 📄
 
@@ -3848,7 +3848,7 @@ const typography = useCssModule('typography');
 
 CSS Modules differ from scoped styles:
 
-- **Scoped styles** add a `data-v-xxxx` attribute selector — styles still use the original class name but are made specific.
+- **Scoped styles** add a `data-v-xx` attribute selector — styles still use the original class name but are made specific.
 - **CSS Modules** rename the class itself — no attribute selector needed, zero specificity overhead.
 
 ## 🧠 Question 106
@@ -3860,7 +3860,7 @@ CSS Modules differ from scoped styles:
 
 ### Answer 📄
 
-When a `<style scoped>` block is present in a Vue SFC, the compiler adds a unique `data-v-xxxxxxxx` attribute to every element in the component's template at compile time.
+When a `<style scoped>` block is present in a Vue SFC, the compiler adds a unique `data-v-xx` attribute to every element in the component's template at compile time.
 
 The CSS selectors are then transformed to include an attribute selector targeting that unique attribute, ensuring the styles only apply to the component's own elements.
 
