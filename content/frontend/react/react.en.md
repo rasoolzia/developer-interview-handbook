@@ -58,7 +58,7 @@ Because React is a library rather than a framework, it integrates easily into ex
 **ID**: react-002  
 **Title**: What is the Virtual DOM and how does React use it?  
 **Difficulty**: Easy  
-**Category**: Rendering Behavior
+**Category**: React Basics
 
 ### Answer 📄
 
