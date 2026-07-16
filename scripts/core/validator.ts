@@ -477,10 +477,10 @@ export class MDValidator {
           'Consider expanding the answer',
         );
       }
-      if (answerContent.match(/TODO|FIXME|TBD|XXX/i)) {
+      if (answerContent.match(/TODO|FIXME|TBD|XXX/)) {
         this.addWarning(
           'ANSWER_PLACEHOLDER',
-          `Question "${question.id}" contains placeholder text (TODO/FIXME/TBD)`,
+          `Question "${question.id}" contains placeholder text (TODO/FIXME/TBD/XXX)`,
           doc.filePath,
           question.id,
           'Replace placeholder with actual content',
