@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-05T12:02:35.829Z",
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "domains": {
+    "frontend": {
+      "label": "Frontend",
+      "topics": {
+        "css": {
+          "label": "CSS",
+          "languages": {
+            "en": {
+              "path": "frontend/css/en.json",
+              "total": 37,
+              "hash": "8af0f3a0fe"
+            },
+            "fa": {
+              "path": "frontend/css/fa.json",
+              "total": 37,
+              "hash": "0a34a04ed3"
+            }
+          }
+        },
+        "html": {
+          "label": "HTML",
+          "languages": {
+            "en": {
+              "path": "frontend/html/en.json",
+              "total": 28,
+              "hash": "d2a95b2a3a"
+            },
+            "fa": {
+              "path": "frontend/html/fa.json",
+              "total": 28,
+              "hash": "3a47292912"
+            }
+          }
+        },
+        "javascript": {
+          "label": "JavaScript",
+          "languages": {
+            "en": {
+              "path": "frontend/javascript/en.json",
+              "total": 102,
+              "hash": "15326dcd5a"
+            },
+            "fa": {
+              "path": "frontend/javascript/fa.json",
+              "total": 102,
+              "hash": "f982c41451"
+            }
+          }
+        },
+        "react": {
+          "label": "React",
+          "languages": {
+            "en": {
+              "path": "frontend/react/en.json",
+              "total": 157,
+              "hash": "a4d5441925"
+            },
+            "fa": {
+              "path": "frontend/react/fa.json",
+              "total": 157,
+              "hash": "6732d3c2b2"
+            }
+          }
+        },
+        "vue": {
+          "label": "Vue",
+          "languages": {
+            "en": {
+              "path": "frontend/vue/en.json",
+              "total": 120,
+              "hash": "12aa7bd4a0"
+            },
+            "fa": {
+              "path": "frontend/vue/fa.json",
+              "total": 120,
+              "hash": "b81f12c4f0"
+            }
+          }
+        }
+      }
+    }
+  }
+}
