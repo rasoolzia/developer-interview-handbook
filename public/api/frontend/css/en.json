@@ -1,0 +1,625 @@
+{
+  "version": 1.6,
+  "meta": {
+    "domain": "frontend",
+    "topic": "css",
+    "language": "en",
+    "label": "CSS"
+  },
+  "hash": "8af0f3a0fe",
+  "stats": {
+    "total": 37,
+    "byDifficulty": {
+      "easy": 2,
+      "medium": 15,
+      "hard": 20
+    },
+    "categories": [
+      "Accessibility",
+      "Architecture",
+      "Fundamentals",
+      "Layout",
+      "Performance",
+      "Responsive Design",
+      "Selectors & Specificity"
+    ]
+  },
+  "questions": [
+    {
+      "id": "css-001",
+      "slug": "what-is-the-css-box-model-and-what-are-its-components",
+      "title": "What is the CSS box model and what are its components?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "The CSS box model describes how elements are structured and spaced in the layout.\r\n\r\nEach element is represented as a rectangular box consisting of:\r\n\r\n1. **Content** – The actual text or media\r\n2. **Padding** – Space between content and border\r\n3. **Border** – Surrounds padding and content\r\n4. **Margin** – Space outside the border\r\n\r\nBy default, `width` and `height` apply only to the content box.\r\n\r\nUsing:\r\n\r\n```css\r\nbox-sizing: border-box;\r\n```\r\n\r\nChanges the calculation so padding and border are included in the declared width and height.\r\n\r\nUnderstanding the box model is essential for layout control.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-002",
+      "slug": "what-is-the-difference-between-block-inline-and-inline-block-display-values",
+      "title": "What is the difference between `block`, `inline`, and `inline-block` display values?",
+      "difficulty": "easy",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "### `block`\r\n\r\n- Takes full width available\r\n- Starts on a new line\r\n- Can set width and height\r\n\r\nExamples: `div`, `p`, `section`",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-003",
+      "slug": "what-is-specificity-in-css-and-how-is-it-calculated",
+      "title": "What is specificity in CSS and how is it calculated?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Specificity determines which CSS rule is applied when multiple rules target the same element.\r\n\r\nSpecificity hierarchy:\r\n\r\n1.  Inline styles\r\n2.  IDs\r\n3.  Classes, attributes, pseudo-classes\r\n4.  Elements and pseudo-elements\r\n\r\nExample:\r\n\r\n```css\r\n#main {\r\n  color: red;\r\n}\r\n.container p {\r\n  color: blue;\r\n}\r\n```\r\n\r\nThe ID selector wins because it has higher specificity.\r\nSpecificity is calculated as a four-part value:\r\nInline → IDs → Classes → Elements\r\nHigher value wins. If equal, the later rule in the stylesheet applies.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-004",
+      "slug": "what-is-the-difference-between-position-relative-absolute-fixed-and-sticky",
+      "title": "What is the difference between `position: relative`, `absolute`, `fixed`, and `sticky`?",
+      "difficulty": "medium",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "### `relative`\r\n\r\n- Positioned relative to its normal position\r\n- Remains in document flow",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-005",
+      "slug": "what-is-the-difference-between-flexbox-and-grid",
+      "title": "What is the difference between Flexbox and Grid?",
+      "difficulty": "medium",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Flexbox and Grid are layout systems but solve different problems.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-006",
+      "slug": "what-is-the-css-cascade-and-how-does-the-browser-decide-which-rule-to-apply",
+      "title": "What is the CSS cascade and how does the browser decide which rule to apply?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "The CSS cascade is the algorithm used to determine which style rule applies when multiple rules target the same element.\r\n\r\nThe browser resolves conflicts in this order:\r\n\r\n1. **Origin** (user agent, user styles, author styles)\r\n2. **Importance** (`!important`)\r\n3. **Specificity**\r\n4. **Source order** (last declared wins)\r\n\r\nUnderstanding the cascade is essential for debugging unexpected styling behavior.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-007",
+      "slug": "what-is-a-stacking-context-and-how-is-it-created",
+      "title": "What is a stacking context and how is it created?",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "A stacking context controls how elements are layered along the z-axis.\r\n\r\nA new stacking context is created when:\r\n\r\n- An element has `position` other than static AND `z-index` is set\r\n- `opacity` is less than 1\r\n- `transform` is applied\r\n- `filter`, `perspective`, `will-change`, etc. are used\r\n\r\nElements inside a stacking context are layered independently of elements outside it.\r\n\r\nUnderstanding stacking context is crucial for solving z-index issues.\r\n\r\nExample:\r\n\r\n```css\r\n/* Creates a new stacking context */\r\n.modal {\r\n  position: fixed;\r\n  z-index: 100;\r\n  opacity: 0.99; /* also triggers stacking context */\r\n}\r\n\r\n/* Children are layered WITHIN .modal's context */\r\n.modal .overlay {\r\n  z-index: 1;\r\n}\r\n.modal .content {\r\n  z-index: 2;\r\n}\r\n/* .content appears above .overlay, but both are contained within .modal */\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-008",
+      "slug": "what-is-the-difference-between-overflow-hidden-auto-and-scroll",
+      "title": "What is the difference between `overflow: hidden`, `auto`, and `scroll`?",
+      "difficulty": "medium",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "The `overflow` property controls what happens when content exceeds its container.\r\n\r\n- `hidden` → Content is clipped, no scrollbars\r\n- `auto` → Scrollbars appear only if needed\r\n- `scroll` → Scrollbars always visible\r\n\r\nOverflow can also create a new block formatting context (BFC), affecting layout behavior.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-009",
+      "slug": "what-is-a-block-formatting-context-bfc-and-why-is-it-useful",
+      "title": "What is a Block Formatting Context (BFC) and why is it useful?",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "A Block Formatting Context (BFC) is a layout mechanism that controls how block elements interact.\r\n\r\nA BFC is created when:\r\n\r\n- `overflow` is not visible\r\n- `display: flow-root`\r\n- `float` is used\r\n- `position: absolute` or `fixed`\r\n\r\nBenefits:\r\n\r\n- Prevents margin collapsing\r\n- Contains floating elements\r\n- Creates isolated layout environments\r\n\r\nBFC is often used to fix layout bugs involving floats or collapsing margins.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-010",
+      "slug": "what-is-margin-collapsing-and-when-does-it-occur",
+      "title": "What is margin collapsing and when does it occur?",
+      "difficulty": "medium",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Margin collapsing occurs when vertical margins of adjacent block elements combine into a single margin.\r\n\r\nIt happens when:\r\n\r\n- Two sibling block elements have vertical margins\r\n- A parent and its first/last child both have vertical margins\r\n\r\nThe resulting margin equals the larger of the two, not their sum.\r\n\r\nMargin collapsing between adjacent siblings does not occur inside flex or grid containers (they establish new formatting contexts).\r\n\r\nExample:\r\n\r\n```css\r\n/* Sibling collapse: result is 30px, not 50px */\r\n.box-a {\r\n  margin-bottom: 30px;\r\n}\r\n.box-b {\r\n  margin-top: 20px;\r\n}\r\n\r\n/* Parent-child collapse: child margin bleeds out */\r\n.parent {\r\n  /* no padding, no border, no BFC */\r\n}\r\n.child {\r\n  margin-top: 40px;\r\n} /* shifts .parent, not .child */\r\n\r\n/* Fix: establish BFC to prevent collapse */\r\n.parent {\r\n  overflow: hidden;\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-011",
+      "slug": "what-is-the-difference-between-em-rem-vh-and-vw-units",
+      "title": "What is the difference between `em`, `rem`, `%`, `vh`, and `vw` units?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "CSS provides multiple relative units.\r\n\r\n- `em` → Relative to the font-size of the parent\r\n- `rem` → Relative to the root (`html`) font-size\r\n- `%` → Relative to the parent element\r\n- `vh` → 1% of viewport height\r\n- `vw` → 1% of viewport width\r\n\r\nUse `rem` for consistent scaling across components.\r\nUse viewport units for responsive layouts.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-012",
+      "slug": "what-is-the-difference-between-min-width-max-width-and-width",
+      "title": "What is the difference between `min-width`, `max-width`, and `width`?",
+      "difficulty": "medium",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "- `width` sets the base width of an element\r\n- `min-width` defines the minimum allowed width\r\n- `max-width` defines the maximum allowed width\r\n\r\nIf constraints conflict:\r\n\r\n- `min-width` overrides `max-width`\r\n- `min-width` can override `width`\r\n\r\nThese properties are essential for responsive design.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-013",
+      "slug": "what-is-the-difference-between-reflow-layout-and-repaint-in-css-rendering",
+      "title": "What is the difference between `reflow` (layout) and `repaint` in CSS rendering?",
+      "difficulty": "hard",
+      "categories": [
+        "Performance"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "When styles change, the browser may trigger:",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-014",
+      "slug": "what-are-css-custom-properties-css-variables-and-what-are-their-advantages",
+      "title": "What are CSS Custom Properties (CSS Variables) and what are their advantages?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "CSS Custom Properties allow you to store and reuse values throughout your stylesheet.\r\n\r\nSyntax:\r\n\r\n```css\r\n:root {\r\n  --primary-color: #3498db;\r\n  --spacing: 16px;\r\n}\r\n\r\n.button {\r\n  background: var(--primary-color);\r\n  padding: var(--spacing);\r\n}\r\n```\r\n\r\nAdvantages:\r\n\r\n- Can be changed dynamically with JavaScript\r\n- Inherit through the cascade\r\n- Scoped to elements (unlike preprocessor variables)\r\n- Enable theming and dynamic styling\r\n\r\nUnlike Sass/Less variables, CSS variables are evaluated at runtime.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-015",
+      "slug": "what-are-css-logical-properties-and-why-are-they-important",
+      "title": "What are CSS logical properties and why are they important?",
+      "difficulty": "medium",
+      "categories": [
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Logical properties allow layout control based on writing direction rather than physical direction.\r\n\r\nInstead of:\r\n\r\n```css\r\nmargin-left\r\npadding-right\r\n```\r\n\r\nUse:\r\n\r\n```css\r\nmargin-inline-start\r\npadding-inline-end\r\n```\r\n\r\nBenefits:\r\n\r\n- Better internationalization (RTL/LTR support)\r\n- More adaptable layouts\r\n- Cleaner responsive design\r\n\r\nLogical properties make layouts direction-aware.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-016",
+      "slug": "what-are-css-cascade-layers-layer-and-why-were-they-introduced",
+      "title": "What are CSS cascade layers (`@layer`) and why were they introduced?",
+      "difficulty": "hard",
+      "categories": [
+        "Architecture"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Cascade layers allow developers to control the cascade order explicitly.\r\n\r\nExample:\r\n\r\n```css\r\n@layer base, components, utilities;\r\n```\r\n\r\nStyles inside layers follow the declared layer order, regardless of specificity.\r\n\r\nBenefits:\r\n\r\n- Prevents specificity wars\r\n- Better control over large codebases\r\n- Improves CSS architecture\r\n\r\nCascade layers provide structured style prioritization.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-017",
+      "slug": "what-are-container-queries-and-how-do-they-differ-from-media-queries",
+      "title": "What are container queries and how do they differ from media queries?",
+      "difficulty": "hard",
+      "categories": [
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Media queries respond to the viewport size.\r\n\r\nContainer queries respond to the size of a parent container.\r\n\r\nExample:\r\n\r\n```css\r\n@container (min-width: 400px) {\r\n  .card {\r\n    flex-direction: row;\r\n  }\r\n}\r\n```\r\n\r\n> **_NOTE:_** The parent must have container-type: inline-size (or size) to enable container queries.\r\n\r\nContainer queries enable truly component-based responsive design.  \r\nThey allow components to adapt based on available space rather than screen size.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-018",
+      "slug": "what-is-the-difference-between-nth-child-and-nth-of-type",
+      "title": "What is the difference between `:nth-child()` and `:nth-of-type()`?",
+      "difficulty": "medium",
+      "categories": [
+        "Selectors & Specificity"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "`:nth-child(n)` selects an element based on its position among all siblings.\r\n\r\n`:nth-of-type(n)` selects an element based on its position among siblings of the same type.\r\n\r\nExample:\r\n\r\n```css\r\np:nth-child(2)\r\np:nth-of-type(2)\r\n```\r\n\r\nIf the second child is not a `<p>`, `nth-child` will not match it, but `nth-of-type` may.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-019",
+      "slug": "how-does-will-change-affect-performance-and-when-should-it-be-used",
+      "title": "How does `will-change` affect performance and when should it be used?",
+      "difficulty": "hard",
+      "categories": [
+        "Performance"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "The `will-change` property informs the browser about upcoming changes.\r\n\r\nExample:\r\n\r\n```css\r\nwill-change: transform;\r\n```\r\n\r\nIt allows the browser to optimize rendering (often promoting to GPU layer).\r\n\r\nHowever:\r\n\r\n- It consumes memory\r\n- Overuse can degrade performance\r\n\r\nUse it sparingly and remove it after the animation completes.  \r\nAvoid applying it globally or to many elements; it can increase memory usage and hurt mobile performance.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-020",
+      "slug": "what-is-the-difference-between-bem-and-utility-first-css-architecture",
+      "title": "What is the difference between BEM and utility-first CSS architecture?",
+      "difficulty": "medium",
+      "categories": [
+        "Architecture"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "BEM (Block Element Modifier):\r\n\r\n- Structured naming convention\r\n- Component-focused\r\n- Predictable and readable class names\r\n\r\nUtility-first (e.g., Tailwind approach):\r\n\r\n- Small, single-purpose classes\r\n- Styles applied directly in markup\r\n- Less custom CSS written\r\n\r\nBEM emphasizes semantic structure.  \r\nUtility-first emphasizes rapid development and consistency.\r\n\r\nBoth aim to solve scalability and maintainability issues in large projects.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-021",
+      "slug": "what-is-css-subgrid-how-does-it-differ-from-nested-grids-and-when-should-you-use",
+      "title": "What is CSS subgrid, how does it differ from nested grids, and when should you use it?",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Subgrid allows a grid item to inherit and participate in its parent's grid tracks (rows/columns).\r\n\r\nWithout subgrid:\r\n\r\n- Nested grid creates an independent grid with its own tracks\r\n\r\nWith subgrid:\r\n\r\n```css\r\n.grid-item {\r\n  display: grid;\r\n  grid-template-columns: subgrid;\r\n  grid-column: 1 / -1; /* span full parent tracks */\r\n}\r\n```\r\n\r\nDifferences:\r\n\r\n- Subgrid uses parent's column/row sizes → consistent alignment\r\n- No extra wrapper tracks\r\n\r\nUse cases:\r\n\r\n- Card layouts where inner content must align perfectly with outer grid\r\n- Forms or tables inside grid items\r\n\r\nBrowser support: Good in modern browsers (2024+ full).",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-022",
+      "slug": "explain-scroll-snap-properties-and-how-to-create-a-full-page-carousel-with-pure",
+      "title": "Explain scroll-snap properties and how to create a full-page carousel with pure CSS.",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Scroll snap forces the viewport to \"snap\" to specific positions after scrolling.\r\n\r\nKey properties:\r\n\r\n- scroll-snap-type: x mandatory (or y, both, inline, block)\r\n- scroll-snap-align: start / center / end\r\n- scroll-snap-stop: always (forces stop at each snap point)\r\n\r\nFull-page carousel example:\r\n\r\n```css\r\n.carousel {\r\n  scroll-snap-type: x mandatory;\r\n  overflow-x: auto;\r\n  display: flex;\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n.slide {\r\n  flex: 0 0 100%;\r\n  scroll-snap-align: start;\r\n  height: 100vh;\r\n}\r\n```\r\n\r\nBenefits: Smooth, native-feeling carousels without JavaScript.  \r\nPitfalls: User can still scroll freely unless combined with overscroll-behavior.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-023",
+      "slug": "what-is-the-aspect-ratio-property-and-how-does-it-help-prevent-cumulative-layout",
+      "title": "What is the aspect-ratio property, and how does it help prevent Cumulative Layout Shift (CLS)?",
+      "difficulty": "hard",
+      "categories": [
+        "Performance",
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "aspect-ratio enforces a fixed width-to-height ratio on elements (especially images/videos).\r\n\r\n```css\r\nimg {\r\n  width: 100%;\r\n  aspect-ratio: 16 / 9;\r\n  object-fit: cover;\r\n}\r\n```\r\n\r\nBenefits for CLS:\r\n\r\n- Reserves space before image loads (no jump when content appears)\r\n- Works with width: 100% or max-width\r\n- Better than old padding-bottom hack\r\n\r\nModern best practice:\r\n\r\n- Always pair with width/height attributes in HTML for fallback\r\n- Use on placeholders or lazy-loaded media\r\n\r\nImproves Core Web Vitals significantly.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-024",
+      "slug": "how-do-has-pseudo-class-and-relational-selectors-change-css-architecture-and-com",
+      "title": "How do :has() pseudo-class and relational selectors change CSS architecture and component styling?",
+      "difficulty": "hard",
+      "categories": [
+        "Selectors & Specificity"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": ":has() allows parent-based styling (previously impossible in pure CSS).\r\n\r\nExamples:\r\n\r\n```css\r\n/* Style card only if it has a button */\r\n.card:has(.btn) {\r\n  border: 2px solid green;\r\n}\r\n\r\n/* Style parent when child is hovered */\r\n.card:has(:hover) {\r\n  transform: scale(1.02);\r\n}\r\n\r\n/* Dark mode for section with dark theme */\r\nsection:has(.dark-theme) {\r\n  background: #111;\r\n}\r\n```\r\n\r\nImpact:\r\n\r\n- Enables component-driven styling without extra classes\r\n- Reduces reliance on BEM modifiers or utility classes\r\n- Improves maintainability in large apps\r\n\r\nBrowser support: Excellent in 2025+ (Chrome 105+, Safari 15.4+, Firefox 121+)",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-025",
+      "slug": "what-is-accent-color-and-how-does-it-interact-with-form-controls-in-modern-brows",
+      "title": "What is accent-color and how does it interact with form controls in modern browsers?",
+      "difficulty": "hard",
+      "categories": [
+        "Fundamentals",
+        "Accessibility"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "accent-color customizes the color of form controls' accents (checkboxes, radio buttons, range sliders, progress bars).\r\n\r\n```css\r\n:root {\r\n  --accent: #6200ea;\r\n}\r\n\r\ninput[type='checkbox'],\r\ninput[type='radio'],\r\ninput[type='range'] {\r\n  accent-color: var(--accent);\r\n}\r\n```\r\n\r\nBehavior:\r\n\r\n- Applies to native UI parts (thumb, checkmark, track)\r\n- Respects system preferences (light/dark mode)\r\n- Fallback: browsers use default accent if not set\r\n\r\nAccessibility note:\r\n\r\n- Ensure sufficient contrast (WCAG AA)\r\n- Test in multiple browsers (Safari partial support pre-2024)\r\n\r\nUse for consistent branding without overriding entire control styles.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-026",
+      "slug": "what-is-the-difference-between-vh-dvh-svh-and-lvh-viewport-units-and-why-were-th",
+      "title": "What is the difference between `vh`, `dvh`, `svh`, and `lvh` viewport units, and why were the new ones introduced?",
+      "difficulty": "hard",
+      "categories": [
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Traditional `vh` (viewport height) is based on the large viewport size (lvh), which can cause layout jumps on mobile when the address bar hides/shows.\r\n\r\nNew units (CSS Values 4):\r\n\r\n- `svh` (small viewport height): 1% of the smallest viewport height (when UI bars are fully visible)\r\n- `lvh` (large viewport height): 1% of the largest viewport height (when UI bars are hidden/fullscreen)\r\n- `dvh` (dynamic viewport height): dynamically updates between svh and lvh as UI elements change (recommended for most cases)\r\n\r\n`vh` is now equivalent to `lvh` in modern browsers.\r\n\r\nUse `dvh` for stable full-height layouts on mobile (e.g., hero sections) to avoid CLS.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-027",
+      "slug": "explain-the-differences-between-opacity-0-visibility-hidden-and-display-none-in",
+      "title": "Explain the differences between `opacity: 0`, `visibility: hidden`, and `display: none` in terms of layout, performance, accessibility, and interactivity.",
+      "difficulty": "hard",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "These properties hide elements but behave differently:\r\n\r\n- `opacity: 0`: Element is invisible but still takes space, remains in flow, interactive (clickable, focusable), and participates in transitions/animations. Screen readers may announce it.\r\n- `visibility: hidden`: Element invisible, takes space, removed from tab order (not focusable/interactive), but still in DOM flow. Creates stacking context if opacity <1 not set.\r\n- `display: none`: Element completely removed from layout (no space taken), not rendered, not interactive, not in accessibility tree (screen readers ignore it). Triggers reflow.\r\n\r\nUse `display: none` for conditional content; `visibility: hidden` for space-reserving hides; `opacity: 0` for fade animations.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-028",
+      "slug": "how-do-margins-behave-on-elements-with-display-inline-flex-or-display-inline-gri",
+      "title": "How do margins behave on elements with `display: inline-flex` or `display: inline-grid`, and why do vertical margins not collapse or apply as expected?",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "`inline-flex` and `inline-grid` make the element inline-level (participates in inline formatting context) but establish an inner flex/grid formatting context.\r\n\r\nKey behaviors:\r\n\r\n- Horizontal margins (left/right) apply normally.\r\n- Vertical margins (top/bottom) do not collapse with adjacent elements (like inline elements).\r\n- Vertical margins are respected but do not affect line height or surrounding inline flow in the same way block margins do.\r\n- No vertical margin collapsing occurs between inline-flex items and their siblings.\r\n\r\nThis is because inline-level boxes don't fully participate in block formatting contexts for vertical spacing. Use `display: flex` (block-level) if vertical margins need to behave like block elements.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-029",
+      "slug": "what-is-the-color-mix-function-in-css-and-how-can-it-be-used-for-dynamic-theming",
+      "title": "What is the `color-mix()` function in CSS, and how can it be used for dynamic theming or accessibility?",
+      "difficulty": "hard",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "`color-mix()` blends two colors in a specified color space (e.g., srgb, lch).\r\n\r\nSyntax:\r\n\r\n```css\r\ncolor-mix(in srgb, blue 40%, white)\r\n```\r\n\r\nUse cases:\r\n\r\n- Dynamic shades/tints (e.g., hover states: color-mix(in srgb, var(--primary) 80%, black))\r\n- Accessibility: Ensure contrast by mixing with background\r\n- Theming: Light/dark mode variants without multiple variables\r\n\r\nBrowser support: Excellent in 2025+ (Chrome 111+, Safari 16.4+, Firefox 113+). Falls back gracefully.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-030",
+      "slug": "what-is-property-in-css-and-how-does-it-enable-better-custom-property-animations",
+      "title": "What is `@property` in CSS and how does it enable better custom property animations/transitions?",
+      "difficulty": "hard",
+      "categories": [
+        "Performance",
+        "Architecture"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "`@property` registers a custom property so the browser understands its type, allowing smooth interpolation in transitions/animations.\r\n\r\nExample:\r\n\r\n```css\r\n@property --angle {\r\n  syntax: '<angle>';\r\n  inherits: false;\r\n  initial-value: 0deg;\r\n}\r\n```\r\n\r\nWithout registration, transitions on custom props (e.g., --hue) jump discretely. With it, they animate smoothly (e.g., hue rotation).\r\n\r\nUse for:\r\n\r\n- Conic gradients animation\r\n- Complex color transitions\r\n- Better performance than JS-driven animations\r\n\r\nSupport: Chrome/Edge 85+, Firefox 128+, Safari 16.4+.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-031",
+      "slug": "what-is-the-difference-between-css-transitions-and-css-animations",
+      "title": "What is the difference between CSS transitions and CSS animations?",
+      "difficulty": "medium",
+      "categories": [
+        "Performance"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Both transitions and animations change CSS property values over time, but they serve different purposes.\r\n\r\n**Transitions**\r\n\r\n- Triggered by a state change (e.g., `:hover`, class toggle)\r\n- Run once, from a start state to an end state\r\n- Defined with `transition` shorthand\r\n\r\n**Animations (`@keyframes`)**\r\n\r\n- Run independently (no trigger required)\r\n- Can loop, alternate, and define multiple intermediate steps\r\n- More control over timing and sequence\r\n\r\nExample:\r\n\r\n```css\r\n/* Transition: hover triggers the change */\r\n.button {\r\n  background: blue;\r\n  transition: background 0.3s ease;\r\n}\r\n.button:hover {\r\n  background: darkblue;\r\n}\r\n\r\n/* Animation: runs automatically */\r\n@keyframes spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.spinner {\r\n  animation: spin 1s linear infinite;\r\n}\r\n```\r\n\r\nUse transitions for simple interactive state changes; use animations for complex sequences or looping effects.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-032",
+      "slug": "what-is-scroll-driven-animation-in-css-and-how-does-animation-timeline-scroll-wo",
+      "title": "What is scroll-driven animation in CSS, and how does `animation-timeline: scroll()` work?",
+      "difficulty": "hard",
+      "categories": [
+        "Performance"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Scroll-driven animations tie CSS animations to scroll position instead of time.\r\n\r\nKey properties:\r\n\r\n- **animation-timeline**: scroll() or scroll(root block) or named scrollers\r\n- **animation-range**: start/end points\r\n\r\nExample concept: Progress bar fills as user scrolls page.\r\n\r\nBenefits: Native, GPU-accelerated, no JS overhead.\r\n\r\nSupport: Chrome/Edge 115+, Firefox partial, Safari 18+ (2025+ full).",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-033",
+      "slug": "explain-advanced-usage-of-object-fit-and-object-position-with-aspect-ratio-for-r",
+      "title": "Explain advanced usage of `object-fit` and `object-position` with `aspect-ratio` for responsive media without CLS.",
+      "difficulty": "hard",
+      "categories": [
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "`object-fit` controls how replaced elements (img, video) fit their box:\r\n\r\n- `cover`: Crops to fill (common for heroes)\r\n- `contain`: Scales to fit without cropping\r\n- `fill`: Stretches (distorts)\r\n\r\nCombined with `aspect-ratio`:\r\n\r\n- Reserves space before load\r\n- Prevents layout shifts\r\n\r\n`object-position`: Aligns content inside box (e.g., top left for portraits).\r\n\r\nThis combo is essential for modern image handling without JS.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-034",
+      "slug": "what-are-the-differences-between-physical-properties-margin-top-and-logical-prop",
+      "title": "What are the differences between physical properties (margin-top) and logical properties (margin-block-start) in depth, including writing-mode and direction impact?",
+      "difficulty": "hard",
+      "categories": [
+        "Responsive Design"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "**Physical**: Fixed directions (top/right/bottom/left) – ignore writing-mode/direction.\r\n\r\n**Logical**: Flow-relative (block-start/end, inline-start/end) – adapt to:\r\n\r\n- writing-mode: vertical-rl (e.g., Japanese)\r\n- direction: rtl\r\n\r\nUse logical for:\r\n\r\n- Multilingual sites\r\n- Vertical text layouts\r\n- Consistent padding/margin regardless of flow\r\n\r\nModern best practice: Prefer logical properties for future-proof CSS.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-035",
+      "slug": "how-can-gap-property-be-used-in-flexbox-and-grid-and-what-are-browser-difference",
+      "title": "How can gap property be used in Flexbox and Grid, and what are browser differences in row-gap/column-gap fallback?",
+      "difficulty": "hard",
+      "categories": [
+        "Layout"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "gap (or `row-gap`/`column-gap`) adds space between items in flex/grid (no need for margins).\r\n\r\n```css\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 20px;\r\n}\r\n```\r\n\r\nBrowser notes:\r\n\r\n- Older Safari/IE: Only `grid-gap` alias worked\r\n- Flexbox gap support: Chrome 84+, Safari 14.1+, Firefox 63+\r\n- In flex, gap works on row/column independently\r\n\r\nGap prevents double-margin issues and simplifies layouts.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-036",
+      "slug": "what-are-css-pseudo-elements-and-how-do-before-and-after-work",
+      "title": "What are CSS pseudo-elements and how do `::before` and `::after` work?",
+      "difficulty": "medium",
+      "categories": [
+        "Selectors & Specificity"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "Pseudo-elements are keywords that let you style a specific part of an element or inject virtual content without adding markup.\r\n\r\n`::before` and `::after` insert generated content before or after an element's actual content.\r\n\r\nThey require the `content` property to render (even if empty: `content: \"\"`).\r\n\r\nCommon uses:\r\n\r\n- Decorative icons or symbols\r\n- Clearfix for floats\r\n- Visual separators\r\n- Tooltip arrows\r\n\r\nExample:\r\n\r\n```css\r\n.badge::before {\r\n  content: '★ ';\r\n  color: gold;\r\n}\r\n\r\n.required-field::after {\r\n  content: ' *';\r\n  color: red;\r\n}\r\n\r\n/* Clearfix using ::after */\r\n.clearfix::after {\r\n  content: '';\r\n  display: block;\r\n  clear: both;\r\n}\r\n```\r\n\r\nPseudo-elements are not part of the DOM — they cannot be selected with JavaScript.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "css-037",
+      "slug": "what-are-prefers-color-scheme-and-prefers-reduced-motion-media-features-and-why",
+      "title": "What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?",
+      "difficulty": "medium",
+      "categories": [
+        "Responsive Design",
+        "Accessibility"
+      ],
+      "domain": "frontend",
+      "topic": "css",
+      "language": "en",
+      "answer": {
+        "markdown": "These are CSS media features that respect user system-level preferences.\r\n\r\n**`prefers-color-scheme`**\r\n\r\n- Detects whether the user prefers a light or dark UI\r\n- Values: `light`, `dark`\r\n- Enables native dark mode support without JavaScript\r\n\r\n**`prefers-reduced-motion`**\r\n\r\n- Detects whether the user has requested reduced animation/motion (e.g., for vestibular disorders)\r\n- Values: `reduce`, `no-preference`\r\n- Should disable or minimize transitions and animations\r\n\r\nBoth are essential for accessible, user-respectful design.\r\n\r\nExample:\r\n\r\n```css\r\n/* Dark mode */\r\n@media (prefers-color-scheme: dark) {\r\n  body {\r\n    background: #121212;\r\n    color: #e0e0e0;\r\n  }\r\n}\r\n\r\n/* Reduced motion */\r\n@media (prefers-reduced-motion: reduce) {\r\n  *,\r\n  *::before,\r\n  *::after {\r\n    animation-duration: 0.01ms !important;\r\n    transition-duration: 0.01ms !important;\r\n  }\r\n}\r\n```\r\n\r\nIgnoring these preferences can cause accessibility issues and negative user experience.",
+        "readingTime": 1
+      }
+    }
+  ]
+}
