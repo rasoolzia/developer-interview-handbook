@@ -1,0 +1,1666 @@
+{
+  "version": 3,
+  "meta": {
+    "domain": "frontend",
+    "topic": "javascript",
+    "language": "en",
+    "label": "JavaScript"
+  },
+  "hash": "15326dcd5a",
+  "stats": {
+    "total": 102,
+    "byDifficulty": {
+      "easy": 18,
+      "medium": 55,
+      "hard": 29
+    },
+    "categories": [
+      "Asynchronous & Event Loop",
+      "Engine & Runtime",
+      "Execution Context & Scope",
+      "Functions",
+      "Fundamentals",
+      "Language Behavior",
+      "Memory & References",
+      "Objects & Internals"
+    ]
+  },
+  "questions": [
+    {
+      "id": "javascript-001",
+      "slug": "what-is-javascript-and-how-does-it-differ-from-compiled-languages",
+      "title": "What is JavaScript and how does it differ from compiled languages?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript is a high-level, interpreted programming language primarily used for building interactive web applications. It runs inside the browser as well as on servers using environments like Node.js.\r\n\r\nUnlike compiled languages such as C or C++, JavaScript does not require a separate compilation step before execution. Instead, it is executed by a JavaScript engine at runtime.\r\n\r\nModern JavaScript engines internally use Just-In-Time (JIT) compilation to optimize performance, which makes JavaScript fast while still behaving like an interpreted language from the developer’s perspective.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-002",
+      "slug": "what-are-the-primitive-data-types-in-javascript",
+      "title": "What are the primitive data types in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript has seven primitive data types:\r\n\r\n- String\r\n- Number\r\n- BigInt\r\n- Boolean\r\n- Undefined\r\n- Null\r\n- Symbol\r\n\r\nPrimitive values are immutable and are stored directly in memory. When assigned to a new variable, a copy of the value is created.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-003",
+      "slug": "what-is-the-difference-between-null-and-undefined",
+      "title": "What is the difference between null and undefined?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`undefined` means a variable has been declared but has not been assigned a value.\r\n\r\n`null` is an intentional assignment that represents the absence of any object value.\r\n\r\nIn short:\r\n\r\n- `undefined` is the default state of uninitialized variables.\r\n- `null` is explicitly assigned by the developer to indicate “no value”.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-004",
+      "slug": "what-is-the-difference-between-var-let-and-const",
+      "title": "What is the difference between var, let, and const?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`var`, `let`, and `const` are used to declare variables, but they differ in scope and behavior.\r\n\r\n- `var` is function-scoped and allows redeclaration.\r\n- `let` is block-scoped and does not allow redeclaration in the same scope.\r\n- `const` is block-scoped and cannot be reassigned after initialization.\r\n\r\nAdditionally, variables declared with `let` and `const` are not accessible before initialization due to the Temporal Dead Zone.\r\n\r\nExample:\r\n\r\n```js\r\n// var vs let\r\n{\r\n  var x = 10;\r\n  let y = 20;\r\n}\r\n\r\nconsole.log(x); // 10\r\nconsole.log(y); // ReferenceError\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-005",
+      "slug": "what-is-scope-in-javascript",
+      "title": "What is scope in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Scope determines the accessibility of variables and functions in different parts of the code.\r\n\r\nJavaScript has three main types of scope:\r\n\r\n- Global Scope: Accessible everywhere in the program.\r\n- Function Scope: Accessible only within a specific function.\r\n- Block Scope: Accessible only inside a block defined by curly braces.\r\n\r\nScope is determined lexically, meaning it depends on where variables are written in the code, not where they are executed.\r\n\r\nExample:\r\n\r\n```js\r\nlet globalVar = 'global'; // Global Scope\r\n\r\nfunction example() {\r\n  let funcVar = 'function'; // Function Scope\r\n\r\n  if (true) {\r\n    let blockVar = 'block'; // Block Scope\r\n    console.log(blockVar); // block\r\n  }\r\n\r\n  // console.log(blockVar); // ReferenceError\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-006",
+      "slug": "what-is-hoisting-in-javascript",
+      "title": "What is hoisting in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Hoisting is JavaScript’s default behavior of moving variable and function declarations to the top of their containing scope during the creation phase of execution.\r\n\r\nFunction declarations are fully hoisted.\r\n\r\nVariables declared with `var` are hoisted but initialized with `undefined`.\r\n\r\nVariables declared with `let` and `const` are hoisted but remain in the Temporal Dead Zone until initialized.\r\n\r\nExample:\r\n\r\n```js\r\n// Hoisting behavior\r\n\r\nconsole.log(a); // undefined\r\nvar a = 5;\r\n\r\nconsole.log(b); // ReferenceError\r\nlet b = 10;\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-007",
+      "slug": "what-is-the-difference-between-primitive-values-and-reference-values",
+      "title": "What is the difference between primitive values and reference values?",
+      "difficulty": "medium",
+      "categories": [
+        "Memory & References"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Primitive values are stored directly in memory and are immutable.\r\n\r\nReference values such as objects and arrays are stored in the heap, and variables hold references to their memory location.\r\n\r\nWhen a primitive is assigned to another variable, a copy is created.\r\n\r\nWhen a reference value is assigned, both variables point to the same memory location.\r\n\r\nExample:\r\n\r\n```js\r\n// Primitive vs Reference\r\n\r\nlet a = 10;\r\nlet b = a;\r\nb = 20;\r\n\r\nconsole.log(a); // 10\r\n\r\nlet obj1 = { name: 'Ali' };\r\nlet obj2 = obj1;\r\nobj2.name = 'Sara';\r\n\r\nconsole.log(obj1.name); // Sara\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-008",
+      "slug": "how-does-memory-management-work-in-javascript",
+      "title": "How does memory management work in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Memory & References"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript automatically allocates memory when variables are declared and frees it when it is no longer needed.\r\n\r\nMemory management relies on garbage collection.\r\n\r\nMost modern JavaScript engines use a mark-and-sweep algorithm to identify unused objects. If an object is no longer reachable from the root (such as the global object), it becomes eligible for garbage collection.\r\n\r\nExample:\r\n\r\n```js\r\nlet user = { name: 'Rasool' }; // memory allocated\r\n\r\nuser = null; // reference removed → eligible for garbage collection\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-009",
+      "slug": "what-is-a-closure-in-javascript",
+      "title": "What is a closure in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A closure is a function that remembers variables from its lexical scope even after the outer function has finished executing.\r\n\r\nClosures allow functions to access variables that were available at the time they were created.\r\n\r\nThey are commonly used for data privacy, function factories, and maintaining state in asynchronous code.\r\n\r\nExample:\r\n\r\n```js\r\n// Closure\r\n\r\nfunction outer() {\r\n  let count = 0;\r\n\r\n  return function inner() {\r\n    count++;\r\n    return count;\r\n  };\r\n}\r\n\r\nconst counter = outer();\r\nconsole.log(counter()); // 1\r\nconsole.log(counter()); // 2\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-010",
+      "slug": "what-is-the-event-loop-in-javascript",
+      "title": "What is the event loop in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript is single-threaded, meaning it has one call stack.\r\n\r\nThe event loop is a mechanism that allows JavaScript to handle asynchronous operations without blocking execution.\r\n\r\nIt continuously checks whether the call stack is empty. If it is, it takes tasks from the callback queue and pushes them onto the stack for execution.\r\n\r\nThis mechanism enables non-blocking behavior while maintaining a single-threaded model.\r\n\r\nExample:\r\n\r\n```js\r\n// Event Loop\r\n\r\nconsole.log('Start');\r\n\r\nsetTimeout(() => {\r\n  console.log('Timeout');\r\n}, 0);\r\n\r\nconsole.log('End');\r\n\r\n// Output:\r\n// Start\r\n// End\r\n// Timeout\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-011",
+      "slug": "what-is-an-execution-context-in-javascript",
+      "title": "What is an execution context in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "An execution context is the environment in which JavaScript code is evaluated and executed.\r\n\r\nThere are three types of execution contexts:\r\n\r\n- Global Execution Context\r\n- Function Execution Context\r\n- Eval Execution Context\r\n\r\nEach execution context consists of two phases:\r\n\r\n1. Creation Phase\r\n2. Execution Phase\r\n\r\nDuring the creation phase, variables and function declarations are stored in memory. During the execution phase, code runs line by line.\r\n\r\nExecution contexts are managed using the call stack.\r\n\r\nExample:\r\n\r\n```js\r\n// Global Execution Context is created first\r\nconst name = 'Rasool';\r\n\r\nfunction greet() {\r\n  // Function Execution Context is created when greet() is called\r\n  const message = 'Hello ' + name; // accesses global scope via scope chain\r\n  return message;\r\n}\r\n\r\nconsole.log(greet()); // Hello Rasool\r\n// After greet() returns, its execution context is removed from the stack\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-012",
+      "slug": "what-happens-during-the-creation-phase-of-an-execution-context",
+      "title": "What happens during the creation phase of an execution context?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "During the creation phase:\r\n\r\n- The scope chain is determined.\r\n- The variable environment is created.\r\n- The `this` binding is established.\r\n- Function declarations are fully initialized.\r\n- Variables declared with `var` are initialized with undefined.\r\n- Variables declared with `let` and `const` are placed in the Temporal Dead Zone.\r\n\r\nNo code is executed during this phase.\r\n\r\nExample:\r\n\r\n```js\r\n// Creation Phase\r\n\r\nconsole.log(x); // undefined\r\nvar x = 5;\r\n\r\nfunction test() {}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-013",
+      "slug": "what-is-the-call-stack-and-how-does-it-work",
+      "title": "What is the call stack and how does it work?",
+      "difficulty": "medium",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The call stack is a data structure that keeps track of function execution.\r\n\r\nWhen a function is invoked, a new execution context is pushed onto the stack.\r\n\r\nWhen a function completes, its execution context is removed from the stack.\r\n\r\nIf the stack exceeds its maximum size due to excessive recursion, a stack overflow error occurs.\r\n\r\nExample:\r\n\r\n```js\r\n// Call Stack\r\n\r\nfunction first() {\r\n  second();\r\n}\r\n\r\nfunction second() {\r\n  third();\r\n}\r\n\r\nfunction third() {\r\n  console.log('Inside third');\r\n}\r\n\r\nfirst();\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-014",
+      "slug": "what-is-the-temporal-dead-zone-tdz",
+      "title": "What is the Temporal Dead Zone (TDZ)?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The Temporal Dead Zone is the time between entering a block and the actual declaration of a variable using `let` or `const`.\r\n\r\nDuring this period, accessing the variable results in a ReferenceError.\r\n\r\nAlthough `let` and `const` declarations are hoisted, they are not initialized until execution reaches their declaration line.\r\n\r\nExample:\r\n\r\n```js\r\n// Temporal Dead Zone\r\n\r\n{\r\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\r\n  let a = 10;\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-015",
+      "slug": "how-does-the-this-keyword-work-in-javascript",
+      "title": "How does the `this` keyword work in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The value of `this` depends on how a function is called.\r\n\r\n- In the global context, `this` refers to the global object.\r\n- In a regular function call, `this` depends on strict mode.\r\n- In a method call, `this` refers to the object that owns the method.\r\n- In arrow functions, `this` is lexically inherited from the surrounding scope.\r\n- In constructor functions, `this` refers to the newly created instance.\r\n\r\nExample:\r\n\r\n```js\r\n// this behavior\r\n\r\nconst obj = {\r\n  name: 'Ali',\r\n  greet() {\r\n    console.log(this.name);\r\n  },\r\n};\r\n\r\nobj.greet(); // Ali\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-016",
+      "slug": "what-is-the-difference-between-regular-functions-and-arrow-functions",
+      "title": "What is the difference between regular functions and arrow functions?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Arrow functions differ from regular functions in several ways:\r\n\r\n- They do not have their own `this`.\r\n- They do not have their own `arguments` object.\r\n- They cannot be used as constructors.\r\n- They are always anonymous.\r\n\r\nArrow functions inherit `this` from their lexical scope.\r\n\r\nExample:\r\n\r\n```js\r\n// Arrow vs Regular\r\n\r\nconst obj = {\r\n  name: 'Sara',\r\n  regular() {\r\n    console.log(this.name);\r\n  },\r\n  arrow: () => {\r\n    console.log(this.name);\r\n  },\r\n};\r\n\r\nobj.regular(); // Sara\r\nobj.arrow(); // undefined\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-017",
+      "slug": "what-is-the-difference-between-shallow-copy-and-deep-copy",
+      "title": "What is the difference between shallow copy and deep copy?",
+      "difficulty": "medium",
+      "categories": [
+        "Memory & References"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A shallow copy creates a new object but copies references for nested objects.\r\n\r\nA deep copy creates a completely independent clone, including all nested objects.\r\n\r\nModifying nested properties in a shallow copy affects the original object, while a deep copy prevents this behavior.\r\n\r\nExample:\r\n\r\n```js\r\n// Shallow Copy — nested objects are still shared\r\n\r\nconst original = { info: { age: 20 } };\r\nconst shallow = { ...original };\r\n\r\nshallow.info.age = 30;\r\n\r\nconsole.log(original.info.age); // 30 (original was mutated)\r\n```\r\n\r\n```js\r\n// Deep Copy — completely independent clone\r\n\r\nconst original = { info: { age: 20 } };\r\nconst deep = JSON.parse(JSON.stringify(original));\r\n\r\ndeep.info.age = 30;\r\n\r\nconsole.log(original.info.age); // 20 (original is unchanged)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-018",
+      "slug": "what-are-microtasks-and-macrotasks-in-the-event-loop",
+      "title": "What are microtasks and macrotasks in the event loop?",
+      "difficulty": "hard",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "In JavaScript’s event loop:\r\n\r\n- Macrotasks include tasks such as timers and I/O operations.\r\n- Microtasks include Promise callbacks and mutation observers.\r\n\r\nAfter each macrotask completes, all microtasks in the queue are executed before the next macrotask begins.\r\n\r\nMicrotasks have higher priority than macrotasks.\r\n\r\nExample:\r\n\r\n```js\r\n// Microtask vs Macrotask\r\n\r\nconsole.log('Start');\r\n\r\nsetTimeout(() => console.log('Macrotask'), 0);\r\n\r\nPromise.resolve().then(() => {\r\n  console.log('Microtask');\r\n});\r\n\r\nconsole.log('End');\r\n\r\n// Output:\r\n// Start\r\n// End\r\n// Microtask\r\n// Macrotask\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-019",
+      "slug": "what-are-the-different-states-of-a-promise",
+      "title": "What are the different states of a Promise?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A Promise has three states:\r\n\r\n- Pending\r\n- Fulfilled\r\n- Rejected\r\n\r\nOnce a Promise is fulfilled or rejected, its state becomes settled and cannot change.\r\n\r\nPromise handlers are executed asynchronously.\r\n\r\nExample:\r\n\r\n```js\r\n// Promise states\r\n\r\nconst promise = new Promise((resolve, reject) => {\r\n  resolve('Done');\r\n});\r\n\r\npromise.then((result) => console.log(result));\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-020",
+      "slug": "how-does-async-await-work-internally",
+      "title": "How does async/await work internally?",
+      "difficulty": "hard",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Async/await is syntactic sugar built on top of Promises.\r\n\r\nAn async function always returns a Promise.\r\n\r\nThe await keyword pauses execution of the async function until the Promise resolves, but it does not block the main thread.\r\n\r\nInternally, async/await transforms asynchronous code into a structure similar to chained Promise calls.\r\n\r\nExample:\r\n\r\n```js\r\n// async/await — await pauses the function, not the main thread\r\n\r\nfunction delay(ms) {\r\n  return new Promise((resolve) => setTimeout(resolve, ms));\r\n}\r\n\r\nasync function run() {\r\n  console.log('Before await');\r\n  await delay(1000);\r\n  console.log('After await'); // runs after 1 second\r\n}\r\n\r\nrun();\r\nconsole.log('This runs immediately');\r\n\r\n// Output:\r\n// Before await\r\n// This runs immediately\r\n// After await\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-021",
+      "slug": "what-is-a-prototype-in-javascript",
+      "title": "What is a prototype in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A prototype is an object from which other objects inherit properties and methods.\r\n\r\nEvery JavaScript object has an internal link to another object called its prototype. When a property is accessed on an object, JavaScript first looks for it on the object itself. If not found, it looks up the prototype chain.\r\n\r\nThis mechanism is known as prototypal inheritance.\r\n\r\nExample:\r\n\r\n```js\r\nfunction Person(name) {\r\n  this.name = name;\r\n}\r\n\r\nPerson.prototype.sayHello = function () {\r\n  return `Hi, I'm ${this.name}`;\r\n};\r\n\r\nconst user = new Person('Rasool');\r\n\r\nconsole.log(user.sayHello()); // Hi, I'm Rasool\r\nconsole.log(user.__proto__ === Person.prototype); // true\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-022",
+      "slug": "what-is-the-prototype-chain-and-how-does-property-lookup-work",
+      "title": "What is the prototype chain and how does property lookup work?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The prototype chain is a series of linked objects that JavaScript uses to resolve property access.\r\n\r\nWhen a property is requested:\r\n\r\n1. The engine checks the object itself.\r\n2. If not found, it checks the object's prototype.\r\n3. This continues until reaching null.\r\n\r\nIf the property is not found anywhere in the chain, undefined is returned.\r\n\r\nThis lookup process enables inheritance in JavaScript.\r\n\r\nExample:\r\n\r\n```js\r\nconst animal = {\r\n  eats: true,\r\n};\r\n\r\nconst dog = Object.create(animal);\r\ndog.barks = true;\r\n\r\nconsole.log(dog.barks); // true (own property)\r\nconsole.log(dog.eats); // true (inherited from prototype)\r\nconsole.log(dog.hasOwnProperty('eats')); // false\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-023",
+      "slug": "what-is-the-difference-between-proto-and-prototype",
+      "title": "What is the difference between `__proto__` and `prototype`?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`prototype` is a property of constructor functions. It defines what will become the prototype of instances created with that constructor.\r\n\r\n`__proto__` is an accessor property available on objects that points to their internal prototype.\r\n\r\nIn simple terms:\r\n\r\n- `prototype` exists on functions.\r\n- `__proto__` exists on objects.\r\n\r\nExample:\r\n\r\n```js\r\nfunction Car() {}\r\n\r\nconst myCar = new Car();\r\n\r\nconsole.log(Car.prototype === myCar.__proto__); // true\r\nconsole.log(typeof Car.prototype); // object\r\nconsole.log(typeof myCar.prototype); // undefined\r\n```\r\n\r\n`prototype` is on the function  \r\n`__proto__` on the object created",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-024",
+      "slug": "how-does-inheritance-work-in-javascript",
+      "title": "How does inheritance work in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Inheritance in JavaScript is based on prototypes.\r\n\r\nObjects inherit properties and methods from other objects via the prototype chain.\r\n\r\nThis can be achieved using constructor functions, Object.create, or ES6 classes.\r\n\r\nUnlike classical inheritance in other languages, JavaScript uses prototypal inheritance.\r\n\r\nExample:\r\n\r\n```js\r\nclass Animal {\r\n  speak() {\r\n    return 'Some sound';\r\n  }\r\n}\r\n\r\nclass Cat extends Animal {\r\n  speak() {\r\n    return 'Meow';\r\n  }\r\n}\r\n\r\nconst kitty = new Cat();\r\n\r\nconsole.log(kitty.speak()); // Meow\r\n```\r\n\r\nBehind the scenes, it works the same with prototype, only the syntax is cleaner.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-025",
+      "slug": "what-is-strict-mode-in-javascript-and-why-is-it-important",
+      "title": "What is strict mode in JavaScript and why is it important?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Strict mode is a way to opt into a restricted version of JavaScript.\r\n\r\nIt eliminates some silent errors by throwing exceptions and prevents unsafe actions such as:\r\n\r\n- Creating global variables accidentally\r\n- Assigning to non-writable properties\r\n- Using duplicate parameter names\r\n\r\nStrict mode makes code more secure and easier to optimize.\r\n\r\nExample:\r\n\r\n```js\r\n'use strict';\r\n\r\nx = 10; // ReferenceError: x is not defined\r\n\r\nfunction test(a, a) {\r\n  // SyntaxError: Duplicate parameter name not allowed in this context\r\n  return a;\r\n}\r\n```\r\n\r\nWithout strict mode, these errors would be silently ignored.\r\nWith strict mode, the engine throws immediately, making bugs easier to detect.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-026",
+      "slug": "what-are-javascript-modules-and-how-do-they-work",
+      "title": "What are JavaScript modules and how do they work?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript modules allow code to be split into reusable, isolated files.\r\n\r\nModules use export to expose functionality and import to consume it.\r\n\r\nEach module has its own scope and executes only once.\r\n\r\nES Modules are the standard module system in modern JavaScript.\r\n\r\nExample:\r\n\r\n```js\r\n// math.js\r\n\r\nexport function add(a, b) {\r\n  return a + b;\r\n}\r\n```\r\n\r\n```js\r\n// app.js\r\n\r\nimport { add } from './math.js';\r\n\r\nconsole.log(add(2, 3)); // 5\r\n```\r\n\r\nEach file has a separate scope.  \r\nThe load is only done once.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-027",
+      "slug": "what-is-a-memory-leak-and-how-can-it-happen-in-javascript",
+      "title": "What is a memory leak and how can it happen in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Memory & References"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A memory leak occurs when memory that is no longer needed is not released.\r\n\r\nIn JavaScript, memory leaks often happen due to:\r\n\r\n- Unused references being retained\r\n- Closures holding large objects\r\n- Forgotten timers or event listeners\r\n- Detached DOM elements still referenced in code\r\n\r\nMemory leaks degrade performance over time.\r\n\r\nExample:\r\n\r\n```js\r\nfunction startTimer() {\r\n  const largeData = new Array(1000000).fill('leak');\r\n\r\n  setInterval(() => {\r\n    console.log(largeData.length);\r\n  }, 1000);\r\n}\r\n\r\nstartTimer();\r\n```\r\n\r\nHere `largeData` gets stuck in the closure.  \r\nIt won't be garbage collected until the interval is cleared.\r\n\r\nSolution:\r\n\r\n```js\r\nconst interval = setInterval(() => {\r\n  console.log('running');\r\n}, 1000);\r\n\r\nclearInterval(interval);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-028",
+      "slug": "what-are-weakmap-and-weakset-and-how-are-they-different-from-map-and-set",
+      "title": "What are WeakMap and WeakSet and how are they different from Map and Set?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "WeakMap and WeakSet are similar to Map and Set but hold weak references to objects.\r\n\r\nIf no other references to the key or value exist, the garbage collector can reclaim that memory automatically.\r\n\r\nKey differences:\r\n\r\n- **WeakMap**: stores key-value pairs where keys must be objects. Keys are weakly referenced.\r\n- **WeakSet**: stores a collection of objects. Values are weakly referenced.\r\n- Neither WeakMap nor WeakSet is iterable.\r\n\r\nExample:\r\n\r\n```js\r\n// WeakMap — key is weakly held\r\nlet obj = { name: 'Rasool' };\r\n\r\nconst map = new Map();\r\nmap.set(obj, 'data');\r\n\r\nconst weakMap = new WeakMap();\r\nweakMap.set(obj, 'data');\r\n\r\nobj = null;\r\n// map still holds the reference → no garbage collection\r\n// weakMap releases the reference → eligible for garbage collection\r\n```\r\n\r\n```js\r\n// WeakSet — object is weakly held\r\nlet user = { id: 1 };\r\n\r\nconst weakSet = new WeakSet();\r\nweakSet.add(user);\r\n\r\nconsole.log(weakSet.has(user)); // true\r\n\r\nuser = null;\r\n// user is now eligible for garbage collection\r\n// weakSet no longer holds it\r\n```\r\n\r\n> **_NOTE:_** WeakMap and WeakSet are not iterable and have no `size` property.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-029",
+      "slug": "how-does-javascript-handle-object-property-descriptors",
+      "title": "How does JavaScript handle object property descriptors?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Each property in a JavaScript object has descriptors that define its behavior.\r\n\r\nProperty descriptors include:\r\n\r\n- value\r\n- writable\r\n- enumerable\r\n- configurable\r\n- get\r\n- set\r\n\r\nThese descriptors control whether a property can be modified, deleted, or enumerated.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = {};\r\n\r\nObject.defineProperty(user, 'name', {\r\n  value: 'Rasool',\r\n  writable: false,\r\n  enumerable: true,\r\n  configurable: false,\r\n});\r\n\r\nuser.name = 'Ali'; // Does not change\r\n\r\nconsole.log(user.name); // Rasool\r\n```\r\n\r\nThe descriptor determines how the property behaves.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-030",
+      "slug": "how-do-javascript-engines-optimize-code-execution",
+      "title": "How do JavaScript engines optimize code execution?",
+      "difficulty": "hard",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Modern JavaScript engines use techniques such as Just-In-Time compilation to improve performance.\r\n\r\nThey analyze code at runtime, optimize frequently executed paths, and apply inline caching.\r\n\r\nHowever, certain patterns such as changing object shapes dynamically can cause de-optimization.\r\n\r\nUnderstanding engine behavior helps write more performant code.\r\n\r\nExample:\r\n\r\n```js\r\nfunction createUser(name) {\r\n  return { name };\r\n}\r\n\r\nconst u1 = createUser('A');\r\nconst u2 = createUser('B');\r\n```\r\n\r\nHere the object shape is fixed → the engine optimizes.\r\n\r\nBut this is not good:\r\n\r\n```js\r\nconst user = {};\r\nuser.name = 'A';\r\nuser.age = 25;\r\nuser.city = 'NY';\r\n```\r\n\r\nAdding properties sporadically will change the hidden class and may be de-opted.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-031",
+      "slug": "what-is-the-execution-context-in-javascript-and-what-are-its-main-components",
+      "title": "What is the Execution Context in JavaScript and what are its main components?",
+      "difficulty": "hard",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "An Execution Context is an abstract environment where JavaScript code is evaluated and executed.\r\n\r\nThere are three types:\r\n\r\n- Global Execution Context\r\n- Function Execution Context\r\n- Eval Execution Context\r\n\r\nEach execution context consists of:\r\n\r\n- Variable Environment\r\n- Lexical Environment\r\n- This Binding\r\n\r\nThe engine creates a new execution context whenever a function is invoked.\r\n\r\nExample:\r\n\r\n```js\r\nvar x = 10;\r\n\r\nfunction foo() {\r\n  var y = 20;\r\n  console.log(x + y); // 30\r\n}\r\n\r\nfoo();\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-032",
+      "slug": "what-is-the-difference-between-the-creation-phase-and-execution-phase-of-an-exec",
+      "title": "What is the difference between the creation phase and execution phase of an execution context?",
+      "difficulty": "hard",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "During the creation phase:\r\n\r\n- Memory is allocated for variables and functions.\r\n- Variables declared with `var` are initialized with `undefined`.\r\n- Function declarations are fully hoisted.\r\n\r\nDuring the execution phase:\r\n\r\n- Code runs line by line.\r\n- Variables receive assigned values.\r\n- Functions are executed.\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(a); // undefined\r\n\r\nvar a = 5;\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-033",
+      "slug": "how-does-the-scope-chain-work-during-variable-resolution",
+      "title": "How does the Scope Chain work during variable resolution?",
+      "difficulty": "hard",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The Scope Chain is a mechanism used to resolve variable access.\r\n\r\nWhen a variable is referenced:\r\n\r\n1. The engine checks the current scope.\r\n2. If not found, it moves to the outer lexical scope.\r\n3. This continues until reaching the global scope.\r\n4. If not found, a ReferenceError is thrown.\r\n\r\nThis structure enables lexical scoping.\r\n\r\nExample:\r\n\r\n```js\r\nconst a = 1;\r\n\r\nfunction outer() {\r\n  const b = 2;\r\n\r\n  function inner() {\r\n    const c = 3;\r\n    console.log(a, b, c); // 1 2 3\r\n  }\r\n\r\n  inner();\r\n}\r\n\r\nouter();\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-034",
+      "slug": "what-is-the-difference-between-lexical-scope-and-dynamic-scope-and-which-one-doe",
+      "title": "What is the difference between Lexical Scope and Dynamic Scope, and which one does JavaScript use?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Lexical Scope means scope is determined by where a function is defined in the source code.\r\n\r\nDynamic Scope means scope is determined by how a function is called.\r\n\r\nJavaScript uses Lexical Scope.\r\n\r\nThe scope of a function is fixed at definition time, not call time.\r\n\r\nExample:\r\n\r\n```js\r\nfunction outer() {\r\n  const x = 10;\r\n\r\n  function inner() {\r\n    console.log(x);\r\n  }\r\n\r\n  return inner;\r\n}\r\n\r\nconst fn = outer();\r\nfn(); // 10\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-035",
+      "slug": "what-is-a-closure-in-javascript-and-how-does-it-relate-to-lexical-scoping",
+      "title": "What is a Closure in JavaScript and how does it relate to lexical scoping?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions",
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A closure is created when a function remembers variables from its lexical scope even after the outer function has finished executing.\r\n\r\nClosures are possible because JavaScript uses lexical scoping.\r\n\r\nThey allow functions to retain access to variables from their defining environment.\r\n\r\nExample:\r\n\r\n```js\r\nfunction counter() {\r\n  let count = 0;\r\n\r\n  return function () {\r\n    count++;\r\n    return count;\r\n  };\r\n}\r\n\r\nconst increment = counter();\r\n\r\nconsole.log(increment()); // 1\r\nconsole.log(increment()); // 2\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-036",
+      "slug": "why-can-closures-cause-memory-leaks-in-certain-situations",
+      "title": "Why can closures cause memory leaks in certain situations?",
+      "difficulty": "hard",
+      "categories": [
+        "Functions",
+        "Memory & References"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Closures can cause memory leaks when they retain references to large objects that are no longer needed.\r\n\r\nIf a closure keeps a reference alive, the garbage collector cannot free that memory.\r\n\r\nCommon causes include:\r\n\r\n- Unremoved event listeners\r\n- Long-running timers\r\n- Cached data in closures\r\n\r\nExample:\r\n\r\n```js\r\nfunction createHandler() {\r\n  const bigData = new Array(1000000).fill('data');\r\n\r\n  return function () {\r\n    console.log(bigData.length);\r\n  };\r\n}\r\n\r\nconst handler = createHandler();\r\n// bigData stays in memory as long as handler exists\r\n```\r\n\r\nTo avoid this, only keep what is actually needed inside the closure:\r\n\r\n```js\r\nfunction createHandler() {\r\n  const bigData = new Array(1000000).fill('data');\r\n  const length = bigData.length; // extract only what's needed\r\n\r\n  return function () {\r\n    console.log(length); // bigData is no longer referenced\r\n  };\r\n}\r\n\r\nconst handler = createHandler();\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-037",
+      "slug": "what-is-the-temporal-dead-zone-tdz-and-how-does-it-work-with-let-and-const",
+      "title": "What is the Temporal Dead Zone (TDZ) and how does it work with let and const?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The Temporal Dead Zone is the time between entering a block scope and the actual declaration of a `let` or `const` variable.\r\n\r\nDuring this period, accessing the variable results in a ReferenceError.\r\n\r\nUnlike `var`, `let` and `const` are hoisted but not initialized.\r\n\r\nExample:\r\n\r\n```js\r\n{\r\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\r\n  let a = 10;\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-038",
+      "slug": "how-does-block-scope-differ-from-function-scope",
+      "title": "How does block scope differ from function scope?",
+      "difficulty": "medium",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Function scope means variables declared with `var` are scoped to the entire function.\r\n\r\nBlock scope means variables declared with `let` and `const` are scoped to the nearest block `{}`.\r\n\r\nBlock scope prevents accidental variable leakage outside conditional or loop blocks.\r\n\r\nExample:\r\n\r\n```js\r\nif (true) {\r\n  var x = 1;\r\n  let y = 2;\r\n}\r\n\r\nconsole.log(x); // 1\r\nconsole.log(y); // ReferenceError\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-039",
+      "slug": "what-happens-internally-when-a-function-is-returned-from-another-function",
+      "title": "What happens internally when a function is returned from another function?",
+      "difficulty": "hard",
+      "categories": [
+        "Functions",
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "When a function is returned, its lexical environment is preserved if it references outer variables.\r\n\r\nThe engine keeps those variables in memory so the returned function can access them later.\r\n\r\nThis is the foundation of closures.\r\n\r\nExample:\r\n\r\n```js\r\nfunction greet(name) {\r\n  return function () {\r\n    console.log('Hello ' + name);\r\n  };\r\n}\r\n\r\nconst sayHello = greet('Rasool');\r\nsayHello(); // Hello Rasool\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-040",
+      "slug": "how-does-javascript-handle-variable-lookup-when-multiple-nested-scopes-exist",
+      "title": "How does JavaScript handle variable lookup when multiple nested scopes exist?",
+      "difficulty": "hard",
+      "categories": [
+        "Execution Context & Scope"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript resolves variables using the Scope Chain.\r\n\r\nIt searches from the innermost scope outward until it finds the variable.\r\n\r\nIf the variable does not exist in any scope, a ReferenceError is thrown.\r\n\r\nThis lookup process is determined at function definition time.\r\n\r\nExample:\r\n\r\n```js\r\nconst a = 'global';\r\n\r\nfunction first() {\r\n  const a = 'first';\r\n\r\n  function second() {\r\n    console.log(a);\r\n  }\r\n\r\n  second();\r\n}\r\n\r\nfirst(); // \"first\"\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-041",
+      "slug": "what-is-the-difference-between-and-in-javascript",
+      "title": "What is the difference between == and === in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`==` is the loose equality operator. It compares values after performing type coercion if the types differ.\r\n\r\n`===` is the strict equality operator. It compares both value and type without any coercion.\r\n\r\nIn most cases, `===` is preferred because it produces more predictable results.\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(1 == '1'); // true  (type coercion applied)\r\nconsole.log(1 === '1'); // false (different types)\r\n\r\nconsole.log(null == undefined); // true\r\nconsole.log(null === undefined); // false\r\n\r\nconsole.log(0 == false); // true\r\nconsole.log(0 === false); // false\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-042",
+      "slug": "how-do-call-apply-and-bind-work",
+      "title": "How do call(), apply(), and bind() work?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "All three methods allow you to explicitly set the value of `this` for a function.\r\n\r\n- `call()` invokes the function immediately with arguments passed individually.\r\n- `apply()` invokes the function immediately with arguments passed as an array.\r\n- `bind()` returns a new function with `this` permanently bound, without invoking it immediately.\r\n\r\nExample:\r\n\r\n```js\r\nfunction greet(greeting, punctuation) {\r\n  return `${greeting}, ${this.name}${punctuation}`;\r\n}\r\n\r\nconst user = { name: 'Rasool' };\r\n\r\nconsole.log(greet.call(user, 'Hello', '!')); // Hello, Rasool!\r\nconsole.log(greet.apply(user, ['Hi', '.'])); // Hi, Rasool.\r\n\r\nconst boundGreet = greet.bind(user, 'Hey');\r\nconsole.log(boundGreet('?')); // Hey, Rasool?\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-043",
+      "slug": "what-is-an-iife-in-javascript",
+      "title": "What is an IIFE in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "An IIFE (Immediately Invoked Function Expression) is a function that is defined and executed immediately after its creation.\r\n\r\nIt creates its own scope, preventing variables from leaking into the outer or global scope.\r\n\r\nIIFEs were widely used before block-scoped variables with `let` and `const` were available.\r\n\r\nExample:\r\n\r\n```js\r\n(function () {\r\n  const message = 'Hello from IIFE';\r\n  console.log(message); // Hello from IIFE\r\n})();\r\n\r\n// console.log(message); // ReferenceError — not accessible outside\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-044",
+      "slug": "what-is-currying-in-javascript",
+      "title": "What is currying in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Currying is a technique of transforming a function with multiple arguments into a sequence of functions, each accepting a single argument.\r\n\r\nIt enables partial application, making functions more reusable and composable.\r\n\r\nExample:\r\n\r\n```js\r\n// Regular function\r\nfunction add(a, b) {\r\n  return a + b;\r\n}\r\n\r\n// Curried version\r\nfunction curriedAdd(a) {\r\n  return function (b) {\r\n    return a + b;\r\n  };\r\n}\r\n\r\nconst add5 = curriedAdd(5);\r\nconsole.log(add5(3)); // 8\r\nconsole.log(add5(10)); // 15\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-045",
+      "slug": "what-is-the-difference-between-map-filter-and-reduce",
+      "title": "What is the difference between map(), filter(), and reduce()?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "All three are higher-order array methods that return a new value without mutating the original array.\r\n\r\n- `map()` transforms each element and returns a new array of the same length.\r\n- `filter()` returns a new array containing only elements that pass a given condition.\r\n- `reduce()` accumulates all elements into a single value.\r\n\r\nExample:\r\n\r\n```js\r\nconst numbers = [1, 2, 3, 4, 5];\r\n\r\nconst doubled = numbers.map((n) => n * 2);\r\nconsole.log(doubled); // [2, 4, 6, 8, 10]\r\n\r\nconst evens = numbers.filter((n) => n % 2 === 0);\r\nconsole.log(evens); // [2, 4]\r\n\r\nconst sum = numbers.reduce((acc, n) => acc + n, 0);\r\nconsole.log(sum); // 15\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-046",
+      "slug": "what-is-destructuring-in-javascript",
+      "title": "What is destructuring in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Destructuring is a syntax that allows unpacking values from arrays or properties from objects into individual variables.\r\n\r\nIt makes code more concise and readable when working with structured data.\r\n\r\nExample:\r\n\r\n```js\r\n// Object destructuring\r\nconst user = { name: 'Rasool', age: 28 };\r\nconst { name, age } = user;\r\nconsole.log(name); // Rasool\r\nconsole.log(age); // 28\r\n\r\n// Array destructuring\r\nconst colors = ['red', 'green', 'blue'];\r\nconst [first, second] = colors;\r\nconsole.log(first); // red\r\nconsole.log(second); // green\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-047",
+      "slug": "what-are-the-spread-and-rest-operators-in-javascript",
+      "title": "What are the spread and rest operators in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Both use the `...` syntax but serve opposite purposes.\r\n\r\nThe **spread** operator expands an iterable into individual elements.\r\n\r\nThe **rest** operator collects multiple elements into a single array or object.\r\n\r\nExample:\r\n\r\n```js\r\n// Spread — expanding elements\r\nconst arr1 = [1, 2, 3];\r\nconst arr2 = [...arr1, 4, 5];\r\nconsole.log(arr2); // [1, 2, 3, 4, 5]\r\n\r\nconst base = { a: 1 };\r\nconst extended = { ...base, b: 2 };\r\nconsole.log(extended); // { a: 1, b: 2 }\r\n\r\n// Rest — collecting elements\r\nfunction sum(...numbers) {\r\n  return numbers.reduce((acc, n) => acc + n, 0);\r\n}\r\nconsole.log(sum(1, 2, 3, 4)); // 10\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-048",
+      "slug": "what-is-the-difference-between-promise-all-promise-race-promise-allsettled-and-p",
+      "title": "What is the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "All four are Promise combinator methods used to handle multiple Promises simultaneously.\r\n\r\n- `Promise.all()` resolves when all Promises resolve. Rejects immediately if any one fails.\r\n- `Promise.race()` resolves or rejects as soon as the first Promise settles.\r\n- `Promise.allSettled()` waits for all Promises to settle and returns all results regardless of outcome.\r\n- `Promise.any()` resolves as soon as any one Promise fulfills. Rejects only if all fail.\r\n\r\nExample:\r\n\r\n```js\r\nconst p1 = Promise.resolve(1);\r\nconst p2 = Promise.resolve(2);\r\nconst p3 = Promise.resolve(3);\r\n\r\nPromise.all([p1, p2, p3]).then(console.log);\r\n// [1, 2, 3]\r\n\r\nPromise.race([p1, p2, p3]).then(console.log);\r\n// 1\r\n\r\nPromise.allSettled([p1, p2, p3]).then(console.log);\r\n// [{ status: 'fulfilled', value: 1 }, ...]\r\n\r\nPromise.any([p1, p2, p3]).then(console.log);\r\n// 1\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-049",
+      "slug": "what-is-event-delegation-in-javascript",
+      "title": "What is event delegation in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Event delegation is a pattern where a single event listener is attached to a parent element to handle events triggered by its children.\r\n\r\nIt relies on event bubbling, where events propagate up from the target element through its ancestors.\r\n\r\nThis pattern improves performance by reducing the number of event listeners and works for dynamically added elements.\r\n\r\nExample:\r\n\r\n```js\r\n// Without delegation — one listener per item (inefficient)\r\n// document.querySelectorAll('li').forEach(li => li.addEventListener(...))\r\n\r\n// With delegation — one listener on the parent\r\ndocument.querySelector('#list').addEventListener('click', (event) => {\r\n  if (event.target.tagName === 'LI') {\r\n    console.log('Clicked:', event.target.textContent);\r\n  }\r\n});\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-050",
+      "slug": "what-is-type-coercion-in-javascript",
+      "title": "What is type coercion in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Type coercion is the automatic or implicit conversion of a value from one data type to another.\r\n\r\nJavaScript performs coercion in two ways:\r\n\r\n- **Implicit coercion**: happens automatically during operations involving mixed types.\r\n- **Explicit coercion**: done manually using conversion functions like `Number()`, `String()`, or `Boolean()`.\r\n\r\nExample:\r\n\r\n```js\r\n// Implicit coercion\r\nconsole.log(1 + '2'); // '12' (number coerced to string)\r\nconsole.log(true + 1); // 2    (boolean coerced to number)\r\nconsole.log('' == false); // true (both coerce to 0)\r\n\r\n// Explicit coercion\r\nconsole.log(Number('42')); // 42\r\nconsole.log(String(100)); // '100'\r\nconsole.log(Boolean(0)); // false\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-051",
+      "slug": "what-is-optional-chaining-in-javascript",
+      "title": "What is optional chaining (?.) in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Optional chaining (`?.`) allows you to safely access deeply nested properties without checking if each reference in the chain is valid.\r\n\r\nIf any part of the chain is `null` or `undefined`, the expression short-circuits and returns `undefined` instead of throwing an error.\r\n\r\nIt works with property access, method calls, and array indexing.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = {\r\n  profile: {\r\n    address: {\r\n      city: 'Tehran',\r\n    },\r\n  },\r\n};\r\n\r\nconsole.log(user?.profile?.address?.city); // Tehran\r\nconsole.log(user?.contact?.phone); // undefined (no error thrown)\r\n\r\n// With method calls\r\nconsole.log(user?.getName?.()); // undefined (no error thrown)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-052",
+      "slug": "what-is-the-nullish-coalescing-operator-and-how-does-it-differ-from",
+      "title": "What is the nullish coalescing operator (??) and how does it differ from ||?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The nullish coalescing operator (`??`) returns the right-hand side value only when the left-hand side is `null` or `undefined`.\r\n\r\nThe logical OR operator (`||`) returns the right-hand side when the left-hand side is any falsy value, including `0`, `''`, and `false`.\r\n\r\nThis distinction matters when `0` or an empty string are valid values.\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(null ?? 'default'); // 'default'\r\nconsole.log(undefined ?? 'default'); // 'default'\r\n\r\nconsole.log(0 ?? 'default'); // 0       (not replaced — 0 is not null/undefined)\r\nconsole.log(0 || 'default'); // 'default' (replaced — 0 is falsy)\r\n\r\nconsole.log('' ?? 'fallback'); // ''     (empty string is not null/undefined)\r\nconsole.log('' || 'fallback'); // 'fallback' (empty string is falsy)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-053",
+      "slug": "how-does-the-typeof-operator-work-and-what-are-its-quirks",
+      "title": "How does the typeof operator work and what are its quirks?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The `typeof` operator returns a string indicating the type of the given value.\r\n\r\nCommon return values:\r\n\r\n- `'string'`, `'number'`, `'bigint'`, `'boolean'`, `'undefined'`, `'symbol'`\r\n- `'object'` for objects and arrays\r\n- `'function'` for functions\r\n\r\nKnown quirk: `typeof null` returns `'object'`, which is a historical bug in JavaScript.\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(typeof 'hello'); // 'string'\r\nconsole.log(typeof 42); // 'number'\r\nconsole.log(typeof true); // 'boolean'\r\nconsole.log(typeof undefined); // 'undefined'\r\nconsole.log(typeof Symbol()); // 'symbol'\r\nconsole.log(typeof function () {}); // 'function'\r\nconsole.log(typeof {}); // 'object'\r\nconsole.log(typeof []); // 'object'\r\nconsole.log(typeof null); // 'object' ← known quirk\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-054",
+      "slug": "what-is-the-instanceof-operator-and-how-does-it-differ-from-typeof",
+      "title": "What is the instanceof operator and how does it differ from typeof?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`instanceof` checks whether an object was created from a specific constructor or class by walking the prototype chain. It returns a boolean.\r\n\r\n`typeof` returns a string type name and is best suited for primitives.\r\n\r\n`instanceof` is better suited for checking object instances and class inheritance.\r\n\r\nExample:\r\n\r\n```js\r\nclass Animal {}\r\nclass Dog extends Animal {}\r\n\r\nconst dog = new Dog();\r\n\r\nconsole.log(dog instanceof Dog); // true\r\nconsole.log(dog instanceof Animal); // true (walks prototype chain)\r\nconsole.log(dog instanceof Object); // true (everything inherits from Object)\r\n\r\nconsole.log(typeof dog); // 'object'\r\nconsole.log(typeof 42); // 'number'\r\n\r\nconsole.log([] instanceof Array); // true\r\nconsole.log([] instanceof Object); // true\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-055",
+      "slug": "what-are-symbols-in-javascript-and-when-are-they-used",
+      "title": "What are Symbols in JavaScript and when are they used?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A Symbol is a primitive value that is guaranteed to be unique. No two Symbols are ever equal, even if they have the same description.\r\n\r\nSymbols are used as unique object property keys to avoid naming collisions, especially in shared codebases or libraries.\r\n\r\nJavaScript also has built-in well-known Symbols such as `Symbol.iterator` that enable custom object behavior.\r\n\r\nExample:\r\n\r\n```js\r\nconst id = Symbol('id');\r\nconst id2 = Symbol('id');\r\n\r\nconsole.log(id === id2); // false — every Symbol is unique\r\n\r\nconst user = {\r\n  name: 'Rasool',\r\n  [id]: 12345, // Symbol used as a property key\r\n};\r\n\r\nconsole.log(user[id]); // 12345\r\nconsole.log(user.id); // undefined — not accessible by string key\r\n\r\n// Well-known Symbol\r\nconst iterable = {\r\n  [Symbol.iterator]() {\r\n    let n = 0;\r\n    return { next: () => ({ value: n++, done: n > 3 }) };\r\n  },\r\n};\r\n\r\nconsole.log([...iterable]); // [0, 1, 2]\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-056",
+      "slug": "what-are-generator-functions-in-javascript",
+      "title": "What are generator functions in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A generator function is declared with `function*` and can pause its execution using the `yield` keyword, returning control to the caller.\r\n\r\nEach call to `.next()` on the generator resumes execution until the next `yield` or the function ends.\r\n\r\nGenerators are useful for lazy evaluation, infinite sequences, and async flow control.\r\n\r\nExample:\r\n\r\n```js\r\nfunction* counter() {\r\n  yield 1;\r\n  yield 2;\r\n  yield 3;\r\n}\r\n\r\nconst gen = counter();\r\n\r\nconsole.log(gen.next()); // { value: 1, done: false }\r\nconsole.log(gen.next()); // { value: 2, done: false }\r\nconsole.log(gen.next()); // { value: 3, done: false }\r\nconsole.log(gen.next()); // { value: undefined, done: true }\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-057",
+      "slug": "what-is-the-iterator-protocol-in-javascript",
+      "title": "What is the iterator protocol in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "An object follows the iterator protocol when it implements a `next()` method that returns `{ value, done }`.\r\n\r\nAn iterable is any object with a `[Symbol.iterator]()` method that returns an iterator. This enables `for...of` loops and spread syntax.\r\n\r\nExample:\r\n\r\n```js\r\nconst range = {\r\n  from: 1,\r\n  to: 3,\r\n  [Symbol.iterator]() {\r\n    let current = this.from;\r\n    const last = this.to;\r\n    return {\r\n      next() {\r\n        return current <= last\r\n          ? { value: current++, done: false }\r\n          : { value: undefined, done: true };\r\n      },\r\n    };\r\n  },\r\n};\r\n\r\nfor (const num of range) {\r\n  console.log(num); // 1, 2, 3\r\n}\r\n\r\nconsole.log([...range]); // [1, 2, 3]\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-058",
+      "slug": "what-is-proxy-in-javascript",
+      "title": "What is Proxy in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A `Proxy` wraps an object and intercepts fundamental operations on it using traps such as `get`, `set`, `has`, and `deleteProperty`.\r\n\r\nProxies are used for validation, logging, access control, computed properties, and building reactive systems.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = { name: 'Rasool', age: 28 };\r\n\r\nconst proxy = new Proxy(user, {\r\n  get(target, key) {\r\n    return key in target ? target[key] : `Property \"${key}\" not found`;\r\n  },\r\n  set(target, key, value) {\r\n    if (key === 'age' && typeof value !== 'number') {\r\n      throw new TypeError('Age must be a number');\r\n    }\r\n    target[key] = value;\r\n    return true;\r\n  },\r\n});\r\n\r\nconsole.log(proxy.name); // Rasool\r\nconsole.log(proxy.country); // Property \"country\" not found\r\nproxy.age = 30; // valid\r\n// proxy.age = 'thirty';   // TypeError: Age must be a number\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-059",
+      "slug": "what-is-the-reflect-api-in-javascript",
+      "title": "What is the Reflect API in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The `Reflect` object provides static methods that mirror the operations available as Proxy traps.\r\n\r\nIt is commonly used inside Proxy traps to forward the original operation to the target object after applying custom logic.\r\n\r\nUsing `Reflect` makes Proxy handlers more reliable and predictable.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = { name: 'Rasool' };\r\n\r\nconst proxy = new Proxy(user, {\r\n  set(target, key, value) {\r\n    console.log(`Setting \"${key}\" to \"${value}\"`);\r\n    return Reflect.set(target, key, value); // forward to original object\r\n  },\r\n});\r\n\r\nproxy.name = 'Ali';\r\n// Setting \"name\" to \"Ali\"\r\n\r\nconsole.log(user.name); // Ali\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-060",
+      "slug": "what-are-default-parameters-in-javascript",
+      "title": "What are default parameters in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Default parameters allow function parameters to have a fallback value when no argument is passed or when `undefined` is explicitly provided.\r\n\r\nDefault values are evaluated at call time, not at function definition time.\r\n\r\nExample:\r\n\r\n```js\r\nfunction greet(name = 'Guest', greeting = 'Hello') {\r\n  return `${greeting}, ${name}!`;\r\n}\r\n\r\nconsole.log(greet()); // Hello, Guest!\r\nconsole.log(greet('Rasool')); // Hello, Rasool!\r\nconsole.log(greet('Sara', 'Hi')); // Hi, Sara!\r\nconsole.log(greet(undefined, 'Hey')); // Hey, Guest! (undefined triggers default)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-061",
+      "slug": "what-are-object-keys-object-values-and-object-entries",
+      "title": "What are Object.keys(), Object.values(), and Object.entries()?",
+      "difficulty": "easy",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "These static methods return arrays of an object's own enumerable properties.\r\n\r\n- `Object.keys()` returns an array of property names.\r\n- `Object.values()` returns an array of property values.\r\n- `Object.entries()` returns an array of `[key, value]` pairs.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = { name: 'Rasool', age: 28, city: 'Tehran' };\r\n\r\nconsole.log(Object.keys(user)); // ['name', 'age', 'city']\r\nconsole.log(Object.values(user)); // ['Rasool', 28, 'Tehran']\r\nconsole.log(Object.entries(user)); // [['name', 'Rasool'], ['age', 28], ['city', 'Tehran']]\r\n\r\n// Common use: iterating over entries\r\nObject.entries(user).forEach(([key, value]) => {\r\n  console.log(`${key}: ${value}`);\r\n});\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-062",
+      "slug": "what-is-the-difference-between-object-assign-and-the-spread-operator-for-merging",
+      "title": "What is the difference between Object.assign() and the spread operator for merging objects?",
+      "difficulty": "easy",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Both copy properties from source objects into a target, but differ in how they work.\r\n\r\n- `Object.assign()` mutates the first argument (target object).\r\n- The spread operator `{...obj}` always creates a new object without mutation.\r\n\r\nBoth perform shallow copies — nested objects are copied by reference.\r\n\r\nExample:\r\n\r\n```js\r\nconst defaults = { theme: 'light', lang: 'en' };\r\nconst userPrefs = { lang: 'fa' };\r\n\r\n// Object.assign — mutates the target\r\nconst config1 = Object.assign({}, defaults, userPrefs);\r\nconsole.log(config1); // { theme: 'light', lang: 'fa' }\r\n\r\n// Spread — creates a new object\r\nconst config2 = { ...defaults, ...userPrefs };\r\nconsole.log(config2); // { theme: 'light', lang: 'fa' }\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-063",
+      "slug": "what-is-the-difference-between-object-freeze-and-object-seal",
+      "title": "What is the difference between Object.freeze() and Object.seal()?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Both methods restrict how an object can be modified, but at different levels.\r\n\r\n- `Object.freeze()` prevents adding, removing, or modifying any properties.\r\n- `Object.seal()` prevents adding or removing properties, but allows modifying existing values.\r\n\r\nBoth are shallow — nested objects are not affected.\r\n\r\nExample:\r\n\r\n```js\r\n// Object.freeze\r\nconst frozen = Object.freeze({ name: 'Rasool', age: 28 });\r\nfrozen.name = 'Ali'; // silently fails (throws in strict mode)\r\nfrozen.city = 'Tehran'; // silently fails\r\nconsole.log(frozen); // { name: 'Rasool', age: 28 }\r\n\r\n// Object.seal\r\nconst sealed = Object.seal({ name: 'Rasool', age: 28 });\r\nsealed.name = 'Ali'; // allowed — existing property\r\nsealed.city = 'Tehran'; // silently fails — new property\r\nconsole.log(sealed); // { name: 'Ali', age: 28 }\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-064",
+      "slug": "what-are-array-from-and-array-isarray",
+      "title": "What are Array.from() and Array.isArray()?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`Array.from()` creates a new array from an array-like or iterable object. It also accepts an optional mapping function.\r\n\r\n`Array.isArray()` checks whether a value is a true array, returning a boolean.\r\n\r\nExample:\r\n\r\n```js\r\n// Array.from\r\nconsole.log(Array.from('hello')); // ['h', 'e', 'l', 'l', 'o']\r\nconsole.log(Array.from(new Set([1, 2, 2, 3]))); // [1, 2, 3]\r\nconsole.log(Array.from({ length: 3 }, (_, i) => i + 1)); // [1, 2, 3]\r\n\r\n// Array.isArray\r\nconsole.log(Array.isArray([1, 2, 3])); // true\r\nconsole.log(Array.isArray('hello')); // false\r\nconsole.log(Array.isArray({ length: 3 })); // false\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-065",
+      "slug": "what-are-flat-and-flatmap-in-javascript",
+      "title": "What are flat() and flatMap() in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`flat()` creates a new array with sub-array elements flattened to a specified depth. The default depth is 1.\r\n\r\n`flatMap()` maps each element using a function and then flattens the result by one level. It is equivalent to calling `.map().flat(1)`.\r\n\r\nExample:\r\n\r\n```js\r\nconst nested = [1, [2, 3], [4, [5, 6]]];\r\n\r\nconsole.log(nested.flat()); // [1, 2, 3, 4, [5, 6]]\r\nconsole.log(nested.flat(2)); // [1, 2, 3, 4, 5, 6]\r\nconsole.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5, 6]\r\n\r\nconst sentences = ['Hello world', 'Foo bar'];\r\nconst words = sentences.flatMap((s) => s.split(' '));\r\nconsole.log(words); // ['Hello', 'world', 'Foo', 'bar']\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-066",
+      "slug": "what-are-find-and-findindex-in-javascript",
+      "title": "What are find() and findIndex() in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`find()` returns the first element that satisfies a condition, or `undefined` if no match is found.\r\n\r\n`findIndex()` returns the index of the first matching element, or `-1` if no match is found.\r\n\r\nBoth stop iteration as soon as the first match is found.\r\n\r\nExample:\r\n\r\n```js\r\nconst users = [\r\n  { id: 1, name: 'Rasool' },\r\n  { id: 2, name: 'Sara' },\r\n  { id: 3, name: 'Ali' },\r\n];\r\n\r\nconst user = users.find((u) => u.id === 2);\r\nconsole.log(user); // { id: 2, name: 'Sara' }\r\n\r\nconst index = users.findIndex((u) => u.id === 2);\r\nconsole.log(index); // 1\r\n\r\nconsole.log(users.find((u) => u.id === 99)); // undefined\r\nconsole.log(users.findIndex((u) => u.id === 99)); // -1\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-067",
+      "slug": "what-are-some-and-every-in-javascript",
+      "title": "What are some() and every() in JavaScript?",
+      "difficulty": "easy",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`some()` returns `true` if at least one element satisfies the condition.\r\n\r\n`every()` returns `true` only if all elements satisfy the condition.\r\n\r\nBoth short-circuit: `some()` stops at the first truthy result, `every()` stops at the first falsy result.\r\n\r\nExample:\r\n\r\n```js\r\nconst numbers = [1, 2, 3, 4, 5];\r\n\r\nconsole.log(numbers.some((n) => n > 4)); // true  (5 passes)\r\nconsole.log(numbers.some((n) => n > 10)); // false (none passes)\r\n\r\nconsole.log(numbers.every((n) => n > 0)); // true  (all pass)\r\nconsole.log(numbers.every((n) => n > 3)); // false (not all pass)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-068",
+      "slug": "how-does-array-sort-work-and-what-are-its-common-pitfalls",
+      "title": "How does Array.sort() work and what are its common pitfalls?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "By default, `sort()` converts elements to strings and sorts them lexicographically (alphabetically). This produces incorrect results for numbers.\r\n\r\nTo sort numbers correctly, a comparator function must be provided.\r\n\r\n`sort()` mutates the original array and is not guaranteed to be stable in all environments, though modern engines implement stable sort.\r\n\r\nExample:\r\n\r\n```js\r\nconst fruits = ['banana', 'apple', 'cherry'];\r\nconsole.log(fruits.sort()); // ['apple', 'banana', 'cherry']\r\n\r\n// Default sort — wrong for numbers\r\nconst nums = [10, 1, 5, 2];\r\nconsole.log(nums.sort()); // [1, 10, 2, 5] ← lexicographic, incorrect\r\n\r\n// Correct numeric sort\r\nconsole.log([10, 1, 5, 2].sort((a, b) => a - b)); // [1, 2, 5, 10] — ascending\r\nconsole.log([10, 1, 5, 2].sort((a, b) => b - a)); // [10, 5, 2, 1] — descending\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-069",
+      "slug": "what-is-memoization-in-javascript",
+      "title": "What is memoization in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Memoization is an optimization technique where the result of a function call is cached based on its inputs. If the same inputs are provided again, the cached result is returned instead of recomputing.\r\n\r\nIt is useful for expensive or frequently called functions with the same arguments.\r\n\r\nExample:\r\n\r\n```js\r\nfunction memoize(fn) {\r\n  const cache = new Map();\r\n\r\n  return function (...args) {\r\n    const key = JSON.stringify(args);\r\n\r\n    if (cache.has(key)) {\r\n      console.log('From cache');\r\n      return cache.get(key);\r\n    }\r\n\r\n    const result = fn(...args);\r\n    cache.set(key, result);\r\n    return result;\r\n  };\r\n}\r\n\r\nconst add = memoize((a, b) => a + b);\r\n\r\nconsole.log(add(2, 3)); // 5\r\nconsole.log(add(2, 3)); // From cache — 5\r\nconsole.log(add(4, 5)); // 9\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-070",
+      "slug": "what-are-javascript-error-types-and-how-do-you-create-custom-errors",
+      "title": "What are JavaScript error types and how do you create custom errors?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "JavaScript has several built-in error types:\r\n\r\n- `Error` — generic base error\r\n- `TypeError` — operation on a wrong type\r\n- `ReferenceError` — access to an undefined variable\r\n- `SyntaxError` — invalid syntax\r\n- `RangeError` — value outside an allowed range\r\n\r\nCustom errors can be created by extending the `Error` class.\r\n\r\nExample:\r\n\r\n```js\r\n// Built-in error types\r\ntry {\r\n  null.property; // TypeError\r\n} catch (e) {\r\n  console.log(e instanceof TypeError); // true\r\n  console.log(e.name); // 'TypeError'\r\n}\r\n\r\n// Custom error\r\nclass ValidationError extends Error {\r\n  constructor(message, field) {\r\n    super(message);\r\n    this.name = 'ValidationError';\r\n    this.field = field;\r\n  }\r\n}\r\n\r\ntry {\r\n  throw new ValidationError('Invalid email', 'email');\r\n} catch (e) {\r\n  console.log(e.name); // ValidationError\r\n  console.log(e.message); // Invalid email\r\n  console.log(e.field); // email\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-071",
+      "slug": "what-is-debounce-in-javascript",
+      "title": "What is debounce in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Debounce is a technique that delays the execution of a function until after a specified time has elapsed since the last time it was called.\r\n\r\nIt is commonly used to optimize performance in scenarios like search inputs, window resize, and scroll events where a function should not run on every single event.\r\n\r\nExample:\r\n\r\n```js\r\nfunction debounce(fn, delay) {\r\n  let timer;\r\n  return function (...args) {\r\n    clearTimeout(timer);\r\n    timer = setTimeout(() => fn(...args), delay);\r\n  };\r\n}\r\n\r\nconst handleSearch = debounce((query) => {\r\n  console.log('Searching for:', query);\r\n}, 300);\r\n\r\nhandleSearch('j');\r\nhandleSearch('ja');\r\nhandleSearch('jav');\r\nhandleSearch('java'); // only this one actually triggers the search\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-072",
+      "slug": "what-is-throttle-in-javascript",
+      "title": "What is throttle in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Throttle limits how often a function can execute over time, ensuring it runs at most once per specified interval regardless of how many times it is called.\r\n\r\nUnlike debounce which waits for calls to stop, throttle guarantees execution at regular intervals.\r\n\r\nExample:\r\n\r\n```js\r\nfunction throttle(fn, limit) {\r\n  let lastCall = 0;\r\n  return function (...args) {\r\n    const now = Date.now();\r\n    if (now - lastCall >= limit) {\r\n      lastCall = now;\r\n      fn(...args);\r\n    }\r\n  };\r\n}\r\n\r\nconst handleScroll = throttle(() => {\r\n  console.log('Scroll handled');\r\n}, 200);\r\n\r\n// Even if scroll fires 100 times/second, function runs at most every 200ms\r\nwindow.addEventListener('scroll', handleScroll);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-073",
+      "slug": "what-is-the-difference-between-event-bubbling-and-event-capturing",
+      "title": "What is the difference between event bubbling and event capturing?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "When a DOM event fires, it travels through two phases:\r\n\r\n- **Capturing phase**: the event travels from the root down to the target element.\r\n- **Bubbling phase**: the event travels from the target back up to the root.\r\n\r\nBy default, event listeners use the bubbling phase. Pass `true` as the third argument to `addEventListener` to use capturing.\r\n\r\n`event.stopPropagation()` halts further propagation through the chain.\r\n\r\nExample:\r\n\r\n```js\r\ndocument.querySelector('#parent').addEventListener('click', () => {\r\n  console.log('Parent — bubbling');\r\n});\r\n\r\ndocument.querySelector('#child').addEventListener('click', () => {\r\n  console.log('Child clicked');\r\n});\r\n\r\n// Clicking child logs:\r\n// Child clicked\r\n// Parent — bubbling\r\n\r\n// Capturing — fires before bubbling\r\ndocument.querySelector('#parent').addEventListener(\r\n  'click',\r\n  () => {\r\n    console.log('Parent — capturing');\r\n  },\r\n  true,\r\n);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-074",
+      "slug": "what-is-the-difference-between-localstorage-sessionstorage-and-cookies",
+      "title": "What is the difference between localStorage, sessionStorage, and cookies?",
+      "difficulty": "medium",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "These mechanisms store data on the client side but differ in behavior, lifetime, and security.\r\n\r\n**localStorage**\r\n\r\n- Persists even after the browser is closed and reopened\r\n- Around 5MB storage limit\r\n- Accessible only via JavaScript\r\n- Not automatically sent with HTTP requests\r\n\r\n**sessionStorage**\r\n\r\n- Persists only within a single browser tab\r\n- Cleared when the tab is closed\r\n- Same API as localStorage\r\n\r\n**Cookies**\r\n\r\n- Limited to about 4KB\r\n- Automatically sent with every HTTP request to the server\r\n- Support expiration dates\r\n- Can be marked `HttpOnly` and `Secure`\r\n\r\n**Security**\r\n\r\n- `localStorage` is vulnerable to XSS attacks\r\n- `HttpOnly` cookies cannot be accessed via JavaScript, making them safer for tokens\r\n\r\nExample:\r\n\r\n```js\r\n// localStorage\r\nlocalStorage.setItem('theme', 'dark');\r\nconsole.log(localStorage.getItem('theme')); // 'dark'\r\n\r\n// sessionStorage\r\nsessionStorage.setItem('step', '2');\r\nconsole.log(sessionStorage.getItem('step')); // '2'\r\n\r\n// Cookie\r\ndocument.cookie = 'token=abc123; Secure; SameSite=Strict';\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-075",
+      "slug": "what-is-the-difference-between-settimeout-and-setinterval",
+      "title": "What is the difference between setTimeout and setInterval?",
+      "difficulty": "easy",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "- `setTimeout(fn, delay)` executes a function once after the specified delay in milliseconds.\r\n- `setInterval(fn, interval)` executes a function repeatedly at the specified interval.\r\n\r\nBoth return an ID that can be used to cancel execution with `clearTimeout` or `clearInterval`.\r\n\r\nExample:\r\n\r\n```js\r\n// setTimeout — runs once after 1 second\r\nconst timeoutId = setTimeout(() => {\r\n  console.log('Runs once');\r\n}, 1000);\r\n\r\n// setInterval — runs every second\r\nconst intervalId = setInterval(() => {\r\n  console.log('Runs every second');\r\n}, 1000);\r\n\r\n// Cancel both\r\nclearTimeout(timeoutId);\r\nclearInterval(intervalId);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-076",
+      "slug": "what-is-requestanimationframe-in-javascript",
+      "title": "What is requestAnimationFrame in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`requestAnimationFrame()` schedules a callback to run before the next browser repaint, typically at 60 frames per second.\r\n\r\nIt is more efficient than `setTimeout` for animations because it synchronizes with the display refresh rate and automatically pauses when the tab is not visible, saving resources.\r\n\r\nExample:\r\n\r\n```js\r\nlet position = 0;\r\n\r\nfunction animate() {\r\n  position += 2;\r\n  document.querySelector('#box').style.left = position + 'px';\r\n\r\n  if (position < 300) {\r\n    requestAnimationFrame(animate); // schedule next frame\r\n  }\r\n}\r\n\r\nrequestAnimationFrame(animate);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-077",
+      "slug": "what-are-pure-functions-and-immutability-in-javascript",
+      "title": "What are pure functions and immutability in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A pure function always returns the same output for the same inputs and has no side effects — it does not modify any external state.\r\n\r\nImmutability means not modifying existing data, but creating new copies instead.\r\n\r\nTogether they make code more predictable, testable, and easier to reason about.\r\n\r\nExample:\r\n\r\n```js\r\n// Impure — modifies external state\r\nlet count = 0;\r\nfunction increment() {\r\n  count++; // side effect\r\n}\r\n\r\n// Pure — no side effects, same input → same output\r\nfunction add(a, b) {\r\n  return a + b;\r\n}\r\n\r\n// Impure — mutates the original array\r\nfunction addItem(arr, item) {\r\n  arr.push(item);\r\n  return arr;\r\n}\r\n\r\n// Pure — returns a new array\r\nfunction addItemPure(arr, item) {\r\n  return [...arr, item];\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-078",
+      "slug": "what-is-function-composition-in-javascript",
+      "title": "What is function composition in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Function composition is the process of combining multiple functions so that the output of one becomes the input of the next.\r\n\r\nIt enables building complex operations from smaller, reusable, and testable functions.\r\n\r\nExample:\r\n\r\n```js\r\nconst double = (x) => x * 2;\r\nconst addTen = (x) => x + 10;\r\nconst square = (x) => x * x;\r\n\r\n// Manual composition (right to left)\r\nconst result = square(addTen(double(3)));\r\nconsole.log(result); // double(3)=6 → addTen(6)=16 → square(16)=256\r\n\r\n// Compose utility\r\nconst compose =\r\n  (...fns) =>\r\n  (x) =>\r\n    fns.reduceRight((acc, fn) => fn(acc), x);\r\n\r\nconst transform = compose(square, addTen, double);\r\nconsole.log(transform(3)); // 256\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-079",
+      "slug": "what-are-web-workers-in-javascript",
+      "title": "What are Web Workers in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Web Workers allow JavaScript to run in a background thread, separate from the main thread.\r\n\r\nThis enables heavy computations to execute without blocking the UI or freezing the browser.\r\n\r\nWorkers do not have access to the DOM. Communication between the main thread and a worker happens via `postMessage` and `onmessage`.\r\n\r\nExample:\r\n\r\n```js\r\n// main.js\r\nconst worker = new Worker('worker.js');\r\n\r\nworker.postMessage({ numbers: [1, 2, 3, 4, 5] });\r\n\r\nworker.onmessage = (event) => {\r\n  console.log('Sum from worker:', event.data); // 15\r\n};\r\n\r\n// worker.js\r\nself.onmessage = (event) => {\r\n  const sum = event.data.numbers.reduce((acc, n) => acc + n, 0);\r\n  self.postMessage(sum);\r\n};\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-080",
+      "slug": "how-does-error-handling-work-with-async-await",
+      "title": "How does error handling work with async/await?",
+      "difficulty": "medium",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "In async/await, errors from rejected Promises must be caught using `try/catch`.\r\n\r\nWithout error handling, unhandled rejections can cause silent failures or crash the program.\r\n\r\nAs an alternative, `.catch()` can be chained directly on the returned Promise.\r\n\r\nExample:\r\n\r\n```js\r\nasync function fetchUser(id) {\r\n  try {\r\n    const response = await fetch(`/api/users/${id}`);\r\n\r\n    if (!response.ok) throw new Error('User not found');\r\n\r\n    const user = await response.json();\r\n    return user;\r\n  } catch (error) {\r\n    console.log('Error:', error.message);\r\n    return null;\r\n  }\r\n}\r\n\r\n// Alternative: .catch() on the Promise\r\nfetchUser(1)\r\n  .then((user) => console.log(user))\r\n  .catch((err) => console.log(err));\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-081",
+      "slug": "what-are-hidden-classes-in-javascript-engines-and-how-do-they-affect-performance",
+      "title": "What are hidden classes in JavaScript engines and how do they affect performance?",
+      "difficulty": "hard",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Hidden classes are internal structures used by JavaScript engines (such as V8) to optimize object property access.\r\n\r\nWhen objects are created with the same property structure and order, the engine assigns them the same hidden class. This allows fast property access through inline caching.\r\n\r\nIf object shapes change dynamically (e.g., adding properties later or in different orders), the engine may create new hidden classes, which can cause de-optimization.\r\n\r\nConsistent object structure improves performance.\r\n\r\nExample:\r\n\r\n```js\r\nfunction createUser(name, age) {\r\n  return { name, age };\r\n}\r\n\r\nconst u1 = createUser('A', 20);\r\nconst u2 = createUser('B', 25);\r\n// Same hidden class → optimized\r\n\r\nconst user = {};\r\nuser.name = 'C';\r\nuser.age = 30;\r\n// Different shape transitions → may de-optimize\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-082",
+      "slug": "what-is-inline-caching-and-how-does-it-optimize-property-access",
+      "title": "What is inline caching and how does it optimize property access?",
+      "difficulty": "hard",
+      "categories": [
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Inline caching is an optimization technique used by JavaScript engines to speed up property access.\r\n\r\nWhen a property is accessed repeatedly on objects with the same hidden class, the engine caches the location of that property.\r\n\r\nFuture accesses skip full lookup and use the cached reference directly, improving performance.\r\n\r\nIf object shapes vary, inline caches may become invalidated.\r\n\r\nExample:\r\n\r\n```js\r\nfunction getName(user) {\r\n  return user.name;\r\n}\r\n\r\nconst u1 = { name: 'A' };\r\nconst u2 = { name: 'B' };\r\n\r\ngetName(u1);\r\ngetName(u2);\r\n// Engine can optimize repeated access to `.name`\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-083",
+      "slug": "how-does-generational-garbage-collection-work-in-modern-javascript-engines",
+      "title": "How does generational garbage collection work in modern JavaScript engines?",
+      "difficulty": "hard",
+      "categories": [
+        "Memory & References",
+        "Engine & Runtime"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Modern JavaScript engines use generational garbage collection.\r\n\r\nMemory is divided into generations:\r\n\r\n- Young generation (short-lived objects)\r\n- Old generation (long-lived objects)\r\n\r\nMost objects die young, so the engine frequently cleans the young generation.\r\n\r\nObjects that survive multiple collections are promoted to the old generation, which is collected less frequently.\r\n\r\nThis improves overall performance and memory efficiency.\r\n\r\nExample:\r\n\r\n```js\r\nfunction createTemp() {\r\n  return { value: Math.random() };\r\n}\r\n\r\nfor (let i = 0; i < 100000; i++) {\r\n  createTemp();\r\n}\r\n// Most objects are short-lived → collected in young generation\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-084",
+      "slug": "what-is-partial-application-and-how-does-it-differ-from-currying",
+      "title": "What is partial application and how does it differ from currying?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Partial application is a technique where a function is invoked with some of its arguments fixed, returning a new function with fewer parameters.\r\n\r\nCurrying transforms a function with multiple arguments into a sequence of functions each taking a single argument.\r\n\r\nPartial application fixes arguments at once.\r\nCurrying transforms the function structure.\r\n\r\nExample:\r\n\r\n```js\r\nfunction multiply(a, b, c) {\r\n  return a * b * c;\r\n}\r\n\r\nfunction partialMultiply(a) {\r\n  return (b, c) => multiply(a, b, c);\r\n}\r\n\r\nconst double = partialMultiply(2);\r\nconsole.log(double(3, 4)); // 24\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-085",
+      "slug": "what-are-higher-order-functions-and-why-are-they-important",
+      "title": "What are higher-order functions and why are they important?",
+      "difficulty": "medium",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "A higher-order function is a function that either:\r\n\r\n- Takes another function as an argument\r\n- Returns a function\r\n- Or both\r\n\r\nThey enable abstraction, composition, and functional programming patterns.\r\n\r\nCommon examples include map, filter, and reduce.\r\n\r\nExample:\r\n\r\n```js\r\nfunction greet(name) {\r\n  return `Hello ${name}`;\r\n}\r\n\r\nfunction processUser(name, callback) {\r\n  return callback(name);\r\n}\r\n\r\nconsole.log(processUser('Rasool', greet));\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-086",
+      "slug": "what-is-referential-transparency-in-javascript",
+      "title": "What is referential transparency in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Functions"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Referential transparency means that a function can be replaced with its output value without changing program behavior.\r\n\r\nA function is referentially transparent if:\r\n\r\n- It always returns the same output for the same input\r\n- It has no side effects\r\n\r\nThis property enables predictable and testable code.\r\n\r\nExample:\r\n\r\n```js\r\nfunction add(a, b) {\r\n  return a + b;\r\n}\r\n\r\nconst result = add(2, 3);\r\n// add(2, 3) can be replaced with 5 safely\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-087",
+      "slug": "what-is-starvation-in-the-javascript-event-loop",
+      "title": "What is starvation in the JavaScript event loop?",
+      "difficulty": "hard",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Starvation occurs when certain tasks in the event loop never get executed because other tasks continuously occupy the queue.\r\n\r\nFor example, continuously scheduling microtasks can prevent macrotasks or rendering from running.\r\n\r\nThis can block UI updates and degrade responsiveness.\r\n\r\nExample:\r\n\r\n```js\r\nfunction loop() {\r\n  Promise.resolve().then(loop);\r\n}\r\n\r\nloop();\r\n// Macrotasks may never execute\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-088",
+      "slug": "why-is-typeof-null-equal-to-object",
+      "title": "Why is `typeof null` equal to \"object\"?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`typeof null` returns `\"object\"` due to a historical bug in early JavaScript implementations.\r\n\r\nIn the original implementation, values were tagged, and null was represented as a null pointer, which matched the object type tag.\r\n\r\nThis behavior has been preserved for backward compatibility.\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(typeof null); // \"object\"\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-089",
+      "slug": "what-is-nan-and-why-is-nan-nan",
+      "title": "What is NaN and why is `NaN !== NaN`?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "NaN stands for \"Not a Number\" and represents an invalid numeric result.\r\n\r\nAccording to the IEEE 754 standard, NaN is not equal to any value, including itself.\r\n\r\nTo check for NaN, use Number.isNaN().\r\n\r\nExample:\r\n\r\n```js\r\nconsole.log(NaN === NaN); // false\r\nconsole.log(Number.isNaN(NaN)); // true\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-090",
+      "slug": "what-is-structuredclone-and-when-should-it-be-used",
+      "title": "What is structuredClone and when should it be used?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "structuredClone is a built-in method that creates a deep clone of structured data.\r\n\r\nUnlike JSON-based cloning, it supports:\r\n\r\n- Dates\r\n- Maps\r\n- Sets\r\n- Typed arrays\r\n- Circular references\r\n\r\nIt should be used when a reliable deep copy is needed.\r\n\r\nExample:\r\n\r\n```js\r\nconst obj = {\r\n  date: new Date(),\r\n  nested: { value: 1 },\r\n};\r\n\r\nconst clone = structuredClone(obj);\r\n\r\nconsole.log(clone !== obj); // true\r\nconsole.log(clone.nested !== obj.nested); // true\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-091",
+      "slug": "what-is-the-observer-pattern-and-how-can-it-be-implemented-in-javascript",
+      "title": "What is the Observer pattern and how can it be implemented in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The Observer pattern (also known as Pub/Sub) allows objects to subscribe to events and be notified when those events occur.\r\n\r\nIt decouples the event source (publisher) from the listeners (subscribers).\r\n\r\nKey components:\r\n\r\n- `on(event, listener)` — subscribe to an event\r\n- `emit(event, data)` — trigger all listeners for an event\r\n- `off(event, listener)` — unsubscribe from an event\r\n\r\nThis pattern is widely used in event-driven systems, UI frameworks, and Node.js EventEmitter.\r\n\r\nExample:\r\n\r\n```js\r\nclass EventEmitter {\r\n  constructor() {\r\n    this.events = {};\r\n  }\r\n\r\n  on(event, listener) {\r\n    if (!this.events[event]) this.events[event] = [];\r\n    this.events[event].push(listener);\r\n  }\r\n\r\n  off(event, listener) {\r\n    if (this.events[event]) {\r\n      this.events[event] = this.events[event].filter((l) => l !== listener);\r\n    }\r\n  }\r\n\r\n  emit(event, data) {\r\n    if (this.events[event]) {\r\n      this.events[event].forEach((listener) => listener(data));\r\n    }\r\n  }\r\n}\r\n\r\nconst emitter = new EventEmitter();\r\n\r\nconst onLogin = (user) => console.log(`${user} logged in`);\r\n\r\nemitter.on('login', onLogin);\r\nemitter.emit('login', 'Rasool'); // Rasool logged in\r\n\r\nemitter.off('login', onLogin);\r\nemitter.emit('login', 'Ali'); // (no output)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-092",
+      "slug": "what-is-the-difference-between-deep-equality-and-reference-equality",
+      "title": "What is the difference between deep equality and reference equality?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Reference equality checks whether two variables point to the same memory reference.\r\n\r\nDeep equality checks whether two values have the same structure and content.\r\n\r\nIn JavaScript, `===` compares references for objects, not structure.\r\n\r\nDeep comparison requires recursive property checks.\r\n\r\nExample:\r\n\r\n```js\r\nconst a = { value: 1 };\r\nconst b = { value: 1 };\r\n\r\nconsole.log(a === b); // false (different references)\r\n\r\nfunction deepEqual(obj1, obj2) {\r\n  return JSON.stringify(obj1) === JSON.stringify(obj2);\r\n}\r\n\r\nconsole.log(deepEqual(a, b)); // true (structure match)\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-093",
+      "slug": "what-are-getters-and-setters-and-how-do-they-work-internally",
+      "title": "What are getters and setters and how do they work internally?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Getters and setters are special methods that define custom behavior when accessing or modifying object properties.\r\n\r\nThey are defined using property descriptors.\r\n\r\nInternally, they replace direct property access with function execution.\r\n\r\nThis enables validation, computed values, or side effects.\r\n\r\nExample:\r\n\r\n```js\r\nconst user = {\r\n  firstName: 'Rasool',\r\n  lastName: 'Zia',\r\n\r\n  get fullName() {\r\n    return `${this.firstName} ${this.lastName}`;\r\n  },\r\n\r\n  set fullName(value) {\r\n    const [first, last] = value.split(' ');\r\n    this.firstName = first;\r\n    this.lastName = last;\r\n  },\r\n};\r\n\r\nconsole.log(user.fullName);\r\nuser.fullName = 'Ali Reza';\r\nconsole.log(user.firstName);\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-094",
+      "slug": "what-are-well-known-symbols-in-javascript",
+      "title": "What are well-known Symbols in JavaScript?",
+      "difficulty": "hard",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Well-known Symbols are built-in Symbol properties that define special object behaviors.\r\n\r\nExamples include:\r\n\r\n- Symbol.iterator\r\n- Symbol.toStringTag\r\n- Symbol.toPrimitive\r\n- Symbol.asyncIterator\r\n\r\nThey allow objects to customize language-level behavior such as iteration and type conversion.\r\n\r\nExample:\r\n\r\n```js\r\nconst obj = {\r\n  *[Symbol.iterator]() {\r\n    yield 1;\r\n    yield 2;\r\n  },\r\n};\r\n\r\nfor (const value of obj) {\r\n  console.log(value);\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-095",
+      "slug": "what-is-async-iteration-and-how-does-for-await-of-work",
+      "title": "What is async iteration and how does `for await...of` work?",
+      "difficulty": "hard",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Async iteration allows consuming asynchronous data sources sequentially using `for await...of`.\r\n\r\nAn async iterable implements `Symbol.asyncIterator`, which returns an async iterator whose `next()` method returns a Promise.\r\n\r\nAsync generators using `async function*` make it easy to produce async sequences.\r\n\r\nThis is useful for paginated APIs, streams, or any data that arrives asynchronously.\r\n\r\nExample:\r\n\r\n```js\r\nasync function* asyncRange(start, end) {\r\n  for (let i = start; i <= end; i++) {\r\n    await new Promise((resolve) => setTimeout(resolve, 100));\r\n    yield i;\r\n  }\r\n}\r\n\r\nasync function main() {\r\n  for await (const num of asyncRange(1, 3)) {\r\n    console.log(num);\r\n    // 1\r\n    // 2\r\n    // 3\r\n  }\r\n}\r\n\r\nmain();\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-096",
+      "slug": "what-is-the-difference-between-object-create-and-class-based-instantiation",
+      "title": "What is the difference between Object.create() and class-based instantiation?",
+      "difficulty": "medium",
+      "categories": [
+        "Objects & Internals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Object.create() creates a new object with a specified prototype.\r\n\r\nClass-based instantiation uses the `class` and `new` syntax to create instances.\r\n\r\nUnder the hood, classes are syntactic sugar over prototypes.\r\n\r\nObject.create provides more direct control over prototype chaining.\r\n\r\nExample:\r\n\r\n```js\r\nconst animal = {\r\n  speak() {\r\n    return 'sound';\r\n  },\r\n};\r\n\r\nconst dog = Object.create(animal);\r\nconsole.log(dog.speak());\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-097",
+      "slug": "what-are-the-pitfalls-of-automatic-semicolon-insertion-asi",
+      "title": "What are the pitfalls of Automatic Semicolon Insertion (ASI)?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Automatic Semicolon Insertion is a mechanism where JavaScript inserts semicolons automatically in certain cases.\r\n\r\nThis can lead to unexpected behavior when line breaks occur after `return`, `break`, or before expressions starting with `(` or `[`.\r\n\r\nExplicit semicolons prevent ambiguity.\r\n\r\nExample:\r\n\r\n```js\r\nfunction test() {\r\n  return;\r\n  {\r\n    value: 1;\r\n  }\r\n}\r\n\r\nconsole.log(test()); // undefined\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-098",
+      "slug": "how-does-the-browser-handle-rendering-between-tasks-in-the-event-loop",
+      "title": "How does the browser handle rendering between tasks in the event loop?",
+      "difficulty": "hard",
+      "categories": [
+        "Asynchronous & Event Loop"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "The browser performs rendering between macrotasks.\r\n\r\nAfter executing a task and processing microtasks, the browser may perform layout, paint, and compositing steps.\r\n\r\nIf JavaScript blocks the main thread continuously, rendering cannot occur, causing UI freezes.\r\n\r\nUnderstanding this interaction helps prevent performance issues.\r\n\r\nExample:\r\n\r\n```js\r\nwhile (true) {\r\n  // Blocking loop\r\n}\r\n```\r\n\r\nThe browser cannot render updates while the main thread is blocked.",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-099",
+      "slug": "what-is-the-difference-between-for-in-and-for-of",
+      "title": "What is the difference between `for...in` and `for...of`?",
+      "difficulty": "medium",
+      "categories": [
+        "Language Behavior"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "`for...in` iterates over the enumerable **property keys** of an object (including inherited ones).\r\n\r\n`for...of` iterates over the **values** of an iterable (arrays, strings, Maps, Sets, generators, etc.).\r\n\r\nKey differences:\r\n\r\n- `for...in` works on any object; `for...of` requires an iterable\r\n- `for...in` can unexpectedly include inherited properties\r\n- `for...of` cannot be used directly on plain objects (they are not iterable by default)\r\n\r\nExample:\r\n\r\n```js\r\nconst arr = ['a', 'b', 'c'];\r\n\r\nfor (const key in arr) {\r\n  console.log(key); // 0, 1, 2 (indices as strings)\r\n}\r\n\r\nfor (const value of arr) {\r\n  console.log(value); // a, b, c\r\n}\r\n\r\nconst obj = { x: 1, y: 2 };\r\n\r\nfor (const key in obj) {\r\n  console.log(key); // x, y\r\n}\r\n\r\n// for...of on plain object throws TypeError\r\n// for (const val of obj) {} // TypeError: obj is not iterable\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-100",
+      "slug": "what-are-tagged-template-literals-and-how-do-they-work",
+      "title": "What are tagged template literals and how do they work?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Tagged template literals allow a function (the tag) to process a template literal before it is evaluated.\r\n\r\nThe tag function receives the string parts as an array and the interpolated values as separate arguments.\r\n\r\nThis enables custom string processing such as sanitization, localization, or DSLs.\r\n\r\nExample:\r\n\r\n```js\r\nfunction highlight(strings, ...values) {\r\n  return strings.reduce((result, str, i) => {\r\n    return result + str + (values[i] !== undefined ? `[${values[i]}]` : '');\r\n  }, '');\r\n}\r\n\r\nconst name = 'Rasool';\r\nconst score = 95;\r\n\r\nconsole.log(highlight`Player ${name} scored ${score} points.`);\r\n// Player [Rasool] scored [95] points.\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-101",
+      "slug": "what-is-dynamic-import-and-how-does-it-differ-from-static-import",
+      "title": "What is dynamic `import()` and how does it differ from static import?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Static `import` is resolved at parse time and cannot be conditional or deferred.\r\n\r\nDynamic `import()` is a function-like expression that loads a module on demand at runtime and returns a Promise.\r\n\r\nIt enables code splitting — loading modules only when needed, reducing initial bundle size.\r\n\r\nExample:\r\n\r\n```js\r\n// Static import (always loaded)\r\nimport { add } from './math.js';\r\n\r\n// Dynamic import (loaded on demand)\r\nasync function loadMath() {\r\n  const { add } = await import('./math.js');\r\n  console.log(add(2, 3)); // 5\r\n}\r\n\r\n// Conditional loading\r\nif (userNeedsChart) {\r\n  const { renderChart } = await import('./chart.js');\r\n  renderChart(data);\r\n}\r\n```",
+        "readingTime": 1
+      }
+    },
+    {
+      "id": "javascript-102",
+      "slug": "what-are-logical-assignment-operators-in-javascript",
+      "title": "What are logical assignment operators in JavaScript?",
+      "difficulty": "medium",
+      "categories": [
+        "Fundamentals"
+      ],
+      "domain": "frontend",
+      "topic": "javascript",
+      "language": "en",
+      "answer": {
+        "markdown": "Logical assignment operators combine logical operations with assignment.\r\n\r\nThere are three:\r\n\r\n- `&&=` assigns the right value only if the left value is truthy\r\n- `||=` assigns the right value only if the left value is falsy\r\n- `??=` assigns the right value only if the left value is null or undefined\r\n\r\nThey are shorthand for common patterns like default value assignment or conditional updates.\r\n\r\nExample:\r\n\r\n```js\r\nlet a = 1;\r\nlet b = 0;\r\nlet c = null;\r\n\r\na &&= 99; // a is truthy → a = 99\r\nb ||= 42; // b is falsy  → b = 42\r\nc ??= 'default'; // c is null → c = 'default'\r\n\r\nconsole.log(a); // 99\r\nconsole.log(b); // 42\r\nconsole.log(c); // 'default'\r\n```",
+        "readingTime": 1
+      }
+    }
+  ]
+}
