@@ -11,12 +11,13 @@ import {
 } from '../types/types.js';
 import { MDValidator } from './validator.js';
 
-const GENERATOR = {
-  version: JSON.parse(
-    fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf8'),
-  ).version,
+const packageJson = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf8'),
+);
 
-  schemaVersion: '2.0.0',
+const GENERATOR = {
+  version: packageJson.version,
+  schemaVersion: packageJson.schemaVersion,
 } as const;
 
 export class MDGenerator {

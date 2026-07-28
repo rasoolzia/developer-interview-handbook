@@ -1,6 +1,7 @@
 {
   "name": "developer-interview-handbook",
   "version": "1.0.0",
+  "schemaVersion": "2.0.0",
   "description": "Validation and generation tools for interview questions",
   "main": "dist/index.js",
   "type": "module",
