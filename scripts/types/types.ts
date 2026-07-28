@@ -100,13 +100,18 @@ export interface GeneratedQuestion {
 
 export interface GeneratedTopic {
   version: number;
+  hash: string;
   meta: {
     domain: string;
     topic: string;
     language: string;
     label: string;
   };
-  hash: string;
+  content: {
+    title: string;
+    categories: string[];
+    difficulties: string[];
+  };
   stats: {
     total: number;
     byDifficulty: {
@@ -114,7 +119,6 @@ export interface GeneratedTopic {
       medium: number;
       hard: number;
     };
-    categories: string[];
   };
   questions: GeneratedQuestion[];
 }

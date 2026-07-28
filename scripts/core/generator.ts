@@ -11,6 +11,14 @@ import {
 } from '../types/types.js';
 import { MDValidator } from './validator.js';
 
+const GENERATOR = {
+  version: JSON.parse(
+    fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf8'),
+  ).version,
+
+  schemaVersion: '2.0.0',
+} as const;
+
 export class MDGenerator {
   private config: GeneratorConfig;
   private errors: string[] = [];
@@ -39,9 +47,10 @@ export class MDGenerator {
     const startMs = Date.now();
     const CONTENT_DIR = path.resolve(process.cwd(), 'content');
     const OUTPUT_DIR = path.resolve(process.cwd(), 'public', 'api');
-    const SCHEMA_VERSION = 2;
 
-    console.log(`\n🚀 Interview Playbook — API Generator v${SCHEMA_VERSION}`);
+    console.log(
+      `\n🚀 Interview Playbook — API Generator v${GENERATOR.schemaVersion}`,
+    );
     if (this.strictMode) console.log('   STRICT mode — warnings are errors');
     console.log('');
 
@@ -261,6 +270,17 @@ export class MDGenerator {
       const version = parseFloat(frontmatter.version) || 1.0;
 
       const content = MarkdownParser.stripFrontmatter(cleanContent);
+
+      const documentTitle =
+        MarkdownParser.extractDocumentTitle(content) ??
+        this.getLabel(meta.topic);
+
+      const availableCategories =
+        MarkdownParser.extractCategories(content) ?? [];
+
+      const availableDifficulties =
+        MarkdownParser.extractDifficulties(content) ?? [];
+
       const questions = this.parseQuestions(content, meta, relPath);
 
       if (!questions.length) {
@@ -273,24 +293,29 @@ export class MDGenerator {
         hard: questions.filter((q) => q.difficulty === 'hard').length,
       };
 
-      const categories = [
-        ...new Set(questions.flatMap((q) => q.categories)),
-      ].sort();
-
       const topicData: GeneratedTopic = {
         version,
+
         meta: {
           domain: meta.domain,
           topic: meta.topic,
           language: meta.language,
           label: this.getLabel(meta.topic),
         },
+
+        content: {
+          title: documentTitle,
+          categories: availableCategories,
+          difficulties: availableDifficulties,
+        },
+
         hash: this.contentHash(content),
+
         stats: {
           total: questions.length,
           byDifficulty,
-          categories,
         },
+
         questions,
       };
 
@@ -527,7 +552,8 @@ export class MDGenerator {
       path.join(OUTPUT_DIR, 'manifest.json'),
       JSON.stringify(
         {
-          version: 2,
+          version: GENERATOR.version,
+          schemaVersion: GENERATOR.schemaVersion,
           generatedAt: new Date().toISOString(),
           languages: [...accumulator.languages].sort(),
           domains,

@@ -43,6 +43,11 @@ export function stripFrontmatter(content: string): string {
   return content.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n)?/, '');
 }
 
+export function extractDocumentTitle(content: string): string | null {
+  const match = content.match(/^#\s+(.+)$/m);
+  return match ? match[1].trim() : null;
+}
+
 export function parseFrontmatterFields(
   frontmatterText: string,
 ): Record<string, string> {
