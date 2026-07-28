@@ -16,7 +16,7 @@ const packageJson = JSON.parse(
 );
 
 const GENERATOR = {
-  version: packageJson.version,
+  generatorVersion: packageJson.version,
   schemaVersion: packageJson.schemaVersion,
 } as const;
 
@@ -553,7 +553,7 @@ export class MDGenerator {
       path.join(OUTPUT_DIR, 'manifest.json'),
       JSON.stringify(
         {
-          version: GENERATOR.version,
+          generatorVersion: GENERATOR.generatorVersion,
           schemaVersion: GENERATOR.schemaVersion,
           generatedAt: new Date().toISOString(),
           languages: [...accumulator.languages].sort(),
