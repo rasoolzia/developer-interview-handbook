@@ -6,6 +6,33 @@
     "language": "en",
     "label": "React"
   },
+  "content": {
+    "title": "React Interview Questions",
+    "categories": [
+      "React Basics",
+      "JSX & Rendering",
+      "Components",
+      "Props & State",
+      "Hooks",
+      "Effects & Lifecycle",
+      "Forms & Events",
+      "Context API",
+      "State Management",
+      "Performance Optimization",
+      "Rendering Behavior",
+      "Concurrent React",
+      "Server Components",
+      "SSR / Hydration",
+      "Architecture & Patterns",
+      "React Internals",
+      "Edge Cases & Pitfalls"
+    ],
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "hash": "a4d5441925",
   "stats": {
     "total": 157,
@@ -13,26 +40,7 @@
       "easy": 29,
       "medium": 87,
       "hard": 41
-    },
-    "categories": [
-      "Architecture & Patterns",
-      "Components",
-      "Concurrent React",
-      "Context API",
-      "Edge Cases & Pitfalls",
-      "Effects & Lifecycle",
-      "Forms & Events",
-      "Hooks",
-      "JSX & Rendering",
-      "Performance Optimization",
-      "Props & State",
-      "React Basics",
-      "React Internals",
-      "Rendering Behavior",
-      "SSR / Hydration",
-      "Server Components",
-      "State Management"
-    ]
+    }
   },
   "questions": [
     {

@@ -6,6 +6,28 @@
     "language": "en",
     "label": "Vue"
   },
+  "content": {
+    "title": "Vue.js Interview Questions",
+    "categories": [
+      "Vue Basics",
+      "Reactivity System",
+      "Components",
+      "Composition API",
+      "Directives",
+      "Lifecycle",
+      "State Management",
+      "Routing",
+      "Performance",
+      "Rendering & Internals",
+      "SSR / Hydration",
+      "Advanced Patterns"
+    ],
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "hash": "12aa7bd4a0",
   "stats": {
     "total": 120,
@@ -13,21 +35,7 @@
       "easy": 20,
       "medium": 68,
       "hard": 32
-    },
-    "categories": [
-      "Advanced Patterns",
-      "Components",
-      "Composition API",
-      "Directives",
-      "Lifecycle",
-      "Performance",
-      "Reactivity System",
-      "Rendering & Internals",
-      "Routing",
-      "SSR / Hydration",
-      "State Management",
-      "Vue Basics"
-    ]
+    }
   },
   "questions": [
     {

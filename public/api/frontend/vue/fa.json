@@ -6,6 +6,28 @@
     "language": "fa",
     "label": "Vue"
   },
+  "content": {
+    "title": "سوالات مصاحبه Vue.js",
+    "categories": [
+      "مبانی Vue",
+      "سیستم واکنش‌پذیری",
+      "کامپوننت‌ها",
+      "Composition API",
+      "دستورات (Directives)",
+      "چرخه حیات",
+      "مدیریت State",
+      "مسیریابی (Routing)",
+      "بهینه‌سازی عملکرد",
+      "رندرینگ و داخلی‌ها",
+      "SSR / Hydration",
+      "الگوهای پیشرفته"
+    ],
+    "difficulties": [
+      "آسان",
+      "متوسط",
+      "سخت"
+    ]
+  },
   "hash": "b81f12c4f0",
   "stats": {
     "total": 120,
@@ -13,21 +35,7 @@
       "easy": 20,
       "medium": 68,
       "hard": 32
-    },
-    "categories": [
-      "Composition API",
-      "SSR / Hydration",
-      "الگوهای پیشرفته",
-      "بهینه‌سازی عملکرد",
-      "دستورات (Directives)",
-      "رندرینگ و داخلی‌ها",
-      "سیستم واکنش‌پذیری",
-      "مبانی Vue",
-      "مدیریت State",
-      "مسیریابی (Routing)",
-      "چرخه حیات",
-      "کامپوننت‌ها"
-    ]
+    }
   },
   "questions": [
     {

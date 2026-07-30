@@ -6,6 +6,23 @@
     "language": "en",
     "label": "CSS"
   },
+  "content": {
+    "title": "CSS Interview Questions",
+    "categories": [
+      "Fundamentals",
+      "Layout",
+      "Selectors & Specificity",
+      "Responsive Design",
+      "Performance",
+      "Architecture",
+      "Accessibility"
+    ],
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "hash": "8af0f3a0fe",
   "stats": {
     "total": 37,
@@ -13,16 +30,7 @@
       "easy": 2,
       "medium": 15,
       "hard": 20
-    },
-    "categories": [
-      "Accessibility",
-      "Architecture",
-      "Fundamentals",
-      "Layout",
-      "Performance",
-      "Responsive Design",
-      "Selectors & Specificity"
-    ]
+    }
   },
   "questions": [
     {

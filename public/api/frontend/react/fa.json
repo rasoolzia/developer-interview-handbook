@@ -6,6 +6,33 @@
     "language": "fa",
     "label": "React"
   },
+  "content": {
+    "title": "سوالات مصاحبه React",
+    "categories": [
+      "مبانی React",
+      "JSX و رندرینگ",
+      "کامپوننت‌ها",
+      "Props و State",
+      "Hooks",
+      "Effects و چرخه حیات",
+      "فرم‌ها و رویدادها",
+      "Context API",
+      "مدیریت State",
+      "بهینه‌سازی عملکرد",
+      "رفتار رندرینگ",
+      "Concurrent React",
+      "Server Components",
+      "SSR / Hydration",
+      "معماری و الگوها",
+      "داخلی‌های React",
+      "موارد لبه و تله‌ها"
+    ],
+    "difficulties": [
+      "آسان",
+      "متوسط",
+      "سخت"
+    ]
+  },
   "hash": "6732d3c2b2",
   "stats": {
     "total": 157,
@@ -13,26 +40,7 @@
       "easy": 29,
       "medium": 87,
       "hard": 41
-    },
-    "categories": [
-      "Concurrent React",
-      "Context API",
-      "Effects و چرخه حیات",
-      "Hooks",
-      "JSX و رندرینگ",
-      "Props و State",
-      "SSR / Hydration",
-      "Server Components",
-      "بهینه‌سازی عملکرد",
-      "داخلی‌های React",
-      "رفتار رندرینگ",
-      "فرم‌ها و رویدادها",
-      "مبانی React",
-      "مدیریت State",
-      "معماری و الگوها",
-      "موارد لبه و تله‌ها",
-      "کامپوننت‌ها"
-    ]
+    }
   },
   "questions": [
     {

@@ -6,6 +6,23 @@
     "language": "en",
     "label": "HTML"
   },
+  "content": {
+    "title": "HTML Interview Questions",
+    "categories": [
+      "Fundamentals",
+      "Semantic & Accessibility",
+      "Forms",
+      "SEO & Meta",
+      "Browser Behavior",
+      "Performance",
+      "Security"
+    ],
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "hash": "d2a95b2a3a",
   "stats": {
     "total": 28,
@@ -13,16 +30,7 @@
       "easy": 7,
       "medium": 9,
       "hard": 12
-    },
-    "categories": [
-      "Browser Behavior",
-      "Forms",
-      "Fundamentals",
-      "Performance",
-      "SEO & Meta",
-      "Security",
-      "Semantic & Accessibility"
-    ]
+    }
   },
   "questions": [
     {

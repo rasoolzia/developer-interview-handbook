@@ -6,6 +6,24 @@
     "language": "en",
     "label": "JavaScript"
   },
+  "content": {
+    "title": "JavaScript Interview Questions",
+    "categories": [
+      "Fundamentals",
+      "Execution Context & Scope",
+      "Memory & References",
+      "Functions",
+      "Asynchronous & Event Loop",
+      "Engine & Runtime",
+      "Language Behavior",
+      "Objects & Internals"
+    ],
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ]
+  },
   "hash": "15326dcd5a",
   "stats": {
     "total": 102,
@@ -13,17 +31,7 @@
       "easy": 18,
       "medium": 55,
       "hard": 29
-    },
-    "categories": [
-      "Asynchronous & Event Loop",
-      "Engine & Runtime",
-      "Execution Context & Scope",
-      "Functions",
-      "Fundamentals",
-      "Language Behavior",
-      "Memory & References",
-      "Objects & Internals"
-    ]
+    }
   },
   "questions": [
     {
