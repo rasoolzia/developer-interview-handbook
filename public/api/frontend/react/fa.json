@@ -37,9 +37,9 @@
   "stats": {
     "total": 157,
     "byDifficulty": {
-      "easy": 29,
-      "medium": 87,
-      "hard": 41
+      "آسان": 29,
+      "متوسط": 87,
+      "سخت": 41
     }
   },
   "questions": [
@@ -47,7 +47,7 @@
       "id": "react-001",
       "slug": "react-چیست-و-چه-مشکلی-را-حل-می-کند",
       "title": "React چیست و چه مشکلی را حل می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی React"
       ],
@@ -63,7 +63,7 @@
       "id": "react-002",
       "slug": "virtual-dom-چیست-و-react-چگونه-از-آن-استفاده-می-کند",
       "title": "Virtual DOM چیست و React چگونه از آن استفاده می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی React"
       ],
@@ -79,7 +79,7 @@
       "id": "react-003",
       "slug": "jsx-چیست-و-چگونه-زیر-پوسته-کار-می-کند",
       "title": "JSX چیست و چگونه زیر پوسته کار می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -95,7 +95,7 @@
       "id": "react-004",
       "slug": "کامپوننت-های-functional-در-react-چیستند",
       "title": "کامپوننت‌های functional در React چیستند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -111,7 +111,7 @@
       "id": "react-005",
       "slug": "props-در-react-چیستند-و-چگونه-کار-می-کنند",
       "title": "Props در React چیستند و چگونه کار می‌کنند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Props و State"
       ],
@@ -127,7 +127,7 @@
       "id": "react-006",
       "slug": "state-در-react-چیست-و-چه-تفاوتی-با-props-دارد",
       "title": "State در React چیست و چه تفاوتی با props دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Props و State"
       ],
@@ -143,7 +143,7 @@
       "id": "react-007",
       "slug": "react-چگونه-رویدادها-را-مدیریت-می-کند",
       "title": "React چگونه رویدادها را مدیریت می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -159,7 +159,7 @@
       "id": "react-008",
       "slug": "رندرینگ-شرطی-در-react-چگونه-کار-می-کند",
       "title": "رندرینگ شرطی در React چگونه کار می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -175,7 +175,7 @@
       "id": "react-009",
       "slug": "چگونه-لیست-ها-را-در-react-رندر-می-کنید-و-key-چرا-مهم-است",
       "title": "چگونه لیست‌ها را در React رندر می‌کنید و `key` چرا مهم است؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -191,7 +191,7 @@
       "id": "react-010",
       "slug": "کامپوننت-های-controlled-در-مقابل-uncontrolled-چیستند",
       "title": "کامپوننت‌های controlled در مقابل uncontrolled چیستند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -207,7 +207,7 @@
       "id": "react-011",
       "slug": "react-fragment-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "React Fragment چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -223,7 +223,7 @@
       "id": "react-012",
       "slug": "تفاوت-بین-class-component-و-functional-component-چیست",
       "title": "تفاوت بین class component و functional component چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -239,7 +239,7 @@
       "id": "react-013",
       "slug": "reconciliation-در-react-چیست",
       "title": "Reconciliation در React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -255,7 +255,7 @@
       "id": "react-014",
       "slug": "prop-drilling-چیست-و-چگونه-آن-را-حل-می-کنید",
       "title": "Prop drilling چیست و چگونه آن را حل می‌کنید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Props و State"
       ],
@@ -271,7 +271,7 @@
       "id": "react-015",
       "slug": "کامپوننت-strictmode-چیست-و-چه-کاری-انجام-می-دهد",
       "title": "کامپوننت `StrictMode` چیست و چه کاری انجام می‌دهد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مبانی React"
       ],
@@ -287,7 +287,7 @@
       "id": "react-016",
       "slug": "react-memo-چیست-و-چه-زمانی-کمک-می-کند",
       "title": "`React.memo` چیست و چه زمانی کمک می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -303,7 +303,7 @@
       "id": "react-017",
       "slug": "hook-useeffect-چیست-و-dependency-array-چگونه-کار-می-کند",
       "title": "hook `useEffect` چیست و dependency array چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -319,7 +319,7 @@
       "id": "react-018",
       "slug": "usestate-چیست-و-به-روزرسانی-state-چگونه-کار-می-کند",
       "title": "`useState` چیست و به‌روزرسانی state چگونه کار می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Hooks"
       ],
@@ -335,7 +335,7 @@
       "id": "react-019",
       "slug": "useref-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "`useRef` چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -351,7 +351,7 @@
       "id": "react-020",
       "slug": "usememo-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "`useMemo` چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -367,7 +367,7 @@
       "id": "react-021",
       "slug": "usecallback-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "`useCallback` چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -383,7 +383,7 @@
       "id": "react-022",
       "slug": "قوانین-hook-ها-چیست",
       "title": "قوانین hook ها چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -399,7 +399,7 @@
       "id": "react-023",
       "slug": "custom-hook-ها-چیستند-و-چگونه-آن-ها-را-می-نویسید",
       "title": "custom hook ها چیستند و چگونه آن‌ها را می‌نویسید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -415,7 +415,7 @@
       "id": "react-024",
       "slug": "context-api-چیست-و-چگونه-از-آن-استفاده-می-کنید",
       "title": "Context API چیست و چگونه از آن استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Context API"
       ],
@@ -431,7 +431,7 @@
       "id": "react-025",
       "slug": "usereducer-چیست-و-چه-زمانی-باید-به-جای-usestate-از-آن-استفاده-کنید",
       "title": "`useReducer` چیست و چه زمانی باید به‌جای `useState` از آن استفاده کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -447,7 +447,7 @@
       "id": "react-026",
       "slug": "uselayouteffect-چیست-و-چه-تفاوتی-با-useeffect-دارد",
       "title": "`useLayoutEffect` چیست و چه تفاوتی با `useEffect` دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -463,7 +463,7 @@
       "id": "react-027",
       "slug": "error-boundary-ها-در-react-چیستند",
       "title": "Error Boundary ها در React چیستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -479,7 +479,7 @@
       "id": "react-028",
       "slug": "portal-ها-در-react-چیستند",
       "title": "Portal ها در React چیستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -495,7 +495,7 @@
       "id": "react-029",
       "slug": "useimperativehandle-چیست-و-چه-زمانی-به-forwardref-نیاز-دارید",
       "title": "`useImperativeHandle` چیست و چه زمانی به `forwardRef` نیاز دارید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Hooks"
       ],
@@ -511,7 +511,7 @@
       "id": "react-030",
       "slug": "react-lazy-چیست-و-همراه-با-suspense-چگونه-کار-می-کند",
       "title": "`React.lazy` چیست و همراه با `Suspense` چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -527,7 +527,7 @@
       "id": "react-031",
       "slug": "react-چگونه-به-روزرسانی-های-state-را-batch-می-کند",
       "title": "React چگونه به‌روزرسانی‌های state را batch می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -543,7 +543,7 @@
       "id": "react-032",
       "slug": "usetransition-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "`useTransition` چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -559,7 +559,7 @@
       "id": "react-033",
       "slug": "usedeferredvalue-چیست-و-چه-تفاوتی-با-debouncing-دارد",
       "title": "`useDeferredValue` چیست و چه تفاوتی با debouncing دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -575,7 +575,7 @@
       "id": "react-034",
       "slug": "react-server-components-چیست",
       "title": "React Server Components چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Server Components"
       ],
@@ -591,7 +591,7 @@
       "id": "react-035",
       "slug": "hydration-در-react-ssr-چیست-و-چه-چیزی-باعث-hydration-mismatch-می-شود",
       "title": "Hydration در React SSR چیست و چه چیزی باعث hydration mismatch می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -607,7 +607,7 @@
       "id": "react-036",
       "slug": "react-fiber-چیست",
       "title": "React Fiber چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -623,7 +623,7 @@
       "id": "react-037",
       "slug": "تفاوت-بین-render-phase-و-commit-phase-در-react-چیست",
       "title": "تفاوت بین render phase و commit phase در React چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -639,7 +639,7 @@
       "id": "react-038",
       "slug": "concurrent-react-چیست-و-چه-چیزی-را-ممکن-می-کند",
       "title": "Concurrent React چیست و چه چیزی را ممکن می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -655,7 +655,7 @@
       "id": "react-039",
       "slug": "suspense-در-react-چیست-و-چگونه-کار-می-کند",
       "title": "`Suspense` در React چیست و چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -671,7 +671,7 @@
       "id": "react-040",
       "slug": "prop-key-چیست-و-وقتی-از-index-به-عنوان-key-استفاده-می-کنید-چه-اتفاقی-می-افتد",
       "title": "prop `key` چیست و وقتی از index به‌عنوان key استفاده می‌کنید چه اتفاقی می‌افتد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -687,7 +687,7 @@
       "id": "react-041",
       "slug": "useid-چیست-و-چه-زمانی-به-آن-نیاز-دارید",
       "title": "`useId` چیست و چه زمانی به آن نیاز دارید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -703,7 +703,7 @@
       "id": "react-042",
       "slug": "usesyncexternalstore-چیست-و-چه-زمانی-باید-از-آن-استفاده-کنید",
       "title": "`useSyncExternalStore` چیست و چه زمانی باید از آن استفاده کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Hooks"
       ],
@@ -719,7 +719,7 @@
       "id": "react-043",
       "slug": "useinsertioneffect-چیست-و-چه-زمانی-استفاده-می-شود",
       "title": "`useInsertionEffect` چیست و چه زمانی استفاده می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Hooks"
       ],
@@ -735,7 +735,7 @@
       "id": "react-044",
       "slug": "usedebugvalue-چیست-و-چگونه-استفاده-می-شود",
       "title": "`useDebugValue` چیست و چگونه استفاده می‌شود؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Hooks"
       ],
@@ -751,7 +751,7 @@
       "id": "react-045",
       "slug": "تفاوت-بین-createelement-و-jsx-چیست",
       "title": "تفاوت بین `createElement` و JSX چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "JSX و رندرینگ"
       ],
@@ -767,7 +767,7 @@
       "id": "react-046",
       "slug": "prop-children-چیست-و-چه-الگوهایی-می-توان-با-آن-داشت",
       "title": "prop `children` چیست و چه الگوهایی می‌توان با آن داشت؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -783,7 +783,7 @@
       "id": "react-047",
       "slug": "higher-order-component-یا-hoc-چیست-و-چه-زمانی-استفاده-می-شود",
       "title": "Higher-Order Component یا HOC چیست و چه زمانی استفاده می‌شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -799,7 +799,7 @@
       "id": "react-048",
       "slug": "الگوی-render-prop-چیست",
       "title": "الگوی render prop چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -815,7 +815,7 @@
       "id": "react-049",
       "slug": "state-colocation-چیست-و-چرا-مهم-است",
       "title": "state colocation چیست و چرا مهم است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -831,7 +831,7 @@
       "id": "react-050",
       "slug": "الگوی-compound-component-چیست",
       "title": "الگوی compound component چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "معماری و الگوها"
       ],
@@ -847,7 +847,7 @@
       "id": "react-051",
       "slug": "cleanup-در-useeffect-چگونه-کار-می-کند-و-چرا-مهم-است",
       "title": "cleanup در `useEffect` چگونه کار می‌کند و چرا مهم است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -863,7 +863,7 @@
       "id": "react-052",
       "slug": "بالا-بردن-state-در-react-یعنی-چه",
       "title": "بالا بردن state در React یعنی چه؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Props و State"
       ],
@@ -879,7 +879,7 @@
       "id": "react-053",
       "slug": "الگوریتم-diffing-در-reconciliation-ری-اکت-دقیقا-چگونه-کار-می-کند",
       "title": "الگوریتم diffing در reconciliation ری‌اکت دقیقاً چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -895,7 +895,7 @@
       "id": "react-054",
       "slug": "react-cloneelement-چیست-و-چه-زمانی-استفاده-می-شود",
       "title": "`React.cloneElement` چیست و چه زمانی استفاده می‌شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -911,7 +911,7 @@
       "id": "react-055",
       "slug": "فرم-ها-را-در-react-همراه-با-validation-چگونه-مدیریت-می-کنید",
       "title": "فرم‌ها را در React همراه با validation چگونه مدیریت می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -927,7 +927,7 @@
       "id": "react-056",
       "slug": "forwardref-در-react-چیست",
       "title": "`forwardRef` در React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -943,7 +943,7 @@
       "id": "react-057",
       "slug": "react-profiler-چیست-و-چگونه-از-آن-برای-پیدا-کردن-مشکلات-performance-استفاده-می-ک",
       "title": "React profiler چیست و چگونه از آن برای پیدا کردن مشکلات performance استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -959,7 +959,7 @@
       "id": "react-058",
       "slug": "windowing-یا-virtualization-چیست-و-چه-زمانی-در-react-به-آن-نیاز-دارید",
       "title": "windowing یا virtualization چیست و چه زمانی در React به آن نیاز دارید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -975,7 +975,7 @@
       "id": "react-059",
       "slug": "تفاوت-های-react-17-و-react-18-چیست",
       "title": "تفاوت‌های React 17 و React 18 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مبانی React"
       ],
@@ -991,7 +991,7 @@
       "id": "react-060",
       "slug": "starttransition-چیست-و-چه-تفاوتی-با-usetransition-دارد",
       "title": "`startTransition` چیست و چه تفاوتی با `useTransition` دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Concurrent React"
       ],
@@ -1007,7 +1007,7 @@
       "id": "react-061",
       "slug": "سیستم-رویداد-synthetic-در-react-چگونه-کار-می-کند",
       "title": "سیستم رویداد synthetic در React چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "داخلی‌های React"
       ],
@@ -1023,7 +1023,7 @@
       "id": "react-062",
       "slug": "flushsync-چیست-و-چه-زمانی-به-آن-نیاز-دارید",
       "title": "`flushSync` چیست و چه زمانی به آن نیاز دارید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -1039,7 +1039,7 @@
       "id": "react-063",
       "slug": "hook-use-در-react-19-چیست",
       "title": "hook `use()` در React 19 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Concurrent React"
       ],
@@ -1055,7 +1055,7 @@
       "id": "react-064",
       "slug": "useoptimistic-در-react-19-چیست",
       "title": "`useOptimistic` در React 19 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Concurrent React"
       ],
@@ -1071,7 +1071,7 @@
       "id": "react-065",
       "slug": "useactionstate-در-react-19-چیست",
       "title": "`useActionState` در React 19 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Concurrent React"
       ],
@@ -1087,7 +1087,7 @@
       "id": "react-066",
       "slug": "react-server-actions-چیست",
       "title": "React Server Actions چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Server Components"
       ],
@@ -1103,7 +1103,7 @@
       "id": "react-067",
       "slug": "useformstatus-در-react-19-چیست",
       "title": "`useFormStatus` در React 19 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Concurrent React"
       ],
@@ -1119,7 +1119,7 @@
       "id": "react-068",
       "slug": "بهبودهای-ref-در-react-19-چیست",
       "title": "بهبودهای ref در React 19 چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی React"
       ],
@@ -1135,7 +1135,7 @@
       "id": "react-069",
       "slug": "suspense-برای-data-fetching-چگونه-کار-می-کند-و-چگونه-با-framework-ها-یکپارچه-می",
       "title": "`Suspense` برای data fetching چگونه کار می‌کند و چگونه با framework ها یکپارچه می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Concurrent React"
       ],
@@ -1151,7 +1151,7 @@
       "id": "react-070",
       "slug": "مدیریت-خطا-همراه-با-suspense-و-error-boundary-چگونه-کار-می-کند",
       "title": "مدیریت خطا همراه با Suspense و Error Boundary چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -1167,7 +1167,7 @@
       "id": "react-071",
       "slug": "react-cache-در-react-19-چیست",
       "title": "`React.cache()` در React 19 چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Server Components"
       ],
@@ -1183,7 +1183,7 @@
       "id": "react-072",
       "slug": "lazy-initialization-در-usestate-چیست",
       "title": "lazy initialization در `useState` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -1199,7 +1199,7 @@
       "id": "react-073",
       "slug": "چگونه-از-memory-leak-در-کامپوننت-های-react-جلوگیری-می-کنید",
       "title": "چگونه از memory leak در کامپوننت‌های React جلوگیری می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -1215,7 +1215,7 @@
       "id": "react-074",
       "slug": "react-children-چیست-و-چه-زمانی-از-آن-استفاده-می-کنید",
       "title": "`React.Children` چیست و چه زمانی از آن استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1231,7 +1231,7 @@
       "id": "react-075",
       "slug": "displayname-در-react-چیست-و-چرا-مهم-است",
       "title": "`displayName` در React چیست و چرا مهم است؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی React"
       ],
@@ -1247,7 +1247,7 @@
       "id": "react-076",
       "slug": "چگونه-کامپوننت-های-react-را-با-react-testing-library-تست-می-کنید",
       "title": "چگونه کامپوننت‌های React را با React Testing Library تست می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مبانی React"
       ],
@@ -1263,7 +1263,7 @@
       "id": "react-077",
       "slug": "چگونه-custom-hook-ها-را-در-react-تست-می-کنید",
       "title": "چگونه custom hook ها را در React تست می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Hooks"
       ],
@@ -1279,7 +1279,7 @@
       "id": "react-078",
       "slug": "act-در-تست-react-چیست-و-چرا-لازم-است",
       "title": "`act()` در تست React چیست و چرا لازم است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "داخلی‌های React"
       ],
@@ -1295,7 +1295,7 @@
       "id": "react-079",
       "slug": "چرا-usecontext-باعث-re-render-های-غیرضروری-می-شود-و-چگونه-آن-را-حل-می-کنید",
       "title": "چرا `useContext` باعث re-render های غیرضروری می‌شود و چگونه آن را حل می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1311,7 +1311,7 @@
       "id": "react-080",
       "slug": "ترفند-prop-key-برای-reset-کردن-state-کامپوننت-چیست",
       "title": "ترفند prop `key` برای reset کردن state کامپوننت چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -1327,7 +1327,7 @@
       "id": "react-081",
       "slug": "الگوی-headless-component-چیست",
       "title": "الگوی headless component چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1343,7 +1343,7 @@
       "id": "react-082",
       "slug": "الگوی-provider-در-react-چیست",
       "title": "الگوی Provider در React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1359,7 +1359,7 @@
       "id": "react-083",
       "slug": "کامپوننت-های-presentational-و-container-چیستند",
       "title": "کامپوننت‌های Presentational و Container چیستند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1375,7 +1375,7 @@
       "id": "react-084",
       "slug": "ساختار-پوشه-بندی-feature-based-در-react-چیست",
       "title": "ساختار پوشه‌بندی feature-based در React چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1391,7 +1391,7 @@
       "id": "react-085",
       "slug": "barrel-file-چیست-و-trade-off-های-آن-چیست",
       "title": "barrel file چیست و trade-off های آن چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1407,7 +1407,7 @@
       "id": "react-086",
       "slug": "چرا-react-ترکیب-پذیری-را-به-inheritance-ترجیح-می-دهد",
       "title": "چرا React ترکیب‌پذیری را به inheritance ترجیح می‌دهد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1423,7 +1423,7 @@
       "id": "react-087",
       "slug": "چگونه-بین-state-محلی-state-بالا-برده-شده-context-و-store-های-خارجی-انتخاب-می-کنی",
       "title": "چگونه بین state محلی، state بالا برده‌شده، Context و store های خارجی انتخاب می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1439,7 +1439,7 @@
       "id": "react-088",
       "slug": "zustand-چیست-و-چگونه-کار-می-کند",
       "title": "Zustand چیست و چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1455,7 +1455,7 @@
       "id": "react-089",
       "slug": "redux-toolkit-چیست-و-چگونه-redux-را-مدرن-تر-می-کند",
       "title": "Redux Toolkit چیست و چگونه Redux را مدرن‌تر می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1471,7 +1471,7 @@
       "id": "react-090",
       "slug": "tanstack-query-چیست-و-چگونه-server-state-را-مدیریت-می-کند",
       "title": "TanStack Query چیست و چگونه server state را مدیریت می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1487,7 +1487,7 @@
       "id": "react-091",
       "slug": "چگونه-optimistic-update-را-با-tanstack-query-پیاده-سازی-می-کنید",
       "title": "چگونه optimistic update را با TanStack Query پیاده‌سازی می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "مدیریت State"
       ],
@@ -1503,7 +1503,7 @@
       "id": "react-092",
       "slug": "چگونه-یک-فرم-چندمرحله-ای-در-react-می-سازید",
       "title": "چگونه یک فرم چندمرحله‌ای در React می‌سازید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1519,7 +1519,7 @@
       "id": "react-093",
       "slug": "الگوی-polymorphic-component-یا-prop-as-چیست",
       "title": "الگوی polymorphic component یا prop `as` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1535,7 +1535,7 @@
       "id": "react-094",
       "slug": "الگوی-slot-در-react-چیست",
       "title": "الگوی slot در React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1551,7 +1551,7 @@
       "id": "react-095",
       "slug": "accessibility-یا-a11y-را-در-react-چگونه-مدیریت-می-کنید",
       "title": "accessibility یا a11y را در React چگونه مدیریت می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1567,7 +1567,7 @@
       "id": "react-096",
       "slug": "internationalization-یا-i18n-را-در-react-چگونه-پیاده-سازی-می-کنید",
       "title": "internationalization یا i18n را در React چگونه پیاده‌سازی می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1583,7 +1583,7 @@
       "id": "react-097",
       "slug": "design-system-در-زمینه-کتابخانه-های-کامپوننت-react-چیست",
       "title": "design system در زمینه کتابخانه‌های کامپوننت React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1599,7 +1599,7 @@
       "id": "react-098",
       "slug": "یک-استراتژی-خوب-برای-تست-یک-اپلیکیشن-react-چیست",
       "title": "یک استراتژی خوب برای تست یک اپلیکیشن React چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1615,7 +1615,7 @@
       "id": "react-099",
       "slug": "چگونه-یک-api-خوب-برای-کامپوننت-react-طراحی-می-کنید",
       "title": "چگونه یک API خوب برای کامپوننت React طراحی می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1631,7 +1631,7 @@
       "id": "react-100",
       "slug": "معماری-micro-frontend-با-react-چیست",
       "title": "معماری micro-frontend با React چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1647,7 +1647,7 @@
       "id": "react-101",
       "slug": "code-splitting-در-react-فراتر-از-react-lazy-پایه-چگونه-کار-می-کند",
       "title": "code splitting در React فراتر از `React.lazy` پایه چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1663,7 +1663,7 @@
       "id": "react-102",
       "slug": "چگونه-حجم-bundle-یک-اپ-react-را-تحلیل-و-کم-می-کنید",
       "title": "چگونه حجم bundle یک اپ React را تحلیل و کم می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1679,7 +1679,7 @@
       "id": "react-103",
       "slug": "core-web-vitals-چگونه-برای-اپلیکیشن-های-react-معنا-پیدا-می-کنند",
       "title": "Core Web Vitals چگونه برای اپلیکیشن‌های React معنا پیدا می‌کنند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1695,7 +1695,7 @@
       "id": "react-104",
       "slug": "تله-های-react-memo-چیست-و-چگونه-از-تابع-comparison-آن-استفاده-می-کنید",
       "title": "تله‌های `React.memo` چیست و چگونه از تابع comparison آن استفاده می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1711,7 +1711,7 @@
       "id": "react-105",
       "slug": "debounce-و-throttle-را-در-hook-های-react-چگونه-پیاده-سازی-می-کنید",
       "title": "debounce و throttle را در hook های React چگونه پیاده‌سازی می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1727,7 +1727,7 @@
       "id": "react-106",
       "slug": "infinite-scroll-را-در-react-چگونه-پیاده-سازی-می-کنید",
       "title": "infinite scroll را در React چگونه پیاده‌سازی می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1743,7 +1743,7 @@
       "id": "react-107",
       "slug": "چگونه-از-react-profiler-برای-پیدا-کردن-گلوگاه-های-performance-استفاده-می-کنید",
       "title": "چگونه از React Profiler برای پیدا کردن گلوگاه‌های performance استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1759,7 +1759,7 @@
       "id": "react-108",
       "slug": "trade-off-های-performance-بین-css-in-js-و-css-modules-چیست",
       "title": "trade-off های performance بین CSS-in-JS و CSS Modules چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1775,7 +1775,7 @@
       "id": "react-109",
       "slug": "تصاویر-را-در-یک-اپ-react-چگونه-بهینه-می-کنید",
       "title": "تصاویر را در یک اپ React چگونه بهینه می‌کنید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1791,7 +1791,7 @@
       "id": "react-110",
       "slug": "streaming-ssr-در-react-18-چگونه-کار-می-کند",
       "title": "Streaming SSR در React 18 چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1807,7 +1807,7 @@
       "id": "react-111",
       "slug": "tree-shaking-چیست-و-چگونه-مطمئن-می-شوید-در-پروژه-react-کار-می-کند",
       "title": "tree shaking چیست و چگونه مطمئن می‌شوید در پروژه React کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1823,7 +1823,7 @@
       "id": "react-112",
       "slug": "performance-انیمیشن-را-در-react-چگونه-بهینه-می-کنید",
       "title": "performance انیمیشن را در React چگونه بهینه می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1839,7 +1839,7 @@
       "id": "react-113",
       "slug": "partial-hydration-و-معماری-islands-چیست",
       "title": "partial hydration و معماری islands چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1855,7 +1855,7 @@
       "id": "react-114",
       "slug": "long-task-ها-را-چگونه-مدیریت-می-کنید-تا-اپ-react-responsive-بماند",
       "title": "long task ها را چگونه مدیریت می‌کنید تا اپ React responsive بماند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1871,7 +1871,7 @@
       "id": "react-115",
       "slug": "performance-اپلیکیشن-react-را-در-production-چگونه-مانیتور-می-کنید",
       "title": "performance اپلیکیشن React را در production چگونه مانیتور می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1887,7 +1887,7 @@
       "id": "react-116",
       "slug": "چک-لیست-کامل-جلوگیری-از-re-render-غیرضروری-در-react-چیست",
       "title": "چک‌لیست کامل جلوگیری از re-render غیرضروری در React چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1903,7 +1903,7 @@
       "id": "react-117",
       "slug": "چگونه-از-typescript-همراه-react-برای-type-safety-پیشرفته-استفاده-می-کنید",
       "title": "چگونه از TypeScript همراه React برای type safety پیشرفته استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری و الگوها"
       ],
@@ -1919,7 +1919,7 @@
       "id": "react-118",
       "slug": "تفاوت-های-کلیدی-بین-react-dom-و-react-native-چیست",
       "title": "تفاوت‌های کلیدی بین React DOM و React Native چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی React"
       ],
@@ -1935,7 +1935,7 @@
       "id": "react-119",
       "slug": "strictmode-در-react-18-دقیقا-چه-می-کند-و-چرا-effect-ها-دوبار-اجرا-می-شوند",
       "title": "`StrictMode` در React 18 دقیقاً چه می‌کند و چرا effect ها دوبار اجرا می‌شوند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "داخلی‌های React"
       ],
@@ -1951,7 +1951,7 @@
       "id": "react-120",
       "slug": "priority-lane-های-react-چیستند-و-concurrent-scheduler-چگونه-کار-می-کند",
       "title": "priority lane های React چیستند و concurrent scheduler چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -1967,7 +1967,7 @@
       "id": "react-121",
       "slug": "stale-closure-در-react-چیست-و-چگونه-در-useeffect-باعث-باگ-می-شود",
       "title": "stale closure در React چیست و چگونه در `useEffect` باعث باگ می‌شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -1983,7 +1983,7 @@
       "id": "react-122",
       "slug": "چه-چیزهایی-باعث-loop-بی-نهایت-re-render-در-react-می-شوند-و-چگونه-آن-ها-را-درست-م",
       "title": "چه چیزهایی باعث loop بی‌نهایت re-render در React می‌شوند و چگونه آن‌ها را درست می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -1999,7 +1999,7 @@
       "id": "react-123",
       "slug": "چرا-literal-های-object-و-array-در-jsx-باعث-re-render-غیرضروری-می-شوند",
       "title": "چرا literal های object و array در JSX باعث re-render غیرضروری می‌شوند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2015,7 +2015,7 @@
       "id": "react-124",
       "slug": "اگر-state-را-داخل-تابع-render-به-روزرسانی-کنید-چه-اتفاقی-می-افتد",
       "title": "اگر state را داخل تابع render به‌روزرسانی کنید چه اتفاقی می‌افتد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2031,7 +2031,7 @@
       "id": "react-125",
       "slug": "race-condition-در-data-fetching-داخل-useeffect-چگونه-رخ-می-دهد-و-چگونه-جلوی-آن-ر",
       "title": "race condition در data fetching داخل `useEffect` چگونه رخ می‌دهد و چگونه جلوی آن را می‌گیرید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2047,7 +2047,7 @@
       "id": "react-126",
       "slug": "اشتباه-های-رایج-هنگام-به-روزرسانی-object-و-array-در-state-react-چیست",
       "title": "اشتباه‌های رایج هنگام به‌روزرسانی object و array در state React چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2063,7 +2063,7 @@
       "id": "react-127",
       "slug": "خواندن-state-قدیمی-داخل-callback-های-async-چگونه-باعث-باگ-می-شود",
       "title": "خواندن state قدیمی داخل callback های async چگونه باعث باگ می‌شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2079,7 +2079,7 @@
       "id": "react-128",
       "slug": "قانون-eslint-به-نام-exhaustive-deps-چیست-و-چه-زمانی-اگر-اصلا-لازم-باشد-باید-آن-ر",
       "title": "قانون ESLint به نام `exhaustive-deps` چیست و چه زمانی، اگر اصلاً لازم باشد، باید آن را suppress کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موارد لبه و تله‌ها"
       ],
@@ -2095,7 +2095,7 @@
       "id": "react-129",
       "slug": "چگونه-چند-context-provider-را-split-و-compose-می-کنید-تا-re-render-غیرضروری-کم-ش",
       "title": "چگونه چند Context provider را split و compose می‌کنید تا re-render غیرضروری کم شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Context API"
       ],
@@ -2111,7 +2111,7 @@
       "id": "react-130",
       "slug": "چگونه-usecontext-و-usereducer-را-به-عنوان-یک-راه-حل-سبک-برای-global-state-با-هم",
       "title": "چگونه `useContext` و `useReducer` را به‌عنوان یک راه‌حل سبک برای global state با هم ترکیب می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Context API"
       ],
@@ -2127,7 +2127,7 @@
       "id": "react-131",
       "slug": "context-selector-چیست-و-چرا-react-آن-را-به-صورت-native-ندارد",
       "title": "context selector چیست و چرا React آن را به‌صورت native ندارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "Context API"
       ],
@@ -2143,7 +2143,7 @@
       "id": "react-132",
       "slug": "چگونه-یک-کامپوننت-مصرف-کننده-context-را-تست-می-کنید",
       "title": "چگونه یک کامپوننت مصرف‌کننده Context را تست می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Context API"
       ],
@@ -2159,7 +2159,7 @@
       "id": "react-133",
       "slug": "react-hook-form-چگونه-کار-می-کند-و-چرا-از-controlled-component-ها-سریع-تر-است",
       "title": "React Hook Form چگونه کار می‌کند و چرا از controlled component ها سریع‌تر است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -2175,7 +2175,7 @@
       "id": "react-134",
       "slug": "field-های-پویا-در-فرم-مثل-اضافه-حذف-سطر-را-در-react-چگونه-مدیریت-می-کنید",
       "title": "field های پویا در فرم، مثل اضافه/حذف سطر، را در React چگونه مدیریت می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -2191,7 +2191,7 @@
       "id": "react-135",
       "slug": "آپلود-فایل-را-در-react-چگونه-مدیریت-می-کنید",
       "title": "آپلود فایل را در React چگونه مدیریت می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "فرم‌ها و رویدادها"
       ],
@@ -2207,7 +2207,7 @@
       "id": "react-136",
       "slug": "چگونه-با-abortcontroller-هنگام-unmount-شدن-کامپوننت-یک-fetch-را-لغو-می-کنید",
       "title": "چگونه با `AbortController` هنگام unmount شدن کامپوننت یک fetch را لغو می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -2223,7 +2223,7 @@
       "id": "react-137",
       "slug": "مدل-ذهنی-synchronization-برای-useeffect-چیست-و-چه-تفاوتی-با-lifecycle-thinking-د",
       "title": "مدل ذهنی synchronization برای `useEffect` چیست و چه تفاوتی با lifecycle thinking دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -2239,7 +2239,7 @@
       "id": "react-138",
       "slug": "چگونه-lifecycle-method-های-class-component-را-به-hook-ها-مهاجرت-می-دهید",
       "title": "چگونه lifecycle method های class component را به hook ها مهاجرت می‌دهید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Effects و چرخه حیات"
       ],
@@ -2255,7 +2255,7 @@
       "id": "react-139",
       "slug": "قواعد-مرز-client-server-و-دستور-use-client-چیست",
       "title": "قواعد مرز Client/Server و دستور `\"use client\"` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Server Components"
       ],
@@ -2271,7 +2271,7 @@
       "id": "react-140",
       "slug": "react-server-components-داده-را-چگونه-نسبت-به-client-component-ها-fetch-می-کنند",
       "title": "React Server Components داده را چگونه نسبت به client component ها fetch می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Server Components"
       ],
@@ -2287,7 +2287,7 @@
       "id": "react-141",
       "slug": "چگونه-از-یک-server-component-به-یک-client-component-داده-پاس-می-دهید",
       "title": "چگونه از یک Server Component به یک Client Component داده پاس می‌دهید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Server Components"
       ],
@@ -2303,7 +2303,7 @@
       "id": "react-142",
       "slug": "تفاوت-server-state-و-client-state-چیست-و-چه-ابزارهایی-هرکدام-را-مدیریت-می-کنند",
       "title": "تفاوت server state و client state چیست و چه ابزارهایی هرکدام را مدیریت می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -2319,7 +2319,7 @@
       "id": "react-143",
       "slug": "normalized-state-چیست-و-چرا-در-اپلیکیشن-های-بزرگ-react-مهم-است",
       "title": "normalized state چیست و چرا در اپلیکیشن‌های بزرگ React مهم است؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "مدیریت State"
       ],
@@ -2335,7 +2335,7 @@
       "id": "react-144",
       "slug": "مدل-atomic-در-jotai-چه-تفاوتی-با-redux-و-zustand-دارد",
       "title": "مدل atomic در Jotai چه تفاوتی با Redux و Zustand دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -2351,7 +2351,7 @@
       "id": "react-145",
       "slug": "hook-های-react-در-داخل-چگونه-با-linked-list-پیاده-سازی-می-شوند",
       "title": "hook های React در داخل چگونه با linked list پیاده‌سازی می‌شوند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -2367,7 +2367,7 @@
       "id": "react-146",
       "slug": "چرا-hook-ها-باید-در-هر-render-با-همان-ترتیب-فراخوانی-شوند-و-اگر-نشوند-چه-چیزی-در",
       "title": "چرا hook ها باید در هر render با همان ترتیب فراخوانی شوند و اگر نشوند چه چیزی در داخل React خراب می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -2383,7 +2383,7 @@
       "id": "react-147",
       "slug": "suspense-در-داخل-چگونه-کار-می-کند-مکانیزم-throw-کردن-promise-چیست",
       "title": "Suspense در داخل چگونه کار می‌کند — مکانیزم «throw کردن Promise» چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -2399,7 +2399,7 @@
       "id": "react-148",
       "slug": "چگونه-یک-renderer-مینیمال-شبیه-react-را-از-صفر-می-سازید",
       "title": "چگونه یک renderer مینیمال شبیه React را از صفر می‌سازید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "داخلی‌های React"
       ],
@@ -2415,7 +2415,7 @@
       "id": "react-149",
       "slug": "چه-چیزهایی-در-react-باعث-re-render-می-شوند-و-چگونه-از-re-render-غیرضروری-جلوگیری",
       "title": "چه چیزهایی در React باعث re-render می‌شوند و چگونه از re-render غیرضروری جلوگیری می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -2431,7 +2431,7 @@
       "id": "react-150",
       "slug": "خط-لوله-رندر-react-را-از-تغییر-state-تا-painted-pixel-ها-توضیح-بده",
       "title": "خط لوله رندر React را از تغییر state تا painted pixel ها توضیح بده.",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -2447,7 +2447,7 @@
       "id": "react-151",
       "slug": "concurrent-scheduler-در-react-18-چگونه-کار-می-کند-و-priority-lane-ها-چه-هستند",
       "title": "concurrent scheduler در React 18 چگونه کار می‌کند و priority lane ها چه هستند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -2463,7 +2463,7 @@
       "id": "react-152",
       "slug": "چرا-react-strictmode-در-development-تابع-render-و-effect-را-دوبار-صدا-می-زند",
       "title": "چرا React.StrictMode در development تابع render و effect را دوبار صدا می‌زند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار رندرینگ"
       ],
@@ -2479,7 +2479,7 @@
       "id": "react-153",
       "slug": "hook-useid-چیست-و-چگونه-mismatch-های-hydration-در-ssr-را-حل-می-کند",
       "title": "hook `useId` چیست و چگونه mismatch های hydration در SSR را حل می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2495,7 +2495,7 @@
       "id": "react-154",
       "slug": "استراتژی-های-data-fetching-در-next-js-app-router-چیست-و-هرکدام-را-چه-زمانی-استفا",
       "title": "استراتژی‌های data fetching در Next.js App Router چیست و هرکدام را چه زمانی استفاده می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2511,7 +2511,7 @@
       "id": "react-155",
       "slug": "چگونه-api-های-مخصوص-مرورگر-مثل-window-localstorage-و-document-را-در-یک-اپ-ssr-به",
       "title": "چگونه API های مخصوص مرورگر مثل `window`، `localStorage` و `document` را در یک اپ SSR به‌صورت امن استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2527,7 +2527,7 @@
       "id": "react-156",
       "slug": "selective-hydration-همراه-با-suspense-در-react-18-چگونه-کار-می-کند",
       "title": "selective hydration همراه با Suspense در React 18 چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2543,7 +2543,7 @@
       "id": "react-157",
       "slug": "authentication-را-در-ssr-چگونه-مدیریت-می-کنید-الگوهای-cookie-based-auth-و-middle",
       "title": "authentication را در SSR چگونه مدیریت می‌کنید — الگوهای cookie-based auth و middleware چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],

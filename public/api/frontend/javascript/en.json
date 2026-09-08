@@ -28,9 +28,9 @@
   "stats": {
     "total": 102,
     "byDifficulty": {
-      "easy": 18,
-      "medium": 55,
-      "hard": 29
+      "Easy": 18,
+      "Medium": 55,
+      "Hard": 29
     }
   },
   "questions": [
@@ -38,7 +38,7 @@
       "id": "javascript-001",
       "slug": "what-is-javascript-and-how-does-it-differ-from-compiled-languages",
       "title": "What is JavaScript and how does it differ from compiled languages?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -54,7 +54,7 @@
       "id": "javascript-002",
       "slug": "what-are-the-primitive-data-types-in-javascript",
       "title": "What are the primitive data types in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -70,7 +70,7 @@
       "id": "javascript-003",
       "slug": "what-is-the-difference-between-null-and-undefined",
       "title": "What is the difference between null and undefined?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -86,7 +86,7 @@
       "id": "javascript-004",
       "slug": "what-is-the-difference-between-var-let-and-const",
       "title": "What is the difference between var, let, and const?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -102,7 +102,7 @@
       "id": "javascript-005",
       "slug": "what-is-scope-in-javascript",
       "title": "What is scope in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -118,7 +118,7 @@
       "id": "javascript-006",
       "slug": "what-is-hoisting-in-javascript",
       "title": "What is hoisting in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -134,7 +134,7 @@
       "id": "javascript-007",
       "slug": "what-is-the-difference-between-primitive-values-and-reference-values",
       "title": "What is the difference between primitive values and reference values?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Memory & References"
       ],
@@ -150,7 +150,7 @@
       "id": "javascript-008",
       "slug": "how-does-memory-management-work-in-javascript",
       "title": "How does memory management work in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Memory & References"
       ],
@@ -166,7 +166,7 @@
       "id": "javascript-009",
       "slug": "what-is-a-closure-in-javascript",
       "title": "What is a closure in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -182,7 +182,7 @@
       "id": "javascript-010",
       "slug": "what-is-the-event-loop-in-javascript",
       "title": "What is the event loop in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -198,7 +198,7 @@
       "id": "javascript-011",
       "slug": "what-is-an-execution-context-in-javascript",
       "title": "What is an execution context in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -214,7 +214,7 @@
       "id": "javascript-012",
       "slug": "what-happens-during-the-creation-phase-of-an-execution-context",
       "title": "What happens during the creation phase of an execution context?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -230,7 +230,7 @@
       "id": "javascript-013",
       "slug": "what-is-the-call-stack-and-how-does-it-work",
       "title": "What is the call stack and how does it work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Engine & Runtime"
       ],
@@ -246,7 +246,7 @@
       "id": "javascript-014",
       "slug": "what-is-the-temporal-dead-zone-tdz",
       "title": "What is the Temporal Dead Zone (TDZ)?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -262,7 +262,7 @@
       "id": "javascript-015",
       "slug": "how-does-the-this-keyword-work-in-javascript",
       "title": "How does the `this` keyword work in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -278,7 +278,7 @@
       "id": "javascript-016",
       "slug": "what-is-the-difference-between-regular-functions-and-arrow-functions",
       "title": "What is the difference between regular functions and arrow functions?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -294,7 +294,7 @@
       "id": "javascript-017",
       "slug": "what-is-the-difference-between-shallow-copy-and-deep-copy",
       "title": "What is the difference between shallow copy and deep copy?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Memory & References"
       ],
@@ -310,7 +310,7 @@
       "id": "javascript-018",
       "slug": "what-are-microtasks-and-macrotasks-in-the-event-loop",
       "title": "What are microtasks and macrotasks in the event loop?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -326,7 +326,7 @@
       "id": "javascript-019",
       "slug": "what-are-the-different-states-of-a-promise",
       "title": "What are the different states of a Promise?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -342,7 +342,7 @@
       "id": "javascript-020",
       "slug": "how-does-async-await-work-internally",
       "title": "How does async/await work internally?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -358,7 +358,7 @@
       "id": "javascript-021",
       "slug": "what-is-a-prototype-in-javascript",
       "title": "What is a prototype in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -374,7 +374,7 @@
       "id": "javascript-022",
       "slug": "what-is-the-prototype-chain-and-how-does-property-lookup-work",
       "title": "What is the prototype chain and how does property lookup work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -390,7 +390,7 @@
       "id": "javascript-023",
       "slug": "what-is-the-difference-between-proto-and-prototype",
       "title": "What is the difference between `__proto__` and `prototype`?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -406,7 +406,7 @@
       "id": "javascript-024",
       "slug": "how-does-inheritance-work-in-javascript",
       "title": "How does inheritance work in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -422,7 +422,7 @@
       "id": "javascript-025",
       "slug": "what-is-strict-mode-in-javascript-and-why-is-it-important",
       "title": "What is strict mode in JavaScript and why is it important?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -438,7 +438,7 @@
       "id": "javascript-026",
       "slug": "what-are-javascript-modules-and-how-do-they-work",
       "title": "What are JavaScript modules and how do they work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -454,7 +454,7 @@
       "id": "javascript-027",
       "slug": "what-is-a-memory-leak-and-how-can-it-happen-in-javascript",
       "title": "What is a memory leak and how can it happen in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Memory & References"
       ],
@@ -470,7 +470,7 @@
       "id": "javascript-028",
       "slug": "what-are-weakmap-and-weakset-and-how-are-they-different-from-map-and-set",
       "title": "What are WeakMap and WeakSet and how are they different from Map and Set?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -486,7 +486,7 @@
       "id": "javascript-029",
       "slug": "how-does-javascript-handle-object-property-descriptors",
       "title": "How does JavaScript handle object property descriptors?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -502,7 +502,7 @@
       "id": "javascript-030",
       "slug": "how-do-javascript-engines-optimize-code-execution",
       "title": "How do JavaScript engines optimize code execution?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Engine & Runtime"
       ],
@@ -518,7 +518,7 @@
       "id": "javascript-031",
       "slug": "what-is-the-execution-context-in-javascript-and-what-are-its-main-components",
       "title": "What is the Execution Context in JavaScript and what are its main components?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -534,7 +534,7 @@
       "id": "javascript-032",
       "slug": "what-is-the-difference-between-the-creation-phase-and-execution-phase-of-an-exec",
       "title": "What is the difference between the creation phase and execution phase of an execution context?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -550,7 +550,7 @@
       "id": "javascript-033",
       "slug": "how-does-the-scope-chain-work-during-variable-resolution",
       "title": "How does the Scope Chain work during variable resolution?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -566,7 +566,7 @@
       "id": "javascript-034",
       "slug": "what-is-the-difference-between-lexical-scope-and-dynamic-scope-and-which-one-doe",
       "title": "What is the difference between Lexical Scope and Dynamic Scope, and which one does JavaScript use?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -582,7 +582,7 @@
       "id": "javascript-035",
       "slug": "what-is-a-closure-in-javascript-and-how-does-it-relate-to-lexical-scoping",
       "title": "What is a Closure in JavaScript and how does it relate to lexical scoping?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions",
         "Execution Context & Scope"
@@ -599,7 +599,7 @@
       "id": "javascript-036",
       "slug": "why-can-closures-cause-memory-leaks-in-certain-situations",
       "title": "Why can closures cause memory leaks in certain situations?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Functions",
         "Memory & References"
@@ -616,7 +616,7 @@
       "id": "javascript-037",
       "slug": "what-is-the-temporal-dead-zone-tdz-and-how-does-it-work-with-let-and-const",
       "title": "What is the Temporal Dead Zone (TDZ) and how does it work with let and const?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -632,7 +632,7 @@
       "id": "javascript-038",
       "slug": "how-does-block-scope-differ-from-function-scope",
       "title": "How does block scope differ from function scope?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -648,7 +648,7 @@
       "id": "javascript-039",
       "slug": "what-happens-internally-when-a-function-is-returned-from-another-function",
       "title": "What happens internally when a function is returned from another function?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Functions",
         "Execution Context & Scope"
@@ -665,7 +665,7 @@
       "id": "javascript-040",
       "slug": "how-does-javascript-handle-variable-lookup-when-multiple-nested-scopes-exist",
       "title": "How does JavaScript handle variable lookup when multiple nested scopes exist?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Execution Context & Scope"
       ],
@@ -681,7 +681,7 @@
       "id": "javascript-041",
       "slug": "what-is-the-difference-between-and-in-javascript",
       "title": "What is the difference between == and === in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -697,7 +697,7 @@
       "id": "javascript-042",
       "slug": "how-do-call-apply-and-bind-work",
       "title": "How do call(), apply(), and bind() work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -713,7 +713,7 @@
       "id": "javascript-043",
       "slug": "what-is-an-iife-in-javascript",
       "title": "What is an IIFE in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -729,7 +729,7 @@
       "id": "javascript-044",
       "slug": "what-is-currying-in-javascript",
       "title": "What is currying in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Functions"
       ],
@@ -745,7 +745,7 @@
       "id": "javascript-045",
       "slug": "what-is-the-difference-between-map-filter-and-reduce",
       "title": "What is the difference between map(), filter(), and reduce()?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -761,7 +761,7 @@
       "id": "javascript-046",
       "slug": "what-is-destructuring-in-javascript",
       "title": "What is destructuring in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -777,7 +777,7 @@
       "id": "javascript-047",
       "slug": "what-are-the-spread-and-rest-operators-in-javascript",
       "title": "What are the spread and rest operators in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -793,7 +793,7 @@
       "id": "javascript-048",
       "slug": "what-is-the-difference-between-promise-all-promise-race-promise-allsettled-and-p",
       "title": "What is the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -809,7 +809,7 @@
       "id": "javascript-049",
       "slug": "what-is-event-delegation-in-javascript",
       "title": "What is event delegation in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -825,7 +825,7 @@
       "id": "javascript-050",
       "slug": "what-is-type-coercion-in-javascript",
       "title": "What is type coercion in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -841,7 +841,7 @@
       "id": "javascript-051",
       "slug": "what-is-optional-chaining-in-javascript",
       "title": "What is optional chaining (?.) in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -857,7 +857,7 @@
       "id": "javascript-052",
       "slug": "what-is-the-nullish-coalescing-operator-and-how-does-it-differ-from",
       "title": "What is the nullish coalescing operator (??) and how does it differ from ||?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -873,7 +873,7 @@
       "id": "javascript-053",
       "slug": "how-does-the-typeof-operator-work-and-what-are-its-quirks",
       "title": "How does the typeof operator work and what are its quirks?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -889,7 +889,7 @@
       "id": "javascript-054",
       "slug": "what-is-the-instanceof-operator-and-how-does-it-differ-from-typeof",
       "title": "What is the instanceof operator and how does it differ from typeof?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -905,7 +905,7 @@
       "id": "javascript-055",
       "slug": "what-are-symbols-in-javascript-and-when-are-they-used",
       "title": "What are Symbols in JavaScript and when are they used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -921,7 +921,7 @@
       "id": "javascript-056",
       "slug": "what-are-generator-functions-in-javascript",
       "title": "What are generator functions in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Functions"
       ],
@@ -937,7 +937,7 @@
       "id": "javascript-057",
       "slug": "what-is-the-iterator-protocol-in-javascript",
       "title": "What is the iterator protocol in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Language Behavior"
       ],
@@ -953,7 +953,7 @@
       "id": "javascript-058",
       "slug": "what-is-proxy-in-javascript",
       "title": "What is Proxy in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -969,7 +969,7 @@
       "id": "javascript-059",
       "slug": "what-is-the-reflect-api-in-javascript",
       "title": "What is the Reflect API in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -985,7 +985,7 @@
       "id": "javascript-060",
       "slug": "what-are-default-parameters-in-javascript",
       "title": "What are default parameters in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Functions"
       ],
@@ -1001,7 +1001,7 @@
       "id": "javascript-061",
       "slug": "what-are-object-keys-object-values-and-object-entries",
       "title": "What are Object.keys(), Object.values(), and Object.entries()?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Objects & Internals"
       ],
@@ -1017,7 +1017,7 @@
       "id": "javascript-062",
       "slug": "what-is-the-difference-between-object-assign-and-the-spread-operator-for-merging",
       "title": "What is the difference between Object.assign() and the spread operator for merging objects?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Objects & Internals"
       ],
@@ -1033,7 +1033,7 @@
       "id": "javascript-063",
       "slug": "what-is-the-difference-between-object-freeze-and-object-seal",
       "title": "What is the difference between Object.freeze() and Object.seal()?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -1049,7 +1049,7 @@
       "id": "javascript-064",
       "slug": "what-are-array-from-and-array-isarray",
       "title": "What are Array.from() and Array.isArray()?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -1065,7 +1065,7 @@
       "id": "javascript-065",
       "slug": "what-are-flat-and-flatmap-in-javascript",
       "title": "What are flat() and flatMap() in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -1081,7 +1081,7 @@
       "id": "javascript-066",
       "slug": "what-are-find-and-findindex-in-javascript",
       "title": "What are find() and findIndex() in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -1097,7 +1097,7 @@
       "id": "javascript-067",
       "slug": "what-are-some-and-every-in-javascript",
       "title": "What are some() and every() in JavaScript?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -1113,7 +1113,7 @@
       "id": "javascript-068",
       "slug": "how-does-array-sort-work-and-what-are-its-common-pitfalls",
       "title": "How does Array.sort() work and what are its common pitfalls?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -1129,7 +1129,7 @@
       "id": "javascript-069",
       "slug": "what-is-memoization-in-javascript",
       "title": "What is memoization in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -1145,7 +1145,7 @@
       "id": "javascript-070",
       "slug": "what-are-javascript-error-types-and-how-do-you-create-custom-errors",
       "title": "What are JavaScript error types and how do you create custom errors?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1161,7 +1161,7 @@
       "id": "javascript-071",
       "slug": "what-is-debounce-in-javascript",
       "title": "What is debounce in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1177,7 +1177,7 @@
       "id": "javascript-072",
       "slug": "what-is-throttle-in-javascript",
       "title": "What is throttle in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1193,7 +1193,7 @@
       "id": "javascript-073",
       "slug": "what-is-the-difference-between-event-bubbling-and-event-capturing",
       "title": "What is the difference between event bubbling and event capturing?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1209,7 +1209,7 @@
       "id": "javascript-074",
       "slug": "what-is-the-difference-between-localstorage-sessionstorage-and-cookies",
       "title": "What is the difference between localStorage, sessionStorage, and cookies?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Engine & Runtime"
       ],
@@ -1225,7 +1225,7 @@
       "id": "javascript-075",
       "slug": "what-is-the-difference-between-settimeout-and-setinterval",
       "title": "What is the difference between setTimeout and setInterval?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1241,7 +1241,7 @@
       "id": "javascript-076",
       "slug": "what-is-requestanimationframe-in-javascript",
       "title": "What is requestAnimationFrame in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1257,7 +1257,7 @@
       "id": "javascript-077",
       "slug": "what-are-pure-functions-and-immutability-in-javascript",
       "title": "What are pure functions and immutability in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -1273,7 +1273,7 @@
       "id": "javascript-078",
       "slug": "what-is-function-composition-in-javascript",
       "title": "What is function composition in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -1289,7 +1289,7 @@
       "id": "javascript-079",
       "slug": "what-are-web-workers-in-javascript",
       "title": "What are Web Workers in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Engine & Runtime"
       ],
@@ -1305,7 +1305,7 @@
       "id": "javascript-080",
       "slug": "how-does-error-handling-work-with-async-await",
       "title": "How does error handling work with async/await?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1321,7 +1321,7 @@
       "id": "javascript-081",
       "slug": "what-are-hidden-classes-in-javascript-engines-and-how-do-they-affect-performance",
       "title": "What are hidden classes in JavaScript engines and how do they affect performance?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Engine & Runtime"
       ],
@@ -1337,7 +1337,7 @@
       "id": "javascript-082",
       "slug": "what-is-inline-caching-and-how-does-it-optimize-property-access",
       "title": "What is inline caching and how does it optimize property access?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Engine & Runtime"
       ],
@@ -1353,7 +1353,7 @@
       "id": "javascript-083",
       "slug": "how-does-generational-garbage-collection-work-in-modern-javascript-engines",
       "title": "How does generational garbage collection work in modern JavaScript engines?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Memory & References",
         "Engine & Runtime"
@@ -1370,7 +1370,7 @@
       "id": "javascript-084",
       "slug": "what-is-partial-application-and-how-does-it-differ-from-currying",
       "title": "What is partial application and how does it differ from currying?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -1386,7 +1386,7 @@
       "id": "javascript-085",
       "slug": "what-are-higher-order-functions-and-why-are-they-important",
       "title": "What are higher-order functions and why are they important?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Functions"
       ],
@@ -1402,7 +1402,7 @@
       "id": "javascript-086",
       "slug": "what-is-referential-transparency-in-javascript",
       "title": "What is referential transparency in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Functions"
       ],
@@ -1418,7 +1418,7 @@
       "id": "javascript-087",
       "slug": "what-is-starvation-in-the-javascript-event-loop",
       "title": "What is starvation in the JavaScript event loop?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1434,7 +1434,7 @@
       "id": "javascript-088",
       "slug": "why-is-typeof-null-equal-to-object",
       "title": "Why is `typeof null` equal to \"object\"?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1450,7 +1450,7 @@
       "id": "javascript-089",
       "slug": "what-is-nan-and-why-is-nan-nan",
       "title": "What is NaN and why is `NaN !== NaN`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1466,7 +1466,7 @@
       "id": "javascript-090",
       "slug": "what-is-structuredclone-and-when-should-it-be-used",
       "title": "What is structuredClone and when should it be used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -1482,7 +1482,7 @@
       "id": "javascript-091",
       "slug": "what-is-the-observer-pattern-and-how-can-it-be-implemented-in-javascript",
       "title": "What is the Observer pattern and how can it be implemented in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -1498,7 +1498,7 @@
       "id": "javascript-092",
       "slug": "what-is-the-difference-between-deep-equality-and-reference-equality",
       "title": "What is the difference between deep equality and reference equality?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -1514,7 +1514,7 @@
       "id": "javascript-093",
       "slug": "what-are-getters-and-setters-and-how-do-they-work-internally",
       "title": "What are getters and setters and how do they work internally?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -1530,7 +1530,7 @@
       "id": "javascript-094",
       "slug": "what-are-well-known-symbols-in-javascript",
       "title": "What are well-known Symbols in JavaScript?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Objects & Internals"
       ],
@@ -1546,7 +1546,7 @@
       "id": "javascript-095",
       "slug": "what-is-async-iteration-and-how-does-for-await-of-work",
       "title": "What is async iteration and how does `for await...of` work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1562,7 +1562,7 @@
       "id": "javascript-096",
       "slug": "what-is-the-difference-between-object-create-and-class-based-instantiation",
       "title": "What is the difference between Object.create() and class-based instantiation?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Objects & Internals"
       ],
@@ -1578,7 +1578,7 @@
       "id": "javascript-097",
       "slug": "what-are-the-pitfalls-of-automatic-semicolon-insertion-asi",
       "title": "What are the pitfalls of Automatic Semicolon Insertion (ASI)?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1594,7 +1594,7 @@
       "id": "javascript-098",
       "slug": "how-does-the-browser-handle-rendering-between-tasks-in-the-event-loop",
       "title": "How does the browser handle rendering between tasks in the event loop?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Asynchronous & Event Loop"
       ],
@@ -1610,7 +1610,7 @@
       "id": "javascript-099",
       "slug": "what-is-the-difference-between-for-in-and-for-of",
       "title": "What is the difference between `for...in` and `for...of`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Language Behavior"
       ],
@@ -1626,7 +1626,7 @@
       "id": "javascript-100",
       "slug": "what-are-tagged-template-literals-and-how-do-they-work",
       "title": "What are tagged template literals and how do they work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -1642,7 +1642,7 @@
       "id": "javascript-101",
       "slug": "what-is-dynamic-import-and-how-does-it-differ-from-static-import",
       "title": "What is dynamic `import()` and how does it differ from static import?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -1658,7 +1658,7 @@
       "id": "javascript-102",
       "slug": "what-are-logical-assignment-operators-in-javascript",
       "title": "What are logical assignment operators in JavaScript?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],

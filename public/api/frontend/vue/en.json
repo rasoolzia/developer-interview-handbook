@@ -32,9 +32,9 @@
   "stats": {
     "total": 120,
     "byDifficulty": {
-      "easy": 20,
-      "medium": 68,
-      "hard": 32
+      "Easy": 20,
+      "Medium": 68,
+      "Hard": 32
     }
   },
   "questions": [
@@ -42,7 +42,7 @@
       "id": "vue-001",
       "slug": "what-is-vue-js-and-what-problem-does-it-solve",
       "title": "What is Vue.js and what problem does it solve?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -58,7 +58,7 @@
       "id": "vue-002",
       "slug": "what-are-the-core-features-of-vue-js",
       "title": "What are the core features of Vue.js?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -74,7 +74,7 @@
       "id": "vue-003",
       "slug": "how-does-vue-differ-from-react-and-angular",
       "title": "How does Vue differ from React and Angular?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -90,7 +90,7 @@
       "id": "vue-004",
       "slug": "what-is-the-vue-instance",
       "title": "What is the Vue instance?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -106,7 +106,7 @@
       "id": "vue-005",
       "slug": "what-is-the-difference-between-vue-2-and-vue-3",
       "title": "What is the difference between Vue 2 and Vue 3?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -122,7 +122,7 @@
       "id": "vue-006",
       "slug": "what-is-vue-reactivity-and-why-is-it-important",
       "title": "What is Vue reactivity and why is it important?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Reactivity System"
       ],
@@ -138,7 +138,7 @@
       "id": "vue-007",
       "slug": "how-does-vue-track-reactive-dependencies",
       "title": "How does Vue track reactive dependencies?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -154,7 +154,7 @@
       "id": "vue-008",
       "slug": "what-are-ref-and-reactive-in-vue-3",
       "title": "What are `ref` and `reactive` in Vue 3?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Reactivity System"
       ],
@@ -170,7 +170,7 @@
       "id": "vue-009",
       "slug": "what-is-the-difference-between-ref-and-reactive",
       "title": "What is the difference between `ref` and `reactive`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -186,7 +186,7 @@
       "id": "vue-010",
       "slug": "what-are-computed-properties-and-how-do-they-differ-from-methods",
       "title": "What are computed properties and how do they differ from methods?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Reactivity System"
       ],
@@ -202,7 +202,7 @@
       "id": "vue-011",
       "slug": "what-are-vue-components-and-why-are-they-important",
       "title": "What are Vue components and why are they important?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -218,7 +218,7 @@
       "id": "vue-012",
       "slug": "how-do-props-work-in-vue",
       "title": "How do props work in Vue?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -234,7 +234,7 @@
       "id": "vue-013",
       "slug": "what-is-prop-validation-in-vue",
       "title": "What is prop validation in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -250,7 +250,7 @@
       "id": "vue-014",
       "slug": "what-are-slots-in-vue-and-why-are-they-useful",
       "title": "What are slots in Vue and why are they useful?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -266,7 +266,7 @@
       "id": "vue-015",
       "slug": "what-are-scoped-slots-and-how-do-they-differ-from-regular-slots",
       "title": "What are scoped slots and how do they differ from regular slots?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -282,7 +282,7 @@
       "id": "vue-016",
       "slug": "what-is-the-composition-api-in-vue-and-why-was-it-introduced",
       "title": "What is the Composition API in Vue and why was it introduced?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -298,7 +298,7 @@
       "id": "vue-017",
       "slug": "what-is-the-setup-function-in-vue",
       "title": "What is the `setup()` function in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -314,7 +314,7 @@
       "id": "vue-018",
       "slug": "what-is-a-composable-in-vue",
       "title": "What is a composable in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -330,7 +330,7 @@
       "id": "vue-019",
       "slug": "what-is-the-difference-between-watch-and-watcheffect",
       "title": "What is the difference between `watch` and `watchEffect`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -346,7 +346,7 @@
       "id": "vue-020",
       "slug": "what-are-lifecycle-hooks-in-vue",
       "title": "What are lifecycle hooks in Vue?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Lifecycle"
       ],
@@ -362,7 +362,7 @@
       "id": "vue-021",
       "slug": "what-are-the-most-common-lifecycle-hooks-in-vue-3",
       "title": "What are the most common lifecycle hooks in Vue 3?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Lifecycle"
       ],
@@ -378,7 +378,7 @@
       "id": "vue-022",
       "slug": "what-is-v-if-and-how-does-it-differ-from-v-show",
       "title": "What is `v-if` and how does it differ from `v-show`?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Directives"
       ],
@@ -394,7 +394,7 @@
       "id": "vue-023",
       "slug": "what-is-v-for-and-how-does-vue-track-list-updates",
       "title": "What is `v-for` and how does Vue track list updates?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Directives"
       ],
@@ -410,7 +410,7 @@
       "id": "vue-024",
       "slug": "what-is-v-model-and-how-does-it-work-internally",
       "title": "What is `v-model` and how does it work internally?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -426,7 +426,7 @@
       "id": "vue-025",
       "slug": "what-are-custom-directives-in-vue",
       "title": "What are custom directives in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Directives"
       ],
@@ -442,7 +442,7 @@
       "id": "vue-026",
       "slug": "what-is-provide-and-inject-in-vue",
       "title": "What is `provide` and `inject` in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -458,7 +458,7 @@
       "id": "vue-027",
       "slug": "what-are-dynamic-components-in-vue",
       "title": "What are dynamic components in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -474,7 +474,7 @@
       "id": "vue-028",
       "slug": "what-is-the-keepalive-component-in-vue",
       "title": "What is the `<KeepAlive>` component in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -490,7 +490,7 @@
       "id": "vue-029",
       "slug": "what-is-teleport-in-vue",
       "title": "What is Teleport in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -506,7 +506,7 @@
       "id": "vue-030",
       "slug": "what-is-suspense-in-vue",
       "title": "What is Suspense in Vue?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Components"
       ],
@@ -522,7 +522,7 @@
       "id": "vue-031",
       "slug": "what-is-script-setup-in-vue-3",
       "title": "What is `<script setup>` in Vue 3?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -538,7 +538,7 @@
       "id": "vue-032",
       "slug": "what-are-toref-and-torefs-and-when-should-you-use-them",
       "title": "What are `toRef()` and `toRefs()` and when should you use them?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -554,7 +554,7 @@
       "id": "vue-033",
       "slug": "what-is-the-purpose-of-computed-in-vue",
       "title": "What is the purpose of `computed()` in Vue?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Reactivity System"
       ],
@@ -570,7 +570,7 @@
       "id": "vue-034",
       "slug": "what-is-defineemits-and-how-do-you-emit-custom-events-in-vue-3",
       "title": "What is `defineEmits()` and how do you emit custom events in Vue 3?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -586,7 +586,7 @@
       "id": "vue-035",
       "slug": "what-is-the-virtual-dom-and-how-does-vue-use-it",
       "title": "What is the Virtual DOM and how does Vue use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering & Internals"
       ],
@@ -602,7 +602,7 @@
       "id": "vue-036",
       "slug": "what-is-vue-router-and-how-do-you-set-up-routing-in-a-vue-application",
       "title": "What is Vue Router and how do you set up routing in a Vue application?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -618,7 +618,7 @@
       "id": "vue-037",
       "slug": "what-are-render-functions-in-vue",
       "title": "What are render functions in Vue?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -634,7 +634,7 @@
       "id": "vue-038",
       "slug": "what-are-navigation-guards-in-vue-router",
       "title": "What are navigation guards in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -650,7 +650,7 @@
       "id": "vue-039",
       "slug": "how-does-v-model-work-on-custom-components-in-vue-3",
       "title": "How does `v-model` work on custom components in Vue 3?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -666,7 +666,7 @@
       "id": "vue-040",
       "slug": "what-is-the-purpose-of-the-key-attribute-in-vue-lists",
       "title": "What is the purpose of the `key` attribute in Vue lists?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Rendering & Internals"
       ],
@@ -682,7 +682,7 @@
       "id": "vue-041",
       "slug": "what-are-async-components-in-vue",
       "title": "What are async components in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance"
       ],
@@ -698,7 +698,7 @@
       "id": "vue-042",
       "slug": "what-is-code-splitting-in-vue-applications",
       "title": "What is code splitting in Vue applications?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance"
       ],
@@ -714,7 +714,7 @@
       "id": "vue-043",
       "slug": "what-is-pinia-and-why-is-it-used-in-vue-applications",
       "title": "What is Pinia and why is it used in Vue applications?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -730,7 +730,7 @@
       "id": "vue-044",
       "slug": "what-is-server-side-rendering-ssr-in-vue",
       "title": "What is server-side rendering (SSR) in Vue?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -746,7 +746,7 @@
       "id": "vue-045",
       "slug": "what-is-hydration-in-vue-ssr",
       "title": "What is hydration in Vue SSR?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -762,7 +762,7 @@
       "id": "vue-046",
       "slug": "what-is-the-transition-component-and-how-does-it-work-in-vue",
       "title": "What is the `<Transition>` component and how does it work in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -778,7 +778,7 @@
       "id": "vue-047",
       "slug": "how-does-vue-handle-errors-and-what-is-onerrorcaptured",
       "title": "How does Vue handle errors and what is `onErrorCaptured`?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Advanced Patterns"
       ],
@@ -794,7 +794,7 @@
       "id": "vue-048",
       "slug": "what-are-shallowref-and-shallowreactive-in-vue",
       "title": "What are `shallowRef()` and `shallowReactive()` in Vue?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -810,7 +810,7 @@
       "id": "vue-049",
       "slug": "what-is-defineexpose-in-vue-3-and-why-is-it-needed",
       "title": "What is `defineExpose()` in Vue 3 and why is it needed?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -826,7 +826,7 @@
       "id": "vue-050",
       "slug": "what-is-programmatic-navigation-in-vue-router",
       "title": "What is programmatic navigation in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -842,7 +842,7 @@
       "id": "vue-051",
       "slug": "what-is-nexttick-and-why-is-it-needed-in-vue",
       "title": "What is `nextTick()` and why is it needed in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -858,7 +858,7 @@
       "id": "vue-052",
       "slug": "what-are-the-deep-immediate-and-flush-options-in-watch",
       "title": "What are the `deep`, `immediate`, and `flush` options in `watch`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -874,7 +874,7 @@
       "id": "vue-053",
       "slug": "what-are-markraw-and-toraw-and-when-should-you-use-them",
       "title": "What are `markRaw()` and `toRaw()` and when should you use them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -890,7 +890,7 @@
       "id": "vue-054",
       "slug": "what-is-readonly-in-vue-and-when-should-you-use-it",
       "title": "What is `readonly()` in Vue and when should you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -906,7 +906,7 @@
       "id": "vue-055",
       "slug": "what-is-the-vue-plugin-system-and-how-do-you-create-a-plugin",
       "title": "What is the Vue plugin system and how do you create a plugin?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -922,7 +922,7 @@
       "id": "vue-056",
       "slug": "what-is-effectscope-and-when-is-it-useful",
       "title": "What is `effectScope()` and when is it useful?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -938,7 +938,7 @@
       "id": "vue-057",
       "slug": "what-are-deep-slotted-and-global-in-scoped-styles",
       "title": "What are `:deep()`, `:slotted()`, and `:global()` in scoped styles?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -954,7 +954,7 @@
       "id": "vue-058",
       "slug": "how-do-you-lazy-load-routes-in-vue-router-for-code-splitting",
       "title": "How do you lazy-load routes in Vue Router for code splitting?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -970,7 +970,7 @@
       "id": "vue-059",
       "slug": "what-are-functional-components-in-vue-3-and-when-should-you-use-them",
       "title": "What are functional components in Vue 3 and when should you use them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -986,7 +986,7 @@
       "id": "vue-060",
       "slug": "what-are-useattrs-and-useslots-in-the-composition-api",
       "title": "What are `useAttrs()` and `useSlots()` in the Composition API?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1002,7 +1002,7 @@
       "id": "vue-061",
       "slug": "how-do-you-clean-up-side-effects-inside-watcheffect",
       "title": "How do you clean up side effects inside `watchEffect`?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1018,7 +1018,7 @@
       "id": "vue-062",
       "slug": "what-are-named-views-in-vue-router",
       "title": "What are named views in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -1034,7 +1034,7 @@
       "id": "vue-063",
       "slug": "how-does-app-provide-differ-from-component-level-provide",
       "title": "How does `app.provide()` differ from component-level `provide`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1050,7 +1050,7 @@
       "id": "vue-064",
       "slug": "how-does-vue-3-s-reactivity-system-work-internally-using-javascript-proxy",
       "title": "How does Vue 3's reactivity system work internally using JavaScript Proxy?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1066,7 +1066,7 @@
       "id": "vue-065",
       "slug": "what-are-recursive-components-in-vue-and-how-do-you-implement-them",
       "title": "What are recursive components in Vue and how do you implement them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Components"
       ],
@@ -1082,7 +1082,7 @@
       "id": "vue-066",
       "slug": "what-is-the-difference-between-created-onbeforemount-and-mounted-lifecycle-hooks",
       "title": "What is the difference between `created`, `onBeforeMount`, and `mounted` lifecycle hooks?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Lifecycle"
       ],
@@ -1098,7 +1098,7 @@
       "id": "vue-067",
       "slug": "what-happens-internally-when-a-vue-3-component-mounts",
       "title": "What happens internally when a Vue 3 component mounts?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -1114,7 +1114,7 @@
       "id": "vue-068",
       "slug": "what-are-the-key-differences-between-vuex-and-pinia",
       "title": "What are the key differences between Vuex and Pinia?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1130,7 +1130,7 @@
       "id": "vue-069",
       "slug": "how-do-dynamic-route-parameters-work-in-vue-router",
       "title": "How do dynamic route parameters work in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -1146,7 +1146,7 @@
       "id": "vue-070",
       "slug": "what-is-the-difference-between-route-params-and-query-params-in-vue-router",
       "title": "What is the difference between route params and query params in Vue Router?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Routing"
       ],
@@ -1162,7 +1162,7 @@
       "id": "vue-071",
       "slug": "how-does-vue-compile-vue-templates-into-render-functions",
       "title": "How does Vue compile `.vue` templates into render functions?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -1178,7 +1178,7 @@
       "id": "vue-072",
       "slug": "how-does-the-vue-scheduler-batch-and-defer-reactive-updates",
       "title": "How does the Vue scheduler batch and defer reactive updates?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1194,7 +1194,7 @@
       "id": "vue-073",
       "slug": "how-does-vue-3-s-effect-tracking-work-internally-activeeffect-and-dependency-set",
       "title": "How does Vue 3's effect tracking work internally (activeEffect and dependency sets)?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1210,7 +1210,7 @@
       "id": "vue-074",
       "slug": "what-is-the-difference-between-client-side-rendering-csr-and-server-side-renderi",
       "title": "What is the difference between Client-Side Rendering (CSR) and Server-Side Rendering (SSR) in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1226,7 +1226,7 @@
       "id": "vue-075",
       "slug": "what-are-advanced-patterns-for-provide-inject-symbol-keys-reactive-injection-and",
       "title": "What are advanced patterns for `provide` / `inject` — Symbol keys, reactive injection, and defaults?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1242,7 +1242,7 @@
       "id": "vue-076",
       "slug": "what-is-the-vue-rendering-pipeline-from-state-change-to-dom-update",
       "title": "What is the Vue rendering pipeline from state change to DOM update?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -1258,7 +1258,7 @@
       "id": "vue-077",
       "slug": "what-are-the-different-component-communication-patterns-in-vue",
       "title": "What are the different component communication patterns in Vue?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -1274,7 +1274,7 @@
       "id": "vue-078",
       "slug": "what-is-teleport-and-when-should-you-use-it",
       "title": "What is `<Teleport>` and when should you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1290,7 +1290,7 @@
       "id": "vue-079",
       "slug": "what-is-suspense-and-how-does-it-handle-async-components",
       "title": "What is `<Suspense>` and how does it handle async components?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1306,7 +1306,7 @@
       "id": "vue-080",
       "slug": "what-are-v-model-modifiers-and-how-do-you-create-custom-ones",
       "title": "What are `v-model` modifiers and how do you create custom ones?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Directives"
       ],
@@ -1322,7 +1322,7 @@
       "id": "vue-081",
       "slug": "what-is-transitiongroup-and-how-does-it-differ-from-transition",
       "title": "What is `<TransitionGroup>` and how does it differ from `<Transition>`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1338,7 +1338,7 @@
       "id": "vue-082",
       "slug": "how-do-you-use-vue-3-with-typescript-for-props-and-emits",
       "title": "How do you use Vue 3 with TypeScript for props and emits?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1354,7 +1354,7 @@
       "id": "vue-083",
       "slug": "what-are-composables-in-vue-3-and-what-are-best-practices-for-writing-them",
       "title": "What are composables in Vue 3 and what are best practices for writing them?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1370,7 +1370,7 @@
       "id": "vue-084",
       "slug": "what-are-template-refs-and-how-do-you-use-them-in-composition-api",
       "title": "What are template refs and how do you use them in Composition API?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Composition API"
       ],
@@ -1386,7 +1386,7 @@
       "id": "vue-085",
       "slug": "what-is-the-watch-flush-option-and-when-does-each-flush-timing-run",
       "title": "What is the `watch` flush option and when does each flush timing run?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1402,7 +1402,7 @@
       "id": "vue-086",
       "slug": "what-is-defineoptions-and-what-problems-does-it-solve",
       "title": "What is `defineOptions` and what problems does it solve?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1418,7 +1418,7 @@
       "id": "vue-087",
       "slug": "what-causes-hydration-mismatches-in-vue-ssr-and-how-do-you-fix-them",
       "title": "What causes hydration mismatches in Vue SSR and how do you fix them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1434,7 +1434,7 @@
       "id": "vue-088",
       "slug": "how-does-vue-handle-array-mutation-reactivity",
       "title": "How does Vue handle array mutation reactivity?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -1450,7 +1450,7 @@
       "id": "vue-089",
       "slug": "what-is-shallowref-and-when-should-you-use-it-over-ref",
       "title": "What is `shallowRef` and when should you use it over `ref`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -1466,7 +1466,7 @@
       "id": "vue-090",
       "slug": "what-are-multi-root-components-fragments-in-vue-3",
       "title": "What are multi-root components (fragments) in Vue 3?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -1482,7 +1482,7 @@
       "id": "vue-091",
       "slug": "what-is-app-config-errorhandler-and-how-do-you-use-it-for-global-error-handling",
       "title": "What is `app.config.errorHandler` and how do you use it for global error handling?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1498,7 +1498,7 @@
       "id": "vue-092",
       "slug": "what-is-the-difference-between-v-if-and-v-show-at-the-dom-level",
       "title": "What is the difference between `v-if` and `v-show` at the DOM level?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Directives"
       ],
@@ -1514,7 +1514,7 @@
       "id": "vue-093",
       "slug": "how-does-vue-s-virtual-dom-diffing-patching-algorithm-work",
       "title": "How does Vue's virtual DOM diffing (patching) algorithm work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -1530,7 +1530,7 @@
       "id": "vue-094",
       "slug": "what-is-the-options-api-vs-composition-api-and-when-should-you-choose-each",
       "title": "What is the `Options API` vs `Composition API` and when should you choose each?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Vue Basics"
       ],
@@ -1546,7 +1546,7 @@
       "id": "vue-095",
       "slug": "how-do-you-implement-route-level-code-splitting-with-dynamic-imports-in-vue-rout",
       "title": "How do you implement route-level code splitting with dynamic imports in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -1562,7 +1562,7 @@
       "id": "vue-096",
       "slug": "what-is-a-computed-setter-in-vue-and-when-would-you-use-one",
       "title": "What is a computed setter in Vue and when would you use one?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -1578,7 +1578,7 @@
       "id": "vue-097",
       "slug": "how-does-keepalive-work-and-what-lifecycle-hooks-does-it-add",
       "title": "How does `<KeepAlive>` work and what lifecycle hooks does it add?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance"
       ],
@@ -1594,7 +1594,7 @@
       "id": "vue-098",
       "slug": "what-is-onserverprefetch-and-how-is-it-used-in-vue-ssr",
       "title": "What is `onServerPrefetch` and how is it used in Vue SSR?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1610,7 +1610,7 @@
       "id": "vue-099",
       "slug": "how-do-you-test-vue-components-with-vue-test-utils",
       "title": "How do you test Vue components with Vue Test Utils?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1626,7 +1626,7 @@
       "id": "vue-100",
       "slug": "what-strategies-can-you-use-to-optimize-a-vue-application-s-performance",
       "title": "What strategies can you use to optimize a Vue application's performance?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -1642,7 +1642,7 @@
       "id": "vue-101",
       "slug": "what-is-the-definemodel-macro-and-how-does-it-simplify-two-way-binding",
       "title": "What is the `defineModel` macro and how does it simplify two-way binding?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1658,7 +1658,7 @@
       "id": "vue-102",
       "slug": "how-do-multiple-v-model-bindings-work-on-a-single-component",
       "title": "How do multiple `v-model` bindings work on a single component?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -1674,7 +1674,7 @@
       "id": "vue-103",
       "slug": "what-is-customref-and-when-would-you-use-it",
       "title": "What is `customRef` and when would you use it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Reactivity System"
       ],
@@ -1690,7 +1690,7 @@
       "id": "vue-104",
       "slug": "what-is-css-v-bind-in-style-blocks-and-how-does-it-work",
       "title": "What is CSS `v-bind` in `<style>` blocks and how does it work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Vue Basics"
       ],
@@ -1706,7 +1706,7 @@
       "id": "vue-105",
       "slug": "what-are-css-modules-in-vue-sfcs",
       "title": "What are CSS Modules in Vue SFCs?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Vue Basics"
       ],
@@ -1722,7 +1722,7 @@
       "id": "vue-106",
       "slug": "how-does-vue-s-scoped-css-work-internally",
       "title": "How does Vue's scoped CSS work internally?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering & Internals"
       ],
@@ -1738,7 +1738,7 @@
       "id": "vue-107",
       "slug": "what-is-the-v-memo-directive-and-how-does-it-optimize-rendering",
       "title": "What is the `v-memo` directive and how does it optimize rendering?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -1754,7 +1754,7 @@
       "id": "vue-108",
       "slug": "what-options-does-defineasynccomponent-support-for-loading-error-and-timeout-sta",
       "title": "What options does `defineAsyncComponent` support for loading, error, and timeout states?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -1770,7 +1770,7 @@
       "id": "vue-109",
       "slug": "what-are-all-the-lifecycle-hooks-available-in-a-custom-vue-directive",
       "title": "What are all the lifecycle hooks available in a custom Vue directive?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Directives"
       ],
@@ -1786,7 +1786,7 @@
       "id": "vue-110",
       "slug": "how-do-you-use-pinia-s-patch-subscribe-and-onaction",
       "title": "How do you use Pinia's `$patch`, `$subscribe`, and `$onAction`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1802,7 +1802,7 @@
       "id": "vue-111",
       "slug": "how-can-pinia-stores-use-other-stores-store-composition",
       "title": "How can Pinia stores use other stores (store composition)?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1818,7 +1818,7 @@
       "id": "vue-112",
       "slug": "what-are-isref-isreactive-unref-and-tovalue-and-when-do-you-use-them",
       "title": "What are `isRef`, `isReactive`, `unref`, and `toValue` and when do you use them?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Reactivity System"
       ],
@@ -1834,7 +1834,7 @@
       "id": "vue-113",
       "slug": "what-are-vue-router-route-meta-fields-and-how-are-they-used",
       "title": "What are Vue Router route meta fields and how are they used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -1850,7 +1850,7 @@
       "id": "vue-114",
       "slug": "how-do-you-control-scroll-behavior-in-vue-router",
       "title": "How do you control scroll behavior in Vue Router?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Routing"
       ],
@@ -1866,7 +1866,7 @@
       "id": "vue-115",
       "slug": "what-is-ssr-streaming-in-vue-and-how-does-it-improve-performance",
       "title": "What is SSR streaming in Vue and how does it improve performance?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1882,7 +1882,7 @@
       "id": "vue-116",
       "slug": "what-is-definecustomelement-and-how-does-vue-support-web-components",
       "title": "What is `defineCustomElement` and how does Vue support Web Components?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1898,7 +1898,7 @@
       "id": "vue-117",
       "slug": "what-is-getcurrentinstance-and-when-should-you-use-it",
       "title": "What is `getCurrentInstance` and when should you use it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Advanced Patterns"
       ],
@@ -1914,7 +1914,7 @@
       "id": "vue-118",
       "slug": "what-is-usetemplateref-and-how-does-it-differ-from-using-ref-for-template-refs",
       "title": "What is `useTemplateRef` and how does it differ from using `ref` for template refs?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Composition API"
       ],
@@ -1930,7 +1930,7 @@
       "id": "vue-119",
       "slug": "what-are-vue-3-5-s-lazy-hydration-strategies",
       "title": "What are Vue 3.5's lazy hydration strategies?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1946,7 +1946,7 @@
       "id": "vue-120",
       "slug": "how-do-you-forward-slots-from-a-parent-component-to-a-deeply-nested-child",
       "title": "How do you forward slots from a parent component to a deeply nested child?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Components"
       ],

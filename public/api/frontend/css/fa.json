@@ -27,9 +27,9 @@
   "stats": {
     "total": 37,
     "byDifficulty": {
-      "easy": 2,
-      "medium": 15,
-      "hard": 20
+      "آسان": 2,
+      "متوسط": 15,
+      "سخت": 20
     }
   },
   "questions": [
@@ -37,7 +37,7 @@
       "id": "css-001",
       "slug": "مدل-جعبه-ای-css-چیست-و-اجزای-آن-کدامند",
       "title": "مدل جعبه ای CSS چیست و اجزای آن کدامند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -53,7 +53,7 @@
       "id": "css-002",
       "slug": "تفاوت-بین-مقادیر-block-inline-و-inline-block-در-display-چیست",
       "title": "تفاوت بین مقادیر `block`، `inline` و `inline-block` در display چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "چیدمان"
       ],
@@ -69,7 +69,7 @@
       "id": "css-003",
       "slug": "اختصاصیت-specificity-در-css-چیست-و-چگونه-محاسبه-میشود",
       "title": "اختصاصیت (Specificity) در CSS چیست و چگونه محاسبه میشود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -85,7 +85,7 @@
       "id": "css-004",
       "slug": "تفاوت-بین-position-relative-absolute-fixed-و-sticky-چیست",
       "title": "تفاوت بین `position: relative`، `absolute`، `fixed` و `sticky` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چیدمان"
       ],
@@ -101,7 +101,7 @@
       "id": "css-005",
       "slug": "تفاوت-بین-flexbox-و-grid-چیست",
       "title": "تفاوت بین Flexbox و Grid چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چیدمان"
       ],
@@ -117,7 +117,7 @@
       "id": "css-006",
       "slug": "آبشار-css-چیست-و-مرورگر-چگونه-تصمیم-میگیرد-کدام-قانون-را-اعمال-کند",
       "title": "آبشار CSS چیست و مرورگر چگونه تصمیم میگیرد کدام قانون را اعمال کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -133,7 +133,7 @@
       "id": "css-007",
       "slug": "زمینه-انباشته-stacking-context-چیست-و-چگونه-ایجاد-میشود",
       "title": "زمینه انباشته (stacking context) چیست و چگونه ایجاد میشود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -149,7 +149,7 @@
       "id": "css-008",
       "slug": "تفاوت-بین-overflow-hidden-auto-و-scroll-چیست",
       "title": "تفاوت بین `overflow: hidden`، `auto` و `scroll` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چیدمان"
       ],
@@ -165,7 +165,7 @@
       "id": "css-009",
       "slug": "زمینه-قالببندی-بلوکی-bfc-چیست-و-چرا-مفید-است",
       "title": "زمینه قالببندی بلوکی (BFC) چیست و چرا مفید است؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -181,7 +181,7 @@
       "id": "css-010",
       "slug": "فروپاشی-مارجین-margin-collapsing-چیست-و-چه-زمانی-رخ-میدهد",
       "title": "فروپاشی مارجین (margin collapsing) چیست و چه زمانی رخ میدهد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چیدمان"
       ],
@@ -197,7 +197,7 @@
       "id": "css-011",
       "slug": "تفاوت-بین-واحدهای-em-rem-vh-و-vw-چیست",
       "title": "تفاوت بین واحدهای `em`، `rem`، `%`، `vh` و `vw` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -213,7 +213,7 @@
       "id": "css-012",
       "slug": "تفاوت-بین-min-width-max-width-و-width-چیست",
       "title": "تفاوت بین `min-width`، `max-width` و `width` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چیدمان"
       ],
@@ -229,7 +229,7 @@
       "id": "css-013",
       "slug": "تفاوت-بین-reflow-چیدمان-و-repaint-در-رندر-css-چیست",
       "title": "تفاوت بین `reflow` (چیدمان) و `repaint` در رندر CSS چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -245,7 +245,7 @@
       "id": "css-014",
       "slug": "ویژگی-های-سفارشی-css-متغیرهای-css-چیستند-و-مزایای-آنها-چیست",
       "title": "ویژگی های سفارشی CSS (متغیرهای CSS) چیستند و مزایای آنها چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -261,7 +261,7 @@
       "id": "css-015",
       "slug": "ویژگی-های-منطقی-css-چیست-و-چرا-مهم-هستند",
       "title": "ویژگی های منطقی CSS چیست و چرا مهم هستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "طراحی واکنشگرا"
       ],
@@ -277,7 +277,7 @@
       "id": "css-016",
       "slug": "لایه-های-آبشاری-css-layer-چیست-و-چرا-معرفی-شدند",
       "title": "لایه های آبشاری CSS (`@layer`) چیست و چرا معرفی شدند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "معماری"
       ],
@@ -293,7 +293,7 @@
       "id": "css-017",
       "slug": "کوئریهای-کانتینر-چیست-و-چه-تفاوتی-با-مدیا-کوئری-دارند",
       "title": "کوئریهای کانتینر چیست و چه تفاوتی با مدیا کوئری دارند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "طراحی واکنشگرا"
       ],
@@ -309,7 +309,7 @@
       "id": "css-018",
       "slug": "تفاوت-بین-nth-child-و-nth-of-type-چیست",
       "title": "تفاوت بین `:nth-child()` و `:nth-of-type()` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سلکتورها و اختصاصیت"
       ],
@@ -325,7 +325,7 @@
       "id": "css-019",
       "slug": "will-change-چگونه-بر-عملکرد-تأثیر-میگذارد-و-چه-زمانی-باید-استفاده-شود",
       "title": "`will-change` چگونه بر عملکرد تأثیر میگذارد و چه زمانی باید استفاده شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -341,7 +341,7 @@
       "id": "css-020",
       "slug": "تفاوت-بین-معماری-bem-و-css-ابزار-محور-چیست",
       "title": "تفاوت بین معماری BEM و CSS ابزار-محور چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معماری"
       ],
@@ -357,7 +357,7 @@
       "id": "css-021",
       "slug": "subgrid-در-css-چیست-چه-تفاوتی-با-nested-grid-دارد-و-چه-زمانی-باید-از-آن-استفاده",
       "title": "subgrid در CSS چیست، چه تفاوتی با nested grid دارد و چه زمانی باید از آن استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -373,7 +373,7 @@
       "id": "css-022",
       "slug": "ویژگی-های-scroll-snap-را-توضیح-دهید-و-چطور-با-css-خالص-یک-carousel-تمام-صفحه-بسا",
       "title": "ویژگی های scroll-snap را توضیح دهید و چطور با CSS خالص یک carousel تمام صفحه بسازیم.",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -389,7 +389,7 @@
       "id": "css-023",
       "slug": "ویژگی-aspect-ratio-چیست-و-چطور-به-جلوگیری-از-cumulative-layout-shift-cls-کمک-میک",
       "title": "ویژگی aspect-ratio چیست و چطور به جلوگیری از Cumulative Layout Shift (CLS) کمک میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد",
         "طراحی واکنشگرا"
@@ -406,7 +406,7 @@
       "id": "css-024",
       "slug": "pseudo-class-has-و-selector-های-رابطه-ای-چگونه-معماری-css-و-استایل-دهی-کامپوننت",
       "title": "pseudo-class `:has()` و selector های رابطه‌ای چگونه معماری CSS و استایل دهی کامپوننت را تغییر میدهند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سلکتورها و اختصاصیت"
       ],
@@ -422,7 +422,7 @@
       "id": "css-025",
       "slug": "accent-color-چیست-و-در-مرورگرهای-مدرن-چگونه-با-کنترلهای-فرم-تعامل-دارد",
       "title": "`accent-color` چیست و در مرورگرهای مدرن چگونه با کنترلهای فرم تعامل دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اصول اولیه",
         "دسترسی‌پذیری"
@@ -439,7 +439,7 @@
       "id": "css-026",
       "slug": "تفاوت-بین-واحدهای-vh-dvh-svh-و-lvh-چیست-و-چرا-واحدهای-جدید-معرفی-شدند",
       "title": "تفاوت بین واحدهای `vh`، `dvh`، `svh` و `lvh` چیست و چرا واحدهای جدید معرفی شدند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "طراحی واکنشگرا"
       ],
@@ -455,7 +455,7 @@
       "id": "css-027",
       "slug": "تفاوت-بین-opacity-0-visibility-hidden-و-display-none-را-از-نظر-چیدمان-عملکرد-دست",
       "title": "تفاوت بین `opacity: 0`، `visibility: hidden` و `display: none` را از نظر چیدمان، عملکرد، دسترس پذیری و تعامل توضیح دهید.",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اصول اولیه"
       ],
@@ -471,7 +471,7 @@
       "id": "css-028",
       "slug": "مارجین-ها-در-عناصر-با-display-inline-flex-یا-inline-grid-چگونه-رفتار-میکنند-و-چر",
       "title": "مارجین ها در عناصر با `display: inline-flex` یا `inline-grid` چگونه رفتار میکنند و چرا مارجین های عمودی collapse نمیشوند یا آنطور که انتظار میرود اعمال نمیشوند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -487,7 +487,7 @@
       "id": "css-029",
       "slug": "تابع-color-mix-در-css-چیست-و-چگونه-میتوان-از-آن-برای-تم-سازی-پویا-یا-دسترسپذیری",
       "title": "تابع `color-mix()` در CSS چیست و چگونه میتوان از آن برای تم سازی پویا یا دسترسپذیری استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اصول اولیه"
       ],
@@ -503,7 +503,7 @@
       "id": "css-030",
       "slug": "property-در-css-چیست-و-چگونه-انیمیشن-transition-های-بهتر-برای-custom-property-ها",
       "title": "`@property` در CSS چیست و چگونه انیمیشن/transition های بهتر برای custom property ها را ممکن میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد",
         "معماری"
@@ -520,7 +520,7 @@
       "id": "css-031",
       "slug": "تفاوت-بین-css-transitions-و-css-animations-چیست",
       "title": "تفاوت بین CSS transitions و CSS animations چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "عملکرد"
       ],
@@ -536,7 +536,7 @@
       "id": "css-032",
       "slug": "انیمیشن-scroll-driven-در-css-چیست-و-animation-timeline-scroll-چگونه-کار-میکند",
       "title": "انیمیشن scroll-driven در CSS چیست و `animation-timeline: scroll()` چگونه کار میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -552,7 +552,7 @@
       "id": "css-033",
       "slug": "استفاده-پیشرفته-از-object-fit-و-object-position-با-aspect-ratio-برای-رسانه-واکنش",
       "title": "استفاده پیشرفته از `object-fit` و `object-position` با `aspect-ratio` برای رسانه واکنشگرا بدون CLS را توضیح دهید.",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "طراحی واکنشگرا"
       ],
@@ -568,7 +568,7 @@
       "id": "css-034",
       "slug": "تفاوت-های-عمیق-بین-ویژگی-های-فیزیکی-margin-top-و-ویژگی-های-منطقی-margin-block-st",
       "title": "تفاوت های عمیق بین ویژگی های فیزیکی (margin-top) و ویژگی های منطقی (margin-block-start) چیست، از جمله تأثیر writing-mode و direction؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "طراحی واکنشگرا"
       ],
@@ -584,7 +584,7 @@
       "id": "css-035",
       "slug": "چگونه-میتوان-از-ویژگی-gap-در-flexbox-و-grid-استفاده-کرد-و-تفاوت-های-مرورگری-در-f",
       "title": "چگونه میتوان از ویژگی gap در Flexbox و Grid استفاده کرد و تفاوت های مرورگری در fallback row-gap/column-gap چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "چیدمان"
       ],
@@ -600,7 +600,7 @@
       "id": "css-036",
       "slug": "pseudo-elementهای-css-چیستند-و-before-و-after-چگونه-کار-می-کنند",
       "title": "pseudo-elementهای CSS چیستند و `::before` و `::after` چگونه کار می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سلکتورها و اختصاصیت"
       ],
@@ -616,7 +616,7 @@
       "id": "css-037",
       "slug": "media-feature-های-prefers-color-scheme-و-prefers-reduced-motion-چیستند-و-چرا-اهم",
       "title": "media feature‌های `prefers-color-scheme` و `prefers-reduced-motion` چیستند و چرا اهمیت دارند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "طراحی واکنشگرا",
         "دسترسی‌پذیری"

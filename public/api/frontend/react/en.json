@@ -37,9 +37,9 @@
   "stats": {
     "total": 157,
     "byDifficulty": {
-      "easy": 29,
-      "medium": 87,
-      "hard": 41
+      "Easy": 29,
+      "Medium": 87,
+      "Hard": 41
     }
   },
   "questions": [
@@ -47,7 +47,7 @@
       "id": "react-001",
       "slug": "what-is-react-and-what-problem-does-it-solve",
       "title": "What is React and what problem does it solve?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "React Basics"
       ],
@@ -63,7 +63,7 @@
       "id": "react-002",
       "slug": "what-is-the-virtual-dom-and-how-does-react-use-it",
       "title": "What is the Virtual DOM and how does React use it?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "React Basics"
       ],
@@ -79,7 +79,7 @@
       "id": "react-003",
       "slug": "what-is-jsx-and-how-does-it-work-under-the-hood",
       "title": "What is JSX and how does it work under the hood?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "JSX & Rendering"
       ],
@@ -95,7 +95,7 @@
       "id": "react-004",
       "slug": "what-are-functional-components-in-react",
       "title": "What are functional components in React?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -111,7 +111,7 @@
       "id": "react-005",
       "slug": "what-are-props-in-react-and-how-do-they-work",
       "title": "What are props in React and how do they work?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Props & State"
       ],
@@ -127,7 +127,7 @@
       "id": "react-006",
       "slug": "what-is-state-in-react-and-how-is-it-different-from-props",
       "title": "What is state in React and how is it different from props?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Props & State"
       ],
@@ -143,7 +143,7 @@
       "id": "react-007",
       "slug": "how-does-react-handle-events",
       "title": "How does React handle events?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Forms & Events"
       ],
@@ -159,7 +159,7 @@
       "id": "react-008",
       "slug": "how-does-conditional-rendering-work-in-react",
       "title": "How does conditional rendering work in React?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "JSX & Rendering"
       ],
@@ -175,7 +175,7 @@
       "id": "react-009",
       "slug": "how-do-you-render-lists-in-react-and-why-is-the-key-prop-important",
       "title": "How do you render lists in React and why is the `key` prop important?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "JSX & Rendering"
       ],
@@ -191,7 +191,7 @@
       "id": "react-010",
       "slug": "what-are-controlled-and-uncontrolled-components-in-react",
       "title": "What are controlled and uncontrolled components in React?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Forms & Events"
       ],
@@ -207,7 +207,7 @@
       "id": "react-011",
       "slug": "what-is-a-react-fragment-and-when-should-you-use-it",
       "title": "What is a React Fragment and when should you use it?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "JSX & Rendering"
       ],
@@ -223,7 +223,7 @@
       "id": "react-012",
       "slug": "what-is-the-difference-between-class-components-and-functional-components",
       "title": "What is the difference between class components and functional components?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -239,7 +239,7 @@
       "id": "react-013",
       "slug": "what-is-reconciliation-in-react",
       "title": "What is reconciliation in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering Behavior"
       ],
@@ -255,7 +255,7 @@
       "id": "react-014",
       "slug": "what-is-prop-drilling-and-how-do-you-solve-it",
       "title": "What is prop drilling and how do you solve it?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Props & State"
       ],
@@ -271,7 +271,7 @@
       "id": "react-015",
       "slug": "what-is-the-strictmode-component-and-what-does-it-do",
       "title": "What is the `StrictMode` component and what does it do?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Basics"
       ],
@@ -287,7 +287,7 @@
       "id": "react-016",
       "slug": "what-is-react-memo-and-when-does-it-help",
       "title": "What is `React.memo` and when does it help?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -303,7 +303,7 @@
       "id": "react-017",
       "slug": "what-is-the-useeffect-hook-and-how-does-the-dependency-array-work",
       "title": "What is the `useEffect` hook and how does the dependency array work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -319,7 +319,7 @@
       "id": "react-018",
       "slug": "what-is-usestate-and-how-does-state-updating-work",
       "title": "What is `useState` and how does state updating work?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Hooks"
       ],
@@ -335,7 +335,7 @@
       "id": "react-019",
       "slug": "what-is-useref-and-when-should-you-use-it",
       "title": "What is `useRef` and when should you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -351,7 +351,7 @@
       "id": "react-020",
       "slug": "what-is-usememo-and-when-should-you-use-it",
       "title": "What is `useMemo` and when should you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -367,7 +367,7 @@
       "id": "react-021",
       "slug": "what-is-usecallback-and-when-should-you-use-it",
       "title": "What is `useCallback` and when should you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -383,7 +383,7 @@
       "id": "react-022",
       "slug": "what-are-the-rules-of-hooks",
       "title": "What are the rules of hooks?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -399,7 +399,7 @@
       "id": "react-023",
       "slug": "what-are-custom-hooks-and-how-do-you-write-them",
       "title": "What are custom hooks and how do you write them?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -415,7 +415,7 @@
       "id": "react-024",
       "slug": "what-is-the-context-api-and-how-do-you-use-it",
       "title": "What is the Context API and how do you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Context API"
       ],
@@ -431,7 +431,7 @@
       "id": "react-025",
       "slug": "what-is-usereducer-and-when-should-you-use-it-instead-of-usestate",
       "title": "What is `useReducer` and when should you use it instead of `useState`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -447,7 +447,7 @@
       "id": "react-026",
       "slug": "what-is-uselayouteffect-and-how-does-it-differ-from-useeffect",
       "title": "What is `useLayoutEffect` and how does it differ from `useEffect`?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -463,7 +463,7 @@
       "id": "react-027",
       "slug": "what-are-error-boundaries-in-react",
       "title": "What are Error Boundaries in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -479,7 +479,7 @@
       "id": "react-028",
       "slug": "what-are-portals-in-react",
       "title": "What are Portals in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -495,7 +495,7 @@
       "id": "react-029",
       "slug": "what-is-useimperativehandle-and-when-do-you-need-forwardref",
       "title": "What is `useImperativeHandle` and when do you need `forwardRef`?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Hooks"
       ],
@@ -511,7 +511,7 @@
       "id": "react-030",
       "slug": "what-is-react-lazy-and-how-does-it-work-with-suspense",
       "title": "What is `React.lazy` and how does it work with `Suspense`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -527,7 +527,7 @@
       "id": "react-031",
       "slug": "how-does-react-batch-state-updates",
       "title": "How does React batch state updates?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering Behavior"
       ],
@@ -543,7 +543,7 @@
       "id": "react-032",
       "slug": "what-is-usetransition-and-when-should-you-use-it",
       "title": "What is `useTransition` and when should you use it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -559,7 +559,7 @@
       "id": "react-033",
       "slug": "what-is-usedeferredvalue-and-how-does-it-differ-from-debouncing",
       "title": "What is `useDeferredValue` and how does it differ from debouncing?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -575,7 +575,7 @@
       "id": "react-034",
       "slug": "what-are-react-server-components",
       "title": "What are React Server Components?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Server Components"
       ],
@@ -591,7 +591,7 @@
       "id": "react-035",
       "slug": "what-is-hydration-in-react-ssr-and-what-causes-hydration-mismatches",
       "title": "What is hydration in React SSR and what causes hydration mismatches?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -607,7 +607,7 @@
       "id": "react-036",
       "slug": "what-is-react-fiber",
       "title": "What is React Fiber?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -623,7 +623,7 @@
       "id": "react-037",
       "slug": "what-is-the-difference-between-the-render-phase-and-the-commit-phase-in-react",
       "title": "What is the difference between the render phase and the commit phase in React?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -639,7 +639,7 @@
       "id": "react-038",
       "slug": "what-is-concurrent-react-and-what-does-it-enable",
       "title": "What is Concurrent React and what does it enable?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -655,7 +655,7 @@
       "id": "react-039",
       "slug": "what-is-suspense-in-react-and-how-does-it-work",
       "title": "What is `Suspense` in React and how does it work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -671,7 +671,7 @@
       "id": "react-040",
       "slug": "what-is-the-key-prop-and-what-happens-when-you-use-index-as-a-key",
       "title": "What is the `key` prop and what happens when you use index as a key?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "JSX & Rendering"
       ],
@@ -687,7 +687,7 @@
       "id": "react-041",
       "slug": "what-is-useid-and-when-do-you-need-it",
       "title": "What is `useId` and when do you need it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -703,7 +703,7 @@
       "id": "react-042",
       "slug": "what-is-usesyncexternalstore-and-when-should-you-use-it",
       "title": "What is `useSyncExternalStore` and when should you use it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Hooks"
       ],
@@ -719,7 +719,7 @@
       "id": "react-043",
       "slug": "what-is-useinsertioneffect-and-when-is-it-used",
       "title": "What is `useInsertionEffect` and when is it used?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Hooks"
       ],
@@ -735,7 +735,7 @@
       "id": "react-044",
       "slug": "what-is-usedebugvalue-and-how-is-it-used",
       "title": "What is `useDebugValue` and how is it used?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Hooks"
       ],
@@ -751,7 +751,7 @@
       "id": "react-045",
       "slug": "what-is-the-difference-between-createelement-and-jsx",
       "title": "What is the difference between `createElement` and JSX?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "JSX & Rendering"
       ],
@@ -767,7 +767,7 @@
       "id": "react-046",
       "slug": "what-is-the-children-prop-and-what-patterns-can-you-use-with-it",
       "title": "What is the `children` prop and what patterns can you use with it?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Components"
       ],
@@ -783,7 +783,7 @@
       "id": "react-047",
       "slug": "what-are-higher-order-components-hocs-and-when-are-they-used",
       "title": "What are Higher-Order Components (HOCs) and when are they used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -799,7 +799,7 @@
       "id": "react-048",
       "slug": "what-is-the-render-prop-pattern",
       "title": "What is the render prop pattern?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -815,7 +815,7 @@
       "id": "react-049",
       "slug": "what-is-state-colocation-and-why-does-it-matter",
       "title": "What is state colocation and why does it matter?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -831,7 +831,7 @@
       "id": "react-050",
       "slug": "what-is-the-compound-component-pattern",
       "title": "What is the compound component pattern?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -847,7 +847,7 @@
       "id": "react-051",
       "slug": "how-does-useeffect-cleanup-work-and-why-is-it-important",
       "title": "How does `useEffect` cleanup work and why is it important?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -863,7 +863,7 @@
       "id": "react-052",
       "slug": "what-is-lifting-state-up-in-react",
       "title": "What is lifting state up in React?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Props & State"
       ],
@@ -879,7 +879,7 @@
       "id": "react-053",
       "slug": "what-is-react-s-reconciliation-diffing-algorithm-in-detail",
       "title": "What is React's reconciliation diffing algorithm in detail?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -895,7 +895,7 @@
       "id": "react-054",
       "slug": "what-is-react-cloneelement-and-when-is-it-used",
       "title": "What is `React.cloneElement` and when is it used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Components"
       ],
@@ -911,7 +911,7 @@
       "id": "react-055",
       "slug": "how-do-you-handle-forms-in-react-with-validation",
       "title": "How do you handle forms in React with validation?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Forms & Events"
       ],
@@ -927,7 +927,7 @@
       "id": "react-056",
       "slug": "what-is-forwardref-in-react",
       "title": "What is `forwardRef` in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -943,7 +943,7 @@
       "id": "react-057",
       "slug": "what-is-the-react-profiler-and-how-do-you-use-it-to-find-performance-issues",
       "title": "What is the React profiler and how do you use it to find performance issues?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -959,7 +959,7 @@
       "id": "react-058",
       "slug": "what-is-windowing-virtualization-and-when-do-you-need-it-in-react",
       "title": "What is windowing (virtualization) and when do you need it in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -975,7 +975,7 @@
       "id": "react-059",
       "slug": "what-are-the-differences-between-react-17-and-react-18",
       "title": "What are the differences between React 17 and React 18?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Basics"
       ],
@@ -991,7 +991,7 @@
       "id": "react-060",
       "slug": "what-is-starttransition-and-how-is-it-different-from-usetransition",
       "title": "What is `startTransition` and how is it different from `useTransition`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Concurrent React"
       ],
@@ -1007,7 +1007,7 @@
       "id": "react-061",
       "slug": "how-does-react-s-synthetic-event-system-work",
       "title": "How does React's synthetic event system work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Internals"
       ],
@@ -1023,7 +1023,7 @@
       "id": "react-062",
       "slug": "what-is-flushsync-and-when-do-you-need-it",
       "title": "What is `flushSync` and when do you need it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -1039,7 +1039,7 @@
       "id": "react-063",
       "slug": "what-is-the-use-hook-in-react-19",
       "title": "What is the `use()` hook in React 19?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Concurrent React"
       ],
@@ -1055,7 +1055,7 @@
       "id": "react-064",
       "slug": "what-is-useoptimistic-in-react-19",
       "title": "What is `useOptimistic` in React 19?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Concurrent React"
       ],
@@ -1071,7 +1071,7 @@
       "id": "react-065",
       "slug": "what-is-useactionstate-in-react-19",
       "title": "What is `useActionState` in React 19?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Concurrent React"
       ],
@@ -1087,7 +1087,7 @@
       "id": "react-066",
       "slug": "what-are-react-server-actions",
       "title": "What are React Server Actions?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Server Components"
       ],
@@ -1103,7 +1103,7 @@
       "id": "react-067",
       "slug": "what-is-useformstatus-in-react-19",
       "title": "What is `useFormStatus` in React 19?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Concurrent React"
       ],
@@ -1119,7 +1119,7 @@
       "id": "react-068",
       "slug": "what-are-the-ref-improvements-in-react-19",
       "title": "What are the ref improvements in React 19?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "React Basics"
       ],
@@ -1135,7 +1135,7 @@
       "id": "react-069",
       "slug": "how-does-suspense-work-for-data-fetching-and-how-does-it-integrate-with-framewor",
       "title": "How does `Suspense` work for data fetching and how does it integrate with frameworks?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Concurrent React"
       ],
@@ -1151,7 +1151,7 @@
       "id": "react-070",
       "slug": "how-does-error-handling-work-with-suspense-and-error-boundaries",
       "title": "How does error handling work with Suspense and Error Boundaries?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -1167,7 +1167,7 @@
       "id": "react-071",
       "slug": "what-is-react-cache-in-react-19",
       "title": "What is `React.cache()` in React 19?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Server Components"
       ],
@@ -1183,7 +1183,7 @@
       "id": "react-072",
       "slug": "what-is-lazy-initialization-in-usestate",
       "title": "What is lazy initialization in `useState`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -1199,7 +1199,7 @@
       "id": "react-073",
       "slug": "how-do-you-prevent-memory-leaks-in-react-components",
       "title": "How do you prevent memory leaks in React components?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -1215,7 +1215,7 @@
       "id": "react-074",
       "slug": "what-is-react-children-and-when-do-you-use-it",
       "title": "What is `React.Children` and when do you use it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1231,7 +1231,7 @@
       "id": "react-075",
       "slug": "what-is-displayname-in-react-and-why-does-it-matter",
       "title": "What is `displayName` in React and why does it matter?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "React Basics"
       ],
@@ -1247,7 +1247,7 @@
       "id": "react-076",
       "slug": "how-do-you-test-react-components-with-react-testing-library",
       "title": "How do you test React components with React Testing Library?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Basics"
       ],
@@ -1263,7 +1263,7 @@
       "id": "react-077",
       "slug": "how-do-you-test-custom-hooks-in-react",
       "title": "How do you test custom hooks in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Hooks"
       ],
@@ -1279,7 +1279,7 @@
       "id": "react-078",
       "slug": "what-is-act-in-react-testing-and-why-is-it-necessary",
       "title": "What is `act()` in React testing and why is it necessary?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Internals"
       ],
@@ -1295,7 +1295,7 @@
       "id": "react-079",
       "slug": "why-does-usecontext-cause-unnecessary-re-renders-and-how-do-you-solve-it",
       "title": "Why does `useContext` cause unnecessary re-renders and how do you solve it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance Optimization"
       ],
@@ -1311,7 +1311,7 @@
       "id": "react-080",
       "slug": "what-is-the-key-prop-trick-for-resetting-component-state",
       "title": "What is the `key` prop trick for resetting component state?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering Behavior"
       ],
@@ -1327,7 +1327,7 @@
       "id": "react-081",
       "slug": "what-is-the-headless-component-pattern",
       "title": "What is the headless component pattern?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1343,7 +1343,7 @@
       "id": "react-082",
       "slug": "what-is-the-provider-pattern-in-react",
       "title": "What is the Provider pattern in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1359,7 +1359,7 @@
       "id": "react-083",
       "slug": "what-are-presentational-and-container-components",
       "title": "What are Presentational and Container components?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1375,7 +1375,7 @@
       "id": "react-084",
       "slug": "what-is-feature-based-folder-structure-in-react",
       "title": "What is feature-based folder structure in React?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1391,7 +1391,7 @@
       "id": "react-085",
       "slug": "what-are-barrel-files-and-what-are-their-trade-offs",
       "title": "What are barrel files and what are their trade-offs?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1407,7 +1407,7 @@
       "id": "react-086",
       "slug": "why-does-react-favor-composition-over-inheritance",
       "title": "Why does React favor composition over inheritance?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1423,7 +1423,7 @@
       "id": "react-087",
       "slug": "how-do-you-choose-between-local-state-lifted-state-context-and-external-stores",
       "title": "How do you choose between local state, lifted state, Context, and external stores?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1439,7 +1439,7 @@
       "id": "react-088",
       "slug": "what-is-zustand-and-how-does-it-work",
       "title": "What is Zustand and how does it work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1455,7 +1455,7 @@
       "id": "react-089",
       "slug": "what-is-redux-toolkit-and-how-does-it-modernize-redux",
       "title": "What is Redux Toolkit and how does it modernize Redux?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1471,7 +1471,7 @@
       "id": "react-090",
       "slug": "what-is-tanstack-query-and-how-does-it-manage-server-state",
       "title": "What is TanStack Query and how does it manage server state?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -1487,7 +1487,7 @@
       "id": "react-091",
       "slug": "how-do-you-implement-optimistic-updates-with-tanstack-query",
       "title": "How do you implement optimistic updates with TanStack Query?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "State Management"
       ],
@@ -1503,7 +1503,7 @@
       "id": "react-092",
       "slug": "how-do-you-build-a-multi-step-form-in-react",
       "title": "How do you build a multi-step form in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1519,7 +1519,7 @@
       "id": "react-093",
       "slug": "what-is-the-polymorphic-component-pattern-as-prop",
       "title": "What is the polymorphic component pattern (\"as\" prop)?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1535,7 +1535,7 @@
       "id": "react-094",
       "slug": "what-is-the-slot-pattern-in-react",
       "title": "What is the slot pattern in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1551,7 +1551,7 @@
       "id": "react-095",
       "slug": "how-do-you-handle-accessibility-a11y-in-react",
       "title": "How do you handle accessibility (a11y) in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1567,7 +1567,7 @@
       "id": "react-096",
       "slug": "how-do-you-implement-internationalization-i18n-in-react",
       "title": "How do you implement internationalization (i18n) in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1583,7 +1583,7 @@
       "id": "react-097",
       "slug": "what-is-a-design-system-in-the-context-of-react-component-libraries",
       "title": "What is a design system in the context of React component libraries?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1599,7 +1599,7 @@
       "id": "react-098",
       "slug": "what-is-a-good-testing-strategy-for-a-react-application",
       "title": "What is a good testing strategy for a React application?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1615,7 +1615,7 @@
       "id": "react-099",
       "slug": "how-do-you-design-a-good-component-api-in-react",
       "title": "How do you design a good component API in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1631,7 +1631,7 @@
       "id": "react-100",
       "slug": "what-is-micro-frontend-architecture-with-react",
       "title": "What is micro-frontend architecture with React?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1647,7 +1647,7 @@
       "id": "react-101",
       "slug": "how-does-code-splitting-work-in-react-beyond-basic-react-lazy",
       "title": "How does code splitting work in React beyond basic `React.lazy`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1663,7 +1663,7 @@
       "id": "react-102",
       "slug": "how-do-you-analyze-and-reduce-a-react-app-s-bundle-size",
       "title": "How do you analyze and reduce a React app's bundle size?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1679,7 +1679,7 @@
       "id": "react-103",
       "slug": "how-do-core-web-vitals-apply-to-react-applications",
       "title": "How do Core Web Vitals apply to React applications?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance Optimization"
       ],
@@ -1695,7 +1695,7 @@
       "id": "react-104",
       "slug": "what-are-the-pitfalls-of-react-memo-and-how-do-you-use-its-comparison-function",
       "title": "What are the pitfalls of `React.memo` and how do you use its comparison function?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance Optimization"
       ],
@@ -1711,7 +1711,7 @@
       "id": "react-105",
       "slug": "how-do-you-implement-debounce-and-throttle-in-react-hooks",
       "title": "How do you implement debounce and throttle in React hooks?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1727,7 +1727,7 @@
       "id": "react-106",
       "slug": "how-do-you-implement-infinite-scroll-in-react",
       "title": "How do you implement infinite scroll in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1743,7 +1743,7 @@
       "id": "react-107",
       "slug": "how-do-you-use-the-react-profiler-to-find-performance-bottlenecks",
       "title": "How do you use the React Profiler to find performance bottlenecks?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1759,7 +1759,7 @@
       "id": "react-108",
       "slug": "what-are-the-performance-trade-offs-of-css-in-js-vs-css-modules",
       "title": "What are the performance trade-offs of CSS-in-JS vs CSS Modules?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1775,7 +1775,7 @@
       "id": "react-109",
       "slug": "how-do-you-optimize-images-in-a-react-application",
       "title": "How do you optimize images in a React application?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Performance Optimization"
       ],
@@ -1791,7 +1791,7 @@
       "id": "react-110",
       "slug": "how-does-streaming-ssr-work-in-react-18",
       "title": "How does Streaming SSR work in React 18?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1807,7 +1807,7 @@
       "id": "react-111",
       "slug": "what-is-tree-shaking-and-how-do-you-ensure-it-works-in-a-react-project",
       "title": "What is tree shaking and how do you ensure it works in a React project?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1823,7 +1823,7 @@
       "id": "react-112",
       "slug": "how-do-you-optimize-animation-performance-in-react",
       "title": "How do you optimize animation performance in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1839,7 +1839,7 @@
       "id": "react-113",
       "slug": "what-is-partial-hydration-and-the-islands-architecture",
       "title": "What is partial hydration and the islands architecture?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1855,7 +1855,7 @@
       "id": "react-114",
       "slug": "how-do-you-handle-long-tasks-and-keep-react-apps-responsive",
       "title": "How do you handle long tasks and keep React apps responsive?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance Optimization"
       ],
@@ -1871,7 +1871,7 @@
       "id": "react-115",
       "slug": "how-do-you-monitor-react-application-performance-in-production",
       "title": "How do you monitor React application performance in production?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance Optimization"
       ],
@@ -1887,7 +1887,7 @@
       "id": "react-116",
       "slug": "what-is-the-complete-checklist-for-avoiding-unnecessary-re-renders-in-react",
       "title": "What is the complete checklist for avoiding unnecessary re-renders in React?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance Optimization"
       ],
@@ -1903,7 +1903,7 @@
       "id": "react-117",
       "slug": "how-do-you-use-typescript-with-react-for-advanced-type-safety",
       "title": "How do you use TypeScript with React for advanced type safety?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture & Patterns"
       ],
@@ -1919,7 +1919,7 @@
       "id": "react-118",
       "slug": "what-are-the-key-differences-between-react-dom-and-react-native",
       "title": "What are the key differences between React DOM and React Native?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "React Basics"
       ],
@@ -1935,7 +1935,7 @@
       "id": "react-119",
       "slug": "what-does-strictmode-actually-do-in-react-18-and-why-do-effects-run-twice",
       "title": "What does `StrictMode` actually do in React 18 and why do effects run twice?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "React Internals"
       ],
@@ -1951,7 +1951,7 @@
       "id": "react-120",
       "slug": "what-are-react-s-priority-lanes-and-how-does-the-concurrent-scheduler-work",
       "title": "What are React's priority lanes and how does the concurrent scheduler work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -1967,7 +1967,7 @@
       "id": "react-121",
       "slug": "what-is-a-stale-closure-in-react-and-how-does-it-cause-bugs-in-useeffect",
       "title": "What is a stale closure in React and how does it cause bugs in `useEffect`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -1983,7 +1983,7 @@
       "id": "react-122",
       "slug": "what-causes-infinite-re-render-loops-in-react-and-how-do-you-fix-them",
       "title": "What causes infinite re-render loops in React and how do you fix them?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -1999,7 +1999,7 @@
       "id": "react-123",
       "slug": "why-do-object-and-array-literals-in-jsx-cause-unnecessary-re-renders",
       "title": "Why do object and array literals in JSX cause unnecessary re-renders?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2015,7 +2015,7 @@
       "id": "react-124",
       "slug": "what-happens-when-you-update-state-inside-a-render-function",
       "title": "What happens when you update state inside a render function?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2031,7 +2031,7 @@
       "id": "react-125",
       "slug": "how-do-race-conditions-occur-in-useeffect-data-fetching-and-how-do-you-prevent-t",
       "title": "How do race conditions occur in `useEffect` data fetching and how do you prevent them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2047,7 +2047,7 @@
       "id": "react-126",
       "slug": "what-are-common-mistakes-when-updating-objects-and-arrays-in-react-state",
       "title": "What are common mistakes when updating objects and arrays in React state?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2063,7 +2063,7 @@
       "id": "react-127",
       "slug": "how-does-reading-stale-state-inside-async-callbacks-lead-to-bugs",
       "title": "How does reading stale state inside async callbacks lead to bugs?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2079,7 +2079,7 @@
       "id": "react-128",
       "slug": "what-is-the-exhaustive-deps-eslint-rule-and-when-if-ever-should-you-suppress-it",
       "title": "What is the `exhaustive-deps` ESLint rule and when (if ever) should you suppress it?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Edge Cases & Pitfalls"
       ],
@@ -2095,7 +2095,7 @@
       "id": "react-129",
       "slug": "how-do-you-split-and-compose-multiple-context-providers-to-avoid-unnecessary-re",
       "title": "How do you split and compose multiple Context providers to avoid unnecessary re-renders?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Context API"
       ],
@@ -2111,7 +2111,7 @@
       "id": "react-130",
       "slug": "how-do-you-combine-usecontext-and-usereducer-as-a-lightweight-global-state-solut",
       "title": "How do you combine `useContext` and `useReducer` as a lightweight global state solution?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Context API"
       ],
@@ -2127,7 +2127,7 @@
       "id": "react-131",
       "slug": "what-are-context-selectors-and-why-does-react-not-have-them-natively",
       "title": "What are context selectors and why does React not have them natively?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Context API"
       ],
@@ -2143,7 +2143,7 @@
       "id": "react-132",
       "slug": "how-do-you-test-a-component-that-consumes-a-react-context",
       "title": "How do you test a component that consumes a React Context?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Context API"
       ],
@@ -2159,7 +2159,7 @@
       "id": "react-133",
       "slug": "how-does-react-hook-form-work-and-why-does-it-outperform-controlled-components",
       "title": "How does React Hook Form work and why does it outperform controlled components?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Forms & Events"
       ],
@@ -2175,7 +2175,7 @@
       "id": "react-134",
       "slug": "how-do-you-handle-dynamic-form-fields-add-remove-rows-in-react",
       "title": "How do you handle dynamic form fields (add/remove rows) in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Forms & Events"
       ],
@@ -2191,7 +2191,7 @@
       "id": "react-135",
       "slug": "how-do-you-handle-file-uploads-in-react",
       "title": "How do you handle file uploads in React?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Forms & Events"
       ],
@@ -2207,7 +2207,7 @@
       "id": "react-136",
       "slug": "how-do-you-cancel-a-fetch-request-when-a-component-unmounts-using-abortcontrolle",
       "title": "How do you cancel a fetch request when a component unmounts using `AbortController`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -2223,7 +2223,7 @@
       "id": "react-137",
       "slug": "what-is-the-synchronization-mental-model-for-useeffect-and-how-is-it-different-f",
       "title": "What is the synchronization mental model for `useEffect` and how is it different from lifecycle thinking?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -2239,7 +2239,7 @@
       "id": "react-138",
       "slug": "how-do-you-migrate-class-component-lifecycle-methods-to-hooks",
       "title": "How do you migrate class component lifecycle methods to hooks?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Effects & Lifecycle"
       ],
@@ -2255,7 +2255,7 @@
       "id": "react-139",
       "slug": "what-are-the-rules-of-the-client-server-boundary-and-the-use-client-directive",
       "title": "What are the rules of the Client/Server boundary and the `\"use client\"` directive?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Server Components"
       ],
@@ -2271,7 +2271,7 @@
       "id": "react-140",
       "slug": "how-do-react-server-components-handle-data-fetching-compared-to-client-component",
       "title": "How do React Server Components handle data fetching compared to client components?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Server Components"
       ],
@@ -2287,7 +2287,7 @@
       "id": "react-141",
       "slug": "how-do-you-pass-data-from-a-server-component-to-a-client-component",
       "title": "How do you pass data from a Server Component to a Client Component?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Server Components"
       ],
@@ -2303,7 +2303,7 @@
       "id": "react-142",
       "slug": "what-is-the-difference-between-server-state-and-client-state-and-which-tools-han",
       "title": "What is the difference between server state and client state, and which tools handle each?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -2319,7 +2319,7 @@
       "id": "react-143",
       "slug": "what-is-normalized-state-and-why-does-it-matter-in-large-react-applications",
       "title": "What is normalized state and why does it matter in large React applications?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "State Management"
       ],
@@ -2335,7 +2335,7 @@
       "id": "react-144",
       "slug": "how-does-jotai-s-atomic-model-differ-from-redux-and-zustand",
       "title": "How does Jotai's atomic model differ from Redux and Zustand?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "State Management"
       ],
@@ -2351,7 +2351,7 @@
       "id": "react-145",
       "slug": "how-are-react-hooks-implemented-internally-using-a-linked-list",
       "title": "How are React hooks implemented internally using a linked list?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -2367,7 +2367,7 @@
       "id": "react-146",
       "slug": "why-must-hooks-be-called-in-the-same-order-every-render-what-breaks-internally-i",
       "title": "Why must hooks be called in the same order every render — what breaks internally if you don't?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -2383,7 +2383,7 @@
       "id": "react-147",
       "slug": "how-does-suspense-work-internally-what-is-the-throw-a-promise-mechanism",
       "title": "How does Suspense work internally — what is the \"throw a Promise\" mechanism?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -2399,7 +2399,7 @@
       "id": "react-148",
       "slug": "how-would-you-build-a-minimal-react-renderer-from-scratch",
       "title": "How would you build a minimal React renderer from scratch?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "React Internals"
       ],
@@ -2415,7 +2415,7 @@
       "id": "react-149",
       "slug": "what-triggers-a-re-render-in-react-and-how-can-you-prevent-unnecessary-ones",
       "title": "What triggers a re-render in React, and how can you prevent unnecessary ones?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering Behavior"
       ],
@@ -2431,7 +2431,7 @@
       "id": "react-150",
       "slug": "walk-through-the-react-rendering-pipeline-from-state-change-to-painted-pixels",
       "title": "Walk through the React rendering pipeline from state change to painted pixels.",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering Behavior"
       ],
@@ -2447,7 +2447,7 @@
       "id": "react-151",
       "slug": "how-does-react-18-s-concurrent-scheduler-work-and-what-are-priority-lanes",
       "title": "How does React 18's concurrent scheduler work and what are priority lanes?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Rendering Behavior"
       ],
@@ -2463,7 +2463,7 @@
       "id": "react-152",
       "slug": "why-does-react-strictmode-call-render-and-effect-functions-twice-in-development",
       "title": "Why does React.StrictMode call render and effect functions twice in development?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Rendering Behavior"
       ],
@@ -2479,7 +2479,7 @@
       "id": "react-153",
       "slug": "what-is-the-useid-hook-and-how-does-it-solve-ssr-hydration-mismatches",
       "title": "What is the `useId` hook and how does it solve SSR hydration mismatches?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2495,7 +2495,7 @@
       "id": "react-154",
       "slug": "what-are-the-data-fetching-strategies-in-next-js-app-router-and-when-do-you-use",
       "title": "What are the data fetching strategies in Next.js App Router and when do you use each?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2511,7 +2511,7 @@
       "id": "react-155",
       "slug": "how-do-you-safely-use-browser-only-apis-window-localstorage-document-in-an-ssr-a",
       "title": "How do you safely use browser-only APIs (window, localStorage, document) in an SSR app?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2527,7 +2527,7 @@
       "id": "react-156",
       "slug": "how-does-selective-hydration-work-with-suspense-in-react-18",
       "title": "How does selective hydration work with Suspense in React 18?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],
@@ -2543,7 +2543,7 @@
       "id": "react-157",
       "slug": "how-do-you-handle-authentication-in-ssr-cookie-based-auth-and-middleware-pattern",
       "title": "How do you handle authentication in SSR — cookie-based auth and middleware patterns?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SSR / Hydration"
       ],

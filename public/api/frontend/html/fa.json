@@ -27,9 +27,9 @@
   "stats": {
     "total": 28,
     "byDifficulty": {
-      "easy": 7,
-      "medium": 9,
-      "hard": 12
+      "آسان": 7,
+      "متوسط": 9,
+      "سخت": 12
     }
   },
   "questions": [
@@ -37,7 +37,7 @@
       "id": "html-001",
       "slug": "تفاوت-div-و-span-چیست",
       "title": "تفاوت `<div>` و `<span>` چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -53,7 +53,7 @@
       "id": "html-002",
       "slug": "هدف-از-استفاده-از-doctype-چیست",
       "title": "هدف از استفاده از `doctype` چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -69,7 +69,7 @@
       "id": "html-003",
       "slug": "تفاوت-عناصر-block-و-inline-چیست",
       "title": "تفاوت عناصر Block و Inline چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -85,7 +85,7 @@
       "id": "html-004",
       "slug": "عناصر-معنایی-semantic-در-html-چه-هستند",
       "title": "عناصر معنایی (Semantic) در HTML چه هستند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "معنایی و دسترسی‌پذیری"
       ],
@@ -101,7 +101,7 @@
       "id": "html-005",
       "slug": "تفاوت-id-و-class-چیست",
       "title": "تفاوت `id` و `class` چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -117,7 +117,7 @@
       "id": "html-006",
       "slug": "هدف-از-ویژگی-alt-در-تگ-های-img-چیست",
       "title": "هدف از ویژگی `alt` در تگ‌های `<img>` چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "معنایی و دسترسی‌پذیری"
       ],
@@ -133,7 +133,7 @@
       "id": "html-007",
       "slug": "عناصر-معنایی-html-مانند-article-section-aside-را-توضیح-دهید-و-اینکه-چه-زمانی-به",
       "title": "عناصر معنایی HTML مانند `<article>`، `<section>`، `<aside>` را توضیح دهید و اینکه چه زمانی به جای `<div>` از آنها استفاده کنیم.",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معنایی و دسترسی‌پذیری"
       ],
@@ -149,7 +149,7 @@
       "id": "html-008",
       "slug": "تفاوت-های-بین-input-type-number-و-input-type-tel-چیست",
       "title": "تفاوت‌های بین `<input type=\"number\">` و `<input type=\"tel\">` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "فرم‌ها"
       ],
@@ -165,7 +165,7 @@
       "id": "html-009",
       "slug": "چگونه-می-توان-عملکرد-صفحه-را-با-استفاده-از-ویژگی-ها-یا-تکنیک-های-html-بهبود-بخشی",
       "title": "چگونه می‌توان عملکرد صفحه را با استفاده از ویژگی‌ها یا تکنیک‌های HTML بهبود بخشید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "عملکرد"
       ],
@@ -181,7 +181,7 @@
       "id": "html-010",
       "slug": "تگ-meta-name-viewport-چیست-و-چرا-برای-طراحی-واکنش-گرا-مهم-است",
       "title": "تگ `<meta name=\"viewport\">` چیست و چرا برای طراحی واکنش‌گرا مهم است؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "رفتار مرورگر"
       ],
@@ -197,7 +197,7 @@
       "id": "html-011",
       "slug": "تفاوت-ویژگی-های-async-و-defer-در-تگ-های-script-چیست-تاثیر-آن-ها-روی-critical-ren",
       "title": "تفاوت ویژگی‌های `async` و `defer` در تگ‌های `<script>` چیست؟ تاثیر آن‌ها روی Critical Rendering Path چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -213,7 +213,7 @@
       "id": "html-012",
       "slug": "تفاوت-بین-تگهای-meta-و-هدرهای-http-چیست-و-چه-زمانی-باید-از-هر-کدام-استفاده-کرد",
       "title": "تفاوت بین تگهای `<meta>` و هدرهای HTTP چیست و چه زمانی باید از هر کدام استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سئو و متا"
       ],
@@ -229,7 +229,7 @@
       "id": "html-013",
       "slug": "چند-اشتباه-رایج-در-استفاده-از-aria-چیست-و-چرا-باید-html-بومی-را-نسبت-به-aria-در",
       "title": "چند اشتباه رایج در استفاده از ARIA چیست و چرا باید HTML بومی را نسبت به ARIA در اولویت گذاشت؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "معنایی و دسترسی‌پذیری"
       ],
@@ -245,7 +245,7 @@
       "id": "html-014",
       "slug": "مسیر-رندر-بحرانی-critical-rendering-path-چیست-و-html-چه-نقشی-در-آن-دارد",
       "title": "مسیر رندر بحرانی (Critical Rendering Path) چیست و HTML چه نقشی در آن دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -261,7 +261,7 @@
       "id": "html-015",
       "slug": "تفاوت-بین-ویژگیهای-id-و-data-در-html-چیست-و-چه-زمانی-باید-از-هر-کدام-استفاده-کرد",
       "title": "تفاوت بین ویژگیهای `id` و `data-*` در HTML چیست و چه زمانی باید از هر کدام استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -277,7 +277,7 @@
       "id": "html-016",
       "slug": "تفاوت-بین-section-و-div-از-منظر-طرح-کلی-سند-چیست",
       "title": "تفاوت بین `<section>` و `<div>` از منظر طرح کلی سند چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "معنایی و دسترسی‌پذیری"
       ],
@@ -293,7 +293,7 @@
       "id": "html-017",
       "slug": "template-و-shadow-dom-در-web-components-چگونه-با-هم-کار-می-کنند-و-چه-مسائلی-را-ح",
       "title": "`<template>` و Shadow DOM در Web Components چگونه با هم کار می‌کنند و چه مسائلی را حل می‌کنند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار مرورگر"
       ],
@@ -309,7 +309,7 @@
       "id": "html-018",
       "slug": "ویژگی-sandbox-در-iframe-چگونه-کار-می-کند-و-چرا-برای-امنیت-مهم-است",
       "title": "ویژگی `sandbox` در `<iframe>` چگونه کار می‌کند و چرا برای امنیت مهم است؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار مرورگر",
         "امنیت"
@@ -326,7 +326,7 @@
       "id": "html-019",
       "slug": "تفاوت-بین-link-و-a-در-html-چیست",
       "title": "تفاوت بین `<link>` و `<a>` در HTML چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -342,7 +342,7 @@
       "id": "html-020",
       "slug": "web-components-در-html-چیست-و-چه-فناوری-های-اصلی-آنها-را-فعال-میکنند",
       "title": "Web Components در HTML چیست و چه فناوری های اصلی آنها را فعال میکنند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار مرورگر"
       ],
@@ -358,7 +358,7 @@
       "id": "html-021",
       "slug": "picture-srcset-sizes-چگونه-برای-تصاویر-واکنش-گرا-با-هم-کار-می-کنند-و-چرا-برای-تص",
       "title": "`<picture>` + `srcset` + `sizes` چگونه برای تصاویر واکنش‌گرا با هم کار می‌کنند و چرا برای تصاویر از media queryهای CSS بهتر هستند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -374,7 +374,7 @@
       "id": "html-022",
       "slug": "اعتبارسنجی-فرم-در-html5-چگونه-کار-می-کند-و-با-constraint-validation-api-چطور-می",
       "title": "اعتبارسنجی فرم در HTML5 چگونه کار می‌کند و با Constraint Validation API چطور می‌توان اعتبارسنجی سفارشی ساخت؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "فرم‌ها"
       ],
@@ -390,7 +390,7 @@
       "id": "html-023",
       "slug": "چطور-می-توان-داده-های-ساخت-یافته-را-با-schema-org-در-html-پیاده-سازی-کرد-و-چه-مز",
       "title": "چطور می‌توان داده‌های ساخت‌یافته را با schema.org در HTML پیاده‌سازی کرد و چه مزایایی برای SEO دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سئو و متا"
       ],
@@ -406,7 +406,7 @@
       "id": "html-024",
       "slug": "ویژگی-contenteditable-چیست-خطاهای-رایج-آن-کدام-اند-و-چطور-می-توان-آن-را-دسترس-پذ",
       "title": "ویژگی `contenteditable` چیست، خطاهای رایج آن کدام‌اند و چطور می‌توان آن را دسترس‌پذیر کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار مرورگر"
       ],
@@ -422,7 +422,7 @@
       "id": "html-025",
       "slug": "resource-hintها-در-html-preload-prefetch-preconnect-dns-prefetch-چه-هستند-و-هرکد",
       "title": "Resource hintها در HTML (`preload`، `prefetch`، `preconnect`، `dns-prefetch`) چه هستند و هرکدام را چه زمانی برای بهینه‌سازی عملکرد استفاده می‌کنیم؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "عملکرد"
       ],
@@ -438,7 +438,7 @@
       "id": "html-026",
       "slug": "چرا-باید-از-rel-noopener-noreferrer-روی-لینک-هایی-با-target-blank-استفاده-کرد",
       "title": "چرا باید از `rel=\"noopener noreferrer\"` روی لینک‌هایی با `target=\"_blank\"` استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار مرورگر",
         "امنیت"
@@ -455,7 +455,7 @@
       "id": "html-027",
       "slug": "تفاوت-بین-canvas-و-svg-چیست",
       "title": "تفاوت بین `<canvas>` و `<svg>` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار مرورگر"
       ],
@@ -471,7 +471,7 @@
       "id": "html-028",
       "slug": "تگ-های-open-graph-چیستند-و-چرا-اهمیت-دارند",
       "title": "تگ‌های Open Graph چیستند و چرا اهمیت دارند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سئو و متا"
       ],

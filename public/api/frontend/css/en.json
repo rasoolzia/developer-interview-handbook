@@ -27,9 +27,9 @@
   "stats": {
     "total": 37,
     "byDifficulty": {
-      "easy": 2,
-      "medium": 15,
-      "hard": 20
+      "Easy": 2,
+      "Medium": 15,
+      "Hard": 20
     }
   },
   "questions": [
@@ -37,7 +37,7 @@
       "id": "css-001",
       "slug": "what-is-the-css-box-model-and-what-are-its-components",
       "title": "What is the CSS box model and what are its components?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -53,7 +53,7 @@
       "id": "css-002",
       "slug": "what-is-the-difference-between-block-inline-and-inline-block-display-values",
       "title": "What is the difference between `block`, `inline`, and `inline-block` display values?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Layout"
       ],
@@ -69,7 +69,7 @@
       "id": "css-003",
       "slug": "what-is-specificity-in-css-and-how-is-it-calculated",
       "title": "What is specificity in CSS and how is it calculated?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -85,7 +85,7 @@
       "id": "css-004",
       "slug": "what-is-the-difference-between-position-relative-absolute-fixed-and-sticky",
       "title": "What is the difference between `position: relative`, `absolute`, `fixed`, and `sticky`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Layout"
       ],
@@ -101,7 +101,7 @@
       "id": "css-005",
       "slug": "what-is-the-difference-between-flexbox-and-grid",
       "title": "What is the difference between Flexbox and Grid?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Layout"
       ],
@@ -117,7 +117,7 @@
       "id": "css-006",
       "slug": "what-is-the-css-cascade-and-how-does-the-browser-decide-which-rule-to-apply",
       "title": "What is the CSS cascade and how does the browser decide which rule to apply?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -133,7 +133,7 @@
       "id": "css-007",
       "slug": "what-is-a-stacking-context-and-how-is-it-created",
       "title": "What is a stacking context and how is it created?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -149,7 +149,7 @@
       "id": "css-008",
       "slug": "what-is-the-difference-between-overflow-hidden-auto-and-scroll",
       "title": "What is the difference between `overflow: hidden`, `auto`, and `scroll`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Layout"
       ],
@@ -165,7 +165,7 @@
       "id": "css-009",
       "slug": "what-is-a-block-formatting-context-bfc-and-why-is-it-useful",
       "title": "What is a Block Formatting Context (BFC) and why is it useful?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -181,7 +181,7 @@
       "id": "css-010",
       "slug": "what-is-margin-collapsing-and-when-does-it-occur",
       "title": "What is margin collapsing and when does it occur?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Layout"
       ],
@@ -197,7 +197,7 @@
       "id": "css-011",
       "slug": "what-is-the-difference-between-em-rem-vh-and-vw-units",
       "title": "What is the difference between `em`, `rem`, `%`, `vh`, and `vw` units?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -213,7 +213,7 @@
       "id": "css-012",
       "slug": "what-is-the-difference-between-min-width-max-width-and-width",
       "title": "What is the difference between `min-width`, `max-width`, and `width`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Layout"
       ],
@@ -229,7 +229,7 @@
       "id": "css-013",
       "slug": "what-is-the-difference-between-reflow-layout-and-repaint-in-css-rendering",
       "title": "What is the difference between `reflow` (layout) and `repaint` in CSS rendering?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -245,7 +245,7 @@
       "id": "css-014",
       "slug": "what-are-css-custom-properties-css-variables-and-what-are-their-advantages",
       "title": "What are CSS Custom Properties (CSS Variables) and what are their advantages?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -261,7 +261,7 @@
       "id": "css-015",
       "slug": "what-are-css-logical-properties-and-why-are-they-important",
       "title": "What are CSS logical properties and why are they important?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Responsive Design"
       ],
@@ -277,7 +277,7 @@
       "id": "css-016",
       "slug": "what-are-css-cascade-layers-layer-and-why-were-they-introduced",
       "title": "What are CSS cascade layers (`@layer`) and why were they introduced?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Architecture"
       ],
@@ -293,7 +293,7 @@
       "id": "css-017",
       "slug": "what-are-container-queries-and-how-do-they-differ-from-media-queries",
       "title": "What are container queries and how do they differ from media queries?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Responsive Design"
       ],
@@ -309,7 +309,7 @@
       "id": "css-018",
       "slug": "what-is-the-difference-between-nth-child-and-nth-of-type",
       "title": "What is the difference between `:nth-child()` and `:nth-of-type()`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Selectors & Specificity"
       ],
@@ -325,7 +325,7 @@
       "id": "css-019",
       "slug": "how-does-will-change-affect-performance-and-when-should-it-be-used",
       "title": "How does `will-change` affect performance and when should it be used?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -341,7 +341,7 @@
       "id": "css-020",
       "slug": "what-is-the-difference-between-bem-and-utility-first-css-architecture",
       "title": "What is the difference between BEM and utility-first CSS architecture?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Architecture"
       ],
@@ -357,7 +357,7 @@
       "id": "css-021",
       "slug": "what-is-css-subgrid-how-does-it-differ-from-nested-grids-and-when-should-you-use",
       "title": "What is CSS subgrid, how does it differ from nested grids, and when should you use it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -373,7 +373,7 @@
       "id": "css-022",
       "slug": "explain-scroll-snap-properties-and-how-to-create-a-full-page-carousel-with-pure",
       "title": "Explain scroll-snap properties and how to create a full-page carousel with pure CSS.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -389,7 +389,7 @@
       "id": "css-023",
       "slug": "what-is-the-aspect-ratio-property-and-how-does-it-help-prevent-cumulative-layout",
       "title": "What is the aspect-ratio property, and how does it help prevent Cumulative Layout Shift (CLS)?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance",
         "Responsive Design"
@@ -406,7 +406,7 @@
       "id": "css-024",
       "slug": "how-do-has-pseudo-class-and-relational-selectors-change-css-architecture-and-com",
       "title": "How do :has() pseudo-class and relational selectors change CSS architecture and component styling?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Selectors & Specificity"
       ],
@@ -422,7 +422,7 @@
       "id": "css-025",
       "slug": "what-is-accent-color-and-how-does-it-interact-with-form-controls-in-modern-brows",
       "title": "What is accent-color and how does it interact with form controls in modern browsers?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Fundamentals",
         "Accessibility"
@@ -439,7 +439,7 @@
       "id": "css-026",
       "slug": "what-is-the-difference-between-vh-dvh-svh-and-lvh-viewport-units-and-why-were-th",
       "title": "What is the difference between `vh`, `dvh`, `svh`, and `lvh` viewport units, and why were the new ones introduced?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Responsive Design"
       ],
@@ -455,7 +455,7 @@
       "id": "css-027",
       "slug": "explain-the-differences-between-opacity-0-visibility-hidden-and-display-none-in",
       "title": "Explain the differences between `opacity: 0`, `visibility: hidden`, and `display: none` in terms of layout, performance, accessibility, and interactivity.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Fundamentals"
       ],
@@ -471,7 +471,7 @@
       "id": "css-028",
       "slug": "how-do-margins-behave-on-elements-with-display-inline-flex-or-display-inline-gri",
       "title": "How do margins behave on elements with `display: inline-flex` or `display: inline-grid`, and why do vertical margins not collapse or apply as expected?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -487,7 +487,7 @@
       "id": "css-029",
       "slug": "what-is-the-color-mix-function-in-css-and-how-can-it-be-used-for-dynamic-theming",
       "title": "What is the `color-mix()` function in CSS, and how can it be used for dynamic theming or accessibility?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Fundamentals"
       ],
@@ -503,7 +503,7 @@
       "id": "css-030",
       "slug": "what-is-property-in-css-and-how-does-it-enable-better-custom-property-animations",
       "title": "What is `@property` in CSS and how does it enable better custom property animations/transitions?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance",
         "Architecture"
@@ -520,7 +520,7 @@
       "id": "css-031",
       "slug": "what-is-the-difference-between-css-transitions-and-css-animations",
       "title": "What is the difference between CSS transitions and CSS animations?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance"
       ],
@@ -536,7 +536,7 @@
       "id": "css-032",
       "slug": "what-is-scroll-driven-animation-in-css-and-how-does-animation-timeline-scroll-wo",
       "title": "What is scroll-driven animation in CSS, and how does `animation-timeline: scroll()` work?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -552,7 +552,7 @@
       "id": "css-033",
       "slug": "explain-advanced-usage-of-object-fit-and-object-position-with-aspect-ratio-for-r",
       "title": "Explain advanced usage of `object-fit` and `object-position` with `aspect-ratio` for responsive media without CLS.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Responsive Design"
       ],
@@ -568,7 +568,7 @@
       "id": "css-034",
       "slug": "what-are-the-differences-between-physical-properties-margin-top-and-logical-prop",
       "title": "What are the differences between physical properties (margin-top) and logical properties (margin-block-start) in depth, including writing-mode and direction impact?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Responsive Design"
       ],
@@ -584,7 +584,7 @@
       "id": "css-035",
       "slug": "how-can-gap-property-be-used-in-flexbox-and-grid-and-what-are-browser-difference",
       "title": "How can gap property be used in Flexbox and Grid, and what are browser differences in row-gap/column-gap fallback?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Layout"
       ],
@@ -600,7 +600,7 @@
       "id": "css-036",
       "slug": "what-are-css-pseudo-elements-and-how-do-before-and-after-work",
       "title": "What are CSS pseudo-elements and how do `::before` and `::after` work?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Selectors & Specificity"
       ],
@@ -616,7 +616,7 @@
       "id": "css-037",
       "slug": "what-are-prefers-color-scheme-and-prefers-reduced-motion-media-features-and-why",
       "title": "What are `prefers-color-scheme` and `prefers-reduced-motion` media features and why do they matter?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Responsive Design",
         "Accessibility"

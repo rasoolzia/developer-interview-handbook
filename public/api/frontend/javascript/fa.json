@@ -28,9 +28,9 @@
   "stats": {
     "total": 102,
     "byDifficulty": {
-      "easy": 18,
-      "medium": 55,
-      "hard": 29
+      "آسان": 18,
+      "متوسط": 55,
+      "سخت": 29
     }
   },
   "questions": [
@@ -38,7 +38,7 @@
       "id": "javascript-001",
       "slug": "javascript-چیست-و-چگونه-با-زبانهای-کامپایل-شده-تفاوت-دارد",
       "title": "JavaScript چیست و چگونه با زبانهای کامپایل شده تفاوت دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -54,7 +54,7 @@
       "id": "javascript-002",
       "slug": "انواع-دادههای-اولیه-در-javascript-چیست",
       "title": "انواع دادههای اولیه در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -70,7 +70,7 @@
       "id": "javascript-003",
       "slug": "تفاوت-بین-null-و-undefined-چیست",
       "title": "تفاوت بین null و undefined چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -86,7 +86,7 @@
       "id": "javascript-004",
       "slug": "تفاوت-بین-var-let-و-const-چیست",
       "title": "تفاوت بین var، let و const چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -102,7 +102,7 @@
       "id": "javascript-005",
       "slug": "محدوده-scope-در-javascript-چیست",
       "title": "محدوده (scope) در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -118,7 +118,7 @@
       "id": "javascript-006",
       "slug": "hoisting-در-javascript-چیست",
       "title": "hoisting در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -134,7 +134,7 @@
       "id": "javascript-007",
       "slug": "تفاوت-بین-مقادیر-اولیه-و-مقادیر-مرجع-چیست",
       "title": "تفاوت بین مقادیر اولیه و مقادیر مرجع چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "حافظه و مراجع"
       ],
@@ -150,7 +150,7 @@
       "id": "javascript-008",
       "slug": "مدیریت-حافظه-در-javascript-چگونه-کار-میکند",
       "title": "مدیریت حافظه در JavaScript چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "حافظه و مراجع"
       ],
@@ -166,7 +166,7 @@
       "id": "javascript-009",
       "slug": "closure-در-javascript-چیست",
       "title": "closure در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -182,7 +182,7 @@
       "id": "javascript-010",
       "slug": "حلقه-رویداد-event-loop-در-javascript-چیست",
       "title": "حلقه رویداد (event loop) در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -198,7 +198,7 @@
       "id": "javascript-011",
       "slug": "زمینه-اجرا-execution-context-در-javascript-چیست",
       "title": "زمینه اجرا (execution context) در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -214,7 +214,7 @@
       "id": "javascript-012",
       "slug": "در-مرحله-ایجاد-زمینه-اجرا-چه-اتفاقی-میافتد",
       "title": "در مرحله ایجاد زمینه اجرا چه اتفاقی میافتد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -230,7 +230,7 @@
       "id": "javascript-013",
       "slug": "call-stack-چیست-و-چگونه-کار-میکند",
       "title": "call stack چیست و چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -246,7 +246,7 @@
       "id": "javascript-014",
       "slug": "temporal-dead-zone-tdz-چیست",
       "title": "Temporal Dead Zone (TDZ) چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -262,7 +262,7 @@
       "id": "javascript-015",
       "slug": "کلیدواژه-this-در-javascript-چگونه-کار-میکند",
       "title": "کلیدواژه `this` در JavaScript چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -278,7 +278,7 @@
       "id": "javascript-016",
       "slug": "تفاوت-بین-توابع-معمولی-و-arrow-functionها-چیست",
       "title": "تفاوت بین توابع معمولی و arrow functionها چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -294,7 +294,7 @@
       "id": "javascript-017",
       "slug": "تفاوت-بین-shallow-copy-و-deep-copy-چیست",
       "title": "تفاوت بین shallow copy و deep copy چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "حافظه و مراجع"
       ],
@@ -310,7 +310,7 @@
       "id": "javascript-018",
       "slug": "microtaskها-و-macrotaskها-در-حلقه-رویداد-چیست",
       "title": "microtaskها و macrotaskها در حلقه رویداد چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -326,7 +326,7 @@
       "id": "javascript-019",
       "slug": "حالتهای-مختلف-promise-چیست",
       "title": "حالتهای مختلف Promise چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -342,7 +342,7 @@
       "id": "javascript-020",
       "slug": "async-await-داخلی-چگونه-کار-میکند",
       "title": "async/await داخلی چگونه کار میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -358,7 +358,7 @@
       "id": "javascript-021",
       "slug": "prototype-در-javascript-چیست",
       "title": "prototype در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -374,7 +374,7 @@
       "id": "javascript-022",
       "slug": "زنجیره-prototype-چیست-و-جستجوی-خصوصیت-چگونه-کار-میکند",
       "title": "زنجیره prototype چیست و جستجوی خصوصیت چگونه کار میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -390,7 +390,7 @@
       "id": "javascript-023",
       "slug": "تفاوت-بین-proto-و-prototype-چیست",
       "title": "تفاوت بین `__proto__` و `prototype` چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -406,7 +406,7 @@
       "id": "javascript-024",
       "slug": "وراثت-در-javascript-چگونه-کار-میکند",
       "title": "وراثت در JavaScript چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -422,7 +422,7 @@
       "id": "javascript-025",
       "slug": "حالت-strict-در-javascript-چیست-و-چرا-مهم-است",
       "title": "حالت strict در JavaScript چیست و چرا مهم است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -438,7 +438,7 @@
       "id": "javascript-026",
       "slug": "ماژولهای-javascript-چیست-و-چگونه-کار-میکنند",
       "title": "ماژولهای JavaScript چیست و چگونه کار میکنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -454,7 +454,7 @@
       "id": "javascript-027",
       "slug": "نشت-حافظه-memory-leak-چیست-و-چگونه-در-javascript-میتواند-رخ-دهد",
       "title": "نشت حافظه (memory leak) چیست و چگونه در JavaScript میتواند رخ دهد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "حافظه و مراجع"
       ],
@@ -470,7 +470,7 @@
       "id": "javascript-028",
       "slug": "weakmap-و-weakset-چیست-و-چه-تفاوتی-با-map-و-set-دارند",
       "title": "WeakMap و WeakSet چیست و چه تفاوتی با Map و Set دارند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -486,7 +486,7 @@
       "id": "javascript-029",
       "slug": "javascript-چگونه-descriptorهای-خصوصیت-شیء-را-مدیریت-میکند",
       "title": "JavaScript چگونه descriptorهای خصوصیت شیء را مدیریت میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -502,7 +502,7 @@
       "id": "javascript-030",
       "slug": "موتورهای-javascript-چگونه-اجرای-کد-را-بهینه-میکنند",
       "title": "موتورهای JavaScript چگونه اجرای کد را بهینه میکنند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -518,7 +518,7 @@
       "id": "javascript-031",
       "slug": "زمینه-اجرا-execution-context-در-javascript-چیست-و-اجزای-اصلی-آن-کدامند",
       "title": "زمینه اجرا (Execution Context) در JavaScript چیست و اجزای اصلی آن کدامند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -534,7 +534,7 @@
       "id": "javascript-032",
       "slug": "تفاوت-بین-مرحله-ایجاد-و-مرحله-اجرای-زمینه-اجرا-چیست",
       "title": "تفاوت بین مرحله ایجاد و مرحله اجرای زمینه اجرا چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -550,7 +550,7 @@
       "id": "javascript-033",
       "slug": "زنجیره-محدوده-scope-chain-در-حین-تفکیک-متغیر-چگونه-کار-میکند",
       "title": "زنجیره محدوده (Scope Chain) در حین تفکیک متغیر چگونه کار میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -566,7 +566,7 @@
       "id": "javascript-034",
       "slug": "تفاوت-بین-محدوده-لغوی-و-محدوده-پویا-چیست-و-javascript-از-کدام-استفاده-میکند",
       "title": "تفاوت بین محدوده لغوی و محدوده پویا چیست و JavaScript از کدام استفاده میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -582,7 +582,7 @@
       "id": "javascript-035",
       "slug": "closure-در-javascript-چیست-و-چگونه-با-محدوده-لغوی-مرتبط-است",
       "title": "Closure در JavaScript چیست و چگونه با محدوده لغوی مرتبط است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع",
         "زمینه اجرا و محدوده"
@@ -599,7 +599,7 @@
       "id": "javascript-036",
       "slug": "چرا-closureها-میتوانند-در-موقعیتهای-خاص-باعث-نشت-حافظه-شوند",
       "title": "چرا closureها میتوانند در موقعیتهای خاص باعث نشت حافظه شوند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "توابع",
         "حافظه و مراجع"
@@ -616,7 +616,7 @@
       "id": "javascript-037",
       "slug": "temporal-dead-zone-tdz-چیست-و-چگونه-با-let-و-const-کار-میکند",
       "title": "Temporal Dead Zone (TDZ) چیست و چگونه با let و const کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -632,7 +632,7 @@
       "id": "javascript-038",
       "slug": "محدوده-بلوک-چگونه-با-محدوده-تابع-تفاوت-دارد",
       "title": "محدوده بلوک چگونه با محدوده تابع تفاوت دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -648,7 +648,7 @@
       "id": "javascript-039",
       "slug": "داخلی-چه-اتفاقی-میافتد-وقتی-تابعی-از-تابع-دیگری-برگردانده-میشود",
       "title": "داخلی چه اتفاقی میافتد وقتی تابعی از تابع دیگری برگردانده میشود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "توابع",
         "زمینه اجرا و محدوده"
@@ -665,7 +665,7 @@
       "id": "javascript-040",
       "slug": "javascript-چگونه-جستجوی-متغیر-را-هنگام-وجود-چندین-محدوده-تودرتو-مدیریت-میکند",
       "title": "JavaScript چگونه جستجوی متغیر را هنگام وجود چندین محدوده تودرتو مدیریت میکند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "زمینه اجرا و محدوده"
       ],
@@ -681,7 +681,7 @@
       "id": "javascript-041",
       "slug": "تفاوت-بین-و-در-javascript-چیست",
       "title": "تفاوت بین == و === در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -697,7 +697,7 @@
       "id": "javascript-042",
       "slug": "متدهای-call-apply-و-bind-چگونه-کار-میکنند",
       "title": "متدهای call()، apply() و bind() چگونه کار میکنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -713,7 +713,7 @@
       "id": "javascript-043",
       "slug": "iife-در-javascript-چیست",
       "title": "IIFE در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -729,7 +729,7 @@
       "id": "javascript-044",
       "slug": "currying-در-javascript-چیست",
       "title": "currying در JavaScript چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "توابع"
       ],
@@ -745,7 +745,7 @@
       "id": "javascript-045",
       "slug": "تفاوت-بین-map-filter-و-reduce-چیست",
       "title": "تفاوت بین map()، filter() و reduce() چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -761,7 +761,7 @@
       "id": "javascript-046",
       "slug": "destructuring-در-javascript-چیست",
       "title": "destructuring در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -777,7 +777,7 @@
       "id": "javascript-047",
       "slug": "عملگرهای-spread-و-rest-در-javascript-چیست",
       "title": "عملگرهای spread و rest در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -793,7 +793,7 @@
       "id": "javascript-048",
       "slug": "تفاوت-بین-promise-all-promise-race-promise-allsettled-و-promise-any-چیست",
       "title": "تفاوت بین Promise.all، Promise.race، Promise.allSettled و Promise.any چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -809,7 +809,7 @@
       "id": "javascript-049",
       "slug": "event-delegation-در-javascript-چیست",
       "title": "event delegation در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -825,7 +825,7 @@
       "id": "javascript-050",
       "slug": "type-coercion-در-javascript-چیست",
       "title": "type coercion در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -841,7 +841,7 @@
       "id": "javascript-051",
       "slug": "optional-chaining-در-javascript-چیست",
       "title": "optional chaining (?.) در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -857,7 +857,7 @@
       "id": "javascript-052",
       "slug": "عملگر-nullish-coalescing-چیست-و-چه-تفاوتی-با-دارد",
       "title": "عملگر nullish coalescing (??) چیست و چه تفاوتی با || دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -873,7 +873,7 @@
       "id": "javascript-053",
       "slug": "عملگر-typeof-چگونه-کار-میکند-و-نکات-غیرمعمول-آن-چیست",
       "title": "عملگر typeof چگونه کار میکند و نکات غیرمعمول آن چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -889,7 +889,7 @@
       "id": "javascript-054",
       "slug": "عملگر-instanceof-چیست-و-چه-تفاوتی-با-typeof-دارد",
       "title": "عملگر instanceof چیست و چه تفاوتی با typeof دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -905,7 +905,7 @@
       "id": "javascript-055",
       "slug": "symbol-در-javascript-چیست-و-چه-زمانی-استفاده-میشود",
       "title": "Symbol در JavaScript چیست و چه زمانی استفاده میشود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -921,7 +921,7 @@
       "id": "javascript-056",
       "slug": "توابع-generator-در-javascript-چیست",
       "title": "توابع generator در JavaScript چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "توابع"
       ],
@@ -937,7 +937,7 @@
       "id": "javascript-057",
       "slug": "پروتکل-iterator-در-javascript-چیست",
       "title": "پروتکل iterator در JavaScript چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رفتار زبان"
       ],
@@ -953,7 +953,7 @@
       "id": "javascript-058",
       "slug": "proxy-در-javascript-چیست",
       "title": "Proxy در JavaScript چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -969,7 +969,7 @@
       "id": "javascript-059",
       "slug": "reflect-api-در-javascript-چیست",
       "title": "Reflect API در JavaScript چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -985,7 +985,7 @@
       "id": "javascript-060",
       "slug": "پارامترهای-پیش-فرض-در-javascript-چیست",
       "title": "پارامترهای پیش‌فرض در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "توابع"
       ],
@@ -1001,7 +1001,7 @@
       "id": "javascript-061",
       "slug": "object-keys-object-values-و-object-entries-چیست",
       "title": "Object.keys()، Object.values() و Object.entries() چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1017,7 +1017,7 @@
       "id": "javascript-062",
       "slug": "تفاوت-بین-object-assign-و-عملگر-spread-برای-ادغام-اشیاء-چیست",
       "title": "تفاوت بین Object.assign() و عملگر spread برای ادغام اشیاء چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1033,7 +1033,7 @@
       "id": "javascript-063",
       "slug": "تفاوت-بین-object-freeze-و-object-seal-چیست",
       "title": "تفاوت بین Object.freeze() و Object.seal() چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1049,7 +1049,7 @@
       "id": "javascript-064",
       "slug": "array-from-و-array-isarray-چیست",
       "title": "Array.from() و Array.isArray() چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -1065,7 +1065,7 @@
       "id": "javascript-065",
       "slug": "flat-و-flatmap-در-javascript-چیست",
       "title": "flat() و flatMap() در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -1081,7 +1081,7 @@
       "id": "javascript-066",
       "slug": "find-و-findindex-در-javascript-چیست",
       "title": "find() و findIndex() در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -1097,7 +1097,7 @@
       "id": "javascript-067",
       "slug": "some-و-every-در-javascript-چیست",
       "title": "some() و every() در JavaScript چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "اصول اولیه"
       ],
@@ -1113,7 +1113,7 @@
       "id": "javascript-068",
       "slug": "array-sort-چگونه-کار-میکند-و-مشکلات-رایج-آن-چیست",
       "title": "Array.sort() چگونه کار میکند و مشکلات رایج آن چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -1129,7 +1129,7 @@
       "id": "javascript-069",
       "slug": "memoization-در-javascript-چیست",
       "title": "memoization در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -1145,7 +1145,7 @@
       "id": "javascript-070",
       "slug": "انواع-خطا-در-javascript-چیست-و-چگونه-میتوان-خطای-سفارشی-ساخت",
       "title": "انواع خطا در JavaScript چیست و چگونه میتوان خطای سفارشی ساخت؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1161,7 +1161,7 @@
       "id": "javascript-071",
       "slug": "debounce-در-javascript-چیست",
       "title": "debounce در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1177,7 +1177,7 @@
       "id": "javascript-072",
       "slug": "throttle-در-javascript-چیست",
       "title": "throttle در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1193,7 +1193,7 @@
       "id": "javascript-073",
       "slug": "تفاوت-بین-event-bubbling-و-event-capturing-چیست",
       "title": "تفاوت بین event bubbling و event capturing چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1209,7 +1209,7 @@
       "id": "javascript-074",
       "slug": "تفاوت-بین-localstorage-sessionstorage-و-کوکیها-چیست",
       "title": "تفاوت بین localStorage، sessionStorage و کوکیها چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -1225,7 +1225,7 @@
       "id": "javascript-075",
       "slug": "تفاوت-بین-settimeout-و-setinterval-چیست",
       "title": "تفاوت بین setTimeout و setInterval چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1241,7 +1241,7 @@
       "id": "javascript-076",
       "slug": "requestanimationframe-در-javascript-چیست",
       "title": "requestAnimationFrame در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1257,7 +1257,7 @@
       "id": "javascript-077",
       "slug": "توابع-pure-و-immutability-در-javascript-چیست",
       "title": "توابع pure و immutability در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -1273,7 +1273,7 @@
       "id": "javascript-078",
       "slug": "ترکیب-توابع-function-composition-در-javascript-چیست",
       "title": "ترکیب توابع (function composition) در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -1289,7 +1289,7 @@
       "id": "javascript-079",
       "slug": "web-workers-در-javascript-چیست",
       "title": "Web Workers در JavaScript چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -1305,7 +1305,7 @@
       "id": "javascript-080",
       "slug": "مدیریت-خطا-با-async-await-چگونه-کار-میکند",
       "title": "مدیریت خطا با async/await چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1321,7 +1321,7 @@
       "id": "javascript-081",
       "slug": "کلاس-های-پنهان-در-موتورهای-جاوااسکریپت-چیستند-و-چه-تأثیری-بر-کارایی-دارند",
       "title": "کلاس‌های پنهان در موتورهای جاوااسکریپت چیستند و چه تأثیری بر کارایی دارند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -1337,7 +1337,7 @@
       "id": "javascript-082",
       "slug": "inline-caching-چیست-و-چطور-دسترسی-به-ویژگی-را-بهینه-می-کند",
       "title": "Inline caching چیست و چطور دسترسی به ویژگی را بهینه می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "موتور و زمان اجرا"
       ],
@@ -1353,7 +1353,7 @@
       "id": "javascript-083",
       "slug": "جمع-آوری-زباله-نسلی-در-موتورهای-مدرن-جاوااسکریپت-چگونه-کار-می-کند",
       "title": "جمع‌آوری زباله نسلی در موتورهای مدرن جاوااسکریپت چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "حافظه و مراجع",
         "موتور و زمان اجرا"
@@ -1370,7 +1370,7 @@
       "id": "javascript-084",
       "slug": "تفاوت-partial-application-با-currying-چیست",
       "title": "تفاوت partial application با currying چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -1386,7 +1386,7 @@
       "id": "javascript-085",
       "slug": "توابع-مرتبه-بالاتر-higher-order-functions-چیستند-و-چرا-اهمیت-دارند",
       "title": "توابع مرتبه بالاتر (Higher-order functions) چیستند و چرا اهمیت دارند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "توابع"
       ],
@@ -1402,7 +1402,7 @@
       "id": "javascript-086",
       "slug": "شفافیت-ارجاعی-referential-transparency-در-جاوااسکریپت-چیست",
       "title": "شفافیت ارجاعی (Referential transparency) در جاوااسکریپت چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "توابع"
       ],
@@ -1418,7 +1418,7 @@
       "id": "javascript-087",
       "slug": "starvation-در-event-loop-جاوااسکریپت-چیست",
       "title": "Starvation در event loop جاوااسکریپت چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1434,7 +1434,7 @@
       "id": "javascript-088",
       "slug": "چرا-typeof-null-برابر-با-object-است",
       "title": "چرا `typeof null` برابر با \"object\" است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1450,7 +1450,7 @@
       "id": "javascript-089",
       "slug": "nan-چیست-و-چرا-nan-nan-است",
       "title": "NaN چیست و چرا `NaN !== NaN` است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1466,7 +1466,7 @@
       "id": "javascript-090",
       "slug": "structuredclone-چیست-و-چه-زمانی-باید-استفاده-شود",
       "title": "structuredClone چیست و چه زمانی باید استفاده شود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1482,7 +1482,7 @@
       "id": "javascript-091",
       "slug": "الگوی-observer-چیست-و-چگونه-در-جاوااسکریپت-پیاده-سازی-می-شود",
       "title": "الگوی Observer چیست و چگونه در جاوااسکریپت پیاده‌سازی می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1498,7 +1498,7 @@
       "id": "javascript-092",
       "slug": "تفاوت-بین-deep-equality-و-reference-equality-چیست",
       "title": "تفاوت بین deep equality و reference equality چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1514,7 +1514,7 @@
       "id": "javascript-093",
       "slug": "getter-و-setter-چیستند-و-چگونه-به-صورت-داخلی-کار-می-کنند",
       "title": "getter و setter چیستند و چگونه به صورت داخلی کار می‌کنند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1530,7 +1530,7 @@
       "id": "javascript-094",
       "slug": "symbol-های-well-known-در-جاوااسکریپت-چیستند",
       "title": "Symbol‌های well-known در جاوااسکریپت چیستند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1546,7 +1546,7 @@
       "id": "javascript-095",
       "slug": "async-iteration-چیست-و-for-await-of-چگونه-کار-می-کند",
       "title": "async iteration چیست و `for await...of` چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1562,7 +1562,7 @@
       "id": "javascript-096",
       "slug": "تفاوت-بین-object-create-و-نمونه-سازی-مبتنی-بر-class-چیست",
       "title": "تفاوت بین Object.create() و نمونه‌سازی مبتنی بر class چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اشیاء و داخلیها"
       ],
@@ -1578,7 +1578,7 @@
       "id": "javascript-097",
       "slug": "دام-های-automatic-semicolon-insertion-asi-چیستند",
       "title": "دام‌های Automatic Semicolon Insertion (ASI) چیستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1594,7 +1594,7 @@
       "id": "javascript-098",
       "slug": "مرورگر-چگونه-رندر-را-بین-task-ها-در-event-loop-مدیریت-می-کند",
       "title": "مرورگر چگونه رندر را بین task‌ها در event loop مدیریت می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "ناهمزمان و حلقه رویداد"
       ],
@@ -1610,7 +1610,7 @@
       "id": "javascript-099",
       "slug": "تفاوت-بین-for-in-و-for-of-چیست",
       "title": "تفاوت بین `for...in` و `for...of` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رفتار زبان"
       ],
@@ -1626,7 +1626,7 @@
       "id": "javascript-100",
       "slug": "tagged-template-literals-چیستند-و-چگونه-کار-می-کنند",
       "title": "Tagged template literals چیستند و چگونه کار می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -1642,7 +1642,7 @@
       "id": "javascript-101",
       "slug": "import-داینامیک-چیست-و-چه-تفاوتی-با-import-استاتیک-دارد",
       "title": "`import()` داینامیک چیست و چه تفاوتی با import استاتیک دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],
@@ -1658,7 +1658,7 @@
       "id": "javascript-102",
       "slug": "عملگرهای-logical-assignment-در-جاوااسکریپت-چیستند",
       "title": "عملگرهای logical assignment در جاوااسکریپت چیستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "اصول اولیه"
       ],

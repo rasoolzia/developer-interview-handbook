@@ -32,9 +32,9 @@
   "stats": {
     "total": 120,
     "byDifficulty": {
-      "easy": 20,
-      "medium": 68,
-      "hard": 32
+      "آسان": 20,
+      "متوسط": 68,
+      "سخت": 32
     }
   },
   "questions": [
@@ -42,7 +42,7 @@
       "id": "vue-001",
       "slug": "vue-js-چیست-و-چه-مشکلی-را-حل-می-کند",
       "title": "Vue.js چیست و چه مشکلی را حل می‌کند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -58,7 +58,7 @@
       "id": "vue-002",
       "slug": "ویژگی-های-اصلی-vue-js-چیست",
       "title": "ویژگی‌های اصلی Vue.js چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -74,7 +74,7 @@
       "id": "vue-003",
       "slug": "vue-با-react-و-angular-چه-تفاوتی-دارد",
       "title": "Vue با React و Angular چه تفاوتی دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -90,7 +90,7 @@
       "id": "vue-004",
       "slug": "vue-instance-چیست",
       "title": "Vue instance چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -106,7 +106,7 @@
       "id": "vue-005",
       "slug": "تفاوت-vue-2-و-vue-3-چیست",
       "title": "تفاوت Vue 2 و Vue 3 چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -122,7 +122,7 @@
       "id": "vue-006",
       "slug": "واکنش-پذیری-vue-چیست-و-چرا-مهم-است",
       "title": "واکنش‌پذیری Vue چیست و چرا مهم است؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -138,7 +138,7 @@
       "id": "vue-007",
       "slug": "vue-چگونه-وابستگی-های-واکنش-پذیر-را-ردیابی-می-کند",
       "title": "Vue چگونه وابستگی‌های واکنش‌پذیر را ردیابی می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -154,7 +154,7 @@
       "id": "vue-008",
       "slug": "ref-و-reactive-در-vue-3-چیست",
       "title": "`ref` و `reactive` در Vue 3 چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -170,7 +170,7 @@
       "id": "vue-009",
       "slug": "تفاوت-ref-و-reactive-چیست",
       "title": "تفاوت `ref` و `reactive` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -186,7 +186,7 @@
       "id": "vue-010",
       "slug": "ویژگی-های-محاسباتی-computed-properties-چیست-و-با-متدها-چه-تفاوتی-دارند",
       "title": "ویژگی‌های محاسباتی (Computed properties) چیست و با متدها چه تفاوتی دارند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -202,7 +202,7 @@
       "id": "vue-011",
       "slug": "کامپوننت-های-vue-چیست-و-چرا-مهم-هستند",
       "title": "کامپوننت‌های Vue چیست و چرا مهم هستند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -218,7 +218,7 @@
       "id": "vue-012",
       "slug": "props-در-vue-چگونه-کار-می-کنند",
       "title": "props در Vue چگونه کار می‌کنند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -234,7 +234,7 @@
       "id": "vue-013",
       "slug": "اعتبارسنجی-prop-در-vue-چیست",
       "title": "اعتبارسنجی prop در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -250,7 +250,7 @@
       "id": "vue-014",
       "slug": "slot-ها-در-vue-چیست-و-چرا-مفید-هستند",
       "title": "slot‌ها در Vue چیست و چرا مفید هستند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -266,7 +266,7 @@
       "id": "vue-015",
       "slug": "scoped-slot-ها-چیست-و-با-slot-های-معمولی-چه-تفاوتی-دارند",
       "title": "scoped slot‌ها چیست و با slot‌های معمولی چه تفاوتی دارند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -282,7 +282,7 @@
       "id": "vue-016",
       "slug": "composition-api-در-vue-چیست-و-چرا-معرفی-شد",
       "title": "Composition API در Vue چیست و چرا معرفی شد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -298,7 +298,7 @@
       "id": "vue-017",
       "slug": "تابع-setup-در-vue-چیست",
       "title": "تابع `setup()` در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -314,7 +314,7 @@
       "id": "vue-018",
       "slug": "composable-در-vue-چیست",
       "title": "composable در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -330,7 +330,7 @@
       "id": "vue-019",
       "slug": "تفاوت-watch-و-watcheffect-چیست",
       "title": "تفاوت `watch` و `watchEffect` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -346,7 +346,7 @@
       "id": "vue-020",
       "slug": "lifecycle-hooks-در-vue-چیست",
       "title": "lifecycle hooks در Vue چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "چرخه حیات"
       ],
@@ -362,7 +362,7 @@
       "id": "vue-021",
       "slug": "رایجترین-lifecycle-hooks-در-vue-3-کدامند",
       "title": "رایجترین lifecycle hooks در Vue 3 کدامند؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "چرخه حیات"
       ],
@@ -378,7 +378,7 @@
       "id": "vue-022",
       "slug": "v-if-چیست-و-با-v-show-چه-تفاوتی-دارد",
       "title": "`v-if` چیست و با `v-show` چه تفاوتی دارد؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -394,7 +394,7 @@
       "id": "vue-023",
       "slug": "v-for-چیست-و-vue-چگونه-به-روزرسانی-های-لیست-را-ردیابی-میکند",
       "title": "`v-for` چیست و Vue چگونه به‌روزرسانی های لیست را ردیابی میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -410,7 +410,7 @@
       "id": "vue-024",
       "slug": "v-model-چیست-و-داخلی-چگونه-کار-میکند",
       "title": "`v-model` چیست و داخلی چگونه کار میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -426,7 +426,7 @@
       "id": "vue-025",
       "slug": "دستورات-سفارشی-custom-directives-در-vue-چیست",
       "title": "دستورات سفارشی (Custom directives) در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -442,7 +442,7 @@
       "id": "vue-026",
       "slug": "provide-و-inject-در-vue-چیست",
       "title": "`provide` و `inject` در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -458,7 +458,7 @@
       "id": "vue-027",
       "slug": "کامپوننت-های-پویا-dynamic-components-در-vue-چیست",
       "title": "کامپوننت های پویا (Dynamic components) در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -474,7 +474,7 @@
       "id": "vue-028",
       "slug": "کامپوننت-keepalive-در-vue-چیست",
       "title": "کامپوننت `<KeepAlive>` در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -490,7 +490,7 @@
       "id": "vue-029",
       "slug": "teleport-در-vue-چیست",
       "title": "Teleport در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -506,7 +506,7 @@
       "id": "vue-030",
       "slug": "suspense-در-vue-چیست",
       "title": "Suspense در Vue چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -522,7 +522,7 @@
       "id": "vue-031",
       "slug": "script-setup-در-vue-3-چیست",
       "title": "`<script setup>` در Vue 3 چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -538,7 +538,7 @@
       "id": "vue-032",
       "slug": "toref-و-torefs-چیست-و-چه-زمانی-باید-از-آنها-استفاده-کرد",
       "title": "`toRef()` و `toRefs()` چیست و چه زمانی باید از آنها استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -554,7 +554,7 @@
       "id": "vue-033",
       "slug": "هدف-computed-در-vue-چیست",
       "title": "هدف `computed()` در Vue چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -570,7 +570,7 @@
       "id": "vue-034",
       "slug": "defineemits-چیست-و-چگونه-در-vue-3-event-های-سفارشی-emit-می-کنید",
       "title": "`defineEmits()` چیست و چگونه در Vue 3 event‌های سفارشی emit می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -586,7 +586,7 @@
       "id": "vue-035",
       "slug": "dom-مجازی-چیست-و-vue-چگونه-از-آن-استفاده-میکند",
       "title": "DOM مجازی چیست و Vue چگونه از آن استفاده میکند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -602,7 +602,7 @@
       "id": "vue-036",
       "slug": "vue-router-چیست-و-چگونه-مسیریابی-را-در-یک-اپلیکیشن-vue-تنظیم-می-کنید",
       "title": "Vue Router چیست و چگونه مسیریابی را در یک اپلیکیشن Vue تنظیم می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -618,7 +618,7 @@
       "id": "vue-037",
       "slug": "توابع-رندر-render-functions-در-vue-چیست",
       "title": "توابع رندر (Render functions) در Vue چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -634,7 +634,7 @@
       "id": "vue-038",
       "slug": "navigation-guard-ها-در-vue-router-چیست",
       "title": "Navigation guard‌ها در Vue Router چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -650,7 +650,7 @@
       "id": "vue-039",
       "slug": "v-model-روی-کامپوننت-های-سفارشی-در-vue-3-چگونه-کار-می-کند",
       "title": "`v-model` روی کامپوننت‌های سفارشی در Vue 3 چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -666,7 +666,7 @@
       "id": "vue-040",
       "slug": "هدف-ویژگی-key-در-لیستهای-vue-چیست",
       "title": "هدف ویژگی `key` در لیستهای Vue چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -682,7 +682,7 @@
       "id": "vue-041",
       "slug": "کامپوننتهای-async-در-vue-چیست",
       "title": "کامپوننتهای async در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -698,7 +698,7 @@
       "id": "vue-042",
       "slug": "تقسیمبندی-کد-code-splitting-در-اپلیکیشنهای-vue-چیست",
       "title": "تقسیمبندی کد (Code splitting) در اپلیکیشنهای Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -714,7 +714,7 @@
       "id": "vue-043",
       "slug": "pinia-چیست-و-چرا-در-اپلیکیشنهای-vue-استفاده-میشود",
       "title": "Pinia چیست و چرا در اپلیکیشنهای Vue استفاده میشود؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -730,7 +730,7 @@
       "id": "vue-044",
       "slug": "رندرینگ-سمت-سرور-ssr-در-vue-چیست",
       "title": "رندرینگ سمت سرور (SSR) در Vue چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -746,7 +746,7 @@
       "id": "vue-045",
       "slug": "hydration-در-vue-ssr-چیست",
       "title": "hydration در Vue SSR چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -762,7 +762,7 @@
       "id": "vue-046",
       "slug": "کامپوننت-transition-در-vue-چیست-و-چگونه-کار-می-کند",
       "title": "کامپوننت `<Transition>` در Vue چیست و چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -778,7 +778,7 @@
       "id": "vue-047",
       "slug": "vue-چگونه-خطاها-را-مدیریت-می-کند-و-onerrorcaptured-چیست",
       "title": "Vue چگونه خطاها را مدیریت می‌کند و `onErrorCaptured` چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -794,7 +794,7 @@
       "id": "vue-048",
       "slug": "shallowref-و-shallowreactive-در-vue-چیست",
       "title": "`shallowRef()` و `shallowReactive()` در Vue چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -810,7 +810,7 @@
       "id": "vue-049",
       "slug": "defineexpose-در-vue-3-چیست-و-چرا-به-آن-نیاز-است",
       "title": "`defineExpose()` در Vue 3 چیست و چرا به آن نیاز است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -826,7 +826,7 @@
       "id": "vue-050",
       "slug": "ناوبری-برنامه-نویسی-programmatic-navigation-در-vue-router-چیست",
       "title": "ناوبری برنامه‌نویسی (Programmatic navigation) در Vue Router چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -842,7 +842,7 @@
       "id": "vue-051",
       "slug": "nexttick-چیست-و-چرا-در-vue-به-آن-نیاز-است",
       "title": "`nextTick()` چیست و چرا در Vue به آن نیاز است؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -858,7 +858,7 @@
       "id": "vue-052",
       "slug": "گزینه-های-deep-immediate-و-flush-در-watch-چیست",
       "title": "گزینه‌های `deep`، `immediate` و `flush` در `watch` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -874,7 +874,7 @@
       "id": "vue-053",
       "slug": "markraw-و-toraw-چیست-و-چه-زمانی-باید-از-آن-ها-استفاده-کرد",
       "title": "`markRaw()` و `toRaw()` چیست و چه زمانی باید از آن‌ها استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -890,7 +890,7 @@
       "id": "vue-054",
       "slug": "readonly-در-vue-چیست-و-چه-زمانی-باید-از-آن-استفاده-کرد",
       "title": "`readonly()` در Vue چیست و چه زمانی باید از آن استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -906,7 +906,7 @@
       "id": "vue-055",
       "slug": "سیستم-plugin-در-vue-چیست-و-چگونه-یک-plugin-می-سازید",
       "title": "سیستم plugin در Vue چیست و چگونه یک plugin می‌سازید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -922,7 +922,7 @@
       "id": "vue-056",
       "slug": "effectscope-چیست-و-چه-زمانی-مفید-است",
       "title": "`effectScope()` چیست و چه زمانی مفید است؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -938,7 +938,7 @@
       "id": "vue-057",
       "slug": "deep-slotted-و-global-در-scoped-styles-چیست",
       "title": "`:deep()`، `:slotted()` و `:global()` در scoped styles چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -954,7 +954,7 @@
       "id": "vue-058",
       "slug": "چگونه-route-ها-را-در-vue-router-به-صورت-lazy-load-می-کنید",
       "title": "چگونه route‌ها را در Vue Router به صورت lazy-load می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -970,7 +970,7 @@
       "id": "vue-059",
       "slug": "کامپوننت-های-functional-در-vue-3-چیست-و-چه-زمانی-باید-از-آن-ها-استفاده-کرد",
       "title": "کامپوننت‌های functional در Vue 3 چیست و چه زمانی باید از آن‌ها استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -986,7 +986,7 @@
       "id": "vue-060",
       "slug": "useattrs-و-useslots-در-composition-api-چیست",
       "title": "`useAttrs()` و `useSlots()` در Composition API چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1002,7 +1002,7 @@
       "id": "vue-061",
       "slug": "چگونه-side-effect-ها-را-داخل-watcheffect-پاکسازی-می-کنید",
       "title": "چگونه side effect‌ها را داخل `watchEffect` پاکسازی می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1018,7 +1018,7 @@
       "id": "vue-062",
       "slug": "named-view-ها-در-vue-router-چیست",
       "title": "Named view‌ها در Vue Router چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1034,7 +1034,7 @@
       "id": "vue-063",
       "slug": "app-provide-با-provide-در-سطح-کامپوننت-چه-تفاوتی-دارد",
       "title": "`app.provide()` با `provide` در سطح کامپوننت چه تفاوتی دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1050,7 +1050,7 @@
       "id": "vue-064",
       "slug": "سیستم-واکنش-پذیری-vue-3-داخلا-با-javascript-proxy-چگونه-کار-می-کند",
       "title": "سیستم واکنش‌پذیری Vue 3 داخلاً با JavaScript Proxy چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1066,7 +1066,7 @@
       "id": "vue-065",
       "slug": "کامپوننت-های-recursive-در-vue-چیست-و-چگونه-آن-ها-را-پیاده-سازی-می-کنید",
       "title": "کامپوننت‌های recursive در Vue چیست و چگونه آن‌ها را پیاده‌سازی می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -1082,7 +1082,7 @@
       "id": "vue-066",
       "slug": "تفاوت-بین-هوک-های-lifecycle-به-نام-های-created-onbeforemount-و-mounted-چیست",
       "title": "تفاوت بین هوک‌های lifecycle به نام‌های `created`، `onBeforeMount` و `mounted` چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "چرخه حیات"
       ],
@@ -1098,7 +1098,7 @@
       "id": "vue-067",
       "slug": "هنگام-mount-شدن-یک-کامپوننت-vue-3-چه-اتفاقی-می-افتد",
       "title": "هنگام mount شدن یک کامپوننت Vue 3 چه اتفاقی می‌افتد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -1114,7 +1114,7 @@
       "id": "vue-068",
       "slug": "تفاوت-های-کلیدی-بین-vuex-و-pinia-چیست",
       "title": "تفاوت‌های کلیدی بین Vuex و Pinia چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1130,7 +1130,7 @@
       "id": "vue-069",
       "slug": "پارامترهای-dynamic-route-در-vue-router-چگونه-کار-می-کنند",
       "title": "پارامترهای dynamic route در Vue Router چگونه کار می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1146,7 +1146,7 @@
       "id": "vue-070",
       "slug": "تفاوت-route-params-و-query-params-در-vue-router-چیست",
       "title": "تفاوت route params و query params در Vue Router چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1162,7 +1162,7 @@
       "id": "vue-071",
       "slug": "vue-چگونه-templateهای-vue-را-به-render-function-تبدیل-می-کند",
       "title": "Vue چگونه templateهای `.vue` را به render function تبدیل می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -1178,7 +1178,7 @@
       "id": "vue-072",
       "slug": "vue-scheduler-چگونه-به-روزرسانی-های-reactive-را-دسته-بندی-و-به-تأخیر-می-اندازد",
       "title": "Vue scheduler چگونه به‌روزرسانی‌های reactive را دسته‌بندی و به تأخیر می‌اندازد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1194,7 +1194,7 @@
       "id": "vue-073",
       "slug": "ردیابی-effect-در-vue-3-از-نظر-داخلی-چگونه-کار-می-کند-activeeffect-و-مجموعه-های-d",
       "title": "ردیابی effect در Vue 3 از نظر داخلی چگونه کار می‌کند (activeEffect و مجموعه‌های dependency)?",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1210,7 +1210,7 @@
       "id": "vue-074",
       "slug": "تفاوت-client-side-rendering-csr-و-server-side-rendering-ssr-در-vue-چیست",
       "title": "تفاوت Client-Side Rendering (CSR) و Server-Side Rendering (SSR) در Vue چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1226,7 +1226,7 @@
       "id": "vue-075",
       "slug": "الگوهای-پیشرفته-provide-inject-کلیدهای-symbol-injection-reactive-و-مقادیر-پیش-فر",
       "title": "الگوهای پیشرفته `provide` / `inject` — کلیدهای Symbol، injection reactive و مقادیر پیش‌فرض چیست؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1242,7 +1242,7 @@
       "id": "vue-076",
       "slug": "pipeline-رندرینگ-vue-از-تغییر-state-تا-به-روزرسانی-dom-چگونه-است",
       "title": "pipeline رندرینگ Vue از تغییر state تا به‌روزرسانی DOM چگونه است؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -1258,7 +1258,7 @@
       "id": "vue-077",
       "slug": "الگوهای-مختلف-ارتباط-بین-کامپوننت-ها-در-vue-کدامند",
       "title": "الگوهای مختلف ارتباط بین کامپوننت‌ها در Vue کدامند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -1274,7 +1274,7 @@
       "id": "vue-078",
       "slug": "teleport-چیست-و-چه-زمانی-باید-از-آن-استفاده-کرد",
       "title": "`<Teleport>` چیست و چه زمانی باید از آن استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1290,7 +1290,7 @@
       "id": "vue-079",
       "slug": "suspense-چیست-و-چگونه-async-componentها-را-مدیریت-می-کند",
       "title": "`<Suspense>` چیست و چگونه async componentها را مدیریت می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1306,7 +1306,7 @@
       "id": "vue-080",
       "slug": "modifier-های-v-model-چیست-و-چگونه-modifier-سفارشی-می-سازید",
       "title": "modifier های `v-model` چیست و چگونه modifier سفارشی می‌سازید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -1322,7 +1322,7 @@
       "id": "vue-081",
       "slug": "transitiongroup-چیست-و-چه-تفاوتی-با-transition-دارد",
       "title": "`<TransitionGroup>` چیست و چه تفاوتی با `<Transition>` دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1338,7 +1338,7 @@
       "id": "vue-082",
       "slug": "چگونه-از-typescript-برای-props-و-emits-در-vue-3-استفاده-می-کنید",
       "title": "چگونه از TypeScript برای props و emits در Vue 3 استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1354,7 +1354,7 @@
       "id": "vue-083",
       "slug": "composableها-در-vue-3-چیست-و-بهترین-روش-های-نوشتن-آن-ها-کدامند",
       "title": "composableها در Vue 3 چیست و بهترین روش‌های نوشتن آن‌ها کدامند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1370,7 +1370,7 @@
       "id": "vue-084",
       "slug": "template-refها-چیست-و-چگونه-از-آن-ها-در-composition-api-استفاده-می-کنید",
       "title": "template refها چیست و چگونه از آن‌ها در Composition API استفاده می‌کنید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "Composition API"
       ],
@@ -1386,7 +1386,7 @@
       "id": "vue-085",
       "slug": "گزینه-flush-در-watch-چیست-و-هر-زمان-بندی-flush-ک-ی-اجرا-می-شود",
       "title": "گزینه `flush` در `watch` چیست و هر زمان‌بندی flush کِی اجرا می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1402,7 +1402,7 @@
       "id": "vue-086",
       "slug": "defineoptions-چیست-و-چه-مشکلاتی-را-حل-می-کند",
       "title": "`defineOptions` چیست و چه مشکلاتی را حل می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1418,7 +1418,7 @@
       "id": "vue-087",
       "slug": "چه-چیزی-باعث-hydration-mismatch-در-vue-ssr-می-شود-و-چگونه-آن-را-برطرف-می-کنید",
       "title": "چه چیزی باعث hydration mismatch در Vue SSR می‌شود و چگونه آن را برطرف می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1434,7 +1434,7 @@
       "id": "vue-088",
       "slug": "vue-چگونه-mutation-های-آرایه-را-به-صورت-reactive-مدیریت-می-کند",
       "title": "Vue چگونه mutation‌های آرایه را به‌صورت reactive مدیریت می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1450,7 +1450,7 @@
       "id": "vue-089",
       "slug": "shallowref-چیست-و-چه-زمانی-باید-به-جای-ref-استفاده-کرد",
       "title": "`shallowRef` چیست و چه زمانی باید به جای `ref` استفاده کرد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1466,7 +1466,7 @@
       "id": "vue-090",
       "slug": "کامپوننت-های-multi-root-fragment-ها-در-vue-3-چیست",
       "title": "کامپوننت‌های multi-root (fragment‌ها) در Vue 3 چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -1482,7 +1482,7 @@
       "id": "vue-091",
       "slug": "app-config-errorhandler-چیست-و-چگونه-از-آن-برای-خطاهای-global-استفاده-می-کنید",
       "title": "`app.config.errorHandler` چیست و چگونه از آن برای خطاهای global استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1498,7 +1498,7 @@
       "id": "vue-092",
       "slug": "تفاوت-v-if-و-v-show-در-سطح-dom-چیست",
       "title": "تفاوت `v-if` و `v-show` در سطح DOM چیست؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -1514,7 +1514,7 @@
       "id": "vue-093",
       "slug": "الگوریتم-diffing-patching-virtual-dom-در-vue-چگونه-کار-می-کند",
       "title": "الگوریتم diffing (patching) virtual DOM در Vue چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -1530,7 +1530,7 @@
       "id": "vue-094",
       "slug": "options-api-در-مقابل-composition-api-چه-زمانی-کدام-را-انتخاب-کنید",
       "title": "Options API در مقابل Composition API — چه زمانی کدام را انتخاب کنید؟",
-      "difficulty": "easy",
+      "difficulty": "آسان",
       "categories": [
         "مبانی Vue"
       ],
@@ -1546,7 +1546,7 @@
       "id": "vue-095",
       "slug": "چگونه-code-splitting-در-سطح-route-با-dynamic-import-در-vue-router-پیاده-سازی-می",
       "title": "چگونه code splitting در سطح route با dynamic import در Vue Router پیاده‌سازی می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1562,7 +1562,7 @@
       "id": "vue-096",
       "slug": "computed-setter-در-vue-چیست-و-چه-زمانی-از-آن-استفاده-می-کنید",
       "title": "computed setter در Vue چیست و چه زمانی از آن استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1578,7 +1578,7 @@
       "id": "vue-097",
       "slug": "keepalive-چگونه-کار-می-کند-و-چه-lifecycle-hookهایی-اضافه-می-کند",
       "title": "`<KeepAlive>` چگونه کار می‌کند و چه lifecycle hookهایی اضافه می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1594,7 +1594,7 @@
       "id": "vue-098",
       "slug": "onserverprefetch-چیست-و-چگونه-در-vue-ssr-استفاده-می-شود",
       "title": "`onServerPrefetch` چیست و چگونه در Vue SSR استفاده می‌شود؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1610,7 +1610,7 @@
       "id": "vue-099",
       "slug": "چگونه-کامپوننت-های-vue-را-با-vue-test-utils-تست-می-کنید",
       "title": "چگونه کامپوننت‌های Vue را با Vue Test Utils تست می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1626,7 +1626,7 @@
       "id": "vue-100",
       "slug": "چه-استراتژی-هایی-برای-بهینه-سازی-عملکرد-یک-اپلیکیشن-vue-وجود-دارد",
       "title": "چه استراتژی‌هایی برای بهینه‌سازی عملکرد یک اپلیکیشن Vue وجود دارد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1642,7 +1642,7 @@
       "id": "vue-101",
       "slug": "ماکرو-definemodel-چیست-و-چگونه-two-way-binding-را-ساده-می-کند",
       "title": "ماکرو `defineModel` چیست و چگونه two-way binding را ساده می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1658,7 +1658,7 @@
       "id": "vue-102",
       "slug": "چندین-binding-v-model-روی-یک-کامپوننت-چگونه-کار-می-کنند",
       "title": "چندین binding `v-model` روی یک کامپوننت چگونه کار می‌کنند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -1674,7 +1674,7 @@
       "id": "vue-103",
       "slug": "customref-چیست-و-چه-زمانی-از-آن-استفاده-می-کنید",
       "title": "`customRef` چیست و چه زمانی از آن استفاده می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1690,7 +1690,7 @@
       "id": "vue-104",
       "slug": "css-v-bind-در-بلاک-های-style-چیست-و-چگونه-کار-می-کند",
       "title": "CSS `v-bind` در بلاک‌های `<style>` چیست و چگونه کار می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مبانی Vue"
       ],
@@ -1706,7 +1706,7 @@
       "id": "vue-105",
       "slug": "css-module-ها-در-vue-sfcها-چیست",
       "title": "CSS Module‌ها در Vue SFCها چیست؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مبانی Vue"
       ],
@@ -1722,7 +1722,7 @@
       "id": "vue-106",
       "slug": "scoped-css-در-vue-از-نظر-داخلی-چگونه-کار-می-کند",
       "title": "Scoped CSS در Vue از نظر داخلی چگونه کار می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "رندرینگ و داخلی‌ها"
       ],
@@ -1738,7 +1738,7 @@
       "id": "vue-107",
       "slug": "directive-v-memo-چیست-و-چگونه-رندرینگ-را-بهینه-می-کند",
       "title": "directive `v-memo` چیست و چگونه رندرینگ را بهینه می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "بهینه‌سازی عملکرد"
       ],
@@ -1754,7 +1754,7 @@
       "id": "vue-108",
       "slug": "defineasynccomponent-چه-گزینه-هایی-برای-حالت-های-loading-error-و-timeout-پشتیبان",
       "title": "`defineAsyncComponent` چه گزینه‌هایی برای حالت‌های loading، error و timeout پشتیبانی می‌کند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "کامپوننت‌ها"
       ],
@@ -1770,7 +1770,7 @@
       "id": "vue-109",
       "slug": "تمام-lifecycle-hookهای-موجود-در-یک-directive-سفارشی-vue-کدامند",
       "title": "تمام lifecycle hookهای موجود در یک directive سفارشی Vue کدامند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "دستورات (Directives)"
       ],
@@ -1786,7 +1786,7 @@
       "id": "vue-110",
       "slug": "چگونه-از-patch-subscribe-و-onaction-در-pinia-استفاده-می-کنید",
       "title": "چگونه از `$patch`، `$subscribe` و `$onAction` در Pinia استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1802,7 +1802,7 @@
       "id": "vue-111",
       "slug": "چگونه-pinia-storeها-می-توانند-از-storeهای-دیگر-استفاده-کنند-ترکیب-store",
       "title": "چگونه Pinia storeها می‌توانند از storeهای دیگر استفاده کنند (ترکیب store)?",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مدیریت State"
       ],
@@ -1818,7 +1818,7 @@
       "id": "vue-112",
       "slug": "isref-isreactive-unref-و-tovalue-چیستند-و-چه-زمانی-از-آن-ها-استفاده-می-کنید",
       "title": "`isRef`، `isReactive`، `unref` و `toValue` چیستند و چه زمانی از آن‌ها استفاده می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "سیستم واکنش‌پذیری"
       ],
@@ -1834,7 +1834,7 @@
       "id": "vue-113",
       "slug": "فیلدهای-meta-در-vue-router-چیست-و-چگونه-استفاده-می-شوند",
       "title": "فیلدهای meta در Vue Router چیست و چگونه استفاده می‌شوند؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1850,7 +1850,7 @@
       "id": "vue-114",
       "slug": "چگونه-scroll-behavior-در-vue-router-را-کنترل-می-کنید",
       "title": "چگونه scroll behavior در Vue Router را کنترل می‌کنید؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "مسیریابی (Routing)"
       ],
@@ -1866,7 +1866,7 @@
       "id": "vue-115",
       "slug": "ssr-streaming-در-vue-چیست-و-چگونه-عملکرد-را-بهبود-می-بخشد",
       "title": "SSR streaming در Vue چیست و چگونه عملکرد را بهبود می‌بخشد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1882,7 +1882,7 @@
       "id": "vue-116",
       "slug": "definecustomelement-چیست-و-vue-چگونه-از-web-component-ها-پشتیبانی-می-کند",
       "title": "`defineCustomElement` چیست و Vue چگونه از Web Component‌ها پشتیبانی می‌کند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1898,7 +1898,7 @@
       "id": "vue-117",
       "slug": "getcurrentinstance-چیست-و-چه-زمانی-باید-از-آن-استفاده-کرد",
       "title": "`getCurrentInstance` چیست و چه زمانی باید از آن استفاده کرد؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "الگوهای پیشرفته"
       ],
@@ -1914,7 +1914,7 @@
       "id": "vue-118",
       "slug": "usetemplateref-چیست-و-چه-تفاوتی-با-استفاده-از-ref-برای-template-refها-دارد",
       "title": "`useTemplateRef` چیست و چه تفاوتی با استفاده از `ref` برای template refها دارد؟",
-      "difficulty": "medium",
+      "difficulty": "متوسط",
       "categories": [
         "Composition API"
       ],
@@ -1930,7 +1930,7 @@
       "id": "vue-119",
       "slug": "استراتژی-های-lazy-hydration-در-vue-3-5-کدامند",
       "title": "استراتژی‌های lazy hydration در Vue 3.5 کدامند؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "SSR / Hydration"
       ],
@@ -1946,7 +1946,7 @@
       "id": "vue-120",
       "slug": "چگونه-slot-ها-را-از-یک-کامپوننت-والد-به-یک-فرزند-تودرتو-forward-می-کنید",
       "title": "چگونه slot‌ها را از یک کامپوننت والد به یک فرزند تودرتو forward می‌کنید؟",
-      "difficulty": "hard",
+      "difficulty": "سخت",
       "categories": [
         "کامپوننت‌ها"
       ],

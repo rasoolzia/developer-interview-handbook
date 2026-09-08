@@ -27,9 +27,9 @@
   "stats": {
     "total": 28,
     "byDifficulty": {
-      "easy": 7,
-      "medium": 9,
-      "hard": 12
+      "Easy": 7,
+      "Medium": 9,
+      "Hard": 12
     }
   },
   "questions": [
@@ -37,7 +37,7 @@
       "id": "html-001",
       "slug": "what-is-the-difference-between-div-and-span",
       "title": "What is the difference between `<div>` and `<span>`?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -53,7 +53,7 @@
       "id": "html-002",
       "slug": "what-is-the-purpose-of-the-doctype-declaration",
       "title": "What is the purpose of the `doctype` declaration?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -69,7 +69,7 @@
       "id": "html-003",
       "slug": "what-is-the-difference-between-block-and-inline-elements",
       "title": "What is the difference between block and inline elements?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -85,7 +85,7 @@
       "id": "html-004",
       "slug": "what-are-semantic-html-elements",
       "title": "What are semantic HTML elements?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Semantic & Accessibility"
       ],
@@ -101,7 +101,7 @@
       "id": "html-005",
       "slug": "what-is-the-difference-between-id-and-class",
       "title": "What is the difference between `id` and `class`?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Fundamentals"
       ],
@@ -117,7 +117,7 @@
       "id": "html-006",
       "slug": "what-is-the-purpose-of-the-alt-attribute-in-img-tags",
       "title": "What is the purpose of the `alt` attribute in `<img>` tags?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Semantic & Accessibility"
       ],
@@ -133,7 +133,7 @@
       "id": "html-007",
       "slug": "explain-semantic-html-elements-like-article-section-aside-and-when-to-use-them-i",
       "title": "Explain semantic HTML elements like `<article>`, `<section>`, `<aside>`, and when to use them instead of `<div>`.",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Semantic & Accessibility"
       ],
@@ -149,7 +149,7 @@
       "id": "html-008",
       "slug": "what-are-the-differences-between-input-type-number-and-input-type-tel",
       "title": "What are the differences between `<input type=\"number\">` and `<input type=\"tel\">`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Forms"
       ],
@@ -165,7 +165,7 @@
       "id": "html-009",
       "slug": "how-can-you-improve-page-performance-using-html-attributes-or-techniques",
       "title": "How can you improve page performance using HTML attributes or techniques?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Performance"
       ],
@@ -181,7 +181,7 @@
       "id": "html-010",
       "slug": "what-is-the-meta-name-viewport-tag-and-why-is-it-important-for-responsive-design",
       "title": "What is the `<meta name=\"viewport\">` tag and why is it important for responsive design?",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "categories": [
         "Browser Behavior"
       ],
@@ -197,7 +197,7 @@
       "id": "html-011",
       "slug": "what-is-the-difference-between-async-and-defer-attributes-on-script-tags-explain",
       "title": "What is the difference between `async` and `defer` attributes on `<script>` tags? Explain their impact on the Critical Rendering Path.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -213,7 +213,7 @@
       "id": "html-012",
       "slug": "what-is-the-difference-between-meta-tags-and-http-headers-and-when-should-each-b",
       "title": "What is the difference between `<meta>` tags and HTTP headers, and when should each be used?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SEO & Meta"
       ],
@@ -229,7 +229,7 @@
       "id": "html-013",
       "slug": "what-are-some-common-aria-mistakes-developers-make-and-how-should-you-prioritize",
       "title": "What are some common ARIA mistakes developers make, and how should you prioritize native HTML over ARIA?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Semantic & Accessibility"
       ],
@@ -245,7 +245,7 @@
       "id": "html-014",
       "slug": "what-is-the-critical-rendering-path-and-what-role-does-html-play-in-it",
       "title": "What is the Critical Rendering Path and what role does HTML play in it?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -261,7 +261,7 @@
       "id": "html-015",
       "slug": "what-is-the-difference-between-id-and-data-attributes-in-html-and-when-should-ea",
       "title": "What is the difference between `id` and `data-*` attributes in HTML, and when should each be used?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -277,7 +277,7 @@
       "id": "html-016",
       "slug": "what-is-the-difference-between-section-and-div-from-a-document-outline-perspecti",
       "title": "What is the difference between `<section>` and `<div>` from a document outline perspective?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Semantic & Accessibility"
       ],
@@ -293,7 +293,7 @@
       "id": "html-017",
       "slug": "how-do-html-templates-template-and-shadow-dom-work-together-in-web-components-an",
       "title": "How do HTML templates (`<template>`) and Shadow DOM work together in Web Components, and what problems do they solve?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Browser Behavior"
       ],
@@ -309,7 +309,7 @@
       "id": "html-018",
       "slug": "how-does-the-sandbox-attribute-work-on-iframe-and-why-is-it-important-for-securi",
       "title": "How does the sandbox attribute work on `<iframe>` and why is it important for security?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Browser Behavior",
         "Security"
@@ -326,7 +326,7 @@
       "id": "html-019",
       "slug": "what-is-the-difference-between-link-and-a-in-html",
       "title": "What is the difference between `<link>` and `<a>` in HTML?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Fundamentals"
       ],
@@ -342,7 +342,7 @@
       "id": "html-020",
       "slug": "what-are-web-components-in-html-and-what-core-technologies-enable-them",
       "title": "What are Web Components in HTML and what core technologies enable them?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Browser Behavior"
       ],
@@ -358,7 +358,7 @@
       "id": "html-021",
       "slug": "explain-how-picture-srcset-sizes-work-together-for-responsive-images-and-why-the",
       "title": "Explain how `<picture>` + `srcset` + `sizes` work together for responsive images, and why they are better than CSS media queries for images.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -374,7 +374,7 @@
       "id": "html-022",
       "slug": "how-does-html5-form-validation-work-and-how-can-you-implement-custom-validation",
       "title": "How does HTML5 form validation work, and how can you implement custom validation using the Constraint Validation API?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Forms"
       ],
@@ -390,7 +390,7 @@
       "id": "html-023",
       "slug": "how-can-you-implement-structured-data-in-html-using-schema-org-and-what-benefits",
       "title": "How can you implement structured data in HTML using schema.org, and what benefits does it provide for SEO?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "SEO & Meta"
       ],
@@ -406,7 +406,7 @@
       "id": "html-024",
       "slug": "what-is-the-contenteditable-attribute-what-are-its-common-pitfalls-and-how-can-y",
       "title": "What is the `contenteditable` attribute, what are its common pitfalls, and how can you make it accessible?",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Browser Behavior"
       ],
@@ -422,7 +422,7 @@
       "id": "html-025",
       "slug": "explain-resource-hints-in-html-preload-prefetch-preconnect-dns-prefetch-and-when",
       "title": "Explain resource hints in HTML (`preload`, `prefetch`, `preconnect`, `dns-prefetch`) and when to use each for performance optimization.",
-      "difficulty": "hard",
+      "difficulty": "Hard",
       "categories": [
         "Performance"
       ],
@@ -438,7 +438,7 @@
       "id": "html-026",
       "slug": "why-should-you-use-rel-noopener-noreferrer-on-links-with-target-blank",
       "title": "Why should you use `rel=\"noopener noreferrer\"` on links with `target=\"_blank\"`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Browser Behavior",
         "Security"
@@ -455,7 +455,7 @@
       "id": "html-027",
       "slug": "what-is-the-difference-between-canvas-and-svg",
       "title": "What is the difference between `<canvas>` and `<svg>`?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "Browser Behavior"
       ],
@@ -471,7 +471,7 @@
       "id": "html-028",
       "slug": "what-are-open-graph-meta-tags-and-why-are-they-important",
       "title": "What are Open Graph meta tags and why are they important?",
-      "difficulty": "medium",
+      "difficulty": "Medium",
       "categories": [
         "SEO & Meta"
       ],
