@@ -104,8 +104,8 @@ export class MDGenerator {
   }
 
   // ─── Pre-generation validation ──────────────────────────────────────────
-  // Content-quality rules (required fields, allowed difficulties, answer
-  // presence, etc.) live in MDValidator now — the generator no longer
+  // Content-quality rules (required fields, per-file categories/difficulties,
+  // answer presence, etc.) live in MDValidator now — the generator no longer
   // duplicates them. This just runs the validator over every .md file
   // before touching the filesystem, and refuses to build on failure.
 
@@ -205,8 +205,11 @@ export class MDGenerator {
       );
 
       const d = output.topic.stats.byDifficulty;
+      const diffSummary = Object.entries(d)
+        .map(([level, count]) => `${level} ${count}`)
+        .join(' · ');
       console.log(
-        `     ✅ ${output.topic.stats.total} questions (easy ${d.easy} · medium ${d.medium} · hard ${d.hard})`,
+        `     ✅ ${output.topic.stats.total} questions (${diffSummary})`,
       );
 
       accumulator.languages.add(language);
@@ -246,6 +249,23 @@ export class MDGenerator {
   }
 
   // ─── File Processor ──────────────────────────────────────────────────────
+
+  private buildDifficultyStats(
+    difficulties: string[],
+    questions: GeneratedQuestion[],
+  ): Record<string, number> {
+    const stats: Record<string, number> = Object.fromEntries(
+      difficulties.map((d) => [d, 0]),
+    );
+
+    for (const q of questions) {
+      if (q.difficulty && q.difficulty !== 'unknown') {
+        stats[q.difficulty] = (stats[q.difficulty] ?? 0) + 1;
+      }
+    }
+
+    return stats;
+  }
 
   private processFile(
     filePath: string,
@@ -288,11 +308,10 @@ export class MDGenerator {
         this.reportWarning(relPath, null, 'No valid questions found');
       }
 
-      const byDifficulty = {
-        easy: questions.filter((q) => q.difficulty === 'easy').length,
-        medium: questions.filter((q) => q.difficulty === 'medium').length,
-        hard: questions.filter((q) => q.difficulty === 'hard').length,
-      };
+      const byDifficulty = this.buildDifficultyStats(
+        availableDifficulties,
+        questions,
+      );
 
       const topicData: GeneratedTopic = {
         version,
@@ -428,22 +447,7 @@ export class MDGenerator {
 
   private normalizeDifficulty(raw: string | null): string | null {
     if (!raw) return null;
-    const normalized = raw.trim().toLowerCase();
-    const map: Record<string, string> = {
-      easy: 'easy',
-      beginner: 'easy',
-      medium: 'medium',
-      intermediate: 'medium',
-      hard: 'hard',
-      advanced: 'hard',
-      ساده: 'easy',
-      آسان: 'easy',
-      مقدماتی: 'easy',
-      متوسط: 'medium',
-      سخت: 'hard',
-      پیشرفته: 'hard',
-    };
-    return map[normalized] ?? null;
+    return raw.trim();
   }
 
   private parseCategories(raw: string | null): string[] {

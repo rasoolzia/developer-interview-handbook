@@ -62,10 +62,6 @@ export interface TopicComparison {
 }
 
 export interface ValidatorConfig {
-  allowedDifficulties: {
-    fa: string[];
-    en: string[];
-  };
   requiredFields: string[];
   strictMode: boolean;
   checkConsistency: boolean;
@@ -114,11 +110,7 @@ export interface GeneratedTopic {
   };
   stats: {
     total: number;
-    byDifficulty: {
-      easy: number;
-      medium: number;
-      hard: number;
-    };
+    byDifficulty: Record<string, number>;
   };
   questions: GeneratedQuestion[];
 }

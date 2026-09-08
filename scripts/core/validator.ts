@@ -219,9 +219,9 @@ export class MDValidator {
     const language = doc.frontmatter.language;
 
     this.validateCategories(doc);
-    this.validateDifficulties(doc, language);
+    this.validateDifficulties(doc);
     for (const question of doc.questions) {
-      this.validateQuestion(question, doc, language);
+      this.validateQuestion(question, doc);
     }
     this.validateQuestionNumbers(doc);
     this.validateDuplicateIds(doc);
@@ -279,11 +279,11 @@ export class MDValidator {
     }
   }
 
-  private validateDifficulties(doc: MDDocument, language: string) {
-    const allowedDifficulties =
-      this.config.allowedDifficulties[language as 'fa' | 'en'] || [];
+  private validateDifficulties(doc: MDDocument) {
     const uniqueDifficultiesUsed = [
-      ...new Set(doc.questions.map((q) => q.difficulty)),
+      ...new Set(
+        doc.questions.map((q) => q.difficulty).filter(Boolean),
+      ),
     ];
 
     for (const difficulty of doc.difficulties) {
@@ -306,27 +306,9 @@ export class MDValidator {
         );
       }
     }
-    for (const difficulty of uniqueDifficultiesUsed) {
-      if (!allowedDifficulties.includes(difficulty)) {
-        this.addError(
-          'DIFFICULTY_INVALID',
-          `"${difficulty}" is not allowed for ${language} language`,
-          doc.filePath,
-          undefined,
-          `Allowed: ${allowedDifficulties.join(', ')}`,
-        );
-      }
-    }
   }
 
-  private validateQuestion(
-    question: Question,
-    doc: MDDocument,
-    language: string,
-  ) {
-    const allowedDifficulties =
-      this.config.allowedDifficulties[language as 'fa' | 'en'] || [];
-
+  private validateQuestion(question: Question, doc: MDDocument) {
     for (const field of this.config.requiredFields) {
       const fieldMap: { [key: string]: string } = {
         id: question.id,
@@ -360,18 +342,16 @@ export class MDValidator {
       }
     }
 
-    // Only flag an invalid value if a value was actually provided —
-    // an empty difficulty is already reported by FIELD_MISSING above.
     if (
       question.difficulty &&
-      !allowedDifficulties.includes(question.difficulty)
+      !doc.difficulties.includes(question.difficulty)
     ) {
       this.addError(
-        'DIFFICULTY_INVALID',
-        `Question "${question.id}" has invalid difficulty: "${question.difficulty}"`,
+        'DIFFICULTY_NOT_DEFINED',
+        `Difficulty "${question.difficulty}" in question ${question.number} is not defined in the difficulty list`,
         doc.filePath,
         question.id,
-        `Allowed: ${allowedDifficulties.join(', ')}`,
+        `Add "${question.difficulty}" to the difficulty list or use an existing difficulty`,
       );
     }
 
