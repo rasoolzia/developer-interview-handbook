@@ -44,10 +44,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "`<div>` و `<span>` هر دو عناصر عمومی (Generic) هستند، اما در نحوه نمایش و کاربرد تفاوت دارند.\r\n\r\n**`<div>`**\r\n\r\n- عنصر block-level\r\n- کل عرض موجود را اشغال می‌کند\r\n- از خط جدید شروع می‌شود\r\n- برای گروه‌بندی بخش‌های بزرگ‌تر استفاده می‌شود\r\n\r\n**`<span>`**\r\n\r\n- عنصر inline\r\n- فقط به اندازه محتوای خود عرض می‌گیرد\r\n- از خط جدید شروع نمی‌شود\r\n- برای بخش‌های کوچک داخل متن استفاده می‌شود",
-        "readingTime": 1
-      }
+      "markdown": "`<div>` و `<span>` هر دو عناصر عمومی (Generic) هستند، اما در نحوه نمایش و کاربرد تفاوت دارند.\r\n\r\n**`<div>`**\r\n\r\n- عنصر block-level\r\n- کل عرض موجود را اشغال می‌کند\r\n- از خط جدید شروع می‌شود\r\n- برای گروه‌بندی بخش‌های بزرگ‌تر استفاده می‌شود\r\n\r\n**`<span>`**\r\n\r\n- عنصر inline\r\n- فقط به اندازه محتوای خود عرض می‌گیرد\r\n- از خط جدید شروع نمی‌شود\r\n- برای بخش‌های کوچک داخل متن استفاده می‌شود",
+      "readingTime": 1
     },
     {
       "id": "html-002",
@@ -60,10 +58,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "اعلان `<!DOCTYPE>` به مرورگر اعلام می‌کند که سند با چه نسخه‌ای از HTML نوشته شده است.\r\n\r\nاهداف اصلی آن:\r\n\r\n- فعال‌سازی حالت استاندارد (Standards Mode)\r\n- جلوگیری از فعال شدن حالت سازگاری قدیمی (Quirks Mode)\r\n- تضمین رفتار صحیح CSS و Layout",
-        "readingTime": 1
-      }
+      "markdown": "اعلان `<!DOCTYPE>` به مرورگر اعلام می‌کند که سند با چه نسخه‌ای از HTML نوشته شده است.\r\n\r\nاهداف اصلی آن:\r\n\r\n- فعال‌سازی حالت استاندارد (Standards Mode)\r\n- جلوگیری از فعال شدن حالت سازگاری قدیمی (Quirks Mode)\r\n- تضمین رفتار صحیح CSS و Layout",
+      "readingTime": 1
     },
     {
       "id": "html-003",
@@ -76,10 +72,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "تفاوت این عناصر در نحوه نمایش آن‌ها در صفحه است.\r\n\r\n**عناصر Block**\r\n\r\n- از خط جدید شروع می‌شوند\r\n- کل عرض موجود را اشغال می‌کنند\r\n- می‌توانند شامل عناصر Block یا Inline باشند\r\n\r\nمثال: `<div>`، `<p>`، `<section>`\r\n\r\n**عناصر Inline**\r\n\r\n- از خط جدید شروع نمی‌شوند\r\n- فقط به اندازه محتوای خود عرض می‌گیرند\r\n- معمولاً داخل متن استفاده می‌شوند\r\n\r\nمثال: `<span>`، `<a>`، `<strong>`",
-        "readingTime": 1
-      }
+      "markdown": "تفاوت این عناصر در نحوه نمایش آن‌ها در صفحه است.\r\n\r\n**عناصر Block**\r\n\r\n- از خط جدید شروع می‌شوند\r\n- کل عرض موجود را اشغال می‌کنند\r\n- می‌توانند شامل عناصر Block یا Inline باشند\r\n\r\nمثال: `<div>`، `<p>`، `<section>`\r\n\r\n**عناصر Inline**\r\n\r\n- از خط جدید شروع نمی‌شوند\r\n- فقط به اندازه محتوای خود عرض می‌گیرند\r\n- معمولاً داخل متن استفاده می‌شوند\r\n\r\nمثال: `<span>`، `<a>`، `<strong>`",
+      "readingTime": 1
     },
     {
       "id": "html-004",
@@ -92,10 +86,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "عناصر Semantic عناصری هستند که معنای مشخصی درباره محتوای خود ارائه می‌دهند.\r\n\r\nمزایا:\r\n\r\n- بهبود دسترسی‌پذیری\r\n- بهبود سئو\r\n- خوانایی و نگهداری بهتر کد\r\n\r\nنمونه‌ها:\r\n\r\n- `<header>`\r\n- `<nav>`\r\n- `<main>`\r\n- `<article>`\r\n- `<section>`\r\n- `<footer>`\r\n\r\nبرخلاف `<div>`، این عناصر نقش مشخصی را توصیف می‌کنند.",
-        "readingTime": 1
-      }
+      "markdown": "عناصر Semantic عناصری هستند که معنای مشخصی درباره محتوای خود ارائه می‌دهند.\r\n\r\nمزایا:\r\n\r\n- بهبود دسترسی‌پذیری\r\n- بهبود سئو\r\n- خوانایی و نگهداری بهتر کد\r\n\r\nنمونه‌ها:\r\n\r\n- `<header>`\r\n- `<nav>`\r\n- `<main>`\r\n- `<article>`\r\n- `<section>`\r\n- `<footer>`\r\n\r\nبرخلاف `<div>`، این عناصر نقش مشخصی را توصیف می‌کنند.",
+      "readingTime": 1
     },
     {
       "id": "html-005",
@@ -108,10 +100,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "`id` و `class` هر دو برای شناسایی عناصر استفاده می‌شوند اما تفاوت‌هایی دارند.\r\n\r\n**`id`**\r\n\r\n- در هر صفحه باید یکتا باشد\r\n- برای هدف‌گیری یک عنصر خاص استفاده می‌شود\r\n- معمولاً در JavaScript یا لینک‌های لنگر (anchor) کاربرد دارد\r\n\r\n**`class`**\r\n\r\n- می‌تواند روی چندین عنصر استفاده شود\r\n- برای گروه‌بندی عناصر با استایل مشابه استفاده می‌شود\r\n- رایج‌ترین روش هدف‌گیری در CSS است\r\n\r\nهر عنصر می‌تواند چندین class داشته باشد اما فقط یک id دارد.",
-        "readingTime": 1
-      }
+      "markdown": "`id` و `class` هر دو برای شناسایی عناصر استفاده می‌شوند اما تفاوت‌هایی دارند.\r\n\r\n**`id`**\r\n\r\n- در هر صفحه باید یکتا باشد\r\n- برای هدف‌گیری یک عنصر خاص استفاده می‌شود\r\n- معمولاً در JavaScript یا لینک‌های لنگر (anchor) کاربرد دارد\r\n\r\n**`class`**\r\n\r\n- می‌تواند روی چندین عنصر استفاده شود\r\n- برای گروه‌بندی عناصر با استایل مشابه استفاده می‌شود\r\n- رایج‌ترین روش هدف‌گیری در CSS است\r\n\r\nهر عنصر می‌تواند چندین class داشته باشد اما فقط یک id دارد.",
+      "readingTime": 1
     },
     {
       "id": "html-006",
@@ -124,10 +114,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "ویژگی `alt` متنی جایگزین برای تصویر فراهم می‌کند زمانی که تصویر قابل نمایش نباشد یا زمانی که از فناوری‌های کمکی استفاده می‌شود.\r\n\r\nاهداف کلیدی:\r\n\r\n- **دسترس‌پذیری**: صفحه‌خوان‌ها متن alt را برای کاربران کم‌بینا می‌خوانند\r\n- **سئو**: موتورهای جستجو از متن alt برای درک محتوای تصویر استفاده می‌کنند\r\n- **بازگشتی**: اگر تصویر بارگذاری نشود، متن نمایش داده می‌شود\r\n\r\nبهترین روش:\r\n\r\n- توصیفی اما مختصر باشد\r\n- برای تصاویر تزئینی از `alt=\"\"` استفاده کنید\r\n\r\nمثال:\r\n\r\n```html\r\n<img src=\"profile.jpg\" alt=\"Portrait of Jane Doe smiling\" />\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "ویژگی `alt` متنی جایگزین برای تصویر فراهم می‌کند زمانی که تصویر قابل نمایش نباشد یا زمانی که از فناوری‌های کمکی استفاده می‌شود.\r\n\r\nاهداف کلیدی:\r\n\r\n- **دسترس‌پذیری**: صفحه‌خوان‌ها متن alt را برای کاربران کم‌بینا می‌خوانند\r\n- **سئو**: موتورهای جستجو از متن alt برای درک محتوای تصویر استفاده می‌کنند\r\n- **بازگشتی**: اگر تصویر بارگذاری نشود، متن نمایش داده می‌شود\r\n\r\nبهترین روش:\r\n\r\n- توصیفی اما مختصر باشد\r\n- برای تصاویر تزئینی از `alt=\"\"` استفاده کنید\r\n\r\nمثال:\r\n\r\n```html\r\n<img src=\"profile.jpg\" alt=\"Portrait of Jane Doe smiling\" />\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-007",
@@ -140,10 +128,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "عناصر معنایی معنای خود را به وضوح برای مرورگرها، توسعه‌دهندگان و فناوری‌های کمکی توصیف می‌کنند.\r\n\r\n- `<article>`: محتوای مستقلی که می‌تواند به تنهایی قابل استفاده باشد (مثلاً پست وبلاگ، خبر)\r\n- `<section>`: گروه‌بندی موضوعی محتوا (مثلاً فصل، مقدمه)\r\n- `<aside>`: محتوایی که به طور غیرمستقیم با محتوای اصلی مرتبط است (مثلاً نوار کناری، لینک‌های مرتبط، تبلیغات)\r\n\r\nمزایا نسبت به `<div>`:\r\n\r\n- دسترس‌پذیری بهتر (صفحه‌خوان‌ها نقش‌ها را اعلام می‌کنند)\r\n- سئوی بهبود یافته (موتورهای جستجو ساختار را بهتر درک می‌کنند)\r\n- کد قابل نگهداری‌تر\r\n\r\nمثال:\r\n\r\n```html\r\n<article>\r\n  <h2>جاوااسکریپت چگونه کار می‌کند</h2>\r\n  <p>یک پست مستقل درباره درونیات JS...</p>\r\n</article>\r\n\r\n<section>\r\n  <h2>خدمات ما</h2>\r\n  <p>محتوای موضوعی گروه‌بندی‌شده...</p>\r\n</section>\r\n\r\n<aside>\r\n  <h3>مقالات مرتبط</h3>\r\n  <ul>\r\n    <li><a href=\"#\">بررسی عمیق closure‌ها</a></li>\r\n  </ul>\r\n</aside>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "عناصر معنایی معنای خود را به وضوح برای مرورگرها، توسعه‌دهندگان و فناوری‌های کمکی توصیف می‌کنند.\r\n\r\n- `<article>`: محتوای مستقلی که می‌تواند به تنهایی قابل استفاده باشد (مثلاً پست وبلاگ، خبر)\r\n- `<section>`: گروه‌بندی موضوعی محتوا (مثلاً فصل، مقدمه)\r\n- `<aside>`: محتوایی که به طور غیرمستقیم با محتوای اصلی مرتبط است (مثلاً نوار کناری، لینک‌های مرتبط، تبلیغات)\r\n\r\nمزایا نسبت به `<div>`:\r\n\r\n- دسترس‌پذیری بهتر (صفحه‌خوان‌ها نقش‌ها را اعلام می‌کنند)\r\n- سئوی بهبود یافته (موتورهای جستجو ساختار را بهتر درک می‌کنند)\r\n- کد قابل نگهداری‌تر\r\n\r\nمثال:\r\n\r\n```html\r\n<article>\r\n  <h2>جاوااسکریپت چگونه کار می‌کند</h2>\r\n  <p>یک پست مستقل درباره درونیات JS...</p>\r\n</article>\r\n\r\n<section>\r\n  <h2>خدمات ما</h2>\r\n  <p>محتوای موضوعی گروه‌بندی‌شده...</p>\r\n</section>\r\n\r\n<aside>\r\n  <h3>مقالات مرتبط</h3>\r\n  <ul>\r\n    <li><a href=\"#\">بررسی عمیق closure‌ها</a></li>\r\n  </ul>\r\n</aside>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-008",
@@ -156,10 +142,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو نوع ورودی برای ورودی‌های عددی مانند استفاده می‌شوند، اما رفتار متفاوتی دارند.\r\n\r\n**`type=\"number\"`**\r\n\r\n- فقط مقادیر عددی را می‌پذیرد\r\n- اعتبارسنجی داخلی دارد\r\n- در برخی مرورگرها فلش‌های افزایش/کاهش را نمایش می‌دهد\r\n- بسته به تنظیمات ممکن است کاراکترهایی مانند \"+\" یا \"-\" را رد کند\r\n\r\n**`type=\"tel\"`**\r\n\r\n- برای شماره تلفن طراحی شده\r\n- اعتبارسنجی عددی اعمال نمی‌کند\r\n- صفحه کلید عددی را در دستگاه‌های موبایل فعال می‌کند\r\n- امکان قالب‌بندی انعطاف‌پذیر را فراهم می‌کند (مثلاً +۹۸-۲۱-۱۲۳۴-۵۶۷۸)\r\n\r\nبرای شماره تلفن از `type=\"tel\"` و برای داده‌های عددی واقعی از `type=\"number\"` استفاده کنید.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- فقط عدد می‌پذیرد و فلش افزایش/کاهش نمایش می‌دهد -->\r\n<input type=\"number\" min=\"1\" max=\"100\" value=\"10\" />\r\n\r\n<!-- صفحه‌کلید عددی موبایل را فعال می‌کند، فرمت انعطاف‌پذیر -->\r\n<input type=\"tel\" placeholder=\"+98-21-1234-5678\" />\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر دو نوع ورودی برای ورودی‌های عددی مانند استفاده می‌شوند، اما رفتار متفاوتی دارند.\r\n\r\n**`type=\"number\"`**\r\n\r\n- فقط مقادیر عددی را می‌پذیرد\r\n- اعتبارسنجی داخلی دارد\r\n- در برخی مرورگرها فلش‌های افزایش/کاهش را نمایش می‌دهد\r\n- بسته به تنظیمات ممکن است کاراکترهایی مانند \"+\" یا \"-\" را رد کند\r\n\r\n**`type=\"tel\"`**\r\n\r\n- برای شماره تلفن طراحی شده\r\n- اعتبارسنجی عددی اعمال نمی‌کند\r\n- صفحه کلید عددی را در دستگاه‌های موبایل فعال می‌کند\r\n- امکان قالب‌بندی انعطاف‌پذیر را فراهم می‌کند (مثلاً +۹۸-۲۱-۱۲۳۴-۵۶۷۸)\r\n\r\nبرای شماره تلفن از `type=\"tel\"` و برای داده‌های عددی واقعی از `type=\"number\"` استفاده کنید.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- فقط عدد می‌پذیرد و فلش افزایش/کاهش نمایش می‌دهد -->\r\n<input type=\"number\" min=\"1\" max=\"100\" value=\"10\" />\r\n\r\n<!-- صفحه‌کلید عددی موبایل را فعال می‌کند، فرمت انعطاف‌پذیر -->\r\n<input type=\"tel\" placeholder=\"+98-21-1234-5678\" />\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-009",
@@ -172,10 +156,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "چندین ویژگی HTML به بهینه‌سازی بارگذاری و رندر کمک می‌کنند:\r\n\r\n- استفاده از `loading=\"lazy\"` روی `<img>` و `<iframe>` برای بارگذاری تأخیری\r\n- اضافه کردن `async` یا `defer` به تگ‌های `<script>` برای جلوگیری از مسدود شدن رندر\r\n- استفاده از `<link rel=\"preload\">`، `preconnect`، یا `dns-prefetch` برای منابع حیاتی\r\n- مشخص کردن `width` و `height` برای تصاویر جهت جلوگیری از جابجایی طرح (CLS)\r\n- استفاده از تصاویر واکنش‌گرا با `srcset` و `<picture>`\r\n\r\nاین تکنیک‌ها زمان بارگذاری را بهبود می‌بخشند، مسدودیت را کاهش می‌دهند و تجربه کاربری را ارتقا می‌دهند.\r\n\r\nمثال:\r\n\r\n```html\r\n<img src=\"large.jpg\" loading=\"lazy\" width=\"800\" height=\"600\" alt=\"...\" />\r\n<script src=\"app.js\" defer></script>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "چندین ویژگی HTML به بهینه‌سازی بارگذاری و رندر کمک می‌کنند:\r\n\r\n- استفاده از `loading=\"lazy\"` روی `<img>` و `<iframe>` برای بارگذاری تأخیری\r\n- اضافه کردن `async` یا `defer` به تگ‌های `<script>` برای جلوگیری از مسدود شدن رندر\r\n- استفاده از `<link rel=\"preload\">`، `preconnect`، یا `dns-prefetch` برای منابع حیاتی\r\n- مشخص کردن `width` و `height` برای تصاویر جهت جلوگیری از جابجایی طرح (CLS)\r\n- استفاده از تصاویر واکنش‌گرا با `srcset` و `<picture>`\r\n\r\nاین تکنیک‌ها زمان بارگذاری را بهبود می‌بخشند، مسدودیت را کاهش می‌دهند و تجربه کاربری را ارتقا می‌دهند.\r\n\r\nمثال:\r\n\r\n```html\r\n<img src=\"large.jpg\" loading=\"lazy\" width=\"800\" height=\"600\" alt=\"...\" />\r\n<script src=\"app.js\" defer></script>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-010",
@@ -188,10 +170,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "تگ متا ویوپورت نحوه نمایش صفحه وب را در دستگاه‌های موبایل کنترل می‌کند.  \r\nبدون آن، مرورگرهای موبایل اغلب صفحات را با عرض دسکتاپ رندر کرده و سپس آنها را کوچک می‌کنند.\r\n\r\nاستفاده استاندارد:\r\n\r\n```html\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\n- `width=device-width`: عرض صفحه را با عرض صفحه‌نمایش دستگاه تطبیق می‌دهد\r\n- `initial-scale=1.0`: سطح زوم اولیه را تنظیم می‌کند\r\n\r\nاین تگ برای طراحی واکنش‌گرا ضروری است.",
-        "readingTime": 1
-      }
+      "markdown": "تگ متا ویوپورت نحوه نمایش صفحه وب را در دستگاه‌های موبایل کنترل می‌کند.  \r\nبدون آن، مرورگرهای موبایل اغلب صفحات را با عرض دسکتاپ رندر کرده و سپس آنها را کوچک می‌کنند.\r\n\r\nاستفاده استاندارد:\r\n\r\n```html\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\n- `width=device-width`: عرض صفحه را با عرض صفحه‌نمایش دستگاه تطبیق می‌دهد\r\n- `initial-scale=1.0`: سطح زوم اولیه را تنظیم می‌کند\r\n\r\nاین تگ برای طراحی واکنش‌گرا ضروری است.",
+      "readingTime": 1
     },
     {
       "id": "html-011",
@@ -204,10 +184,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو ویژگی `async` و `defer` بارگذاری غیرمسدودکننده اسکریپت را ممکن می‌کنند، اما زمان اجرای آن‌ها متفاوت است:\r\n\r\n- **async**:\r\n  - دانلود اسکریپت به صورت موازی انجام می‌شود\r\n  - به‌محض اتمام دانلود اجرا می‌شود (ممکن است تجزیه HTML را قطع کند)\r\n  - ترتیب اجرا بین چند اسکریپت async تضمین نمی‌شود\r\n  - مناسب اسکریپت‌های مستقل مثل آنالیتیکس و تبلیغات\r\n\r\n- **defer**:\r\n  - دانلود اسکریپت به صورت موازی انجام می‌شود\r\n  - فقط بعد از تکمیل تجزیه HTML اجرا می‌شود (کمی قبل از DOMContentLoaded)\r\n  - ترتیب اسکریپت‌ها حفظ می‌شود\r\n  - برای اسکریپت‌هایی که به DOM وابسته‌اند مناسب‌تر است\r\n\r\n**تاثیر روی Critical Rendering Path (CRP):**\r\n\r\n- بدون این ویژگی‌ها → اسکریپت مسدودکننده رندر است (تجزیه متوقف می‌شود)\r\n- `async` → ممکن است در صورت اجرای زودهنگام هنوز به رندر ضربه بزند\r\n- `defer` → برای رندر عملاً غیرمسدودکننده است\r\n\r\nبهترین روش: در اکثر سناریوها از `defer` استفاده کنید مگر اینکه اجرای فوری لازم باشد.\r\n\r\nمثال:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر دو ویژگی `async` و `defer` بارگذاری غیرمسدودکننده اسکریپت را ممکن می‌کنند، اما زمان اجرای آن‌ها متفاوت است:\r\n\r\n- **async**:\r\n  - دانلود اسکریپت به صورت موازی انجام می‌شود\r\n  - به‌محض اتمام دانلود اجرا می‌شود (ممکن است تجزیه HTML را قطع کند)\r\n  - ترتیب اجرا بین چند اسکریپت async تضمین نمی‌شود\r\n  - مناسب اسکریپت‌های مستقل مثل آنالیتیکس و تبلیغات\r\n\r\n- **defer**:\r\n  - دانلود اسکریپت به صورت موازی انجام می‌شود\r\n  - فقط بعد از تکمیل تجزیه HTML اجرا می‌شود (کمی قبل از DOMContentLoaded)\r\n  - ترتیب اسکریپت‌ها حفظ می‌شود\r\n  - برای اسکریپت‌هایی که به DOM وابسته‌اند مناسب‌تر است\r\n\r\n**تاثیر روی Critical Rendering Path (CRP):**\r\n\r\n- بدون این ویژگی‌ها → اسکریپت مسدودکننده رندر است (تجزیه متوقف می‌شود)\r\n- `async` → ممکن است در صورت اجرای زودهنگام هنوز به رندر ضربه بزند\r\n- `defer` → برای رندر عملاً غیرمسدودکننده است\r\n\r\nبهترین روش: در اکثر سناریوها از `defer` استفاده کنید مگر اینکه اجرای فوری لازم باشد.\r\n\r\nمثال:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-012",
@@ -220,10 +198,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هم تگهای `<meta>` و هم هدرهای HTTP متادیتا درباره یک سند ارائه میدهند، اما در سطوح مختلفی عمل میکنند.",
-        "readingTime": 1
-      }
+      "markdown": "هم تگهای `<meta>` و هم هدرهای HTTP متادیتا درباره یک سند ارائه میدهند، اما در سطوح مختلفی عمل میکنند.",
+      "readingTime": 1
     },
     {
       "id": "html-013",
@@ -236,10 +212,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "اشتباهات رایج:\r\n\r\n1. استفاده از ARIA وقتی معادل بومی HTML وجود دارد (مثل `role=\"button\"` روی `<div>` به جای `<button>`)\r\n2. افزودن ARIA اضافی و تکراری (مثلاً `aria-label` برای تصویری که `alt` مناسب دارد)\r\n3. فراموش کردن `aria-hidden` برای محتوای تزئینی\r\n4. تنظیم نادرست live regionها (`aria-live=\"polite\"` در مقابل `assertive`)\r\n5. مدیریت نکردن درست فوکوس کیبورد در کامپوننت‌های سفارشی\r\n\r\n**قانون طلایی (ARIA Authoring Practices):**  \r\n**\"No ARIA is better than bad ARIA\"**  \r\n**\"If you can use a native semantic element, do it\"**\r\n\r\nترتیب اولویت:\r\n\r\n1. HTML بومی (مثل button، input، nav و ...)\r\n2. نقش‌ها/حالت‌های ARIA فقط در صورت نیاز\r\n3. JavaScript برای رفتارهای پویا\r\n\r\nمثال بد → خوب:\r\n\r\n```html\r\n<!-- Bad -->\r\n<div role=\"button\" onclick=\"...\">Click</div>\r\n\r\n<!-- Good -->\r\n<button onclick=\"...\">Click</button>\r\n```\r\n\r\nاز ابزارهایی مثل Lighthouse یا axe برای شناسایی خطاهای دسترسی‌پذیری استفاده کنید.",
-        "readingTime": 1
-      }
+      "markdown": "اشتباهات رایج:\r\n\r\n1. استفاده از ARIA وقتی معادل بومی HTML وجود دارد (مثل `role=\"button\"` روی `<div>` به جای `<button>`)\r\n2. افزودن ARIA اضافی و تکراری (مثلاً `aria-label` برای تصویری که `alt` مناسب دارد)\r\n3. فراموش کردن `aria-hidden` برای محتوای تزئینی\r\n4. تنظیم نادرست live regionها (`aria-live=\"polite\"` در مقابل `assertive`)\r\n5. مدیریت نکردن درست فوکوس کیبورد در کامپوننت‌های سفارشی\r\n\r\n**قانون طلایی (ARIA Authoring Practices):**  \r\n**\"No ARIA is better than bad ARIA\"**  \r\n**\"If you can use a native semantic element, do it\"**\r\n\r\nترتیب اولویت:\r\n\r\n1. HTML بومی (مثل button، input، nav و ...)\r\n2. نقش‌ها/حالت‌های ARIA فقط در صورت نیاز\r\n3. JavaScript برای رفتارهای پویا\r\n\r\nمثال بد → خوب:\r\n\r\n```html\r\n<!-- Bad -->\r\n<div role=\"button\" onclick=\"...\">Click</div>\r\n\r\n<!-- Good -->\r\n<button onclick=\"...\">Click</button>\r\n```\r\n\r\nاز ابزارهایی مثل Lighthouse یا axe برای شناسایی خطاهای دسترسی‌پذیری استفاده کنید.",
+      "readingTime": 1
     },
     {
       "id": "html-014",
@@ -252,10 +226,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "مسیر رندر بحرانی (CRP) توالی مراحلی است که مرورگر برای رندر کردن یک صفحه طی میکند.\r\n\r\nمراحل اصلی:\r\n\r\n1. تجزیه HTML → ساخت DOM\r\n2. تجزیه CSS → ساخت CSSOM\r\n3. ترکیب در درخت رندر\r\n4. چیدمان (Layout)\r\n5. رنگ آمیزی (Paint)\r\n\r\nHTML مستقیماً بر موارد زیر تأثیر میگذارد:\r\n\r\n- اندازه و عمق DOM\r\n- ترتیب بارگذاری منابع\r\n- اسکریپت های مسدودکننده\r\n- تصاویر بدون ابعاد مشخص\r\n\r\nتکنیک های بهینه سازی HTML:\r\n\r\n- استفاده از `defer` برای اسکریپت ها\r\n- کمینه کردن عمق DOM\r\n- مشخص کردن `width` و `height` برای تصاویر\r\n- پیش بارگذاری منابع حیاتی\r\n\r\nدرک CRP برای بهینهسازی عملکرد ضروری است.",
-        "readingTime": 1
-      }
+      "markdown": "مسیر رندر بحرانی (CRP) توالی مراحلی است که مرورگر برای رندر کردن یک صفحه طی میکند.\r\n\r\nمراحل اصلی:\r\n\r\n1. تجزیه HTML → ساخت DOM\r\n2. تجزیه CSS → ساخت CSSOM\r\n3. ترکیب در درخت رندر\r\n4. چیدمان (Layout)\r\n5. رنگ آمیزی (Paint)\r\n\r\nHTML مستقیماً بر موارد زیر تأثیر میگذارد:\r\n\r\n- اندازه و عمق DOM\r\n- ترتیب بارگذاری منابع\r\n- اسکریپت های مسدودکننده\r\n- تصاویر بدون ابعاد مشخص\r\n\r\nتکنیک های بهینه سازی HTML:\r\n\r\n- استفاده از `defer` برای اسکریپت ها\r\n- کمینه کردن عمق DOM\r\n- مشخص کردن `width` و `height` برای تصاویر\r\n- پیش بارگذاری منابع حیاتی\r\n\r\nدرک CRP برای بهینهسازی عملکرد ضروری است.",
+      "readingTime": 1
     },
     {
       "id": "html-015",
@@ -268,10 +240,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو ویژگی `id` و `data-*` اطلاعات را به عناصر متصل میکنند، اما اهداف متفاوتی دارند.",
-        "readingTime": 1
-      }
+      "markdown": "هر دو ویژگی `id` و `data-*` اطلاعات را به عناصر متصل میکنند، اما اهداف متفاوتی دارند.",
+      "readingTime": 1
     },
     {
       "id": "html-016",
@@ -284,10 +254,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "`<div>` یک کانتینر عمومی بدون معنای معنایی است.\r\n\r\n`<section>` نشاندهنده گروهبندی موضوعی محتوا است و به طرح کلی سند کمک میکند.\r\n\r\nتفاوتهای کلیدی:\r\n\r\n- `<section>` معمولاً باید شامل یک عنوان باشد\r\n- ساختار را به فناوریهای کمکی و موتورهای جستجو اعلام میکند\r\n- `<div>` صرفاً ساختاری است و ارزش معنایی ندارد\r\n\r\nاز `<section>` زمانی استفاده کنید که محتوا بخش منطقی از سند را نشان می‌دهد.\r\nاز `<div>` فقط زمانی استفاده کنید که هیچ عنصر معنایی مناسبی وجود ندارد.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- div: ظرف خالص برای layout، بدون نقش معنایی -->\r\n<div class=\"card-wrapper\">\r\n  <div class=\"card\">...</div>\r\n</div>\r\n\r\n<!-- section: بخش موضوعی سند، باید عنوان داشته باشد -->\r\n<section>\r\n  <h2>خدمات ما</h2>\r\n  <p>ما توسعه وب، طراحی و مشاوره ارائه می‌دهیم.</p>\r\n</section>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "`<div>` یک کانتینر عمومی بدون معنای معنایی است.\r\n\r\n`<section>` نشاندهنده گروهبندی موضوعی محتوا است و به طرح کلی سند کمک میکند.\r\n\r\nتفاوتهای کلیدی:\r\n\r\n- `<section>` معمولاً باید شامل یک عنوان باشد\r\n- ساختار را به فناوریهای کمکی و موتورهای جستجو اعلام میکند\r\n- `<div>` صرفاً ساختاری است و ارزش معنایی ندارد\r\n\r\nاز `<section>` زمانی استفاده کنید که محتوا بخش منطقی از سند را نشان می‌دهد.\r\nاز `<div>` فقط زمانی استفاده کنید که هیچ عنصر معنایی مناسبی وجود ندارد.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- div: ظرف خالص برای layout، بدون نقش معنایی -->\r\n<div class=\"card-wrapper\">\r\n  <div class=\"card\">...</div>\r\n</div>\r\n\r\n<!-- section: بخش موضوعی سند، باید عنوان داشته باشد -->\r\n<section>\r\n  <h2>خدمات ما</h2>\r\n  <p>ما توسعه وب، طراحی و مشاوره ارائه می‌دهیم.</p>\r\n</section>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-017",
@@ -300,10 +268,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "`<template>` و Shadow DOM دو بخش اصلی Web Components هستند:\r\n\r\n- `<template>`: قطعه HTML که parse می‌شود اما inert است (رندر یا side effect ندارد تا زمانی که clone شود)\r\n- Shadow DOM: زیردرخت DOM کپسوله‌شده که به یک عنصر سفارشی متصل می‌شود (استایل و DOM ایزوله می‌ماند)\r\n\r\nاین دو در کنار هم این مشکلات را حل می‌کنند:\r\n\r\n- نشت استایل (CSS کامپوننت روی کل صفحه اثر نمی‌گذارد)\r\n- تداخل در انتخاب DOM (جلوگیری از conflict در `querySelector`)\r\n- قابلیت استفاده مجدد بدون وابستگی به فریمورک (مثل React/Vue)\r\n\r\nنمونه پایه:\r\n\r\n```html\r\n<template id=\"my-card\">\r\n  <style>\r\n    .card {\r\n      border: 1px solid;\r\n      padding: 1em;\r\n    }\r\n  </style>\r\n  <div class=\"card\"><slot name=\"title\"></slot></div>\r\n</template>\r\n\r\n<script>\r\n  class MyCard extends HTMLElement {\r\n    constructor() {\r\n      super();\r\n      const shadow = this.attachShadow({ mode: 'open' });\r\n      const template = document\r\n        .getElementById('my-card')\r\n        .content.cloneNode(true);\r\n      shadow.appendChild(template);\r\n    }\r\n  }\r\n  customElements.define('my-card', MyCard);\r\n</script>\r\n\r\n<my-card><span slot=\"title\">Hello</span></my-card>\r\n```\r\n\r\nمزیت‌ها: مستقل از فریمورک، کارآمد، و آینده‌نگر.",
-        "readingTime": 1
-      }
+      "markdown": "`<template>` و Shadow DOM دو بخش اصلی Web Components هستند:\r\n\r\n- `<template>`: قطعه HTML که parse می‌شود اما inert است (رندر یا side effect ندارد تا زمانی که clone شود)\r\n- Shadow DOM: زیردرخت DOM کپسوله‌شده که به یک عنصر سفارشی متصل می‌شود (استایل و DOM ایزوله می‌ماند)\r\n\r\nاین دو در کنار هم این مشکلات را حل می‌کنند:\r\n\r\n- نشت استایل (CSS کامپوننت روی کل صفحه اثر نمی‌گذارد)\r\n- تداخل در انتخاب DOM (جلوگیری از conflict در `querySelector`)\r\n- قابلیت استفاده مجدد بدون وابستگی به فریمورک (مثل React/Vue)\r\n\r\nنمونه پایه:\r\n\r\n```html\r\n<template id=\"my-card\">\r\n  <style>\r\n    .card {\r\n      border: 1px solid;\r\n      padding: 1em;\r\n    }\r\n  </style>\r\n  <div class=\"card\"><slot name=\"title\"></slot></div>\r\n</template>\r\n\r\n<script>\r\n  class MyCard extends HTMLElement {\r\n    constructor() {\r\n      super();\r\n      const shadow = this.attachShadow({ mode: 'open' });\r\n      const template = document\r\n        .getElementById('my-card')\r\n        .content.cloneNode(true);\r\n      shadow.appendChild(template);\r\n    }\r\n  }\r\n  customElements.define('my-card', MyCard);\r\n</script>\r\n\r\n<my-card><span slot=\"title\">Hello</span></my-card>\r\n```\r\n\r\nمزیت‌ها: مستقل از فریمورک، کارآمد، و آینده‌نگر.",
+      "readingTime": 1
     },
     {
       "id": "html-018",
@@ -317,10 +283,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "ویژگی `sandbox` دسترسی‌های `<iframe>` را محدود می‌کند و یک لایه امنیتی در برابر محتوای مخرب اضافه می‌کند.\r\n\r\nمقادیر رایج (با فاصله از هم):\r\n\r\n- (خالی) → بیشترین محدودیت‌ها (امن‌ترین حالت)\r\n- `allow-scripts` → اجازه اجرای JavaScript\r\n- `allow-same-origin` → در نظر گرفتن iframe به عنوان same-origin (ریسک‌دار)\r\n- `allow-popups` → اجازه باز کردن پنجره جدید\r\n- `allow-forms` → اجازه ارسال فرم\r\n\r\nحالت پیش‌فرض (`sandbox=\"\"`) این موارد را غیرفعال می‌کند:\r\n\r\n- ناوبری\r\n- اسکریپت‌ها\r\n- فرم‌ها\r\n- افزونه‌ها\r\n- دور زدن سیاست same-origin\r\n\r\nکاربرد مهم: جاسازی محتوای third-party (مثل تبلیغات، HTML تولیدشده توسط کاربر، پیش‌نمایش‌ها).\r\n\r\nمثال (جاسازی امن):\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nبدون `sandbox` احتمال ریسک‌هایی مثل XSS یا clickjacking افزایش پیدا می‌کند.",
-        "readingTime": 1
-      }
+      "markdown": "ویژگی `sandbox` دسترسی‌های `<iframe>` را محدود می‌کند و یک لایه امنیتی در برابر محتوای مخرب اضافه می‌کند.\r\n\r\nمقادیر رایج (با فاصله از هم):\r\n\r\n- (خالی) → بیشترین محدودیت‌ها (امن‌ترین حالت)\r\n- `allow-scripts` → اجازه اجرای JavaScript\r\n- `allow-same-origin` → در نظر گرفتن iframe به عنوان same-origin (ریسک‌دار)\r\n- `allow-popups` → اجازه باز کردن پنجره جدید\r\n- `allow-forms` → اجازه ارسال فرم\r\n\r\nحالت پیش‌فرض (`sandbox=\"\"`) این موارد را غیرفعال می‌کند:\r\n\r\n- ناوبری\r\n- اسکریپت‌ها\r\n- فرم‌ها\r\n- افزونه‌ها\r\n- دور زدن سیاست same-origin\r\n\r\nکاربرد مهم: جاسازی محتوای third-party (مثل تبلیغات، HTML تولیدشده توسط کاربر، پیش‌نمایش‌ها).\r\n\r\nمثال (جاسازی امن):\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nبدون `sandbox` احتمال ریسک‌هایی مثل XSS یا clickjacking افزایش پیدا می‌کند.",
+      "readingTime": 1
     },
     {
       "id": "html-019",
@@ -333,10 +297,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو روابط ایجاد میکنند، اما اهداف متفاوتی دارند.",
-        "readingTime": 1
-      }
+      "markdown": "هر دو روابط ایجاد میکنند، اما اهداف متفاوتی دارند.",
+      "readingTime": 1
     },
     {
       "id": "html-020",
@@ -349,10 +311,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "Web Components امکان ایجاد عناصر سفارشی قابل استفاده مجدد و کپسوله شده را فراهم میکنند.\r\n\r\nآنها بر اساس چهار فناوری اصلی ساخته شده اند:\r\n\r\n1. **Custom Elements** – تعریف تگ های HTML جدید\r\n2. **Shadow DOM** – زیردرخت DOM کپسوله شده\r\n3. **HTML Templates** – نشانهگذاری قابل استفاده مجدد\r\n4. **ES Modules** – JavaScript ماژولار\r\n\r\nمفهوم مثال:\r\n\r\n```html\r\n<user-card></user-card>\r\n```\r\n\r\nمزایا:\r\n\r\n- کپسوله سازی\r\n- قابلیت استفاده مجدد\r\n- کامپوننت های مستقل از فریمورک\r\n\r\nWeb Components معماری کامپوننت بومی را بدون اتکا به فریمورک های خارجی فعال میکنند.",
-        "readingTime": 1
-      }
+      "markdown": "Web Components امکان ایجاد عناصر سفارشی قابل استفاده مجدد و کپسوله شده را فراهم میکنند.\r\n\r\nآنها بر اساس چهار فناوری اصلی ساخته شده اند:\r\n\r\n1. **Custom Elements** – تعریف تگ های HTML جدید\r\n2. **Shadow DOM** – زیردرخت DOM کپسوله شده\r\n3. **HTML Templates** – نشانهگذاری قابل استفاده مجدد\r\n4. **ES Modules** – JavaScript ماژولار\r\n\r\nمفهوم مثال:\r\n\r\n```html\r\n<user-card></user-card>\r\n```\r\n\r\nمزایا:\r\n\r\n- کپسوله سازی\r\n- قابلیت استفاده مجدد\r\n- کامپوننت های مستقل از فریمورک\r\n\r\nWeb Components معماری کامپوننت بومی را بدون اتکا به فریمورک های خارجی فعال میکنند.",
+      "readingTime": 1
     },
     {
       "id": "html-021",
@@ -365,10 +325,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "این ترکیب بدون نیاز به JavaScript امکان art direction و انتخاب رزولوشن مناسب را فراهم می‌کند:\r\n\r\n- `<picture>`: ظرفی برای چند `<source>` مختلف\r\n- `srcset`: فهرستی از گزینه‌های تصویر (با descriptorهایی مثل 1x، 2x یا width)\r\n- `sizes`: عرض تقریبی نمایش تصویر را در شرایط مختلف media به مرورگر اعلام می‌کند\r\n\r\nمرورگر بر اساس این موارد بهترین تصویر را انتخاب می‌کند:\r\n\r\n- نسبت پیکسلی دستگاه (DPR)\r\n- عرض viewport\r\n- فرمت‌های قابل پشتیبانی (مثل WebP)\r\n\r\nچرا بهتر از media queryهای CSS برای تصویر است؟\r\n\r\n- مرورگر قبل از دانلود تصمیم می‌گیرد (صرفه‌جویی در پهنای باند)\r\n- درخواست HTTP اضافی برای تشخیص لازم نیست\r\n- پشتیبانی از art direction (کراپ‌های متفاوت در breakpointهای مختلف)\r\n\r\nمثال:\r\n\r\n```html\r\n<picture>\r\n  <source media=\"(min-width: 800px)\" srcset=\"large.jpg 1x, large-2x.jpg 2x\" />\r\n  <source media=\"(min-width: 400px)\" srcset=\"medium.jpg\" />\r\n  <img\r\n    src=\"small.jpg\"\r\n    srcset=\"small.jpg 400w, medium.jpg 800w\"\r\n    sizes=\"(max-width: 400px) 100vw, 800px\"\r\n    alt=\"...\"\r\n  />\r\n</picture>\r\n```\r\n\r\nاین روش مصرف دیتا را کم می‌کند و Core Web Vitals (به‌خصوص LCP) را بهبود می‌دهد.",
-        "readingTime": 1
-      }
+      "markdown": "این ترکیب بدون نیاز به JavaScript امکان art direction و انتخاب رزولوشن مناسب را فراهم می‌کند:\r\n\r\n- `<picture>`: ظرفی برای چند `<source>` مختلف\r\n- `srcset`: فهرستی از گزینه‌های تصویر (با descriptorهایی مثل 1x، 2x یا width)\r\n- `sizes`: عرض تقریبی نمایش تصویر را در شرایط مختلف media به مرورگر اعلام می‌کند\r\n\r\nمرورگر بر اساس این موارد بهترین تصویر را انتخاب می‌کند:\r\n\r\n- نسبت پیکسلی دستگاه (DPR)\r\n- عرض viewport\r\n- فرمت‌های قابل پشتیبانی (مثل WebP)\r\n\r\nچرا بهتر از media queryهای CSS برای تصویر است؟\r\n\r\n- مرورگر قبل از دانلود تصمیم می‌گیرد (صرفه‌جویی در پهنای باند)\r\n- درخواست HTTP اضافی برای تشخیص لازم نیست\r\n- پشتیبانی از art direction (کراپ‌های متفاوت در breakpointهای مختلف)\r\n\r\nمثال:\r\n\r\n```html\r\n<picture>\r\n  <source media=\"(min-width: 800px)\" srcset=\"large.jpg 1x, large-2x.jpg 2x\" />\r\n  <source media=\"(min-width: 400px)\" srcset=\"medium.jpg\" />\r\n  <img\r\n    src=\"small.jpg\"\r\n    srcset=\"small.jpg 400w, medium.jpg 800w\"\r\n    sizes=\"(max-width: 400px) 100vw, 800px\"\r\n    alt=\"...\"\r\n  />\r\n</picture>\r\n```\r\n\r\nاین روش مصرف دیتا را کم می‌کند و Core Web Vitals (به‌خصوص LCP) را بهبود می‌دهد.",
+      "readingTime": 1
     },
     {
       "id": "html-022",
@@ -381,10 +339,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "HTML5 اعتبارسنجی داخلی فرم را با ویژگی‌هایی مثل `required`، `pattern`، `min/max` و بررسی نوع ورودی (مثل email و url) فراهم می‌کند.\r\n\r\nفرآیند کلی:\r\n\r\n- مرورگر هنگام submit یا focusout اعتبارسنجی می‌کند (با `novalidate` می‌توان غیرفعالش کرد)\r\n- برای فیلد نامعتبر پیام خطای پیش‌فرض مرورگر نمایش داده می‌شود\r\n- امکان افزودن خطای سفارشی با JavaScript وجود دارد\r\n\r\n**Constraint Validation API**:\r\n\r\n- دسترسی از طریق `element.validity` (شامل وضعیت‌هایی مثل `valueMissing` و `patternMismatch`)\r\n- تعریف خطای سفارشی با `element.setCustomValidity('Error message')` (برای پاک کردن، رشته خالی)\r\n- اجرای بررسی با `element.reportValidity()` یا `form.checkValidity()`\r\n\r\nچرا این موضوع سخت است؟ چون موضوعاتی مثل i18n، اعتبارسنجی async (مثلاً یکتابودن username) و سازگاری مرورگرهای قدیمی مطرح می‌شوند.\r\n\r\nمثال (اعتبارسنجی سفارشی دامنه ایمیل):\r\n\r\n```html\r\n<form>\r\n  <input id=\"email\" type=\"email\" required pattern=\"[^@]+@example\\.com\" />\r\n  <button type=\"submit\">Submit</button>\r\n</form>\r\n\r\n<script>\r\n  const email = document.getElementById('email');\r\n  email.addEventListener('input', () => {\r\n    if (email.value.endsWith('@gmail.com')) {\r\n      email.setCustomValidity('Only @example.com allowed');\r\n    } else {\r\n      email.setCustomValidity('');\r\n    }\r\n  });\r\n</script>\r\n```\r\n\r\nاین API با ARIA هم برای دسترسی‌پذیری یکپارچه است (مثلاً `aria-invalid`).",
-        "readingTime": 1
-      }
+      "markdown": "HTML5 اعتبارسنجی داخلی فرم را با ویژگی‌هایی مثل `required`، `pattern`، `min/max` و بررسی نوع ورودی (مثل email و url) فراهم می‌کند.\r\n\r\nفرآیند کلی:\r\n\r\n- مرورگر هنگام submit یا focusout اعتبارسنجی می‌کند (با `novalidate` می‌توان غیرفعالش کرد)\r\n- برای فیلد نامعتبر پیام خطای پیش‌فرض مرورگر نمایش داده می‌شود\r\n- امکان افزودن خطای سفارشی با JavaScript وجود دارد\r\n\r\n**Constraint Validation API**:\r\n\r\n- دسترسی از طریق `element.validity` (شامل وضعیت‌هایی مثل `valueMissing` و `patternMismatch`)\r\n- تعریف خطای سفارشی با `element.setCustomValidity('Error message')` (برای پاک کردن، رشته خالی)\r\n- اجرای بررسی با `element.reportValidity()` یا `form.checkValidity()`\r\n\r\nچرا این موضوع سخت است؟ چون موضوعاتی مثل i18n، اعتبارسنجی async (مثلاً یکتابودن username) و سازگاری مرورگرهای قدیمی مطرح می‌شوند.\r\n\r\nمثال (اعتبارسنجی سفارشی دامنه ایمیل):\r\n\r\n```html\r\n<form>\r\n  <input id=\"email\" type=\"email\" required pattern=\"[^@]+@example\\.com\" />\r\n  <button type=\"submit\">Submit</button>\r\n</form>\r\n\r\n<script>\r\n  const email = document.getElementById('email');\r\n  email.addEventListener('input', () => {\r\n    if (email.value.endsWith('@gmail.com')) {\r\n      email.setCustomValidity('Only @example.com allowed');\r\n    } else {\r\n      email.setCustomValidity('');\r\n    }\r\n  });\r\n</script>\r\n```\r\n\r\nاین API با ARIA هم برای دسترسی‌پذیری یکپارچه است (مثلاً `aria-invalid`).",
+      "readingTime": 1
     },
     {
       "id": "html-023",
@@ -397,10 +353,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "داده ساخت‌یافته با JSON-LD، Microdata یا RDFa محتوا را با واژگان schema.org برچسب‌گذاری می‌کند تا موتور جستجو entityها را بهتر بفهمد (مثل Product، Event، Recipe).\r\n\r\nفرمت پیشنهادی: JSON-LD داخل `<script type=\"application/ld+json\">` (ساده‌تر و بدون شلوغ‌کردن markup).\r\n\r\nمزایا:\r\n\r\n- Rich snippetها (مثل ستاره و قیمت در نتایج جستجو)\r\n- crawlability بهتر (برای قابلیت‌هایی مثل Knowledge Graph)\r\n- کمک به voice search و featured snippet\r\n- احتمال بهبود رتبه به‌صورت غیرمستقیم (به‌خاطر درک بهتر محتوا)\r\n\r\nچالش‌ها: اعتبارسنجی با ابزارهای Structured Data و جلوگیری از spam (باید با محتوای قابل مشاهده تطابق داشته باشد).\r\n\r\nمثال (Product schema):\r\n\r\n```html\r\n<script type=\"application/ld+json\">\r\n  {\r\n    \"@context\": \"https://schema.org\",\r\n    \"@type\": \"Product\",\r\n    \"name\": \"Wireless Headphones\",\r\n    \"image\": \"headphones.jpg\",\r\n    \"description\": \"Noise-cancelling over-ear headphones\",\r\n    \"offers\": {\r\n      \"@type\": \"Offer\",\r\n      \"price\": \"199.99\",\r\n      \"priceCurrency\": \"USD\"\r\n    },\r\n    \"aggregateRating\": {\r\n      \"@type\": \"AggregateRating\",\r\n      \"ratingValue\": \"4.5\",\r\n      \"reviewCount\": \"89\"\r\n    }\r\n  }\r\n</script>\r\n```\r\n\r\nبرای صفحات کلیدی پیاده‌سازی کنید و با ابزار rich results تست بگیرید.",
-        "readingTime": 1
-      }
+      "markdown": "داده ساخت‌یافته با JSON-LD، Microdata یا RDFa محتوا را با واژگان schema.org برچسب‌گذاری می‌کند تا موتور جستجو entityها را بهتر بفهمد (مثل Product، Event، Recipe).\r\n\r\nفرمت پیشنهادی: JSON-LD داخل `<script type=\"application/ld+json\">` (ساده‌تر و بدون شلوغ‌کردن markup).\r\n\r\nمزایا:\r\n\r\n- Rich snippetها (مثل ستاره و قیمت در نتایج جستجو)\r\n- crawlability بهتر (برای قابلیت‌هایی مثل Knowledge Graph)\r\n- کمک به voice search و featured snippet\r\n- احتمال بهبود رتبه به‌صورت غیرمستقیم (به‌خاطر درک بهتر محتوا)\r\n\r\nچالش‌ها: اعتبارسنجی با ابزارهای Structured Data و جلوگیری از spam (باید با محتوای قابل مشاهده تطابق داشته باشد).\r\n\r\nمثال (Product schema):\r\n\r\n```html\r\n<script type=\"application/ld+json\">\r\n  {\r\n    \"@context\": \"https://schema.org\",\r\n    \"@type\": \"Product\",\r\n    \"name\": \"Wireless Headphones\",\r\n    \"image\": \"headphones.jpg\",\r\n    \"description\": \"Noise-cancelling over-ear headphones\",\r\n    \"offers\": {\r\n      \"@type\": \"Offer\",\r\n      \"price\": \"199.99\",\r\n      \"priceCurrency\": \"USD\"\r\n    },\r\n    \"aggregateRating\": {\r\n      \"@type\": \"AggregateRating\",\r\n      \"ratingValue\": \"4.5\",\r\n      \"reviewCount\": \"89\"\r\n    }\r\n  }\r\n</script>\r\n```\r\n\r\nبرای صفحات کلیدی پیاده‌سازی کنید و با ابزار rich results تست بگیرید.",
+      "readingTime": 1
     },
     {
       "id": "html-024",
@@ -413,10 +367,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "`contenteditable=\"true\"` یک عنصر را برای ویرایش کاربر قابل‌ویرایش می‌کند (شبیه ویرایشگر متن غنی).\r\n\r\nرفتار:\r\n\r\n- روی هر عنصری قابل اعمال است\r\n- به فرزندان به ارث می‌رسد مگر اینکه override شود\r\n- مرورگر ویرایش پایه را مدیریت می‌کند (مثل Ctrl+B) اما رفتارها یکسان نیستند\r\n\r\nمشکلات رایج:\r\n\r\n- امنیت: باید ورودی sanitize شود تا XSS رخ ندهد\r\n- ناسازگاری بین مرورگرها (مثلاً رفتار Paste)\r\n- کنترل نداشتن روی undo stack بومی\r\n- افت کارایی در محتوای حجیم\r\n- چالش دسترسی‌پذیری (بدون role پیش‌فرض مناسب ARIA)\r\n\r\nبرای دسترس‌پذیری بهتر:\r\n\r\n- افزودن ARIA مثل `role=\"textbox\"` یا `role=\"region\"`، `aria-label` و `aria-multiline=\"true\"`\r\n- مدیریت کیبورد: فوکوس، حرکت با کلیدها\r\n- استفاده از `execCommand` یا Clipboard API مدرن برای قابلیت‌های ویرایش\r\n\r\nمثال (ویرایشگر ساده):\r\n\r\n```html\r\n<div\r\n  contenteditable=\"true\"\r\n  role=\"textbox\"\r\n  aria-multiline=\"true\"\r\n  aria-label=\"Editable area\"\r\n>\r\n  Edit me!\r\n</div>\r\n\r\n<script>\r\n  const editor = document.querySelector('[contenteditable]');\r\n  editor.addEventListener('input', (e) => {\r\n    // Sanitize: e.target.innerHTML = sanitize(e.target.innerHTML);\r\n  });\r\n</script>\r\n```\r\n\r\nبرای محیط production معمولاً از کتابخانه‌هایی مثل Quill یا ProseMirror استفاده می‌شود.",
-        "readingTime": 1
-      }
+      "markdown": "`contenteditable=\"true\"` یک عنصر را برای ویرایش کاربر قابل‌ویرایش می‌کند (شبیه ویرایشگر متن غنی).\r\n\r\nرفتار:\r\n\r\n- روی هر عنصری قابل اعمال است\r\n- به فرزندان به ارث می‌رسد مگر اینکه override شود\r\n- مرورگر ویرایش پایه را مدیریت می‌کند (مثل Ctrl+B) اما رفتارها یکسان نیستند\r\n\r\nمشکلات رایج:\r\n\r\n- امنیت: باید ورودی sanitize شود تا XSS رخ ندهد\r\n- ناسازگاری بین مرورگرها (مثلاً رفتار Paste)\r\n- کنترل نداشتن روی undo stack بومی\r\n- افت کارایی در محتوای حجیم\r\n- چالش دسترسی‌پذیری (بدون role پیش‌فرض مناسب ARIA)\r\n\r\nبرای دسترس‌پذیری بهتر:\r\n\r\n- افزودن ARIA مثل `role=\"textbox\"` یا `role=\"region\"`، `aria-label` و `aria-multiline=\"true\"`\r\n- مدیریت کیبورد: فوکوس، حرکت با کلیدها\r\n- استفاده از `execCommand` یا Clipboard API مدرن برای قابلیت‌های ویرایش\r\n\r\nمثال (ویرایشگر ساده):\r\n\r\n```html\r\n<div\r\n  contenteditable=\"true\"\r\n  role=\"textbox\"\r\n  aria-multiline=\"true\"\r\n  aria-label=\"Editable area\"\r\n>\r\n  Edit me!\r\n</div>\r\n\r\n<script>\r\n  const editor = document.querySelector('[contenteditable]');\r\n  editor.addEventListener('input', (e) => {\r\n    // Sanitize: e.target.innerHTML = sanitize(e.target.innerHTML);\r\n  });\r\n</script>\r\n```\r\n\r\nبرای محیط production معمولاً از کتابخانه‌هایی مثل Quill یا ProseMirror استفاده می‌شود.",
+      "readingTime": 1
     },
     {
       "id": "html-025",
@@ -429,10 +381,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "Resource hintها (در قالب `<link rel=\"...\">`) به مرورگر می‌گویند منابع را زودتر resolve/fetch کند تا latency کم شود.\r\n\r\n- **preload**: بارگذاری زودهنگام منابع حیاتی (مثل فونت یا اسکریپت ضروری). برای اولویت درست، `as=\"type\"` مهم است.\r\n- **prefetch**: بارگذاری کم‌اولویت و حدسی برای ناوبری بعدی (مثلاً منابع صفحه بعد).\r\n- **preconnect**: برقراری زودهنگام اتصال TCP و handshake امنیتی برای دامنه‌های third-party.\r\n- **dns-prefetch**: فقط resolve کردن DNS (سبک‌تر از preconnect، مناسب تعداد زیادی دامنه).\r\n\r\nترتیب هزینه تقریبی: dns-prefetch (کمترین) < preconnect < prefetch < preload (بیشترین اولویت).\r\n\r\nمزایا: کاهش TTFB و بهبود FCP/LCP در Core Web Vitals.\r\n\r\nنکته: استفاده بیش‌ازحد باعث هدررفت پهنای باند می‌شود؛ با Lighthouse تست کنید.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nبرای محتوای بالای صفحه (above-the-fold) از preload و برای مسیرهای ناوبری بعدی از prefetch استفاده کنید.",
-        "readingTime": 1
-      }
+      "markdown": "Resource hintها (در قالب `<link rel=\"...\">`) به مرورگر می‌گویند منابع را زودتر resolve/fetch کند تا latency کم شود.\r\n\r\n- **preload**: بارگذاری زودهنگام منابع حیاتی (مثل فونت یا اسکریپت ضروری). برای اولویت درست، `as=\"type\"` مهم است.\r\n- **prefetch**: بارگذاری کم‌اولویت و حدسی برای ناوبری بعدی (مثلاً منابع صفحه بعد).\r\n- **preconnect**: برقراری زودهنگام اتصال TCP و handshake امنیتی برای دامنه‌های third-party.\r\n- **dns-prefetch**: فقط resolve کردن DNS (سبک‌تر از preconnect، مناسب تعداد زیادی دامنه).\r\n\r\nترتیب هزینه تقریبی: dns-prefetch (کمترین) < preconnect < prefetch < preload (بیشترین اولویت).\r\n\r\nمزایا: کاهش TTFB و بهبود FCP/LCP در Core Web Vitals.\r\n\r\nنکته: استفاده بیش‌ازحد باعث هدررفت پهنای باند می‌شود؛ با Lighthouse تست کنید.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nبرای محتوای بالای صفحه (above-the-fold) از preload و برای مسیرهای ناوبری بعدی از prefetch استفاده کنید.",
+      "readingTime": 1
     },
     {
       "id": "html-026",
@@ -446,10 +396,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "وقتی یک لینک با `target=\"_blank\"` در تب جدیدی باز می‌شود، صفحه جدید می‌تواند از طریق `window.opener` به صفحه اصلی دسترسی داشته باشد.\r\n\r\nاین دو خطر ایجاد می‌کند:\r\n\r\n- **Tabnapping**: صفحه جدید می‌تواند تب اصلی را از طریق `window.opener.location` به یک صفحه فیشینگ هدایت کند\r\n- **نشت Referrer**: هدر HTTP `Referer` آدرس صفحه مبدأ را به سایت مقصد فاش می‌کند\r\n\r\n`rel=\"noopener\"` — ارتباط `window.opener` را قطع می‌کند و از tabnapping جلوگیری می‌کند\r\n\r\n`rel=\"noreferrer\"` — علاوه بر قطع opener، ارسال هدر `Referer` را هم متوقف می‌کند (شامل `noopener` نیز می‌شود)\r\n\r\nمرورگرهای مدرن به صورت خودکار `noopener` را برای `target=\"_blank\"` اعمال می‌کنند، اما ذکر صریح آن همچنان بهترین روش است.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- ریسک‌دار: دسترسی opener + نشت referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\">بازدید</a>\r\n\r\n<!-- امن: بدون دسترسی opener، بدون نشت referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\"\r\n  >بازدید</a\r\n>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "وقتی یک لینک با `target=\"_blank\"` در تب جدیدی باز می‌شود، صفحه جدید می‌تواند از طریق `window.opener` به صفحه اصلی دسترسی داشته باشد.\r\n\r\nاین دو خطر ایجاد می‌کند:\r\n\r\n- **Tabnapping**: صفحه جدید می‌تواند تب اصلی را از طریق `window.opener.location` به یک صفحه فیشینگ هدایت کند\r\n- **نشت Referrer**: هدر HTTP `Referer` آدرس صفحه مبدأ را به سایت مقصد فاش می‌کند\r\n\r\n`rel=\"noopener\"` — ارتباط `window.opener` را قطع می‌کند و از tabnapping جلوگیری می‌کند\r\n\r\n`rel=\"noreferrer\"` — علاوه بر قطع opener، ارسال هدر `Referer` را هم متوقف می‌کند (شامل `noopener` نیز می‌شود)\r\n\r\nمرورگرهای مدرن به صورت خودکار `noopener` را برای `target=\"_blank\"` اعمال می‌کنند، اما ذکر صریح آن همچنان بهترین روش است.\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- ریسک‌دار: دسترسی opener + نشت referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\">بازدید</a>\r\n\r\n<!-- امن: بدون دسترسی opener، بدون نشت referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\"\r\n  >بازدید</a\r\n>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-027",
@@ -462,10 +410,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو برای گرافیک استفاده می‌شوند اما به شکل متفاوتی کار می‌کنند.\r\n\r\n**`<canvas>`**\r\n\r\n- مبتنی بر رستر (رسم پیکسلی)\r\n- از طریق JavaScript رندر می‌شود (API دستوری)\r\n- اشکال رسم‌شده نود DOM ندارند\r\n- مناسب برای رندر real-time، بازی‌ها و پردازش تصویر\r\n- به طور پیش‌فرض دسترس‌پذیر نیست\r\n\r\n**`<svg>`**\r\n\r\n- مبتنی بر وکتور (اشکال ریاضی)\r\n- نشانه‌گذاری declarative (مبتنی بر XML)\r\n- هر شکل یک نود DOM است (قابل اسکریپت و استایل‌دهی)\r\n- مناسب برای آیکون‌ها، نمودارها و تصاویر مقیاس‌پذیر\r\n- دسترس‌پذیر و قابل ایندکس توسط موتورهای جستجو\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- Canvas: رسم دستوری -->\r\n<canvas id=\"c\" width=\"200\" height=\"200\"></canvas>\r\n<script>\r\n  const ctx = document.getElementById('c').getContext('2d');\r\n  ctx.fillStyle = 'blue';\r\n  ctx.fillRect(10, 10, 100, 100);\r\n</script>\r\n\r\n<!-- SVG: اشکال وکتوری declarative -->\r\n<svg width=\"200\" height=\"200\">\r\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"blue\" />\r\n</svg>\r\n```\r\n\r\nاز `<canvas>` برای رندر پیکسلی داینامیک و از `<svg>` برای گرافیک مقیاس‌پذیر، تعاملی یا دسترس‌پذیر استفاده کنید.",
-        "readingTime": 1
-      }
+      "markdown": "هر دو برای گرافیک استفاده می‌شوند اما به شکل متفاوتی کار می‌کنند.\r\n\r\n**`<canvas>`**\r\n\r\n- مبتنی بر رستر (رسم پیکسلی)\r\n- از طریق JavaScript رندر می‌شود (API دستوری)\r\n- اشکال رسم‌شده نود DOM ندارند\r\n- مناسب برای رندر real-time، بازی‌ها و پردازش تصویر\r\n- به طور پیش‌فرض دسترس‌پذیر نیست\r\n\r\n**`<svg>`**\r\n\r\n- مبتنی بر وکتور (اشکال ریاضی)\r\n- نشانه‌گذاری declarative (مبتنی بر XML)\r\n- هر شکل یک نود DOM است (قابل اسکریپت و استایل‌دهی)\r\n- مناسب برای آیکون‌ها، نمودارها و تصاویر مقیاس‌پذیر\r\n- دسترس‌پذیر و قابل ایندکس توسط موتورهای جستجو\r\n\r\nمثال:\r\n\r\n```html\r\n<!-- Canvas: رسم دستوری -->\r\n<canvas id=\"c\" width=\"200\" height=\"200\"></canvas>\r\n<script>\r\n  const ctx = document.getElementById('c').getContext('2d');\r\n  ctx.fillStyle = 'blue';\r\n  ctx.fillRect(10, 10, 100, 100);\r\n</script>\r\n\r\n<!-- SVG: اشکال وکتوری declarative -->\r\n<svg width=\"200\" height=\"200\">\r\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"blue\" />\r\n</svg>\r\n```\r\n\r\nاز `<canvas>` برای رندر پیکسلی داینامیک و از `<svg>` برای گرافیک مقیاس‌پذیر، تعاملی یا دسترس‌پذیر استفاده کنید.",
+      "readingTime": 1
     },
     {
       "id": "html-028",
@@ -478,10 +424,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "fa",
-      "answer": {
-        "markdown": "تگ‌های Open Graph (OG) تگ‌های متایی هستند که نحوه نمایش صفحه را هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک، توییتر/X، لینکدین و واتساپ کنترل می‌کنند.\r\n\r\nاین تگ‌ها ویژگی‌هایی مثل عنوان، توضیحات، تصویر و URL را برای کارت پیش‌نمایش لینک تعریف می‌کنند.\r\n\r\nبدون تگ‌های OG، پلتفرم‌ها محتوا را از صفحه حدس می‌زنند و اغلب پیش‌نمایش ضعیفی تولید می‌کنند.\r\n\r\nویژگی‌های کلیدی OG:\r\n\r\n- `og:title` — عنوان نمایش‌داده‌شده در پیش‌نمایش\r\n- `og:description` — خلاصه نمایش‌داده‌شده در پیش‌نمایش\r\n- `og:image` — آدرس تصویر بندانگشتی\r\n- `og:url` — آدرس canonical صفحه\r\n- `og:type` — نوع محتوا (website، article، video و ...)\r\n\r\nمثال:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"سوالات مصاحبه HTML\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"راهنمای کامل آمادگی برای مصاحبه HTML.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- مخصوص توییتر (اکنون X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"سوالات مصاحبه HTML\" />\r\n```\r\n\r\nتگ‌های OG با ارائه پیش‌نمایش‌های غنی و کنترل‌شده، نرخ کلیک را در شبکه‌های اجتماعی بهبود می‌دهند.",
-        "readingTime": 1
-      }
+      "markdown": "تگ‌های Open Graph (OG) تگ‌های متایی هستند که نحوه نمایش صفحه را هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک، توییتر/X، لینکدین و واتساپ کنترل می‌کنند.\r\n\r\nاین تگ‌ها ویژگی‌هایی مثل عنوان، توضیحات، تصویر و URL را برای کارت پیش‌نمایش لینک تعریف می‌کنند.\r\n\r\nبدون تگ‌های OG، پلتفرم‌ها محتوا را از صفحه حدس می‌زنند و اغلب پیش‌نمایش ضعیفی تولید می‌کنند.\r\n\r\nویژگی‌های کلیدی OG:\r\n\r\n- `og:title` — عنوان نمایش‌داده‌شده در پیش‌نمایش\r\n- `og:description` — خلاصه نمایش‌داده‌شده در پیش‌نمایش\r\n- `og:image` — آدرس تصویر بندانگشتی\r\n- `og:url` — آدرس canonical صفحه\r\n- `og:type` — نوع محتوا (website، article، video و ...)\r\n\r\nمثال:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"سوالات مصاحبه HTML\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"راهنمای کامل آمادگی برای مصاحبه HTML.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- مخصوص توییتر (اکنون X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"سوالات مصاحبه HTML\" />\r\n```\r\n\r\nتگ‌های OG با ارائه پیش‌نمایش‌های غنی و کنترل‌شده، نرخ کلیک را در شبکه‌های اجتماعی بهبود می‌دهند.",
+      "readingTime": 1
     }
   ]
 }

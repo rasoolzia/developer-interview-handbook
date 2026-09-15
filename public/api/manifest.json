@@ -1,7 +1,7 @@
 {
-  "generatorVersion": "1.1.0",
-  "schemaVersion": "2.1.0",
-  "generatedAt": "2026-08-09T14:50:17.152Z",
+  "generatorVersion": "2.0.0",
+  "schemaVersion": "3.0.0",
+  "generatedAt": "2026-09-15T14:36:55.240Z",
   "languages": [
     "en",
     "fa"

@@ -44,10 +44,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "`<div>` and `<span>` are generic container elements, but they differ in their display behavior and typical usage.\r\n\r\n**`<div>`**\r\n\r\n- Block-level element\r\n- Takes full available width\r\n- Starts on a new line\r\n- Used to group larger sections of content\r\n\r\n**`<span>`**\r\n\r\n- Inline element\r\n- Takes only as much width as necessary\r\n- Does not start on a new line\r\n- Used to group small pieces of inline content",
-        "readingTime": 1
-      }
+      "markdown": "`<div>` and `<span>` are generic container elements, but they differ in their display behavior and typical usage.\r\n\r\n**`<div>`**\r\n\r\n- Block-level element\r\n- Takes full available width\r\n- Starts on a new line\r\n- Used to group larger sections of content\r\n\r\n**`<span>`**\r\n\r\n- Inline element\r\n- Takes only as much width as necessary\r\n- Does not start on a new line\r\n- Used to group small pieces of inline content",
+      "readingTime": 1
     },
     {
       "id": "html-002",
@@ -60,10 +58,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "The `<!DOCTYPE>` declaration tells the browser which version of HTML the document is written in.\r\n\r\nIts main purposes are:\r\n\r\n- Enables standards mode in modern browsers\r\n- Prevents browsers from rendering the page in quirks mode\r\n- Ensures consistent layout and CSS behavior",
-        "readingTime": 1
-      }
+      "markdown": "The `<!DOCTYPE>` declaration tells the browser which version of HTML the document is written in.\r\n\r\nIts main purposes are:\r\n\r\n- Enables standards mode in modern browsers\r\n- Prevents browsers from rendering the page in quirks mode\r\n- Ensures consistent layout and CSS behavior",
+      "readingTime": 1
     },
     {
       "id": "html-003",
@@ -76,10 +72,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Block and inline elements differ in how they are displayed in the layout.\r\n\r\n**Block-level elements**\r\n\r\n- Start on a new line\r\n- Take the full available width\r\n- Can contain other block and inline elements\r\n\r\nExamples: `<div>`, `<p>`, `<section>`\r\n\r\n**Inline elements**\r\n\r\n- Do not start on a new line\r\n- Take only as much width as needed\r\n- Typically contain text or other inline elements\r\n\r\nExamples: `<span>`, `<a>`, `<strong>`",
-        "readingTime": 1
-      }
+      "markdown": "Block and inline elements differ in how they are displayed in the layout.\r\n\r\n**Block-level elements**\r\n\r\n- Start on a new line\r\n- Take the full available width\r\n- Can contain other block and inline elements\r\n\r\nExamples: `<div>`, `<p>`, `<section>`\r\n\r\n**Inline elements**\r\n\r\n- Do not start on a new line\r\n- Take only as much width as needed\r\n- Typically contain text or other inline elements\r\n\r\nExamples: `<span>`, `<a>`, `<strong>`",
+      "readingTime": 1
     },
     {
       "id": "html-004",
@@ -92,10 +86,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Semantic HTML elements clearly describe their meaning in a human- and machine-readable way.\r\n\r\nThey help:\r\n\r\n- Improve accessibility\r\n- Improve SEO\r\n- Make code more maintainable\r\n\r\nExamples of semantic elements:\r\n\r\n- `<header>`\r\n- `<nav>`\r\n- `<main>`\r\n- `<article>`\r\n- `<section>`\r\n- `<footer>`\r\n\r\nUnlike `<div>`, semantic elements describe the role of the content they contain.",
-        "readingTime": 1
-      }
+      "markdown": "Semantic HTML elements clearly describe their meaning in a human- and machine-readable way.\r\n\r\nThey help:\r\n\r\n- Improve accessibility\r\n- Improve SEO\r\n- Make code more maintainable\r\n\r\nExamples of semantic elements:\r\n\r\n- `<header>`\r\n- `<nav>`\r\n- `<main>`\r\n- `<article>`\r\n- `<section>`\r\n- `<footer>`\r\n\r\nUnlike `<div>`, semantic elements describe the role of the content they contain.",
+      "readingTime": 1
     },
     {
       "id": "html-005",
@@ -108,10 +100,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "`id` and `class` are attributes used to identify HTML elements, but they differ in scope and usage.\r\n\r\n**`id`**\r\n\r\n- Must be unique within a page\r\n- Used to target a single element\r\n- Often used for JavaScript selection or anchor links\r\n\r\n**`class`**\r\n\r\n- Can be reused on multiple elements\r\n- Used to group elements with similar styling\r\n- Commonly used in CSS\r\n\r\nAn element can have multiple classes but only one id.",
-        "readingTime": 1
-      }
+      "markdown": "`id` and `class` are attributes used to identify HTML elements, but they differ in scope and usage.\r\n\r\n**`id`**\r\n\r\n- Must be unique within a page\r\n- Used to target a single element\r\n- Often used for JavaScript selection or anchor links\r\n\r\n**`class`**\r\n\r\n- Can be reused on multiple elements\r\n- Used to group elements with similar styling\r\n- Commonly used in CSS\r\n\r\nAn element can have multiple classes but only one id.",
+      "readingTime": 1
     },
     {
       "id": "html-006",
@@ -124,10 +114,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "The `alt` attribute provides alternative text for an image when it cannot be displayed or when assistive technologies are used.\r\n\r\nKey purposes:\r\n\r\n- **Accessibility**: Screen readers read the alt text for visually impaired users\r\n- **SEO**: Search engines use alt text to understand image content\r\n- **Fallback**: Displays text if the image fails to load\r\n\r\nBest practice:\r\n\r\n- Be descriptive but concise\r\n- Use `alt=\"\"` for decorative images\r\n\r\nExample:\r\n\r\n```html\r\n<img src=\"profile.jpg\" alt=\"Portrait of Jane Doe smiling\" />\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "The `alt` attribute provides alternative text for an image when it cannot be displayed or when assistive technologies are used.\r\n\r\nKey purposes:\r\n\r\n- **Accessibility**: Screen readers read the alt text for visually impaired users\r\n- **SEO**: Search engines use alt text to understand image content\r\n- **Fallback**: Displays text if the image fails to load\r\n\r\nBest practice:\r\n\r\n- Be descriptive but concise\r\n- Use `alt=\"\"` for decorative images\r\n\r\nExample:\r\n\r\n```html\r\n<img src=\"profile.jpg\" alt=\"Portrait of Jane Doe smiling\" />\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-007",
@@ -140,10 +128,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Semantic elements describe their meaning clearly to browsers, developers, and assistive technologies.\r\n\r\n- `<article>`: Self-contained content that can stand alone (e.g., blog post, news story)\r\n- `<section>`: Thematic grouping of content (e.g., chapter, introduction)\r\n- `<aside>`: Content indirectly related to main content (e.g., sidebar, related links, ads)\r\n\r\nBenefits over `<div>`:\r\n\r\n- Better accessibility (screen readers announce roles)\r\n- Improved SEO (search engines understand structure)\r\n- More maintainable code\r\n\r\nExample:\r\n\r\n```html\r\n<article>\r\n  <h2>How JavaScript Works</h2>\r\n  <p>A self-contained post about JS internals...</p>\r\n</article>\r\n\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>Thematic content grouped together...</p>\r\n</section>\r\n\r\n<aside>\r\n  <h3>Related Articles</h3>\r\n  <ul>\r\n    <li><a href=\"#\">Deep dive into closures</a></li>\r\n  </ul>\r\n</aside>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "Semantic elements describe their meaning clearly to browsers, developers, and assistive technologies.\r\n\r\n- `<article>`: Self-contained content that can stand alone (e.g., blog post, news story)\r\n- `<section>`: Thematic grouping of content (e.g., chapter, introduction)\r\n- `<aside>`: Content indirectly related to main content (e.g., sidebar, related links, ads)\r\n\r\nBenefits over `<div>`:\r\n\r\n- Better accessibility (screen readers announce roles)\r\n- Improved SEO (search engines understand structure)\r\n- More maintainable code\r\n\r\nExample:\r\n\r\n```html\r\n<article>\r\n  <h2>How JavaScript Works</h2>\r\n  <p>A self-contained post about JS internals...</p>\r\n</article>\r\n\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>Thematic content grouped together...</p>\r\n</section>\r\n\r\n<aside>\r\n  <h3>Related Articles</h3>\r\n  <ul>\r\n    <li><a href=\"#\">Deep dive into closures</a></li>\r\n  </ul>\r\n</aside>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-008",
@@ -156,10 +142,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both input types are used for numeric-like input, but they behave differently.\r\n\r\n**`type=\"number\"`**\r\n\r\n- Accepts only numeric values\r\n- Provides built-in validation\r\n- Shows increment/decrement arrows in some browsers\r\n- May reject characters like \"+\" or \"-\" depending on configuration\r\n\r\n**`type=\"tel\"`**\r\n\r\n- Intended for telephone numbers\r\n- Does not enforce numeric validation\r\n- Triggers numeric keypad on mobile devices\r\n- Allows flexible formatting (e.g., +1-800-123-4567)\r\n\r\nUse `type=\"tel\"` for phone numbers and `type=\"number\"` for actual numeric data.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Accepts only numbers, shows increment arrows -->\r\n<input type=\"number\" min=\"1\" max=\"100\" value=\"10\" />\r\n\r\n<!-- Triggers numeric keypad on mobile, allows flexible format -->\r\n<input type=\"tel\" placeholder=\"+1-800-123-4567\" />\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "Both input types are used for numeric-like input, but they behave differently.\r\n\r\n**`type=\"number\"`**\r\n\r\n- Accepts only numeric values\r\n- Provides built-in validation\r\n- Shows increment/decrement arrows in some browsers\r\n- May reject characters like \"+\" or \"-\" depending on configuration\r\n\r\n**`type=\"tel\"`**\r\n\r\n- Intended for telephone numbers\r\n- Does not enforce numeric validation\r\n- Triggers numeric keypad on mobile devices\r\n- Allows flexible formatting (e.g., +1-800-123-4567)\r\n\r\nUse `type=\"tel\"` for phone numbers and `type=\"number\"` for actual numeric data.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Accepts only numbers, shows increment arrows -->\r\n<input type=\"number\" min=\"1\" max=\"100\" value=\"10\" />\r\n\r\n<!-- Triggers numeric keypad on mobile, allows flexible format -->\r\n<input type=\"tel\" placeholder=\"+1-800-123-4567\" />\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-009",
@@ -172,10 +156,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Several HTML features help optimize loading and rendering:\r\n\r\n- Use `loading=\"lazy\"` on `<img>` and `<iframe>` for deferred loading\r\n- Add `async` or `defer` to `<script>` tags to avoid blocking render\r\n- Use `<link rel=\"preload\">`, `preconnect`, or `dns-prefetch` for critical resources\r\n- Specify `width` and `height` on images to prevent layout shifts (CLS)\r\n- Use responsive images with `srcset` and `<picture>`\r\n\r\nThese techniques improve load time, reduce blocking, and enhance user experience.\r\n\r\nExample:\r\n\r\n```html\r\n<img src=\"large.jpg\" loading=\"lazy\" width=\"800\" height=\"600\" alt=\"...\" />\r\n<script src=\"app.js\" defer></script>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "Several HTML features help optimize loading and rendering:\r\n\r\n- Use `loading=\"lazy\"` on `<img>` and `<iframe>` for deferred loading\r\n- Add `async` or `defer` to `<script>` tags to avoid blocking render\r\n- Use `<link rel=\"preload\">`, `preconnect`, or `dns-prefetch` for critical resources\r\n- Specify `width` and `height` on images to prevent layout shifts (CLS)\r\n- Use responsive images with `srcset` and `<picture>`\r\n\r\nThese techniques improve load time, reduce blocking, and enhance user experience.\r\n\r\nExample:\r\n\r\n```html\r\n<img src=\"large.jpg\" loading=\"lazy\" width=\"800\" height=\"600\" alt=\"...\" />\r\n<script src=\"app.js\" defer></script>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-010",
@@ -188,10 +170,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "The viewport meta tag controls how a webpage is displayed on mobile devices.  \r\nWithout it, mobile browsers often render pages at a desktop width and scale them down.\r\n\r\nStandard usage:\r\n\r\n```html\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\n- `width=device-width`: Matches the device's screen width\r\n- `initial-scale=1.0`: Sets initial zoom level\r\n\r\nIt is essential for responsive web design.",
-        "readingTime": 1
-      }
+      "markdown": "The viewport meta tag controls how a webpage is displayed on mobile devices.  \r\nWithout it, mobile browsers often render pages at a desktop width and scale them down.\r\n\r\nStandard usage:\r\n\r\n```html\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\n- `width=device-width`: Matches the device's screen width\r\n- `initial-scale=1.0`: Sets initial zoom level\r\n\r\nIt is essential for responsive web design.",
+      "readingTime": 1
     },
     {
       "id": "html-011",
@@ -204,10 +184,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both `async` and `defer` allow non-blocking script loading, but they differ in execution timing:\r\n\r\n- **async**:\r\n  - Downloads in parallel\r\n  - Executes as soon as download finishes (may interrupt HTML parsing)\r\n  - No guarantee of order between multiple async scripts\r\n  - Good for independent scripts (analytics, ads)\r\n\r\n- **defer**:\r\n  - Downloads in parallel\r\n  - Executes only after HTML parsing is complete (just before DOMContentLoaded)\r\n  - Preserves script order\r\n  - Ideal for scripts that depend on DOM (most app scripts)\r\n\r\n**Impact on Critical Rendering Path (CRP)**:\r\n\r\n- Without attributes → render-blocking (parsing pauses)\r\n- async → may still block render if executes early\r\n- defer → truly non-blocking for rendering\r\n\r\nBest practice: Use `defer` for most cases unless you need immediate execution.\r\n\r\nExample:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "Both `async` and `defer` allow non-blocking script loading, but they differ in execution timing:\r\n\r\n- **async**:\r\n  - Downloads in parallel\r\n  - Executes as soon as download finishes (may interrupt HTML parsing)\r\n  - No guarantee of order between multiple async scripts\r\n  - Good for independent scripts (analytics, ads)\r\n\r\n- **defer**:\r\n  - Downloads in parallel\r\n  - Executes only after HTML parsing is complete (just before DOMContentLoaded)\r\n  - Preserves script order\r\n  - Ideal for scripts that depend on DOM (most app scripts)\r\n\r\n**Impact on Critical Rendering Path (CRP)**:\r\n\r\n- Without attributes → render-blocking (parsing pauses)\r\n- async → may still block render if executes early\r\n- defer → truly non-blocking for rendering\r\n\r\nBest practice: Use `defer` for most cases unless you need immediate execution.\r\n\r\nExample:\r\n\r\n```html\r\n<script src=\"analytics.js\" async></script>\r\n<script src=\"app.js\" defer></script>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-012",
@@ -220,10 +198,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.",
-        "readingTime": 1
-      }
+      "markdown": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.",
+      "readingTime": 1
     },
     {
       "id": "html-013",
@@ -236,10 +212,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Common mistakes:\r\n\r\n1.  Using ARIA when native HTML exists (e.g., `role=\"button\"` on `<div>` instead of `<button>`)\r\n2.  Adding redundant ARIA (e.g., `aria-label` on image with good `alt`)\r\n3.  Forgetting `aria-hidden` on decorative content\r\n4.  Incorrect live regions (`aria-live=\"polite\"` vs `assertive`)\r\n5.  Missing keyboard focus management for custom components\r\n\r\n**Golden rule (ARIA Authoring Practices)**:  \r\n**\"No ARIA is better than bad ARIA\"**  \r\n**\"If you can use a native semantic element, do it\"**\r\n\r\nPriority order:\r\n\r\n1.  Native HTML (button, input, nav, etc.)\r\n2.  ARIA roles/states only when needed\r\n3.  JavaScript for dynamic behavior\r\n\r\nExample bad → good:\r\n\r\n```html\r\n<!-- Bad -->\r\n<div role=\"button\" onclick=\"...\">Click</div>\r\n\r\n<!-- Good -->\r\n<button onclick=\"...\">Click</button>\r\n```\r\n\r\nUse tools like Lighthouse / axe to catch mistakes.",
-        "readingTime": 1
-      }
+      "markdown": "Common mistakes:\r\n\r\n1.  Using ARIA when native HTML exists (e.g., `role=\"button\"` on `<div>` instead of `<button>`)\r\n2.  Adding redundant ARIA (e.g., `aria-label` on image with good `alt`)\r\n3.  Forgetting `aria-hidden` on decorative content\r\n4.  Incorrect live regions (`aria-live=\"polite\"` vs `assertive`)\r\n5.  Missing keyboard focus management for custom components\r\n\r\n**Golden rule (ARIA Authoring Practices)**:  \r\n**\"No ARIA is better than bad ARIA\"**  \r\n**\"If you can use a native semantic element, do it\"**\r\n\r\nPriority order:\r\n\r\n1.  Native HTML (button, input, nav, etc.)\r\n2.  ARIA roles/states only when needed\r\n3.  JavaScript for dynamic behavior\r\n\r\nExample bad → good:\r\n\r\n```html\r\n<!-- Bad -->\r\n<div role=\"button\" onclick=\"...\">Click</div>\r\n\r\n<!-- Good -->\r\n<button onclick=\"...\">Click</button>\r\n```\r\n\r\nUse tools like Lighthouse / axe to catch mistakes.",
+      "readingTime": 1
     },
     {
       "id": "html-014",
@@ -252,10 +226,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "The Critical Rendering Path (CRP) is the sequence of steps the browser follows to render a page.\r\n\r\nMain stages:\r\n\r\n1.  Parse HTML → Build DOM\r\n2.  Parse CSS → Build CSSOM\r\n3.  Combine into Render Tree\r\n4.  Layout\r\n5.  Paint\r\n\r\nHTML directly affects:\r\n\r\n- DOM size and depth\r\n- Resource loading order\r\n- Blocking scripts\r\n- Images without defined dimensions\r\n\r\nHTML optimization techniques:\r\n\r\n- Use `defer` for scripts\r\n- Minimize DOM depth\r\n- Specify `width` and `height` for images\r\n- Preload critical resources\r\n\r\nUnderstanding CRP is essential for performance optimization.",
-        "readingTime": 1
-      }
+      "markdown": "The Critical Rendering Path (CRP) is the sequence of steps the browser follows to render a page.\r\n\r\nMain stages:\r\n\r\n1.  Parse HTML → Build DOM\r\n2.  Parse CSS → Build CSSOM\r\n3.  Combine into Render Tree\r\n4.  Layout\r\n5.  Paint\r\n\r\nHTML directly affects:\r\n\r\n- DOM size and depth\r\n- Resource loading order\r\n- Blocking scripts\r\n- Images without defined dimensions\r\n\r\nHTML optimization techniques:\r\n\r\n- Use `defer` for scripts\r\n- Minimize DOM depth\r\n- Specify `width` and `height` for images\r\n- Preload critical resources\r\n\r\nUnderstanding CRP is essential for performance optimization.",
+      "readingTime": 1
     },
     {
       "id": "html-015",
@@ -268,10 +240,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.",
-        "readingTime": 1
-      }
+      "markdown": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.",
+      "readingTime": 1
     },
     {
       "id": "html-016",
@@ -284,10 +254,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "`<div>` is a generic container with no semantic meaning.\r\n\r\n`<section>` represents a thematic grouping of content and contributes to the document outline.\r\n\r\nKey differences:\r\n\r\n- `<section>` should typically contain a heading\r\n- It signals structure to assistive technologies and search engines\r\n- `<div>` is purely structural with no semantic value\r\n\r\nUse `<section>` when the content represents a logical section of the document.\r\nUse `<div>` only when no semantic element is appropriate.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- div: pure layout container, no semantic role -->\r\n<div class=\"card-wrapper\">\r\n  <div class=\"card\">...</div>\r\n</div>\r\n\r\n<!-- section: thematic document section, should have a heading -->\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>We offer web development, design, and consulting.</p>\r\n</section>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "`<div>` is a generic container with no semantic meaning.\r\n\r\n`<section>` represents a thematic grouping of content and contributes to the document outline.\r\n\r\nKey differences:\r\n\r\n- `<section>` should typically contain a heading\r\n- It signals structure to assistive technologies and search engines\r\n- `<div>` is purely structural with no semantic value\r\n\r\nUse `<section>` when the content represents a logical section of the document.\r\nUse `<div>` only when no semantic element is appropriate.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- div: pure layout container, no semantic role -->\r\n<div class=\"card-wrapper\">\r\n  <div class=\"card\">...</div>\r\n</div>\r\n\r\n<!-- section: thematic document section, should have a heading -->\r\n<section>\r\n  <h2>Our Services</h2>\r\n  <p>We offer web development, design, and consulting.</p>\r\n</section>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-017",
@@ -300,10 +268,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "`<template>` + Shadow DOM are core to Web Components:\r\n\r\n- `<template>`: Parsed but inert HTML fragment (not rendered, no side effects until cloned)\r\n- Shadow DOM: Encapsulated subtree attached to a custom element (styles/DOM isolated)\r\n\r\nTogether they solve:\r\n\r\n- Style leakage (component CSS doesn't affect page)\r\n- DOM encapsulation (no accidental querySelector conflicts)\r\n- Reusability without framework (no React/Vue needed)\r\n\r\nBasic example:\r\n\r\n```html\r\n<template id=\"my-card\">\r\n  <style>\r\n    .card {\r\n      border: 1px solid;\r\n      padding: 1em;\r\n    }\r\n  </style>\r\n  <div class=\"card\"><slot name=\"title\"></slot></div>\r\n</template>\r\n\r\n<script>\r\n  class MyCard extends HTMLElement {\r\n    constructor() {\r\n      super();\r\n      const shadow = this.attachShadow({ mode: 'open' });\r\n      const template = document\r\n        .getElementById('my-card')\r\n        .content.cloneNode(true);\r\n      shadow.appendChild(template);\r\n    }\r\n  }\r\n  customElements.define('my-card', MyCard);\r\n</script>\r\n\r\n<my-card><span slot=\"title\">Hello</span></my-card>\r\n```\r\n\r\nBenefits: Framework-agnostic, performant, future-proof components.",
-        "readingTime": 1
-      }
+      "markdown": "`<template>` + Shadow DOM are core to Web Components:\r\n\r\n- `<template>`: Parsed but inert HTML fragment (not rendered, no side effects until cloned)\r\n- Shadow DOM: Encapsulated subtree attached to a custom element (styles/DOM isolated)\r\n\r\nTogether they solve:\r\n\r\n- Style leakage (component CSS doesn't affect page)\r\n- DOM encapsulation (no accidental querySelector conflicts)\r\n- Reusability without framework (no React/Vue needed)\r\n\r\nBasic example:\r\n\r\n```html\r\n<template id=\"my-card\">\r\n  <style>\r\n    .card {\r\n      border: 1px solid;\r\n      padding: 1em;\r\n    }\r\n  </style>\r\n  <div class=\"card\"><slot name=\"title\"></slot></div>\r\n</template>\r\n\r\n<script>\r\n  class MyCard extends HTMLElement {\r\n    constructor() {\r\n      super();\r\n      const shadow = this.attachShadow({ mode: 'open' });\r\n      const template = document\r\n        .getElementById('my-card')\r\n        .content.cloneNode(true);\r\n      shadow.appendChild(template);\r\n    }\r\n  }\r\n  customElements.define('my-card', MyCard);\r\n</script>\r\n\r\n<my-card><span slot=\"title\">Hello</span></my-card>\r\n```\r\n\r\nBenefits: Framework-agnostic, performant, future-proof components.",
+      "readingTime": 1
     },
     {
       "id": "html-018",
@@ -317,10 +283,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "The sandbox attribute restricts what an embedded iframe can do, adding a security layer against malicious content.\r\n\r\nCommon values (space-separated):\r\n\r\n- (empty) → full restrictions (very safe)\r\n- `allow-scripts` → allows JS execution\r\n- `allow-same-origin` → treats iframe as same-origin (dangerous!)\r\n- `allow-popups` → allows new windows\r\n- `allow-forms` → allows form submission\r\n\r\nDefault (sandbox=\"\"): Disables:\r\n\r\n- Navigation\r\n- Scripts\r\n- Forms\r\n- Plugins\r\n- Same-origin policy bypass\r\n\r\nUse case: Embedding third-party content (ads, user-generated HTML, previews).\r\n\r\nExample (safe embed):\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nWithout sandbox → potential XSS or clickjacking risk.",
-        "readingTime": 1
-      }
+      "markdown": "The sandbox attribute restricts what an embedded iframe can do, adding a security layer against malicious content.\r\n\r\nCommon values (space-separated):\r\n\r\n- (empty) → full restrictions (very safe)\r\n- `allow-scripts` → allows JS execution\r\n- `allow-same-origin` → treats iframe as same-origin (dangerous!)\r\n- `allow-popups` → allows new windows\r\n- `allow-forms` → allows form submission\r\n\r\nDefault (sandbox=\"\"): Disables:\r\n\r\n- Navigation\r\n- Scripts\r\n- Forms\r\n- Plugins\r\n- Same-origin policy bypass\r\n\r\nUse case: Embedding third-party content (ads, user-generated HTML, previews).\r\n\r\nExample (safe embed):\r\n\r\n```html\r\n<iframe\r\n  src=\"https://example.com/widget\"\r\n  sandbox=\"allow-scripts allow-same-origin\"\r\n></iframe>\r\n```\r\n\r\nWithout sandbox → potential XSS or clickjacking risk.",
+      "readingTime": 1
     },
     {
       "id": "html-019",
@@ -333,10 +297,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both create relationships, but they serve different purposes.",
-        "readingTime": 1
-      }
+      "markdown": "Both create relationships, but they serve different purposes.",
+      "readingTime": 1
     },
     {
       "id": "html-020",
@@ -349,10 +311,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Web Components allow creation of reusable, encapsulated custom elements.\r\n\r\nThey are built on four core technologies:\r\n\r\n1.  **Custom Elements** – Define new HTML tags\r\n2.  **Shadow DOM** – Encapsulated DOM subtree\r\n3.  **HTML Templates** – Reusable markup\r\n4.  **ES Modules** – Modular JavaScript\r\n\r\nExample concept:\r\n\r\n```html\r\n<user-card></user-card>\r\n```\r\n\r\nBenefits:\r\n\r\n- Encapsulation\r\n- Reusability\r\n- Framework-independent components\r\n\r\nWeb Components enable native component architecture without relying on external frameworks.",
-        "readingTime": 1
-      }
+      "markdown": "Web Components allow creation of reusable, encapsulated custom elements.\r\n\r\nThey are built on four core technologies:\r\n\r\n1.  **Custom Elements** – Define new HTML tags\r\n2.  **Shadow DOM** – Encapsulated DOM subtree\r\n3.  **HTML Templates** – Reusable markup\r\n4.  **ES Modules** – Modular JavaScript\r\n\r\nExample concept:\r\n\r\n```html\r\n<user-card></user-card>\r\n```\r\n\r\nBenefits:\r\n\r\n- Encapsulation\r\n- Reusability\r\n- Framework-independent components\r\n\r\nWeb Components enable native component architecture without relying on external frameworks.",
+      "readingTime": 1
     },
     {
       "id": "html-021",
@@ -365,10 +325,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "This trio enables art-direction and resolution switching without JavaScript:\r\n\r\n- `<picture>`: Container with multiple `<source>` options\r\n- `srcset`: List of image candidates (with descriptors like 1x, 2x, or widths)\r\n- `sizes`: Tells browser expected rendered width at different media conditions\r\n\r\nBrowser picks best source based on:\r\n\r\n- Device pixel ratio (DPR)\r\n- Viewport width\r\n- Supported format (e.g., WebP)\r\n\r\nWhy better than CSS media queries?\r\n\r\n- Browser decides before download (saves bandwidth)\r\n- No extra HTTP requests for detection\r\n- Supports art direction (different crops per breakpoint)\r\n\r\nExample:\r\n\r\n```html\r\n<picture>\r\n  <source media=\"(min-width: 800px)\" srcset=\"large.jpg 1x, large-2x.jpg 2x\" />\r\n  <source media=\"(min-width: 400px)\" srcset=\"medium.jpg\" />\r\n  <img\r\n    src=\"small.jpg\"\r\n    srcset=\"small.jpg 400w, medium.jpg 800w\"\r\n    sizes=\"(max-width: 400px) 100vw, 800px\"\r\n    alt=\"...\"\r\n  />\r\n</picture>\r\n```\r\n\r\nSaves data, improves Core Web Vitals (LCP).",
-        "readingTime": 1
-      }
+      "markdown": "This trio enables art-direction and resolution switching without JavaScript:\r\n\r\n- `<picture>`: Container with multiple `<source>` options\r\n- `srcset`: List of image candidates (with descriptors like 1x, 2x, or widths)\r\n- `sizes`: Tells browser expected rendered width at different media conditions\r\n\r\nBrowser picks best source based on:\r\n\r\n- Device pixel ratio (DPR)\r\n- Viewport width\r\n- Supported format (e.g., WebP)\r\n\r\nWhy better than CSS media queries?\r\n\r\n- Browser decides before download (saves bandwidth)\r\n- No extra HTTP requests for detection\r\n- Supports art direction (different crops per breakpoint)\r\n\r\nExample:\r\n\r\n```html\r\n<picture>\r\n  <source media=\"(min-width: 800px)\" srcset=\"large.jpg 1x, large-2x.jpg 2x\" />\r\n  <source media=\"(min-width: 400px)\" srcset=\"medium.jpg\" />\r\n  <img\r\n    src=\"small.jpg\"\r\n    srcset=\"small.jpg 400w, medium.jpg 800w\"\r\n    sizes=\"(max-width: 400px) 100vw, 800px\"\r\n    alt=\"...\"\r\n  />\r\n</picture>\r\n```\r\n\r\nSaves data, improves Core Web Vitals (LCP).",
+      "readingTime": 1
     },
     {
       "id": "html-022",
@@ -381,10 +339,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "HTML5 provides built-in form validation via attributes like `required`, `pattern`, `min/max`, and type-specific checks (e.g., email, url).\r\n\r\nProcess:\r\n\r\n- Browser checks on submit or focusout (with `novalidate` to disable)\r\n- Invalid fields show browser-native error bubbles\r\n- Custom errors via JS API\r\n\r\n**Constraint Validation API**:\r\n\r\n- Access via `element.validity` (object with states like `valueMissing`, `patternMismatch`)\r\n- Set custom errors: `element.setCustomValidity('Error message')` (empty string to clear)\r\n- Trigger: `element.reportValidity()` or `form.checkValidity()`\r\n\r\nWhy hard? Handling i18n, async validation (e.g., unique username check), and polyfills for old browsers.\r\n\r\nExample (custom email domain check):\r\n\r\n```html\r\n<form>\r\n  <input id=\"email\" type=\"email\" required pattern=\"[^@]+@example\\.com\" />\r\n  <button type=\"submit\">Submit</button>\r\n</form>\r\n\r\n<script>\r\n  const email = document.getElementById('email');\r\n  email.addEventListener('input', () => {\r\n    if (email.value.endsWith('@gmail.com')) {\r\n      email.setCustomValidity('Only @example.com allowed');\r\n    } else {\r\n      email.setCustomValidity('');\r\n    }\r\n  });\r\n</script>\r\n```\r\n\r\nThis API integrates with ARIA for accessibility (e.g., auto aria-invalid).",
-        "readingTime": 1
-      }
+      "markdown": "HTML5 provides built-in form validation via attributes like `required`, `pattern`, `min/max`, and type-specific checks (e.g., email, url).\r\n\r\nProcess:\r\n\r\n- Browser checks on submit or focusout (with `novalidate` to disable)\r\n- Invalid fields show browser-native error bubbles\r\n- Custom errors via JS API\r\n\r\n**Constraint Validation API**:\r\n\r\n- Access via `element.validity` (object with states like `valueMissing`, `patternMismatch`)\r\n- Set custom errors: `element.setCustomValidity('Error message')` (empty string to clear)\r\n- Trigger: `element.reportValidity()` or `form.checkValidity()`\r\n\r\nWhy hard? Handling i18n, async validation (e.g., unique username check), and polyfills for old browsers.\r\n\r\nExample (custom email domain check):\r\n\r\n```html\r\n<form>\r\n  <input id=\"email\" type=\"email\" required pattern=\"[^@]+@example\\.com\" />\r\n  <button type=\"submit\">Submit</button>\r\n</form>\r\n\r\n<script>\r\n  const email = document.getElementById('email');\r\n  email.addEventListener('input', () => {\r\n    if (email.value.endsWith('@gmail.com')) {\r\n      email.setCustomValidity('Only @example.com allowed');\r\n    } else {\r\n      email.setCustomValidity('');\r\n    }\r\n  });\r\n</script>\r\n```\r\n\r\nThis API integrates with ARIA for accessibility (e.g., auto aria-invalid).",
+      "readingTime": 1
     },
     {
       "id": "html-023",
@@ -397,10 +353,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Structured data uses JSON-LD, Microdata, or RDFa to mark up content with schema.org vocabulary, helping search engines understand entities (e.g., Product, Event, Recipe).\r\n\r\nPreferred format: JSON-LD in `<script type=\"application/ld+json\">` (easiest, no markup pollution).\r\n\r\nBenefits:\r\n\r\n- Rich snippets (stars, prices in SERPs)\r\n- Better crawlability (Google, Bing use it for features like Knowledge Graph)\r\n- Voice search/featured snippets\r\n- Potential ranking boost (indirect via better understanding)\r\n\r\nChallenges: Validation with Google's Structured Data Testing Tool, avoiding spam (must match visible content).\r\n\r\nExample (Product schema):\r\n\r\n```html\r\n<script type=\"application/ld+json\">\r\n  {\r\n    \"@context\": \"https://schema.org\",\r\n    \"@type\": \"Product\",\r\n    \"name\": \"Wireless Headphones\",\r\n    \"image\": \"headphones.jpg\",\r\n    \"description\": \"Noise-cancelling over-ear headphones\",\r\n    \"offers\": {\r\n      \"@type\": \"Offer\",\r\n      \"price\": \"199.99\",\r\n      \"priceCurrency\": \"USD\"\r\n    },\r\n    \"aggregateRating\": {\r\n      \"@type\": \"AggregateRating\",\r\n      \"ratingValue\": \"4.5\",\r\n      \"reviewCount\": \"89\"\r\n    }\r\n  }\r\n</script>\r\n```\r\n\r\nImplement for key pages; test with rich results tool.",
-        "readingTime": 1
-      }
+      "markdown": "Structured data uses JSON-LD, Microdata, or RDFa to mark up content with schema.org vocabulary, helping search engines understand entities (e.g., Product, Event, Recipe).\r\n\r\nPreferred format: JSON-LD in `<script type=\"application/ld+json\">` (easiest, no markup pollution).\r\n\r\nBenefits:\r\n\r\n- Rich snippets (stars, prices in SERPs)\r\n- Better crawlability (Google, Bing use it for features like Knowledge Graph)\r\n- Voice search/featured snippets\r\n- Potential ranking boost (indirect via better understanding)\r\n\r\nChallenges: Validation with Google's Structured Data Testing Tool, avoiding spam (must match visible content).\r\n\r\nExample (Product schema):\r\n\r\n```html\r\n<script type=\"application/ld+json\">\r\n  {\r\n    \"@context\": \"https://schema.org\",\r\n    \"@type\": \"Product\",\r\n    \"name\": \"Wireless Headphones\",\r\n    \"image\": \"headphones.jpg\",\r\n    \"description\": \"Noise-cancelling over-ear headphones\",\r\n    \"offers\": {\r\n      \"@type\": \"Offer\",\r\n      \"price\": \"199.99\",\r\n      \"priceCurrency\": \"USD\"\r\n    },\r\n    \"aggregateRating\": {\r\n      \"@type\": \"AggregateRating\",\r\n      \"ratingValue\": \"4.5\",\r\n      \"reviewCount\": \"89\"\r\n    }\r\n  }\r\n</script>\r\n```\r\n\r\nImplement for key pages; test with rich results tool.",
+      "readingTime": 1
     },
     {
       "id": "html-024",
@@ -413,10 +367,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "contenteditable=\"true\" makes an element editable by users (like a rich text editor).\r\n\r\nBehavior:\r\n\r\n- Applies to any element\r\n- Inherited by children unless overridden\r\n- Browser handles basic editing (bold via Ctrl+B, but inconsistent)\r\n\r\nPitfalls:\r\n\r\n- Security: Sanitize input to prevent XSS (e.g., injected `<script>`)\r\n- Inconsistent across browsers (e.g., IE/Edge vs Chrome on paste)\r\n- No native undo stack control\r\n- Performance with large content\r\n- Accessibility issues (no default ARIA roles)\r\n\r\nTo make accessible:\r\n\r\n- Add ARIA: role=\"textbox\" or \"region\", aria-label, aria-multiline=\"true\"\r\n- Handle keyboard: focus, arrow navigation\r\n- Use execCommand or modern Clipboard API for features\r\n\r\nExample (simple editor):\r\n\r\n```html\r\n<div\r\n  contenteditable=\"true\"\r\n  role=\"textbox\"\r\n  aria-multiline=\"true\"\r\n  aria-label=\"Editable area\"\r\n>\r\n  Edit me!\r\n</div>\r\n\r\n<script>\r\n  const editor = document.querySelector('[contenteditable]');\r\n  editor.addEventListener('input', (e) => {\r\n    // Sanitize: e.target.innerHTML = sanitize(e.target.innerHTML);\r\n  });\r\n</script>\r\n```\r\n\r\nFor production, use libraries like Quill/ProseMirror.",
-        "readingTime": 1
-      }
+      "markdown": "contenteditable=\"true\" makes an element editable by users (like a rich text editor).\r\n\r\nBehavior:\r\n\r\n- Applies to any element\r\n- Inherited by children unless overridden\r\n- Browser handles basic editing (bold via Ctrl+B, but inconsistent)\r\n\r\nPitfalls:\r\n\r\n- Security: Sanitize input to prevent XSS (e.g., injected `<script>`)\r\n- Inconsistent across browsers (e.g., IE/Edge vs Chrome on paste)\r\n- No native undo stack control\r\n- Performance with large content\r\n- Accessibility issues (no default ARIA roles)\r\n\r\nTo make accessible:\r\n\r\n- Add ARIA: role=\"textbox\" or \"region\", aria-label, aria-multiline=\"true\"\r\n- Handle keyboard: focus, arrow navigation\r\n- Use execCommand or modern Clipboard API for features\r\n\r\nExample (simple editor):\r\n\r\n```html\r\n<div\r\n  contenteditable=\"true\"\r\n  role=\"textbox\"\r\n  aria-multiline=\"true\"\r\n  aria-label=\"Editable area\"\r\n>\r\n  Edit me!\r\n</div>\r\n\r\n<script>\r\n  const editor = document.querySelector('[contenteditable]');\r\n  editor.addEventListener('input', (e) => {\r\n    // Sanitize: e.target.innerHTML = sanitize(e.target.innerHTML);\r\n  });\r\n</script>\r\n```\r\n\r\nFor production, use libraries like Quill/ProseMirror.",
+      "readingTime": 1
     },
     {
       "id": "html-025",
@@ -429,10 +381,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Resource hints (`<link rel=\"...\">`) tell browsers to proactively fetch/resolve resources, reducing latency.\r\n\r\n- **preload**: Fetch critical resources early (e.g., fonts, scripts needed soon). Mandatory as=\"type\" for priority.\r\n- **prefetch**: Fetch resources for next navigation (e.g., next page assets) – low priority, speculative.\r\n- **preconnect**: Establish TCP connection + TLS/SSL handshake early (for third-party domains).\r\n- **dns-prefetch**: Resolve DNS only (cheaper than preconnect, for many domains).\r\n\r\nOrder of cost: dns-prefetch (cheapest) < preconnect < prefetch < preload (highest priority).\r\n\r\nBenefits: Faster TTFB, better FCP/LCP in Core Web Vitals.\r\n\r\nPitfalls: Overuse wastes bandwidth; test with Lighthouse.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nUse preload for above-the-fold; prefetch for navigation flows.",
-        "readingTime": 1
-      }
+      "markdown": "Resource hints (`<link rel=\"...\">`) tell browsers to proactively fetch/resolve resources, reducing latency.\r\n\r\n- **preload**: Fetch critical resources early (e.g., fonts, scripts needed soon). Mandatory as=\"type\" for priority.\r\n- **prefetch**: Fetch resources for next navigation (e.g., next page assets) – low priority, speculative.\r\n- **preconnect**: Establish TCP connection + TLS/SSL handshake early (for third-party domains).\r\n- **dns-prefetch**: Resolve DNS only (cheaper than preconnect, for many domains).\r\n\r\nOrder of cost: dns-prefetch (cheapest) < preconnect < prefetch < preload (highest priority).\r\n\r\nBenefits: Faster TTFB, better FCP/LCP in Core Web Vitals.\r\n\r\nPitfalls: Overuse wastes bandwidth; test with Lighthouse.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nUse preload for above-the-fold; prefetch for navigation flows.",
+      "readingTime": 1
     },
     {
       "id": "html-026",
@@ -446,10 +396,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "When a link opens in a new tab using `target=\"_blank\"`, the new page can access the opener via `window.opener`.\r\n\r\nThis creates two risks:\r\n\r\n- **Tabnapping**: The new page can redirect the original tab to a phishing page via `window.opener.location`\r\n- **Referrer leakage**: The `Referer` HTTP header exposes the source URL to the destination site\r\n\r\n`rel=\"noopener\"` — severs the `window.opener` reference, preventing tabnapping\r\n\r\n`rel=\"noreferrer\"` — also prevents the `Referer` header from being sent (implies `noopener`)\r\n\r\nModern browsers apply `noopener` automatically for `target=\"_blank\"`, but explicit declaration is still best practice for clarity and compatibility.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Risky: opens opener access + leaks referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\">Visit</a>\r\n\r\n<!-- Safe: no opener access, no referrer leak -->\r\n<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\"\r\n  >Visit</a\r\n>\r\n```",
-        "readingTime": 1
-      }
+      "markdown": "When a link opens in a new tab using `target=\"_blank\"`, the new page can access the opener via `window.opener`.\r\n\r\nThis creates two risks:\r\n\r\n- **Tabnapping**: The new page can redirect the original tab to a phishing page via `window.opener.location`\r\n- **Referrer leakage**: The `Referer` HTTP header exposes the source URL to the destination site\r\n\r\n`rel=\"noopener\"` — severs the `window.opener` reference, preventing tabnapping\r\n\r\n`rel=\"noreferrer\"` — also prevents the `Referer` header from being sent (implies `noopener`)\r\n\r\nModern browsers apply `noopener` automatically for `target=\"_blank\"`, but explicit declaration is still best practice for clarity and compatibility.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Risky: opens opener access + leaks referrer -->\r\n<a href=\"https://external.com\" target=\"_blank\">Visit</a>\r\n\r\n<!-- Safe: no opener access, no referrer leak -->\r\n<a href=\"https://external.com\" target=\"_blank\" rel=\"noopener noreferrer\"\r\n  >Visit</a\r\n>\r\n```",
+      "readingTime": 1
     },
     {
       "id": "html-027",
@@ -462,10 +410,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Both are used for graphics, but they operate differently.\r\n\r\n**`<canvas>`**\r\n\r\n- Raster-based (pixel drawing)\r\n- Rendered via JavaScript (imperative API)\r\n- No DOM nodes for drawn shapes\r\n- Better for real-time rendering, games, image manipulation\r\n- Not accessible by default\r\n\r\n**`<svg>`**\r\n\r\n- Vector-based (mathematical shapes)\r\n- Declarative markup (XML-based)\r\n- Each shape is a DOM node (scriptable and styleable)\r\n- Better for icons, charts, illustrations that need to scale\r\n- Accessible and indexable by search engines\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Canvas: draw imperatively -->\r\n<canvas id=\"c\" width=\"200\" height=\"200\"></canvas>\r\n<script>\r\n  const ctx = document.getElementById('c').getContext('2d');\r\n  ctx.fillStyle = 'blue';\r\n  ctx.fillRect(10, 10, 100, 100);\r\n</script>\r\n\r\n<!-- SVG: declarative vector shapes -->\r\n<svg width=\"200\" height=\"200\">\r\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"blue\" />\r\n</svg>\r\n```\r\n\r\nUse `<canvas>` for dynamic pixel rendering; use `<svg>` for scalable, interactive, or accessible graphics.",
-        "readingTime": 1
-      }
+      "markdown": "Both are used for graphics, but they operate differently.\r\n\r\n**`<canvas>`**\r\n\r\n- Raster-based (pixel drawing)\r\n- Rendered via JavaScript (imperative API)\r\n- No DOM nodes for drawn shapes\r\n- Better for real-time rendering, games, image manipulation\r\n- Not accessible by default\r\n\r\n**`<svg>`**\r\n\r\n- Vector-based (mathematical shapes)\r\n- Declarative markup (XML-based)\r\n- Each shape is a DOM node (scriptable and styleable)\r\n- Better for icons, charts, illustrations that need to scale\r\n- Accessible and indexable by search engines\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Canvas: draw imperatively -->\r\n<canvas id=\"c\" width=\"200\" height=\"200\"></canvas>\r\n<script>\r\n  const ctx = document.getElementById('c').getContext('2d');\r\n  ctx.fillStyle = 'blue';\r\n  ctx.fillRect(10, 10, 100, 100);\r\n</script>\r\n\r\n<!-- SVG: declarative vector shapes -->\r\n<svg width=\"200\" height=\"200\">\r\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"blue\" />\r\n</svg>\r\n```\r\n\r\nUse `<canvas>` for dynamic pixel rendering; use `<svg>` for scalable, interactive, or accessible graphics.",
+      "readingTime": 1
     },
     {
       "id": "html-028",
@@ -478,10 +424,8 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "answer": {
-        "markdown": "Open Graph (OG) tags are meta tags that control how a page appears when shared on social media platforms like Facebook, Twitter/X, LinkedIn, and WhatsApp.\r\n\r\nThey define properties like title, description, image, and URL for the link preview card.\r\n\r\nWithout OG tags, platforms guess content from the page, often producing poor previews.\r\n\r\nKey OG properties:\r\n\r\n- `og:title` — title shown in the preview\r\n- `og:description` — summary shown in the preview\r\n- `og:image` — thumbnail image URL\r\n- `og:url` — canonical URL of the page\r\n- `og:type` — content type (website, article, video, etc.)\r\n\r\nExample:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"HTML Interview Questions\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"A complete guide to HTML interview preparation.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- Twitter-specific (now X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"HTML Interview Questions\" />\r\n```\r\n\r\nOG tags directly improve click-through rates on social media by providing rich, controlled previews.",
-        "readingTime": 1
-      }
+      "markdown": "Open Graph (OG) tags are meta tags that control how a page appears when shared on social media platforms like Facebook, Twitter/X, LinkedIn, and WhatsApp.\r\n\r\nThey define properties like title, description, image, and URL for the link preview card.\r\n\r\nWithout OG tags, platforms guess content from the page, often producing poor previews.\r\n\r\nKey OG properties:\r\n\r\n- `og:title` — title shown in the preview\r\n- `og:description` — summary shown in the preview\r\n- `og:image` — thumbnail image URL\r\n- `og:url` — canonical URL of the page\r\n- `og:type` — content type (website, article, video, etc.)\r\n\r\nExample:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"HTML Interview Questions\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"A complete guide to HTML interview preparation.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- Twitter-specific (now X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"HTML Interview Questions\" />\r\n```\r\n\r\nOG tags directly improve click-through rates on social media by providing rich, controlled previews.",
+      "readingTime": 1
     }
   ]
 }

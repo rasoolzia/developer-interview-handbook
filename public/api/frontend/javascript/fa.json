@@ -45,10 +45,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript یک زبان برنامهنویسی سطح بالا و تفسیری است که عمدتاً برای ساخت اپلیکیشنهای وب تعاملی استفاده میشود. در مرورگر و همچنین روی سرورها با استفاده از محیطهایی مانند Node.js اجرا میشود.\n\nبرخلاف زبانهای کامپایل شده مانند C یا C++، JavaScript نیازی به مرحله کامپایل جداگانه قبل از اجرا ندارد. بلکه توسط موتور JavaScript در زمان اجرا تفسیر میشود.\n\nموتورهای مدرن JavaScript از کامپایل Just-In-Time (JIT) برای بهینهسازی عملکرد استفاده میکنند که JavaScript را سریع میکند در حالی که از نظر توسعهدهنده همچنان مانند یک زبان تفسیری رفتار میکند.",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript یک زبان برنامهنویسی سطح بالا و تفسیری است که عمدتاً برای ساخت اپلیکیشنهای وب تعاملی استفاده میشود. در مرورگر و همچنین روی سرورها با استفاده از محیطهایی مانند Node.js اجرا میشود.\n\nبرخلاف زبانهای کامپایل شده مانند C یا C++، JavaScript نیازی به مرحله کامپایل جداگانه قبل از اجرا ندارد. بلکه توسط موتور JavaScript در زمان اجرا تفسیر میشود.\n\nموتورهای مدرن JavaScript از کامپایل Just-In-Time (JIT) برای بهینهسازی عملکرد استفاده میکنند که JavaScript را سریع میکند در حالی که از نظر توسعهدهنده همچنان مانند یک زبان تفسیری رفتار میکند.",
+      "readingTime": 1
     },
     {
       "id": "javascript-002",
@@ -61,10 +59,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript دارای هفت نوع داده اولیه است:\n\n- String (رشته)\n- Number (عدد)\n- BigInt (عدد بزرگ)\n- Boolean (بولی)\n- Undefined (تعریف نشده)\n- Null (خالی)\n- Symbol (نماد)\n\nمقادیر اولیه تغییرناپذیر هستند و مستقیماً در حافظه ذخیره میشوند. هنگام انتساب به متغیر جدید، کپی از مقدار ایجاد میشود.",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript دارای هفت نوع داده اولیه است:\n\n- String (رشته)\n- Number (عدد)\n- BigInt (عدد بزرگ)\n- Boolean (بولی)\n- Undefined (تعریف نشده)\n- Null (خالی)\n- Symbol (نماد)\n\nمقادیر اولیه تغییرناپذیر هستند و مستقیماً در حافظه ذخیره میشوند. هنگام انتساب به متغیر جدید، کپی از مقدار ایجاد میشود.",
+      "readingTime": 1
     },
     {
       "id": "javascript-003",
@@ -77,10 +73,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`undefined` به این معنی است که متغیر اعلان شده اما مقداری به آن اختصاص داده نشده است.\n\n`null` یک انتساب عمدی است که نشاندهنده عدم وجود هر مقدار شیء است.\n\nبه طور خلاصه:\n\n- `undefined` حالت پیشفرض متغیرهای مقداردهی نشده است.\n- `null` صراحتاً توسط توسعهدهنده برای نشان دادن \"بدون مقدار\" اختصاص داده میشود.",
-        "readingTime": 1
-      }
+      "markdown": "`undefined` به این معنی است که متغیر اعلان شده اما مقداری به آن اختصاص داده نشده است.\n\n`null` یک انتساب عمدی است که نشاندهنده عدم وجود هر مقدار شیء است.\n\nبه طور خلاصه:\n\n- `undefined` حالت پیشفرض متغیرهای مقداردهی نشده است.\n- `null` صراحتاً توسط توسعهدهنده برای نشان دادن \"بدون مقدار\" اختصاص داده میشود.",
+      "readingTime": 1
     },
     {
       "id": "javascript-004",
@@ -93,10 +87,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`var`، `let` و `const` برای اعلان متغیر استفاده میشوند، اما در محدوده و رفتار تفاوت دارند.\n\n- `var` دارای محدوده تابع است و اجازه اعلان مجدد میدهد.\n- `let` دارای محدوده بلوک است و اجازه اعلان مجدد در همان محدوده را نمیدهد.\n- `const` دارای محدوده بلوک است و پس از مقداردهی اولیه نمیتواند مجدداً مقداردهی شود.\n\nعلاوه بر این، متغیرهای اعلان شده با `let` و `const` به دلیل Temporal Dead Zone قبل از مقداردهی قابل دسترسی نیستند.\n\nمثال:\n\n```js\n// var در مقابل let\n{\n  var x = 10;\n  let y = 20;\n}\n\nconsole.log(x); // 10\nconsole.log(y); // ReferenceError\n```",
-        "readingTime": 1
-      }
+      "markdown": "`var`، `let` و `const` برای اعلان متغیر استفاده میشوند، اما در محدوده و رفتار تفاوت دارند.\n\n- `var` دارای محدوده تابع است و اجازه اعلان مجدد میدهد.\n- `let` دارای محدوده بلوک است و اجازه اعلان مجدد در همان محدوده را نمیدهد.\n- `const` دارای محدوده بلوک است و پس از مقداردهی اولیه نمیتواند مجدداً مقداردهی شود.\n\nعلاوه بر این، متغیرهای اعلان شده با `let` و `const` به دلیل Temporal Dead Zone قبل از مقداردهی قابل دسترسی نیستند.\n\nمثال:\n\n```js\n// var در مقابل let\n{\n  var x = 10;\n  let y = 20;\n}\n\nconsole.log(x); // 10\nconsole.log(y); // ReferenceError\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-005",
@@ -109,10 +101,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "محدوده قابلیت دسترسی متغیرها و توابع را در بخشهای مختلف کد تعیین میکند.\n\nJavaScript دارای سه نوع اصلی محدوده است:\n\n- محدوده سراسری: در همه جای برنامه قابل دسترسی.\n- محدوده تابع: فقط درون یک تابع خاص قابل دسترسی.\n- محدوده بلوک: فقط درون بلوکی که با آکولاد تعریف شده قابل دسترسی.\n\nمحدوده به صورت لغوی تعیین میشود، یعنی بستگی به جایی دارد که متغیرها در کد نوشته شدهاند، نه جایی که اجرا میشوند.\n\nمثال:\n\n```js\nlet globalVar = 'global'; // محدوده سراسری\n\nfunction example() {\n  let funcVar = 'function'; // محدوده تابع\n\n  if (true) {\n    let blockVar = 'block'; // محدوده بلوک\n    console.log(blockVar); // block\n  }\n\n  // console.log(blockVar); // ReferenceError\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "محدوده قابلیت دسترسی متغیرها و توابع را در بخشهای مختلف کد تعیین میکند.\n\nJavaScript دارای سه نوع اصلی محدوده است:\n\n- محدوده سراسری: در همه جای برنامه قابل دسترسی.\n- محدوده تابع: فقط درون یک تابع خاص قابل دسترسی.\n- محدوده بلوک: فقط درون بلوکی که با آکولاد تعریف شده قابل دسترسی.\n\nمحدوده به صورت لغوی تعیین میشود، یعنی بستگی به جایی دارد که متغیرها در کد نوشته شدهاند، نه جایی که اجرا میشوند.\n\nمثال:\n\n```js\nlet globalVar = 'global'; // محدوده سراسری\n\nfunction example() {\n  let funcVar = 'function'; // محدوده تابع\n\n  if (true) {\n    let blockVar = 'block'; // محدوده بلوک\n    console.log(blockVar); // block\n  }\n\n  // console.log(blockVar); // ReferenceError\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-006",
@@ -125,10 +115,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Hoisting رفتار پیشفرض JavaScript است که اعلان متغیرها و توابع را در مرحله ایجاد اجرا به بالای محدوده حاویشان منتقل میکند.\n\nاعلان توابع به طور کامل hoist میشوند.\n\nمتغیرهای اعلان شده با `var` hoist میشوند اما با `undefined` مقداردهی میشوند.\n\nمتغیرهای اعلان شده با `let` و `const` hoist میشوند اما تا زمان مقداردهی در Temporal Dead Zone باقی میمانند.\n\nمثال:\n\n```js\n// Hoisting behavior\n\nconsole.log(a); // undefined\nvar a = 5;\n\nconsole.log(b); // ReferenceError\nlet b = 10;\n```",
-        "readingTime": 1
-      }
+      "markdown": "Hoisting رفتار پیشفرض JavaScript است که اعلان متغیرها و توابع را در مرحله ایجاد اجرا به بالای محدوده حاویشان منتقل میکند.\n\nاعلان توابع به طور کامل hoist میشوند.\n\nمتغیرهای اعلان شده با `var` hoist میشوند اما با `undefined` مقداردهی میشوند.\n\nمتغیرهای اعلان شده با `let` و `const` hoist میشوند اما تا زمان مقداردهی در Temporal Dead Zone باقی میمانند.\n\nمثال:\n\n```js\n// Hoisting behavior\n\nconsole.log(a); // undefined\nvar a = 5;\n\nconsole.log(b); // ReferenceError\nlet b = 10;\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-007",
@@ -141,10 +129,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "مقادیر اولیه مستقیماً در حافظه ذخیره میشوند و تغییرناپذیر هستند.\n\nمقادیر مرجع مانند اشیاء و آرایهها در heap ذخیره میشوند و متغیرها مرجعی به مکان حافظهشان نگه میدارند.\n\nهنگام انتساب یک مقدار اولیه به متغیر دیگر، کپی ایجاد میشود.\n\nهنگام انتساب یک مقدار مرجع، هر دو متغیر به همان مکان حافظه اشاره میکنند.\n\nمثال:\n\n```js\n// Primitive vs Reference\n\nlet a = 10;\nlet b = a;\nb = 20;\n\nconsole.log(a); // 10\n\nlet obj1 = { name: 'علی' };\nlet obj2 = obj1;\nobj2.name = 'سارا';\n\nconsole.log(obj1.name); // سارا\n```",
-        "readingTime": 1
-      }
+      "markdown": "مقادیر اولیه مستقیماً در حافظه ذخیره میشوند و تغییرناپذیر هستند.\n\nمقادیر مرجع مانند اشیاء و آرایهها در heap ذخیره میشوند و متغیرها مرجعی به مکان حافظهشان نگه میدارند.\n\nهنگام انتساب یک مقدار اولیه به متغیر دیگر، کپی ایجاد میشود.\n\nهنگام انتساب یک مقدار مرجع، هر دو متغیر به همان مکان حافظه اشاره میکنند.\n\nمثال:\n\n```js\n// Primitive vs Reference\n\nlet a = 10;\nlet b = a;\nb = 20;\n\nconsole.log(a); // 10\n\nlet obj1 = { name: 'علی' };\nlet obj2 = obj1;\nobj2.name = 'سارا';\n\nconsole.log(obj1.name); // سارا\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-008",
@@ -157,10 +143,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript به طور خودکار هنگام اعلان متغیرها حافظه تخصیص میدهد و زمانی که دیگر نیاز نیست آن را آزاد میکند.\n\nمدیریت حافظه بر garbage collection متکی است.\n\nاکثر موتورهای مدرن JavaScript از الگوریتم mark-and-sweep برای شناسایی اشیاء استفاده نشده استفاده میکنند. اگر شیء دیگر از root (مانند شیء سراسری) قابل دسترسی نباشد، برای garbage collection واجد شرایط میشود.\n\nمثال:\n\n```js\nlet user = { name: 'رسول' }; // حافظه تخصیص داده شد\n\nuser = null; // مرجع حذف شد ← واجد شرایط garbage collection\n```",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript به طور خودکار هنگام اعلان متغیرها حافظه تخصیص میدهد و زمانی که دیگر نیاز نیست آن را آزاد میکند.\n\nمدیریت حافظه بر garbage collection متکی است.\n\nاکثر موتورهای مدرن JavaScript از الگوریتم mark-and-sweep برای شناسایی اشیاء استفاده نشده استفاده میکنند. اگر شیء دیگر از root (مانند شیء سراسری) قابل دسترسی نباشد، برای garbage collection واجد شرایط میشود.\n\nمثال:\n\n```js\nlet user = { name: 'رسول' }; // حافظه تخصیص داده شد\n\nuser = null; // مرجع حذف شد ← واجد شرایط garbage collection\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-009",
@@ -173,10 +157,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Closure تابعی است که متغیرهای محدوده لغوی خود را حتی پس از اتمام اجرای تابع بیرونی به خاطر میسپارد.\n\nClosureها به توابع اجازه میدهند به متغیرهایی که در زمان ایجادشان در دسترس بودند، دسترسی داشته باشند.\n\nمعمولاً برای حریم خصوصی داده، کارخانههای تابع و حفظ وضعیت در کد ناهمزمان استفاده میشوند.\n\nمثال:\n\n```js\n// Closure\n\nfunction outer() {\n  let count = 0;\n\n  return function inner() {\n    count++;\n    return count;\n  };\n}\n\nconst counter = outer();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2\n```",
-        "readingTime": 1
-      }
+      "markdown": "Closure تابعی است که متغیرهای محدوده لغوی خود را حتی پس از اتمام اجرای تابع بیرونی به خاطر میسپارد.\n\nClosureها به توابع اجازه میدهند به متغیرهایی که در زمان ایجادشان در دسترس بودند، دسترسی داشته باشند.\n\nمعمولاً برای حریم خصوصی داده، کارخانههای تابع و حفظ وضعیت در کد ناهمزمان استفاده میشوند.\n\nمثال:\n\n```js\n// Closure\n\nfunction outer() {\n  let count = 0;\n\n  return function inner() {\n    count++;\n    return count;\n  };\n}\n\nconst counter = outer();\nconsole.log(counter()); // 1\nconsole.log(counter()); // 2\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-010",
@@ -189,10 +171,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript تک رشتهای است، یعنی یک call stack دارد.\n\nحلقه رویداد مکانیزمی است که به JavaScript اجازه میدهد عملیات ناهمزمان را بدون مسدود کردن اجرا مدیریت کند.\n\nبه طور مداوم بررسی میکند که آیا call stack خالی است یا نه. اگر خالی باشد، وظایف را از callback queue میگیرد و برای اجرا روی stack قرار میدهد.\n\nاین مکانیزم رفتار غیرمسدودکننده را در حین حفظ مدل تک رشتهای امکانپذیر میکند.\n\nمثال:\n\n```js\n// Event Loop\n\nconsole.log('شروع');\n\nsetTimeout(() => {\n  console.log('تایم اوت');\n}, 0);\n\nconsole.log('پایان');\n\n// خروجی:\n// شروع\n// پایان\n// تایم اوت\n```",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript تک رشتهای است، یعنی یک call stack دارد.\n\nحلقه رویداد مکانیزمی است که به JavaScript اجازه میدهد عملیات ناهمزمان را بدون مسدود کردن اجرا مدیریت کند.\n\nبه طور مداوم بررسی میکند که آیا call stack خالی است یا نه. اگر خالی باشد، وظایف را از callback queue میگیرد و برای اجرا روی stack قرار میدهد.\n\nاین مکانیزم رفتار غیرمسدودکننده را در حین حفظ مدل تک رشتهای امکانپذیر میکند.\n\nمثال:\n\n```js\n// Event Loop\n\nconsole.log('شروع');\n\nsetTimeout(() => {\n  console.log('تایم اوت');\n}, 0);\n\nconsole.log('پایان');\n\n// خروجی:\n// شروع\n// پایان\n// تایم اوت\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-011",
@@ -205,10 +185,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "زمینه اجرا محیطی است که در آن کد JavaScript ارزیابی و اجرا میشود.\n\nسه نوع زمینه اجرا وجود دارد:\n\n- زمینه اجرای سراسری\n- زمینه اجرای تابع\n- زمینه اجرای Eval\n\nهر زمینه اجرا از دو مرحله تشکیل شده:\n\n1. مرحله ایجاد\n2. مرحله اجرا\n\nدر مرحله ایجاد، متغیرها و اعلان توابع در حافظه ذخیره میشوند. در مرحله اجرا، کد خط به خط اجرا میشود.\n\nزمینههای اجرا با استفاده از call stack مدیریت میشوند.\n\nمثال:\n\n```js\n// زمینه اجرای سراسری ابتدا ایجاد میشود\nconst name = 'رسول';\n\nfunction greet() {\n  // زمینه اجرای تابع هنگام فراخوانی greet() ایجاد میشود\n  const message = 'سلام ' + name; // از طریق زنجیره محدوده به محدوده سراسری دسترسی دارد\n  return message;\n}\n\nconsole.log(greet()); // سلام رسول\n// پس از بازگشت greet()، زمینه اجرایش از stack حذف میشود\n```",
-        "readingTime": 1
-      }
+      "markdown": "زمینه اجرا محیطی است که در آن کد JavaScript ارزیابی و اجرا میشود.\n\nسه نوع زمینه اجرا وجود دارد:\n\n- زمینه اجرای سراسری\n- زمینه اجرای تابع\n- زمینه اجرای Eval\n\nهر زمینه اجرا از دو مرحله تشکیل شده:\n\n1. مرحله ایجاد\n2. مرحله اجرا\n\nدر مرحله ایجاد، متغیرها و اعلان توابع در حافظه ذخیره میشوند. در مرحله اجرا، کد خط به خط اجرا میشود.\n\nزمینههای اجرا با استفاده از call stack مدیریت میشوند.\n\nمثال:\n\n```js\n// زمینه اجرای سراسری ابتدا ایجاد میشود\nconst name = 'رسول';\n\nfunction greet() {\n  // زمینه اجرای تابع هنگام فراخوانی greet() ایجاد میشود\n  const message = 'سلام ' + name; // از طریق زنجیره محدوده به محدوده سراسری دسترسی دارد\n  return message;\n}\n\nconsole.log(greet()); // سلام رسول\n// پس از بازگشت greet()، زمینه اجرایش از stack حذف میشود\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-012",
@@ -221,10 +199,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "در مرحله ایجاد:\n\n- زنجیره محدوده تعیین میشود.\n- محیط متغیر ایجاد میشود.\n- اتصال `this` برقرار میشود.\n- اعلان توابع به طور کامل مقداردهی میشوند.\n- متغیرهای اعلان شده با `var` با undefined مقداردهی میشوند.\n- متغیرهای اعلان شده با `let` و `const` در Temporal Dead Zone قرار میگیرند.\n\nدر این مرحله هیچ کدی اجرا نمیشود.\n\nمثال:\n\n```js\n// Creation Phase\n\nconsole.log(x); // undefined\nvar x = 5;\n\nfunction test() {}\n```",
-        "readingTime": 1
-      }
+      "markdown": "در مرحله ایجاد:\n\n- زنجیره محدوده تعیین میشود.\n- محیط متغیر ایجاد میشود.\n- اتصال `this` برقرار میشود.\n- اعلان توابع به طور کامل مقداردهی میشوند.\n- متغیرهای اعلان شده با `var` با undefined مقداردهی میشوند.\n- متغیرهای اعلان شده با `let` و `const` در Temporal Dead Zone قرار میگیرند.\n\nدر این مرحله هیچ کدی اجرا نمیشود.\n\nمثال:\n\n```js\n// Creation Phase\n\nconsole.log(x); // undefined\nvar x = 5;\n\nfunction test() {}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-013",
@@ -237,10 +213,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Call stack ساختار دادهای است که اجرای توابع را پیگیری میکند.\n\nهنگام فراخوانی تابع، زمینه اجرای جدیدی روی stack قرار میگیرد.\n\nهنگام تکمیل تابع، زمینه اجرایش از stack حذف میشود.\n\nاگر stack به دلیل بازگشت بیش از حد از حداکثر اندازهاش تجاوز کند، خطای stack overflow رخ میدهد.\n\nمثال:\n\n```js\n// Call Stack\n\nfunction first() {\n  second();\n}\n\nfunction second() {\n  third();\n}\n\nfunction third() {\n  console.log('درون third');\n}\n\nfirst();\n```",
-        "readingTime": 1
-      }
+      "markdown": "Call stack ساختار دادهای است که اجرای توابع را پیگیری میکند.\n\nهنگام فراخوانی تابع، زمینه اجرای جدیدی روی stack قرار میگیرد.\n\nهنگام تکمیل تابع، زمینه اجرایش از stack حذف میشود.\n\nاگر stack به دلیل بازگشت بیش از حد از حداکثر اندازهاش تجاوز کند، خطای stack overflow رخ میدهد.\n\nمثال:\n\n```js\n// Call Stack\n\nfunction first() {\n  second();\n}\n\nfunction second() {\n  third();\n}\n\nfunction third() {\n  console.log('درون third');\n}\n\nfirst();\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-014",
@@ -253,10 +227,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Temporal Dead Zone زمان بین ورود به بلوک و اعلان واقعی متغیر با استفاده از `let` یا `const` است.\n\nدر این دوره، دسترسی به متغیر منجر به ReferenceError میشود.\n\nاگرچه اعلانات `let` و `const` hoist میشوند، اما تا زمانی که اجرا به خط اعلانشان برسد مقداردهی نمیشوند.\n\nمثال:\n\n```js\n// Temporal Dead Zone\n\n{\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\n  let a = 10;\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "Temporal Dead Zone زمان بین ورود به بلوک و اعلان واقعی متغیر با استفاده از `let` یا `const` است.\n\nدر این دوره، دسترسی به متغیر منجر به ReferenceError میشود.\n\nاگرچه اعلانات `let` و `const` hoist میشوند، اما تا زمانی که اجرا به خط اعلانشان برسد مقداردهی نمیشوند.\n\nمثال:\n\n```js\n// Temporal Dead Zone\n\n{\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\n  let a = 10;\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-015",
@@ -269,10 +241,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "مقدار `this` بستگی به نحوه فراخوانی تابع دارد.\n\n- در زمینه سراسری، `this` به شیء سراسری اشاره میکند.\n- در فراخوانی تابع معمولی، `this` بستگی به حالت strict دارد.\n- در فراخوانی متد، `this` به شیئی که مالک متد است اشاره میکند.\n- در arrow functionها، `this` به صورت لغوی از محدوده اطراف به ارث میرسد.\n- در constructor functionها، `this` به نمونه تازه ایجاد شده اشاره میکند.\n\nمثال:\n\n```js\n// this behavior\n\nconst obj = {\n  name: 'علی',\n  greet() {\n    console.log(this.name);\n  },\n};\n\nobj.greet(); // علی\n```",
-        "readingTime": 1
-      }
+      "markdown": "مقدار `this` بستگی به نحوه فراخوانی تابع دارد.\n\n- در زمینه سراسری، `this` به شیء سراسری اشاره میکند.\n- در فراخوانی تابع معمولی، `this` بستگی به حالت strict دارد.\n- در فراخوانی متد، `this` به شیئی که مالک متد است اشاره میکند.\n- در arrow functionها، `this` به صورت لغوی از محدوده اطراف به ارث میرسد.\n- در constructor functionها، `this` به نمونه تازه ایجاد شده اشاره میکند.\n\nمثال:\n\n```js\n// this behavior\n\nconst obj = {\n  name: 'علی',\n  greet() {\n    console.log(this.name);\n  },\n};\n\nobj.greet(); // علی\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-016",
@@ -285,10 +255,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Arrow functionها در چندین جهت با توابع معمولی تفاوت دارند:\n\n- `this` مخصوص خود ندارند.\n- شیء `arguments` مخصوص خود ندارند.\n- نمیتوانند به عنوان constructor استفاده شوند.\n- همیشه ناشناس هستند.\n\nArrow functionها `this` را از محدوده لغوی خود به ارث میبرند.\n\nمثال:\n\n```js\n// Arrow در مقابل معمولی\n\nconst obj = {\n  name: 'سارا',\n  regular() {\n    console.log(this.name);\n  },\n  arrow: () => {\n    console.log(this.name);\n  },\n};\n\nobj.regular(); // سارا\nobj.arrow(); // undefined\n```",
-        "readingTime": 1
-      }
+      "markdown": "Arrow functionها در چندین جهت با توابع معمولی تفاوت دارند:\n\n- `this` مخصوص خود ندارند.\n- شیء `arguments` مخصوص خود ندارند.\n- نمیتوانند به عنوان constructor استفاده شوند.\n- همیشه ناشناس هستند.\n\nArrow functionها `this` را از محدوده لغوی خود به ارث میبرند.\n\nمثال:\n\n```js\n// Arrow در مقابل معمولی\n\nconst obj = {\n  name: 'سارا',\n  regular() {\n    console.log(this.name);\n  },\n  arrow: () => {\n    console.log(this.name);\n  },\n};\n\nobj.regular(); // سارا\nobj.arrow(); // undefined\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-017",
@@ -301,10 +269,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Shallow copy شیء جدیدی ایجاد میکند اما برای اشیاء تودرتو مراجع کپی میکند.\n\nDeep copy کلون کاملاً مستقلی ایجاد میکند که شامل تمام اشیاء تودرتو میشود.\n\nتغییر خصوصیات تودرتو در shallow copy روی شیء اصلی تأثیر میگذارد، در حالی که deep copy از این رفتار جلوگیری میکند.\n\nمثال:\n\n```js\n// کپی سطحی — اشیاء تودرتو هنوز مشترک هستند\n\nconst original = { info: { age: 20 } };\nconst shallow = { ...original };\n\nshallow.info.age = 30;\n\nconsole.log(original.info.age); // 30 (اصل تغییر کرد)\n```\n\n```js\n// کپی عمیق — کلون کاملاً مستقل\n\nconst original = { info: { age: 20 } };\nconst deep = JSON.parse(JSON.stringify(original));\n\ndeep.info.age = 30;\n\nconsole.log(original.info.age); // 20 (اصل تغییر نکرد)\n```",
-        "readingTime": 1
-      }
+      "markdown": "Shallow copy شیء جدیدی ایجاد میکند اما برای اشیاء تودرتو مراجع کپی میکند.\n\nDeep copy کلون کاملاً مستقلی ایجاد میکند که شامل تمام اشیاء تودرتو میشود.\n\nتغییر خصوصیات تودرتو در shallow copy روی شیء اصلی تأثیر میگذارد، در حالی که deep copy از این رفتار جلوگیری میکند.\n\nمثال:\n\n```js\n// کپی سطحی — اشیاء تودرتو هنوز مشترک هستند\n\nconst original = { info: { age: 20 } };\nconst shallow = { ...original };\n\nshallow.info.age = 30;\n\nconsole.log(original.info.age); // 30 (اصل تغییر کرد)\n```\n\n```js\n// کپی عمیق — کلون کاملاً مستقل\n\nconst original = { info: { age: 20 } };\nconst deep = JSON.parse(JSON.stringify(original));\n\ndeep.info.age = 30;\n\nconsole.log(original.info.age); // 20 (اصل تغییر نکرد)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-018",
@@ -317,10 +283,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "در حلقه رویداد JavaScript:\n\n- Macrotaskها شامل وظایفی مانند timerها و عملیات I/O هستند.\n- Microtaskها شامل callbackهای Promise و mutation observerها هستند.\n\nپس از تکمیل هر macrotask، تمام microtaskهای موجود در صف قبل از شروع macrotask بعدی اجرا میشوند.\n\nMicrotaskها اولویت بالاتری نسبت به macrotaskها دارند.\n\nمثال:\n\n```js\n// Microtask در مقابل Macrotask\n\nconsole.log('شروع');\n\nsetTimeout(() => console.log('Macrotask'), 0);\n\nPromise.resolve().then(() => {\n  console.log('Microtask');\n});\n\nconsole.log('پایان');\n\n// خروجی:\n// شروع\n// پایان\n// Microtask\n// Macrotask\n```",
-        "readingTime": 1
-      }
+      "markdown": "در حلقه رویداد JavaScript:\n\n- Macrotaskها شامل وظایفی مانند timerها و عملیات I/O هستند.\n- Microtaskها شامل callbackهای Promise و mutation observerها هستند.\n\nپس از تکمیل هر macrotask، تمام microtaskهای موجود در صف قبل از شروع macrotask بعدی اجرا میشوند.\n\nMicrotaskها اولویت بالاتری نسبت به macrotaskها دارند.\n\nمثال:\n\n```js\n// Microtask در مقابل Macrotask\n\nconsole.log('شروع');\n\nsetTimeout(() => console.log('Macrotask'), 0);\n\nPromise.resolve().then(() => {\n  console.log('Microtask');\n});\n\nconsole.log('پایان');\n\n// خروجی:\n// شروع\n// پایان\n// Microtask\n// Macrotask\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-019",
@@ -333,10 +297,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Promise سه حالت دارد:\n\n- Pending (در انتظار)\n- Fulfilled (تکمیل شده)\n- Rejected (رد شده)\n\nهنگامی که Promise تکمیل یا رد شود، حالتش settled میشود و نمیتواند تغییر کند.\n\nhandlerهای Promise به صورت ناهمزمان اجرا میشوند.\n\nمثال:\n\n```js\n// Promise states\n\nconst promise = new Promise((resolve, reject) => {\n  resolve('انجام شد');\n});\n\npromise.then((result) => console.log(result));\n```",
-        "readingTime": 1
-      }
+      "markdown": "Promise سه حالت دارد:\n\n- Pending (در انتظار)\n- Fulfilled (تکمیل شده)\n- Rejected (رد شده)\n\nهنگامی که Promise تکمیل یا رد شود، حالتش settled میشود و نمیتواند تغییر کند.\n\nhandlerهای Promise به صورت ناهمزمان اجرا میشوند.\n\nمثال:\n\n```js\n// Promise states\n\nconst promise = new Promise((resolve, reject) => {\n  resolve('انجام شد');\n});\n\npromise.then((result) => console.log(result));\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-020",
@@ -349,10 +311,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Async/await شکر نحوی است که روی Promiseها ساخته شده.\n\nتابع async همیشه Promise برمیگرداند.\n\nکلیدواژه await اجرای تابع async را تا resolve شدن Promise متوقف میکند، اما thread اصلی را مسدود نمیکند.\n\nداخلی، async/await کد ناهمزمان را به ساختاری شبیه به فراخوانیهای زنجیرهای Promise تبدیل میکند.\n\nمثال:\n\n```js\n// async/await — await تابع را متوقف میکند، نه thread اصلی را\n\nfunction delay(ms) {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}\n\nasync function run() {\n  console.log('قبل از await');\n  await delay(1000);\n  console.log('بعد از await'); // بعد از ۱ ثانیه اجرا میشود\n}\n\nrun();\nconsole.log('این بلافاصله اجرا میشود');\n\n// خروجی:\n// قبل از await\n// این بلافاصله اجرا میشود\n// بعد از await\n```",
-        "readingTime": 1
-      }
+      "markdown": "Async/await شکر نحوی است که روی Promiseها ساخته شده.\n\nتابع async همیشه Promise برمیگرداند.\n\nکلیدواژه await اجرای تابع async را تا resolve شدن Promise متوقف میکند، اما thread اصلی را مسدود نمیکند.\n\nداخلی، async/await کد ناهمزمان را به ساختاری شبیه به فراخوانیهای زنجیرهای Promise تبدیل میکند.\n\nمثال:\n\n```js\n// async/await — await تابع را متوقف میکند، نه thread اصلی را\n\nfunction delay(ms) {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}\n\nasync function run() {\n  console.log('قبل از await');\n  await delay(1000);\n  console.log('بعد از await'); // بعد از ۱ ثانیه اجرا میشود\n}\n\nrun();\nconsole.log('این بلافاصله اجرا میشود');\n\n// خروجی:\n// قبل از await\n// این بلافاصله اجرا میشود\n// بعد از await\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-021",
@@ -365,10 +325,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Prototype شیئی است که اشیاء دیگر از آن خصوصیات و متدها را به ارث میبرند.\n\nهر شیء JavaScript یک لینک داخلی به شیء دیگری به نام prototype دارد. وقتی یک خصوصیت روی شیء دسترسی پیدا میکند، JavaScript ابتدا آن را روی خود شیء جستجو میکند. اگر پیدا نشد، زنجیره prototype را بالا میرود.\n\nاین مکانیزم به عنوان وراثت prototypal شناخته میشود.\n\nمثال:\n\n```js\nfunction Person(name) {\n  this.name = name;\n}\n\nPerson.prototype.sayHello = function () {\n  return `سلام، من ${this.name} هستم`;\n};\n\nconst user = new Person('رسول');\n\nconsole.log(user.sayHello()); // سلام، من رسول هستم\nconsole.log(user.__proto__ === Person.prototype); // true\n```",
-        "readingTime": 1
-      }
+      "markdown": "Prototype شیئی است که اشیاء دیگر از آن خصوصیات و متدها را به ارث میبرند.\n\nهر شیء JavaScript یک لینک داخلی به شیء دیگری به نام prototype دارد. وقتی یک خصوصیت روی شیء دسترسی پیدا میکند، JavaScript ابتدا آن را روی خود شیء جستجو میکند. اگر پیدا نشد، زنجیره prototype را بالا میرود.\n\nاین مکانیزم به عنوان وراثت prototypal شناخته میشود.\n\nمثال:\n\n```js\nfunction Person(name) {\n  this.name = name;\n}\n\nPerson.prototype.sayHello = function () {\n  return `سلام، من ${this.name} هستم`;\n};\n\nconst user = new Person('رسول');\n\nconsole.log(user.sayHello()); // سلام، من رسول هستم\nconsole.log(user.__proto__ === Person.prototype); // true\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-022",
@@ -381,10 +339,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "زنجیره prototype یک سری از اشیاء مرتبط است که JavaScript از آن برای حل دسترسی به خصوصیات استفاده میکند.\n\nوقتی یک خصوصیت درخواست میشود:\n\n1. موتور خود شیء را بررسی میکند.\n2. اگر پیدا نشد، prototype شیء را بررسی میکند.\n3. این کار تا رسیدن به null ادامه مییابد.\n\nاگر خصوصیت در هیچ جای زنجیره پیدا نشود، undefined برگردانده میشود.\n\nاین فرآیند جستجو وراثت را در JavaScript ممکن میکند.\n\nمثال:\n\n```js\nconst animal = {\n  eats: true,\n};\n\nconst dog = Object.create(animal);\ndog.barks = true;\n\nconsole.log(dog.barks); // true (خصوصیت خود شیء)\nconsole.log(dog.eats); // true (به ارث رسیده از prototype)\nconsole.log(dog.hasOwnProperty('eats')); // false\n```",
-        "readingTime": 1
-      }
+      "markdown": "زنجیره prototype یک سری از اشیاء مرتبط است که JavaScript از آن برای حل دسترسی به خصوصیات استفاده میکند.\n\nوقتی یک خصوصیت درخواست میشود:\n\n1. موتور خود شیء را بررسی میکند.\n2. اگر پیدا نشد، prototype شیء را بررسی میکند.\n3. این کار تا رسیدن به null ادامه مییابد.\n\nاگر خصوصیت در هیچ جای زنجیره پیدا نشود، undefined برگردانده میشود.\n\nاین فرآیند جستجو وراثت را در JavaScript ممکن میکند.\n\nمثال:\n\n```js\nconst animal = {\n  eats: true,\n};\n\nconst dog = Object.create(animal);\ndog.barks = true;\n\nconsole.log(dog.barks); // true (خصوصیت خود شیء)\nconsole.log(dog.eats); // true (به ارث رسیده از prototype)\nconsole.log(dog.hasOwnProperty('eats')); // false\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-023",
@@ -397,10 +353,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`prototype` یک خصوصیت از constructor functionها است. تعریف میکند که چه چیزی prototype نمونههای ایجاد شده با آن constructor خواهد شد.\n\n`__proto__` یک accessor property موجود روی اشیاء است که به prototype داخلیشان اشاره میکند.\n\nبه زبان ساده:\n\n- `prototype` روی functionها وجود دارد.\n- `__proto__` روی اشیاء وجود دارد.\n\nمثال:\n\n```js\nfunction Car() {}\n\nconst myCar = new Car();\n\nconsole.log(Car.prototype === myCar.__proto__); // true\nconsole.log(typeof Car.prototype); // object\nconsole.log(typeof myCar.prototype); // undefined\n```\n\n`prototype` روی function است  \n`__proto__` روی شیء ایجاد شده",
-        "readingTime": 1
-      }
+      "markdown": "`prototype` یک خصوصیت از constructor functionها است. تعریف میکند که چه چیزی prototype نمونههای ایجاد شده با آن constructor خواهد شد.\n\n`__proto__` یک accessor property موجود روی اشیاء است که به prototype داخلیشان اشاره میکند.\n\nبه زبان ساده:\n\n- `prototype` روی functionها وجود دارد.\n- `__proto__` روی اشیاء وجود دارد.\n\nمثال:\n\n```js\nfunction Car() {}\n\nconst myCar = new Car();\n\nconsole.log(Car.prototype === myCar.__proto__); // true\nconsole.log(typeof Car.prototype); // object\nconsole.log(typeof myCar.prototype); // undefined\n```\n\n`prototype` روی function است  \n`__proto__` روی شیء ایجاد شده",
+      "readingTime": 1
     },
     {
       "id": "javascript-024",
@@ -413,10 +367,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "وراثت در JavaScript بر اساس prototypeها است.\n\nاشیاء خصوصیات و متدها را از اشیاء دیگر از طریق زنجیره prototype به ارث میبرند.\n\nاین کار میتواند با استفاده از constructor functionها، Object.create، یا کلاسهای ES6 انجام شود.\n\nبرخلاف وراثت کلاسیک در زبانهای دیگر، JavaScript از وراثت prototypal استفاده میکند.\n\nمثال:\n\n```js\nclass Animal {\n  speak() {\n    return 'صدایی';\n  }\n}\n\nclass Cat extends Animal {\n  speak() {\n    return 'میو';\n  }\n}\n\nconst kitty = new Cat();\n\nconsole.log(kitty.speak()); // میو\n```\n\nدر پشت صحنه، با prototype به همان شکل کار میکند، فقط سینتکس تمیزتر است.",
-        "readingTime": 1
-      }
+      "markdown": "وراثت در JavaScript بر اساس prototypeها است.\n\nاشیاء خصوصیات و متدها را از اشیاء دیگر از طریق زنجیره prototype به ارث میبرند.\n\nاین کار میتواند با استفاده از constructor functionها، Object.create، یا کلاسهای ES6 انجام شود.\n\nبرخلاف وراثت کلاسیک در زبانهای دیگر، JavaScript از وراثت prototypal استفاده میکند.\n\nمثال:\n\n```js\nclass Animal {\n  speak() {\n    return 'صدایی';\n  }\n}\n\nclass Cat extends Animal {\n  speak() {\n    return 'میو';\n  }\n}\n\nconst kitty = new Cat();\n\nconsole.log(kitty.speak()); // میو\n```\n\nدر پشت صحنه، با prototype به همان شکل کار میکند، فقط سینتکس تمیزتر است.",
+      "readingTime": 1
     },
     {
       "id": "javascript-025",
@@ -429,10 +381,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "حالت strict راهی برای انتخاب نسخه محدودتر JavaScript است.\n\nبرخی خطاهای خاموش را با پرتاب استثنا از بین میبرد و از اقدامات ناامن مانند موارد زیر جلوگیری میکند:\n\n- ایجاد تصادفی متغیرهای سراسری\n- انتساب به خصوصیات غیرقابل نوشتن\n- استفاده از نامهای پارامتر تکراری\n\nحالت strict کد را امنتر و بهینهسازی آسانتر میکند.\n\nمثال:\n\n```js\n'use strict';\n\nx = 10; // ReferenceError: x is not defined\n\nfunction test(a, a) {\n  // SyntaxError: Duplicate parameter name not allowed in this context\n  return a;\n}\n```\n\nبدون حالت strict، این خطاها بیصدا نادیده گرفته میشدند.\nبا حالت strict، موتور بلافاصله خطا میدهد که پیدا کردن باگها را آسانتر میکند.",
-        "readingTime": 1
-      }
+      "markdown": "حالت strict راهی برای انتخاب نسخه محدودتر JavaScript است.\n\nبرخی خطاهای خاموش را با پرتاب استثنا از بین میبرد و از اقدامات ناامن مانند موارد زیر جلوگیری میکند:\n\n- ایجاد تصادفی متغیرهای سراسری\n- انتساب به خصوصیات غیرقابل نوشتن\n- استفاده از نامهای پارامتر تکراری\n\nحالت strict کد را امنتر و بهینهسازی آسانتر میکند.\n\nمثال:\n\n```js\n'use strict';\n\nx = 10; // ReferenceError: x is not defined\n\nfunction test(a, a) {\n  // SyntaxError: Duplicate parameter name not allowed in this context\n  return a;\n}\n```\n\nبدون حالت strict، این خطاها بیصدا نادیده گرفته میشدند.\nبا حالت strict، موتور بلافاصله خطا میدهد که پیدا کردن باگها را آسانتر میکند.",
+      "readingTime": 1
     },
     {
       "id": "javascript-026",
@@ -445,10 +395,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "ماژولهای JavaScript اجازه میدهند کد به فایلهای قابل استفاده مجدد و ایزوله تقسیم شود.\n\nماژولها از export برای نمایش قابلیتها و import برای مصرف آن استفاده میکنند.\n\nهر ماژول محدوده خاص خود را دارد و فقط یکبار اجرا میشود.\n\nES Modules سیستم ماژول استاندارد در JavaScript مدرن است.\n\nمثال:\n\n```js\n// math.js\n\nexport function add(a, b) {\n  return a + b;\n}\n```\n\n```js\n// app.js\n\nimport { add } from './math.js';\n\nconsole.log(add(2, 3)); // 5\n```\n\nهر فایل محدوده جداگانه دارد.  \nبارگذاری فقط یکبار انجام میشود.",
-        "readingTime": 1
-      }
+      "markdown": "ماژولهای JavaScript اجازه میدهند کد به فایلهای قابل استفاده مجدد و ایزوله تقسیم شود.\n\nماژولها از export برای نمایش قابلیتها و import برای مصرف آن استفاده میکنند.\n\nهر ماژول محدوده خاص خود را دارد و فقط یکبار اجرا میشود.\n\nES Modules سیستم ماژول استاندارد در JavaScript مدرن است.\n\nمثال:\n\n```js\n// math.js\n\nexport function add(a, b) {\n  return a + b;\n}\n```\n\n```js\n// app.js\n\nimport { add } from './math.js';\n\nconsole.log(add(2, 3)); // 5\n```\n\nهر فایل محدوده جداگانه دارد.  \nبارگذاری فقط یکبار انجام میشود.",
+      "readingTime": 1
     },
     {
       "id": "javascript-027",
@@ -461,10 +409,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "نشت حافظه زمانی رخ میدهد که حافظهای که دیگر نیاز نیست آزاد نمیشود.\n\nدر JavaScript، نشت حافظه اغلب به دلیل موارد زیر رخ میدهد:\n\n- نگهداری مراجع استفاده نشده\n- closureهایی که اشیاء بزرگ را نگه میدارند\n- timerها یا event listenerهای فراموش شده\n- عناصر DOM جدا شده که هنوز در کد ارجاع دارند\n\nنشت حافظه با گذشت زمان عملکرد را کاهش میدهد.\n\nمثال:\n\n```js\nfunction startTimer() {\n  const largeData = new Array(1000000).fill('leak');\n\n  setInterval(() => {\n    console.log(largeData.length);\n  }, 1000);\n}\n\nstartTimer();\n```\n\nاینجا `largeData` در closure گیر میکند.  \nتا زمانی که interval پاک نشود، garbage collect نمیشود.\n\nراه حل:\n\n```js\nconst interval = setInterval(() => {\n  console.log('در حال اجرا');\n}, 1000);\n\nclearInterval(interval);\n```",
-        "readingTime": 1
-      }
+      "markdown": "نشت حافظه زمانی رخ میدهد که حافظهای که دیگر نیاز نیست آزاد نمیشود.\n\nدر JavaScript، نشت حافظه اغلب به دلیل موارد زیر رخ میدهد:\n\n- نگهداری مراجع استفاده نشده\n- closureهایی که اشیاء بزرگ را نگه میدارند\n- timerها یا event listenerهای فراموش شده\n- عناصر DOM جدا شده که هنوز در کد ارجاع دارند\n\nنشت حافظه با گذشت زمان عملکرد را کاهش میدهد.\n\nمثال:\n\n```js\nfunction startTimer() {\n  const largeData = new Array(1000000).fill('leak');\n\n  setInterval(() => {\n    console.log(largeData.length);\n  }, 1000);\n}\n\nstartTimer();\n```\n\nاینجا `largeData` در closure گیر میکند.  \nتا زمانی که interval پاک نشود، garbage collect نمیشود.\n\nراه حل:\n\n```js\nconst interval = setInterval(() => {\n  console.log('در حال اجرا');\n}, 1000);\n\nclearInterval(interval);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-028",
@@ -477,10 +423,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "WeakMap و WeakSet شبیه Map و Set هستند اما مراجع ضعیف به اشیاء نگه میدارند.\n\nاگر هیچ مرجع دیگری به کلید یا مقدار وجود نداشته باشد، garbage collector میتواند آن حافظه را به طور خودکار آزاد کند.\n\nتفاوتهای کلیدی:\n\n- **WeakMap**: جفتهای کلید-مقدار ذخیره میکند که کلیدها باید شیء باشند. کلیدها به صورت ضعیف ارجاع داده میشوند.\n- **WeakSet**: مجموعهای از اشیاء ذخیره میکند. مقادیر به صورت ضعیف ارجاع داده میشوند.\n- هیچکدام از WeakMap و WeakSet قابل iterate نیستند.\n\nمثال:\n\n```js\n// WeakMap — کلید به صورت ضعیف نگه داشته میشود\nlet obj = { name: 'رسول' };\n\nconst map = new Map();\nmap.set(obj, 'داده');\n\nconst weakMap = new WeakMap();\nweakMap.set(obj, 'داده');\n\nobj = null;\n// map هنوز مرجع را نگه میدارد ← بدون garbage collection\n// weakMap مرجع را رها میکند ← واجد شرایط garbage collection\n```\n\n```js\n// WeakSet — شیء به صورت ضعیف نگه داشته میشود\nlet user = { id: 1 };\n\nconst weakSet = new WeakSet();\nweakSet.add(user);\n\nconsole.log(weakSet.has(user)); // true\n\nuser = null;\n// user اکنون واجد شرایط garbage collection است\n// weakSet دیگر آن را نگه نمیدارد\n```\n\n> **_نکته:_** WeakMap و WeakSet قابل iterate نیستند و خاصیت `size` ندارند.",
-        "readingTime": 1
-      }
+      "markdown": "WeakMap و WeakSet شبیه Map و Set هستند اما مراجع ضعیف به اشیاء نگه میدارند.\n\nاگر هیچ مرجع دیگری به کلید یا مقدار وجود نداشته باشد، garbage collector میتواند آن حافظه را به طور خودکار آزاد کند.\n\nتفاوتهای کلیدی:\n\n- **WeakMap**: جفتهای کلید-مقدار ذخیره میکند که کلیدها باید شیء باشند. کلیدها به صورت ضعیف ارجاع داده میشوند.\n- **WeakSet**: مجموعهای از اشیاء ذخیره میکند. مقادیر به صورت ضعیف ارجاع داده میشوند.\n- هیچکدام از WeakMap و WeakSet قابل iterate نیستند.\n\nمثال:\n\n```js\n// WeakMap — کلید به صورت ضعیف نگه داشته میشود\nlet obj = { name: 'رسول' };\n\nconst map = new Map();\nmap.set(obj, 'داده');\n\nconst weakMap = new WeakMap();\nweakMap.set(obj, 'داده');\n\nobj = null;\n// map هنوز مرجع را نگه میدارد ← بدون garbage collection\n// weakMap مرجع را رها میکند ← واجد شرایط garbage collection\n```\n\n```js\n// WeakSet — شیء به صورت ضعیف نگه داشته میشود\nlet user = { id: 1 };\n\nconst weakSet = new WeakSet();\nweakSet.add(user);\n\nconsole.log(weakSet.has(user)); // true\n\nuser = null;\n// user اکنون واجد شرایط garbage collection است\n// weakSet دیگر آن را نگه نمیدارد\n```\n\n> **_نکته:_** WeakMap و WeakSet قابل iterate نیستند و خاصیت `size` ندارند.",
+      "readingTime": 1
     },
     {
       "id": "javascript-029",
@@ -493,10 +437,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر خصوصیت در شیء JavaScript descriptorهایی دارد که رفتارش را تعریف میکنند.\n\nProperty descriptorها شامل:\n\n- value\n- writable\n- enumerable\n- configurable\n- get\n- set\n\nاین descriptorها کنترل میکنند که آیا خصوصیت میتواند تغییر کند، حذف شود، یا شمارش شود.\n\nمثال:\n\n```js\nconst user = {};\n\nObject.defineProperty(user, 'name', {\n  value: 'رسول',\n  writable: false,\n  enumerable: true,\n  configurable: false,\n});\n\nuser.name = 'علی'; // تغییر نمیکند\n\nconsole.log(user.name); // رسول\n```\n\ndescriptor تعیین میکند خصوصیت چگونه رفتار کند.",
-        "readingTime": 1
-      }
+      "markdown": "هر خصوصیت در شیء JavaScript descriptorهایی دارد که رفتارش را تعریف میکنند.\n\nProperty descriptorها شامل:\n\n- value\n- writable\n- enumerable\n- configurable\n- get\n- set\n\nاین descriptorها کنترل میکنند که آیا خصوصیت میتواند تغییر کند، حذف شود، یا شمارش شود.\n\nمثال:\n\n```js\nconst user = {};\n\nObject.defineProperty(user, 'name', {\n  value: 'رسول',\n  writable: false,\n  enumerable: true,\n  configurable: false,\n});\n\nuser.name = 'علی'; // تغییر نمیکند\n\nconsole.log(user.name); // رسول\n```\n\ndescriptor تعیین میکند خصوصیت چگونه رفتار کند.",
+      "readingTime": 1
     },
     {
       "id": "javascript-030",
@@ -509,10 +451,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "موتورهای مدرن JavaScript از تکنیکهایی مانند کامپایل Just-In-Time برای بهبود عملکرد استفاده میکنند.\n\nآنها کد را در زمان اجرا تحلیل میکنند، مسیرهای اجرای مکرر را بهینه میکنند، و inline caching اعمال میکنند.\n\nبا این حال، الگوهای خاصی مانند تغییر پویای شکل اشیاء میتواند باعث de-optimization شود.\n\nدرک رفتار موتور به نوشتن کد با عملکرد بهتر کمک میکند.\n\nمثال:\n\n```js\nfunction createUser(name) {\n  return { name };\n}\n\nconst u1 = createUser('A');\nconst u2 = createUser('B');\n```\n\nاینجا شکل شیء ثابت است → موتور بهینه میکند.\n\nاما این خوب نیست:\n\n```js\nconst user = {};\nuser.name = 'A';\nuser.age = 25;\nuser.city = 'NY';\n```\n\nاضافه کردن پراکنده خصوصیات hidden class را تغییر میدهد و ممکن است de-opt شود.",
-        "readingTime": 1
-      }
+      "markdown": "موتورهای مدرن JavaScript از تکنیکهایی مانند کامپایل Just-In-Time برای بهبود عملکرد استفاده میکنند.\n\nآنها کد را در زمان اجرا تحلیل میکنند، مسیرهای اجرای مکرر را بهینه میکنند، و inline caching اعمال میکنند.\n\nبا این حال، الگوهای خاصی مانند تغییر پویای شکل اشیاء میتواند باعث de-optimization شود.\n\nدرک رفتار موتور به نوشتن کد با عملکرد بهتر کمک میکند.\n\nمثال:\n\n```js\nfunction createUser(name) {\n  return { name };\n}\n\nconst u1 = createUser('A');\nconst u2 = createUser('B');\n```\n\nاینجا شکل شیء ثابت است → موتور بهینه میکند.\n\nاما این خوب نیست:\n\n```js\nconst user = {};\nuser.name = 'A';\nuser.age = 25;\nuser.city = 'NY';\n```\n\nاضافه کردن پراکنده خصوصیات hidden class را تغییر میدهد و ممکن است de-opt شود.",
+      "readingTime": 1
     },
     {
       "id": "javascript-031",
@@ -525,10 +465,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "زمینه اجرا محیط انتزاعی است که در آن کد JavaScript ارزیابی و اجرا میشود.\n\nسه نوع وجود دارد:\n\n- زمینه اجرای سراسری\n- زمینه اجرای تابع\n- زمینه اجرای Eval\n\nهر زمینه اجرا شامل موارد زیر است:\n\n- محیط متغیر\n- محیط لغوی\n- اتصال This\n\nموتور هر زمان که تابعی فراخوانی میشود، زمینه اجرای جدیدی ایجاد میکند.\n\nمثال:\n\n```js\nvar x = 10;\n\nfunction foo() {\n  var y = 20;\n  console.log(x + y); // 30\n}\n\nfoo();\n```",
-        "readingTime": 1
-      }
+      "markdown": "زمینه اجرا محیط انتزاعی است که در آن کد JavaScript ارزیابی و اجرا میشود.\n\nسه نوع وجود دارد:\n\n- زمینه اجرای سراسری\n- زمینه اجرای تابع\n- زمینه اجرای Eval\n\nهر زمینه اجرا شامل موارد زیر است:\n\n- محیط متغیر\n- محیط لغوی\n- اتصال This\n\nموتور هر زمان که تابعی فراخوانی میشود، زمینه اجرای جدیدی ایجاد میکند.\n\nمثال:\n\n```js\nvar x = 10;\n\nfunction foo() {\n  var y = 20;\n  console.log(x + y); // 30\n}\n\nfoo();\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-032",
@@ -541,10 +479,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "در مرحله ایجاد:\n\n- حافظه برای متغیرها و توابع تخصیص داده میشود.\n- متغیرهای اعلان شده با `var` با `undefined` مقداردهی میشوند.\n- اعلان توابع به طور کامل hoist میشوند.\n\nدر مرحله اجرا:\n\n- کد خط به خط اجرا میشود.\n- متغیرها مقادیر اختصاص یافته را دریافت میکنند.\n- توابع اجرا میشوند.\n\nمثال:\n\n```js\nconsole.log(a); // undefined\n\nvar a = 5;\n```",
-        "readingTime": 1
-      }
+      "markdown": "در مرحله ایجاد:\n\n- حافظه برای متغیرها و توابع تخصیص داده میشود.\n- متغیرهای اعلان شده با `var` با `undefined` مقداردهی میشوند.\n- اعلان توابع به طور کامل hoist میشوند.\n\nدر مرحله اجرا:\n\n- کد خط به خط اجرا میشود.\n- متغیرها مقادیر اختصاص یافته را دریافت میکنند.\n- توابع اجرا میشوند.\n\nمثال:\n\n```js\nconsole.log(a); // undefined\n\nvar a = 5;\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-033",
@@ -557,10 +493,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "زنجیره محدوده مکانیزمی است که برای تفکیک دسترسی به متغیر استفاده میشود.\n\nهنگامی که به متغیری ارجاع داده میشود:\n\n1. موتور محدوده فعلی را بررسی میکند.\n2. اگر پیدا نشد، به محدوده لغوی بیرونی میرود.\n3. این کار تا رسیدن به محدوده سراسری ادامه مییابد.\n4. اگر پیدا نشود، ReferenceError پرتاب میشود.\n\nاین ساختار محدوده لغوی را امکانپذیر میکند.\n\nمثال:\n\n```js\nconst a = 1;\n\nfunction outer() {\n  const b = 2;\n\n  function inner() {\n    const c = 3;\n    console.log(a, b, c); // 1 2 3\n  }\n\n  inner();\n}\n\nouter();\n```",
-        "readingTime": 1
-      }
+      "markdown": "زنجیره محدوده مکانیزمی است که برای تفکیک دسترسی به متغیر استفاده میشود.\n\nهنگامی که به متغیری ارجاع داده میشود:\n\n1. موتور محدوده فعلی را بررسی میکند.\n2. اگر پیدا نشد، به محدوده لغوی بیرونی میرود.\n3. این کار تا رسیدن به محدوده سراسری ادامه مییابد.\n4. اگر پیدا نشود، ReferenceError پرتاب میشود.\n\nاین ساختار محدوده لغوی را امکانپذیر میکند.\n\nمثال:\n\n```js\nconst a = 1;\n\nfunction outer() {\n  const b = 2;\n\n  function inner() {\n    const c = 3;\n    console.log(a, b, c); // 1 2 3\n  }\n\n  inner();\n}\n\nouter();\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-034",
@@ -573,10 +507,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "محدوده لغوی به این معنی است که محدوده بر اساس جایی که تابع در کد منبع تعریف شده تعیین میشود.\n\nمحدوده پویا به این معنی است که محدوده بر اساس نحوه فراخوانی تابع تعیین میشود.\n\nJavaScript از محدوده لغوی استفاده میکند.\n\nمحدوده تابع در زمان تعریف ثابت است، نه زمان فراخوانی.\n\nمثال:\n\n```js\nfunction outer() {\n  const x = 10;\n\n  function inner() {\n    console.log(x);\n  }\n\n  return inner;\n}\n\nconst fn = outer();\nfn(); // 10\n```",
-        "readingTime": 1
-      }
+      "markdown": "محدوده لغوی به این معنی است که محدوده بر اساس جایی که تابع در کد منبع تعریف شده تعیین میشود.\n\nمحدوده پویا به این معنی است که محدوده بر اساس نحوه فراخوانی تابع تعیین میشود.\n\nJavaScript از محدوده لغوی استفاده میکند.\n\nمحدوده تابع در زمان تعریف ثابت است، نه زمان فراخوانی.\n\nمثال:\n\n```js\nfunction outer() {\n  const x = 10;\n\n  function inner() {\n    console.log(x);\n  }\n\n  return inner;\n}\n\nconst fn = outer();\nfn(); // 10\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-035",
@@ -590,10 +522,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Closure زمانی ایجاد میشود که تابعی متغیرهای محدوده لغوی خود را حتی پس از اتمام اجرای تابع بیرونی به خاطر بسپارد.\n\nClosureها به دلیل استفاده JavaScript از محدوده لغوی امکانپذیر هستند.\n\nآنها به توابع اجازه میدهند دسترسی به متغیرهای محیط تعریفشان را حفظ کنند.\n\nمثال:\n\n```js\nfunction counter() {\n  let count = 0;\n\n  return function () {\n    count++;\n    return count;\n  };\n}\n\nconst increment = counter();\n\nconsole.log(increment()); // 1\nconsole.log(increment()); // 2\n```",
-        "readingTime": 1
-      }
+      "markdown": "Closure زمانی ایجاد میشود که تابعی متغیرهای محدوده لغوی خود را حتی پس از اتمام اجرای تابع بیرونی به خاطر بسپارد.\n\nClosureها به دلیل استفاده JavaScript از محدوده لغوی امکانپذیر هستند.\n\nآنها به توابع اجازه میدهند دسترسی به متغیرهای محیط تعریفشان را حفظ کنند.\n\nمثال:\n\n```js\nfunction counter() {\n  let count = 0;\n\n  return function () {\n    count++;\n    return count;\n  };\n}\n\nconst increment = counter();\n\nconsole.log(increment()); // 1\nconsole.log(increment()); // 2\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-036",
@@ -607,10 +537,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Closureها میتوانند باعث نشت حافظه شوند وقتی مراجعی به اشیاء بزرگی که دیگر نیاز نیستند حفظ کنند.\n\nاگر closure مرجعی را زنده نگه دارد، garbage collector نمیتواند آن حافظه را آزاد کند.\n\nعلل رایج شامل:\n\n- event listenerهای حذف نشده\n- timerهای طولانی مدت\n- دادههای کش شده در closureها\n\nمثال:\n\n```js\nfunction createHandler() {\n  const bigData = new Array(1000000).fill('data');\n\n  return function () {\n    console.log(bigData.length);\n  };\n}\n\nconst handler = createHandler();\n// bigData تا زمانی که handler وجود دارد در حافظه میماند\n```\n\nبرای جلوگیری از این مشکل، فقط آنچه واقعاً نیاز است را درون closure نگه دارید:\n\n```js\nfunction createHandler() {\n  const bigData = new Array(1000000).fill('data');\n  const length = bigData.length; // فقط آنچه نیاز است استخراج میشود\n\n  return function () {\n    console.log(length); // bigData دیگر ارجاع داده نمیشود\n  };\n}\n\nconst handler = createHandler();\n```",
-        "readingTime": 1
-      }
+      "markdown": "Closureها میتوانند باعث نشت حافظه شوند وقتی مراجعی به اشیاء بزرگی که دیگر نیاز نیستند حفظ کنند.\n\nاگر closure مرجعی را زنده نگه دارد، garbage collector نمیتواند آن حافظه را آزاد کند.\n\nعلل رایج شامل:\n\n- event listenerهای حذف نشده\n- timerهای طولانی مدت\n- دادههای کش شده در closureها\n\nمثال:\n\n```js\nfunction createHandler() {\n  const bigData = new Array(1000000).fill('data');\n\n  return function () {\n    console.log(bigData.length);\n  };\n}\n\nconst handler = createHandler();\n// bigData تا زمانی که handler وجود دارد در حافظه میماند\n```\n\nبرای جلوگیری از این مشکل، فقط آنچه واقعاً نیاز است را درون closure نگه دارید:\n\n```js\nfunction createHandler() {\n  const bigData = new Array(1000000).fill('data');\n  const length = bigData.length; // فقط آنچه نیاز است استخراج میشود\n\n  return function () {\n    console.log(length); // bigData دیگر ارجاع داده نمیشود\n  };\n}\n\nconst handler = createHandler();\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-037",
@@ -623,10 +551,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Temporal Dead Zone زمان بین ورود به محدوده بلوک و اعلان واقعی متغیر `let` یا `const` است.\n\nدر این دوره، دسترسی به متغیر منجر به ReferenceError میشود.\n\nبرخلاف `var`، `let` و `const` hoist میشوند اما مقداردهی نمیشوند.\n\nمثال:\n\n```js\n{\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\n  let a = 10;\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "Temporal Dead Zone زمان بین ورود به محدوده بلوک و اعلان واقعی متغیر `let` یا `const` است.\n\nدر این دوره، دسترسی به متغیر منجر به ReferenceError میشود.\n\nبرخلاف `var`، `let` و `const` hoist میشوند اما مقداردهی نمیشوند.\n\nمثال:\n\n```js\n{\n  console.log(a); // ReferenceError: Cannot access 'a' before initialization\n  let a = 10;\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-038",
@@ -639,10 +565,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "محدوده تابع به این معنی است که متغیرهای اعلان شده با `var` به کل تابع محدود میشوند.\n\nمحدوده بلوک به این معنی است که متغیرهای اعلان شده با `let` و `const` به نزدیکترین بلوک `{}` محدود میشوند.\n\nمحدوده بلوک از نشت تصادفی متغیر خارج از بلوکهای شرطی یا حلقه جلوگیری میکند.\n\nمثال:\n\n```js\nif (true) {\n  var x = 1;\n  let y = 2;\n}\n\nconsole.log(x); // 1\nconsole.log(y); // ReferenceError\n```",
-        "readingTime": 1
-      }
+      "markdown": "محدوده تابع به این معنی است که متغیرهای اعلان شده با `var` به کل تابع محدود میشوند.\n\nمحدوده بلوک به این معنی است که متغیرهای اعلان شده با `let` و `const` به نزدیکترین بلوک `{}` محدود میشوند.\n\nمحدوده بلوک از نشت تصادفی متغیر خارج از بلوکهای شرطی یا حلقه جلوگیری میکند.\n\nمثال:\n\n```js\nif (true) {\n  var x = 1;\n  let y = 2;\n}\n\nconsole.log(x); // 1\nconsole.log(y); // ReferenceError\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-039",
@@ -656,10 +580,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هنگامی که تابعی برگردانده میشود، محیط لغوی آن حفظ میشود اگر به متغیرهای بیرونی ارجاع دهد.\n\nموتور آن متغیرها را در حافظه نگه میدارد تا تابع برگشتی بتواند بعداً به آنها دسترسی داشته باشد.\n\nاین پایه و اساس closureها است.\n\nمثال:\n\n```js\nfunction greet(name) {\n  return function () {\n    console.log('سلام ' + name);\n  };\n}\n\nconst sayHello = greet('رسول');\nsayHello(); // سلام رسول\n```",
-        "readingTime": 1
-      }
+      "markdown": "هنگامی که تابعی برگردانده میشود، محیط لغوی آن حفظ میشود اگر به متغیرهای بیرونی ارجاع دهد.\n\nموتور آن متغیرها را در حافظه نگه میدارد تا تابع برگشتی بتواند بعداً به آنها دسترسی داشته باشد.\n\nاین پایه و اساس closureها است.\n\nمثال:\n\n```js\nfunction greet(name) {\n  return function () {\n    console.log('سلام ' + name);\n  };\n}\n\nconst sayHello = greet('رسول');\nsayHello(); // سلام رسول\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-040",
@@ -672,10 +594,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript متغیرها را با استفاده از زنجیره محدوده تفکیک میکند.\n\nاز درونیترین محدوده به بیرون جستجو میکند تا متغیر را پیدا کند.\n\nاگر متغیر در هیچ محدودهای وجود نداشته باشد، ReferenceError پرتاب میشود.\n\nاین فرآیند جستجو در زمان تعریف تابع تعیین میشود.\n\nمثال:\n\n```js\nconst a = 'global';\n\nfunction first() {\n  const a = 'first';\n\n  function second() {\n    console.log(a);\n  }\n\n  second();\n}\n\nfirst(); // \"first\"\n```",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript متغیرها را با استفاده از زنجیره محدوده تفکیک میکند.\n\nاز درونیترین محدوده به بیرون جستجو میکند تا متغیر را پیدا کند.\n\nاگر متغیر در هیچ محدودهای وجود نداشته باشد، ReferenceError پرتاب میشود.\n\nاین فرآیند جستجو در زمان تعریف تابع تعیین میشود.\n\nمثال:\n\n```js\nconst a = 'global';\n\nfunction first() {\n  const a = 'first';\n\n  function second() {\n    console.log(a);\n  }\n\n  second();\n}\n\nfirst(); // \"first\"\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-041",
@@ -688,10 +608,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`==` عملگر تساوی آزاد است. مقادیر را پس از انجام تبدیل نوع (type coercion) مقایسه میکند اگر نوعها متفاوت باشند.\n\n`===` عملگر تساوی دقیق است. هم مقدار و هم نوع را بدون هیچ تبدیلی مقایسه میکند.\n\nدر اکثر موارد استفاده از `===` توصیه میشود چون نتایج قابل پیشبینیتری دارد.\n\nمثال:\n\n```js\nconsole.log(1 == '1'); // true  (تبدیل نوع انجام شد)\nconsole.log(1 === '1'); // false (نوعها متفاوتند)\n\nconsole.log(null == undefined); // true\nconsole.log(null === undefined); // false\n\nconsole.log(0 == false); // true\nconsole.log(0 === false); // false\n```",
-        "readingTime": 1
-      }
+      "markdown": "`==` عملگر تساوی آزاد است. مقادیر را پس از انجام تبدیل نوع (type coercion) مقایسه میکند اگر نوعها متفاوت باشند.\n\n`===` عملگر تساوی دقیق است. هم مقدار و هم نوع را بدون هیچ تبدیلی مقایسه میکند.\n\nدر اکثر موارد استفاده از `===` توصیه میشود چون نتایج قابل پیشبینیتری دارد.\n\nمثال:\n\n```js\nconsole.log(1 == '1'); // true  (تبدیل نوع انجام شد)\nconsole.log(1 === '1'); // false (نوعها متفاوتند)\n\nconsole.log(null == undefined); // true\nconsole.log(null === undefined); // false\n\nconsole.log(0 == false); // true\nconsole.log(0 === false); // false\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-042",
@@ -704,10 +622,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر سه متد به شما اجازه میدهند مقدار `this` را برای یک تابع به صورت صریح تعیین کنید.\n\n- `call()` تابع را بلافاصله با آرگومانهای جداگانه فراخوانی میکند.\n- `apply()` تابع را بلافاصله با آرگومانها به صورت آرایه فراخوانی میکند.\n- `bind()` یک تابع جدید با `this` دائمی برمیگرداند، بدون اینکه بلافاصله آن را فراخوانی کند.\n\nمثال:\n\n```js\nfunction greet(greeting, punctuation) {\n  return `${greeting}, ${this.name}${punctuation}`;\n}\n\nconst user = { name: 'رسول' };\n\nconsole.log(greet.call(user, 'سلام', '!')); // سلام, رسول!\nconsole.log(greet.apply(user, ['درود', '.'])); // درود, رسول.\n\nconst boundGreet = greet.bind(user, 'هی');\nconsole.log(boundGreet('?')); // هی, رسول?\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر سه متد به شما اجازه میدهند مقدار `this` را برای یک تابع به صورت صریح تعیین کنید.\n\n- `call()` تابع را بلافاصله با آرگومانهای جداگانه فراخوانی میکند.\n- `apply()` تابع را بلافاصله با آرگومانها به صورت آرایه فراخوانی میکند.\n- `bind()` یک تابع جدید با `this` دائمی برمیگرداند، بدون اینکه بلافاصله آن را فراخوانی کند.\n\nمثال:\n\n```js\nfunction greet(greeting, punctuation) {\n  return `${greeting}, ${this.name}${punctuation}`;\n}\n\nconst user = { name: 'رسول' };\n\nconsole.log(greet.call(user, 'سلام', '!')); // سلام, رسول!\nconsole.log(greet.apply(user, ['درود', '.'])); // درود, رسول.\n\nconst boundGreet = greet.bind(user, 'هی');\nconsole.log(boundGreet('?')); // هی, رسول?\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-043",
@@ -720,10 +636,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "IIFE (Immediately Invoked Function Expression) تابعی است که بلافاصله پس از تعریف اجرا میشود.\n\nمحدوده مخصوص خود را ایجاد میکند و از نشت متغیرها به محدوده بیرونی یا سراسری جلوگیری میکند.\n\nقبل از اینکه `let` و `const` در دسترس باشند، IIFEها به طور گسترده استفاده میشدند.\n\nمثال:\n\n```js\n(function () {\n  const message = 'سلام از IIFE';\n  console.log(message); // سلام از IIFE\n})();\n\n// console.log(message); // ReferenceError — از بیرون قابل دسترسی نیست\n```",
-        "readingTime": 1
-      }
+      "markdown": "IIFE (Immediately Invoked Function Expression) تابعی است که بلافاصله پس از تعریف اجرا میشود.\n\nمحدوده مخصوص خود را ایجاد میکند و از نشت متغیرها به محدوده بیرونی یا سراسری جلوگیری میکند.\n\nقبل از اینکه `let` و `const` در دسترس باشند، IIFEها به طور گسترده استفاده میشدند.\n\nمثال:\n\n```js\n(function () {\n  const message = 'سلام از IIFE';\n  console.log(message); // سلام از IIFE\n})();\n\n// console.log(message); // ReferenceError — از بیرون قابل دسترسی نیست\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-044",
@@ -736,10 +650,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Currying تکنیکی است که یک تابع با چندین آرگومان را به دنبالهای از توابع تبدیل میکند که هر کدام یک آرگومان میگیرند.\n\nامکان اعمال جزئی (partial application) توابع را فراهم میکند و کد را قابل استفاده مجدد و ترکیبپذیرتر میکند.\n\nمثال:\n\n```js\n// تابع معمولی\nfunction add(a, b) {\n  return a + b;\n}\n\n// نسخه curried\nfunction curriedAdd(a) {\n  return function (b) {\n    return a + b;\n  };\n}\n\nconst add5 = curriedAdd(5);\nconsole.log(add5(3)); // 8\nconsole.log(add5(10)); // 15\n```",
-        "readingTime": 1
-      }
+      "markdown": "Currying تکنیکی است که یک تابع با چندین آرگومان را به دنبالهای از توابع تبدیل میکند که هر کدام یک آرگومان میگیرند.\n\nامکان اعمال جزئی (partial application) توابع را فراهم میکند و کد را قابل استفاده مجدد و ترکیبپذیرتر میکند.\n\nمثال:\n\n```js\n// تابع معمولی\nfunction add(a, b) {\n  return a + b;\n}\n\n// نسخه curried\nfunction curriedAdd(a) {\n  return function (b) {\n    return a + b;\n  };\n}\n\nconst add5 = curriedAdd(5);\nconsole.log(add5(3)); // 8\nconsole.log(add5(10)); // 15\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-045",
@@ -752,10 +664,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر سه متد higher-order آرایه هستند که آرایه اصلی را تغییر نمیدهند.\n\n- `map()` هر عنصر را تبدیل میکند و آرایه جدیدی با همان طول برمیگرداند.\n- `filter()` آرایه جدیدی شامل فقط عناصری که شرط را برآورده میکنند برمیگرداند.\n- `reduce()` تمام عناصر را به یک مقدار واحد تجمیع میکند.\n\nمثال:\n\n```js\nconst numbers = [1, 2, 3, 4, 5];\n\nconst doubled = numbers.map((n) => n * 2);\nconsole.log(doubled); // [2, 4, 6, 8, 10]\n\nconst evens = numbers.filter((n) => n % 2 === 0);\nconsole.log(evens); // [2, 4]\n\nconst sum = numbers.reduce((acc, n) => acc + n, 0);\nconsole.log(sum); // 15\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر سه متد higher-order آرایه هستند که آرایه اصلی را تغییر نمیدهند.\n\n- `map()` هر عنصر را تبدیل میکند و آرایه جدیدی با همان طول برمیگرداند.\n- `filter()` آرایه جدیدی شامل فقط عناصری که شرط را برآورده میکنند برمیگرداند.\n- `reduce()` تمام عناصر را به یک مقدار واحد تجمیع میکند.\n\nمثال:\n\n```js\nconst numbers = [1, 2, 3, 4, 5];\n\nconst doubled = numbers.map((n) => n * 2);\nconsole.log(doubled); // [2, 4, 6, 8, 10]\n\nconst evens = numbers.filter((n) => n % 2 === 0);\nconsole.log(evens); // [2, 4]\n\nconst sum = numbers.reduce((acc, n) => acc + n, 0);\nconsole.log(sum); // 15\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-046",
@@ -768,10 +678,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Destructuring سینتکسی است که اجازه میدهد مقادیر از آرایهها یا خصوصیات از اشیاء را در متغیرهای جداگانه باز کنید.\n\nکد را هنگام کار با دادههای ساختاریافته مختصرتر و خواناتر میکند.\n\nمثال:\n\n```js\n// Destructuring شیء\nconst user = { name: 'رسول', age: 28 };\nconst { name, age } = user;\nconsole.log(name); // رسول\nconsole.log(age); // 28\n\n// Destructuring آرایه\nconst colors = ['قرمز', 'سبز', 'آبی'];\nconst [first, second] = colors;\nconsole.log(first); // قرمز\nconsole.log(second); // سبز\n```",
-        "readingTime": 1
-      }
+      "markdown": "Destructuring سینتکسی است که اجازه میدهد مقادیر از آرایهها یا خصوصیات از اشیاء را در متغیرهای جداگانه باز کنید.\n\nکد را هنگام کار با دادههای ساختاریافته مختصرتر و خواناتر میکند.\n\nمثال:\n\n```js\n// Destructuring شیء\nconst user = { name: 'رسول', age: 28 };\nconst { name, age } = user;\nconsole.log(name); // رسول\nconsole.log(age); // 28\n\n// Destructuring آرایه\nconst colors = ['قرمز', 'سبز', 'آبی'];\nconst [first, second] = colors;\nconsole.log(first); // قرمز\nconsole.log(second); // سبز\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-047",
@@ -784,10 +692,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو از سینتکس `...` استفاده میکنند اما اهداف مخالف دارند.\n\nعملگر **spread** یک iterable را به عناصر جداگانه گسترش میدهد.\n\nعملگر **rest** چندین عنصر را در یک آرایه یا شیء واحد جمعآوری میکند.\n\nمثال:\n\n```js\n// Spread — گسترش عناصر\nconst arr1 = [1, 2, 3];\nconst arr2 = [...arr1, 4, 5];\nconsole.log(arr2); // [1, 2, 3, 4, 5]\n\nconst base = { a: 1 };\nconst extended = { ...base, b: 2 };\nconsole.log(extended); // { a: 1, b: 2 }\n\n// Rest — جمعآوری عناصر\nfunction sum(...numbers) {\n  return numbers.reduce((acc, n) => acc + n, 0);\n}\nconsole.log(sum(1, 2, 3, 4)); // 10\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر دو از سینتکس `...` استفاده میکنند اما اهداف مخالف دارند.\n\nعملگر **spread** یک iterable را به عناصر جداگانه گسترش میدهد.\n\nعملگر **rest** چندین عنصر را در یک آرایه یا شیء واحد جمعآوری میکند.\n\nمثال:\n\n```js\n// Spread — گسترش عناصر\nconst arr1 = [1, 2, 3];\nconst arr2 = [...arr1, 4, 5];\nconsole.log(arr2); // [1, 2, 3, 4, 5]\n\nconst base = { a: 1 };\nconst extended = { ...base, b: 2 };\nconsole.log(extended); // { a: 1, b: 2 }\n\n// Rest — جمعآوری عناصر\nfunction sum(...numbers) {\n  return numbers.reduce((acc, n) => acc + n, 0);\n}\nconsole.log(sum(1, 2, 3, 4)); // 10\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-048",
@@ -800,10 +706,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر چهار متد ترکیبکننده Promise هستند که برای مدیریت همزمان چندین Promise استفاده میشوند.\n\n- `Promise.all()` زمانی resolve میشود که همه Promiseها resolve شوند. اگر هر کدام fail شود بلافاصله reject میکند.\n- `Promise.race()` به محض اینکه اولین Promise settle شود، resolve یا reject میکند.\n- `Promise.allSettled()` منتظر settle شدن همه Promiseها میماند و همه نتایج را صرف نظر از نتیجه برمیگرداند.\n- `Promise.any()` به محض اینکه هر Promise fulfill شود resolve میکند. فقط اگر همه fail شوند reject میکند.\n\nمثال:\n\n```js\nconst p1 = Promise.resolve(1);\nconst p2 = Promise.resolve(2);\nconst p3 = Promise.resolve(3);\n\nPromise.all([p1, p2, p3]).then(console.log);\n// [1, 2, 3]\n\nPromise.race([p1, p2, p3]).then(console.log);\n// 1\n\nPromise.allSettled([p1, p2, p3]).then(console.log);\n// [{ status: 'fulfilled', value: 1 }, ...]\n\nPromise.any([p1, p2, p3]).then(console.log);\n// 1\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر چهار متد ترکیبکننده Promise هستند که برای مدیریت همزمان چندین Promise استفاده میشوند.\n\n- `Promise.all()` زمانی resolve میشود که همه Promiseها resolve شوند. اگر هر کدام fail شود بلافاصله reject میکند.\n- `Promise.race()` به محض اینکه اولین Promise settle شود، resolve یا reject میکند.\n- `Promise.allSettled()` منتظر settle شدن همه Promiseها میماند و همه نتایج را صرف نظر از نتیجه برمیگرداند.\n- `Promise.any()` به محض اینکه هر Promise fulfill شود resolve میکند. فقط اگر همه fail شوند reject میکند.\n\nمثال:\n\n```js\nconst p1 = Promise.resolve(1);\nconst p2 = Promise.resolve(2);\nconst p3 = Promise.resolve(3);\n\nPromise.all([p1, p2, p3]).then(console.log);\n// [1, 2, 3]\n\nPromise.race([p1, p2, p3]).then(console.log);\n// 1\n\nPromise.allSettled([p1, p2, p3]).then(console.log);\n// [{ status: 'fulfilled', value: 1 }, ...]\n\nPromise.any([p1, p2, p3]).then(console.log);\n// 1\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-049",
@@ -816,10 +720,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Event delegation الگویی است که در آن یک event listener واحد به عنصر والد متصل میشود تا رویدادهای ایجاد شده توسط فرزندانش را مدیریت کند.\n\nبه event bubbling متکی است، جایی که رویدادها از عنصر هدف به سمت بالا منتشر میشوند.\n\nاین الگو با کاهش تعداد event listenerها عملکرد را بهبود میبخشد و برای عناصر اضافه شده به صورت پویا هم کار میکند.\n\nمثال:\n\n```js\n// بدون delegation — یک listener برای هر آیتم (ناکارآمد)\n// document.querySelectorAll('li').forEach(li => li.addEventListener(...))\n\n// با delegation — یک listener روی والد\ndocument.querySelector('#list').addEventListener('click', (event) => {\n  if (event.target.tagName === 'LI') {\n    console.log('کلیک شد:', event.target.textContent);\n  }\n});\n```",
-        "readingTime": 1
-      }
+      "markdown": "Event delegation الگویی است که در آن یک event listener واحد به عنصر والد متصل میشود تا رویدادهای ایجاد شده توسط فرزندانش را مدیریت کند.\n\nبه event bubbling متکی است، جایی که رویدادها از عنصر هدف به سمت بالا منتشر میشوند.\n\nاین الگو با کاهش تعداد event listenerها عملکرد را بهبود میبخشد و برای عناصر اضافه شده به صورت پویا هم کار میکند.\n\nمثال:\n\n```js\n// بدون delegation — یک listener برای هر آیتم (ناکارآمد)\n// document.querySelectorAll('li').forEach(li => li.addEventListener(...))\n\n// با delegation — یک listener روی والد\ndocument.querySelector('#list').addEventListener('click', (event) => {\n  if (event.target.tagName === 'LI') {\n    console.log('کلیک شد:', event.target.textContent);\n  }\n});\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-050",
@@ -832,10 +734,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Type coercion تبدیل خودکار یا ضمنی یک مقدار از یک نوع داده به نوع دیگر است.\n\nJavaScript به دو روش coercion انجام میدهد:\n\n- **Coercion ضمنی**: به طور خودکار در حین عملیات با نوعهای مختلط اتفاق میافتد.\n- **Coercion صریح**: به صورت دستی با توابع تبدیل مانند `Number()`، `String()` یا `Boolean()` انجام میشود.\n\nمثال:\n\n```js\n// Coercion ضمنی\nconsole.log(1 + '2'); // '12' (عدد به رشته تبدیل شد)\nconsole.log(true + 1); // 2    (boolean به عدد تبدیل شد)\nconsole.log('' == false); // true (هر دو به 0 تبدیل میشوند)\n\n// Coercion صریح\nconsole.log(Number('42')); // 42\nconsole.log(String(100)); // '100'\nconsole.log(Boolean(0)); // false\n```",
-        "readingTime": 1
-      }
+      "markdown": "Type coercion تبدیل خودکار یا ضمنی یک مقدار از یک نوع داده به نوع دیگر است.\n\nJavaScript به دو روش coercion انجام میدهد:\n\n- **Coercion ضمنی**: به طور خودکار در حین عملیات با نوعهای مختلط اتفاق میافتد.\n- **Coercion صریح**: به صورت دستی با توابع تبدیل مانند `Number()`، `String()` یا `Boolean()` انجام میشود.\n\nمثال:\n\n```js\n// Coercion ضمنی\nconsole.log(1 + '2'); // '12' (عدد به رشته تبدیل شد)\nconsole.log(true + 1); // 2    (boolean به عدد تبدیل شد)\nconsole.log('' == false); // true (هر دو به 0 تبدیل میشوند)\n\n// Coercion صریح\nconsole.log(Number('42')); // 42\nconsole.log(String(100)); // '100'\nconsole.log(Boolean(0)); // false\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-051",
@@ -848,10 +748,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Optional chaining (`?.`) اجازه میدهد خصوصیات تودرتو را بدون بررسی اینکه هر مرجع در زنجیره معتبر است یا نه، به صورت امن دسترسی پیدا کنید.\n\nاگر هر بخشی از زنجیره `null` یا `undefined` باشد، عبارت اتصال کوتاه (short-circuit) میشود و به جای پرتاب خطا `undefined` برمیگرداند.\n\nبا دسترسی به خصوصیات، فراخوانی متدها و دسترسی به آرایه کار میکند.\n\nمثال:\n\n```js\nconst user = {\n  profile: {\n    address: {\n      city: 'تهران',\n    },\n  },\n};\n\nconsole.log(user?.profile?.address?.city); // تهران\nconsole.log(user?.contact?.phone); // undefined (خطایی پرتاب نمیشود)\n\n// با فراخوانی متد\nconsole.log(user?.getName?.()); // undefined (خطایی پرتاب نمیشود)\n```",
-        "readingTime": 1
-      }
+      "markdown": "Optional chaining (`?.`) اجازه میدهد خصوصیات تودرتو را بدون بررسی اینکه هر مرجع در زنجیره معتبر است یا نه، به صورت امن دسترسی پیدا کنید.\n\nاگر هر بخشی از زنجیره `null` یا `undefined` باشد، عبارت اتصال کوتاه (short-circuit) میشود و به جای پرتاب خطا `undefined` برمیگرداند.\n\nبا دسترسی به خصوصیات، فراخوانی متدها و دسترسی به آرایه کار میکند.\n\nمثال:\n\n```js\nconst user = {\n  profile: {\n    address: {\n      city: 'تهران',\n    },\n  },\n};\n\nconsole.log(user?.profile?.address?.city); // تهران\nconsole.log(user?.contact?.phone); // undefined (خطایی پرتاب نمیشود)\n\n// با فراخوانی متد\nconsole.log(user?.getName?.()); // undefined (خطایی پرتاب نمیشود)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-052",
@@ -864,10 +762,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "عملگر nullish coalescing (`??`) فقط زمانی مقدار سمت راست را برمیگرداند که مقدار سمت چپ `null` یا `undefined` باشد.\n\nعملگر OR منطقی (`||`) زمانی مقدار سمت راست را برمیگرداند که مقدار سمت چپ هر مقدار falsy باشد، از جمله `0`، `''` و `false`.\n\nاین تفاوت زمانی اهمیت دارد که `0` یا رشته خالی مقادیر معتبری هستند.\n\nمثال:\n\n```js\nconsole.log(null ?? 'پیش‌فرض'); // 'پیش‌فرض'\nconsole.log(undefined ?? 'پیش‌فرض'); // 'پیش‌فرض'\n\nconsole.log(0 ?? 'پیش‌فرض'); // 0          (جایگزین نشد — 0 null/undefined نیست)\nconsole.log(0 || 'پیش‌فرض'); // 'پیش‌فرض' (جایگزین شد — 0 falsy است)\n\nconsole.log('' ?? 'جایگزین'); // ''         (رشته خالی null/undefined نیست)\nconsole.log('' || 'جایگزین'); // 'جایگزین' (رشته خالی falsy است)\n```",
-        "readingTime": 1
-      }
+      "markdown": "عملگر nullish coalescing (`??`) فقط زمانی مقدار سمت راست را برمیگرداند که مقدار سمت چپ `null` یا `undefined` باشد.\n\nعملگر OR منطقی (`||`) زمانی مقدار سمت راست را برمیگرداند که مقدار سمت چپ هر مقدار falsy باشد، از جمله `0`، `''` و `false`.\n\nاین تفاوت زمانی اهمیت دارد که `0` یا رشته خالی مقادیر معتبری هستند.\n\nمثال:\n\n```js\nconsole.log(null ?? 'پیش‌فرض'); // 'پیش‌فرض'\nconsole.log(undefined ?? 'پیش‌فرض'); // 'پیش‌فرض'\n\nconsole.log(0 ?? 'پیش‌فرض'); // 0          (جایگزین نشد — 0 null/undefined نیست)\nconsole.log(0 || 'پیش‌فرض'); // 'پیش‌فرض' (جایگزین شد — 0 falsy است)\n\nconsole.log('' ?? 'جایگزین'); // ''         (رشته خالی null/undefined نیست)\nconsole.log('' || 'جایگزین'); // 'جایگزین' (رشته خالی falsy است)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-053",
@@ -880,10 +776,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "عملگر `typeof` رشتهای را برمیگرداند که نوع مقدار داده شده را نشان میدهد.\n\nمقادیر رایج بازگشتی:\n\n- `'string'`، `'number'`، `'bigint'`، `'boolean'`، `'undefined'`، `'symbol'`\n- `'object'` برای اشیاء و آرایهها\n- `'function'` برای توابع\n\nنکته غیرمعمول شناخته‌شده: `typeof null` مقدار `'object'` برمیگرداند که یک باگ تاریخی در JavaScript است.\n\nمثال:\n\n```js\nconsole.log(typeof 'سلام'); // 'string'\nconsole.log(typeof 42); // 'number'\nconsole.log(typeof true); // 'boolean'\nconsole.log(typeof undefined); // 'undefined'\nconsole.log(typeof Symbol()); // 'symbol'\nconsole.log(typeof function () {}); // 'function'\nconsole.log(typeof {}); // 'object'\nconsole.log(typeof []); // 'object'\nconsole.log(typeof null); // 'object' ← باگ تاریخی\n```",
-        "readingTime": 1
-      }
+      "markdown": "عملگر `typeof` رشتهای را برمیگرداند که نوع مقدار داده شده را نشان میدهد.\n\nمقادیر رایج بازگشتی:\n\n- `'string'`، `'number'`، `'bigint'`، `'boolean'`، `'undefined'`، `'symbol'`\n- `'object'` برای اشیاء و آرایهها\n- `'function'` برای توابع\n\nنکته غیرمعمول شناخته‌شده: `typeof null` مقدار `'object'` برمیگرداند که یک باگ تاریخی در JavaScript است.\n\nمثال:\n\n```js\nconsole.log(typeof 'سلام'); // 'string'\nconsole.log(typeof 42); // 'number'\nconsole.log(typeof true); // 'boolean'\nconsole.log(typeof undefined); // 'undefined'\nconsole.log(typeof Symbol()); // 'symbol'\nconsole.log(typeof function () {}); // 'function'\nconsole.log(typeof {}); // 'object'\nconsole.log(typeof []); // 'object'\nconsole.log(typeof null); // 'object' ← باگ تاریخی\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-054",
@@ -896,10 +790,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`instanceof` با طی کردن زنجیره prototype بررسی میکند که آیا یک شیء از constructor یا کلاس خاصی ساخته شده است. مقدار boolean برمیگرداند.\n\n`typeof` یک نام نوع به صورت رشته برمیگرداند و برای مقادیر اولیه مناسبتر است.\n\n`instanceof` برای بررسی نمونههای شیء و وراثت کلاس بهتر است.\n\nمثال:\n\n```js\nclass Animal {}\nclass Dog extends Animal {}\n\nconst dog = new Dog();\n\nconsole.log(dog instanceof Dog); // true\nconsole.log(dog instanceof Animal); // true (زنجیره prototype را طی میکند)\nconsole.log(dog instanceof Object); // true (همه از Object ارث میبرند)\n\nconsole.log(typeof dog); // 'object'\nconsole.log(typeof 42); // 'number'\n\nconsole.log([] instanceof Array); // true\nconsole.log([] instanceof Object); // true\n```",
-        "readingTime": 1
-      }
+      "markdown": "`instanceof` با طی کردن زنجیره prototype بررسی میکند که آیا یک شیء از constructor یا کلاس خاصی ساخته شده است. مقدار boolean برمیگرداند.\n\n`typeof` یک نام نوع به صورت رشته برمیگرداند و برای مقادیر اولیه مناسبتر است.\n\n`instanceof` برای بررسی نمونههای شیء و وراثت کلاس بهتر است.\n\nمثال:\n\n```js\nclass Animal {}\nclass Dog extends Animal {}\n\nconst dog = new Dog();\n\nconsole.log(dog instanceof Dog); // true\nconsole.log(dog instanceof Animal); // true (زنجیره prototype را طی میکند)\nconsole.log(dog instanceof Object); // true (همه از Object ارث میبرند)\n\nconsole.log(typeof dog); // 'object'\nconsole.log(typeof 42); // 'number'\n\nconsole.log([] instanceof Array); // true\nconsole.log([] instanceof Object); // true\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-055",
@@ -912,10 +804,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Symbol یک مقدار اولیه است که تضمین میشود منحصربه‌فرد باشد. هیچ دو Symbol‌ای برابر نیستند، حتی اگر توضیح یکسانی داشته باشند.\n\nاز Symbol‌ها به عنوان کلیدهای منحصربه‌فرد خصوصیات شیء استفاده میشود تا از تداخل نام جلوگیری شود.\n\nJavaScript همچنین Symbol‌های شناخته‌شده داخلی مانند `Symbol.iterator` دارد که رفتار سفارشی شیء را فعال میکنند.\n\nمثال:\n\n```js\nconst id = Symbol('id');\nconst id2 = Symbol('id');\n\nconsole.log(id === id2); // false — هر Symbol منحصربه‌فرد است\n\nconst user = {\n  name: 'رسول',\n  [id]: 12345,\n};\n\nconsole.log(user[id]); // 12345\nconsole.log(user.id); // undefined — از طریق کلید رشته قابل دسترسی نیست\n\n// Symbol شناخته‌شده\nconst iterable = {\n  [Symbol.iterator]() {\n    let n = 0;\n    return { next: () => ({ value: n++, done: n > 3 }) };\n  },\n};\n\nconsole.log([...iterable]); // [0, 1, 2]\n```",
-        "readingTime": 1
-      }
+      "markdown": "Symbol یک مقدار اولیه است که تضمین میشود منحصربه‌فرد باشد. هیچ دو Symbol‌ای برابر نیستند، حتی اگر توضیح یکسانی داشته باشند.\n\nاز Symbol‌ها به عنوان کلیدهای منحصربه‌فرد خصوصیات شیء استفاده میشود تا از تداخل نام جلوگیری شود.\n\nJavaScript همچنین Symbol‌های شناخته‌شده داخلی مانند `Symbol.iterator` دارد که رفتار سفارشی شیء را فعال میکنند.\n\nمثال:\n\n```js\nconst id = Symbol('id');\nconst id2 = Symbol('id');\n\nconsole.log(id === id2); // false — هر Symbol منحصربه‌فرد است\n\nconst user = {\n  name: 'رسول',\n  [id]: 12345,\n};\n\nconsole.log(user[id]); // 12345\nconsole.log(user.id); // undefined — از طریق کلید رشته قابل دسترسی نیست\n\n// Symbol شناخته‌شده\nconst iterable = {\n  [Symbol.iterator]() {\n    let n = 0;\n    return { next: () => ({ value: n++, done: n > 3 }) };\n  },\n};\n\nconsole.log([...iterable]); // [0, 1, 2]\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-056",
@@ -928,10 +818,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "تابع generator با `function*` تعریف میشود و میتواند با کلیدواژه `yield` اجرایش را متوقف کند و کنترل را به فراخوانیکننده برگرداند.\n\nهر بار که `.next()` فراخوانی شود، اجرا تا `yield` بعدی یا پایان تابع ادامه مییابد.\n\nGeneratorها برای ارزیابی تنبل، دنبالههای بینهایت و کنترل جریان ناهمزمان مفیدند.\n\nمثال:\n\n```js\nfunction* counter() {\n  yield 1;\n  yield 2;\n  yield 3;\n}\n\nconst gen = counter();\n\nconsole.log(gen.next()); // { value: 1, done: false }\nconsole.log(gen.next()); // { value: 2, done: false }\nconsole.log(gen.next()); // { value: 3, done: false }\nconsole.log(gen.next()); // { value: undefined, done: true }\n```",
-        "readingTime": 1
-      }
+      "markdown": "تابع generator با `function*` تعریف میشود و میتواند با کلیدواژه `yield` اجرایش را متوقف کند و کنترل را به فراخوانیکننده برگرداند.\n\nهر بار که `.next()` فراخوانی شود، اجرا تا `yield` بعدی یا پایان تابع ادامه مییابد.\n\nGeneratorها برای ارزیابی تنبل، دنبالههای بینهایت و کنترل جریان ناهمزمان مفیدند.\n\nمثال:\n\n```js\nfunction* counter() {\n  yield 1;\n  yield 2;\n  yield 3;\n}\n\nconst gen = counter();\n\nconsole.log(gen.next()); // { value: 1, done: false }\nconsole.log(gen.next()); // { value: 2, done: false }\nconsole.log(gen.next()); // { value: 3, done: false }\nconsole.log(gen.next()); // { value: undefined, done: true }\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-057",
@@ -944,10 +832,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "یک شیء از پروتکل iterator پیروی میکند وقتی متد `next()` را پیادهسازی کند که `{ value, done }` برمیگرداند.\n\nیک iterable هر شیئی است که متد `[Symbol.iterator]()` داشته باشد. این حلقههای `for...of` و سینتکس spread را فعال میکند.\n\nمثال:\n\n```js\nconst range = {\n  from: 1,\n  to: 3,\n  [Symbol.iterator]() {\n    let current = this.from;\n    const last = this.to;\n    return {\n      next() {\n        return current <= last\n          ? { value: current++, done: false }\n          : { value: undefined, done: true };\n      },\n    };\n  },\n};\n\nfor (const num of range) {\n  console.log(num); // 1, 2, 3\n}\n\nconsole.log([...range]); // [1, 2, 3]\n```",
-        "readingTime": 1
-      }
+      "markdown": "یک شیء از پروتکل iterator پیروی میکند وقتی متد `next()` را پیادهسازی کند که `{ value, done }` برمیگرداند.\n\nیک iterable هر شیئی است که متد `[Symbol.iterator]()` داشته باشد. این حلقههای `for...of` و سینتکس spread را فعال میکند.\n\nمثال:\n\n```js\nconst range = {\n  from: 1,\n  to: 3,\n  [Symbol.iterator]() {\n    let current = this.from;\n    const last = this.to;\n    return {\n      next() {\n        return current <= last\n          ? { value: current++, done: false }\n          : { value: undefined, done: true };\n      },\n    };\n  },\n};\n\nfor (const num of range) {\n  console.log(num); // 1, 2, 3\n}\n\nconsole.log([...range]); // [1, 2, 3]\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-058",
@@ -960,10 +846,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`Proxy` یک شیء را میپوشاند و عملیات اساسی روی آن مانند دسترسی به خصوصیت، انتساب و فراخوانی تابع را با استفاده از traps رهگیری میکند.\n\nProxy‌ها برای اعتبارسنجی، لاگ گرفتن، کنترل دسترسی و ساختن سیستمهای reactive استفاده میشوند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول', age: 28 };\n\nconst proxy = new Proxy(user, {\n  get(target, key) {\n    return key in target ? target[key] : `خصوصیت \"${key}\" پیدا نشد`;\n  },\n  set(target, key, value) {\n    if (key === 'age' && typeof value !== 'number') {\n      throw new TypeError('سن باید عدد باشد');\n    }\n    target[key] = value;\n    return true;\n  },\n});\n\nconsole.log(proxy.name); // رسول\nconsole.log(proxy.country); // خصوصیت \"country\" پیدا نشد\nproxy.age = 30; // معتبر\n// proxy.age = 'سی';       // TypeError: سن باید عدد باشد\n```",
-        "readingTime": 1
-      }
+      "markdown": "`Proxy` یک شیء را میپوشاند و عملیات اساسی روی آن مانند دسترسی به خصوصیت، انتساب و فراخوانی تابع را با استفاده از traps رهگیری میکند.\n\nProxy‌ها برای اعتبارسنجی، لاگ گرفتن، کنترل دسترسی و ساختن سیستمهای reactive استفاده میشوند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول', age: 28 };\n\nconst proxy = new Proxy(user, {\n  get(target, key) {\n    return key in target ? target[key] : `خصوصیت \"${key}\" پیدا نشد`;\n  },\n  set(target, key, value) {\n    if (key === 'age' && typeof value !== 'number') {\n      throw new TypeError('سن باید عدد باشد');\n    }\n    target[key] = value;\n    return true;\n  },\n});\n\nconsole.log(proxy.name); // رسول\nconsole.log(proxy.country); // خصوصیت \"country\" پیدا نشد\nproxy.age = 30; // معتبر\n// proxy.age = 'سی';       // TypeError: سن باید عدد باشد\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-059",
@@ -976,10 +860,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "شیء `Reflect` متدهای استاتیکی ارائه میدهد که عملیات موجود به عنوان Proxy trap را منعکس میکنند.\n\nمعمولاً داخل Proxy trap‌ها برای انتقال عملیات اصلی به شیء هدف پس از اعمال منطق سفارشی استفاده میشود.\n\nاستفاده از `Reflect` handler‌های Proxy را قابل اطمینانتر و قابل پیشبینیتر میکند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول' };\n\nconst proxy = new Proxy(user, {\n  set(target, key, value) {\n    console.log(`مقدار \"${key}\" به \"${value}\" تنظیم شد`);\n    return Reflect.set(target, key, value); // به شیء اصلی انتقال میدهد\n  },\n});\n\nproxy.name = 'علی';\n// مقدار \"name\" به \"علی\" تنظیم شد\n\nconsole.log(user.name); // علی\n```",
-        "readingTime": 1
-      }
+      "markdown": "شیء `Reflect` متدهای استاتیکی ارائه میدهد که عملیات موجود به عنوان Proxy trap را منعکس میکنند.\n\nمعمولاً داخل Proxy trap‌ها برای انتقال عملیات اصلی به شیء هدف پس از اعمال منطق سفارشی استفاده میشود.\n\nاستفاده از `Reflect` handler‌های Proxy را قابل اطمینانتر و قابل پیشبینیتر میکند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول' };\n\nconst proxy = new Proxy(user, {\n  set(target, key, value) {\n    console.log(`مقدار \"${key}\" به \"${value}\" تنظیم شد`);\n    return Reflect.set(target, key, value); // به شیء اصلی انتقال میدهد\n  },\n});\n\nproxy.name = 'علی';\n// مقدار \"name\" به \"علی\" تنظیم شد\n\nconsole.log(user.name); // علی\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-060",
@@ -992,10 +874,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "پارامترهای پیشفرض به پارامترهای تابع اجازه میدهند مقدار پیشفرض داشته باشند اگر هیچ آرگومانی پاس داده نشود یا `undefined` صراحتاً ارسال شود.\n\nمقادیر پیشفرض در زمان فراخوانی ارزیابی میشوند، نه در زمان تعریف تابع.\n\nمثال:\n\n```js\nfunction greet(name = 'مهمان', greeting = 'سلام') {\n  return `${greeting}، ${name}!`;\n}\n\nconsole.log(greet()); // سلام، مهمان!\nconsole.log(greet('رسول')); // سلام، رسول!\nconsole.log(greet('سارا', 'درود')); // درود، سارا!\nconsole.log(greet(undefined, 'هی')); // هی، مهمان! (undefined پیش‌فرض را فعال میکند)\n```",
-        "readingTime": 1
-      }
+      "markdown": "پارامترهای پیشفرض به پارامترهای تابع اجازه میدهند مقدار پیشفرض داشته باشند اگر هیچ آرگومانی پاس داده نشود یا `undefined` صراحتاً ارسال شود.\n\nمقادیر پیشفرض در زمان فراخوانی ارزیابی میشوند، نه در زمان تعریف تابع.\n\nمثال:\n\n```js\nfunction greet(name = 'مهمان', greeting = 'سلام') {\n  return `${greeting}، ${name}!`;\n}\n\nconsole.log(greet()); // سلام، مهمان!\nconsole.log(greet('رسول')); // سلام، رسول!\nconsole.log(greet('سارا', 'درود')); // درود، سارا!\nconsole.log(greet(undefined, 'هی')); // هی، مهمان! (undefined پیش‌فرض را فعال میکند)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-061",
@@ -1008,10 +888,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "این متدهای استاتیک آرایههایی از خصوصیات enumerable خود شیء برمیگردانند.\n\n- `Object.keys()` آرایهای از نام خصوصیات برمیگرداند.\n- `Object.values()` آرایهای از مقادیر خصوصیات برمیگرداند.\n- `Object.entries()` آرایهای از جفتهای `[key, value]` برمیگرداند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول', age: 28, city: 'تهران' };\n\nconsole.log(Object.keys(user)); // ['name', 'age', 'city']\nconsole.log(Object.values(user)); // ['رسول', 28, 'تهران']\nconsole.log(Object.entries(user)); // [['name', 'رسول'], ['age', 28], ['city', 'تهران']]\n\n// استفاده رایج: پیمایش روی entryها\nObject.entries(user).forEach(([key, value]) => {\n  console.log(`${key}: ${value}`);\n});\n```",
-        "readingTime": 1
-      }
+      "markdown": "این متدهای استاتیک آرایههایی از خصوصیات enumerable خود شیء برمیگردانند.\n\n- `Object.keys()` آرایهای از نام خصوصیات برمیگرداند.\n- `Object.values()` آرایهای از مقادیر خصوصیات برمیگرداند.\n- `Object.entries()` آرایهای از جفتهای `[key, value]` برمیگرداند.\n\nمثال:\n\n```js\nconst user = { name: 'رسول', age: 28, city: 'تهران' };\n\nconsole.log(Object.keys(user)); // ['name', 'age', 'city']\nconsole.log(Object.values(user)); // ['رسول', 28, 'تهران']\nconsole.log(Object.entries(user)); // [['name', 'رسول'], ['age', 28], ['city', 'تهران']]\n\n// استفاده رایج: پیمایش روی entryها\nObject.entries(user).forEach(([key, value]) => {\n  console.log(`${key}: ${value}`);\n});\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-062",
@@ -1024,10 +902,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو خصوصیات اشیاء منبع را کپی میکنند، اما در نحوه عملکرد تفاوت دارند.\n\n- `Object.assign()` اولین آرگومان (شیء هدف) را تغییر میدهد.\n- عملگر spread `{...obj}` همیشه شیء جدیدی بدون تغییر اصلی ایجاد میکند.\n\nهر دو کپی سطحی انجام میدهند — اشیاء تودرتو با مرجع کپی میشوند.\n\nمثال:\n\n```js\nconst defaults = { theme: 'light', lang: 'en' };\nconst userPrefs = { lang: 'fa' };\n\n// Object.assign — شیء هدف را تغییر میدهد\nconst config1 = Object.assign({}, defaults, userPrefs);\nconsole.log(config1); // { theme: 'light', lang: 'fa' }\n\n// Spread — شیء جدید ایجاد میکند\nconst config2 = { ...defaults, ...userPrefs };\nconsole.log(config2); // { theme: 'light', lang: 'fa' }\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر دو خصوصیات اشیاء منبع را کپی میکنند، اما در نحوه عملکرد تفاوت دارند.\n\n- `Object.assign()` اولین آرگومان (شیء هدف) را تغییر میدهد.\n- عملگر spread `{...obj}` همیشه شیء جدیدی بدون تغییر اصلی ایجاد میکند.\n\nهر دو کپی سطحی انجام میدهند — اشیاء تودرتو با مرجع کپی میشوند.\n\nمثال:\n\n```js\nconst defaults = { theme: 'light', lang: 'en' };\nconst userPrefs = { lang: 'fa' };\n\n// Object.assign — شیء هدف را تغییر میدهد\nconst config1 = Object.assign({}, defaults, userPrefs);\nconsole.log(config1); // { theme: 'light', lang: 'fa' }\n\n// Spread — شیء جدید ایجاد میکند\nconst config2 = { ...defaults, ...userPrefs };\nconsole.log(config2); // { theme: 'light', lang: 'fa' }\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-063",
@@ -1040,10 +916,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "هر دو متد نحوه تغییر شیء را محدود میکنند، اما در سطوح مختلف.\n\n- `Object.freeze()` از اضافه کردن، حذف یا تغییر هر خصوصیتی جلوگیری میکند.\n- `Object.seal()` از اضافه یا حذف خصوصیات جلوگیری میکند، اما تغییر مقادیر موجود را اجازه میدهد.\n\nهر دو سطحی هستند — اشیاء تودرتو تحت تأثیر قرار نمیگیرند.\n\nمثال:\n\n```js\n// Object.freeze\nconst frozen = Object.freeze({ name: 'رسول', age: 28 });\nfrozen.name = 'علی'; // بیصدا شکست میخورد (در strict mode خطا)\nfrozen.city = 'تهران'; // بیصدا شکست میخورد\nconsole.log(frozen); // { name: 'رسول', age: 28 }\n\n// Object.seal\nconst sealed = Object.seal({ name: 'رسول', age: 28 });\nsealed.name = 'علی'; // مجاز — خصوصیت موجود\nsealed.city = 'تهران'; // بیصدا شکست میخورد — خصوصیت جدید\nconsole.log(sealed); // { name: 'علی', age: 28 }\n```",
-        "readingTime": 1
-      }
+      "markdown": "هر دو متد نحوه تغییر شیء را محدود میکنند، اما در سطوح مختلف.\n\n- `Object.freeze()` از اضافه کردن، حذف یا تغییر هر خصوصیتی جلوگیری میکند.\n- `Object.seal()` از اضافه یا حذف خصوصیات جلوگیری میکند، اما تغییر مقادیر موجود را اجازه میدهد.\n\nهر دو سطحی هستند — اشیاء تودرتو تحت تأثیر قرار نمیگیرند.\n\nمثال:\n\n```js\n// Object.freeze\nconst frozen = Object.freeze({ name: 'رسول', age: 28 });\nfrozen.name = 'علی'; // بیصدا شکست میخورد (در strict mode خطا)\nfrozen.city = 'تهران'; // بیصدا شکست میخورد\nconsole.log(frozen); // { name: 'رسول', age: 28 }\n\n// Object.seal\nconst sealed = Object.seal({ name: 'رسول', age: 28 });\nsealed.name = 'علی'; // مجاز — خصوصیت موجود\nsealed.city = 'تهران'; // بیصدا شکست میخورد — خصوصیت جدید\nconsole.log(sealed); // { name: 'علی', age: 28 }\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-064",
@@ -1056,10 +930,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`Array.from()` آرایه جدیدی از یک شیء array-like یا iterable ایجاد میکند. همچنین یک تابع نگاشت اختیاری قبول میکند.\n\n`Array.isArray()` بررسی میکند که آیا یک مقدار واقعاً آرایه است یا نه.\n\nمثال:\n\n```js\n// Array.from\nconsole.log(Array.from('سلام')); // ['س', 'ل', 'ا', 'م']\nconsole.log(Array.from(new Set([1, 2, 2, 3]))); // [1, 2, 3]\nconsole.log(Array.from({ length: 3 }, (_, i) => i + 1)); // [1, 2, 3]\n\n// Array.isArray\nconsole.log(Array.isArray([1, 2, 3])); // true\nconsole.log(Array.isArray('سلام')); // false\nconsole.log(Array.isArray({ length: 3 })); // false\n```",
-        "readingTime": 1
-      }
+      "markdown": "`Array.from()` آرایه جدیدی از یک شیء array-like یا iterable ایجاد میکند. همچنین یک تابع نگاشت اختیاری قبول میکند.\n\n`Array.isArray()` بررسی میکند که آیا یک مقدار واقعاً آرایه است یا نه.\n\nمثال:\n\n```js\n// Array.from\nconsole.log(Array.from('سلام')); // ['س', 'ل', 'ا', 'م']\nconsole.log(Array.from(new Set([1, 2, 2, 3]))); // [1, 2, 3]\nconsole.log(Array.from({ length: 3 }, (_, i) => i + 1)); // [1, 2, 3]\n\n// Array.isArray\nconsole.log(Array.isArray([1, 2, 3])); // true\nconsole.log(Array.isArray('سلام')); // false\nconsole.log(Array.isArray({ length: 3 })); // false\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-065",
@@ -1072,10 +944,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`flat()` آرایه جدیدی با عناصر زیر-آرایه تا عمق مشخص شده صاف میکند. عمق پیشفرض ۱ است.\n\n`flatMap()` هر عنصر را با یک تابع نگاشت میکند و سپس نتیجه را یک سطح صاف میکند. معادل `.map().flat(1)` است.\n\nمثال:\n\n```js\nconst nested = [1, [2, 3], [4, [5, 6]]];\n\nconsole.log(nested.flat()); // [1, 2, 3, 4, [5, 6]]\nconsole.log(nested.flat(2)); // [1, 2, 3, 4, 5, 6]\nconsole.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5, 6]\n\nconst sentences = ['سلام دنیا', 'foo bar'];\nconst words = sentences.flatMap((s) => s.split(' '));\nconsole.log(words); // ['سلام', 'دنیا', 'foo', 'bar']\n```",
-        "readingTime": 1
-      }
+      "markdown": "`flat()` آرایه جدیدی با عناصر زیر-آرایه تا عمق مشخص شده صاف میکند. عمق پیشفرض ۱ است.\n\n`flatMap()` هر عنصر را با یک تابع نگاشت میکند و سپس نتیجه را یک سطح صاف میکند. معادل `.map().flat(1)` است.\n\nمثال:\n\n```js\nconst nested = [1, [2, 3], [4, [5, 6]]];\n\nconsole.log(nested.flat()); // [1, 2, 3, 4, [5, 6]]\nconsole.log(nested.flat(2)); // [1, 2, 3, 4, 5, 6]\nconsole.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5, 6]\n\nconst sentences = ['سلام دنیا', 'foo bar'];\nconst words = sentences.flatMap((s) => s.split(' '));\nconsole.log(words); // ['سلام', 'دنیا', 'foo', 'bar']\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-066",
@@ -1088,10 +958,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`find()` اولین عنصری که شرط را برآورده میکند برمیگرداند، یا اگر موردی پیدا نشد `undefined`.\n\n`findIndex()` ایندکس اولین عنصر مطابق را برمیگرداند، یا اگر موردی پیدا نشد `-1`.\n\nهر دو به محض یافتن اولین مطابقت پیمایش را متوقف میکنند.\n\nمثال:\n\n```js\nconst users = [\n  { id: 1, name: 'رسول' },\n  { id: 2, name: 'سارا' },\n  { id: 3, name: 'علی' },\n];\n\nconst user = users.find((u) => u.id === 2);\nconsole.log(user); // { id: 2, name: 'سارا' }\n\nconst index = users.findIndex((u) => u.id === 2);\nconsole.log(index); // 1\n\nconsole.log(users.find((u) => u.id === 99)); // undefined\nconsole.log(users.findIndex((u) => u.id === 99)); // -1\n```",
-        "readingTime": 1
-      }
+      "markdown": "`find()` اولین عنصری که شرط را برآورده میکند برمیگرداند، یا اگر موردی پیدا نشد `undefined`.\n\n`findIndex()` ایندکس اولین عنصر مطابق را برمیگرداند، یا اگر موردی پیدا نشد `-1`.\n\nهر دو به محض یافتن اولین مطابقت پیمایش را متوقف میکنند.\n\nمثال:\n\n```js\nconst users = [\n  { id: 1, name: 'رسول' },\n  { id: 2, name: 'سارا' },\n  { id: 3, name: 'علی' },\n];\n\nconst user = users.find((u) => u.id === 2);\nconsole.log(user); // { id: 2, name: 'سارا' }\n\nconst index = users.findIndex((u) => u.id === 2);\nconsole.log(index); // 1\n\nconsole.log(users.find((u) => u.id === 99)); // undefined\nconsole.log(users.findIndex((u) => u.id === 99)); // -1\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-067",
@@ -1104,10 +972,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`some()` اگر حداقل یک عنصر شرط را برآورده کند `true` برمیگرداند.\n\n`every()` فقط اگر همه عناصر شرط را برآورده کنند `true` برمیگرداند.\n\nهر دو اتصال کوتاه دارند: `some()` با اولین نتیجه درست متوقف میشود، `every()` با اولین نتیجه نادرست.\n\nمثال:\n\n```js\nconst numbers = [1, 2, 3, 4, 5];\n\nconsole.log(numbers.some((n) => n > 4)); // true  (5 شرط را دارد)\nconsole.log(numbers.some((n) => n > 10)); // false (هیچکدام شرط را ندارند)\n\nconsole.log(numbers.every((n) => n > 0)); // true  (همه شرط را دارند)\nconsole.log(numbers.every((n) => n > 3)); // false (همه شرط را ندارند)\n```",
-        "readingTime": 1
-      }
+      "markdown": "`some()` اگر حداقل یک عنصر شرط را برآورده کند `true` برمیگرداند.\n\n`every()` فقط اگر همه عناصر شرط را برآورده کنند `true` برمیگرداند.\n\nهر دو اتصال کوتاه دارند: `some()` با اولین نتیجه درست متوقف میشود، `every()` با اولین نتیجه نادرست.\n\nمثال:\n\n```js\nconst numbers = [1, 2, 3, 4, 5];\n\nconsole.log(numbers.some((n) => n > 4)); // true  (5 شرط را دارد)\nconsole.log(numbers.some((n) => n > 10)); // false (هیچکدام شرط را ندارند)\n\nconsole.log(numbers.every((n) => n > 0)); // true  (همه شرط را دارند)\nconsole.log(numbers.every((n) => n > 3)); // false (همه شرط را ندارند)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-068",
@@ -1120,10 +986,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "به صورت پیشفرض، `sort()` عناصر را به رشته تبدیل میکند و آنها را به صورت لغوی (الفبایی) مرتب میکند. این برای اعداد نتایج اشتباه تولید میکند.\n\nبرای مرتب کردن صحیح اعداد، باید یک تابع مقایسه ارائه شود.\n\n`sort()` آرایه اصلی را تغییر میدهد.\n\nمثال:\n\n```js\nconst fruits = ['موز', 'سیب', 'گیلاس'];\nconsole.log(fruits.sort()); // ['garlic', 'سیب', 'موز', 'گیلاس'] — الفبایی\n\n// مرتبسازی پیشفرض — برای اعداد اشتباه است\nconst nums = [10, 1, 5, 2];\nconsole.log(nums.sort()); // [1, 10, 2, 5] ← لغوی، اشتباه\n\n// مرتبسازی صحیح اعداد\nconsole.log([10, 1, 5, 2].sort((a, b) => a - b)); // [1, 2, 5, 10] — صعودی\nconsole.log([10, 1, 5, 2].sort((a, b) => b - a)); // [10, 5, 2, 1] — نزولی\n```",
-        "readingTime": 1
-      }
+      "markdown": "به صورت پیشفرض، `sort()` عناصر را به رشته تبدیل میکند و آنها را به صورت لغوی (الفبایی) مرتب میکند. این برای اعداد نتایج اشتباه تولید میکند.\n\nبرای مرتب کردن صحیح اعداد، باید یک تابع مقایسه ارائه شود.\n\n`sort()` آرایه اصلی را تغییر میدهد.\n\nمثال:\n\n```js\nconst fruits = ['موز', 'سیب', 'گیلاس'];\nconsole.log(fruits.sort()); // ['garlic', 'سیب', 'موز', 'گیلاس'] — الفبایی\n\n// مرتبسازی پیشفرض — برای اعداد اشتباه است\nconst nums = [10, 1, 5, 2];\nconsole.log(nums.sort()); // [1, 10, 2, 5] ← لغوی، اشتباه\n\n// مرتبسازی صحیح اعداد\nconsole.log([10, 1, 5, 2].sort((a, b) => a - b)); // [1, 2, 5, 10] — صعودی\nconsole.log([10, 1, 5, 2].sort((a, b) => b - a)); // [10, 5, 2, 1] — نزولی\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-069",
@@ -1136,10 +1000,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Memoization تکنیک بهینهسازی است که نتیجه فراخوانی تابع را بر اساس ورودیهایش کش میکند. اگر همان ورودیها دوباره داده شوند، نتیجه کش شده برگردانده میشود.\n\nبرای توابع پرهزینه یا توابعی که با آرگومانهای یکسان مکرراً فراخوانی میشوند مفید است.\n\nمثال:\n\n```js\nfunction memoize(fn) {\n  const cache = new Map();\n\n  return function (...args) {\n    const key = JSON.stringify(args);\n\n    if (cache.has(key)) {\n      console.log('از کش');\n      return cache.get(key);\n    }\n\n    const result = fn(...args);\n    cache.set(key, result);\n    return result;\n  };\n}\n\nconst add = memoize((a, b) => a + b);\n\nconsole.log(add(2, 3)); // 5\nconsole.log(add(2, 3)); // از کش — 5\nconsole.log(add(4, 5)); // 9\n```",
-        "readingTime": 1
-      }
+      "markdown": "Memoization تکنیک بهینهسازی است که نتیجه فراخوانی تابع را بر اساس ورودیهایش کش میکند. اگر همان ورودیها دوباره داده شوند، نتیجه کش شده برگردانده میشود.\n\nبرای توابع پرهزینه یا توابعی که با آرگومانهای یکسان مکرراً فراخوانی میشوند مفید است.\n\nمثال:\n\n```js\nfunction memoize(fn) {\n  const cache = new Map();\n\n  return function (...args) {\n    const key = JSON.stringify(args);\n\n    if (cache.has(key)) {\n      console.log('از کش');\n      return cache.get(key);\n    }\n\n    const result = fn(...args);\n    cache.set(key, result);\n    return result;\n  };\n}\n\nconst add = memoize((a, b) => a + b);\n\nconsole.log(add(2, 3)); // 5\nconsole.log(add(2, 3)); // از کش — 5\nconsole.log(add(4, 5)); // 9\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-070",
@@ -1152,10 +1014,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "JavaScript چندین نوع خطای داخلی دارد:\n\n- `Error` — خطای پایه عمومی\n- `TypeError` — عملیات روی نوع اشتباه\n- `ReferenceError` — دسترسی به متغیر تعریف نشده\n- `SyntaxError` — سینتکس نامعتبر\n- `RangeError` — مقدار خارج از محدوده مجاز\n\nخطاهای سفارشی میتوانند با گسترش کلاس `Error` ایجاد شوند.\n\nمثال:\n\n```js\n// انواع خطای داخلی\ntry {\n  null.property; // TypeError\n} catch (e) {\n  console.log(e instanceof TypeError); // true\n  console.log(e.name); // 'TypeError'\n}\n\n// خطای سفارشی\nclass ValidationError extends Error {\n  constructor(message, field) {\n    super(message);\n    this.name = 'ValidationError';\n    this.field = field;\n  }\n}\n\ntry {\n  throw new ValidationError('ایمیل نامعتبر', 'email');\n} catch (e) {\n  console.log(e.name); // ValidationError\n  console.log(e.message); // ایمیل نامعتبر\n  console.log(e.field); // email\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "JavaScript چندین نوع خطای داخلی دارد:\n\n- `Error` — خطای پایه عمومی\n- `TypeError` — عملیات روی نوع اشتباه\n- `ReferenceError` — دسترسی به متغیر تعریف نشده\n- `SyntaxError` — سینتکس نامعتبر\n- `RangeError` — مقدار خارج از محدوده مجاز\n\nخطاهای سفارشی میتوانند با گسترش کلاس `Error` ایجاد شوند.\n\nمثال:\n\n```js\n// انواع خطای داخلی\ntry {\n  null.property; // TypeError\n} catch (e) {\n  console.log(e instanceof TypeError); // true\n  console.log(e.name); // 'TypeError'\n}\n\n// خطای سفارشی\nclass ValidationError extends Error {\n  constructor(message, field) {\n    super(message);\n    this.name = 'ValidationError';\n    this.field = field;\n  }\n}\n\ntry {\n  throw new ValidationError('ایمیل نامعتبر', 'email');\n} catch (e) {\n  console.log(e.name); // ValidationError\n  console.log(e.message); // ایمیل نامعتبر\n  console.log(e.field); // email\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-071",
@@ -1168,10 +1028,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Debounce تکنیکی است که اجرای تابع را تا بعد از زمان مشخصی که از آخرین فراخوانی گذشته به تأخیر میاندازد.\n\nبرای بهینهسازی عملکرد در سناریوهایی مثل ورودی جستجو، تغییر اندازه پنجره و رویدادهای scroll مفید است.\n\nمثال:\n\n```js\nfunction debounce(fn, delay) {\n  let timer;\n  return function (...args) {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('جستجو برای:', query);\n}, 300);\n\nhandleSearch('j');\nhandleSearch('ja');\nhandleSearch('jav');\nhandleSearch('java'); // فقط این یکی جستجوی واقعی را فعال میکند\n```",
-        "readingTime": 1
-      }
+      "markdown": "Debounce تکنیکی است که اجرای تابع را تا بعد از زمان مشخصی که از آخرین فراخوانی گذشته به تأخیر میاندازد.\n\nبرای بهینهسازی عملکرد در سناریوهایی مثل ورودی جستجو، تغییر اندازه پنجره و رویدادهای scroll مفید است.\n\nمثال:\n\n```js\nfunction debounce(fn, delay) {\n  let timer;\n  return function (...args) {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn(...args), delay);\n  };\n}\n\nconst handleSearch = debounce((query) => {\n  console.log('جستجو برای:', query);\n}, 300);\n\nhandleSearch('j');\nhandleSearch('ja');\nhandleSearch('jav');\nhandleSearch('java'); // فقط این یکی جستجوی واقعی را فعال میکند\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-072",
@@ -1184,10 +1042,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Throttle محدود میکند که یک تابع در طول زمان چند بار اجرا شود، و تضمین میکند که حداکثر یکبار در هر بازه زمانی مشخص اجرا شود.\n\nبرخلاف debounce که منتظر توقف فراخوانیها میماند، throttle اجرا را در بازههای منظم تضمین میکند.\n\nمثال:\n\n```js\nfunction throttle(fn, limit) {\n  let lastCall = 0;\n  return function (...args) {\n    const now = Date.now();\n    if (now - lastCall >= limit) {\n      lastCall = now;\n      fn(...args);\n    }\n  };\n}\n\nconst handleScroll = throttle(() => {\n  console.log('scroll مدیریت شد');\n}, 200);\n\n// حتی اگر scroll صد بار در ثانیه فعال شود، تابع حداکثر هر ۲۰۰ms اجرا میشود\nwindow.addEventListener('scroll', handleScroll);\n```",
-        "readingTime": 1
-      }
+      "markdown": "Throttle محدود میکند که یک تابع در طول زمان چند بار اجرا شود، و تضمین میکند که حداکثر یکبار در هر بازه زمانی مشخص اجرا شود.\n\nبرخلاف debounce که منتظر توقف فراخوانیها میماند، throttle اجرا را در بازههای منظم تضمین میکند.\n\nمثال:\n\n```js\nfunction throttle(fn, limit) {\n  let lastCall = 0;\n  return function (...args) {\n    const now = Date.now();\n    if (now - lastCall >= limit) {\n      lastCall = now;\n      fn(...args);\n    }\n  };\n}\n\nconst handleScroll = throttle(() => {\n  console.log('scroll مدیریت شد');\n}, 200);\n\n// حتی اگر scroll صد بار در ثانیه فعال شود، تابع حداکثر هر ۲۰۰ms اجرا میشود\nwindow.addEventListener('scroll', handleScroll);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-073",
@@ -1200,10 +1056,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "وقتی یک رویداد DOM فعال میشود، دو مرحله طی میکند:\n\n- **مرحله Capturing**: رویداد از root به سمت عنصر هدف میرود.\n- **مرحله Bubbling**: رویداد از عنصر هدف به سمت root برمیگردد.\n\nبه صورت پیشفرض، event listenerها از مرحله bubbling استفاده میکنند. برای استفاده از capturing، `true` را به عنوان آرگومان سوم به `addEventListener` بدهید.\n\n`event.stopPropagation()` انتشار بیشتر رویداد را متوقف میکند.\n\nمثال:\n\n```js\ndocument.querySelector('#parent').addEventListener('click', () => {\n  console.log('والد — bubbling');\n});\n\ndocument.querySelector('#child').addEventListener('click', () => {\n  console.log('فرزند کلیک شد');\n});\n\n// کلیک روی فرزند لاگ میکند:\n// فرزند کلیک شد\n// والد — bubbling\n\n// Capturing — قبل از bubbling فعال میشود\ndocument.querySelector('#parent').addEventListener(\n  'click',\n  () => {\n    console.log('والد — capturing');\n  },\n  true,\n);\n```",
-        "readingTime": 1
-      }
+      "markdown": "وقتی یک رویداد DOM فعال میشود، دو مرحله طی میکند:\n\n- **مرحله Capturing**: رویداد از root به سمت عنصر هدف میرود.\n- **مرحله Bubbling**: رویداد از عنصر هدف به سمت root برمیگردد.\n\nبه صورت پیشفرض، event listenerها از مرحله bubbling استفاده میکنند. برای استفاده از capturing، `true` را به عنوان آرگومان سوم به `addEventListener` بدهید.\n\n`event.stopPropagation()` انتشار بیشتر رویداد را متوقف میکند.\n\nمثال:\n\n```js\ndocument.querySelector('#parent').addEventListener('click', () => {\n  console.log('والد — bubbling');\n});\n\ndocument.querySelector('#child').addEventListener('click', () => {\n  console.log('فرزند کلیک شد');\n});\n\n// کلیک روی فرزند لاگ میکند:\n// فرزند کلیک شد\n// والد — bubbling\n\n// Capturing — قبل از bubbling فعال میشود\ndocument.querySelector('#parent').addEventListener(\n  'click',\n  () => {\n    console.log('والد — capturing');\n  },\n  true,\n);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-074",
@@ -1216,10 +1070,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "این مکانیزمها داده را در سمت کلاینت ذخیره میکنند اما در رفتار، طول عمر و امنیت تفاوت دارند.\n\n**localStorage**\n\n- حتی پس از بسته و باز شدن مرورگر باقی میماند\n- محدودیت ذخیره‌سازی حدود ۵MB\n- فقط از طریق JavaScript قابل دسترسی است\n- به طور خودکار با درخواستهای HTTP ارسال نمیشود\n\n**sessionStorage**\n\n- فقط در یک تب مرورگر باقی میماند\n- هنگام بسته شدن تب پاک میشود\n- همان API localStorage را دارد\n\n**کوکیها**\n\n- محدود به حدود ۴KB\n- به طور خودکار با هر درخواست HTTP به سرور ارسال میشوند\n- از تاریخ انقضا پشتیبانی میکنند\n- میتوانند `HttpOnly` و `Secure` علامتگذاری شوند\n\n**امنیت**\n\n- `localStorage` در برابر حملات XSS آسیبپذیر است\n- کوکیهای `HttpOnly` از طریق JavaScript قابل دسترسی نیستند\n\nمثال:\n\n```js\n// localStorage\nlocalStorage.setItem('theme', 'dark');\nconsole.log(localStorage.getItem('theme')); // 'dark'\n\n// sessionStorage\nsessionStorage.setItem('step', '2');\nconsole.log(sessionStorage.getItem('step')); // '2'\n\n// کوکی\ndocument.cookie = 'token=abc123; Secure; SameSite=Strict';\n```",
-        "readingTime": 1
-      }
+      "markdown": "این مکانیزمها داده را در سمت کلاینت ذخیره میکنند اما در رفتار، طول عمر و امنیت تفاوت دارند.\n\n**localStorage**\n\n- حتی پس از بسته و باز شدن مرورگر باقی میماند\n- محدودیت ذخیره‌سازی حدود ۵MB\n- فقط از طریق JavaScript قابل دسترسی است\n- به طور خودکار با درخواستهای HTTP ارسال نمیشود\n\n**sessionStorage**\n\n- فقط در یک تب مرورگر باقی میماند\n- هنگام بسته شدن تب پاک میشود\n- همان API localStorage را دارد\n\n**کوکیها**\n\n- محدود به حدود ۴KB\n- به طور خودکار با هر درخواست HTTP به سرور ارسال میشوند\n- از تاریخ انقضا پشتیبانی میکنند\n- میتوانند `HttpOnly` و `Secure` علامتگذاری شوند\n\n**امنیت**\n\n- `localStorage` در برابر حملات XSS آسیبپذیر است\n- کوکیهای `HttpOnly` از طریق JavaScript قابل دسترسی نیستند\n\nمثال:\n\n```js\n// localStorage\nlocalStorage.setItem('theme', 'dark');\nconsole.log(localStorage.getItem('theme')); // 'dark'\n\n// sessionStorage\nsessionStorage.setItem('step', '2');\nconsole.log(sessionStorage.getItem('step')); // '2'\n\n// کوکی\ndocument.cookie = 'token=abc123; Secure; SameSite=Strict';\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-075",
@@ -1232,10 +1084,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "- `setTimeout(fn, delay)` تابع را یکبار بعد از تأخیر مشخص شده به میلیثانیه اجرا میکند.\n- `setInterval(fn, interval)` تابع را به طور مکرر در بازه زمانی مشخص اجرا میکند.\n\nهر دو یک ID برمیگردانند که میتوان با `clearTimeout` یا `clearInterval` اجرا را لغو کرد.\n\nمثال:\n\n```js\n// setTimeout — یکبار بعد از ۱ ثانیه اجرا میشود\nconst timeoutId = setTimeout(() => {\n  console.log('یکبار اجرا میشود');\n}, 1000);\n\n// setInterval — هر ثانیه اجرا میشود\nconst intervalId = setInterval(() => {\n  console.log('هر ثانیه اجرا میشود');\n}, 1000);\n\n// لغو هر دو\nclearTimeout(timeoutId);\nclearInterval(intervalId);\n```",
-        "readingTime": 1
-      }
+      "markdown": "- `setTimeout(fn, delay)` تابع را یکبار بعد از تأخیر مشخص شده به میلیثانیه اجرا میکند.\n- `setInterval(fn, interval)` تابع را به طور مکرر در بازه زمانی مشخص اجرا میکند.\n\nهر دو یک ID برمیگردانند که میتوان با `clearTimeout` یا `clearInterval` اجرا را لغو کرد.\n\nمثال:\n\n```js\n// setTimeout — یکبار بعد از ۱ ثانیه اجرا میشود\nconst timeoutId = setTimeout(() => {\n  console.log('یکبار اجرا میشود');\n}, 1000);\n\n// setInterval — هر ثانیه اجرا میشود\nconst intervalId = setInterval(() => {\n  console.log('هر ثانیه اجرا میشود');\n}, 1000);\n\n// لغو هر دو\nclearTimeout(timeoutId);\nclearInterval(intervalId);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-076",
@@ -1248,10 +1098,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`requestAnimationFrame()` یک callback را زمانبندی میکند تا قبل از رنگآمیزی مجدد مرورگر، معمولاً در ۶۰ فریم در ثانیه، اجرا شود.\n\nبرای انیمیشنها کارآمدتر از `setTimeout` است چون با نرخ refresh نمایش همگامسازی میشود و به طور خودکار هنگامی که تب قابل مشاهده نیست متوقف میشود.\n\nمثال:\n\n```js\nlet position = 0;\n\nfunction animate() {\n  position += 2;\n  document.querySelector('#box').style.left = position + 'px';\n\n  if (position < 300) {\n    requestAnimationFrame(animate); // فریم بعدی را زمانبندی میکند\n  }\n}\n\nrequestAnimationFrame(animate);\n```",
-        "readingTime": 1
-      }
+      "markdown": "`requestAnimationFrame()` یک callback را زمانبندی میکند تا قبل از رنگآمیزی مجدد مرورگر، معمولاً در ۶۰ فریم در ثانیه، اجرا شود.\n\nبرای انیمیشنها کارآمدتر از `setTimeout` است چون با نرخ refresh نمایش همگامسازی میشود و به طور خودکار هنگامی که تب قابل مشاهده نیست متوقف میشود.\n\nمثال:\n\n```js\nlet position = 0;\n\nfunction animate() {\n  position += 2;\n  document.querySelector('#box').style.left = position + 'px';\n\n  if (position < 300) {\n    requestAnimationFrame(animate); // فریم بعدی را زمانبندی میکند\n  }\n}\n\nrequestAnimationFrame(animate);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-077",
@@ -1264,10 +1112,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "یک تابع pure همیشه برای همان ورودیها همان خروجی را برمیگرداند و هیچ اثر جانبی ندارد.\n\nImmutability یعنی داده موجود را تغییر ندادن و به جای آن نسخههای جدید ایجاد کردن.\n\nبا هم کد را قابل پیشبینیتر، قابل تست و آسانتر برای درک میکنند.\n\nمثال:\n\n```js\n// Impure — حالت خارجی را تغییر میدهد\nlet count = 0;\nfunction increment() {\n  count++; // اثر جانبی\n}\n\n// Pure — بدون اثر جانبی\nfunction add(a, b) {\n  return a + b;\n}\n\n// Impure — آرایه اصلی را تغییر میدهد\nfunction addItem(arr, item) {\n  arr.push(item);\n  return arr;\n}\n\n// Pure — آرایه جدید برمیگرداند\nfunction addItemPure(arr, item) {\n  return [...arr, item];\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "یک تابع pure همیشه برای همان ورودیها همان خروجی را برمیگرداند و هیچ اثر جانبی ندارد.\n\nImmutability یعنی داده موجود را تغییر ندادن و به جای آن نسخههای جدید ایجاد کردن.\n\nبا هم کد را قابل پیشبینیتر، قابل تست و آسانتر برای درک میکنند.\n\nمثال:\n\n```js\n// Impure — حالت خارجی را تغییر میدهد\nlet count = 0;\nfunction increment() {\n  count++; // اثر جانبی\n}\n\n// Pure — بدون اثر جانبی\nfunction add(a, b) {\n  return a + b;\n}\n\n// Impure — آرایه اصلی را تغییر میدهد\nfunction addItem(arr, item) {\n  arr.push(item);\n  return arr;\n}\n\n// Pure — آرایه جدید برمیگرداند\nfunction addItemPure(arr, item) {\n  return [...arr, item];\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-078",
@@ -1280,10 +1126,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "ترکیب توابع فرآیند ترکیب چندین تابع است به طوری که خروجی یکی ورودی بعدی میشود.\n\nساختن عملیات پیچیده از توابع کوچکتر، قابل استفاده مجدد و قابل تست را ممکن میکند.\n\nمثال:\n\n```js\nconst double = (x) => x * 2;\nconst addTen = (x) => x + 10;\nconst square = (x) => x * x;\n\n// ترکیب دستی (راست به چپ)\nconst result = square(addTen(double(3)));\nconsole.log(result); // double(3)=6 → addTen(6)=16 → square(16)=256\n\n// تابع کمکی compose\nconst compose =\n  (...fns) =>\n  (x) =>\n    fns.reduceRight((acc, fn) => fn(acc), x);\n\nconst transform = compose(square, addTen, double);\nconsole.log(transform(3)); // 256\n```",
-        "readingTime": 1
-      }
+      "markdown": "ترکیب توابع فرآیند ترکیب چندین تابع است به طوری که خروجی یکی ورودی بعدی میشود.\n\nساختن عملیات پیچیده از توابع کوچکتر، قابل استفاده مجدد و قابل تست را ممکن میکند.\n\nمثال:\n\n```js\nconst double = (x) => x * 2;\nconst addTen = (x) => x + 10;\nconst square = (x) => x * x;\n\n// ترکیب دستی (راست به چپ)\nconst result = square(addTen(double(3)));\nconsole.log(result); // double(3)=6 → addTen(6)=16 → square(16)=256\n\n// تابع کمکی compose\nconst compose =\n  (...fns) =>\n  (x) =>\n    fns.reduceRight((acc, fn) => fn(acc), x);\n\nconst transform = compose(square, addTen, double);\nconsole.log(transform(3)); // 256\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-079",
@@ -1296,10 +1140,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Web Workers اجازه میدهند JavaScript در یک thread پسزمینه جداگانه از thread اصلی اجرا شود.\n\nاین کار محاسبات سنگین را بدون مسدود کردن UI یا فریز کردن مرورگر ممکن میکند.\n\nWorkerها به DOM دسترسی ندارند. ارتباط بین thread اصلی و worker از طریق `postMessage` و `onmessage` انجام میشود.\n\nمثال:\n\n```js\n// main.js\nconst worker = new Worker('worker.js');\n\nworker.postMessage({ numbers: [1, 2, 3, 4, 5] });\n\nworker.onmessage = (event) => {\n  console.log('جمع از worker:', event.data); // 15\n};\n\n// worker.js\nself.onmessage = (event) => {\n  const sum = event.data.numbers.reduce((acc, n) => acc + n, 0);\n  self.postMessage(sum);\n};\n```",
-        "readingTime": 1
-      }
+      "markdown": "Web Workers اجازه میدهند JavaScript در یک thread پسزمینه جداگانه از thread اصلی اجرا شود.\n\nاین کار محاسبات سنگین را بدون مسدود کردن UI یا فریز کردن مرورگر ممکن میکند.\n\nWorkerها به DOM دسترسی ندارند. ارتباط بین thread اصلی و worker از طریق `postMessage` و `onmessage` انجام میشود.\n\nمثال:\n\n```js\n// main.js\nconst worker = new Worker('worker.js');\n\nworker.postMessage({ numbers: [1, 2, 3, 4, 5] });\n\nworker.onmessage = (event) => {\n  console.log('جمع از worker:', event.data); // 15\n};\n\n// worker.js\nself.onmessage = (event) => {\n  const sum = event.data.numbers.reduce((acc, n) => acc + n, 0);\n  self.postMessage(sum);\n};\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-080",
@@ -1312,10 +1154,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "در async/await، خطاها از Promiseهای rejected باید با `try/catch` گرفته شوند.\n\nبدون مدیریت خطا، rejectionهای مدیریت نشده میتوانند باعث خرابیهای بیصدا یا crash برنامه شوند.\n\nبه عنوان جایگزین، `.catch()` میتواند مستقیماً روی Promise برگشتی زنجیر شود.\n\nمثال:\n\n```js\nasync function fetchUser(id) {\n  try {\n    const response = await fetch(`/api/users/${id}`);\n\n    if (!response.ok) throw new Error('کاربر پیدا نشد');\n\n    const user = await response.json();\n    return user;\n  } catch (error) {\n    console.log('خطا:', error.message);\n    return null;\n  }\n}\n\n// جایگزین: .catch() روی Promise\nfetchUser(1)\n  .then((user) => console.log(user))\n  .catch((err) => console.log(err));\n```",
-        "readingTime": 1
-      }
+      "markdown": "در async/await، خطاها از Promiseهای rejected باید با `try/catch` گرفته شوند.\n\nبدون مدیریت خطا، rejectionهای مدیریت نشده میتوانند باعث خرابیهای بیصدا یا crash برنامه شوند.\n\nبه عنوان جایگزین، `.catch()` میتواند مستقیماً روی Promise برگشتی زنجیر شود.\n\nمثال:\n\n```js\nasync function fetchUser(id) {\n  try {\n    const response = await fetch(`/api/users/${id}`);\n\n    if (!response.ok) throw new Error('کاربر پیدا نشد');\n\n    const user = await response.json();\n    return user;\n  } catch (error) {\n    console.log('خطا:', error.message);\n    return null;\n  }\n}\n\n// جایگزین: .catch() روی Promise\nfetchUser(1)\n  .then((user) => console.log(user))\n  .catch((err) => console.log(err));\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-081",
@@ -1328,10 +1168,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "کلاس‌های پنهان (Hidden Classes) ساختارهای داخلی هستند که موتورهای جاوااسکریپت (مانند V8) برای بهینه‌سازی دسترسی به ویژگی‌های آبجکت‌ها استفاده می‌کنند.\n\nوقتی آبجکت‌ها با همان ساختار و ترتیب ویژگی ایجاد می‌شوند، موتور همان کلاس پنهان را به آنها اختصاص می‌دهد. این کار دسترسی سریع از طریق inline caching را ممکن می‌سازد.\n\nاگر شکل آبجکت‌ها به صورت پویا تغییر کند (مثلاً اضافه کردن ویژگی‌ها بعداً یا با ترتیب متفاوت)، موتور ممکن است کلاس‌های پنهان جدیدی بسازد که می‌تواند باعث de-optimization شود.\n\nساختار ثابت آبجکت‌ها باعث بهبود کارایی می‌شود.\n\nمثال:\n\n```js\nfunction createUser(name, age) {\n  return { name, age };\n}\n\nconst u1 = createUser('A', 20);\nconst u2 = createUser('B', 25);\n// همان کلاس پنهان → بهینه‌شده\n\nconst user = {};\nuser.name = 'C';\nuser.age = 30;\n// تغییر شکل متفاوت → ممکن است de-optimize شود\n```",
-        "readingTime": 1
-      }
+      "markdown": "کلاس‌های پنهان (Hidden Classes) ساختارهای داخلی هستند که موتورهای جاوااسکریپت (مانند V8) برای بهینه‌سازی دسترسی به ویژگی‌های آبجکت‌ها استفاده می‌کنند.\n\nوقتی آبجکت‌ها با همان ساختار و ترتیب ویژگی ایجاد می‌شوند، موتور همان کلاس پنهان را به آنها اختصاص می‌دهد. این کار دسترسی سریع از طریق inline caching را ممکن می‌سازد.\n\nاگر شکل آبجکت‌ها به صورت پویا تغییر کند (مثلاً اضافه کردن ویژگی‌ها بعداً یا با ترتیب متفاوت)، موتور ممکن است کلاس‌های پنهان جدیدی بسازد که می‌تواند باعث de-optimization شود.\n\nساختار ثابت آبجکت‌ها باعث بهبود کارایی می‌شود.\n\nمثال:\n\n```js\nfunction createUser(name, age) {\n  return { name, age };\n}\n\nconst u1 = createUser('A', 20);\nconst u2 = createUser('B', 25);\n// همان کلاس پنهان → بهینه‌شده\n\nconst user = {};\nuser.name = 'C';\nuser.age = 30;\n// تغییر شکل متفاوت → ممکن است de-optimize شود\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-082",
@@ -1344,10 +1182,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Inline caching یک تکنیک بهینه‌سازی است که موتورهای جاوااسکریپت برای سرعت بخشیدن به دسترسی به ویژگی‌ها استفاده می‌کنند.\n\nوقتی یک ویژگی به صورت مکرر روی آبجکت‌هایی با همان کلاس پنهان دسترسی پیدا می‌کند، موتور مکان آن ویژگی را کش می‌کند.\n\nدسترسی‌های بعدی از جستجوی کامل صرف‌نظر کرده و مستقیماً از مرجع کش شده استفاده می‌کنند که باعث بهبود کارایی می‌شود.\n\nاگر اشکال آبجکت‌ها متفاوت باشند، inline cache‌ها ممکن است invalidate شوند.\n\nمثال:\n\n```js\nfunction getName(user) {\n  return user.name;\n}\n\nconst u1 = { name: 'A' };\nconst u2 = { name: 'B' };\n\ngetName(u1);\ngetName(u2);\n// موتور می‌تواند دسترسی مکرر به `.name` را بهینه کند\n```",
-        "readingTime": 1
-      }
+      "markdown": "Inline caching یک تکنیک بهینه‌سازی است که موتورهای جاوااسکریپت برای سرعت بخشیدن به دسترسی به ویژگی‌ها استفاده می‌کنند.\n\nوقتی یک ویژگی به صورت مکرر روی آبجکت‌هایی با همان کلاس پنهان دسترسی پیدا می‌کند، موتور مکان آن ویژگی را کش می‌کند.\n\nدسترسی‌های بعدی از جستجوی کامل صرف‌نظر کرده و مستقیماً از مرجع کش شده استفاده می‌کنند که باعث بهبود کارایی می‌شود.\n\nاگر اشکال آبجکت‌ها متفاوت باشند، inline cache‌ها ممکن است invalidate شوند.\n\nمثال:\n\n```js\nfunction getName(user) {\n  return user.name;\n}\n\nconst u1 = { name: 'A' };\nconst u2 = { name: 'B' };\n\ngetName(u1);\ngetName(u2);\n// موتور می‌تواند دسترسی مکرر به `.name` را بهینه کند\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-083",
@@ -1361,10 +1197,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "موتورهای مدرن جاوااسکریپت از جمع‌آوری زباله نسلی (Generational GC) استفاده می‌کنند.\n\nحافظه به نسل‌ها تقسیم می‌شود:\n\n- نسل جوان (آبجکت‌های کوتاه‌عمر)\n- نسل پیر (آبجکت‌های بلندعمر)\n\nاکثر آبجکت‌ها زود از بین می‌روند، بنابراین موتور به طور مکرر نسل جوان را پاک می‌کند.\n\nآبجکت‌هایی که از چند بار جمع‌آوری جان سالم به در می‌برند به نسل پیر منتقل می‌شوند که کمتر پاک‌سازی می‌شود.\n\nاین روش کارایی کلی و بهره‌وری حافظه را بهبود می‌بخشد.\n\nمثال:\n\n```js\nfunction createTemp() {\n  return { value: Math.random() };\n}\n\nfor (let i = 0; i < 100000; i++) {\n  createTemp();\n}\n// اکثر آبجکت‌ها کوتاه‌عمرند → در نسل جوان جمع‌آوری می‌شوند\n```",
-        "readingTime": 1
-      }
+      "markdown": "موتورهای مدرن جاوااسکریپت از جمع‌آوری زباله نسلی (Generational GC) استفاده می‌کنند.\n\nحافظه به نسل‌ها تقسیم می‌شود:\n\n- نسل جوان (آبجکت‌های کوتاه‌عمر)\n- نسل پیر (آبجکت‌های بلندعمر)\n\nاکثر آبجکت‌ها زود از بین می‌روند، بنابراین موتور به طور مکرر نسل جوان را پاک می‌کند.\n\nآبجکت‌هایی که از چند بار جمع‌آوری جان سالم به در می‌برند به نسل پیر منتقل می‌شوند که کمتر پاک‌سازی می‌شود.\n\nاین روش کارایی کلی و بهره‌وری حافظه را بهبود می‌بخشد.\n\nمثال:\n\n```js\nfunction createTemp() {\n  return { value: Math.random() };\n}\n\nfor (let i = 0; i < 100000; i++) {\n  createTemp();\n}\n// اکثر آبجکت‌ها کوتاه‌عمرند → در نسل جوان جمع‌آوری می‌شوند\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-084",
@@ -1377,10 +1211,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Partial application تکنیکی است که در آن یک تابع با برخی از آرگومان‌هایش فراخوانی می‌شود و یک تابع جدید با پارامترهای کمتر برمی‌گرداند.\n\nCurrying یک تابع چند آرگومانه را به یک دنباله از توابع که هر کدام یک آرگومان می‌گیرند تبدیل می‌کند.\n\nPartial application آرگومان‌ها را یکجا ثابت می‌کند.\nCurrying ساختار تابع را تغییر می‌دهد.\n\nمثال:\n\n```js\nfunction multiply(a, b, c) {\n  return a * b * c;\n}\n\nfunction partialMultiply(a) {\n  return (b, c) => multiply(a, b, c);\n}\n\nconst double = partialMultiply(2);\nconsole.log(double(3, 4)); // 24\n```",
-        "readingTime": 1
-      }
+      "markdown": "Partial application تکنیکی است که در آن یک تابع با برخی از آرگومان‌هایش فراخوانی می‌شود و یک تابع جدید با پارامترهای کمتر برمی‌گرداند.\n\nCurrying یک تابع چند آرگومانه را به یک دنباله از توابع که هر کدام یک آرگومان می‌گیرند تبدیل می‌کند.\n\nPartial application آرگومان‌ها را یکجا ثابت می‌کند.\nCurrying ساختار تابع را تغییر می‌دهد.\n\nمثال:\n\n```js\nfunction multiply(a, b, c) {\n  return a * b * c;\n}\n\nfunction partialMultiply(a) {\n  return (b, c) => multiply(a, b, c);\n}\n\nconst double = partialMultiply(2);\nconsole.log(double(3, 4)); // 24\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-085",
@@ -1393,10 +1225,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "یک تابع مرتبه بالاتر تابعی است که یا:\n\n- یک تابع دیگر را به عنوان آرگومان می‌گیرد\n- یک تابع برمی‌گرداند\n- یا هر دو\n\nآنها انتزاع، ترکیب و الگوهای برنامه‌نویسی تابعی را ممکن می‌سازند.\n\nمثال‌های رایج شامل map، filter و reduce هستند.\n\nمثال:\n\n```js\nfunction greet(name) {\n  return `Hello ${name}`;\n}\n\nfunction processUser(name, callback) {\n  return callback(name);\n}\n\nconsole.log(processUser('Rasool', greet));\n```",
-        "readingTime": 1
-      }
+      "markdown": "یک تابع مرتبه بالاتر تابعی است که یا:\n\n- یک تابع دیگر را به عنوان آرگومان می‌گیرد\n- یک تابع برمی‌گرداند\n- یا هر دو\n\nآنها انتزاع، ترکیب و الگوهای برنامه‌نویسی تابعی را ممکن می‌سازند.\n\nمثال‌های رایج شامل map، filter و reduce هستند.\n\nمثال:\n\n```js\nfunction greet(name) {\n  return `Hello ${name}`;\n}\n\nfunction processUser(name, callback) {\n  return callback(name);\n}\n\nconsole.log(processUser('Rasool', greet));\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-086",
@@ -1409,10 +1239,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "شفافیت ارجاعی به این معناست که یک تابع می‌تواند بدون تغییر رفتار برنامه با مقدار خروجی‌اش جایگزین شود.\n\nیک تابع اگر شفافیت ارجاعی داشته باشد:\n\n- همیشه برای همان ورودی، همان خروجی را برمی‌گرداند\n- هیچ اثر جانبی ندارد\n\nاین ویژگی کد قابل پیش‌بینی و آزمایش‌پذیر را ممکن می‌سازد.\n\nمثال:\n\n```js\nfunction add(a, b) {\n  return a + b;\n}\n\nconst result = add(2, 3);\n// add(2, 3) می‌تواند با خیال راحت با ۵ جایگزین شود\n```",
-        "readingTime": 1
-      }
+      "markdown": "شفافیت ارجاعی به این معناست که یک تابع می‌تواند بدون تغییر رفتار برنامه با مقدار خروجی‌اش جایگزین شود.\n\nیک تابع اگر شفافیت ارجاعی داشته باشد:\n\n- همیشه برای همان ورودی، همان خروجی را برمی‌گرداند\n- هیچ اثر جانبی ندارد\n\nاین ویژگی کد قابل پیش‌بینی و آزمایش‌پذیر را ممکن می‌سازد.\n\nمثال:\n\n```js\nfunction add(a, b) {\n  return a + b;\n}\n\nconst result = add(2, 3);\n// add(2, 3) می‌تواند با خیال راحت با ۵ جایگزین شود\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-087",
@@ -1425,10 +1253,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Starvation زمانی رخ می‌دهد که برخی از task‌ها در event loop هرگز اجرا نمی‌شوند چون task‌های دیگر به طور مداوم صف را اشغال می‌کنند.\n\nبرای مثال، زمان‌بندی مداوم microtask‌ها می‌تواند از اجرای macrotask‌ها یا رندر جلوگیری کند.\n\nاین می‌تواند به‌روزرسانی‌های UI را مسدود کرده و پاسخگویی را کاهش دهد.\n\nمثال:\n\n```js\nfunction loop() {\n  Promise.resolve().then(loop);\n}\n\nloop();\n// Macrotask‌ها ممکن است هرگز اجرا نشوند\n```",
-        "readingTime": 1
-      }
+      "markdown": "Starvation زمانی رخ می‌دهد که برخی از task‌ها در event loop هرگز اجرا نمی‌شوند چون task‌های دیگر به طور مداوم صف را اشغال می‌کنند.\n\nبرای مثال، زمان‌بندی مداوم microtask‌ها می‌تواند از اجرای macrotask‌ها یا رندر جلوگیری کند.\n\nاین می‌تواند به‌روزرسانی‌های UI را مسدود کرده و پاسخگویی را کاهش دهد.\n\nمثال:\n\n```js\nfunction loop() {\n  Promise.resolve().then(loop);\n}\n\nloop();\n// Macrotask‌ها ممکن است هرگز اجرا نشوند\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-088",
@@ -1441,10 +1267,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`typeof null` به دلیل یک باگ تاریخی در پیاده‌سازی‌های اولیه جاوااسکریپت `\"object\"` برمی‌گرداند.\n\nدر پیاده‌سازی اصلی، مقادیر با تگ مشخص می‌شدند و null به عنوان یک null pointer نمایش داده می‌شد که با تگ نوع object مطابقت داشت.\n\nاین رفتار برای سازگاری با نسخه‌های قبلی حفظ شده است.\n\nمثال:\n\n```js\nconsole.log(typeof null); // \"object\"\n```",
-        "readingTime": 1
-      }
+      "markdown": "`typeof null` به دلیل یک باگ تاریخی در پیاده‌سازی‌های اولیه جاوااسکریپت `\"object\"` برمی‌گرداند.\n\nدر پیاده‌سازی اصلی، مقادیر با تگ مشخص می‌شدند و null به عنوان یک null pointer نمایش داده می‌شد که با تگ نوع object مطابقت داشت.\n\nاین رفتار برای سازگاری با نسخه‌های قبلی حفظ شده است.\n\nمثال:\n\n```js\nconsole.log(typeof null); // \"object\"\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-089",
@@ -1457,10 +1281,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "NaN مخفف \"Not a Number\" است و نمایانگر یک نتیجه عددی نامعتبر است.\n\nطبق استاندارد IEEE 754، NaN با هیچ مقداری، حتی با خودش برابر نیست.\n\nبرای بررسی NaN از Number.isNaN() استفاده کنید.\n\nمثال:\n\n```js\nconsole.log(NaN === NaN); // false\nconsole.log(Number.isNaN(NaN)); // true\n```",
-        "readingTime": 1
-      }
+      "markdown": "NaN مخفف \"Not a Number\" است و نمایانگر یک نتیجه عددی نامعتبر است.\n\nطبق استاندارد IEEE 754، NaN با هیچ مقداری، حتی با خودش برابر نیست.\n\nبرای بررسی NaN از Number.isNaN() استفاده کنید.\n\nمثال:\n\n```js\nconsole.log(NaN === NaN); // false\nconsole.log(Number.isNaN(NaN)); // true\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-090",
@@ -1473,10 +1295,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "structuredClone یک متد توکار است که یک کلون عمیق از داده‌های ساختاریافته ایجاد می‌کند.\n\nبرخلاف کلون‌سازی مبتنی بر JSON، از موارد زیر پشتیبانی می‌کند:\n\n- Date\n- Map\n- Set\n- Typed arrays\n- ارجاعات دایره‌ای (Circular references)\n\nباید زمانی استفاده شود که یک کپی عمیق قابل اعتماد نیاز باشد.\n\nمثال:\n\n```js\nconst obj = {\n  date: new Date(),\n  nested: { value: 1 },\n};\n\nconst clone = structuredClone(obj);\n\nconsole.log(clone !== obj); // true\nconsole.log(clone.nested !== obj.nested); // true\n```",
-        "readingTime": 1
-      }
+      "markdown": "structuredClone یک متد توکار است که یک کلون عمیق از داده‌های ساختاریافته ایجاد می‌کند.\n\nبرخلاف کلون‌سازی مبتنی بر JSON، از موارد زیر پشتیبانی می‌کند:\n\n- Date\n- Map\n- Set\n- Typed arrays\n- ارجاعات دایره‌ای (Circular references)\n\nباید زمانی استفاده شود که یک کپی عمیق قابل اعتماد نیاز باشد.\n\nمثال:\n\n```js\nconst obj = {\n  date: new Date(),\n  nested: { value: 1 },\n};\n\nconst clone = structuredClone(obj);\n\nconsole.log(clone !== obj); // true\nconsole.log(clone.nested !== obj.nested); // true\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-091",
@@ -1489,10 +1309,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "الگوی Observer (که به نام Pub/Sub نیز شناخته می‌شود) به آبجکت‌ها اجازه می‌دهد به رویدادها subscribe کنند و هنگام وقوع آنها مطلع شوند.\n\nاین الگو منبع رویداد (publisher) را از شنوندگان (subscribers) جدا می‌کند.\n\nاجزای کلیدی:\n\n- `on(event, listener)` — subscribe به یک رویداد\n- `emit(event, data)` — فعال کردن تمام listener‌های یک رویداد\n- `off(event, listener)` — unsubscribe از یک رویداد\n\nاین الگو به طور گسترده در سیستم‌های event-driven، فریم‌ورک‌های UI و EventEmitter نودجی‌اس استفاده می‌شود.\n\nمثال:\n\n```js\nclass EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(event, listener) {\n    if (!this.events[event]) this.events[event] = [];\n    this.events[event].push(listener);\n  }\n\n  off(event, listener) {\n    if (this.events[event]) {\n      this.events[event] = this.events[event].filter((l) => l !== listener);\n    }\n  }\n\n  emit(event, data) {\n    if (this.events[event]) {\n      this.events[event].forEach((listener) => listener(data));\n    }\n  }\n}\n\nconst emitter = new EventEmitter();\n\nconst onLogin = (user) => console.log(`${user} وارد شد`);\n\nemitter.on('login', onLogin);\nemitter.emit('login', 'Rasool'); // Rasool وارد شد\n\nemitter.off('login', onLogin);\nemitter.emit('login', 'Ali'); // (خروجی ندارد)\n```",
-        "readingTime": 1
-      }
+      "markdown": "الگوی Observer (که به نام Pub/Sub نیز شناخته می‌شود) به آبجکت‌ها اجازه می‌دهد به رویدادها subscribe کنند و هنگام وقوع آنها مطلع شوند.\n\nاین الگو منبع رویداد (publisher) را از شنوندگان (subscribers) جدا می‌کند.\n\nاجزای کلیدی:\n\n- `on(event, listener)` — subscribe به یک رویداد\n- `emit(event, data)` — فعال کردن تمام listener‌های یک رویداد\n- `off(event, listener)` — unsubscribe از یک رویداد\n\nاین الگو به طور گسترده در سیستم‌های event-driven، فریم‌ورک‌های UI و EventEmitter نودجی‌اس استفاده می‌شود.\n\nمثال:\n\n```js\nclass EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(event, listener) {\n    if (!this.events[event]) this.events[event] = [];\n    this.events[event].push(listener);\n  }\n\n  off(event, listener) {\n    if (this.events[event]) {\n      this.events[event] = this.events[event].filter((l) => l !== listener);\n    }\n  }\n\n  emit(event, data) {\n    if (this.events[event]) {\n      this.events[event].forEach((listener) => listener(data));\n    }\n  }\n}\n\nconst emitter = new EventEmitter();\n\nconst onLogin = (user) => console.log(`${user} وارد شد`);\n\nemitter.on('login', onLogin);\nemitter.emit('login', 'Rasool'); // Rasool وارد شد\n\nemitter.off('login', onLogin);\nemitter.emit('login', 'Ali'); // (خروجی ندارد)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-092",
@@ -1505,10 +1323,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Reference equality بررسی می‌کند که آیا دو متغیر به همان مرجع در حافظه اشاره می‌کنند.\n\nDeep equality بررسی می‌کند که آیا دو مقدار ساختار و محتوای یکسانی دارند.\n\nدر جاوااسکریپت، `===` برای آبجکت‌ها مرجع را مقایسه می‌کند، نه ساختار.\n\nمقایسه عمیق نیاز به بررسی بازگشتی ویژگی‌ها دارد.\n\nمثال:\n\n```js\nconst a = { value: 1 };\nconst b = { value: 1 };\n\nconsole.log(a === b); // false (مرجع‌های متفاوت)\n\nfunction deepEqual(obj1, obj2) {\n  return JSON.stringify(obj1) === JSON.stringify(obj2);\n}\n\nconsole.log(deepEqual(a, b)); // true (ساختار یکسان)\n```",
-        "readingTime": 1
-      }
+      "markdown": "Reference equality بررسی می‌کند که آیا دو متغیر به همان مرجع در حافظه اشاره می‌کنند.\n\nDeep equality بررسی می‌کند که آیا دو مقدار ساختار و محتوای یکسانی دارند.\n\nدر جاوااسکریپت، `===` برای آبجکت‌ها مرجع را مقایسه می‌کند، نه ساختار.\n\nمقایسه عمیق نیاز به بررسی بازگشتی ویژگی‌ها دارد.\n\nمثال:\n\n```js\nconst a = { value: 1 };\nconst b = { value: 1 };\n\nconsole.log(a === b); // false (مرجع‌های متفاوت)\n\nfunction deepEqual(obj1, obj2) {\n  return JSON.stringify(obj1) === JSON.stringify(obj2);\n}\n\nconsole.log(deepEqual(a, b)); // true (ساختار یکسان)\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-093",
@@ -1521,10 +1337,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "getter و setter متدهای خاصی هستند که رفتار سفارشی هنگام دسترسی یا تغییر ویژگی‌های آبجکت تعریف می‌کنند.\n\nبا استفاده از property descriptor تعریف می‌شوند.\n\nبه صورت داخلی، دسترسی مستقیم به ویژگی را با اجرای تابع جایگزین می‌کنند.\n\nاین کار اعتبارسنجی، مقادیر محاسباتی یا اثرات جانبی را ممکن می‌سازد.\n\nمثال:\n\n```js\nconst user = {\n  firstName: 'Rasool',\n  lastName: 'Zia',\n\n  get fullName() {\n    return `${this.firstName} ${this.lastName}`;\n  },\n\n  set fullName(value) {\n    const [first, last] = value.split(' ');\n    this.firstName = first;\n    this.lastName = last;\n  },\n};\n\nconsole.log(user.fullName);\nuser.fullName = 'Ali Reza';\nconsole.log(user.firstName);\n```",
-        "readingTime": 1
-      }
+      "markdown": "getter و setter متدهای خاصی هستند که رفتار سفارشی هنگام دسترسی یا تغییر ویژگی‌های آبجکت تعریف می‌کنند.\n\nبا استفاده از property descriptor تعریف می‌شوند.\n\nبه صورت داخلی، دسترسی مستقیم به ویژگی را با اجرای تابع جایگزین می‌کنند.\n\nاین کار اعتبارسنجی، مقادیر محاسباتی یا اثرات جانبی را ممکن می‌سازد.\n\nمثال:\n\n```js\nconst user = {\n  firstName: 'Rasool',\n  lastName: 'Zia',\n\n  get fullName() {\n    return `${this.firstName} ${this.lastName}`;\n  },\n\n  set fullName(value) {\n    const [first, last] = value.split(' ');\n    this.firstName = first;\n    this.lastName = last;\n  },\n};\n\nconsole.log(user.fullName);\nuser.fullName = 'Ali Reza';\nconsole.log(user.firstName);\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-094",
@@ -1537,10 +1351,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Symbol‌های well-known ویژگی‌های Symbol توکاری هستند که رفتارهای خاص آبجکت را تعریف می‌کنند.\n\nمثال‌ها شامل:\n\n- Symbol.iterator\n- Symbol.toStringTag\n- Symbol.toPrimitive\n- Symbol.asyncIterator\n\nآنها به آبجکت‌ها اجازه می‌دهند رفتار سطح زبانی مانند iteration و تبدیل نوع را سفارشی کنند.\n\nمثال:\n\n```js\nconst obj = {\n  *[Symbol.iterator]() {\n    yield 1;\n    yield 2;\n  },\n};\n\nfor (const value of obj) {\n  console.log(value);\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "Symbol‌های well-known ویژگی‌های Symbol توکاری هستند که رفتارهای خاص آبجکت را تعریف می‌کنند.\n\nمثال‌ها شامل:\n\n- Symbol.iterator\n- Symbol.toStringTag\n- Symbol.toPrimitive\n- Symbol.asyncIterator\n\nآنها به آبجکت‌ها اجازه می‌دهند رفتار سطح زبانی مانند iteration و تبدیل نوع را سفارشی کنند.\n\nمثال:\n\n```js\nconst obj = {\n  *[Symbol.iterator]() {\n    yield 1;\n    yield 2;\n  },\n};\n\nfor (const value of obj) {\n  console.log(value);\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-095",
@@ -1553,10 +1365,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "async iteration امکان مصرف متوالی منابع داده ناهمزمان با استفاده از `for await...of` را فراهم می‌کند.\n\nیک async iterable باید `Symbol.asyncIterator` را پیاده‌سازی کند که یک async iterator برمی‌گرداند و متد `next()` آن یک Promise برمی‌گرداند.\n\nAsync generator‌ها با استفاده از `async function*` تولید دنباله‌های async را آسان می‌کنند.\n\nاین برای API‌های صفحه‌بندی شده، stream‌ها یا هر داده‌ای که به صورت ناهمزمان می‌رسد مفید است.\n\nمثال:\n\n```js\nasync function* asyncRange(start, end) {\n  for (let i = start; i <= end; i++) {\n    await new Promise((resolve) => setTimeout(resolve, 100));\n    yield i;\n  }\n}\n\nasync function main() {\n  for await (const num of asyncRange(1, 3)) {\n    console.log(num);\n    // 1\n    // 2\n    // 3\n  }\n}\n\nmain();\n```",
-        "readingTime": 1
-      }
+      "markdown": "async iteration امکان مصرف متوالی منابع داده ناهمزمان با استفاده از `for await...of` را فراهم می‌کند.\n\nیک async iterable باید `Symbol.asyncIterator` را پیاده‌سازی کند که یک async iterator برمی‌گرداند و متد `next()` آن یک Promise برمی‌گرداند.\n\nAsync generator‌ها با استفاده از `async function*` تولید دنباله‌های async را آسان می‌کنند.\n\nاین برای API‌های صفحه‌بندی شده، stream‌ها یا هر داده‌ای که به صورت ناهمزمان می‌رسد مفید است.\n\nمثال:\n\n```js\nasync function* asyncRange(start, end) {\n  for (let i = start; i <= end; i++) {\n    await new Promise((resolve) => setTimeout(resolve, 100));\n    yield i;\n  }\n}\n\nasync function main() {\n  for await (const num of asyncRange(1, 3)) {\n    console.log(num);\n    // 1\n    // 2\n    // 3\n  }\n}\n\nmain();\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-096",
@@ -1569,10 +1379,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Object.create() یک آبجکت جدید با prototype مشخص‌شده ایجاد می‌کند.\n\nنمونه‌سازی مبتنی بر class از syntax `class` و `new` برای ایجاد نمونه‌ها استفاده می‌کند.\n\nدر زیر پوسته، class‌ها syntactic sugar روی prototype‌ها هستند.\n\nObject.create کنترل مستقیم بیشتری بر زنجیره prototype فراهم می‌کند.\n\nمثال:\n\n```js\nconst animal = {\n  speak() {\n    return 'sound';\n  },\n};\n\nconst dog = Object.create(animal);\nconsole.log(dog.speak());\n```",
-        "readingTime": 1
-      }
+      "markdown": "Object.create() یک آبجکت جدید با prototype مشخص‌شده ایجاد می‌کند.\n\nنمونه‌سازی مبتنی بر class از syntax `class` و `new` برای ایجاد نمونه‌ها استفاده می‌کند.\n\nدر زیر پوسته، class‌ها syntactic sugar روی prototype‌ها هستند.\n\nObject.create کنترل مستقیم بیشتری بر زنجیره prototype فراهم می‌کند.\n\nمثال:\n\n```js\nconst animal = {\n  speak() {\n    return 'sound';\n  },\n};\n\nconst dog = Object.create(animal);\nconsole.log(dog.speak());\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-097",
@@ -1585,10 +1393,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Automatic Semicolon Insertion مکانیزمی است که جاوااسکریپت در موارد خاص به طور خودکار سمی‌کالن اضافه می‌کند.\n\nاین می‌تواند هنگام وجود شکست خط بعد از `return`، `break` یا قبل از عباراتی که با `(` یا `[` شروع می‌شوند، باعث رفتار غیرمنتظره شود.\n\nسمی‌کالن‌های صریح از ابهام جلوگیری می‌کنند.\n\nمثال:\n\n```js\nfunction test() {\n  return;\n  {\n    value: 1;\n  }\n}\n\nconsole.log(test()); // undefined\n```",
-        "readingTime": 1
-      }
+      "markdown": "Automatic Semicolon Insertion مکانیزمی است که جاوااسکریپت در موارد خاص به طور خودکار سمی‌کالن اضافه می‌کند.\n\nاین می‌تواند هنگام وجود شکست خط بعد از `return`، `break` یا قبل از عباراتی که با `(` یا `[` شروع می‌شوند، باعث رفتار غیرمنتظره شود.\n\nسمی‌کالن‌های صریح از ابهام جلوگیری می‌کنند.\n\nمثال:\n\n```js\nfunction test() {\n  return;\n  {\n    value: 1;\n  }\n}\n\nconsole.log(test()); // undefined\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-098",
@@ -1601,10 +1407,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "مرورگر رندر را بین macrotask‌ها انجام می‌دهد.\n\nپس از اجرای یک task و پردازش microtask‌ها، مرورگر ممکن است مراحل layout، paint و compositing را انجام دهد.\n\nاگر جاوااسکریپت به طور مداوم thread اصلی را مسدود کند، رندر نمی‌تواند رخ دهد که باعث freeze شدن UI می‌شود.\n\nدرک این تعامل به جلوگیری از مشکلات کارایی کمک می‌کند.\n\nمثال:\n\n```js\nwhile (true) {\n  // حلقه مسدودکننده\n}\n```\n\nمرورگر نمی‌تواند به‌روزرسانی‌های رندر را در حالی که thread اصلی مسدود است انجام دهد.",
-        "readingTime": 1
-      }
+      "markdown": "مرورگر رندر را بین macrotask‌ها انجام می‌دهد.\n\nپس از اجرای یک task و پردازش microtask‌ها، مرورگر ممکن است مراحل layout، paint و compositing را انجام دهد.\n\nاگر جاوااسکریپت به طور مداوم thread اصلی را مسدود کند، رندر نمی‌تواند رخ دهد که باعث freeze شدن UI می‌شود.\n\nدرک این تعامل به جلوگیری از مشکلات کارایی کمک می‌کند.\n\nمثال:\n\n```js\nwhile (true) {\n  // حلقه مسدودکننده\n}\n```\n\nمرورگر نمی‌تواند به‌روزرسانی‌های رندر را در حالی که thread اصلی مسدود است انجام دهد.",
+      "readingTime": 1
     },
     {
       "id": "javascript-099",
@@ -1617,10 +1421,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`for...in` روی **کلیدهای** قابل شمارش یک آبجکت پیمایش می‌کند (شامل ویژگی‌های ارث‌بری شده).\n\n`for...of` روی **مقادیر** یک iterable پیمایش می‌کند (آرایه‌ها، رشته‌ها، Map، Set، generator و غیره).\n\nتفاوت‌های کلیدی:\n\n- `for...in` روی هر آبجکتی کار می‌کند؛ `for...of` به یک iterable نیاز دارد\n- `for...in` ممکن است به طور غیرمنتظره‌ای ویژگی‌های ارث‌بری شده را شامل شود\n- `for...of` به طور مستقیم روی آبجکت‌های ساده کار نمی‌کند (به طور پیش‌فرض iterable نیستند)\n\nمثال:\n\n```js\nconst arr = ['a', 'b', 'c'];\n\nfor (const key in arr) {\n  console.log(key); // 0, 1, 2 (اندیس‌ها به صورت رشته)\n}\n\nfor (const value of arr) {\n  console.log(value); // a, b, c\n}\n\nconst obj = { x: 1, y: 2 };\n\nfor (const key in obj) {\n  console.log(key); // x, y\n}\n\n// for...of روی آبجکت ساده خطا می‌دهد\n// for (const val of obj) {} // TypeError: obj is not iterable\n```",
-        "readingTime": 1
-      }
+      "markdown": "`for...in` روی **کلیدهای** قابل شمارش یک آبجکت پیمایش می‌کند (شامل ویژگی‌های ارث‌بری شده).\n\n`for...of` روی **مقادیر** یک iterable پیمایش می‌کند (آرایه‌ها، رشته‌ها، Map، Set، generator و غیره).\n\nتفاوت‌های کلیدی:\n\n- `for...in` روی هر آبجکتی کار می‌کند؛ `for...of` به یک iterable نیاز دارد\n- `for...in` ممکن است به طور غیرمنتظره‌ای ویژگی‌های ارث‌بری شده را شامل شود\n- `for...of` به طور مستقیم روی آبجکت‌های ساده کار نمی‌کند (به طور پیش‌فرض iterable نیستند)\n\nمثال:\n\n```js\nconst arr = ['a', 'b', 'c'];\n\nfor (const key in arr) {\n  console.log(key); // 0, 1, 2 (اندیس‌ها به صورت رشته)\n}\n\nfor (const value of arr) {\n  console.log(value); // a, b, c\n}\n\nconst obj = { x: 1, y: 2 };\n\nfor (const key in obj) {\n  console.log(key); // x, y\n}\n\n// for...of روی آبجکت ساده خطا می‌دهد\n// for (const val of obj) {} // TypeError: obj is not iterable\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-100",
@@ -1633,10 +1435,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "Tagged template literals به یک تابع (tag) اجازه می‌دهند یک template literal را قبل از ارزیابی پردازش کند.\n\nتابع tag قسمت‌های رشته را به صورت آرایه و مقادیر interpolate شده را به عنوان آرگومان‌های جداگانه دریافت می‌کند.\n\nاین کار پردازش سفارشی رشته مانند sanitization، localization یا ساخت DSL را ممکن می‌سازد.\n\nمثال:\n\n```js\nfunction highlight(strings, ...values) {\n  return strings.reduce((result, str, i) => {\n    return result + str + (values[i] !== undefined ? `[${values[i]}]` : '');\n  }, '');\n}\n\nconst name = 'Rasool';\nconst score = 95;\n\nconsole.log(highlight`Player ${name} scored ${score} points.`);\n// Player [Rasool] scored [95] points.\n```",
-        "readingTime": 1
-      }
+      "markdown": "Tagged template literals به یک تابع (tag) اجازه می‌دهند یک template literal را قبل از ارزیابی پردازش کند.\n\nتابع tag قسمت‌های رشته را به صورت آرایه و مقادیر interpolate شده را به عنوان آرگومان‌های جداگانه دریافت می‌کند.\n\nاین کار پردازش سفارشی رشته مانند sanitization، localization یا ساخت DSL را ممکن می‌سازد.\n\nمثال:\n\n```js\nfunction highlight(strings, ...values) {\n  return strings.reduce((result, str, i) => {\n    return result + str + (values[i] !== undefined ? `[${values[i]}]` : '');\n  }, '');\n}\n\nconst name = 'Rasool';\nconst score = 95;\n\nconsole.log(highlight`Player ${name} scored ${score} points.`);\n// Player [Rasool] scored [95] points.\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-101",
@@ -1649,10 +1449,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "`import` استاتیک در زمان parse حل می‌شود و نمی‌تواند شرطی یا به تأخیر افتاده باشد.\n\n`import()` داینامیک یک عبارت تابع‌مانند است که یک ماژول را به صورت on-demand در زمان اجرا بارگذاری می‌کند و یک Promise برمی‌گرداند.\n\nاین code splitting را ممکن می‌سازد — بارگذاری ماژول‌ها فقط زمانی که نیاز است، که حجم bundle اولیه را کاهش می‌دهد.\n\nمثال:\n\n```js\n// import استاتیک (همیشه بارگذاری می‌شود)\nimport { add } from './math.js';\n\n// import داینامیک (بارگذاری on-demand)\nasync function loadMath() {\n  const { add } = await import('./math.js');\n  console.log(add(2, 3)); // 5\n}\n\n// بارگذاری شرطی\nif (userNeedsChart) {\n  const { renderChart } = await import('./chart.js');\n  renderChart(data);\n}\n```",
-        "readingTime": 1
-      }
+      "markdown": "`import` استاتیک در زمان parse حل می‌شود و نمی‌تواند شرطی یا به تأخیر افتاده باشد.\n\n`import()` داینامیک یک عبارت تابع‌مانند است که یک ماژول را به صورت on-demand در زمان اجرا بارگذاری می‌کند و یک Promise برمی‌گرداند.\n\nاین code splitting را ممکن می‌سازد — بارگذاری ماژول‌ها فقط زمانی که نیاز است، که حجم bundle اولیه را کاهش می‌دهد.\n\nمثال:\n\n```js\n// import استاتیک (همیشه بارگذاری می‌شود)\nimport { add } from './math.js';\n\n// import داینامیک (بارگذاری on-demand)\nasync function loadMath() {\n  const { add } = await import('./math.js');\n  console.log(add(2, 3)); // 5\n}\n\n// بارگذاری شرطی\nif (userNeedsChart) {\n  const { renderChart } = await import('./chart.js');\n  renderChart(data);\n}\n```",
+      "readingTime": 1
     },
     {
       "id": "javascript-102",
@@ -1665,10 +1463,8 @@
       "domain": "frontend",
       "topic": "javascript",
       "language": "fa",
-      "answer": {
-        "markdown": "عملگرهای logical assignment عملیات منطقی را با انتساب ترکیب می‌کنند.\n\nسه نوع وجود دارد:\n\n- `&&=` مقدار سمت راست را فقط اگر مقدار سمت چپ truthy باشد اختصاص می‌دهد\n- `||=` مقدار سمت راست را فقط اگر مقدار سمت چپ falsy باشد اختصاص می‌دهد\n- `??=` مقدار سمت راست را فقط اگر مقدار سمت چپ null یا undefined باشد اختصاص می‌دهد\n\nآنها shorthand الگوهای رایج مانند انتساب مقدار پیش‌فرض یا به‌روزرسانی شرطی هستند.\n\nمثال:\n\n```js\nlet a = 1;\nlet b = 0;\nlet c = null;\n\na &&= 99; // a truthy است → a = 99\nb ||= 42; // b falsy است  → b = 42\nc ??= 'default'; // c null است → c = 'default'\n\nconsole.log(a); // 99\nconsole.log(b); // 42\nconsole.log(c); // 'default'\n```",
-        "readingTime": 1
-      }
+      "markdown": "عملگرهای logical assignment عملیات منطقی را با انتساب ترکیب می‌کنند.\n\nسه نوع وجود دارد:\n\n- `&&=` مقدار سمت راست را فقط اگر مقدار سمت چپ truthy باشد اختصاص می‌دهد\n- `||=` مقدار سمت راست را فقط اگر مقدار سمت چپ falsy باشد اختصاص می‌دهد\n- `??=` مقدار سمت راست را فقط اگر مقدار سمت چپ null یا undefined باشد اختصاص می‌دهد\n\nآنها shorthand الگوهای رایج مانند انتساب مقدار پیش‌فرض یا به‌روزرسانی شرطی هستند.\n\nمثال:\n\n```js\nlet a = 1;\nlet b = 0;\nlet c = null;\n\na &&= 99; // a truthy است → a = 99\nb ||= 42; // b falsy است  → b = 42\nc ??= 'default'; // c null است → c = 'default'\n\nconsole.log(a); // 99\nconsole.log(b); // 42\nconsole.log(c); // 'default'\n```",
+      "readingTime": 1
     }
   ]
 }
