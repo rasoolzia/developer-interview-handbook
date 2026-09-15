@@ -231,17 +231,11 @@ export class MDGenerator {
           title: q.title,
           domain: meta.domain,
           topic,
-          label: this.getLabel(topic),
           language,
-          path: `${language}/${meta.domain}/${topic}/${q.slug}`,
           difficulty: q.difficulty,
           categories: q.categories,
-          readingTime: q.answer.readingTime,
+          readingTime: q.readingTime,
         };
-
-        if (q.tags?.length) {
-          searchItem.tags = q.tags;
-        }
 
         accumulator.searchIndex.push(searchItem);
       }
@@ -430,10 +424,8 @@ export class MDGenerator {
         domain: meta.domain,
         topic: meta.topic,
         language: meta.language,
-        answer: {
-          markdown: answerMarkdown ?? '',
-          readingTime: this.readingTime(answerMarkdown),
-        },
+        markdown: answerMarkdown ?? '',
+        readingTime: this.readingTime(answerMarkdown),
       };
 
       if (tags.length > 0) question.tags = tags;
@@ -571,7 +563,11 @@ export class MDGenerator {
   }
 
   private writeSearchIndex(accumulator: Accumulator, OUTPUT_DIR: string): void {
-    accumulator.searchIndex.sort((a, b) => a.path.localeCompare(b.path));
+    accumulator.searchIndex.sort((a, b) =>
+      `${a.language}/${a.domain}/${a.topic}/${a.slug}`.localeCompare(
+        `${b.language}/${b.domain}/${b.topic}/${b.slug}`,
+      ),
+    );
     fs.writeFileSync(
       path.join(OUTPUT_DIR, 'search-index.json'),
       JSON.stringify(accumulator.searchIndex, null, 2),

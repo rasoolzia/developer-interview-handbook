@@ -78,21 +78,23 @@ export interface GeneratorConfig {
   };
 }
 
-export interface GeneratedQuestion {
+interface QuestionBase {
   id: string;
   slug: string;
   title: string;
-  difficulty: string;
-  categories: string[];
   domain: string;
   topic: string;
   language: string;
-  answer: {
-    markdown: string;
-    readingTime: number;
-  };
+  difficulty: string;
+  categories: string[];
+  readingTime: number;
+}
+export interface GeneratedQuestion extends QuestionBase {
+  markdown: string;
   tags?: string[];
 }
+
+export interface GeneratedSearchItem extends QuestionBase {}
 
 export interface GeneratedTopic {
   version: number;
@@ -113,21 +115,6 @@ export interface GeneratedTopic {
     byDifficulty: Record<string, number>;
   };
   questions: GeneratedQuestion[];
-}
-
-export interface GeneratedSearchItem {
-  id: string;
-  slug: string;
-  title: string;
-  domain: string;
-  topic: string;
-  label: string;
-  language: string;
-  path: string;
-  difficulty: string;
-  categories: string[];
-  readingTime: number;
-  tags?: string[];
 }
 
 export interface Accumulator {
