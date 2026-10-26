@@ -8,8 +8,6 @@ dist
 dist-ssr
 # scripts
 *.local
-pnpm-lock.yaml
-package-lock.json
 
 # Editor directories and files
 .vscode/*

@@ -30,8 +30,8 @@ Instead of writing JSON by hand, all content is authored in structured **Markdow
 
 ### Prerequisites
 
-- Node.js 18+ (LTS recommended)
-- npm
+- Node.js 22+ (LTS recommended)
+- pnpm 11+
 
 ### Installation
 
@@ -39,9 +39,9 @@ Instead of writing JSON by hand, all content is authored in structured **Markdow
 git clone https://github.com/rasoolzia/developer-interview-handbook.git
 cd developer-interview-handbook
 
-npm install
-npm run build
-npm run generate
+pnpm install
+pnpm build
+pnpm generate
 ```
 
 Markdown files are the **single source of truth**.
@@ -72,7 +72,7 @@ public/
     api/
 ```
 
-- **content/** contains all interview questions. The top-level folder under `content/` is the _domain_ (e.g. `frontend`); everything below that can be nested as deeply as you like — the _topic_ is derived from the filename itself, following the `<topic>.<lang>.md` convention (e.g. `javascript.en.md`).
+- **content/** contains all interview questions. The top-level folder under `content/` is the _domain_ (e.g. `frontend`); everything below that can be nested as deeply as you like. The _topic_ is derived from the filename itself, following the `<topic>.<lang>.md` convention (e.g. `javascript.en.md`).
 - **scripts/** contains the validation and generation pipeline.
 - **public/api/** contains generated files consumed by the website.
 
@@ -100,7 +100,7 @@ Website UI
 
 Markdown is the single source of truth. The generated files inside `public/api/` are build artifacts and should never be edited manually.
 
-Generation runs validation first (when `validateBeforeGenerate` is enabled in `generator.config.json`) and aborts immediately if any content issues are found — nothing is written to `public/api/` on failure.
+Generation runs validation first (when `validateBeforeGenerate` is enabled in `generator.config.json`) and aborts immediately if any content issues are found. Nothing is written to `public/api/` on failure.
 
 ---
 
@@ -184,6 +184,8 @@ version: 1.0
 
 - Tags
 
+Answers may contain additional Markdown headings, including `###` subsections, code blocks, lists, tables, and other Markdown content. The parser preserves the complete answer content until the end of the current question section.
+
 ---
 
 ## Validation
@@ -222,15 +224,16 @@ public/api/
             fa.json
 ```
 
-The API includes:
+Each generated topic JSON file contains:
 
 - Topic metadata
-- Question metadata
-- Reading time estimation
-- Difficulty statistics
-- Categories
+- Available categories and difficulty levels
+- Total question count
+- Question counts by difficulty
+- Question counts by category
 - Content hash
-- Search index
+- Generated questions
+- Reading time for each question
 
 Example (`<domain>/<topic>/en.json`):
 
@@ -243,32 +246,28 @@ Example (`<domain>/<topic>/en.json`):
     "language": "en",
     "label": "CSS"
   },
-  "hash": "a1b2c3d4e5",
-  "stats": {
-    "total": 22,
-    "byDifficulty": { "easy": 5, "medium": 11, "hard": 6 },
-    "categories": ["Fundamentals", "Layout"]
+  "content": {
+    "title": "CSS Interview Questions",
+    "categories": ["Fundamentals", "Layout", "Selectors & Specificity"],
+    "difficulties": ["Easy", "Medium", "Hard"]
   },
+  "hash": "a1b2c3d4e5",
   "questions": [
     {
-      "id": "css-001",
-      "slug": "what-is-the-css-box-model",
-      "title": "What is the CSS Box Model?",
-      "difficulty": "easy",
-      "categories": ["Fundamentals"],
+      "id": "css-002",
+      "slug": "what-is-the-difference-between-block-inline-and-inline-block-display-values",
+      "title": "What is the difference between `block`, `inline`, and `inline-block` display values?",
+      "difficulty": "Easy",
+      "categories": ["Layout"],
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "answer": {
-        "markdown": "...",
-        "readingTime": 2
-      }
+      "markdown": "...",
+      "readingTime": 2
     }
   ]
 }
 ```
-
-The website consumes these files directly without requiring a backend server.
 
 ---
 
@@ -277,28 +276,28 @@ The website consumes these files directly without requiring a backend server.
 Validate a single file:
 
 ```bash
-npm run validate:file frontend/css/css.en.md
+pnpm validate:file frontend/css/css.en.md
 ```
 
 Validate an entire topic (checks cross-language consistency too):
 
 ```bash
-npm run validate:topic frontend/css
+pnpm validate:topic frontend/css
 ```
 
 Generate the JSON API:
 
 ```bash
-npm run generate
+pnpm generate
 ```
 
 Generate in strict mode (warnings are treated as errors):
 
 ```bash
-npm run generate --strict
+pnpm generate --strict
 ```
 
-> These assume `validate:file`, `validate:topic`, and `generate` are defined as npm scripts in `package.json` wrapping `node dist/cli.js ...`. Adjust the exact script names if yours differ.
+> These commands assume `validate:file`, `validate:topic`, and `generate` are defined as scripts in `package.json`. Adjust the exact script names if yours differ.
 
 ---
 
@@ -340,8 +339,8 @@ Contributions are always welcome! 🎉
 4. **Test your changes**:
 
 ```bash
-   npm run validate:topic <domain>/<topic>
-   npm run generate
+pnpm validate:topic <domain>/<topic>
+pnpm generate
 ```
 
 5. **Commit your changes**: `git commit -m "Add your feature"`
