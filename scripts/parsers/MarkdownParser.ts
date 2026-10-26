@@ -182,15 +182,9 @@ export function extractAnswer(sectionContent: string): string | null {
   const match = sectionContent.match(ANSWER_HEADING_REGEX);
   if (!match || match.index === undefined) return null;
 
-  const afterHeading = sectionContent.slice(match.index + match[0].length);
-  // Stop at the next ## or ### heading, so a later section (e.g. ### Notes)
-  // inside the same question isn't folded into the answer body.
-  const nextHeading = afterHeading.match(/\r?\n#{2,3}\s/);
-  const answerBody = nextHeading
-    ? afterHeading.slice(0, nextHeading.index)
-    : afterHeading;
+  const answerStart = match.index + match[0].length;
 
-  return answerBody.trim();
+  return sectionContent.slice(answerStart).trim();
 }
 
 // ─── Slug ────────────────────────────────────────────────────────────────────
