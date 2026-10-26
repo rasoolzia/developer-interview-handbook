@@ -29,14 +29,6 @@
     ]
   },
   "hash": "b81f12c4f0",
-  "stats": {
-    "total": 120,
-    "byDifficulty": {
-      "آسان": 20,
-      "متوسط": 68,
-      "سخت": 32
-    }
-  },
   "questions": [
     {
       "id": "vue-001",
@@ -484,7 +476,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`toRef()` یک ref ایجاد می‌کند که به یک property خاص از یک شیء reactive متصل است.\r\n\r\n`toRefs()` تمام property‌های یک شیء reactive را به ref‌های جداگانه تبدیل می‌کند.\r\n\r\nهر دو utility زمانی مفید هستند که نیاز دارید یک شیء reactive را destructure کنید و واکنش‌پذیری آن را حفظ کنید.\r\n\r\nبدون `toRefs()`، destructure کردن یک شیء `reactive` ارتباط واکنش‌پذیر را از بین می‌برد.\r\n\r\nتفاوت‌های کلیدی:\r\n\r\n- `toRef()` یک property را هدف قرار می‌دهد\r\n- `toRefs()` همه property‌ها را یکجا تبدیل می‌کند\r\n- هر دو ارتباط با شیء reactive اصلی را حفظ می‌کنند\r\n\r\nمثال:\r\n\r\n```js\r\nimport { reactive, toRef, toRefs } from 'vue';\r\n\r\nconst state = reactive({ name: 'Rasool', age: 27 });\r\n\r\n// toRef — یک property واکنش‌پذیر می‌ماند\r\nconst age = toRef(state, 'age');\r\nage.value++; // state.age را به‌روزرسانی می‌کند\r\n\r\n// toRefs — بدون از دست دادن واکنش‌پذیری destructure کنید\r\nconst { name, age: ageRef } = toRefs(state);\r\nname.value = 'Ali'; // state.name را به‌روزرسانی می‌کند\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-033",
@@ -708,7 +700,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`shallowRef()` و `shallowReactive()` جایگزین‌های performance-focused برای `ref()` و `reactive()` هستند.\r\n\r\n`shallowRef()` فقط `.value` سطح بالا را واکنش‌پذیر می‌کند. اشیاء تو در تو ردیابی نمی‌شوند.\r\n\r\n`shallowReactive()` فقط property‌های مستقیم یک شیء را واکنش‌پذیر می‌کند. property‌های تو در تو ردیابی نمی‌شوند.\r\n\r\nاین‌ها هنگام کار با ساختارهای داده بزرگ یا کتابخانه‌های خارجی مفید هستند که واکنش‌پذیری عمیق باعث سربار غیرضروری می‌شود.\r\n\r\nمثال:\r\n\r\n```js\r\nimport { shallowRef, shallowReactive } from 'vue';\r\n\r\nconst state = shallowRef({ nested: { count: 0 } });\r\n\r\n// واکنش‌پذیری را فعال می‌کند (مقدار سطح بالا را جایگزین می‌کند)\r\nstate.value = { nested: { count: 1 } };\r\n\r\n// واکنش‌پذیری را فعال نمی‌کند (property تو در تو را mutate می‌کند)\r\nstate.value.nested.count = 2;\r\n\r\n// shallowReactive\r\nconst form = shallowReactive({ user: { name: 'Rasool' } });\r\nform.user = { name: 'Ali' }; // واکنش‌پذیری را فعال می‌کند\r\nform.user.name = 'Ali'; // واکنش‌پذیری را فعال نمی‌کند\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-049",
@@ -736,7 +728,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "ناوبری برنامه‌نویسی به شما اجازه می‌دهد route‌ها را با استفاده از JavaScript به جای `<RouterLink>` تغییر دهید.\r\n\r\nاین برای redirect کردن بعد از ارسال فرم، ورود، یا هر منطق ناوبری شرطی مفید است.\r\n\r\nVue Router دو متد اصلی ارائه می‌دهد:\r\n\r\n- `router.push()` — به یک route جدید ناوبری می‌کند و یک entry به history مرورگر اضافه می‌کند\r\n- `router.replace()` — به یک route جدید ناوبری می‌کند اما entry فعلی history را جایگزین می‌کند\r\n\r\nمی‌توانید یک path string یا یک route location object با name، params یا query ارسال کنید.\r\n\r\nمثال:\r\n\r\n```js\r\nimport { useRouter } from 'vue-router';\r\n\r\nconst router = useRouter();\r\n\r\n// ناوبری بر اساس path\r\nrouter.push('/dashboard');\r\n\r\n// ناوبری با route نام‌دار و params\r\nrouter.push({ name: 'Profile', params: { id: 42 } });\r\n\r\n// ناوبری با query string\r\nrouter.push({ path: '/search', query: { q: 'vue' } });\r\n\r\n// جایگزین کردن route فعلی (بدون entry history جدید)\r\nrouter.replace('/login');\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-051",
@@ -750,7 +742,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`nextTick()` یک promise برمی‌گرداند که بعد از اینکه Vue تمام به‌روزرسانی‌های DOM معلق را flush کرد، resolve می‌شود.\r\n\r\nVue به‌روزرسانی‌های DOM را به صورت async برای بهبود عملکرد batch می‌کند. وقتی state واکنش‌پذیر را تغییر می‌دهید، DOM بلافاصله به‌روزرسانی نمی‌شود — در microtask بعدی زمان‌بندی می‌شود.\r\n\r\n`nextTick()` به شما اجازه می‌دهد تا DOM آخرین state را منعکس کند صبر کنید، سپس آن را بخوانید یا با آن تعامل داشته باشید.\r\n\r\nموارد استفاده رایج:\r\n\r\n- خواندن اندازه‌گیری‌های DOM به‌روزرسانی شده بعد از تغییر state\r\n- دسترسی به یک المان جدید از طریق template ref\r\n- اجرای assertion در unit test بعد از trigger کردن تغییرات state واکنش‌پذیر\r\n\r\nمثال:\r\n\r\n```js\r\nimport { nextTick, ref } from 'vue';\r\n\r\nconst message = ref('');\r\n\r\nasync function updateMessage() {\r\n  message.value = 'Updated';\r\n\r\n  // DOM هنوز به‌روزرسانی نشده است\r\n  await nextTick();\r\n  // حالا DOM به‌روزرسانی شده است\r\n  console.log(document.getElementById('msg').textContent); // 'Updated'\r\n}\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-052",
@@ -764,7 +756,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "تابع `watch` یک object options می‌پذیرد که نحوه رفتار watcher را کنترل می‌کند.\r\n\r\n- **`deep: true`** — property‌های تو در تو داخل object‌ها یا آرایه‌ها را watch می‌کند. بدون آن، فقط reference سطح بالا ردیابی می‌شود و mutation‌های تو در تو نادیده گرفته می‌شوند.\r\n- **`immediate: true`** — callback را بلافاصله هنگام ایجاد watcher اجرا می‌کند، به جای اینکه منتظر اولین تغییر باشد.\r\n- **`flush: 'post'`** — اجرای callback را تا بعد از به‌روزرسانی DOM توسط Vue به تعویق می‌اندازد. مقدار پیش‌فرض `'pre'` است.\r\n\r\nمثال:\r\n\r\n```js\r\nimport { ref, watch } from 'vue';\r\n\r\nconst user = ref({ name: 'Rasool', age: 27 });\r\n\r\nwatch(\r\n  user,\r\n  (newValue) => {\r\n    console.log('user changed:', newValue.name);\r\n  },\r\n  {\r\n    deep: true, // تغییرات property تو در تو را تشخیص می‌دهد\r\n    immediate: true, // هنگام mount کامپوننت اجرا می‌شود\r\n    flush: 'post', // بعد از به‌روزرسانی DOM اجرا می‌شود\r\n  },\r\n);\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-053",
@@ -778,7 +770,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`markRaw()` یک object را علامت‌گذاری می‌کند تا هرگز به یک reactive proxy تبدیل نشود، حتی اگر داخل یک container reactive قرار گیرد.\r\n\r\n`toRaw()` plain JavaScript object اصلی را از یک reactive proxy برمی‌گرداند.\r\n\r\nهر دو برای عملکرد و compatibility با کتابخانه‌های third-party که هنگام wrap شدن در یک Proxy کار نمی‌کنند مهم هستند.\r\n\r\nچه زمانی استفاده کنیم:\r\n\r\n- `markRaw()` — برای object‌هایی که هرگز نباید reactive باشند، مانند instance‌های chart، context‌های WebGL یا ساختارهای داده بزرگ.\r\n- `toRaw()` — وقتی به object اصلی برای API‌های خارجی، مقایسه یا serialization نیاز دارید.\r\n\r\nمثال:\r\n\r\n```js\r\nimport { reactive, markRaw, toRaw } from 'vue';\r\n\r\nclass ChartInstance {}\r\n\r\n// markRaw — جلوگیری از reactivity روی یک instance third-party\r\nconst chart = markRaw(new ChartInstance());\r\nconst state = reactive({ chart }); // chart ذخیره می‌شود اما هرگز proxy نمی‌شود\r\n\r\n// toRaw — استخراج object اصلی از یک reactive proxy\r\nconst user = reactive({ name: 'Rasool' });\r\nconst raw = toRaw(user); // plain JS object\r\nconsole.log(raw === user); // false — proxy !== اصلی\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-054",
@@ -848,7 +840,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Lazy-loading route‌ها به این معنی است که کامپوننت هر route فقط زمانی بارگذاری می‌شود که کاربر به آن route navigate می‌کند، به جای اینکه همه چیز در bundle اولیه گنجانده شود.\r\n\r\nاین با استفاده از dynamic import پیاده‌سازی می‌شود: `() => import('./views/Page.vue')`.\r\n\r\nVite و webpack به طور خودکار chunk‌های کد جداگانه برای هر route lazy-loaded ایجاد می‌کنند و payload اولیه JavaScript را به میزان قابل توجهی کاهش می‌دهند.\r\n\r\nهمچنین می‌توانید مسیرها را با استفاده از کامنت webpackChunkName یا `rollupOptions` در Vite، در یک قطعه کد گروه‌بندی کنید.\r\n\r\nمثال:\r\n\r\n```js\r\nimport { createRouter, createWebHistory } from 'vue-router';\r\n\r\nconst router = createRouter({\r\n  history: createWebHistory(),\r\n  routes: [\r\n    {\r\n      path: '/',\r\n      component: () => import('./views/Home.vue'),\r\n    },\r\n    {\r\n      path: '/admin',\r\n      // فقط زمانی بارگذاری می‌شود که کاربر به /admin برود\r\n      component: () => import('./views/Admin.vue'),\r\n    },\r\n    {\r\n      path: '/settings',\r\n      // گروه‌بندی در یک named chunk\r\n      component: () =>\r\n        import(/* webpackChunkName: \"settings\" */ './views/Settings.vue'),\r\n    },\r\n  ],\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-059",
@@ -932,7 +924,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue 3 واکنش‌پذیری مبتنی بر `Object.defineProperty` در Vue 2 را با JavaScript `Proxy` جایگزین کرد.\r\n\r\nوقتی `reactive(obj)` را فراخوانی می‌کنید، Vue object را در یک `Proxy` که دسترسی به property و mutation را intercept می‌کند wrap می‌کند.\r\n\r\nدر طول `get`، Vue `track()` را فراخوانی می‌کند تا record کند کدام reactive effect در حال اجرا است و به آن property وابسته است.\r\n\r\nدر طول `set`، Vue `trigger()` را فراخوانی می‌کند تا تمام effect‌های recorded که به property تغییر یافته وابسته هستند را notify کند تا دوباره اجرا شوند.\r\n\r\nاین رویکرد مزایای کلیدی نسبت به Vue 2 دارد:\r\n\r\n- اضافه و حذف property را بدون API‌های خاص تشخیص می‌دهد\r\n- آرایه‌ها را بومی بدون wrap کردن متدهای mutation مدیریت می‌کند\r\n- از `Map`، `Set`، `WeakMap` و `WeakSet` پشتیبانی می‌کند\r\n\r\nمثال (internals ساده شده):\r\n\r\n```js\r\nfunction reactive(target) {\r\n  return new Proxy(target, {\r\n    get(target, key, receiver) {\r\n      track(target, key); // ثبت کنید کدام effect این را می‌خواند\r\n      return Reflect.get(target, key, receiver);\r\n    },\r\n    set(target, key, value, receiver) {\r\n      const result = Reflect.set(target, key, value, receiver);\r\n      trigger(target, key); // به effect‌هایی که به این key وابسته هستند اطلاع دهید\r\n      return result;\r\n    },\r\n  });\r\n}\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-065",
@@ -974,7 +966,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "وقتی یک کامپوننت Vue 3 mount می‌شود، runtime یک دنباله مشخص را طی می‌کند:\r\n\r\n1. **ساخت instance کامپوننت** — state reactive، computed propertyها و watcherها مقداردهی می‌شوند.\r\n2. **اجرای `setup()`** — نقطه ورود Composition API. Propها resolve می‌شوند و زنجیره‌های `provide`/`inject` برقرار می‌شوند.\r\n3. **Compile شدن تابع render** (در SFCها این کار در build time توسط compiler انجام می‌شود).\r\n4. **اجرای هوک‌های `onBeforeMount`**.\r\n5. **اجرای render effect** — تابع render اجرا شده و یک درخت virtual DOM تولید می‌کند. در طول این اجرا، وابستگی‌های reactive ردیابی می‌شوند.\r\n6. **Patch کردن virtual DOM روی DOM واقعی** — ماژول runtime-dom درخت vnode را به nodeهای DOM واقعی تبدیل می‌کند.\r\n7. **اجرای هوک‌های `onMounted`** — هوک‌های فرزندان قبل از والدین اجرا می‌شوند (از پایین به بالا).\r\n\r\nبعد از mount، هر تغییر در وابستگی reactive باعث می‌شود render effect کامپوننت دوباره اجرا شود، یک درخت vnode جدید تولید کند، و Vue فقط nodeهای تغییریافته DOM را به‌روز کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-068",
@@ -988,7 +980,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Pinia کتابخانه مدیریت state رسمی و توصیه‌شده برای Vue 3 است که عملاً جایگزین Vuex شده.\r\n\r\nتفاوت‌های کلیدی:\r\n\r\n| ویژگی           | Vuex                        | Pinia                                     |\r\n| --------------- | --------------------------- | ----------------------------------------- |\r\n| Mutationها      | برای تغییر state الزامی بود | حذف شده — state مستقیم تغییر می‌کند       |\r\n| ماژول‌ها        | nested و verbose            | هر store یک ماژول مسطح مستقل است          |\r\n| TypeScript      | نیاز به boilerplate دارد    | پشتیبانی first-class از TypeScript        |\r\n| ابزارهای توسعه  | پشتیبانی‌شده                | پشتیبانی‌شده با DX بهتر                   |\r\n| حجم bundle      | بزرگ‌تر                     | بسیار کوچک‌تر (~۱KB)                      |\r\n| Composition API | پشتیبانی محدود              | پشتیبانی native با store به سبک `setup()` |\r\n\r\nدر Pinia می‌توانید از Options-style یا setup-style استفاده کنید:\r\n\r\n```js\r\n// Pinia - Options store\r\nimport { defineStore } from 'pinia';\r\n\r\nexport const useCounterStore = defineStore('counter', {\r\n  state: () => ({ count: 0 }),\r\n  getters: {\r\n    double: (state) => state.count * 2,\r\n  },\r\n  actions: {\r\n    increment() {\r\n      this.count++;\r\n    },\r\n  },\r\n});\r\n\r\n// Pinia - Setup store (سبک Composition API)\r\nexport const useCounterStore = defineStore('counter', () => {\r\n  const count = ref(0);\r\n  const double = computed(() => count.value * 2);\r\n  function increment() {\r\n    count.value++;\r\n  }\r\n  return { count, double, increment };\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-069",
@@ -1002,7 +994,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "بخش‌های dynamic route با پیشوند دو نقطه در path route تعریف می‌شوند. آن‌ها هر مقداری را در آن موقعیت تطبیق می‌دهند و مقدار منطبق را از طریق `route.params` در دسترس قرار می‌دهند.\r\n\r\n```js\r\nconst routes = [\r\n  { path: '/users/:id', component: UserProfile },\r\n  { path: '/posts/:category/:slug', component: BlogPost },\r\n];\r\n```\r\n\r\nدرون یک کامپوننت با `useRoute()` به آن‌ها دسترسی دارید:\r\n\r\n```vue\r\n<script setup>\r\nimport { useRoute } from 'vue-router';\r\n\r\nconst route = useRoute();\r\nconst userId = route.params.id; // مثلاً \"42\"\r\n</script>\r\n```\r\n\r\n**واکنش به تغییر param** — هنگام ناوبری بین همان route با paramهای مختلف (مثلاً `/users/1` → `/users/2`)، کامپوننت reuse می‌شود. از `watch` یا `watchEffect` استفاده کنید:\r\n\r\n```js\r\nwatch(\r\n  () => route.params.id,\r\n  (newId) => {\r\n    fetchUser(newId);\r\n  },\r\n);\r\n```\r\n\r\n**Paramهای اختیاری** از `?` و **تطبیق چندگانه** از `*` یا `+` استفاده می‌کنند:\r\n\r\n```js\r\n{\r\n  path: '/files/:path*';\r\n} // /files/a/b/c را تطبیق می‌دهد\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-070",
@@ -1030,7 +1022,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "compiler template Vue به نام `@vue/compiler-dom` در build time رشته‌های template را به render function جاوااسکریپت تبدیل می‌کند (از طریق `@vitejs/plugin-vue` یا `vue-loader`).\r\n\r\npipeline کامپایل سه مرحله دارد:\r\n\r\n1. **Parse** — HTML template به یک Abstract Syntax Tree (AST) تجزیه می‌شود.\r\n2. **Transform** — AST پیمایش و بهینه‌سازی می‌شود. Vue transformهایی برای directive‌ها (`v-if`، `v-for`)، event handlerها، کامپایل slot و علامت‌گذاری زیردرخت‌های static با فلگ‌های `hoistStatic` اعمال می‌کند تا یک‌بار خارج از تابع render ساخته شوند.\r\n3. **Generate (تولید کد)** — AST بهینه‌شده به یک رشته تابع جاوااسکریپت تبدیل می‌شود.\r\n\r\nیک template ساده مثل:\r\n\r\n```html\r\n<div class=\"hello\">{{ msg }}</div>\r\n```\r\n\r\nتقریباً به این شکل کامپایل می‌شود:\r\n\r\n```js\r\nimport {\r\n  createElementVNode as _createElementVNode,\r\n  toDisplayString as _toDisplayString,\r\n} from 'vue';\r\n\r\nfunction render(_ctx) {\r\n  return _createElementVNode(\r\n    'div',\r\n    { class: 'hello' },\r\n    _toDisplayString(_ctx.msg),\r\n  );\r\n}\r\n```\r\n\r\nnodeهای static بالای تابع hoist می‌شوند تا فقط یک‌بار ساخته شوند و از allocate شدن غیرضروری در re-renderها جلوگیری شود. nodeهای dynamic با patch flag (اعداد صحیح bitwise) ردیابی می‌شوند که به runtime می‌گویند دقیقاً چه چیزی تغییر کرده.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-072",
@@ -1044,7 +1036,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue DOM را به‌صورت synchronous به‌روز نمی‌کند. در عوض، re-render کامپوننت را در یک صف قرار داده و به‌صورت async در یک microtask (با `Promise.then`) flush می‌کند.\r\n\r\nیعنی چندین تغییر state synchronous در یک task فقط یک re-render ایجاد می‌کنند:\r\n\r\n```js\r\nconst count = ref(0);\r\n\r\ncount.value++;\r\ncount.value++;\r\ncount.value++;\r\n// DOM یک بار به‌روز می‌شود، نه سه بار\r\n```\r\n\r\nVue یک job queue نگهداری می‌کند. وقتی یک reactive effect trigger می‌شود، `queueJob(effect)` فراخوانی می‌شود. jobهای تکراری (یک render effect کامپوننت) با `id` داخلی deduplicate می‌شوند. بعد از پایان کد synchronous، microtask مربوطه `flushJobs()` را اجرا می‌کند، jobها بر اساس `id` مرتب (کامپوننت‌های والد قبل از فرزندان رندر می‌شوند) و به ترتیب اجرا می‌شوند.\r\n\r\n`nextTick()` یک promise برمی‌گرداند که بعد از چرخه flush فعلی resolve می‌شود:\r\n\r\n```js\r\nimport { nextTick, ref } from 'vue';\r\n\r\nconst msg = ref('hello');\r\nmsg.value = 'world';\r\n\r\nawait nextTick();\r\n// DOM حالا 'world' را نمایش می‌دهد\r\n```\r\n\r\nWatcherهای pre-flush (با `flush: 'pre'`، پیش‌فرض `watch`) قبل از re-render کامپوننت اجرا می‌شوند. Watcherهای post-flush (`flush: 'post'`) بعد از آن اجرا می‌شوند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-073",
@@ -1058,7 +1050,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "reactivity Vue 3 بر دو مفهوم بنا شده: **effectها** (توابعی که باید با تغییر وابستگی‌هاشان دوباره اجرا شوند) و **مجموعه‌های dependency** (Set هایی از effectها که یک property reactive می‌خوانند).\r\n\r\nVue به‌صورت داخلی یک متغیر global `activeEffect` نگه می‌دارد که به effect در حال اجرا اشاره می‌کند. در طول getter reactive (trap `get` از Proxy)، تابع `track()` Vue:\r\n\r\n1. `activeEffect` را می‌خواند — اگر null باشد، چیزی ردیابی نمی‌شود.\r\n2. یک ساختار `WeakMap<target, Map<key, Set<effect>>>` جستجو (یا ایجاد) می‌کند.\r\n3. `activeEffect` را به `Set` مربوط به آن جفت `target.key` اضافه می‌کند.\r\n\r\nدر طول setter reactive (trap `set` از Proxy)، تابع `trigger()` Vue:\r\n\r\n1. مجموعه dependency برای `target.key` را جستجو می‌کند.\r\n2. تمام effectهای آن مجموعه را برای اجرای مجدد از طریق Vue scheduler برنامه‌ریزی می‌کند.\r\n\r\n```js\r\n// pseudocode ساده‌شده\r\nlet activeEffect = null;\r\nconst targetMap = new WeakMap();\r\n\r\nfunction track(target, key) {\r\n  if (!activeEffect) return;\r\n  let depsMap = targetMap.get(target);\r\n  if (!depsMap) targetMap.set(target, (depsMap = new Map()));\r\n  let dep = depsMap.get(key);\r\n  if (!dep) depsMap.set(key, (dep = new Set()));\r\n  dep.add(activeEffect);\r\n}\r\n\r\nfunction trigger(target, key) {\r\n  const depsMap = targetMap.get(target);\r\n  if (!depsMap) return;\r\n  depsMap.get(key)?.forEach((effect) => effect());\r\n}\r\n```\r\n\r\nاستفاده از `WeakMap` به این معناست که نقشه dependency برای یک شی وقتی خود شی garbage collect می‌شود، آزاد می‌شود.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-074",
@@ -1072,7 +1064,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "**CSR (رندر سمت client)** — سرور یک پوسته HTML حداقلی (اغلب فقط `<div id=\"app\"></div>`) و یک JavaScript bundle ارسال می‌کند. مرورگر JS را دانلود، Vue را اجرا و DOM را کاملاً سمت client می‌سازد. Time to First Byte سریع است، اما صفحه تا پارس و اجرا شدن JS خالی است (Time to Interactive کند در شبکه‌های کند).\r\n\r\n**SSR (رندر سمت server)** — Vue درخت کامپوننت را روی سرور به یک رشته HTML رندر می‌کند. مرورگر بلافاصله HTML کامل دریافت می‌کند (First Contentful Paint سریع). بعد از load شدن bundle JS، Vue **hydrate** می‌کند — event listenerها را متصل و آن را interactive می‌کند بدون re-render.\r\n\r\n|          | CSR                 | SSR                  |\r\n| -------- | ------------------- | -------------------- |\r\n| رندر اول | کند (صفحه خالی)     | سریع (HTML آماده)    |\r\n| SEO      | نیاز به تنظیم اضافی | عالی                 |\r\n| بار سرور | کم                  | بیشتر                |\r\n| پیچیدگی  | ساده‌تر             | نیاز به سرور Node.js |\r\n\r\nراه‌حل رسمی SSR Vue، **Nuxt.js** است که تنظیمات سرور، routing مبتنی بر فایل و استراتژی hydration را abstract می‌کند.\r\n\r\nبرای SSR غیر Node، `vue/server-renderer` می‌تواند رشته‌های HTML را از هر محیط سروری خروجی دهد.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-075",
@@ -1086,7 +1078,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`provide` / `inject` سیستم dependency injection Vue برای به اشتراک‌گذاری داده در یک درخت کامپوننت بدون prop drilling است.\r\n\r\n**کلیدهای Symbol** از تداخل تصادفی کلیدها در کتابخانه‌ها یا codebases بزرگ جلوگیری می‌کنند:\r\n\r\n```js\r\n// keys.js\r\nexport const USER_KEY = Symbol('user');\r\n```\r\n\r\n```js\r\n// کامپوننت Provider\r\nimport { provide, ref } from 'vue';\r\nimport { USER_KEY } from './keys';\r\n\r\nconst user = ref({ name: 'علی' });\r\nprovide(USER_KEY, user);\r\n```\r\n\r\n```js\r\n// کامپوننت فرزند\r\nimport { inject } from 'vue';\r\nimport { USER_KEY } from './keys';\r\n\r\nconst user = inject(USER_KEY);\r\n```\r\n\r\n**Injection reactive** — ارائه یک مقدار `ref` یا `reactive` مقدار inject شده را زنده نگه می‌دارد:\r\n\r\n```js\r\n// در provider\r\nconst theme = ref('light');\r\nprovide('theme', theme); // خود ref را provide کنید، نه theme.value را\r\n\r\n// در consumer\r\nconst theme = inject('theme'); // theme یک Ref<string> است\r\n```\r\n\r\n**مقادیر پیش‌فرض** — آرگومان دوم `inject` یک fallback است که وقتی provider‌ای پیدا نشد استفاده می‌شود:\r\n\r\n```js\r\nconst theme = inject('theme', ref('light'));\r\n// یا یک factory function برای پیش‌فرض‌های گران:\r\nconst config = inject('config', () => ({ debug: false }), true);\r\n```\r\n\r\n**Injection فقط خواندنی** — قبل از provide کردن با `readonly()` wrap کنید تا consumer‌ها نتوانند مقدار را mutate کنند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-076",
@@ -1100,7 +1092,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "وقتی state reactive تغییر می‌کند، pipeline رندرینگ Vue این مراحل را طی می‌کند:\r\n\r\n1. **Trigger** — یک setter reactive، `trigger()` را فراخوانی کرده و render effect کامپوننت را در job queue برنامه‌ریزی می‌کند.\r\n2. **Flush scheduler** — در microtask بعدی، `flushJobs()` اجرا شده و render effectهای صف شده را به ترتیب والد-اول پردازش می‌کند.\r\n3. **Re-render** — تابع render کامپوننت اجرا شده، به state reactive دسترسی می‌یابد (که ردیابی می‌شود) و یک درخت **virtual DOM (vnode)** جدید تولید می‌کند.\r\n4. **Diff (patch)** — Vue درخت vnode جدید را با درخت قبلی مقایسه می‌کند. با استفاده از **patch flagهای** تنظیم‌شده توسط compiler، Vue دقیقاً می‌داند کدام nodeها و attributeها dynamic هستند و بخش‌های static را کاملاً رد می‌کند.\r\n5. **به‌روزرسانی DOM** — فقط nodeهایی که تغییر کرده‌اند از طریق ماژول runtime-dom در DOM واقعی به‌روز می‌شوند.\r\n6. **Post-flush hooks** — هوک‌های `onUpdated` اجرا می‌شوند و callback‌های post-flush از `watchEffect` / `watch` اجرا می‌شوند.\r\n\r\nstatic hoisting و patch flagهای compiler برای عملکرد حیاتی هستند — آن‌ها به runtime اجازه می‌دهند زیردرخت‌های بزرگ که تغییر نکرده‌اند را رد کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-077",
@@ -1114,7 +1106,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue مکانیزم‌های مختلفی برای ارتباط کامپوننت‌ها فراهم می‌کند:\r\n\r\n**۱. Props (والد → فرزند)** — روش استاندارد برای انتقال داده به پایین:\r\n\r\n```js\r\ndefineProps({ title: String, count: Number });\r\n```\r\n\r\n**۲. Emits (فرزند → والد)** — فرزند رویدادهایی emit می‌کند که والد به آن‌ها گوش می‌دهد:\r\n\r\n```js\r\nconst emit = defineEmits(['update:modelValue', 'close']);\r\nemit('close');\r\n```\r\n\r\n**۳. v-model** — two-way binding به عنوان خلاصه props + emits:\r\n\r\n```html\r\n<MyInput v-model=\"text\" />\r\n<!-- گسترش می‌یابد به: :modelValue=\"text\" @update:modelValue=\"text = $event\" -->\r\n```\r\n\r\n**۴. provide / inject** — جد → هر فرزندی، از کامپوننت‌های میانی عبور می‌کند.\r\n\r\n**۵. Pinia / Vuex** — state مشترک بین کامپوننت‌ها در یک store مرکزی.\r\n\r\n**۶. Template refs + defineExpose** — والد مستقیماً متدها یا state فرزند را فراخوانی می‌کند:\r\n\r\n```js\r\n// فرزند expose می‌کند\r\ndefineExpose({ reset, validate });\r\n// والد\r\nconst formRef = ref(null);\r\nformRef.value.validate();\r\n```\r\n\r\n**۷. Event bus** — با استفاده از یک instance کوچک mitt برای ارتباط کاملاً مجزا بین کامپوننت‌های غیرمرتبط. با احتیاط استفاده کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-078",
@@ -1128,7 +1120,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`<Teleport>` محتوای slot خود را در یک نود DOM متفاوت از جایی که کامپوننت از نظر منطقی در درخت کامپوننت قرار دارد، رندر می‌کند.\r\n\r\nاین برای modalها، tooltipها، dropdownها و notificationها ضروری است — رابط کاربری که باید از `overflow: hidden` یا stacking context های `z-index` اعمال‌شده توسط المنت‌های والد خارج شود.\r\n\r\n```vue\r\n<template>\r\n  <button @click=\"open = true\">باز کردن Modal</button>\r\n\r\n  <Teleport to=\"body\">\r\n    <div v-if=\"open\" class=\"modal-overlay\">\r\n      <div class=\"modal\">\r\n        <p>محتوای modal</p>\r\n        <button @click=\"open = false\">بستن</button>\r\n      </div>\r\n    </div>\r\n  </Teleport>\r\n</template>\r\n```\r\n\r\nattribute `to` یک CSS selector یا یک المنت DOM واقعی قبول می‌کند. محتوای teleport شده بخشی از درخت منطقی کامپوننت باقی می‌ماند — `provide`/`inject` از کامپوننت والدش به ارث می‌برد و event handlerهایش عادی کار می‌کنند.\r\n\r\nprop `disabled` به شما اجازه می‌دهد teleport کردن را به‌صورت شرطی غیرفعال کنید:\r\n\r\n```vue\r\n<Teleport to=\"body\" :disabled=\"isMobile\">...</Teleport>\r\n```\r\n\r\nچندین تله‌پورت می‌توانند یک کانتینر را هدف قرار دهند و به ترتیب به هم متصل شوند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-079",
@@ -1142,7 +1134,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`<Suspense>` یک کامپوننت داخلی Vue است که حالت loading چندین عملیات async در زیردرخت کامپوننت‌هایش را هماهنگ می‌کند و محتوای fallback را نمایش می‌دهد تا زمانی که همه وابستگی‌های async resolve شوند.\r\n\r\nدو named slot دارد:\r\n\r\n- `#default` — محتوای اصلی (می‌تواند شامل async componentها یا کامپوننت‌هایی با `setup()` async باشد)\r\n- `#fallback` — هنگامی که هر کامپوننت default-slot هنوز در حال load شدن است نمایش داده می‌شود\r\n\r\n```vue\r\n<Suspense>\r\n  <template #default>\r\n    <AsyncDashboard />\r\n  </template>\r\n  <template #fallback>\r\n    <LoadingSpinner />\r\n  </template>\r\n</Suspense>\r\n```\r\n\r\nیک `setup()` async کامپوننتی است که تابع `setup` آن `async` است یا یک Promise برمی‌گرداند:\r\n\r\n```vue\r\n<script setup>\r\nconst data = await fetch('/api/dashboard').then((r) => r.json());\r\n</script>\r\n```\r\n\r\n`<Suspense>` رویدادهای `@pending`، `@resolve` و `@fallback` برای کنترل دقیق emit می‌کند.\r\n\r\n**تودرتو**: مرزهای فرزند `<Suspense>` بارگذاری خود را به طور مستقل مدیریت می‌کنند.\r\n\r\n**نکته**: `<Suspense>` هنوز در برخی تنظیمات آزمایشی است و در ترکیب با SSR streaming در frameworkهایی مثل Nuxt 3 بهترین عملکرد را دارد.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-080",
@@ -1156,7 +1148,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue modifier های داخلی `v-model` را ارائه می‌دهد که مقدار bound شده را تبدیل می‌کنند:\r\n\r\n- `.trim` — فضای خالی ابتدا و انتهای رشته‌ها را حذف می‌کند\r\n- `.number` — مقدار input را با `parseFloat` به عدد تبدیل می‌کند\r\n- `.lazy` — مقدار را به جای رویداد `input` روی رویداد `change` sync می‌کند\r\n\r\n```html\r\n<input v-model.trim.lazy=\"username\" />\r\n```\r\n\r\n**Modifier های سفارشی** — هنگام استفاده از `v-model` روی یک کامپوننت سفارشی، modifier ها به عنوان prop `modelModifiers` (یا `[propName]Modifiers` برای v-modelهای نام‌گذاری‌شده) ارسال می‌شوند:\r\n\r\n```vue\r\n<!-- Parent -->\r\n<MyInput v-model.capitalize=\"text\" />\r\n```\r\n\r\n```vue\r\n<!-- MyInput.vue -->\r\n<script setup>\r\nconst props = defineProps({\r\n  modelValue: String,\r\n  modelModifiers: { default: () => ({}) },\r\n});\r\nconst emit = defineEmits(['update:modelValue']);\r\n\r\nfunction handleInput(e) {\r\n  let value = e.target.value;\r\n  if (props.modelModifiers.capitalize) {\r\n    value = value.charAt(0).toUpperCase() + value.slice(1);\r\n  }\r\n  emit('update:modelValue', value);\r\n}\r\n</script>\r\n\r\n<template>\r\n  <input :value=\"modelValue\" @input=\"handleInput\" />\r\n</template>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-081",
@@ -1170,7 +1162,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`<Transition>` یک المنت یا کامپوننت تکی را هنگام ورود و خروج از DOM animate می‌کند.\r\n\r\n`<TransitionGroup>` یک **لیست از المنت‌ها** را animate می‌کند — اضافه شدن، حذف شدن و مرتب‌سازی مجدد چندین آیتم به‌طور همزمان را مدیریت می‌کند و از تکنیک FLIP animation از طریق کلاس `v-move` پشتیبانی می‌کند.\r\n\r\nتفاوت‌های کلیدی:\r\n\r\n- `<TransitionGroup>` به‌طور پیش‌فرض یک المنت wrapper واقعی رندر می‌کند (از prop `tag` یا `tag=\"\"` برای حالت fragment استفاده کنید).\r\n- آیتم‌ها باید `key` یکتا داشته باشند تا محاسبات FLIP کار کنند.\r\n- از کلاس `v-move` پشتیبانی می‌کند که روی آیتم‌های در حال جابه‌جایی اعمال می‌شود.\r\n\r\n```vue\r\n<TransitionGroup name=\"list\" tag=\"ul\">\r\n  <li v-for=\"item in items\" :key=\"item.id\">\r\n    {{ item.text }}\r\n  </li>\r\n</TransitionGroup>\r\n```\r\n\r\n```css\r\n.list-enter-active,\r\n.list-leave-active {\r\n  transition: all 0.3s ease;\r\n}\r\n.list-enter-from,\r\n.list-leave-to {\r\n  opacity: 0;\r\n  transform: translateX(-30px);\r\n}\r\n/* FLIP move transition */\r\n.list-move {\r\n  transition: transform 0.3s ease;\r\n}\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-082",
@@ -1198,7 +1190,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Composableها توابعی هستند که منطق stateful را با استفاده از Composition API کپسوله و reuse می‌کنند. معادل Vue 3 برای React hookها هستند و جایگزین mixinهای Vue 2 می‌شوند.\r\n\r\nیک composable:\r\n\r\n- به قرارداد از پیشوند `use` استفاده می‌کند (`useFetch`، `useMousePosition`)\r\n- می‌تواند از `ref`، `reactive`، `computed`، `watch`، `onMounted` و غیره استفاده کند\r\n- state reactive و/یا توابع برمی‌گرداند\r\n\r\n```js\r\n// useFetch.js\r\nimport { ref, watchEffect } from 'vue';\r\n\r\nexport function useFetch(url) {\r\n  const data = ref(null);\r\n  const error = ref(null);\r\n  const loading = ref(false);\r\n\r\n  watchEffect(async (onCleanup) => {\r\n    const controller = new AbortController();\r\n    onCleanup(() => controller.abort());\r\n\r\n    loading.value = true;\r\n    error.value = null;\r\n    try {\r\n      const res = await fetch(url.value ?? url, { signal: controller.signal });\r\n      data.value = await res.json();\r\n    } catch (e) {\r\n      if (e.name !== 'AbortError') error.value = e;\r\n    } finally {\r\n      loading.value = false;\r\n    }\r\n  });\r\n\r\n  return { data, error, loading };\r\n}\r\n```\r\n\r\n**بهترین روش‌ها:**\r\n\r\n- refها را به عنوان آرگومان قبول کنید تا composable به ورودی‌های متغیر واکنش‌پذیر باشد\r\n- side effectها (تایمرها، subscriptionها) را با `onUnmounted` یا `onCleanup` پاکسازی کنید\r\n- ارجاعات reactive ساده برگردانید — state داخلی را قبل از بازگشت destructure نکنید\r\n- composableها باید فقط داخل `setup()` یا composable دیگری فراخوانی شوند",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-084",
@@ -1212,7 +1204,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Template refها دسترسی مستقیم به یک المنت DOM یا instance کامپوننت فرزند را بعد از mount شدن کامپوننت فراهم می‌کنند.\r\n\r\nدر `<script setup>`، یک `ref` با همان نام attribute `ref` روی المنت تعریف کنید:\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onMounted } from 'vue';\r\n\r\nconst inputEl = ref(null);\r\n\r\nonMounted(() => {\r\n  inputEl.value.focus(); // دسترسی به المنت DOM واقعی\r\n});\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"inputEl\" type=\"text\" />\r\n</template>\r\n```\r\n\r\nبرای **کامپوننت فرزند**، ref به interface عمومی فرزند اشاره می‌کند. در کامپوننت‌های `<script setup>`، باید از `defineExpose` استفاده کنید تا والد بتواند به چیزی دسترسی داشته باشد:\r\n\r\n```vue\r\n<!-- Child.vue -->\r\n<script setup>\r\nconst count = ref(0);\r\ndefineExpose({ count });\r\n</script>\r\n```\r\n\r\n```vue\r\n<!-- Parent.vue -->\r\n<script setup>\r\nconst childRef = ref(null);\r\n// بعد از mount: childRef.value.count قابل دسترسی است\r\n</script>\r\n<template>\r\n  <Child ref=\"childRef\" />\r\n</template>\r\n```\r\n\r\n**`v-for` با refs** — یک ref روی المنت `v-for` بعد از mount با آرایه‌ای از nodeهای DOM پر می‌شود.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-085",
@@ -1226,7 +1218,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "گزینه `flush` در `watch` و `watchEffect` کنترل می‌کند که callback نسبت به چرخه به‌روزرسانی کامپوننت Vue چه زمانی اجرا شود.\r\n\r\n**`flush: 'pre'` (پیش‌فرض برای `watch`)** — callback قبل از re-render کامپوننت اجرا می‌شود. مفید وقتی نیاز دارید state ای را بخوانید یا تغییر دهید که سپس در render فعلی منعکس شود.\r\n\r\n**`flush: 'post'` (پیش‌فرض برای `watchEffect` هنگام استفاده از `watchPostEffect`)** — بعد از re-render کامپوننت و به‌روزرسانی DOM اجرا می‌شود. هنگامی استفاده کنید که callback نیاز به دسترسی به DOM به‌روز شده دارد.\r\n\r\n**`flush: 'sync'`** — به‌صورت synchronous اجرا می‌شود، بلافاصله وقتی وابستگی reactive تغییر می‌کند. scheduler را کاملاً دور می‌زند. با احتیاط بسیار زیاد استفاده کنید.\r\n\r\n```js\r\nimport { watch, watchPostEffect, watchSyncEffect } from 'vue';\r\n\r\n// قبل از به‌روزرسانی کامپوننت اجرا می‌شود (pre پیش‌فرض watch است)\r\nwatch(source, callback, { flush: 'pre' });\r\n\r\n// بعد از به‌روزرسانی کامپوننت اجرا می‌شود\r\nwatch(source, callback, { flush: 'post' });\r\n\r\n// aliasهای راحت\r\nwatchPostEffect(() => {\r\n  /* post-flush */\r\n});\r\nwatchSyncEffect(() => {\r\n  /* sync */\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-086",
@@ -1254,7 +1246,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "یک hydration mismatch زمانی رخ می‌دهد که HTML رندر شده روی سرور با آنچه Vue روی client رندر می‌کند متفاوت باشد. Vue یک warning log می‌کند و به client-side rendering برای زیردرخت ناهماهنگ fallback می‌کند.\r\n\r\n**دلایل رایج:**\r\n\r\n1. **رندر غیرقطعی** — استفاده مستقیم از `Math.random()`، `Date.now()` یا `uuid()` در templateها.\r\n2. **API‌های مخصوص browser** — بررسی `window`، `localStorage` یا `document` در `setup()` بدون گارد با `onMounted`.\r\n3. **ساختار HTML نامعتبر** — مثلاً یک `<p>` داخل `<p>` دیگر که مرورگرها بی‌سروصدا درست می‌کنند.\r\n4. **تفاوت‌های مبتنی بر user agent** — رندر محتوای متفاوت بر اساس هدر HTTP `User-Agent`.\r\n\r\n**راه‌حل‌ها:**\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onMounted } from 'vue';\r\n\r\nconst isClient = ref(false);\r\nonMounted(() => {\r\n  isClient.value = true;\r\n});\r\n</script>\r\n\r\n<template>\r\n  <!-- فقط روی client رندر می‌شود، بدون mismatch -->\r\n  <ClientOnly>\r\n    <DatePicker />\r\n  </ClientOnly>\r\n\r\n  <!-- یا گارد دستی -->\r\n  <div v-if=\"isClient\">{{ new Date().toLocaleString() }}</div>\r\n</template>\r\n```\r\n\r\nاز `v-if=\"false\"` با wrapper `<ClientOnly>` (موجود در Nuxt) یا attribute `suppressHydrationWarning` برای تفاوت‌های عمدی استفاده کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-088",
@@ -1268,7 +1260,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`reactive()` در Vue 3 از Proxy برای رهگیری تمام دسترسی‌های property استفاده می‌کند، از جمله خواندن ایندکس آرایه و تغییر `length` — بنابراین mutation‌های آرایه بدون هیچ wrapping خاصی reactive هستند.\r\n\r\nهم دسترسی index‌گذاری و هم متدهای mutation به‌روزرسانی‌های reactive را trigger می‌کنند:\r\n\r\n```js\r\nimport { reactive } from 'vue';\r\n\r\nconst list = reactive(['a', 'b', 'c']);\r\n\r\nlist.push('d'); // به‌روزرسانی trigger می‌کند\r\nlist[0] = 'z'; // به‌روزرسانی trigger می‌کند\r\nlist.length = 1; // به‌روزرسانی trigger می‌کند\r\nlist.sort(); // به‌روزرسانی trigger می‌کند\r\nlist.splice(1, 1); // به‌روزرسانی trigger می‌کند\r\n```\r\n\r\nاین با Vue 2 متفاوت است، جایی که فقط متدهای mutation خاص (`push`، `pop`، `splice` و غیره) رهگیری می‌شدند و انتساب مستقیم ایندکس به‌روزرسانی را trigger نمی‌کرد.\r\n\r\nبرای آرایه‌های `ref`:\r\n\r\n```js\r\nconst items = ref(['a', 'b', 'c']);\r\nitems.value.push('d'); // reactive\r\nitems.value = [...items.value, 'e']; // همچنین reactive — کل آرایه را جایگزین می‌کند\r\n```\r\n\r\n**جایگزین کردن آرایه** اغلب الگوی تمیزتری است هنگام فیلتر کردن یا map کردن، زیرا اطمینان می‌دهد Vue تغییر را می‌بیند و لیست‌های جدید و قدیمی را به‌درستی diff می‌کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-089",
@@ -1282,7 +1274,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`shallowRef` یک ref می‌سازد که فقط خود انتساب `.value` reactive است — property‌های شیء داخلی **به‌صورت عمیق** reactive نمی‌شوند.\r\n\r\n```js\r\nimport { shallowRef } from 'vue';\r\n\r\nconst state = shallowRef({ count: 0 });\r\n\r\nstate.value.count++; // به‌روزرسانی trigger نمی‌کند\r\nstate.value = { count: 1 }; // به‌روزرسانی trigger می‌کند (جایگزین کردن .value)\r\n```\r\n\r\n**چه زمانی از `shallowRef` استفاده کنید:**\r\n\r\n1. **ساختارهای داده بزرگ** — wrapping یک شیء deeply nested با `ref` هر property را reactive می‌کند که گران است. اگر همیشه کل شیء را جایگزین می‌کنید (نه mutate)، `shallowRef` این هزینه را می‌پرهیزد.\r\n2. **داده‌های خارجی/immutable** — داده‌های پاسخ API که در جای خود mutate نمی‌کنید.\r\n3. **اشیاء غیر-reactive** — اشیایی که قرار نیست reactive باشند اما برای reference ذخیره می‌شوند.\r\n\r\n```js\r\n// گران — proxy عمیق برای یک dataset ۱۰،۰۰۰ آیتمی می‌سازد\r\nconst data = ref(largeDataset);\r\n\r\n// بهتر — فقط تعویض .value ردیابی می‌شود\r\nconst data = shallowRef(largeDataset);\r\ndata.value = newDataset; // یک re-render trigger می‌کند\r\n```\r\n\r\n`triggerRef(shallowRef)` حتی هنگام mutate مستقیم شیء داخلی، به‌روزرسانی را اجبار می‌کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-090",
@@ -1310,7 +1302,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`app.config.errorHandler` یک handler global ثبت می‌کند که خطاهای پرتاب‌شده در طول رندر کامپوننت، lifecycle hookها و event handlerهایی که توسط هوک‌های `onErrorCaptured` محلی گرفته نشده‌اند را catch می‌کند.\r\n\r\nسه آرگومان دریافت می‌کند: خطا، instance کامپوننت و یک رشته توضیح‌دهنده محل رخداد خطا.\r\n\r\n```js\r\n// main.js\r\nimport { createApp } from 'vue';\r\nimport App from './App.vue';\r\n\r\nconst app = createApp(App);\r\n\r\napp.config.errorHandler = (error, instance, info) => {\r\n  // info یک رشته مثل 'setup function'، 'v-on handler' و غیره است\r\n  console.error('خطای global Vue:', error);\r\n  console.log('کامپوننت:', instance?.$options.name ?? 'نامشخص');\r\n  console.log('محل:', info);\r\n\r\n  // ارسال به سرویس ردیابی خطا\r\n  Sentry.captureException(error, { extra: { info } });\r\n};\r\n\r\napp.mount('#app');\r\n```\r\n\r\n**ترتیب propagation خطا:**\r\n\r\n1. `onErrorCaptured` روی کامپوننت‌های والد — می‌تواند با return کردن `false` suppress کند\r\n2. `app.config.errorHandler` — هر چیزی که suppress نشده را catch می‌کند\r\n\r\n`app.config.warnHandler` به طور مشابه کار می‌کند اما برای هشدارهای Vue (فقط در توسعه فعال است).",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-092",
@@ -1324,7 +1316,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`v-if` و `v-show` هر دو المنت‌ها را به‌صورت شرطی نمایش می‌دهند، اما در سطح DOM به روش‌های مختلف کار می‌کنند.\r\n\r\n**`v-if`** — المنت را کاملاً از DOM اضافه یا حذف می‌کند. وقتی false است، المنت (و کامپوننتش) destroy می‌شود. وقتی true است، تازه ساخته می‌شود. یعنی lifecycle hookها (`onMounted`، `onUnmounted`) در هر toggle اجرا می‌شوند.\r\n\r\n**`v-show`** — المنت را همیشه در DOM رندر می‌کند، اما property CSS `display` آن را toggle می‌کند. المنت یک‌بار ساخته شده و هرگز destroy نمی‌شود. Lifecycle hookها فقط یک‌بار در mount اولیه اجرا می‌شوند.\r\n\r\n```vue\r\n<template>\r\n  <!-- المنت در هر toggle destroy/create می‌شود -->\r\n  <HeavyComponent v-if=\"isVisible\" />\r\n\r\n  <!-- المنت در DOM باقی می‌ماند، فقط display:none toggle می‌شود -->\r\n  <HeavyComponent v-show=\"isVisible\" />\r\n</template>\r\n```\r\n\r\n**چه زمانی از کدام استفاده کنید:**\r\n\r\n- `v-show` بهتر است وقتی condition به‌طور مکرر toggle می‌شود و المنت re-create کردنش گران است.\r\n- `v-if` بهتر است وقتی المنت به‌ندرت toggle می‌شود یا می‌خواهید از mount شدن کامپوننت تا زمان نیاز جلوگیری کنید.\r\n\r\n**`v-if` هزینه toggle بالاتری دارد؛ `v-show` هزینه render اولیه بالاتری دارد.**",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-093",
@@ -1338,7 +1330,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "الگوریتم patch Vue دو درخت vnode را مقایسه می‌کند و حداقل مجموعه عملیات DOM لازم برای به‌روزرسانی DOM واقعی را تولید می‌کند.\r\n\r\n**استراتژی‌های کلیدی:**\r\n\r\n1. **مقایسه فقط در همان سطح** — Vue هرگز nodeها را در سطوح مختلف مقایسه نمی‌کند. اگر نوع یک node تغییر کند (مثلاً `<div>` → `<span>`)، زیردرخت قدیمی destroy و یک جدید ساخته می‌شود.\r\n\r\n2. **لیست‌های Keyed** — هنگام reconcile کردن فرزندان با attribute `key`، Vue یک نقشه key-به-ایندکس می‌سازد و از الگوریتم **Longest Increasing Subsequence (LIS)** برای تعیین حداقل حرکت‌های لازم برای مرتب‌سازی مجدد nodeهای DOM استفاده می‌کند.\r\n\r\n3. **Patch flagها (بهینه‌سازی compiler)** — compiler template Vue vnodeها را با patch flagهای bitwise حاشیه‌نویسی می‌کند که دقیقاً مشخص می‌کند چه چیزی dynamic است. runtime از این flagها برای رد کردن کامل بررسی‌های static استفاده می‌کند.\r\n\r\n```js\r\n// خروجی compiler برای <div class=\"static\" :title=\"title\">{{ msg }}</div>\r\ncreateElementVNode(\r\n  'div',\r\n  { class: 'static', title: title },\r\n  msg,\r\n  PatchFlags.CLASS | PatchFlags.TEXT, // فقط class و text را بررسی کن\r\n);\r\n```\r\n\r\n4. **Block tree** — compiler nodeهای dynamic را در \"block\"ها گروه‌بندی می‌کند. در طول patching، Vue فقط لیست مسطح nodeهای dynamic درون یک block را پیمایش می‌کند و از کل ساختار static رد می‌شود.\r\n\r\nنتیجه این است که پچ زمان اجرای Vue بسیار سریع‌تر از یک diff درختی ساده است زیرا کامپایلر قبلاً کارهای سنگین را در زمان ساخت انجام داده است.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-094",
@@ -1352,7 +1344,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue 3 دو روش برای نوشتن منطق کامپوننت پشتیبانی می‌کند.\r\n\r\n**Options API** کد را بر اساس نوع گزینه سازماندهی می‌کند — `data`، `computed`، `methods`، `watch`، lifecycle hookها. برای مبتدیان قابل دسترس‌تر است و با Vue 2 هماهنگ است.\r\n\r\n```js\r\nexport default {\r\n  data() {\r\n    return { count: 0 };\r\n  },\r\n  computed: {\r\n    double() {\r\n      return this.count * 2;\r\n    },\r\n  },\r\n  methods: {\r\n    increment() {\r\n      this.count++;\r\n    },\r\n  },\r\n};\r\n```\r\n\r\n**Composition API** کد را بر اساس concern منطقی سازماندهی می‌کند. منطق مرتبط (state، computed، watcherها) برای یک ویژگی کنار هم قرار می‌گیرد.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, computed } from 'vue';\r\n\r\nconst count = ref(0);\r\nconst double = computed(() => count.value * 2);\r\nfunction increment() {\r\n  count.value++;\r\n}\r\n</script>\r\n```\r\n\r\n**چه زمانی کدام را انتخاب کنید:**\r\n\r\n|                   | Options API               | Composition API                       |\r\n| ----------------- | ------------------------- | ------------------------------------- |\r\n| تازه‌کار در Vue   | قابل دسترس‌تر             | منحنی یادگیری تندتر                   |\r\n| کامپوننت‌های بزرگ | کد در بخش‌ها پراکنده      | منطق گروه‌بندی‌شده                    |\r\n| reuse منطق        | Mixin (مشکل‌ساز)          | Composable (تمیز)                     |\r\n| TypeScript        | بیشتر نیاز به boilerplate | استنتاج type عالی                     |\r\n| آشنایی با تیم     | تیم‌های Vue 2             | برای پروژه‌های جدید ترجیح داده می‌شود |\r\n\r\nهر دو API به طور کامل در Vue 3 پشتیبانی می‌شوند و می‌توانند در یک پروژه با هم ترکیب شوند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-095",
@@ -1366,7 +1358,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Code splitting در سطح route بارگذاری bundle کامپوننت route را تا زمانی که کاربر به آن route ناوبری کند به تأخیر می‌اندازد و payload اولیه JavaScript را کاهش می‌دهد.\r\n\r\nاز یک تابع `import()` dynamic به عنوان مقدار کامپوننت در تعریف route استفاده کنید:\r\n\r\n```js\r\nconst router = createRouter({\r\n  routes: [\r\n    {\r\n      path: '/',\r\n      component: () => import('./views/HomeView.vue'),\r\n    },\r\n    {\r\n      path: '/dashboard',\r\n      component: () => import('./views/DashboardView.vue'),\r\n    },\r\n    {\r\n      path: '/admin',\r\n      // magic comment برای نام‌گذاری chunk\r\n      component: () =>\r\n        import(/* webpackChunkName: \"admin\" */ './views/AdminView.vue'),\r\n    },\r\n  ],\r\n});\r\n```\r\n\r\nVite و Webpack هر دو `import()` dynamic را درک کرده و به‌طور خودکار چانک‌های JavaScript جداگانه برای هر route تولید می‌کنند.\r\n\r\n**گروه‌بندی مسیرهای مرتبط در یک بخش:**\r\n\r\n```js\r\n// در Vite — از همان بخش rollupOptions استفاده کنید\r\ncomponent: () => import('./views/admin/Dashboard.vue'),\r\ncomponent: () => import('./views/admin/Users.vue'),\r\n// از vite.config.js rollupOptions.output.manualChunks برای گروه‌بندی استفاده کنید\r\n```\r\n\r\n**Prefetching** — magic commentهای Vite یا تنظیمات router را برای بارگذاری پیشگیرانه chunkهایی که احتمالاً بعداً نیاز می‌شوند، اضافه کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-096",
@@ -1394,7 +1386,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`<KeepAlive>` instance های کامپوننت غیرفعال را به جای destroy کردن آن‌ها هنگام toggle شدن از DOM، cache می‌کند. این state کامپوننت را حفظ کرده و از re-initialization گران جلوگیری می‌کند.\r\n\r\n```vue\r\n<template>\r\n  <KeepAlive>\r\n    <component :is=\"activeTab\" />\r\n  </KeepAlive>\r\n</template>\r\n```\r\n\r\n**Lifecycle hookهای اضافی** — کامپوننت‌های داخل `<KeepAlive>` دو hook به دست می‌آورند:\r\n\r\n- `onActivated` — هنگامی که کامپوننت از cache در DOM درج می‌شود اجرا می‌شود (معادل `onMounted` برای کامپوننت‌های cached)\r\n- `onDeactivated` — هنگامی که کامپوننت حذف و در cache قرار می‌گیرد اجرا می‌شود (معادل `onUnmounted`)\r\n\r\n```vue\r\n<script setup>\r\nimport { onActivated, onDeactivated } from 'vue';\r\n\r\nonActivated(() => {\r\n  console.log('کامپوننت فعال شد (از cache آمد)');\r\n  startPolling();\r\n});\r\n\r\nonDeactivated(() => {\r\n  console.log('کامپوننت غیرفعال شد (به cache رفت)');\r\n  stopPolling();\r\n});\r\n</script>\r\n```\r\n\r\n**کنترل دقیق:**\r\n\r\n- `include` — فقط کامپوننت‌هایی با نام‌های منطبق را cache کن\r\n- `exclude` — کامپوننت‌های خاص را exclude کن\r\n- `max` — محدودیت LRU cache، کمترین استفاده‌شده را evict می‌کند\r\n\r\n```vue\r\n<KeepAlive :include=\"['TabA', 'TabB']\" :max=\"5\">\r\n  <component :is=\"currentTab\" />\r\n</KeepAlive>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-098",
@@ -1408,7 +1400,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`onServerPrefetch` یک lifecycle hook است که فقط روی سرور در طول SSR اجرا می‌شود. به Vue می‌گوید قبل از serialize کردن HTML کامپوننت، منتظر resolve شدن callback async آن باشد تا داده‌های async fetch شده در اولین render موجود باشند.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onServerPrefetch } from 'vue';\r\nimport { useStore } from './store';\r\n\r\nconst store = useStore();\r\nconst posts = ref([]);\r\n\r\nonServerPrefetch(async () => {\r\n  posts.value = await fetchPosts(); // روی سرور اجرا می‌شود، تولید HTML را block می‌کند\r\n});\r\n</script>\r\n\r\n<template>\r\n  <ul>\r\n    <li v-for=\"post in posts\" :key=\"post.id\">{{ post.title }}</li>\r\n  </ul>\r\n</template>\r\n```\r\n\r\nروی client، `onServerPrefetch` نادیده گرفته می‌شود. client HTML server-rendered با داده‌های از پیش پر شده دریافت می‌کند و بدون re-fetch آن را hydrate می‌کند.\r\n\r\nاین primitive Vue پشت `useAsyncData` و `useFetch` composableهای Nuxt 3 است که الگو را با serialization خودکار state fetch شده در payload HTML abstract می‌کنند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-099",
@@ -1422,7 +1414,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue Test Utils به نام `@vue/test-utils` کتابخانه تست رسمی برای کامپوننت‌های Vue است و با Vitest یا Jest یکپارچه می‌شود.\r\n\r\n**Mount پایه:**\r\n\r\n```js\r\nimport { mount } from '@vue/test-utils';\r\nimport MyButton from './MyButton.vue';\r\n\r\ntest('محتوای slot را رندر می‌کند', () => {\r\n  const wrapper = mount(MyButton, {\r\n    slots: { default: 'روی من کلیک کن' },\r\n  });\r\n  expect(wrapper.text()).toBe('روی من کلیک کن');\r\n});\r\n```\r\n\r\n**Trigger کردن رویداد و تست به‌روزرسانی reactive:**\r\n\r\n```js\r\ntest('count را با کلیک افزایش می‌دهد', async () => {\r\n  const wrapper = mount(Counter);\r\n  expect(wrapper.find('.count').text()).toBe('0');\r\n\r\n  await wrapper.find('button').trigger('click');\r\n\r\n  expect(wrapper.find('.count').text()).toBe('1');\r\n});\r\n```\r\n\r\n**Stub کردن کامپوننت‌های فرزند:**\r\n\r\n```js\r\nconst wrapper = mount(ParentComponent, {\r\n  global: {\r\n    stubs: { ChildComponent: true },\r\n  },\r\n});\r\n```\r\n\r\n**تست props و emits:**\r\n\r\n```js\r\nconst wrapper = mount(MyInput, {\r\n  props: { modelValue: 'hello' },\r\n});\r\nawait wrapper.find('input').setValue('world');\r\nexpect(wrapper.emitted('update:modelValue')).toEqual([['world']]);\r\n```\r\n\r\nاز `flushPromises()` برای انتظار تا اتمام عملیات async قبل از assert استفاده کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-100",
@@ -1436,7 +1428,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "اپلیکیشن‌های Vue ممکن است از re-renderهای غیرضروری، حجم bundle بزرگ و بارگذاری اولیه کند رنج ببرند. یک رویکرد سیستماتیک چندین لایه را پوشش می‌دهد.\r\n\r\n**کاهش re-renderها:**\r\n\r\n- از `v-memo` برای رد کردن re-render یک زیردرخت استفاده کنید مگر اینکه وابستگی‌های خاصی تغییر کنند\r\n- کامپوننت‌های فرزند گران را در `shallowRef` wrap کنید\r\n- از `markRaw` برای اشیاء غیر-reactive ذخیره‌شده در state reactive استفاده کنید\r\n- `<KeepAlive>` برای حفظ state کامپوننت در route‌های مختلف\r\n\r\n**حجم bundle:**\r\n\r\n- Code splitting در سطح route با `import()` dynamic\r\n- Async componentها (`defineAsyncComponent`) برای کامپوننت‌های سنگین\r\n- Tree-shaking ویژگی‌های استفاده‌نشده Vue با استفاده از ESM build\r\n\r\n**رندرینگ:**\r\n\r\n- `v-show` به جای `v-if` برای کامپوننت‌هایی که به‌طور مکرر toggle می‌شوند\r\n- استفاده صحیح از attribute `key` برای کمک به differ در reuse nodeهای DOM\r\n- از اتصال اشیاء بزرگ به عنوان props در مواقعی که فقط به چند ویژگی نیاز دارید، خودداری کنید.\r\n- `v-once` برای محتوای static که هرگز تغییر نمی‌کند\r\n- `v-memo` برای آیتم‌های لیست با وابستگی‌های stable\r\n\r\n**Virtualization لیست** — برای لیست‌های بسیار بلند (۱۰۰۰+ آیتم)، از `vue-virtual-scroller` یا کتابخانه مشابه استفاده کنید تا فقط آیتم‌های قابل مشاهده رندر شوند.\r\n\r\n**Profiling:**\r\n\r\n- از تب Performance در Vue DevTools برای شناسایی رندرهای کند کامپوننت استفاده کنید\r\n- تب Performance در Chrome برای کارهای طولانی و بارگذاری سریع layout\r\n- `app.config.performance = true` علائم زمان‌بندی داخلی Vue را در DevTools مرورگر فعال می‌کند\r\n\r\n```vue\r\n<template>\r\n  <!-- v-memo: آیتم لیست را فقط هنگامی re-render کن که item.id یا selected تغییر کند -->\r\n  <div\r\n    v-for=\"item in list\"\r\n    :key=\"item.id\"\r\n    v-memo=\"[item.id, selected === item.id]\"\r\n  >\r\n    {{ item.text }}\r\n  </div>\r\n</template>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-101",
@@ -1450,7 +1442,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`defineModel` (پایدار از Vue 3.4) یک compiler macro است که boilerplate اعلان دستی یک prop `modelValue` و emit `update:modelValue` را برای `v-model` کامپوننت حذف می‌کند.\r\n\r\n**قبل از `defineModel`:**\r\n\r\n```vue\r\n<script setup>\r\nconst props = defineProps({ modelValue: String });\r\nconst emit = defineEmits(['update:modelValue']);\r\n\r\nfunction handleInput(e) {\r\n  emit('update:modelValue', e.target.value);\r\n}\r\n</script>\r\n<template>\r\n  <input :value=\"props.modelValue\" @input=\"handleInput\" />\r\n</template>\r\n```\r\n\r\n**با `defineModel`:**\r\n\r\n```vue\r\n<script setup>\r\nconst model = defineModel(); // یک ref قابل نوشتن برمی‌گرداند\r\n</script>\r\n<template>\r\n  <input v-model=\"model\" />\r\n</template>\r\n```\r\n\r\n`defineModel()` یک `ref` قابل نوشتن برمی‌گرداند که با مقدار bound شده در والد sync است. خواندن `model.value` prop را می‌خواند؛ نوشتن روی `model.value` به‌صورت خودکار رویداد update را emit می‌کند.\r\n\r\n**مدل‌های نام‌گذاری‌شده و type شده:**\r\n\r\n```ts\r\n// مدل نام‌گذاری‌شده — با v-model:title استفاده می‌شود\r\nconst title = defineModel<string>('title', { required: true });\r\n\r\n// با مقدار پیش‌فرض\r\nconst count = defineModel<number>('count', { default: 0 });\r\n```\r\n\r\nوالد از آن‌ها اینگونه استفاده می‌کند:\r\n\r\n```vue\r\n<MyForm v-model:title=\"postTitle\" v-model:count=\"itemCount\" />\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-102",
@@ -1464,7 +1456,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue 3 اجازه می‌دهد چندین binding `v-model` روی یک کامپوننت با استفاده از مدل‌های نام‌گذاری‌شده داشته باشید. هر `v-model` نام‌گذاری‌شده با یک جفت prop/emit جداگانه (یا یک فراخوانی `defineModel`) مطابقت دارد.\r\n\r\n```vue\r\n<!-- Parent -->\r\n<UserForm\r\n  v-model:firstName=\"user.firstName\"\r\n  v-model:lastName=\"user.lastName\"\r\n  v-model:age=\"user.age\"\r\n/>\r\n```\r\n\r\nبا `defineModel` (Vue 3.4+):\r\n\r\n```vue\r\n<!-- UserForm.vue -->\r\n<script setup>\r\nconst firstName = defineModel < string > 'firstName';\r\nconst lastName = defineModel < string > 'lastName';\r\nconst age = defineModel < number > 'age';\r\n</script>\r\n\r\n<template>\r\n  <input v-model=\"firstName\" placeholder=\"نام\" />\r\n  <input v-model=\"lastName\" placeholder=\"نام خانوادگی\" />\r\n  <input v-model.number=\"age\" type=\"number\" placeholder=\"سن\" />\r\n</template>\r\n```\r\n\r\nبدون `defineModel`، هر مدل نام‌گذاری‌شده به یک prop و emit جداگانه نیاز دارد:\r\n\r\n```ts\r\ndefineProps({ firstName: String, lastName: String, age: Number });\r\nconst emit = defineEmits(['update:firstName', 'update:lastName', 'update:age']);\r\n```\r\n\r\n`v-model` نام‌گذاری‌شده برای کامپوننت‌های فرم، dialog‌ها و ویرایشگرهایی که چندین piece مرتبط از state را که والد باید مالک آن‌ها باشد مدیریت می‌کنند، ایده‌آل است.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-103",
@@ -1478,7 +1470,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`customRef` به شما اجازه می‌دهد یک `ref` reactive با کنترل دستی کامل بر زمان ردیابی dependency (`track`) و زمان اطلاع‌رسانی به subscriber‌ها (`trigger`) بسازید. این برای زمانی مفید است که نیاز به debounce، throttle یا اعتبارسنجی قبل از notify کردن watcher‌ها دارید.\r\n\r\n```js\r\nimport { customRef } from 'vue';\r\n\r\nfunction useDebouncedRef(value, delay = 300) {\r\n  let timeout;\r\n  return customRef((track, trigger) => ({\r\n    get() {\r\n      track(); // effect فعلی را به عنوان subscriber ثبت کنید\r\n      return value;\r\n    },\r\n    set(newValue) {\r\n      clearTimeout(timeout);\r\n      timeout = setTimeout(() => {\r\n        value = newValue;\r\n        trigger(); // فقط بعد از تأخیر debounce به subscriber‌ها اطلاع دهید\r\n      }, delay);\r\n    },\r\n  }));\r\n}\r\n```\r\n\r\n```vue\r\n<script setup>\r\nconst searchQuery = useDebouncedRef('', 400);\r\n</script>\r\n\r\n<template>\r\n  <input v-model=\"searchQuery\" placeholder=\"جستجو...\" />\r\n</template>\r\n```\r\n\r\ntemplate و watcher‌های وابسته به `searchQuery` فقط 400 میلی‌ثانیه بعد از اینکه کاربر تایپ کردن را متوقف کند به‌روز می‌شوند و از API call‌های بیش از حد جلوگیری می‌شود.\r\n\r\nموارد استفاده دیگر:\r\n\r\n- sync کردن یک ref با `localStorage`\r\n- محدود کردن یا گرد کردن مقادیر در set\r\n- اعتبارسنجی async قبل از commit کردن",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-104",
@@ -1492,7 +1484,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue SFCها از binding مستقیم مقادیر JavaScript reactive به CSS با استفاده از `v-bind()` داخل بلاک‌های `<style>` پشتیبانی می‌کنند. این نیاز به inline styleها یا computed class objectها برای styling dynamic را از بین می‌برد.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref } from 'vue';\r\n\r\nconst color = ref('#42b883');\r\nconst fontSize = ref(16);\r\n</script>\r\n\r\n<template>\r\n  <p class=\"text\">سلام Vue!</p>\r\n</template>\r\n\r\n<style scoped>\r\n.text {\r\n  color: v-bind(color);\r\n  font-size: v-bind(fontSize + 'px');\r\n}\r\n</style>\r\n```\r\n\r\n**نحوه کار داخلی:** Vue از CSS custom property (متغیرهای CSS) استفاده می‌کند. در compile time، عبارت `v-bind()` با یک مرجع `var(--hash-propertyName)` جایگزین می‌شود. یک effect runtime هنگامی که مقدار reactive تغییر می‌کند، custom property روی المنت root کامپوننت را به‌روز می‌کند.\r\n\r\nعبارات پیچیده با دسترسی به property شیء هم کار می‌کنند:\r\n\r\n```vue\r\n<script setup>\r\nconst theme = reactive({ primary: '#ff0000', radius: '8px' });\r\n</script>\r\n\r\n<style scoped>\r\n.card {\r\n  color: v-bind('theme.primary');\r\n  border-radius: v-bind('theme.radius');\r\n}\r\n</style>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-105",
@@ -1506,7 +1498,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "CSS Module‌ها یک مکانیزم scoping CSS هستند که نام‌های class به‌صورت خودکار در build time به شناسه‌های hashed یکتا تبدیل می‌شوند و از تداخل نام‌گذاری global جلوگیری می‌کنند. در Vue SFCها، attribute `module` را به تگ `<style>` اضافه کنید.\r\n\r\n```vue\r\n<template>\r\n  <!-- در کامپوننت‌های <script setup>، $style به‌صورت خودکار تزریق می‌شود -->\r\n  <div :class=\"$style.container\">\r\n    <p :class=\"[$style.text, $style.highlighted]\">سلام</p>\r\n  </div>\r\n</template>\r\n\r\n<style module>\r\n.container {\r\n  padding: 1rem;\r\n}\r\n.text {\r\n  font-size: 1rem;\r\n}\r\n.highlighted {\r\n  color: #42b883;\r\n  font-weight: bold;\r\n}\r\n</style>\r\n```\r\n\r\nHTML تولید شده به جای `container` ساده، از یک کلاس هش شده مانند `container_3FI8Av` استفاده خواهد کرد.\r\n\r\n**ماژول‌های CSS نامگذاری شده** — چندین بلوک `<style module=\"name\">` می‌توانند در یک SFC همزمان وجود داشته باشند:\r\n\r\n```vue\r\n<style module=\"typography\">\r\n.heading {\r\n  font-size: 2rem;\r\n}\r\n</style>\r\n```\r\n\r\n```js\r\n// دسترسی از طریق useCssModule در داخل setup\r\nimport { useCssModule } from 'vue';\r\nconst typography = useCssModule('typography');\r\n```\r\n\r\nتفاوت با scoped style:\r\n\r\n- **Scoped style‌ها** یک attribute selector `data-v-xx` اضافه می‌کنند — نام class تغییر نمی‌کند.\r\n- **CSS Module‌ها** خود class را rename می‌کنند — بدون attribute selector، بدون overhead specificity.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-106",
@@ -1520,7 +1512,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "وقتی یک بلاک `<style scoped>` در یک Vue SFC وجود دارد، compiler یک attribute یکتا `data-v-xx` به هر المنت در template کامپوننت در compile time اضافه می‌کند.\r\n\r\nسپس CSS selector‌ها تبدیل می‌شوند تا شامل یک attribute selector باشند که آن attribute یکتا را هدف می‌گیرد و اطمینان می‌دهد style‌ها فقط روی المنت‌های خود کامپوننت اعمال می‌شوند.\r\n\r\n**کامپایل template:**\r\n\r\n```html\r\n<!-- template اصلی -->\r\n<div class=\"card\"><p>سلام</p></div>\r\n\r\n<!-- خروجی کامپایل‌شده -->\r\n<div class=\"card\" data-v-7ba5bd90><p data-v-7ba5bd90>سلام</p></div>\r\n```\r\n\r\n**تبدیل CSS:**\r\n\r\n```css\r\n/* اصلی */\r\n.card {\r\n  background: white;\r\n}\r\np {\r\n  color: black;\r\n}\r\n\r\n/* کامپایل‌شده */\r\n.card[data-v-7ba5bd90] {\r\n  background: white;\r\n}\r\np[data-v-7ba5bd90] {\r\n  color: black;\r\n}\r\n```\r\n\r\n**`:deep()`** attribute selector را از بخش فرزند حذف می‌کند و اجازه می‌دهد style‌ها به DOM کامپوننت فرزند نفوذ کنند:\r\n\r\n```css\r\n/* تابع .inner را درون یک کامپوننت فرزند هدف قرار می‌دهد */\r\n:deep(.inner) {\r\n  color: red;\r\n}\r\n/* کامپایل می‌شود به: */\r\n[data-v-7ba5bd90] .inner {\r\n  color: red;\r\n}\r\n```\r\n\r\n**`:slotted()`** المنت‌های ارسال‌شده از طریق slot‌ها را هدف می‌گیرد (که attribute scope والد، نه فرزند را دارند):\r\n\r\n```css\r\n:slotted(p) {\r\n  font-style: italic;\r\n}\r\n```\r\n\r\n**`:global()`** از scoping کاملاً خارج می‌شود و selector را بدون هیچ محدودیت attributeای emit می‌کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-107",
@@ -1534,7 +1526,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`v-memo` یک directive داخلی است که یک زیردرخت template را memoize می‌کند. Vue رندر مجدد (و diffing) زیردرخت را کاملاً رد می‌کند وقتی تمام مقادیر در آرایه dependency یکسان باقی بمانند — با استفاده از برابری مرجع (`===`).\r\n\r\n```vue\r\n<template>\r\n  <div v-for=\"item in list\" :key=\"item.id\" v-memo=\"[item.id, item.selected]\">\r\n    <!-- اگر item.id و item.selected تغییر نکرده‌اند این زیردرخت کامل رد می‌شود -->\r\n    <span>{{ item.label }}</span>\r\n    <HeavyChart :data=\"item.chartData\" />\r\n  </div>\r\n</template>\r\n```\r\n\r\n**تفاوت با `computed`:** `computed` یک مقدار را memoize می‌کند؛ `v-memo` یک زیردرخت DOM را — ساخت vnode و patching کل بلاک را رد می‌کند.\r\n\r\n**موارد استفاده:**\r\n\r\n- لیست‌های بزرگ که فقط چند آیتم در هر به‌روزرسانی تغییر می‌کنند\r\n- آیتم‌هایی که کامپوننت‌های فرزند سنگین دارند اما به‌ندرت به‌روز می‌شوند\r\n\r\n**آرایه dependency خالی** معادل `v-once` است — یک‌بار رندر می‌شود و هرگز به‌روز نمی‌شود:\r\n\r\n```html\r\n<StaticBanner v-memo=\"[]\" />\r\n```\r\n\r\n**نکات مهم:**\r\n\r\n- فقط وقتی profiling یک bottleneck را تأیید می‌کند استفاده کنید — در هر چرخه رندر overhead مقایسه اضافه می‌کند.\r\n- اگر هر آیتم در هر به‌روزرسانی تغییر می‌کند از آن اجتناب کنید.\r\n- زیردرخت همچنان در render اولیه شرکت می‌کند؛ فقط re-render‌های بعدی رد می‌شوند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-108",
@@ -1548,7 +1540,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`defineAsyncComponent` یک تابع loader (فرم ساده) یا یک options object (فرم پیشرفته) می‌پذیرد که حالت loading، error fallback، تأخیر و timeout را پیکربندی می‌کند.\r\n\r\n```js\r\nimport { defineAsyncComponent } from 'vue';\r\n\r\nconst AsyncDashboard = defineAsyncComponent({\r\n  // الزامی: loader کامپوننت\r\n  loader: () => import('./Dashboard.vue'),\r\n\r\n  // کامپوننتی که در حین loading نمایش داده می‌شود\r\n  loadingComponent: LoadingSpinner,\r\n\r\n  // تأخیر قبل از نمایش loadingComponent (پیش‌فرض: 200ms)\r\n  // از flicker برای بارگذاری‌های سریع جلوگیری می‌کند\r\n  delay: 200,\r\n\r\n  // کامپوننتی که در صورت خطا نمایش داده می‌شود\r\n  errorComponent: ErrorDisplay,\r\n\r\n  // زمانی که بعد از آن بارگذاری ناموفق تلقی می‌شود\r\n  timeout: 5000,\r\n\r\n  // وقتی promise loader reject می‌شود فراخوانی می‌شود\r\n  onError(error, retry, fail, attempts) {\r\n    if (attempts <= 3) {\r\n      retry(); // بارگذاری را دوباره امتحان کنید\r\n    } else {\r\n      fail(); // تسلیم شوید و errorComponent را نمایش دهید\r\n    }\r\n  },\r\n});\r\n```\r\n\r\nگزینه `delay` برای UX مهم است: اگر کامپوننت در زیر 200ms بارگذاری شود، loading spinner هرگز نمایش داده نمی‌شود و از flash کوتاه حالت loading جلوگیری می‌کند.\r\n\r\n`onError` یک تابع `retry` دریافت می‌کند که loader را مجدداً فراخوانی می‌کند و پیاده‌سازی exponential backoff یا retry‌های شرطی را ممکن می‌سازد.\r\n\r\nهنگام استفاده داخل `<Suspense>`، prop‌های loading/error component نادیده گرفته می‌شوند — `<Suspense>` از طریق slot `#fallback` خود کنترل UI loading را به دست می‌گیرد.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-109",
@@ -1562,7 +1554,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "directive‌های سفارشی در Vue 3 به هفت lifecycle hook دسترسی دارند که lifecycle کامپوننت را آینه می‌کنند.\r\n\r\n```js\r\nconst myDirective = {\r\n  // یک‌بار قبل از درج المنت در DOM فراخوانی می‌شود\r\n  created(el, binding, vnode) {},\r\n\r\n  // درست قبل از درج المنت در DOM\r\n  beforeMount(el, binding, vnode) {},\r\n\r\n  // بعد از mount شدن المنت و تمام فرزندانش\r\n  mounted(el, binding, vnode) {},\r\n\r\n  // قبل از re-render کامپوننت والد\r\n  beforeUpdate(el, binding, vnode, prevVnode) {},\r\n\r\n  // بعد از re-render کامپوننت والد و فرزندانش\r\n  updated(el, binding, vnode, prevVnode) {},\r\n\r\n  // قبل از unmount شدن کامپوننت والد\r\n  beforeUnmount(el, binding, vnode) {},\r\n\r\n  // بعد از unmount شدن کامپوننت والد — اینجا cleanup انجام دهید\r\n  unmounted(el, binding, vnode) {},\r\n};\r\n```\r\n\r\nشیء `binding` شامل:\r\n\r\n- `value` — مقدار فعلی directive (`v-my-dir=\"42\"` → `42`)\r\n- `oldValue` — مقدار قبلی (فقط در `beforeUpdate` / `updated`)\r\n- `arg` — آرگومان (`v-my-dir:color` → `'color'`)\r\n- `modifiers` — شیء modifier (`v-my-dir.trim` → `{ trim: true }`)\r\n- `instance` — instance کامپوننتی که از directive استفاده می‌کند\r\n\r\n**Shorthand** — اگر directive فقط به `mounted` و `updated` نیاز دارد، مستقیماً یک تابع ارسال کنید:\r\n\r\n```js\r\napp.directive('focus', (el) => {\r\n  el.focus();\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-110",
@@ -1576,7 +1568,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "این سه method روی instance یک Pinia store قابلیت‌های پیشرفته مدیریت state ارائه می‌دهند.\r\n\r\n**`$patch`** — چندین تغییر state را در یک batch اعمال می‌کند و فقط یک به‌روزرسانی trigger می‌کند:\r\n\r\n```js\r\nconst store = useCounterStore();\r\n\r\n// Object patch — شیء را در state ادغام می‌کند\r\nstore.$patch({ count: 10, name: 'علی' });\r\n\r\n// Function patch — دسترسی کامل به state برای mutation‌های پیچیده\r\nstore.$patch((state) => {\r\n  state.items.push({ id: Date.now(), text: 'آیتم جدید' });\r\n  state.count++;\r\n});\r\n```\r\n\r\n**`$subscribe`** — برای هر تغییر state تماشا می‌کند:\r\n\r\n```js\r\nstore.$subscribe(\r\n  (mutation, state) => {\r\n    // mutation.type: 'direct' | 'patch object' | 'patch function'\r\n    // در هر تغییر در localStorage ذخیره کنید\r\n    localStorage.setItem('counter', JSON.stringify(state));\r\n  },\r\n  { detached: true },\r\n); // detached: بعد از unmount کامپوننت باقی می‌ماند\r\n```\r\n\r\n**`$onAction`** — actionها را قبل و بعد از اجرا رهگیری می‌کند، برای logging یا مدیریت خطا مفید است:\r\n\r\n```js\r\nstore.$onAction(({ name, args, after, onError }) => {\r\n  console.log(`Action \"${name}\" فراخوانی شد با`, args);\r\n\r\n  after((result) => {\r\n    console.log(`Action \"${name}\" با نتیجه تمام شد`, result);\r\n  });\r\n\r\n  onError((error) => {\r\n    console.error(`Action \"${name}\" با خطا مواجه شد:`, error);\r\n  });\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-111",
@@ -1590,7 +1582,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Pinia storeها می‌توانند آزادانه storeهای دیگر را داخل action‌ها و getter‌های خود import و استفاده کنند. هیچ module nestingی وجود ندارد — هر store مستقل و قابل ترکیب است.\r\n\r\n```js\r\n// userStore.js\r\nexport const useUserStore = defineStore('user', {\r\n  state: () => ({ name: '', role: 'guest' }),\r\n});\r\n```\r\n\r\n```js\r\n// cartStore.js\r\nexport const useCartStore = defineStore('cart', {\r\n  state: () => ({ items: [] }),\r\n\r\n  getters: {\r\n    checkoutLabel: () => {\r\n      const user = useUserStore();\r\n      return user.role === 'vip' ? 'پرداخت (VIP)' : 'پرداخت';\r\n    },\r\n  },\r\n\r\n  actions: {\r\n    async checkout() {\r\n      const user = useUserStore();\r\n      if (!user.name) throw new Error('باید وارد شده باشید');\r\n      // ...پردازش پرداخت\r\n    },\r\n  },\r\n});\r\n```\r\n\r\n**با setup storeها:**\r\n\r\n```js\r\nexport const useCartStore = defineStore('cart', () => {\r\n  const user = useUserStore(); // reactive — به تغییرات user store واکنش نشان می‌دهد\r\n  const items = ref([]);\r\n\r\n  const checkoutLabel = computed(() =>\r\n    user.role === 'vip' ? 'پرداخت (VIP)' : 'پرداخت',\r\n  );\r\n\r\n  return { items, checkoutLabel };\r\n});\r\n```\r\n\r\n**مهم:** `useOtherStore()` را در سطح module خارج از تعریف store فراخوانی نکنید — Pinia باید فعال (mounted) باشد.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-112",
@@ -1604,7 +1596,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "این‌ها توابع utility برای reactivity هستند که عمدتاً هنگام نوشتن composable‌ها یا کتابخانه‌هایی که باید هم ref و هم ورودی‌های non-ref را مدیریت کنند استفاده می‌شوند.\r\n\r\n**`isRef(val)`** — اگر `val` یک `ref` یا computed ref باشد `true` برمی‌گرداند:\r\n\r\n```js\r\nisRef(ref(0)); // true\r\nisRef(0); // false\r\n```\r\n\r\n**`isReactive(val)`** — اگر `val` یک reactive proxy باشد `true` برمی‌گرداند:\r\n\r\n```js\r\nisReactive(reactive({ x: 1 })); // true\r\nisReactive({}); // false\r\n```\r\n\r\n**`unref(val)`** — اگر `val` یک ref باشد `val.value` را برمی‌گرداند؛ در غیر این صورت خود `val` را برمی‌گرداند. برای نوشتن توابعی که هم ref و هم مقادیر ساده می‌پذیرند مفید است:\r\n\r\n```js\r\nfunction double(n) {\r\n  return unref(n) * 2; // با ref(3) یا عدد ساده 3 کار می‌کند\r\n}\r\n```\r\n\r\n**`toValue(val)`** (Vue 3.3+) — `unref` را گسترش می‌دهد تا توابع getter را هم فراخوانی کند. در composable‌هایی که `MaybeRefOrGetter<T>` می‌پذیرند ترجیح داده می‌شود:\r\n\r\n```js\r\nfunction useFeature(input) {\r\n  // ورودی می‌تواند یک مرجع، یک تابع دریافت‌کننده یا یک مقدار ساده باشد\r\n  watchEffect(() => {\r\n    console.log(toValue(input));\r\n  });\r\n}\r\n\r\nuseFeature(ref(42)); // کار می‌کند\r\nuseFeature(() => props.value); // کار می‌کند — getter را فراخوانی می‌کند\r\nuseFeature(42); // کار می‌کند — مقدار ساده برمی‌گرداند\r\n```\r\n\r\n`toValue` روش توصیه‌شده برای مدیریت ورودی‌های reactive انعطاف‌پذیر در composable‌هاست زیرا هر سه حالت را پوشش می‌دهد: مقدار ساده، ref و computed/getter.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-113",
@@ -1618,7 +1610,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "فیلدهای route meta جفت‌های کلید-مقدار دلخواه هستند که از طریق property `meta` به یک route متصل می‌شوند. از طریق `route.meta` در کامپوننت‌ها و navigation guard‌ها در دسترس هستند.\r\n\r\n**موارد استفاده رایج:** نیاز به authentication، عنوان صفحه، نوع layout، breadcrumb.\r\n\r\n```js\r\nconst routes = [\r\n  {\r\n    path: '/dashboard',\r\n    component: Dashboard,\r\n    meta: {\r\n      requiresAuth: true,\r\n      title: 'داشبورد',\r\n      layout: 'admin',\r\n    },\r\n  },\r\n  {\r\n    path: '/login',\r\n    component: Login,\r\n    meta: { requiresAuth: false, title: 'ورود' },\r\n  },\r\n];\r\n```\r\n\r\n**استفاده از meta در یک navigation guard global:**\r\n\r\n```js\r\nrouter.beforeEach((to, from) => {\r\n  document.title = to.meta.title ?? 'اپلیکیشن من';\r\n\r\n  if (to.meta.requiresAuth && !isAuthenticated()) {\r\n    return { path: '/login', query: { redirect: to.fullPath } };\r\n  }\r\n});\r\n```\r\n\r\n**TypeScript** — interface `RouteMeta` را برای type safety augment کنید:\r\n\r\n```ts\r\ndeclare module 'vue-router' {\r\n  interface RouteMeta {\r\n    requiresAuth: boolean;\r\n    title?: string;\r\n    layout?: 'default' | 'admin' | 'minimal';\r\n  }\r\n}\r\n```\r\n\r\nroute‌های فرزند فیلدهای `meta` والد را از طریق `route.matched` به ارث می‌برند — از `to.matched.some(r => r.meta.requiresAuth)` برای بررسی هر ancestor استفاده کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-114",
@@ -1632,7 +1624,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue Router یک تابع `scrollBehavior` را در `createRouter` می‌پذیرد که کنترل می‌کند بعد از هر navigation صفحه کجا scroll شود.\r\n\r\n```js\r\nconst router = createRouter({\r\n  history: createWebHistory(),\r\n  routes,\r\n  scrollBehavior(to, from, savedPosition) {\r\n    // ۱. بازیابی موقعیت native scroll مرورگر هنگام back/forward\r\n    if (savedPosition) {\r\n      return savedPosition;\r\n    }\r\n\r\n    // ۲. Scroll به anchor hash\r\n    if (to.hash) {\r\n      return { el: to.hash, behavior: 'smooth' };\r\n    }\r\n\r\n    // ۳. Scroll به بالا برای تمام navigationهای دیگر\r\n    return { top: 0, left: 0, behavior: 'smooth' };\r\n  },\r\n});\r\n```\r\n\r\n**Scroll با تأخیر** — برای انتظار تا پایان animation transition route مفید است:\r\n\r\n```js\r\nscrollBehavior(to, from, savedPosition) {\r\n  return new Promise((resolve) => {\r\n    setTimeout(() => {\r\n      resolve({ top: 0, behavior: 'smooth' });\r\n    }, 400);\r\n  });\r\n}\r\n```\r\n\r\nمقدار بازگشتی می‌تواند باشد:\r\n\r\n- `{ top, left }` — موقعیت scroll مطلق\r\n- `{ el, top, left }` — scroll نسبت به یک المنت DOM یا CSS selector\r\n- `savedPosition` — موقعیت native history مرورگر را بازیابی می‌کند\r\n- `false` — بدون scroll\r\n- یک `Promise` که به هر یک از موارد بالا resolve می‌شود",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-115",
@@ -1646,7 +1638,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "SSR سنتی Vue کل درخت کامپوننت را قبل از ارسال هر چیز به مرورگر به یک رشته رندر می‌کند. SSR streaming از Node.js streams (یا Web Streams) استفاده می‌کند تا HTML را به‌صورت تدریجی هنگامی که هر بخش از درخت کامپوننت رندر می‌شود ارسال کند.\r\n\r\n```js\r\n// Node.js — با استفاده از renderToNodeStream\r\nimport { createSSRApp } from 'vue';\r\nimport { renderToNodeStream } from 'vue/server-renderer';\r\nimport App from './App.vue';\r\n\r\napp.get('/', (req, res) => {\r\n  const vueApp = createSSRApp(App);\r\n  const stream = renderToNodeStream(vueApp);\r\n\r\n  res.write('<html><body><div id=\"app\">');\r\n  stream.pipe(res, { end: false });\r\n  stream.on('end', () => res.end('</div></body></html>'));\r\n});\r\n```\r\n\r\n**Web Streams API** (edge runtimeها — Cloudflare Workers، Deno):\r\n\r\n```js\r\nimport { renderToWebStream } from 'vue/server-renderer';\r\n\r\nconst stream = renderToWebStream(createSSRApp(App));\r\nreturn new Response(stream, {\r\n  headers: { 'Content-Type': 'text/html' },\r\n});\r\n```\r\n\r\n**مزایای streaming:**\r\n\r\n- **Time To First Byte (TTFB)** به‌طور چشمگیری کاهش می‌یابد — مرورگر بلافاصله HTML را دریافت و شروع به parse کردن می‌کند.\r\n- مرورگر می‌تواند دانلود CSS و JS را شروع کند در حالی که سرور هنوز در حال رندر است.\r\n- صفحات بزرگ با داده‌های async کند کل response را block نمی‌کنند.\r\n\r\n**`<Suspense>` + streaming** — Vue می‌تواند HTML را تا یک boundary `<Suspense>` stream کند، یک حالت loading flush کند و سپس محتوای resolved را stream کند. Nuxt 3 از این برای پیاده‌سازی fetching داده‌های async بدون block کردن streaming استفاده می‌کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-116",
@@ -1660,7 +1652,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`defineCustomElement` یک تعریف کامپوننت Vue را به یک کلاس Custom Element (Web Component) native تبدیل می‌کند که می‌توان آن را با `customElements.define` ثبت کرد و در هر صفحه HTML یا framework غیر-Vue استفاده کرد.\r\n\r\n```js\r\nimport { defineCustomElement } from 'vue';\r\n\r\nconst MyButtonElement = defineCustomElement({\r\n  props: { label: String },\r\n  emits: ['click'],\r\n  template: `<button @click=\"$emit('click')\">{{ label }}</button>`,\r\n  styles: [`.btn { color: var(--brand) }`], // در Shadow DOM تزریق می‌شود\r\n});\r\n\r\ncustomElements.define('my-button', MyButtonElement);\r\n```\r\n\r\n```html\r\n<!-- در هر جایی به عنوان یک HTML custom element استاندارد استفاده می‌شود -->\r\n<my-button label=\"روی من کلیک کن\"></my-button>\r\n```\r\n\r\n**با SFCها** — از قرارداد نام‌گذاری `.ce.vue` استفاده کنید (Vite آن را تشخیص می‌دهد):\r\n\r\n```js\r\nimport MyButton from './MyButton.ce.vue';\r\nconst MyButtonElement = defineCustomElement(MyButton);\r\ncustomElements.define('my-button', MyButtonElement);\r\n```\r\n\r\n**تفاوت‌های کلیدی با کامپوننت‌های Vue معمولی:**\r\n\r\n- Style‌ها در یک **Shadow DOM** تزریق می‌شوند — CSS encapsulation واقعی.\r\n- Propها از HTML attribute‌ها reflect می‌شوند.\r\n- رویدادها تبدیل به instance های native `CustomEvent` می‌شوند.\r\n- Composition API، `inject`/`provide` و Pinia همه درون shadow tree کار می‌کنند.\r\n\r\nاین کامپوننت‌های Vue را در اپلیکیشن‌های غیر-Vue، design system‌ها یا معماری‌های micro-frontend قابل استفاده مجدد می‌کند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-117",
@@ -1674,7 +1666,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`getCurrentInstance` instance داخلی کامپوننت در حال اجرا را در طول `setup()` برمی‌گرداند. machinery داخلی Vue را expose می‌کند و عمدتاً یک escape hatch سطح پایین برای نویسندگان کتابخانه است.\r\n\r\n```js\r\nimport { getCurrentInstance } from 'vue';\r\n\r\nconst instance = getCurrentInstance();\r\n// instance.proxy      — public component proxy (معادل `this` در Options API)\r\n// instance.appContext — دسترسی به app.config، app.provide و غیره\r\n// instance.emit       — emit رویداد\r\n// instance.props      — prop‌های resolved\r\n// instance.slots      — شیء slots\r\n// instance.uid        — شناسه عددی یکتا برای این instance\r\n```\r\n\r\n**موارد استفاده مشروع:**\r\n\r\n- نوشتن plugin‌ها یا کتابخانه‌های Vue که به app context نیاز دارند\r\n- دسترسی به `uid` کامپوننت برای تولید ID یکتا\r\n- قابلیت همکاری با کد Options API قدیمی از داخل یک composable\r\n\r\n**چه زمانی استفاده نکنید:**\r\n\r\n- برای دسترسی به props، slots، emits یا attrs — از `defineProps`، `defineEmits`، `useAttrs`، `useSlots` استفاده کنید\r\n- برای دسترسی برنامه‌نویسی به کامپوننت‌های فرزند — از `defineExpose` + template refs استفاده کنید\r\n- خارج از `setup()` — `getCurrentInstance()` خارج از setup مقدار `null` برمی‌گرداند\r\n\r\n```js\r\n// استفاده صحیح — کد کتابخانه که به app-level config دسترسی دارد\r\nexport function useGlobalConfig() {\r\n  const instance = getCurrentInstance();\r\n  if (!instance) throw new Error('باید داخل setup() فراخوانی شود');\r\n  return instance.appContext.config.globalProperties;\r\n}\r\n```\r\n\r\nهمیشه Composition API عمومی را ترجیح دهید. `getCurrentInstance` به internalهایی دسترسی دارد که ممکن است بین نسخه‌های Vue تغییر کنند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-118",
@@ -1688,7 +1680,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "`useTemplateRef` (معرفی‌شده در Vue 3.5) API صریح برای اعلان template refها است که قرارداد ضمنی تطابق نام را جایگزین می‌کند.\r\n\r\n**رویکرد قدیمی (تطابق نام ضمنی):**\r\n\r\n```vue\r\n<script setup>\r\nimport { ref } from 'vue';\r\n\r\n// کار می‌کند چون نام متغیر باید دقیقاً با ref=\"inputEl\" در template مطابقت داشته باشد\r\nconst inputEl = ref(null);\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"inputEl\" />\r\n</template>\r\n```\r\n\r\n**رویکرد جدید با `useTemplateRef`:**\r\n\r\n```vue\r\n<script setup>\r\nimport { useTemplateRef, onMounted } from 'vue';\r\n\r\nconst inputEl = useTemplateRef('myInput'); // رشته به ref=\"myInput\" مرتبط می‌شود\r\n\r\nonMounted(() => {\r\n  inputEl.value?.focus();\r\n});\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"myInput\" />\r\n</template>\r\n```\r\n\r\n**مزایا:**\r\n\r\n- ارتباط بین script و template صریح است — تغییر نام متغیر دیگر به شکست ساکت binding منجر نمی‌شود.\r\n- پشتیبانی TypeScript: `useTemplateRef<HTMLInputElement>('myInput')` یک `Ref<HTMLInputElement | null>` با type درست برمی‌گرداند.\r\n- با `v-for` کار می‌کند — ref تبدیل به `Ref<Element[]>` می‌شود.\r\n\r\n```ts\r\n// Template ref با type\r\nconst tableRef = useTemplateRef<HTMLTableElement>('dataTable');\r\n// tableRef.value از نوع HTMLTableElement | null است\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-119",
@@ -1702,7 +1694,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Vue 3.5 استراتژی‌های lazy hydration داخلی را از طریق `defineAsyncComponent` معرفی کرد که hydration سمت client کامپوننت‌های server-rendered را تا زمانی که یک شرط خاص برقرار شود به تأخیر می‌اندازد و TTI (Time to Interactive) را بهبود می‌بخشد.\r\n\r\nچهار استراتژی داخلی ارائه شده:\r\n\r\n**`hydrateOnVisible`** — وقتی کامپوننت وارد viewport می‌شود hydrate می‌کند (`IntersectionObserver`):\r\n\r\n```js\r\nimport { defineAsyncComponent, hydrateOnVisible } from 'vue';\r\n\r\nconst LazyMap = defineAsyncComponent({\r\n  loader: () => import('./HeavyMap.vue'),\r\n  hydrate: hydrateOnVisible({ rootMargin: '200px' }),\r\n});\r\n```\r\n\r\n**`hydrateOnIdle`** — وقتی مرورگر بیکار است hydrate می‌کند (`requestIdleCallback`):\r\n\r\n```js\r\nimport { hydrateOnIdle } from 'vue';\r\nhydrate: hydrateOnIdle(2000); // 2000ms timeout به عنوان fallback\r\n```\r\n\r\n**`hydrateOnInteraction`** — با یک تعامل خاص کاربر hydrate می‌کند:\r\n\r\n```js\r\nimport { hydrateOnInteraction } from 'vue';\r\nhydrate: hydrateOnInteraction(['click', 'focus']);\r\n```\r\n\r\n**`hydrateOnMediaQuery`** — وقتی یک CSS media query منطبق می‌شود hydrate می‌کند:\r\n\r\n```js\r\nimport { hydrateOnMediaQuery } from 'vue';\r\nhydrate: hydrateOnMediaQuery('(max-width: 768px)');\r\n```\r\n\r\n**نحوه کار:** سرور HTML کامل را فوری رندر می‌کند (FCP سریع). روی client، hydration (متصل کردن reactivity و event listenerهای Vue به DOM موجود) تا trigger شدن شرط استراتژی به تأخیر می‌افتد. این رویکرد **معماری islands** در سطح framework است — فقط بخش‌هایی که کاربر واقعاً به آن‌ها نیاز دارد زود hydrate می‌شوند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-120",
@@ -1716,7 +1708,7 @@
       "topic": "vue",
       "language": "fa",
       "markdown": "Slot forwarding الگویی است که slot‌های یک والد را از طریق یک کامپوننت میانی به یک فرزند منتقل می‌کند و slot API را در سطح بالا حفظ می‌کند.\r\n\r\n**Slot forwarding dynamic** — تمام slot‌های والد را به‌صورت generic به یک فرزند re-expose می‌کند:\r\n\r\n```vue\r\n<!-- LayoutWrapper.vue — یک wrapper شفاف -->\r\n<template>\r\n  <BaseLayout>\r\n    <!-- هر slot که والد ارسال کرده را forward کنید، شامل داده scoped slot -->\r\n    <template v-for=\"(_, name) in $slots\" #[name]=\"slotProps\">\r\n      <slot :name=\"name\" v-bind=\"slotProps ?? {}\" />\r\n    </template>\r\n  </BaseLayout>\r\n</template>\r\n```\r\n\r\n**نحوه کار:**\r\n\r\n- `v-for=\"(_, name) in $slots\"` روی تمام نام‌های slot ارسال‌شده به `LayoutWrapper` iterate می‌کند.\r\n- `#[name]=\"slotProps\"` از یک نام slot dynamic برای دریافت داده scoped slot از `BaseLayout` استفاده می‌کند.\r\n- `<slot :name=\"name\" v-bind=\"slotProps\" />` آن slot‌ها را به consumer `LayoutWrapper` re-expose می‌کند.\r\n\r\n**چرا اهمیت دارد:**\r\n\r\n- wrapperهای کتابخانه‌های UI (مثلاً یک wrapper `<DataTable>`) نیاز دارند slot‌های table درونی را بدون اعلان مجدد دستی هر کدام expose کنند.\r\n- Slot forwarding API عمومی را تمیز نگه می‌دارد و رندر واقعی را به یک کامپوننت پایه واگذار می‌کند.\r\n\r\n**Slot forwarding نام‌گذاری‌شده (صریح):**\r\n\r\n```vue\r\n<template>\r\n  <BaseDialog>\r\n    <template #header>\r\n      <slot name=\"header\" />\r\n    </template>\r\n    <template #default=\"{ close }\">\r\n      <slot :close=\"close\" />\r\n    </template>\r\n  </BaseDialog>\r\n</template>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     }
   ]
 }

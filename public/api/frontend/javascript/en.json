@@ -25,14 +25,6 @@
     ]
   },
   "hash": "15326dcd5a",
-  "stats": {
-    "total": 102,
-    "byDifficulty": {
-      "Easy": 18,
-      "Medium": 55,
-      "Hard": 29
-    }
-  },
   "questions": [
     {
       "id": "javascript-001",
@@ -424,7 +416,7 @@
       "topic": "javascript",
       "language": "en",
       "markdown": "WeakMap and WeakSet are similar to Map and Set but hold weak references to objects.\r\n\r\nIf no other references to the key or value exist, the garbage collector can reclaim that memory automatically.\r\n\r\nKey differences:\r\n\r\n- **WeakMap**: stores key-value pairs where keys must be objects. Keys are weakly referenced.\r\n- **WeakSet**: stores a collection of objects. Values are weakly referenced.\r\n- Neither WeakMap nor WeakSet is iterable.\r\n\r\nExample:\r\n\r\n```js\r\n// WeakMap — key is weakly held\r\nlet obj = { name: 'Rasool' };\r\n\r\nconst map = new Map();\r\nmap.set(obj, 'data');\r\n\r\nconst weakMap = new WeakMap();\r\nweakMap.set(obj, 'data');\r\n\r\nobj = null;\r\n// map still holds the reference → no garbage collection\r\n// weakMap releases the reference → eligible for garbage collection\r\n```\r\n\r\n```js\r\n// WeakSet — object is weakly held\r\nlet user = { id: 1 };\r\n\r\nconst weakSet = new WeakSet();\r\nweakSet.add(user);\r\n\r\nconsole.log(weakSet.has(user)); // true\r\n\r\nuser = null;\r\n// user is now eligible for garbage collection\r\n// weakSet no longer holds it\r\n```\r\n\r\n> **_NOTE:_** WeakMap and WeakSet are not iterable and have no `size` property.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-029",
@@ -1310,7 +1302,7 @@
       "topic": "javascript",
       "language": "en",
       "markdown": "The Observer pattern (also known as Pub/Sub) allows objects to subscribe to events and be notified when those events occur.\r\n\r\nIt decouples the event source (publisher) from the listeners (subscribers).\r\n\r\nKey components:\r\n\r\n- `on(event, listener)` — subscribe to an event\r\n- `emit(event, data)` — trigger all listeners for an event\r\n- `off(event, listener)` — unsubscribe from an event\r\n\r\nThis pattern is widely used in event-driven systems, UI frameworks, and Node.js EventEmitter.\r\n\r\nExample:\r\n\r\n```js\r\nclass EventEmitter {\r\n  constructor() {\r\n    this.events = {};\r\n  }\r\n\r\n  on(event, listener) {\r\n    if (!this.events[event]) this.events[event] = [];\r\n    this.events[event].push(listener);\r\n  }\r\n\r\n  off(event, listener) {\r\n    if (this.events[event]) {\r\n      this.events[event] = this.events[event].filter((l) => l !== listener);\r\n    }\r\n  }\r\n\r\n  emit(event, data) {\r\n    if (this.events[event]) {\r\n      this.events[event].forEach((listener) => listener(data));\r\n    }\r\n  }\r\n}\r\n\r\nconst emitter = new EventEmitter();\r\n\r\nconst onLogin = (user) => console.log(`${user} logged in`);\r\n\r\nemitter.on('login', onLogin);\r\nemitter.emit('login', 'Rasool'); // Rasool logged in\r\n\r\nemitter.off('login', onLogin);\r\nemitter.emit('login', 'Ali'); // (no output)\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-092",

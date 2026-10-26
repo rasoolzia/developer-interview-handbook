@@ -24,14 +24,6 @@
     ]
   },
   "hash": "d2a95b2a3a",
-  "stats": {
-    "total": 28,
-    "byDifficulty": {
-      "Easy": 7,
-      "Medium": 9,
-      "Hard": 12
-    }
-  },
   "questions": [
     {
       "id": "html-001",
@@ -198,7 +190,7 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "markdown": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.",
+      "markdown": "Both `<meta>` tags and HTTP headers provide metadata about a document, but they operate at different levels.\r\n\r\n### `<meta>` Tags\r\n\r\n- Defined inside the `<head>` section of an HTML document\r\n- Provide metadata interpreted by browsers and search engines\r\n- Processed after the HTML document begins loading\r\n\r\nCommon examples:\r\n\r\n```html\r\n<meta charset=\"UTF-8\" />\r\n<meta name=\"description\" content=\"HTML interview questions\" />\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n```\r\n\r\nUse cases:\r\n\r\n- Page description for SEO\r\n- Character encoding\r\n- Viewport configuration\r\n\r\n### HTTP Headers\r\n\r\n- Sent by the server before the HTML document\r\n- Control browser behavior at the protocol level\r\n- More authoritative than meta tags\r\n\r\nExamples:\r\n\r\n- `Content-Type`\r\n- `Cache-Control`\r\n- `Content-Security-Policy`\r\n- `Set-Cookie`\r\n\r\nUse cases:\r\n\r\n- Security policies\r\n- Caching control\r\n- Redirection\r\n- Content negotiation",
       "readingTime": 1
     },
     {
@@ -240,7 +232,7 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "markdown": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.",
+      "markdown": "Both `id` and `data-*` attributes attach information to elements, but they serve different purposes.\r\n\r\n### `id`\r\n\r\n- Must be unique within the document\r\n- Used for:\r\n  - Fragment navigation (`#section`)\r\n  - JavaScript DOM selection\r\n  - Label associations (`for` attribute)\r\n- Has semantic meaning in document structure\r\n\r\nExample:\r\n\r\n```html\r\n<section id=\"pricing\"></section>\r\n```\r\n\r\n### `data-*` attributes\r\n\r\n- Custom attributes for storing extra data\r\n- Do not affect semantics\r\n- Accessible via JavaScript (`element.dataset`)\r\n\r\nExample:\r\n\r\n```html\r\n<button data-user-id=\"42\"></button>\r\n```\r\n\r\nUse `id` for document identity.  \r\nUse `data-*` for storing custom metadata.",
       "readingTime": 1
     },
     {
@@ -297,7 +289,7 @@
       "domain": "frontend",
       "topic": "html",
       "language": "en",
-      "markdown": "Both create relationships, but they serve different purposes.",
+      "markdown": "Both create relationships, but they serve different purposes.\r\n\r\n### `<a>` (Anchor)\r\n\r\n- Creates hyperlinks within page content\r\n- Visible and interactive\r\n- Used for navigation\r\n\r\nExample:\r\n\r\n```html\r\n<a href=\"/about\">About</a>\r\n```\r\n\r\n### `<link>`\r\n\r\n- Defines relationships between the document and external resources\r\n- Placed inside `<head>`\r\n- Not visible to users\r\n\r\nCommon uses:\r\n\r\n- Stylesheets\r\n- Preload / Prefetch\r\n- Icons\r\n\r\nExample:\r\n\r\n```html\r\n<link rel=\"stylesheet\" href=\"styles.css\" />\r\n```\r\n\r\n`<a>` is for user navigation.  \r\n`<link>` is for document-level resource relationships.",
       "readingTime": 1
     },
     {
@@ -382,7 +374,7 @@
       "topic": "html",
       "language": "en",
       "markdown": "Resource hints (`<link rel=\"...\">`) tell browsers to proactively fetch/resolve resources, reducing latency.\r\n\r\n- **preload**: Fetch critical resources early (e.g., fonts, scripts needed soon). Mandatory as=\"type\" for priority.\r\n- **prefetch**: Fetch resources for next navigation (e.g., next page assets) – low priority, speculative.\r\n- **preconnect**: Establish TCP connection + TLS/SSL handshake early (for third-party domains).\r\n- **dns-prefetch**: Resolve DNS only (cheaper than preconnect, for many domains).\r\n\r\nOrder of cost: dns-prefetch (cheapest) < preconnect < prefetch < preload (highest priority).\r\n\r\nBenefits: Faster TTFB, better FCP/LCP in Core Web Vitals.\r\n\r\nPitfalls: Overuse wastes bandwidth; test with Lighthouse.\r\n\r\nExample:\r\n\r\n```html\r\n<!-- Preload critical font -->\r\n<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\r\n\r\n<!-- Preconnect to CDN -->\r\n<link rel=\"preconnect\" href=\"https://cdn.example.com\" crossorigin />\r\n\r\n<!-- DNS prefetch for analytics -->\r\n<link rel=\"dns-prefetch\" href=\"https://analytics.com\" />\r\n\r\n<!-- Prefetch next page -->\r\n<link rel=\"prefetch\" href=\"/next-page.html\" />\r\n```\r\n\r\nUse preload for above-the-fold; prefetch for navigation flows.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "html-026",
@@ -425,7 +417,7 @@
       "topic": "html",
       "language": "en",
       "markdown": "Open Graph (OG) tags are meta tags that control how a page appears when shared on social media platforms like Facebook, Twitter/X, LinkedIn, and WhatsApp.\r\n\r\nThey define properties like title, description, image, and URL for the link preview card.\r\n\r\nWithout OG tags, platforms guess content from the page, often producing poor previews.\r\n\r\nKey OG properties:\r\n\r\n- `og:title` — title shown in the preview\r\n- `og:description` — summary shown in the preview\r\n- `og:image` — thumbnail image URL\r\n- `og:url` — canonical URL of the page\r\n- `og:type` — content type (website, article, video, etc.)\r\n\r\nExample:\r\n\r\n```html\r\n<meta property=\"og:title\" content=\"HTML Interview Questions\" />\r\n<meta\r\n  property=\"og:description\"\r\n  content=\"A complete guide to HTML interview preparation.\"\r\n/>\r\n<meta property=\"og:image\" content=\"https://example.com/preview.jpg\" />\r\n<meta property=\"og:url\" content=\"https://example.com/html-questions\" />\r\n<meta property=\"og:type\" content=\"website\" />\r\n\r\n<!-- Twitter-specific (now X) -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\r\n<meta name=\"twitter:title\" content=\"HTML Interview Questions\" />\r\n```\r\n\r\nOG tags directly improve click-through rates on social media by providing rich, controlled previews.",
-      "readingTime": 1
+      "readingTime": 2
     }
   ]
 }

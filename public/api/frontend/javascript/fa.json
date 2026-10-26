@@ -25,14 +25,6 @@
     ]
   },
   "hash": "f982c41451",
-  "stats": {
-    "total": 102,
-    "byDifficulty": {
-      "آسان": 18,
-      "متوسط": 55,
-      "سخت": 29
-    }
-  },
   "questions": [
     {
       "id": "javascript-001",
@@ -424,7 +416,7 @@
       "topic": "javascript",
       "language": "fa",
       "markdown": "WeakMap و WeakSet شبیه Map و Set هستند اما مراجع ضعیف به اشیاء نگه میدارند.\n\nاگر هیچ مرجع دیگری به کلید یا مقدار وجود نداشته باشد، garbage collector میتواند آن حافظه را به طور خودکار آزاد کند.\n\nتفاوتهای کلیدی:\n\n- **WeakMap**: جفتهای کلید-مقدار ذخیره میکند که کلیدها باید شیء باشند. کلیدها به صورت ضعیف ارجاع داده میشوند.\n- **WeakSet**: مجموعهای از اشیاء ذخیره میکند. مقادیر به صورت ضعیف ارجاع داده میشوند.\n- هیچکدام از WeakMap و WeakSet قابل iterate نیستند.\n\nمثال:\n\n```js\n// WeakMap — کلید به صورت ضعیف نگه داشته میشود\nlet obj = { name: 'رسول' };\n\nconst map = new Map();\nmap.set(obj, 'داده');\n\nconst weakMap = new WeakMap();\nweakMap.set(obj, 'داده');\n\nobj = null;\n// map هنوز مرجع را نگه میدارد ← بدون garbage collection\n// weakMap مرجع را رها میکند ← واجد شرایط garbage collection\n```\n\n```js\n// WeakSet — شیء به صورت ضعیف نگه داشته میشود\nlet user = { id: 1 };\n\nconst weakSet = new WeakSet();\nweakSet.add(user);\n\nconsole.log(weakSet.has(user)); // true\n\nuser = null;\n// user اکنون واجد شرایط garbage collection است\n// weakSet دیگر آن را نگه نمیدارد\n```\n\n> **_نکته:_** WeakMap و WeakSet قابل iterate نیستند و خاصیت `size` ندارند.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-029",
@@ -1071,7 +1063,7 @@
       "topic": "javascript",
       "language": "fa",
       "markdown": "این مکانیزمها داده را در سمت کلاینت ذخیره میکنند اما در رفتار، طول عمر و امنیت تفاوت دارند.\n\n**localStorage**\n\n- حتی پس از بسته و باز شدن مرورگر باقی میماند\n- محدودیت ذخیره‌سازی حدود ۵MB\n- فقط از طریق JavaScript قابل دسترسی است\n- به طور خودکار با درخواستهای HTTP ارسال نمیشود\n\n**sessionStorage**\n\n- فقط در یک تب مرورگر باقی میماند\n- هنگام بسته شدن تب پاک میشود\n- همان API localStorage را دارد\n\n**کوکیها**\n\n- محدود به حدود ۴KB\n- به طور خودکار با هر درخواست HTTP به سرور ارسال میشوند\n- از تاریخ انقضا پشتیبانی میکنند\n- میتوانند `HttpOnly` و `Secure` علامتگذاری شوند\n\n**امنیت**\n\n- `localStorage` در برابر حملات XSS آسیبپذیر است\n- کوکیهای `HttpOnly` از طریق JavaScript قابل دسترسی نیستند\n\nمثال:\n\n```js\n// localStorage\nlocalStorage.setItem('theme', 'dark');\nconsole.log(localStorage.getItem('theme')); // 'dark'\n\n// sessionStorage\nsessionStorage.setItem('step', '2');\nconsole.log(sessionStorage.getItem('step')); // '2'\n\n// کوکی\ndocument.cookie = 'token=abc123; Secure; SameSite=Strict';\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-075",
@@ -1310,7 +1302,7 @@
       "topic": "javascript",
       "language": "fa",
       "markdown": "الگوی Observer (که به نام Pub/Sub نیز شناخته می‌شود) به آبجکت‌ها اجازه می‌دهد به رویدادها subscribe کنند و هنگام وقوع آنها مطلع شوند.\n\nاین الگو منبع رویداد (publisher) را از شنوندگان (subscribers) جدا می‌کند.\n\nاجزای کلیدی:\n\n- `on(event, listener)` — subscribe به یک رویداد\n- `emit(event, data)` — فعال کردن تمام listener‌های یک رویداد\n- `off(event, listener)` — unsubscribe از یک رویداد\n\nاین الگو به طور گسترده در سیستم‌های event-driven، فریم‌ورک‌های UI و EventEmitter نودجی‌اس استفاده می‌شود.\n\nمثال:\n\n```js\nclass EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(event, listener) {\n    if (!this.events[event]) this.events[event] = [];\n    this.events[event].push(listener);\n  }\n\n  off(event, listener) {\n    if (this.events[event]) {\n      this.events[event] = this.events[event].filter((l) => l !== listener);\n    }\n  }\n\n  emit(event, data) {\n    if (this.events[event]) {\n      this.events[event].forEach((listener) => listener(data));\n    }\n  }\n}\n\nconst emitter = new EventEmitter();\n\nconst onLogin = (user) => console.log(`${user} وارد شد`);\n\nemitter.on('login', onLogin);\nemitter.emit('login', 'Rasool'); // Rasool وارد شد\n\nemitter.off('login', onLogin);\nemitter.emit('login', 'Ali'); // (خروجی ندارد)\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-092",
@@ -1422,7 +1414,7 @@
       "topic": "javascript",
       "language": "fa",
       "markdown": "`for...in` روی **کلیدهای** قابل شمارش یک آبجکت پیمایش می‌کند (شامل ویژگی‌های ارث‌بری شده).\n\n`for...of` روی **مقادیر** یک iterable پیمایش می‌کند (آرایه‌ها، رشته‌ها، Map، Set، generator و غیره).\n\nتفاوت‌های کلیدی:\n\n- `for...in` روی هر آبجکتی کار می‌کند؛ `for...of` به یک iterable نیاز دارد\n- `for...in` ممکن است به طور غیرمنتظره‌ای ویژگی‌های ارث‌بری شده را شامل شود\n- `for...of` به طور مستقیم روی آبجکت‌های ساده کار نمی‌کند (به طور پیش‌فرض iterable نیستند)\n\nمثال:\n\n```js\nconst arr = ['a', 'b', 'c'];\n\nfor (const key in arr) {\n  console.log(key); // 0, 1, 2 (اندیس‌ها به صورت رشته)\n}\n\nfor (const value of arr) {\n  console.log(value); // a, b, c\n}\n\nconst obj = { x: 1, y: 2 };\n\nfor (const key in obj) {\n  console.log(key); // x, y\n}\n\n// for...of روی آبجکت ساده خطا می‌دهد\n// for (const val of obj) {} // TypeError: obj is not iterable\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "javascript-100",

@@ -24,14 +24,6 @@
     ]
   },
   "hash": "0a34a04ed3",
-  "stats": {
-    "total": 37,
-    "byDifficulty": {
-      "آسان": 2,
-      "متوسط": 15,
-      "سخت": 20
-    }
-  },
   "questions": [
     {
       "id": "css-001",
@@ -58,7 +50,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "fa",
-      "markdown": "### `block`\r\n\r\n- کل عرض موجود را اشغال میکند\r\n- از خط جدید شروع میشود\r\n- میتوان عرض و ارتفاع تنظیم کرد\r\n\r\nمثالها: `div`، `p`، `section`",
+      "markdown": "### `block`\r\n\r\n- کل عرض موجود را اشغال میکند\r\n- از خط جدید شروع میشود\r\n- میتوان عرض و ارتفاع تنظیم کرد\r\n\r\nمثالها: `div`، `p`، `section`\r\n\r\n### `inline`\r\n\r\n- فقط به اندازه محتوا عرض میگیرد\r\n- از خط جدید شروع نمیشود\r\n- نمیتوان عرض و ارتفاع تنظیم کرد\r\n\r\nمثالها: `span`، `a`، `strong`\r\n\r\n### `inline-block`\r\n\r\n- از خط جدید شروع نمیشود\r\n- میتوان عرض و ارتفاع تنظیم کرد\r\n- پدینگ و مارجین را رعایت میکند\r\n\r\nزمانی استفاده میشود که عناصر نیاز به موقعیت inline اما رفتار block دارند.\r\n\r\nمثال:\r\n\r\n```css\r\n.block-el {\r\n  display: block;\r\n} /* عرض کامل، خط جدید */\r\n.inline-el {\r\n  display: inline;\r\n} /* عرض از محتوا، w/h قابل تنظیم نیست */\r\n.inblock-el {\r\n  display: inline-block;\r\n} /* جریان inline + w/h قابل تنظیم */\r\n```",
       "readingTime": 1
     },
     {
@@ -86,8 +78,8 @@
       "domain": "frontend",
       "topic": "css",
       "language": "fa",
-      "markdown": "### `relative`\r\n\r\n- نسبت به موقعیت عادی خود قرار میگیرد\r\n- در جریان سند باقی میماند",
-      "readingTime": 1
+      "markdown": "### `relative`\r\n\r\n- نسبت به موقعیت عادی خود قرار میگیرد\r\n- در جریان سند باقی میماند\r\n\r\n### `absolute`\r\n\r\n- از جریان سند خارج میشود\r\n- نسبت به نزدیکترین والد موقعیتدار قرار میگیرد\r\n\r\n### `fixed`\r\n\r\n- نسبت به ویوپورت قرار میگیرد\r\n- در حین اسکرول حرکت نمیکند\r\n\r\n### `sticky`\r\n\r\n- مانند `relative` رفتار میکند تا رسیدن به آستانه\r\n- سپس مانند `fixed` در داخل کانتینر خود رفتار میکند\r\n\r\nموقعیتدهی، لایه بندی و رفتار چیدمان عناصر را کنترل میکند.\r\n\r\nمثال:\r\n\r\n```css\r\n.parent {\r\n  position: relative;\r\n}\r\n\r\n.rel {\r\n  position: relative;\r\n  top: 10px;\r\n} /* از موقعیت عادی جابجا می‌شود */\r\n.abs {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n} /* به .parent متصل می‌شود */\r\n.fix {\r\n  position: fixed;\r\n  bottom: 20px;\r\n  right: 20px;\r\n} /* به viewport متصل می‌شود */\r\n.stic {\r\n  position: sticky;\r\n  top: 0;\r\n} /* هنگام اسکرول می‌چسبد */\r\n```",
+      "readingTime": 2
     },
     {
       "id": "css-005",
@@ -100,7 +92,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "fa",
-      "markdown": "Flexbox و Grid سیستم های چیدمان هستند اما مشکلات متفاوتی را حل میکنند.",
+      "markdown": "Flexbox و Grid سیستم های چیدمان هستند اما مشکلات متفاوتی را حل میکنند.\r\n\r\n### Flexbox\r\n\r\n- چیدمان یکبعدی\r\n- چیدمان را در یک ردیف یا ستون کنترل میکند\r\n- بهترین گزینه برای تراز و توزیع آیتمها\r\n\r\nاستفاده برای:\r\n\r\n- نوار ناوبری\r\n- مرکز کردن محتوا\r\n- چیدمان کامپوننت های کوچک\r\n\r\n### Grid\r\n\r\n- چیدمان دوبعدی\r\n- ردیفها و ستونها را به طور همزمان کنترل میکند\r\n- برای چیدمان کامل صفحه طراحی شده\r\n\r\nاستفاده برای:\r\n\r\n- ساختارهای پیچیده صفحه\r\n- گریدهای واکنشگرا\r\n- سیستم های چیدمان\r\n\r\n**Flexbox محتوا-محور است.**\r\n**Grid چیدمان-محور است.**\r\n\r\nمثال:\r\n\r\n```css\r\n/* Flexbox: یک محور */\r\n.nav {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n/* Grid: دو محور */\r\n.page {\r\n  display: grid;\r\n  grid-template-columns: 200px 1fr;\r\n  grid-template-rows: auto 1fr auto;\r\n}\r\n```",
       "readingTime": 1
     },
     {
@@ -171,7 +163,7 @@
       "topic": "css",
       "language": "fa",
       "markdown": "فروپاشی مارجین زمانی رخ میدهد که مارجینهای عمودی عناصر بلوکی مجاور در یک مارجین واحد ترکیب شوند.\r\n\r\nزمانی اتفاق میافتد که:\r\n\r\n- دو عنصر بلوکی خواهر و برادر مارجین عمودی داشته باشند\r\n- یک والد و اولین/آخرین فرزندش هر دو مارجین عمودی داشته باشند\r\n\r\nمارجین نتیجه برابر با بزرگترین مقدار است، نه مجموع آنها.\r\n\r\nفروپاشی مارجین بین خواهر و برادرهای مجاور در کانتینرهای flex یا grid رخ نمیدهد (چون آنها زمینه قالب بندی جدید ایجاد میکنند).\r\n\r\nمثال:\r\n\r\n```css\r\n/* فروپاشی خواهر و برادری: نتیجه 30px است، نه 50px */\r\n.box-a {\r\n  margin-bottom: 30px;\r\n}\r\n.box-b {\r\n  margin-top: 20px;\r\n}\r\n\r\n/* فروپاشی والد-فرزند: مارجین فرزند بیرون می‌زند */\r\n.parent {\r\n  /* بدون padding، border یا BFC */\r\n}\r\n.child {\r\n  margin-top: 40px;\r\n} /* .parent را جابجا می‌کند، نه .child را */\r\n\r\n/* راه‌حل: با BFC از فروپاشی جلوگیری کنید */\r\n.parent {\r\n  overflow: hidden;\r\n}\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "css-011",
@@ -212,7 +204,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "fa",
-      "markdown": "وقتی استایلها تغییر میکنند، مرورگر ممکن است موارد زیر را فعال کند:",
+      "markdown": "وقتی استایلها تغییر میکنند، مرورگر ممکن است موارد زیر را فعال کند:\r\n\r\n### Reflow (چیدمان)\r\n\r\n- موقعیت و ابعاد عناصر را دوباره محاسبه میکند\r\n- هزینهبرتر است\r\n- توسط تغییرات در ویژگی های تأثیرگذار بر چیدمان فعال میشود (width، height، position)\r\n\r\n### Repaint\r\n\r\n- ظاهر بصری را بدون تغییر چیدمان به روزرسانی میکند\r\n- هزینه کمتری دارد\r\n- توسط تغییراتی مانند رنگ یا پسزمینه فعال میشود\r\n\r\nreflow های مکرر میتوانند به طور قابل توجهی به عملکرد آسیب برسانند.  \r\nبهینه سازی CSS شامل به حداقل رساندن تغییرات فعال کننده چیدمان است.  \r\nمرورگرهای مدرن repaint را تا حد زیادی بهینه میکنند، اما reflow بیش از حد (خصوصاً در حلقه ها) میتواند باعث layout thrashing شود.",
       "readingTime": 1
     },
     {
@@ -468,7 +460,7 @@
       "topic": "css",
       "language": "fa",
       "markdown": "هر دو مقادیر ویژگی‌های CSS را در طول زمان تغییر می‌دهند، اما اهداف متفاوتی دارند.\r\n\r\n**Transitions**\r\n\r\n- توسط تغییر حالت فعال می‌شوند (مثلاً `:hover`، تغییر کلاس)\r\n- یک بار اجرا می‌شوند، از یک حالت شروع به یک حالت پایان\r\n- با shorthand `transition` تعریف می‌شوند\r\n\r\n**Animations (`@keyframes`)**\r\n\r\n- به صورت مستقل اجرا می‌شوند (نیازی به trigger ندارند)\r\n- می‌توانند loop شوند، alternating باشند و چندین مرحله میانی داشته باشند\r\n- کنترل بیشتری روی timing و sequence\r\n\r\nمثال:\r\n\r\n```css\r\n/* Transition: hover تغییر را فعال می‌کند */\r\n.button {\r\n  background: blue;\r\n  transition: background 0.3s ease;\r\n}\r\n.button:hover {\r\n  background: darkblue;\r\n}\r\n\r\n/* Animation: به صورت خودکار اجرا می‌شود */\r\n@keyframes spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.spinner {\r\n  animation: spin 1s linear infinite;\r\n}\r\n```\r\n\r\nاز transition برای تغییرات حالت تعاملی ساده و از animation برای توالی‌های پیچیده یا افکت‌های حلقه‌ای استفاده کنید.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "css-032",
@@ -523,8 +515,8 @@
       "domain": "frontend",
       "topic": "css",
       "language": "fa",
-      "markdown": "`gap` (یا `row-gap`/`column-gap`) فاصله بین آیتم ها در flex/grid اضافه میکند (نیازی به margin نیست).\r\n\r\n```css\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 20px;\r\n}\r\n```\r\n\r\nنکات مرورگری:\r\n\r\n- Safari/IE قدیمی تر: فقط alias `grid-gap` کار میکرد\r\n- پشتیبانی gap در Flexbox: Chrome 84+، Safari 14.1+، Firefox 63+\r\n- در flex، gap به صورت مستقل روی row/column کار میکند\r\n\r\nGap از مشکلات double-margin جلوگیری میکند و چیدمان ها را ساده تر میکند.",
-      "readingTime": 1
+      "markdown": "`gap` (یا `row-gap`/`column-gap`) فاصله بین آیتم ها در flex/grid اضافه میکند (نیازی به margin نیست).\r\n\r\n```css\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 20px;\r\n}\r\n```\r\n\r\nنکات مرورگری:\r\n\r\n- Safari/IE قدیمی تر: فقط alias `grid-gap` کار میکرد\r\n- پشتیبانی gap در Flexbox: Chrome 84+، Safari 14.1+، Firefox 63+\r\n- در flex، gap به صورت مستقل روی row/column کار میکند\r\n\r\nGap از مشکلات double-margin جلوگیری میکند و چیدمان ها را ساده تر میکند.\r\n\r\n### تفاوت gap در Flex و Grid\r\n\r\n**در Flexbox:**\r\n\r\n- `gap` فاصله بین آیتم ها را اضافه میکند اما به `box-sizing` احترام نمیگذارد\r\n- اگر کانتینر `border-box` باشد، gap میتواند باعث overflow شود\r\n- محاسبه: `width = content + gap` (gap خارج از box-sizing است)\r\n\r\n**در Grid:**\r\n\r\n- `gap` بخشی از محاسبات grid track است\r\n- به `border-box` احترام میگذارد و overflow ایجاد نمیکند\r\n- محاسبه: gap در فضای موجود grid لحاظ میشود\r\n\r\n**راه حل برای Flexbox:**\r\n\r\n```css\r\n.flex-container {\r\n  display: flex;\r\n  gap: 20px;\r\n  /* برای جلوگیری از overflow */\r\n  box-sizing: border-box;\r\n  padding: 0; /* یا gap را در محاسبات width لحاظ کنید */\r\n}\r\n```\r\n\r\nاین تفاوت مهم است وقتی با چیدمان های دقیق کار میکنید.",
+      "readingTime": 2
     },
     {
       "id": "css-036",

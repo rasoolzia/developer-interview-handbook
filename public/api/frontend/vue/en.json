@@ -29,14 +29,6 @@
     ]
   },
   "hash": "12aa7bd4a0",
-  "stats": {
-    "total": 120,
-    "byDifficulty": {
-      "Easy": 20,
-      "Medium": 68,
-      "Hard": 32
-    }
-  },
   "questions": [
     {
       "id": "vue-001",
@@ -637,7 +629,7 @@
       "domain": "frontend",
       "topic": "vue",
       "language": "en",
-      "markdown": "Pinia is the official state management library for Vue.\r\n\r\nIt replaces Vuex in modern Vue applications.\r\n\r\nPinia provides:\r\n\r\n- a simpler API\r\n- better TypeScript support\r\n- modular store architecture\r\n- improved developer experience",
+      "markdown": "Pinia is the official state management library for Vue.\r\n\r\nIt replaces Vuex in modern Vue applications.\r\n\r\nPinia provides:\r\n\r\n- a simpler API\r\n- better TypeScript support\r\n- modular store architecture\r\n- improved developer experience\r\n\r\n### Example (Q43): Pinia Store\r\n\r\n```js\r\nimport { defineStore } from 'pinia';\r\n\r\nexport const useCounterStore = defineStore('counter', {\r\n  state: () => ({\r\n    count: 0,\r\n  }),\r\n  actions: {\r\n    increment() {\r\n      this.count++;\r\n    },\r\n  },\r\n});\r\n```",
       "readingTime": 1
     },
     {
@@ -778,7 +770,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`markRaw()` marks an object so it is never converted into a reactive proxy, even if it is placed inside a reactive container.\r\n\r\n`toRaw()` returns the original plain JavaScript object from a reactive proxy.\r\n\r\nBoth are important for performance and compatibility with third-party libraries that break when wrapped in a Vue Proxy.\r\n\r\nWhen to use:\r\n\r\n- `markRaw()` — for objects that should never be reactive, such as chart instances, WebGL contexts, or large data structures.\r\n- `toRaw()` — when you need the original object for external APIs, comparisons, or serialization.\r\n\r\nExample:\r\n\r\n```js\r\nimport { reactive, markRaw, toRaw } from 'vue';\r\n\r\nclass ChartInstance {}\r\n\r\n// markRaw — prevent reactivity on a third-party instance\r\nconst chart = markRaw(new ChartInstance());\r\nconst state = reactive({ chart }); // chart is stored but never proxied\r\n\r\n// toRaw — extract the original object from a reactive proxy\r\nconst user = reactive({ name: 'Rasool' });\r\nconst raw = toRaw(user); // plain JS object\r\nconsole.log(raw === user); // false — proxy !== original\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-054",
@@ -932,7 +924,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3 replaced Vue 2's `Object.defineProperty`-based reactivity with JavaScript `Proxy`.\r\n\r\nWhen you call `reactive(obj)`, Vue wraps the object in a `Proxy` that intercepts property access and mutation.\r\n\r\nDuring a `get`, Vue calls `track()` to record which reactive effect is currently executing and depends on that property.\r\n\r\nDuring a `set`, Vue calls `trigger()` to notify all recorded effects that depend on the changed property, causing them to re-run.\r\n\r\nThis approach has key advantages over Vue 2:\r\n\r\n- Detects property additions and deletions without special APIs\r\n- Handles arrays natively without wrapping mutation methods\r\n- Supports `Map`, `Set`, `WeakMap`, and `WeakSet`\r\n\r\nExample (simplified internals):\r\n\r\n```js\r\nfunction reactive(target) {\r\n  return new Proxy(target, {\r\n    get(target, key, receiver) {\r\n      track(target, key); // record which effect is reading this\r\n      return Reflect.get(target, key, receiver);\r\n    },\r\n    set(target, key, value, receiver) {\r\n      const result = Reflect.set(target, key, value, receiver);\r\n      trigger(target, key); // notify effects that depend on this key\r\n      return result;\r\n    },\r\n  });\r\n}\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-065",
@@ -960,7 +952,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "These three hooks fire at different stages of a component's initialization.\r\n\r\n**`created`** (Options API) / no direct equivalent in Composition API — the `setup()` function itself runs at this stage. The reactive data is initialized, computed properties and watchers are set up, but the component has not yet been added to the DOM.\r\n\r\n**`onBeforeMount`** runs after the render function is compiled and about to execute for the first time, but before the component's DOM nodes are inserted into the document.\r\n\r\n**`mounted`** / **`onMounted`** runs after the component's DOM has been created and inserted. This is the correct place to access the real DOM, start subscriptions, measure elements, or initialize third-party libraries that require a DOM node.\r\n\r\n```vue\r\n<script setup>\r\nimport { onBeforeMount, onMounted } from 'vue';\r\n\r\nconsole.log('setup (= created): DOM not yet available');\r\n\r\nonBeforeMount(() => {\r\n  console.log('onBeforeMount: about to render');\r\n});\r\n\r\nonMounted(() => {\r\n  console.log('onMounted: DOM is ready');\r\n});\r\n</script>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-067",
@@ -974,7 +966,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "When a Vue 3 component mounts, the runtime goes through a well-defined sequence:\r\n\r\n1. **Component instance is created** — reactive state, computed properties, and watchers are initialized.\r\n2. **`setup()` runs** — the Composition API entry point. Props are resolved, `provide`/`inject` chains are connected.\r\n3. **Render function is compiled** (if using SFC templates, this is done at build time by the Vue compiler).\r\n4. **`onBeforeMount` hooks fire**.\r\n5. **Render effect runs** — the render function executes, producing a virtual DOM tree. During this execution, reactive dependencies are tracked.\r\n6. **Virtual DOM is patched into the real DOM** — Vue's runtime-dom module converts the vnode tree into actual DOM nodes.\r\n7. **`onMounted` hooks fire** — child hooks fire before parent hooks (bottom-up).\r\n\r\nAfter mounting, any reactive dependency change triggers the component's render effect to re-run (producing a new vnode tree), which Vue diffs against the previous tree and patches only the changed DOM nodes.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-068",
@@ -988,7 +980,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Pinia is the official recommended state management library for Vue 3, effectively replacing Vuex.\r\n\r\nKey differences:\r\n\r\n| Feature         | Vuex                     | Pinia                                    |\r\n| --------------- | ------------------------ | ---------------------------------------- |\r\n| Mutations       | Required to change state | Removed — state is changed directly      |\r\n| Modules         | Nested, verbose setup    | Each store is a flat, independent module |\r\n| TypeScript      | Requires boilerplate     | First-class TypeScript support           |\r\n| Devtools        | Supported                | Supported with better DX                 |\r\n| Bundle size     | Larger                   | Much smaller (~1KB)                      |\r\n| Composition API | Limited support          | Native support with `setup()` stores     |\r\n\r\nIn Pinia you can use either the Options-style or the setup-style store:\r\n\r\n```js\r\n// Pinia - Options store\r\nimport { defineStore } from 'pinia';\r\n\r\nexport const useCounterStore = defineStore('counter', {\r\n  state: () => ({ count: 0 }),\r\n  getters: {\r\n    double: (state) => state.count * 2,\r\n  },\r\n  actions: {\r\n    increment() {\r\n      this.count++;\r\n    },\r\n  },\r\n});\r\n\r\n// Pinia - Setup store (Composition API style)\r\nexport const useCounterStore = defineStore('counter', () => {\r\n  const count = ref(0);\r\n  const double = computed(() => count.value * 2);\r\n  function increment() {\r\n    count.value++;\r\n  }\r\n  return { count, double, increment };\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-069",
@@ -1030,7 +1022,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue's template compiler (`@vue/compiler-dom`) transforms `.vue` template strings into JavaScript render functions at build time (via `@vitejs/plugin-vue` or `vue-loader`).\r\n\r\nThe compilation pipeline has three stages:\r\n\r\n1. **Parse** — the template HTML is parsed into an Abstract Syntax Tree (AST).\r\n2. **Transform** — the AST is traversed and optimized. Vue applies transforms for directives (`v-if`, `v-for`), event handlers, slot compilation, and marks static subtrees with `hoistStatic` flags so they are created once outside the render function.\r\n3. **Generate (Code generation)** — the optimized AST is converted into a JavaScript function string.\r\n\r\nA simple template like:\r\n\r\n```html\r\n<div class=\"hello\">{{ msg }}</div>\r\n```\r\n\r\nCompiles to roughly:\r\n\r\n```js\r\nimport {\r\n  createElementVNode as _createElementVNode,\r\n  toDisplayString as _toDisplayString,\r\n} from 'vue';\r\n\r\nfunction render(_ctx) {\r\n  return _createElementVNode(\r\n    'div',\r\n    { class: 'hello' },\r\n    _toDisplayString(_ctx.msg),\r\n  );\r\n}\r\n```\r\n\r\nStatic nodes are hoisted above the function so they are only created once, avoiding unnecessary allocations on re-renders. Dynamic nodes are tracked using patch flags (bitwise integers) that tell the runtime exactly what changed.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-072",
@@ -1044,7 +1036,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue does not update the DOM synchronously when reactive state changes. Instead, it queues the component's re-render and flushes the queue asynchronously in a microtask (using `Promise.then`).\r\n\r\nThis means multiple synchronous state changes within one task only cause one re-render:\r\n\r\n```js\r\nconst count = ref(0);\r\n\r\ncount.value++;\r\ncount.value++;\r\ncount.value++;\r\n// DOM is updated once, not three times\r\n```\r\n\r\nVue maintains a job queue. When a reactive effect is triggered, Vue calls `queueJob(effect)`. Duplicate jobs (same component render effect) are deduplicated using their internal `id`. After all synchronous code finishes, the microtask runs `flushJobs()`, sorting jobs by their `id` (parent components render before children) and executing them in order.\r\n\r\n`nextTick()` returns a promise that resolves after the current flush cycle:\r\n\r\n```js\r\nimport { nextTick, ref } from 'vue';\r\n\r\nconst msg = ref('hello');\r\nmsg.value = 'world';\r\n\r\nawait nextTick();\r\n// DOM now reflects 'world'\r\n```\r\n\r\nPre-flush watchers (using `flush: 'pre'`, the default for `watch`) run before the component re-renders. Post-flush watchers (`flush: 'post'`) run after.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-073",
@@ -1058,7 +1050,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3's reactivity is built on two concepts: **effects** (functions that should re-run when dependencies change) and **dependency sets** (sets of effects that read a reactive property).\r\n\r\nInternally Vue maintains a global `activeEffect` variable that points to the effect currently executing. During a reactive getter (`get` Proxy trap), Vue's `track()` function:\r\n\r\n1. Reads `activeEffect` — if null, nothing is tracked.\r\n2. Looks up (or creates) a `WeakMap<target, Map<key, Set<effect>>>` structure.\r\n3. Adds `activeEffect` to the `Set` for that `target.key` pair.\r\n\r\nDuring a reactive setter (`set` Proxy trap), Vue's `trigger()` function:\r\n\r\n1. Looks up the dependency set for `target.key`.\r\n2. Schedules all effects in that set to re-run via the Vue scheduler.\r\n\r\n```js\r\n// Simplified pseudocode\r\nlet activeEffect = null;\r\nconst targetMap = new WeakMap();\r\n\r\nfunction track(target, key) {\r\n  if (!activeEffect) return;\r\n  let depsMap = targetMap.get(target);\r\n  if (!depsMap) targetMap.set(target, (depsMap = new Map()));\r\n  let dep = depsMap.get(key);\r\n  if (!dep) depsMap.set(key, (dep = new Set()));\r\n  dep.add(activeEffect);\r\n}\r\n\r\nfunction trigger(target, key) {\r\n  const depsMap = targetMap.get(target);\r\n  if (!depsMap) return;\r\n  depsMap.get(key)?.forEach((effect) => effect());\r\n}\r\n```\r\n\r\nUsing a `WeakMap` means the dependency map for an object is garbage-collected when the object itself is.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-074",
@@ -1072,7 +1064,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "**CSR (Client-Side Rendering)** — the server sends a minimal HTML shell (often just `<div id=\"app\"></div>`) and a JavaScript bundle. The browser downloads the JS, runs Vue, and builds the DOM entirely on the client. Time to First Byte is fast, but the page is blank until JS is parsed and executed (slow Time to Interactive on slow networks).\r\n\r\n**SSR (Server-Side Rendering)** — Vue renders the component tree to an HTML string on the server. The browser receives fully-formed HTML immediately (fast First Contentful Paint). After the JS bundle loads, Vue **hydrates** the existing DOM — attaching event listeners and making it interactive without re-rendering.\r\n\r\n|             | CSR                  | SSR                     |\r\n| ----------- | -------------------- | ----------------------- |\r\n| First paint | Slow (blank page)    | Fast (HTML ready)       |\r\n| SEO         | Requires extra setup | Excellent               |\r\n| Server load | Low                  | Higher                  |\r\n| Complexity  | Simpler              | Requires Node.js server |\r\n\r\nVue's official SSR solution is **Nuxt.js**, which abstracts the server setup, file-based routing, and hydration strategy (including partial hydration and streaming).\r\n\r\nFor non-Node SSR, `vue/server-renderer` can output HTML strings from any server environment.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-075",
@@ -1086,7 +1078,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`provide` / `inject` is Vue's dependency injection system for sharing data across a component tree without prop drilling.\r\n\r\n**Symbol keys** prevent accidental key collisions across libraries or large codebases. Export the Symbol from a shared file:\r\n\r\n```js\r\n// keys.js\r\nexport const USER_KEY = Symbol('user');\r\n```\r\n\r\n```js\r\n// Provider component\r\nimport { provide, ref } from 'vue';\r\nimport { USER_KEY } from './keys';\r\n\r\nconst user = ref({ name: 'Alice' });\r\nprovide(USER_KEY, user);\r\n```\r\n\r\n```js\r\n// Descendant component\r\nimport { inject } from 'vue';\r\nimport { USER_KEY } from './keys';\r\n\r\nconst user = inject(USER_KEY); // fully typed if using TypeScript\r\n```\r\n\r\n**Reactive injection** — providing a `ref` or `reactive` value keeps the injected value live. The consumer sees changes automatically:\r\n\r\n```js\r\n// In provider\r\nconst theme = ref('light');\r\nprovide('theme', theme); // provide the ref itself, not theme.value\r\n\r\n// In consumer\r\nconst theme = inject('theme'); // theme is a Ref<string>\r\n```\r\n\r\n**Default values** — the second argument to `inject` is a fallback used when no provider is found:\r\n\r\n```js\r\nconst theme = inject('theme', ref('light'));\r\n// Or a factory function for expensive defaults:\r\nconst config = inject('config', () => ({ debug: false }), true);\r\n```\r\n\r\n**Read-only injection** — wrap with `readonly()` before providing to prevent consumers from mutating the value.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-076",
@@ -1100,7 +1092,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "When reactive state changes, Vue's rendering pipeline follows these steps:\r\n\r\n1. **Trigger** — a reactive setter calls `trigger()`, scheduling the component's render effect in the job queue.\r\n2. **Scheduler flush** — on the next microtask, `flushJobs()` runs, processing queued render effects in parent-first order.\r\n3. **Re-render** — the component's render function runs, accessing reactive state (which is tracked) and producing a new **virtual DOM (vnode) tree**.\r\n4. **Diff (patch)** — Vue compares the new vnode tree to the previous tree. Using **patch flags** set by the compiler, Vue knows exactly which nodes and attributes are dynamic, skipping static parts entirely.\r\n5. **DOM update** — only the nodes that changed are updated in the real DOM via the runtime-dom module.\r\n6. **Post-flush hooks** — `onUpdated` hooks fire, and `watchEffect` / `watch` post-flush callbacks run.\r\n\r\nThe compiler's static hoisting and patch flags are critical for performance — they allow the runtime to skip large subtrees that didn't change, making Vue updates sub-linear relative to tree size.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-077",
@@ -1114,7 +1106,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue provides several mechanisms for components to communicate:\r\n\r\n**1. Props (parent → child)** — the standard way to pass data down:\r\n\r\n```js\r\ndefineProps({ title: String, count: Number });\r\n```\r\n\r\n**2. Emits (child → parent)** — the child fires events the parent listens to:\r\n\r\n```js\r\nconst emit = defineEmits(['update:modelValue', 'close']);\r\nemit('close');\r\n```\r\n\r\n**3. v-model** — two-way binding shorthand using props + emits:\r\n\r\n```html\r\n<MyInput v-model=\"text\" />\r\n<!-- expands to: :modelValue=\"text\" @update:modelValue=\"text = $event\" -->\r\n```\r\n\r\n**4. provide / inject** — ancestor → any descendant, bypasses intermediate components.\r\n\r\n**5. Pinia / Vuex** — cross-component state in a centralized store.\r\n\r\n**6. Template refs + defineExpose** — parent directly calls methods or reads state from a child:\r\n\r\n```js\r\n// Child exposes\r\ndefineExpose({ reset, validate });\r\n// Parent\r\nconst formRef = ref(null);\r\nformRef.value.validate();\r\n```\r\n\r\n**7. Event bus** — using a tiny mitt instance for truly decoupled communication between unrelated components. Use sparingly.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-078",
@@ -1142,7 +1134,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`<Suspense>` is a built-in Vue component that coordinates the loading state of multiple async operations in its component subtree, showing fallback content until all async dependencies resolve.\r\n\r\nIt has two named slots:\r\n\r\n- `#default` — the actual content (may contain async components or components with async `setup()`)\r\n- `#fallback` — shown while any default-slot component is still loading\r\n\r\n```vue\r\n<Suspense>\r\n  <template #default>\r\n    <AsyncDashboard />  <!-- has async setup() -->\r\n  </template>\r\n  <template #fallback>\r\n    <LoadingSpinner />\r\n  </template>\r\n</Suspense>\r\n```\r\n\r\nAn async `setup()` is a component whose `setup` function is `async` or returns a Promise:\r\n\r\n```vue\r\n<script setup>\r\nconst data = await fetch('/api/dashboard').then((r) => r.json());\r\n</script>\r\n```\r\n\r\n`<Suspense>` emits `@pending`, `@resolve`, and `@fallback` events for fine-grained control.\r\n\r\n**Nesting**: child `<Suspense>` boundaries handle their own loading independently.\r\n\r\n**Note**: `<Suspense>` is still experimental in some configurations and works best when combined with SSR streaming in frameworks like Nuxt 3.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-080",
@@ -1198,7 +1190,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Composables are functions that encapsulate and reuse stateful logic using the Composition API. They are the Vue 3 equivalent of React hooks and replace Vue 2's mixins.\r\n\r\nA composable:\r\n\r\n- Has a `use` prefix by convention (`useFetch`, `useMousePosition`)\r\n- Can use `ref`, `reactive`, `computed`, `watch`, `onMounted`, etc.\r\n- Returns reactive state and/or functions\r\n\r\n```js\r\n// useFetch.js\r\nimport { ref, watchEffect } from 'vue';\r\n\r\nexport function useFetch(url) {\r\n  const data = ref(null);\r\n  const error = ref(null);\r\n  const loading = ref(false);\r\n\r\n  watchEffect(async (onCleanup) => {\r\n    const controller = new AbortController();\r\n    onCleanup(() => controller.abort());\r\n\r\n    loading.value = true;\r\n    error.value = null;\r\n    try {\r\n      const res = await fetch(url.value ?? url, { signal: controller.signal });\r\n      data.value = await res.json();\r\n    } catch (e) {\r\n      if (e.name !== 'AbortError') error.value = e;\r\n    } finally {\r\n      loading.value = false;\r\n    }\r\n  });\r\n\r\n  return { data, error, loading };\r\n}\r\n```\r\n\r\n**Best practices:**\r\n\r\n- Accept refs as arguments to keep the composable reactive to changing inputs\r\n- Clean up side effects (timers, subscriptions) with `onUnmounted` or `onCleanup`\r\n- Return plain reactive references — don't destructure internal state before returning\r\n- Composables should only be called inside `setup()` or another composable",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-084",
@@ -1212,7 +1204,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Template refs give direct access to a DOM element or child component instance after the component is mounted.\r\n\r\nIn `<script setup>`, declare a `ref` with the same name as the `ref` attribute on the element:\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onMounted } from 'vue';\r\n\r\nconst inputEl = ref(null);\r\n\r\nonMounted(() => {\r\n  inputEl.value.focus(); // access the real DOM element\r\n});\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"inputEl\" type=\"text\" />\r\n</template>\r\n```\r\n\r\nFor a **child component**, the ref points to the child's public interface. In `<script setup>` components, you must use `defineExpose` for the parent to access anything:\r\n\r\n```vue\r\n<!-- Child.vue -->\r\n<script setup>\r\nconst count = ref(0);\r\ndefineExpose({ count });\r\n</script>\r\n```\r\n\r\n```vue\r\n<!-- Parent.vue -->\r\n<script setup>\r\nconst childRef = ref(null);\r\n// After mount: childRef.value.count is accessible\r\n</script>\r\n<template>\r\n  <Child ref=\"childRef\" />\r\n</template>\r\n```\r\n\r\n**`v-for` with refs** — a ref on a `v-for` element populates with an array of DOM nodes after mount.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-085",
@@ -1226,7 +1218,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "The `flush` option in `watch` and `watchEffect` controls when the callback runs relative to Vue's component update cycle.\r\n\r\n**`flush: 'pre'` (default for `watch`)** — the callback runs before the component re-renders. Useful when you need to read or modify state that will then be reflected in the current render.\r\n\r\n**`flush: 'post'` (default for `watchEffect` when using `watchPostEffect`)** — runs after the component has re-rendered and the DOM has been updated. Use this when the callback needs to access the updated DOM.\r\n\r\n**`flush: 'sync'`** — runs synchronously, immediately when the reactive dependency changes. Bypasses the scheduler entirely. Use with extreme caution — can cause performance issues and multiple synchronous updates.\r\n\r\n```js\r\nimport { watch, watchEffect, watchPostEffect, watchSyncEffect } from 'vue';\r\n\r\n// Runs before component update (pre is default for watch)\r\nwatch(source, callback, { flush: 'pre' });\r\n\r\n// Runs after component update — can access updated DOM\r\nwatch(source, callback, { flush: 'post' });\r\n\r\n// Convenience aliases\r\nwatchPostEffect(() => {\r\n  /* post-flush */\r\n});\r\nwatchSyncEffect(() => {\r\n  /* sync */\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-086",
@@ -1254,7 +1246,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "A hydration mismatch occurs when the HTML rendered on the server differs from what Vue would render on the client. Vue logs a warning and falls back to client-side rendering for the mismatched subtree.\r\n\r\n**Common causes:**\r\n\r\n1. **Non-deterministic rendering** — using `Math.random()`, `Date.now()`, or `uuid()` directly in templates without seeding consistently.\r\n2. **Browser-only APIs** — checking `window`, `localStorage`, or `document` in `setup()` without guarding with `onMounted` or `import.meta.client`.\r\n3. **Invalid HTML structure** — e.g., a `<p>` inside another `<p>`, which browsers silently fix.\r\n4. **User agent based differences** — rendering different content based on the HTTP `User-Agent` header.\r\n\r\n**Fixes:**\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onMounted } from 'vue';\r\n\r\nconst isClient = ref(false);\r\nonMounted(() => {\r\n  isClient.value = true;\r\n});\r\n</script>\r\n\r\n<template>\r\n  <!-- Only renders on client, no mismatch -->\r\n  <ClientOnly>\r\n    <DatePicker />\r\n  </ClientOnly>\r\n\r\n  <!-- Or guard manually -->\r\n  <div v-if=\"isClient\">{{ new Date().toLocaleString() }}</div>\r\n</template>\r\n```\r\n\r\nUse `v-if=\"false\"` with a `<ClientOnly>` wrapper (available in Nuxt) or the `suppressHydrationWarning` attribute for intentional differences.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-088",
@@ -1268,7 +1260,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3's `reactive()` uses Proxy to intercept all property accesses including array index reads and length changes — so array mutations are reactive without any special wrapping.\r\n\r\nBoth indexed access and mutation methods trigger reactive updates:\r\n\r\n```js\r\nimport { reactive } from 'vue';\r\n\r\nconst list = reactive(['a', 'b', 'c']);\r\n\r\nlist.push('d'); // triggers update\r\nlist[0] = 'z'; // triggers update\r\nlist.length = 1; // triggers update\r\nlist.sort(); // triggers update\r\nlist.splice(1, 1); // triggers update\r\n```\r\n\r\nThis differs from Vue 2, where only specific mutation methods (`push`, `pop`, `splice`, etc.) were intercepted, and direct index assignment (`arr[0] = 'x'`) did not trigger updates.\r\n\r\nFor `ref` arrays:\r\n\r\n```js\r\nconst items = ref(['a', 'b', 'c']);\r\nitems.value.push('d'); // reactive\r\nitems.value = [...items.value, 'e']; // also reactive — replaces the whole array\r\n```\r\n\r\n**Replacing the array** is often the cleaner pattern when doing filtering or mapping, as it ensures Vue sees the change and properly diffs the new and old lists.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-089",
@@ -1282,7 +1274,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`shallowRef` creates a ref where only the `.value` assignment itself is reactive — the inner object's properties are **not** made deeply reactive.\r\n\r\n```js\r\nimport { shallowRef } from 'vue';\r\n\r\nconst state = shallowRef({ count: 0 });\r\n\r\nstate.value.count++; // does NOT trigger an update\r\nstate.value = { count: 1 }; // DOES trigger an update (replacing .value)\r\n```\r\n\r\n**When to use `shallowRef`:**\r\n\r\n1. **Large data structures** — wrapping a deeply nested object with `ref` makes every property reactive, which is expensive. If you only ever replace the entire object (not mutate it), `shallowRef` avoids the cost.\r\n2. **External/immutable data** — data from an API response that you won't mutate in place.\r\n3. **Non-reactive objects** — objects that are not meant to be reactive but are stored for reference (e.g., a canvas context or a class instance). Use alongside `markRaw` for those.\r\n\r\n```js\r\n// Expensive — creates deep proxy for a 10,000-item dataset\r\nconst data = ref(largeDataset);\r\n\r\n// Better — only the .value swap is tracked\r\nconst data = shallowRef(largeDataset);\r\ndata.value = newDataset; // triggers a re-render\r\n```\r\n\r\n`triggerRef(shallowRef)` forces an update even when mutating the inner object directly.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-090",
@@ -1324,7 +1316,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`v-if` and `v-show` both conditionally display elements, but they work differently at the DOM level.\r\n\r\n**`v-if`** — completely adds or removes the element from the DOM. When false, the element (and its component) is destroyed. When true, it is created fresh. This means lifecycle hooks (`onMounted`, `onUnmounted`) fire on each toggle.\r\n\r\n**`v-show`** — always renders the element in the DOM, but toggles its `display` CSS property. The element is created once and never destroyed. Lifecycle hooks only fire once on initial mount.\r\n\r\n```vue\r\n<template>\r\n  <!-- Element is destroyed/created on each toggle -->\r\n  <HeavyComponent v-if=\"isVisible\" />\r\n\r\n  <!-- Element stays in DOM, only display:none toggles -->\r\n  <HeavyComponent v-show=\"isVisible\" />\r\n</template>\r\n```\r\n\r\n**When to use which:**\r\n\r\n- `v-show` is better when the condition toggles frequently and the element is expensive to re-create (e.g., a chart or rich editor).\r\n- `v-if` is better when the element rarely toggles or when you want to avoid mounting the component entirely until needed (lazy initialization). Also use `v-if` when the element contains resources that should not exist in the DOM (e.g., media players or subscriptions).\r\n\r\n**`v-if` has higher toggle cost; `v-show` has higher initial render cost.**",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-093",
@@ -1338,7 +1330,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue's patch algorithm compares two vnode trees and produces the minimal set of DOM operations needed to update the real DOM.\r\n\r\n**Key strategies:**\r\n\r\n1. **Same-level comparison only** — Vue never compares nodes across different levels. If a node's type changes (e.g., `<div>` → `<span>`), the old subtree is destroyed and a new one created.\r\n\r\n2. **Keyed lists** — when reconciling children with `key` attributes, Vue builds a key-to-index map and uses the **longest increasing subsequence (LIS)** algorithm to determine the minimum moves needed to reorder DOM nodes.\r\n\r\n3. **Patch flags (compiler optimization)** — the Vue template compiler annotates vnodes with bitwise patch flags indicating exactly what is dynamic (text content, class, style, props, etc.). The runtime uses these flags to skip static checks entirely.\r\n\r\n```js\r\n// Compiler output for <div class=\"static\" :title=\"title\">{{ msg }}</div>\r\ncreateElementVNode(\r\n  'div',\r\n  { class: 'static', title: title },\r\n  msg,\r\n  PatchFlags.CLASS | PatchFlags.TEXT, // only check class and text\r\n);\r\n```\r\n\r\n4. **Block tree** — the compiler groups dynamic nodes into \"blocks\". During patching, Vue only walks the flat list of dynamic nodes within a block, skipping all static structure.\r\n\r\nThe result is that Vue's runtime patch is much faster than a naive tree diff because the compiler has already done the heavy lifting at build time.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-094",
@@ -1352,7 +1344,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3 supports two ways of writing component logic.\r\n\r\n**Options API** organizes code by option type — `data`, `computed`, `methods`, `watch`, `lifecycle hooks`. It is approachable for beginners and aligns with Vue 2.\r\n\r\n```js\r\nexport default {\r\n  data() {\r\n    return { count: 0 };\r\n  },\r\n  computed: {\r\n    double() {\r\n      return this.count * 2;\r\n    },\r\n  },\r\n  methods: {\r\n    increment() {\r\n      this.count++;\r\n    },\r\n  },\r\n};\r\n```\r\n\r\n**Composition API** organizes code by logical concern. Related logic (state, computed, watchers) for one feature lives together rather than being split across options.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, computed } from 'vue';\r\n\r\nconst count = ref(0);\r\nconst double = computed(() => count.value * 2);\r\nfunction increment() {\r\n  count.value++;\r\n}\r\n</script>\r\n```\r\n\r\n**When to choose:**\r\n\r\n|                  | Options API                 | Composition API            |\r\n| ---------------- | --------------------------- | -------------------------- |\r\n| New to Vue       | More approachable           | Steeper learning curve     |\r\n| Large components | Code spread across sections | Logic grouped by feature   |\r\n| Logic reuse      | Mixins (problematic)        | Composables (clean)        |\r\n| TypeScript       | More inference issues       | Excellent type inference   |\r\n| Team familiarity | Vue 2 teams                 | Preferred for new projects |\r\n\r\nBoth APIs are fully supported in Vue 3 and can be mixed within the same project.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-095",
@@ -1366,7 +1358,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Route-level code splitting delays loading a route's component bundle until the user navigates to that route, reducing the initial JavaScript payload.\r\n\r\nUse a dynamic `import()` function as the component value in the route definition:\r\n\r\n```js\r\nconst router = createRouter({\r\n  routes: [\r\n    {\r\n      path: '/',\r\n      component: () => import('./views/HomeView.vue'),\r\n    },\r\n    {\r\n      path: '/dashboard',\r\n      component: () => import('./views/DashboardView.vue'),\r\n    },\r\n    {\r\n      path: '/admin',\r\n      // Webpack/Vite magic comment to name the chunk\r\n      component: () =>\r\n        import(/* webpackChunkName: \"admin\" */ './views/AdminView.vue'),\r\n    },\r\n  ],\r\n});\r\n```\r\n\r\nVite and Webpack both understand dynamic `import()` and produce separate JavaScript chunks for each route automatically.\r\n\r\n**Grouping related routes into one chunk:**\r\n\r\n```js\r\n// In Vite — use the same rollupOptions chunk\r\ncomponent: () => import('./views/admin/Dashboard.vue'),\r\ncomponent: () => import('./views/admin/Users.vue'),\r\n// Use vite.config.js rollupOptions.output.manualChunks to group\r\n```\r\n\r\n**Prefetching** — add `/* @vite-prefetch */` or configure `prefetch` in the router to proactively load chunks for likely-next routes.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-096",
@@ -1394,7 +1386,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`<KeepAlive>` caches inactive component instances instead of destroying them when they are toggled out of the DOM. This preserves component state and avoids expensive re-initialization.\r\n\r\n```vue\r\n<template>\r\n  <KeepAlive>\r\n    <component :is=\"activeTab\" />\r\n  </KeepAlive>\r\n</template>\r\n```\r\n\r\n**Additional lifecycle hooks** — components inside `<KeepAlive>` gain two hooks:\r\n\r\n- `onActivated` — fires when the component is inserted into the DOM from the cache (equivalent of `onMounted` for cached components)\r\n- `onDeactivated` — fires when the component is removed and placed in the cache (equivalent of `onUnmounted`)\r\n\r\n```vue\r\n<script setup>\r\nimport { onActivated, onDeactivated } from 'vue';\r\n\r\nonActivated(() => {\r\n  console.log('Component activated (came from cache)');\r\n  startPolling();\r\n});\r\n\r\nonDeactivated(() => {\r\n  console.log('Component deactivated (went to cache)');\r\n  stopPolling();\r\n});\r\n</script>\r\n```\r\n\r\n**Fine-grained control:**\r\n\r\n- `include` — only cache components with matching names\r\n- `exclude` — exclude specific components\r\n- `max` — LRU cache limit, evicts least recently used\r\n\r\n```vue\r\n<KeepAlive :include=\"['TabA', 'TabB']\" :max=\"5\">\r\n  <component :is=\"currentTab\" />\r\n</KeepAlive>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-098",
@@ -1408,7 +1400,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`onServerPrefetch` is a lifecycle hook that only runs on the server during SSR. It tells Vue to wait for its async callback to resolve before serializing the component's HTML, ensuring that async data fetched inside it is available on first render.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref, onServerPrefetch } from 'vue';\r\nimport { useStore } from './store';\r\n\r\nconst store = useStore();\r\nconst posts = ref([]);\r\n\r\nonServerPrefetch(async () => {\r\n  posts.value = await fetchPosts(); // runs on server, blocks HTML generation\r\n});\r\n</script>\r\n\r\n<template>\r\n  <ul>\r\n    <li v-for=\"post in posts\" :key=\"post.id\">{{ post.title }}</li>\r\n  </ul>\r\n</template>\r\n```\r\n\r\nOn the client, `onServerPrefetch` is ignored. The client receives the server-rendered HTML with data already populated and hydrates it without re-fetching.\r\n\r\nThis is the Vue primitive behind Nuxt 3's `useAsyncData` and `useFetch` composables, which abstract the pattern with automatic serialization of fetched state into the HTML payload (via `<script type=\"application/json\">` or similar) so the client never re-fetches.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-099",
@@ -1436,7 +1428,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue applications can suffer from unnecessary re-renders, large bundle sizes, and slow initial loads. A systematic approach covers several layers.\r\n\r\n**Reducing re-renders:**\r\n\r\n- Use `v-memo` to skip re-rendering a subtree unless specific dependencies change\r\n- Wrap expensive child components in `shallowRef` so parent re-renders don't propagate\r\n- Use `markRaw` for non-reactive objects stored in reactive state\r\n- `<KeepAlive>` to preserve component state across route changes\r\n\r\n**Bundle size:**\r\n\r\n- Route-level code splitting with dynamic `import()`\r\n- Async components (`defineAsyncComponent`) for heavy components\r\n- Tree-shake unused Vue features using the ESM build\r\n\r\n**Rendering:**\r\n\r\n- `v-show` instead of `v-if` for frequently toggling components\r\n- Use `key` attribute correctly to help the differ reuse DOM nodes\r\n- Avoid binding large objects as props when only a few properties are needed\r\n- `v-once` for static content that never changes\r\n- `v-memo` for list items with stable dependencies\r\n\r\n**List virtualization** — for very long lists (1000+ items), use `vue-virtual-scroller` or a similar library to only render the visible items.\r\n\r\n**Profiling:**\r\n\r\n- Use Vue DevTools Performance tab to identify slow component renders\r\n- Chrome Performance tab for long tasks and layout thrashing\r\n- `app.config.performance = true` enables Vue internal timing marks in the browser DevTools\r\n\r\n```vue\r\n<template>\r\n  <!-- v-memo: only re-render list item when item.id or selected changes -->\r\n  <div\r\n    v-for=\"item in list\"\r\n    :key=\"item.id\"\r\n    v-memo=\"[item.id, selected === item.id]\"\r\n  >\r\n    {{ item.text }}\r\n  </div>\r\n</template>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-101",
@@ -1450,7 +1442,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`defineModel` (stable in Vue 3.4) is a compiler macro that replaces the boilerplate of manually declaring a `modelValue` prop and an `update:modelValue` emit for component `v-model`.\r\n\r\n**Before `defineModel`:**\r\n\r\n```vue\r\n<script setup>\r\nconst props = defineProps({ modelValue: String });\r\nconst emit = defineEmits(['update:modelValue']);\r\n\r\nfunction handleInput(e) {\r\n  emit('update:modelValue', e.target.value);\r\n}\r\n</script>\r\n<template>\r\n  <input :value=\"props.modelValue\" @input=\"handleInput\" />\r\n</template>\r\n```\r\n\r\n**With `defineModel`:**\r\n\r\n```vue\r\n<script setup>\r\nconst model = defineModel(); // returns a writable ref\r\n</script>\r\n<template>\r\n  <input v-model=\"model\" />\r\n</template>\r\n```\r\n\r\n`defineModel()` returns a writable `ref` that is synced with the parent's bound value. Reading `model.value` reads the prop; writing to `model.value` emits the update event automatically.\r\n\r\n**Named and typed models:**\r\n\r\n```ts\r\n// Named model — used with v-model:title\r\nconst title = defineModel<string>('title', { required: true });\r\n\r\n// With default\r\nconst count = defineModel<number>('count', { default: 0 });\r\n```\r\n\r\nThe parent uses these as:\r\n\r\n```vue\r\n<MyForm v-model:title=\"postTitle\" v-model:count=\"itemCount\" />\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-102",
@@ -1464,7 +1456,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3 allows multiple `v-model` bindings on the same component using named models. Each named `v-model` corresponds to a separate prop/emit pair (or a `defineModel` call).\r\n\r\n```vue\r\n<!-- Parent -->\r\n<UserForm\r\n  v-model:firstName=\"user.firstName\"\r\n  v-model:lastName=\"user.lastName\"\r\n  v-model:age=\"user.age\"\r\n/>\r\n```\r\n\r\nUsing `defineModel` (Vue 3.4+):\r\n\r\n```vue\r\n<!-- UserForm.vue -->\r\n<script setup>\r\nconst firstName = defineModel < string > 'firstName';\r\nconst lastName = defineModel < string > 'lastName';\r\nconst age = defineModel < number > 'age';\r\n</script>\r\n\r\n<template>\r\n  <input v-model=\"firstName\" placeholder=\"First name\" />\r\n  <input v-model=\"lastName\" placeholder=\"Last name\" />\r\n  <input v-model.number=\"age\" type=\"number\" placeholder=\"Age\" />\r\n</template>\r\n```\r\n\r\nWithout `defineModel`, each named model requires a separate prop and emit:\r\n\r\n```ts\r\ndefineProps({ firstName: String, lastName: String, age: Number });\r\nconst emit = defineEmits(['update:firstName', 'update:lastName', 'update:age']);\r\n```\r\n\r\nNamed `v-model` is ideal for form components, dialogs, and editors where a single component manages several related pieces of state that the parent needs to own.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-103",
@@ -1478,7 +1470,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`customRef` lets you create a reactive `ref` with full manual control over when dependency tracking happens (`track`) and when subscribers are notified (`trigger`). This is useful when you need to debounce, throttle, or validate before notifying watchers.\r\n\r\n```js\r\nimport { customRef } from 'vue';\r\n\r\nfunction useDebouncedRef(value, delay = 300) {\r\n  let timeout;\r\n  return customRef((track, trigger) => ({\r\n    get() {\r\n      track(); // register the current effect as a subscriber\r\n      return value;\r\n    },\r\n    set(newValue) {\r\n      clearTimeout(timeout);\r\n      timeout = setTimeout(() => {\r\n        value = newValue;\r\n        trigger(); // notify subscribers only after the debounce delay\r\n      }, delay);\r\n    },\r\n  }));\r\n}\r\n```\r\n\r\n```vue\r\n<script setup>\r\nconst searchQuery = useDebouncedRef('', 400);\r\n</script>\r\n\r\n<template>\r\n  <input v-model=\"searchQuery\" placeholder=\"Search...\" />\r\n</template>\r\n```\r\n\r\nThe template and watchers dependent on `searchQuery` will only update 400ms after the user stops typing, preventing excessive API calls.\r\n\r\nOther use cases include:\r\n\r\n- Syncing a ref with `localStorage` and only triggering on settled writes\r\n- Clamping or rounding values on set\r\n- Async validation before committing",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-104",
@@ -1492,7 +1484,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue SFCs support binding reactive JavaScript values directly into CSS using `v-bind()` inside `<style>` blocks. This eliminates the need for inline styles or computed class objects for dynamic styling.\r\n\r\n```vue\r\n<script setup>\r\nimport { ref } from 'vue';\r\n\r\nconst color = ref('#42b883');\r\nconst fontSize = ref(16);\r\n</script>\r\n\r\n<template>\r\n  <p class=\"text\">Hello Vue!</p>\r\n</template>\r\n\r\n<style scoped>\r\n.text {\r\n  color: v-bind(color);\r\n  font-size: v-bind(fontSize + 'px');\r\n}\r\n</style>\r\n```\r\n\r\n**How it works internally:** Vue uses CSS custom properties (CSS variables) under the hood. At compile time, the `v-bind()` expression is replaced with a `var(--hash-propertyName)` reference. A runtime effect updates the custom property on the component's root element whenever the reactive value changes.\r\n\r\nThis means the CSS stays declarative and scoped, while the dynamic values stay reactive. Complex expressions using object property access work too:\r\n\r\n```vue\r\n<script setup>\r\nconst theme = reactive({ primary: '#ff0000', radius: '8px' });\r\n</script>\r\n\r\n<style scoped>\r\n.card {\r\n  color: v-bind('theme.primary');\r\n  border-radius: v-bind('theme.radius');\r\n}\r\n</style>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-105",
@@ -1506,7 +1498,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "CSS Modules are a CSS scoping mechanism where class names are automatically converted to unique hashed identifiers at build time, preventing global naming collisions. In Vue SFCs, add the `module` attribute to a `<style>` tag.\r\n\r\n```vue\r\n<template>\r\n  <!-- $style is automatically injected in <script setup> components -->\r\n  <div :class=\"$style.container\">\r\n    <p :class=\"[$style.text, $style.highlighted]\">Hello</p>\r\n  </div>\r\n</template>\r\n\r\n<style module>\r\n.container {\r\n  padding: 1rem;\r\n}\r\n.text {\r\n  font-size: 1rem;\r\n}\r\n.highlighted {\r\n  color: #42b883;\r\n  font-weight: bold;\r\n}\r\n</style>\r\n```\r\n\r\nThe generated HTML will use a hashed class like `container_3FI8Av` instead of plain `container`.\r\n\r\n**Named CSS Modules** — multiple `<style module=\"name\">` blocks can coexist in one SFC:\r\n\r\n```vue\r\n<style module=\"typography\">\r\n.heading {\r\n  font-size: 2rem;\r\n}\r\n</style>\r\n```\r\n\r\n```js\r\n// Access via useCssModule inside setup\r\nimport { useCssModule } from 'vue';\r\nconst typography = useCssModule('typography');\r\n```\r\n\r\nCSS Modules differ from scoped styles:\r\n\r\n- **Scoped styles** add a `data-v-xx` attribute selector — styles still use the original class name but are made specific.\r\n- **CSS Modules** rename the class itself — no attribute selector needed, zero specificity overhead.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-106",
@@ -1520,7 +1512,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "When a `<style scoped>` block is present in a Vue SFC, the compiler adds a unique `data-v-xx` attribute to every element in the component's template at compile time.\r\n\r\nThe CSS selectors are then transformed to include an attribute selector targeting that unique attribute, ensuring the styles only apply to the component's own elements.\r\n\r\n**Template compilation:**\r\n\r\n```html\r\n<!-- Source template -->\r\n<div class=\"card\"><p>Hello</p></div>\r\n\r\n<!-- Compiled output -->\r\n<div class=\"card\" data-v-7ba5bd90><p data-v-7ba5bd90>Hello</p></div>\r\n```\r\n\r\n**CSS transformation:**\r\n\r\n```css\r\n/* Source */\r\n.card {\r\n  background: white;\r\n}\r\np {\r\n  color: black;\r\n}\r\n\r\n/* Compiled */\r\n.card[data-v-7ba5bd90] {\r\n  background: white;\r\n}\r\np[data-v-7ba5bd90] {\r\n  color: black;\r\n}\r\n```\r\n\r\n**`:deep()`** removes the attribute selector from the descendant part, allowing styles to pierce into child component DOM:\r\n\r\n```css\r\n/* Targets .inner inside a child component */\r\n:deep(.inner) {\r\n  color: red;\r\n}\r\n/* Compiles to: */\r\n[data-v-7ba5bd90] .inner {\r\n  color: red;\r\n}\r\n```\r\n\r\n**`:slotted()`** targets elements passed in via slots (which carry the parent's scope attribute, not the child's):\r\n\r\n```css\r\n:slotted(p) {\r\n  font-style: italic;\r\n}\r\n```\r\n\r\n**`:global()`** escapes scoping entirely and emits the selector without any attribute restriction.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-107",
@@ -1534,7 +1526,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`v-memo` is a built-in directive that memoizes a template subtree. Vue skips re-rendering (and diffing) the subtree entirely when all values in the dependency array remain the same — using reference equality (`===`).\r\n\r\n```vue\r\n<template>\r\n  <div v-for=\"item in list\" :key=\"item.id\" v-memo=\"[item.id, item.selected]\">\r\n    <!-- This entire subtree is skipped if item.id and item.selected haven't changed -->\r\n    <span>{{ item.label }}</span>\r\n    <HeavyChart :data=\"item.chartData\" />\r\n  </div>\r\n</template>\r\n```\r\n\r\n**How it differs from `computed`:** `computed` memoizes a value; `v-memo` memoizes a DOM subtree — it skips vnode creation and patching for the whole block.\r\n\r\n**Use cases:**\r\n\r\n- Large lists where only a few items change per update\r\n- Items that hold expensive child components but rarely update\r\n\r\n**Empty dependency array** is equivalent to `v-once` — renders once and never updates:\r\n\r\n```html\r\n<StaticBanner v-memo=\"[]\" />\r\n```\r\n\r\n**Important caveats:**\r\n\r\n- Only use when profiling confirms a bottleneck — it adds comparison overhead on every render cycle.\r\n- Avoid if every item changes on every update — the comparison cost outweighs the benefit.\r\n- The subtree still participates in the initial render; only subsequent re-renders are skipped.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-108",
@@ -1548,7 +1540,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`defineAsyncComponent` accepts either a loader function (simple form) or an options object (advanced form) that configures loading state, error fallback, delays, and timeouts.\r\n\r\n```js\r\nimport { defineAsyncComponent } from 'vue';\r\n\r\nconst AsyncDashboard = defineAsyncComponent({\r\n  // Required: the component loader\r\n  loader: () => import('./Dashboard.vue'),\r\n\r\n  // Component shown while loading\r\n  loadingComponent: LoadingSpinner,\r\n\r\n  // Delay before showing the loading component (default: 200ms)\r\n  // Prevents flicker for fast loads\r\n  delay: 200,\r\n\r\n  // Component shown if loading fails\r\n  errorComponent: ErrorDisplay,\r\n\r\n  // Time after which loading is considered failed\r\n  timeout: 5000,\r\n\r\n  // Called when the loader promise rejects\r\n  onError(error, retry, fail, attempts) {\r\n    if (attempts <= 3) {\r\n      retry(); // retry the load\r\n    } else {\r\n      fail(); // give up and show errorComponent\r\n    }\r\n  },\r\n});\r\n```\r\n\r\nThe `delay` option is important for UX: if the component loads in under 200ms, the loading spinner is never shown, preventing a brief flash of loading state.\r\n\r\n`onError` receives a `retry` function that re-invokes the loader, making it possible to implement exponential backoff or conditional retries.\r\n\r\nWhen used inside `<Suspense>`, the loading/error component props are ignored — `<Suspense>` takes control of the loading UI through its `#fallback` slot.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-109",
@@ -1562,7 +1554,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Custom directives in Vue 3 have access to seven lifecycle hooks that mirror the component lifecycle, letting the directive react at each stage of the element's life.\r\n\r\n```js\r\nconst myDirective = {\r\n  // Called once before the element is inserted into the DOM\r\n  created(el, binding, vnode) {},\r\n\r\n  // Called right before the element is inserted into the DOM\r\n  beforeMount(el, binding, vnode) {},\r\n\r\n  // Called after the element and all its children are mounted\r\n  mounted(el, binding, vnode) {},\r\n\r\n  // Called before the parent component re-renders\r\n  beforeUpdate(el, binding, vnode, prevVnode) {},\r\n\r\n  // Called after the parent component and its children re-render\r\n  updated(el, binding, vnode, prevVnode) {},\r\n\r\n  // Called before the parent component is unmounted\r\n  beforeUnmount(el, binding, vnode) {},\r\n\r\n  // Called after the parent component is unmounted — do cleanup here\r\n  unmounted(el, binding, vnode) {},\r\n};\r\n```\r\n\r\nThe `binding` object contains:\r\n\r\n- `value` — the current directive value (`v-my-dir=\"42\"` → `42`)\r\n- `oldValue` — previous value (only in `beforeUpdate` / `updated`)\r\n- `arg` — argument (`v-my-dir:color` → `'color'`)\r\n- `modifiers` — modifier object (`v-my-dir.trim` → `{ trim: true }`)\r\n- `instance` — the component instance using the directive\r\n\r\n**Shorthand** — if the directive only needs `mounted` and `updated`, pass a function directly:\r\n\r\n```js\r\napp.directive('focus', (el) => {\r\n  el.focus();\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-110",
@@ -1576,7 +1568,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "These three methods on a Pinia store instance provide advanced state management capabilities.\r\n\r\n**`$patch`** — applies multiple state changes in a single batch, triggering only one update:\r\n\r\n```js\r\nconst store = useCounterStore();\r\n\r\n// Object patch — merges the object into state\r\nstore.$patch({ count: 10, name: 'Alice' });\r\n\r\n// Function patch — gives full access to state for complex mutations\r\nstore.$patch((state) => {\r\n  state.items.push({ id: Date.now(), text: 'new item' });\r\n  state.count++;\r\n});\r\n```\r\n\r\n**`$subscribe`** — watches for any state change, similar to Vuex subscribe:\r\n\r\n```js\r\nstore.$subscribe(\r\n  (mutation, state) => {\r\n    // mutation.type: 'direct' | 'patch object' | 'patch function'\r\n    // Persist to localStorage on every change\r\n    localStorage.setItem('counter', JSON.stringify(state));\r\n  },\r\n  { detached: true },\r\n); // detached: survives component unmount\r\n```\r\n\r\n**`$onAction`** — intercepts actions before and after they run, useful for logging or error handling:\r\n\r\n```js\r\nstore.$onAction(({ name, args, after, onError }) => {\r\n  console.log(`Action \"${name}\" called with`, args);\r\n\r\n  after((result) => {\r\n    console.log(`Action \"${name}\" finished with`, result);\r\n  });\r\n\r\n  onError((error) => {\r\n    console.error(`Action \"${name}\" failed:`, error);\r\n  });\r\n});\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-111",
@@ -1590,7 +1582,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Pinia stores can freely import and use other stores inside their actions and getters. There is no module nesting — each store is independent and composable.\r\n\r\n```js\r\n// userStore.js\r\nexport const useUserStore = defineStore('user', {\r\n  state: () => ({ name: '', role: 'guest' }),\r\n});\r\n```\r\n\r\n```js\r\n// cartStore.js\r\nexport const useCartStore = defineStore('cart', {\r\n  state: () => ({ items: [] }),\r\n\r\n  getters: {\r\n    checkoutLabel: () => {\r\n      const user = useUserStore();\r\n      return user.role === 'vip' ? 'Checkout (VIP)' : 'Checkout';\r\n    },\r\n  },\r\n\r\n  actions: {\r\n    async checkout() {\r\n      const user = useUserStore();\r\n      if (!user.name) throw new Error('Must be logged in');\r\n      // ...process checkout\r\n    },\r\n  },\r\n});\r\n```\r\n\r\n**With setup stores:**\r\n\r\n```js\r\nexport const useCartStore = defineStore('cart', () => {\r\n  const user = useUserStore(); // reactive — reacts to user store changes\r\n  const items = ref([]);\r\n\r\n  const checkoutLabel = computed(() =>\r\n    user.role === 'vip' ? 'Checkout (VIP)' : 'Checkout',\r\n  );\r\n\r\n  return { items, checkoutLabel };\r\n});\r\n```\r\n\r\n**Important:** do not call `useOtherStore()` at the module's top level outside a store definition — Pinia must be active (mounted) before stores can be accessed.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-112",
@@ -1604,7 +1596,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "These are reactivity utility functions used primarily when writing composables or libraries that need to handle both ref and non-ref inputs.\r\n\r\n**`isRef(val)`** — returns `true` if `val` is a `ref` or computed ref:\r\n\r\n```js\r\nisRef(ref(0)); // true\r\nisRef(0); // false\r\n```\r\n\r\n**`isReactive(val)`** — returns `true` if `val` is a reactive proxy:\r\n\r\n```js\r\nisReactive(reactive({ x: 1 })); // true\r\nisReactive({}); // false\r\n```\r\n\r\n**`unref(val)`** — if `val` is a ref, returns `val.value`; otherwise returns `val` as-is. Useful for writing functions that accept both refs and plain values:\r\n\r\n```js\r\nfunction double(n) {\r\n  return unref(n) * 2; // works with ref(3) or plain 3\r\n}\r\n```\r\n\r\n**`toValue(val)`** (Vue 3.3+) — extends `unref` to also call getter functions. Preferred in composables that accept `MaybeRefOrGetter<T>`:\r\n\r\n```js\r\nfunction useFeature(input) {\r\n  // input can be a ref, a getter function, or a plain value\r\n  watchEffect(() => {\r\n    console.log(toValue(input));\r\n  });\r\n}\r\n\r\nuseFeature(ref(42)); // works\r\nuseFeature(() => props.value); // works — calls the getter\r\nuseFeature(42); // works — returns plain value\r\n```\r\n\r\n`toValue` is the recommended way to handle flexible reactive inputs in composables because it covers all three cases: plain value, ref, and computed/getter.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-113",
@@ -1618,7 +1610,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Route meta fields are arbitrary key-value pairs attached to a route via the `meta` property. They are available on `route.meta` inside components and navigation guards, making them a clean way to attach per-route metadata without overloading the route path or component.\r\n\r\n**Common uses:** authentication requirements, page titles, layout types, breadcrumbs.\r\n\r\n```js\r\nconst routes = [\r\n  {\r\n    path: '/dashboard',\r\n    component: Dashboard,\r\n    meta: {\r\n      requiresAuth: true,\r\n      title: 'Dashboard',\r\n      layout: 'admin',\r\n    },\r\n  },\r\n  {\r\n    path: '/login',\r\n    component: Login,\r\n    meta: { requiresAuth: false, title: 'Sign In' },\r\n  },\r\n];\r\n```\r\n\r\n**Using meta in a global navigation guard:**\r\n\r\n```js\r\nrouter.beforeEach((to, from) => {\r\n  document.title = to.meta.title ?? 'My App';\r\n\r\n  if (to.meta.requiresAuth && !isAuthenticated()) {\r\n    return { path: '/login', query: { redirect: to.fullPath } };\r\n  }\r\n});\r\n```\r\n\r\n**TypeScript** — augment the `RouteMeta` interface for type safety:\r\n\r\n```ts\r\ndeclare module 'vue-router' {\r\n  interface RouteMeta {\r\n    requiresAuth: boolean;\r\n    title?: string;\r\n    layout?: 'default' | 'admin' | 'minimal';\r\n  }\r\n}\r\n```\r\n\r\nChild routes inherit parent `meta` fields through `route.matched` — use `to.matched.some(r => r.meta.requiresAuth)` to check any ancestor in the matched chain.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-114",
@@ -1632,7 +1624,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue Router accepts a `scrollBehavior` function in `createRouter` that controls where the page scrolls after each navigation.\r\n\r\n```js\r\nconst router = createRouter({\r\n  history: createWebHistory(),\r\n  routes,\r\n  scrollBehavior(to, from, savedPosition) {\r\n    // 1. Restore browser's native scroll position on back/forward\r\n    if (savedPosition) {\r\n      return savedPosition;\r\n    }\r\n\r\n    // 2. Scroll to anchor hash\r\n    if (to.hash) {\r\n      return { el: to.hash, behavior: 'smooth' };\r\n    }\r\n\r\n    // 3. Scroll to top for all other navigations\r\n    return { top: 0, left: 0, behavior: 'smooth' };\r\n  },\r\n});\r\n```\r\n\r\n**Delayed scroll** — useful when waiting for a route transition animation to finish:\r\n\r\n```js\r\nscrollBehavior(to, from, savedPosition) {\r\n  return new Promise((resolve) => {\r\n    setTimeout(() => {\r\n      resolve({ top: 0, behavior: 'smooth' });\r\n    }, 400);\r\n  });\r\n}\r\n```\r\n\r\nThe return value can be:\r\n\r\n- `{ top, left }` — absolute scroll position\r\n- `{ el, top, left }` — scroll relative to a DOM element or CSS selector\r\n- `savedPosition` — restores the browser's native history scroll\r\n- `false` — no scroll\r\n- A `Promise` resolving to any of the above",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-115",
@@ -1646,7 +1638,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Traditional Vue SSR renders the entire component tree to a string before sending anything to the browser. Streaming SSR uses Node.js streams (or Web Streams) to send HTML incrementally as each part of the component tree finishes rendering.\r\n\r\n```js\r\n// Node.js — using renderToNodeStream\r\nimport { createSSRApp } from 'vue';\r\nimport { renderToNodeStream } from 'vue/server-renderer';\r\nimport App from './App.vue';\r\n\r\napp.get('/', (req, res) => {\r\n  const vueApp = createSSRApp(App);\r\n  const stream = renderToNodeStream(vueApp);\r\n\r\n  res.write('<html><body><div id=\"app\">');\r\n  stream.pipe(res, { end: false });\r\n  stream.on('end', () => res.end('</div></body></html>'));\r\n});\r\n```\r\n\r\n**Web Streams API** (edge runtimes — Cloudflare Workers, Deno):\r\n\r\n```js\r\nimport { renderToWebStream } from 'vue/server-renderer';\r\n\r\nconst stream = renderToWebStream(createSSRApp(App));\r\nreturn new Response(stream, {\r\n  headers: { 'Content-Type': 'text/html' },\r\n});\r\n```\r\n\r\n**Benefits of streaming:**\r\n\r\n- **Time To First Byte (TTFB)** is dramatically reduced — the browser receives and starts parsing HTML immediately.\r\n- The browser can begin downloading CSS and JS while the server is still rendering.\r\n- Large pages with slow async data don't block the entire response.\r\n\r\n**`<Suspense>` + streaming** — Vue can stream HTML up to a `<Suspense>` boundary, flush a loading state, then stream the resolved content when the async data is ready. Nuxt 3 uses this with `useAsyncData` to implement async page data fetching without blocking streaming.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-116",
@@ -1660,7 +1652,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`defineCustomElement` converts a Vue component definition into a native Custom Element (Web Component) class that can be registered with `customElements.define` and used in any HTML page or non-Vue framework.\r\n\r\n```js\r\nimport { defineCustomElement } from 'vue';\r\n\r\nconst MyButtonElement = defineCustomElement({\r\n  props: { label: String },\r\n  emits: ['click'],\r\n  template: `<button @click=\"$emit('click')\">{{ label }}</button>`,\r\n  styles: [`.btn { color: var(--brand) }`], // injected into Shadow DOM\r\n});\r\n\r\ncustomElements.define('my-button', MyButtonElement);\r\n```\r\n\r\n```html\r\n<!-- Used as a standard HTML custom element anywhere -->\r\n<my-button label=\"Click me\"></my-button>\r\n```\r\n\r\n**With SFCs** — use the `.ce.vue` naming convention (Vite detects it and switches to custom element mode):\r\n\r\n```js\r\nimport MyButton from './MyButton.ce.vue';\r\nconst MyButtonElement = defineCustomElement(MyButton);\r\ncustomElements.define('my-button', MyButtonElement);\r\n```\r\n\r\n**Key differences from regular Vue components:**\r\n\r\n- Styles are injected into a **Shadow DOM**, providing true CSS encapsulation.\r\n- Props are reflected from HTML attributes (strings auto-cast for declared props).\r\n- Events become native `CustomEvent` instances dispatched on the element.\r\n- Composition API, `inject`/`provide`, and Pinia all work within the shadow tree.\r\n\r\nThis makes Vue components reusable in non-Vue applications, design systems, or micro-frontend architectures.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-117",
@@ -1674,7 +1666,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`getCurrentInstance` returns the internal component instance of the currently executing component during `setup()`. It exposes Vue's internal machinery and is primarily a low-level escape hatch for library authors.\r\n\r\n```js\r\nimport { getCurrentInstance } from 'vue';\r\n\r\nconst instance = getCurrentInstance();\r\n// instance.proxy    — the public component proxy (equivalent to `this` in Options API)\r\n// instance.appContext — access to app.config, app.provide, etc.\r\n// instance.emit     — emit events\r\n// instance.props    — resolved props\r\n// instance.slots    — slots object\r\n// instance.uid      — unique numeric ID for this instance\r\n```\r\n\r\n**Legitimate use cases:**\r\n\r\n- Writing Vue plugins or libraries that need access to the app context\r\n- Accessing the component's `uid` for unique ID generation\r\n- Interoperability with legacy Options API code from within a composable\r\n\r\n**When NOT to use it:**\r\n\r\n- For accessing props, slots, emits, or attrs — use `defineProps`, `defineEmits`, `useAttrs`, `useSlots` instead\r\n- For programmatic access to child components — use `defineExpose` + template refs\r\n- Outside `setup()` — `getCurrentInstance()` returns `null` outside of setup\r\n\r\n```js\r\n// Correct use — library code accessing app-level config\r\nexport function useGlobalConfig() {\r\n  const instance = getCurrentInstance();\r\n  if (!instance) throw new Error('Must be called inside setup()');\r\n  return instance.appContext.config.globalProperties;\r\n}\r\n```\r\n\r\nAlways prefer the public Composition API. `getCurrentInstance` accesses internals that may change between Vue versions.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-118",
@@ -1688,7 +1680,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "`useTemplateRef` (introduced in Vue 3.5) is the explicit API for declaring template refs, replacing the implicit name-matching convention.\r\n\r\n**Old approach (implicit name matching):**\r\n\r\n```vue\r\n<script setup>\r\nimport { ref } from 'vue';\r\n\r\n// Works because the variable name must match ref=\"inputEl\" exactly\r\nconst inputEl = ref(null);\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"inputEl\" />\r\n</template>\r\n```\r\n\r\n**New approach with `useTemplateRef`:**\r\n\r\n```vue\r\n<script setup>\r\nimport { useTemplateRef, onMounted } from 'vue';\r\n\r\nconst inputEl = useTemplateRef('myInput'); // string ties to ref=\"myInput\"\r\n\r\nonMounted(() => {\r\n  inputEl.value?.focus();\r\n});\r\n</script>\r\n\r\n<template>\r\n  <input ref=\"myInput\" />\r\n</template>\r\n```\r\n\r\n**Advantages:**\r\n\r\n- The string key documents the binding explicitly — no silent failures from variable renaming.\r\n- TypeScript support: `useTemplateRef<HTMLInputElement>('myInput')` gives a properly typed `Ref<HTMLInputElement | null>`.\r\n- Works with `v-for` — the ref becomes `Ref<Element[]>` when used on a repeated element.\r\n\r\n```ts\r\n// Typed template ref\r\nconst tableRef = useTemplateRef<HTMLTableElement>('dataTable');\r\n// tableRef.value is HTMLTableElement | null\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-119",
@@ -1702,7 +1694,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Vue 3.5 introduced built-in lazy hydration strategies via `defineAsyncComponent` that defer client-side hydration of server-rendered components until a specific condition is met, improving Time to Interactive (TTI) for SSR applications.\r\n\r\nFour built-in strategies are provided:\r\n\r\n**`hydrateOnVisible`** — hydrates when the component enters the viewport (`IntersectionObserver`):\r\n\r\n```js\r\nimport { defineAsyncComponent, hydrateOnVisible } from 'vue';\r\n\r\nconst LazyMap = defineAsyncComponent({\r\n  loader: () => import('./HeavyMap.vue'),\r\n  hydrate: hydrateOnVisible({ rootMargin: '200px' }),\r\n});\r\n```\r\n\r\n**`hydrateOnIdle`** — hydrates when the browser is idle (`requestIdleCallback`):\r\n\r\n```js\r\nimport { hydrateOnIdle } from 'vue';\r\nhydrate: hydrateOnIdle(2000); // 2000ms timeout as fallback\r\n```\r\n\r\n**`hydrateOnInteraction`** — hydrates on a specific user interaction:\r\n\r\n```js\r\nimport { hydrateOnInteraction } from 'vue';\r\nhydrate: hydrateOnInteraction(['click', 'focus']);\r\n```\r\n\r\n**`hydrateOnMediaQuery`** — hydrates when a CSS media query matches:\r\n\r\n```js\r\nimport { hydrateOnMediaQuery } from 'vue';\r\nhydrate: hydrateOnMediaQuery('(max-width: 768px)');\r\n```\r\n\r\n**How it works:** the server renders full HTML immediately (fast FCP). On the client, hydration (attaching Vue's event listeners and reactivity to the existing DOM) is deferred until the strategy condition triggers. The component appears interactive (it's real HTML) but is not yet \"owned\" by Vue's runtime. This is the **islands architecture** applied at the framework level — only the parts the user actually needs get hydrated eagerly.",
-      "readingTime": 1
+      "readingTime": 2
     },
     {
       "id": "vue-120",
@@ -1716,7 +1708,7 @@
       "topic": "vue",
       "language": "en",
       "markdown": "Slot forwarding is the pattern of passing a parent's slots through an intermediate component to a child, maintaining the slot API at the top level.\r\n\r\n**Dynamic slot forwarding** — re-expose all parent slots to a child generically:\r\n\r\n```vue\r\n<!-- LayoutWrapper.vue — a transparent wrapper -->\r\n<template>\r\n  <BaseLayout>\r\n    <!-- Forward every slot the parent passed in, including scoped slot data -->\r\n    <template v-for=\"(_, name) in $slots\" #[name]=\"slotProps\">\r\n      <slot :name=\"name\" v-bind=\"slotProps ?? {}\" />\r\n    </template>\r\n  </BaseLayout>\r\n</template>\r\n```\r\n\r\n**How it works:**\r\n\r\n- `v-for=\"(_, name) in $slots\"` iterates over all slot names passed to `LayoutWrapper`.\r\n- `#[name]=\"slotProps\"` uses a dynamic slot name to receive scoped slot data from `BaseLayout`.\r\n- `<slot :name=\"name\" v-bind=\"slotProps\" />` re-exposes those slots to `LayoutWrapper`'s consumer.\r\n\r\n**Why this matters:**\r\n\r\n- UI component library wrappers (e.g., a `<DataTable>` wrapper) need to expose the inner table's slots without re-declaring each one by hand.\r\n- Slot forwarding keeps the public API clean while delegating actual rendering to a base component.\r\n\r\n**Named slot forwarding (explicit):**\r\n\r\n```vue\r\n<template>\r\n  <BaseDialog>\r\n    <template #header>\r\n      <slot name=\"header\" />\r\n    </template>\r\n    <template #default=\"{ close }\">\r\n      <slot :close=\"close\" />\r\n    </template>\r\n  </BaseDialog>\r\n</template>\r\n```",
-      "readingTime": 1
+      "readingTime": 2
     }
   ]
 }

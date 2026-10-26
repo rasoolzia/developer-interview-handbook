@@ -24,14 +24,6 @@
     ]
   },
   "hash": "8af0f3a0fe",
-  "stats": {
-    "total": 37,
-    "byDifficulty": {
-      "Easy": 2,
-      "Medium": 15,
-      "Hard": 20
-    }
-  },
   "questions": [
     {
       "id": "css-001",
@@ -58,7 +50,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "markdown": "### `block`\r\n\r\n- Takes full width available\r\n- Starts on a new line\r\n- Can set width and height\r\n\r\nExamples: `div`, `p`, `section`",
+      "markdown": "### `block`\r\n\r\n- Takes full width available\r\n- Starts on a new line\r\n- Can set width and height\r\n\r\nExamples: `div`, `p`, `section`\r\n\r\n### `inline`\r\n\r\n- Takes only as much width as content\r\n- Does not start on a new line\r\n- Cannot set width and height\r\n\r\nExamples: `span`, `a`, `strong`\r\n\r\n### `inline-block`\r\n\r\n- Does not start on a new line\r\n- Can set width and height\r\n- Respects padding and margin\r\n\r\nUsed when elements need inline positioning but block behavior.\r\n\r\nExample:\r\n\r\n```css\r\n.block-el {\r\n  display: block;\r\n} /* full width, new line */\r\n.inline-el {\r\n  display: inline;\r\n} /* width from content, no w/h */\r\n.inblock-el {\r\n  display: inline-block;\r\n} /* inline flow + w/h settable */\r\n```",
       "readingTime": 1
     },
     {
@@ -86,7 +78,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "markdown": "### `relative`\r\n\r\n- Positioned relative to its normal position\r\n- Remains in document flow",
+      "markdown": "### `relative`\r\n\r\n- Positioned relative to its normal position\r\n- Remains in document flow\r\n\r\n### `absolute`\r\n\r\n- Removed from document flow\r\n- Positioned relative to the nearest positioned ancestor\r\n\r\n### `fixed`\r\n\r\n- Positioned relative to the viewport\r\n- Does not move during scrolling\r\n\r\n### `sticky`\r\n\r\n- Behaves like `relative` until a threshold\r\n- Then behaves like `fixed` within its container\r\n\r\nPositioning controls element layering and layout behavior.\r\n\r\nExample:\r\n\r\n```css\r\n.parent {\r\n  position: relative;\r\n}\r\n\r\n.rel {\r\n  position: relative;\r\n  top: 10px;\r\n} /* shifts from normal pos */\r\n.abs {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n} /* anchors to .parent */\r\n.fix {\r\n  position: fixed;\r\n  bottom: 20px;\r\n  right: 20px;\r\n} /* anchors to viewport */\r\n.stic {\r\n  position: sticky;\r\n  top: 0;\r\n} /* sticks on scroll */\r\n```",
       "readingTime": 1
     },
     {
@@ -100,7 +92,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "markdown": "Flexbox and Grid are layout systems but solve different problems.",
+      "markdown": "Flexbox and Grid are layout systems but solve different problems.\r\n\r\n### Flexbox\r\n\r\n- One-dimensional layout\r\n- Controls layout in a row OR column\r\n- Best for alignment and distribution of items\r\n\r\nUsed for:\r\n\r\n- Navigation bars\r\n- Centering content\r\n- Small component layouts\r\n\r\n### Grid\r\n\r\n- Two-dimensional layout\r\n- Controls rows AND columns simultaneously\r\n- Designed for full page layouts\r\n\r\nUsed for:\r\n\r\n- Complex page structures\r\n- Responsive grids\r\n- Layout systems\r\n\r\n**Flexbox is content-first.**\r\n**Grid is layout-first.**\r\n\r\nExample:\r\n\r\n```css\r\n/* Flexbox: one axis */\r\n.nav {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n/* Grid: two axes */\r\n.page {\r\n  display: grid;\r\n  grid-template-columns: 200px 1fr;\r\n  grid-template-rows: auto 1fr auto;\r\n}\r\n```",
       "readingTime": 1
     },
     {
@@ -212,7 +204,7 @@
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "markdown": "When styles change, the browser may trigger:",
+      "markdown": "When styles change, the browser may trigger:\r\n\r\n### Reflow (Layout)\r\n\r\n- Recalculates element positions and dimensions\r\n- More expensive\r\n- Triggered by changes to layout-affecting properties (width, height, position)\r\n\r\n### Repaint\r\n\r\n- Updates visual appearance without changing layout\r\n- Less expensive\r\n- Triggered by changes like color or background\r\n\r\nFrequent reflows can significantly hurt performance.  \r\nOptimizing CSS includes minimizing layout-triggering changes.  \r\nModern browsers optimize repaints heavily, but reflows often trigger layout thrashing if overdone in loops.",
       "readingTime": 1
     },
     {
@@ -523,8 +515,8 @@
       "domain": "frontend",
       "topic": "css",
       "language": "en",
-      "markdown": "gap (or `row-gap`/`column-gap`) adds space between items in flex/grid (no need for margins).\r\n\r\n```css\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 20px;\r\n}\r\n```\r\n\r\nBrowser notes:\r\n\r\n- Older Safari/IE: Only `grid-gap` alias worked\r\n- Flexbox gap support: Chrome 84+, Safari 14.1+, Firefox 63+\r\n- In flex, gap works on row/column independently\r\n\r\nGap prevents double-margin issues and simplifies layouts.",
-      "readingTime": 1
+      "markdown": "gap (or `row-gap`/`column-gap`) adds space between items in flex/grid (no need for margins).\r\n\r\n```css\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 20px;\r\n}\r\n```\r\n\r\nBrowser notes:\r\n\r\n- Older Safari/IE: Only `grid-gap` alias worked\r\n- Flexbox gap support: Chrome 84+, Safari 14.1+, Firefox 63+\r\n- In flex, gap works on row/column independently\r\n\r\nGap prevents double-margin issues and simplifies layouts.\r\n\r\n### Gap Behavior Difference in Flex vs Grid\r\n\r\n**In Flexbox:**\r\n\r\n- `gap` adds space between items but doesn't respect `box-sizing`\r\n- If container is `border-box`, gap can cause overflow\r\n- Calculation: `width = content + gap` (gap is outside box-sizing)\r\n\r\n**In Grid:**\r\n\r\n- `gap` is part of grid track calculations\r\n- Respects `border-box` and doesn't cause overflow\r\n- Calculation: gap is included in available grid space\r\n\r\n**Solution for Flexbox:**\r\n\r\n```css\r\n.flex-container {\r\n  display: flex;\r\n  gap: 20px;\r\n  /* To prevent overflow */\r\n  box-sizing: border-box;\r\n  padding: 0; /* or account for gap in width calculations */\r\n}\r\n```\r\n\r\nThis difference is important when working with precise layouts.",
+      "readingTime": 2
     },
     {
       "id": "css-036",

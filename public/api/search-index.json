@@ -49,7 +49,7 @@
     "categories": [
       "Layout"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-024",
@@ -508,7 +508,7 @@
     "categories": [
       "Performance"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-007",
@@ -600,7 +600,7 @@
     "categories": [
       "SEO & Meta"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-004",
@@ -1330,7 +1330,7 @@
     "categories": [
       "Objects & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-079",
@@ -2073,7 +2073,7 @@
     "categories": [
       "Objects & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-022",
@@ -2191,7 +2191,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-103",
@@ -2204,7 +2204,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-125",
@@ -2217,7 +2217,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-140",
@@ -2230,7 +2230,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-102",
@@ -2243,7 +2243,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-092",
@@ -2256,7 +2256,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-136",
@@ -2269,7 +2269,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-087",
@@ -2282,7 +2282,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-130",
@@ -2295,7 +2295,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-099",
@@ -2308,7 +2308,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-095",
@@ -2321,7 +2321,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-157",
@@ -2334,7 +2334,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-134",
@@ -2347,7 +2347,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-135",
@@ -2360,7 +2360,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-055",
@@ -2373,7 +2373,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-114",
@@ -2386,7 +2386,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-105",
@@ -2399,7 +2399,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-106",
@@ -2412,7 +2412,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-096",
@@ -2425,7 +2425,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-091",
@@ -2438,7 +2438,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-138",
@@ -2451,7 +2451,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-115",
@@ -2464,7 +2464,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-112",
@@ -2477,7 +2477,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-109",
@@ -2490,7 +2490,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-141",
@@ -2503,7 +2503,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-073",
@@ -2516,7 +2516,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-009",
@@ -2529,7 +2529,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-155",
@@ -2542,7 +2542,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-129",
@@ -2555,7 +2555,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-132",
@@ -2568,7 +2568,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-077",
@@ -2581,7 +2581,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-076",
@@ -2594,7 +2594,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-107",
@@ -2607,7 +2607,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-117",
@@ -2620,7 +2620,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-101",
@@ -2633,7 +2633,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-008",
@@ -2646,7 +2646,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-070",
@@ -2659,7 +2659,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-144",
@@ -2672,7 +2672,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-151",
@@ -2685,7 +2685,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-031",
@@ -2698,7 +2698,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-007",
@@ -2711,7 +2711,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-133",
@@ -2724,7 +2724,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-061",
@@ -2737,7 +2737,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-127",
@@ -2750,7 +2750,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-156",
@@ -2763,7 +2763,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-110",
@@ -2776,7 +2776,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-069",
@@ -2789,7 +2789,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-147",
@@ -2802,7 +2802,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-051",
@@ -2815,7 +2815,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-148",
@@ -2828,7 +2828,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-150",
@@ -2841,7 +2841,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-085",
@@ -2854,7 +2854,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-126",
@@ -2867,7 +2867,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-131",
@@ -2880,7 +2880,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-010",
@@ -2893,7 +2893,7 @@
     "categories": [
       "Forms & Events"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-023",
@@ -2906,7 +2906,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-027",
@@ -2919,7 +2919,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-004",
@@ -2932,7 +2932,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-047",
@@ -2945,7 +2945,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-028",
@@ -2958,7 +2958,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-083",
@@ -2971,7 +2971,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-005",
@@ -2984,7 +2984,7 @@
     "categories": [
       "Props & State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-120",
@@ -2997,7 +2997,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-066",
@@ -3010,7 +3010,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-034",
@@ -3023,7 +3023,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-154",
@@ -3036,7 +3036,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-059",
@@ -3049,7 +3049,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-118",
@@ -3062,7 +3062,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-108",
@@ -3075,7 +3075,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-104",
@@ -3088,7 +3088,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-068",
@@ -3101,7 +3101,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-022",
@@ -3114,7 +3114,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-139",
@@ -3127,7 +3127,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-122",
@@ -3140,7 +3140,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-119",
@@ -3153,7 +3153,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-124",
@@ -3166,7 +3166,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-097",
@@ -3179,7 +3179,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-098",
@@ -3192,7 +3192,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-011",
@@ -3205,7 +3205,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-121",
@@ -3218,7 +3218,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-078",
@@ -3231,7 +3231,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-038",
@@ -3244,7 +3244,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-075",
@@ -3257,7 +3257,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-084",
@@ -3270,7 +3270,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-062",
@@ -3283,7 +3283,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-056",
@@ -3296,7 +3296,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-035",
@@ -3309,7 +3309,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-003",
@@ -3322,7 +3322,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-072",
@@ -3335,7 +3335,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-052",
@@ -3348,7 +3348,7 @@
     "categories": [
       "Props & State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-100",
@@ -3361,7 +3361,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-143",
@@ -3374,7 +3374,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-113",
@@ -3387,7 +3387,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-014",
@@ -3400,7 +3400,7 @@
     "categories": [
       "Props & State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-001",
@@ -3413,7 +3413,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-071",
@@ -3426,7 +3426,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-074",
@@ -3439,7 +3439,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-054",
@@ -3452,7 +3452,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-036",
@@ -3465,7 +3465,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-030",
@@ -3478,7 +3478,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-016",
@@ -3491,7 +3491,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-053",
@@ -3504,7 +3504,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-013",
@@ -3517,7 +3517,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-089",
@@ -3530,7 +3530,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-060",
@@ -3543,7 +3543,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-049",
@@ -3556,7 +3556,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-006",
@@ -3569,7 +3569,7 @@
     "categories": [
       "Props & State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-039",
@@ -3582,7 +3582,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-090",
@@ -3595,7 +3595,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-046",
@@ -3608,7 +3608,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-116",
@@ -3621,7 +3621,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-050",
@@ -3634,7 +3634,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-024",
@@ -3647,7 +3647,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-012",
@@ -3660,7 +3660,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-045",
@@ -3673,7 +3673,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-142",
@@ -3686,7 +3686,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-037",
@@ -3699,7 +3699,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-128",
@@ -3712,7 +3712,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-081",
@@ -3725,7 +3725,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-040",
@@ -3738,7 +3738,7 @@
     "categories": [
       "JSX & Rendering"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-080",
@@ -3751,7 +3751,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-093",
@@ -3764,7 +3764,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-082",
@@ -3777,7 +3777,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-057",
@@ -3790,7 +3790,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-048",
@@ -3803,7 +3803,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-094",
@@ -3829,7 +3829,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-137",
@@ -3842,7 +3842,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-063",
@@ -3855,7 +3855,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-017",
@@ -3868,7 +3868,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-153",
@@ -3881,7 +3881,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-002",
@@ -3894,7 +3894,7 @@
     "categories": [
       "React Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-111",
@@ -3907,7 +3907,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-065",
@@ -3920,7 +3920,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-021",
@@ -3933,7 +3933,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-044",
@@ -3946,7 +3946,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-033",
@@ -3959,7 +3959,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-067",
@@ -3972,7 +3972,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-041",
@@ -3985,7 +3985,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-029",
@@ -3998,7 +3998,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-043",
@@ -4011,7 +4011,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-026",
@@ -4024,7 +4024,7 @@
     "categories": [
       "Effects & Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-020",
@@ -4037,7 +4037,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-064",
@@ -4050,7 +4050,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-025",
@@ -4063,7 +4063,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-019",
@@ -4076,7 +4076,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-018",
@@ -4089,7 +4089,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-042",
@@ -4102,7 +4102,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-032",
@@ -4115,7 +4115,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-058",
@@ -4128,7 +4128,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-088",
@@ -4141,7 +4141,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-149",
@@ -4154,7 +4154,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-123",
@@ -4167,7 +4167,7 @@
     "categories": [
       "Edge Cases & Pitfalls"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-086",
@@ -4180,7 +4180,7 @@
     "categories": [
       "Architecture & Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-152",
@@ -4193,7 +4193,7 @@
     "categories": [
       "Rendering Behavior"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-079",
@@ -4206,7 +4206,7 @@
     "categories": [
       "Performance Optimization"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-146",
@@ -4219,7 +4219,7 @@
     "categories": [
       "React Internals"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "vue-111",
@@ -4232,7 +4232,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-069",
@@ -4258,7 +4258,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-012",
@@ -4297,7 +4297,7 @@
     "categories": [
       "Routing"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-120",
@@ -4310,7 +4310,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-095",
@@ -4323,7 +4323,7 @@
     "categories": [
       "Routing"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-058",
@@ -4362,7 +4362,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-082",
@@ -4401,7 +4401,7 @@
     "categories": [
       "Performance"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-072",
@@ -4414,7 +4414,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-039",
@@ -4440,7 +4440,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-064",
@@ -4453,7 +4453,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-071",
@@ -4466,7 +4466,7 @@
     "categories": [
       "Rendering & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-003",
@@ -4492,7 +4492,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-047",
@@ -4518,7 +4518,7 @@
     "categories": [
       "Rendering & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-093",
@@ -4531,7 +4531,7 @@
     "categories": [
       "Rendering & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-007",
@@ -4557,7 +4557,7 @@
     "categories": [
       "Advanced Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-109",
@@ -4570,7 +4570,7 @@
     "categories": [
       "Directives"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-041",
@@ -4596,7 +4596,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-010",
@@ -4622,7 +4622,7 @@
     "categories": [
       "Vue Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-025",
@@ -4687,7 +4687,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-020",
@@ -4713,7 +4713,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-090",
@@ -4843,7 +4843,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-002",
@@ -4882,7 +4882,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-068",
@@ -4895,7 +4895,7 @@
     "categories": [
       "State Management"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-021",
@@ -4960,7 +4960,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-011",
@@ -4986,7 +4986,7 @@
     "categories": [
       "Routing"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-087",
@@ -4999,7 +4999,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-067",
@@ -5012,7 +5012,7 @@
     "categories": [
       "Rendering & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-018",
@@ -5077,7 +5077,7 @@
     "categories": [
       "Vue Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-103",
@@ -5090,7 +5090,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-116",
@@ -5103,7 +5103,7 @@
     "categories": [
       "Advanced Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-034",
@@ -5168,7 +5168,7 @@
     "categories": [
       "Advanced Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-045",
@@ -5207,7 +5207,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-043",
@@ -5311,7 +5311,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-115",
@@ -5324,7 +5324,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-079",
@@ -5337,7 +5337,7 @@
     "categories": [
       "Advanced Patterns"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-030",
@@ -5402,7 +5402,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-074",
@@ -5415,7 +5415,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-066",
@@ -5428,7 +5428,7 @@
     "categories": [
       "Lifecycle"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-009",
@@ -5467,7 +5467,7 @@
     "categories": [
       "Directives"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-005",
@@ -5519,7 +5519,7 @@
     "categories": [
       "Vue Basics"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-033",
@@ -5584,7 +5584,7 @@
     "categories": [
       "Performance"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-035",
@@ -5636,7 +5636,7 @@
     "categories": [
       "Rendering & Internals"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-085",
@@ -5649,7 +5649,7 @@
     "categories": [
       "Reactivity System"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-081",
@@ -5675,7 +5675,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-023",
@@ -5766,7 +5766,7 @@
     "categories": [
       "Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-100",
@@ -5779,7 +5779,7 @@
     "categories": [
       "Performance"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-006",
@@ -5909,7 +5909,7 @@
     "categories": [
       "عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-005",
@@ -5987,7 +5987,7 @@
     "categories": [
       "چیدمان"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-013",
@@ -6026,7 +6026,7 @@
     "categories": [
       "چیدمان"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-007",
@@ -6065,7 +6065,7 @@
     "categories": [
       "چیدمان"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "css-017",
@@ -6277,7 +6277,7 @@
     "categories": [
       "فرم‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-012",
@@ -6316,7 +6316,7 @@
     "categories": [
       "رفتار مرورگر"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-019",
@@ -6368,7 +6368,7 @@
     "categories": [
       "عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-008",
@@ -6420,7 +6420,7 @@
     "categories": [
       "سئو و متا"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-010",
@@ -6460,7 +6460,7 @@
     "categories": [
       "سئو و متا"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-009",
@@ -6538,7 +6538,7 @@
     "categories": [
       "رفتار مرورگر"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-018",
@@ -6591,7 +6591,7 @@
     "categories": [
       "عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-025",
@@ -6604,7 +6604,7 @@
     "categories": [
       "عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-017",
@@ -6617,7 +6617,7 @@
     "categories": [
       "رفتار مرورگر"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "html-020",
@@ -6643,7 +6643,7 @@
     "categories": [
       "اشیاء و داخلیها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-070",
@@ -6812,7 +6812,7 @@
     "categories": [
       "رفتار زبان"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-074",
@@ -6825,7 +6825,7 @@
     "categories": [
       "موتور و زمان اجرا"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-045",
@@ -7947,7 +7947,7 @@
     "categories": [
       "اشیاء و داخلیها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "javascript-079",
@@ -7973,7 +7973,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-154",
@@ -7986,7 +7986,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-126",
@@ -7999,7 +7999,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-124",
@@ -8012,7 +8012,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-053",
@@ -8025,7 +8025,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-050",
@@ -8038,7 +8038,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-081",
@@ -8051,7 +8051,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-093",
@@ -8064,7 +8064,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-082",
@@ -8077,7 +8077,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-048",
@@ -8090,7 +8090,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-094",
@@ -8116,7 +8116,7 @@
     "categories": [
       "Props و State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-068",
@@ -8129,7 +8129,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-080",
@@ -8142,7 +8142,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-109",
@@ -8155,7 +8155,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-012",
@@ -8168,7 +8168,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-045",
@@ -8181,7 +8181,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-037",
@@ -8194,7 +8194,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-118",
@@ -8207,7 +8207,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-059",
@@ -8220,7 +8220,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-142",
@@ -8233,7 +8233,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-104",
@@ -8246,7 +8246,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-146",
@@ -8259,7 +8259,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-123",
@@ -8272,7 +8272,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-086",
@@ -8285,7 +8285,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-152",
@@ -8298,7 +8298,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-079",
@@ -8311,7 +8311,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-116",
@@ -8324,7 +8324,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-141",
@@ -8337,7 +8337,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-073",
@@ -8350,7 +8350,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-107",
@@ -8363,7 +8363,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-117",
@@ -8376,7 +8376,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-136",
@@ -8389,7 +8389,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-087",
@@ -8402,7 +8402,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-129",
@@ -8415,7 +8415,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-102",
@@ -8428,7 +8428,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-076",
@@ -8441,7 +8441,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-009",
@@ -8454,7 +8454,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-092",
@@ -8467,7 +8467,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-132",
@@ -8480,7 +8480,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-099",
@@ -8493,7 +8493,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-148",
@@ -8506,7 +8506,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-155",
@@ -8519,7 +8519,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-077",
@@ -8532,7 +8532,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-138",
@@ -8545,7 +8545,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-091",
@@ -8558,7 +8558,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-130",
@@ -8571,7 +8571,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-122",
@@ -8584,7 +8584,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-149",
@@ -8597,7 +8597,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-150",
@@ -8610,7 +8610,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-127",
@@ -8623,7 +8623,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-008",
@@ -8636,7 +8636,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-084",
@@ -8649,7 +8649,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-061",
@@ -8662,7 +8662,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-055",
@@ -8675,7 +8675,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-128",
@@ -8688,7 +8688,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-139",
@@ -8701,7 +8701,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-022",
@@ -8714,7 +8714,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-010",
@@ -8727,7 +8727,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-004",
@@ -8740,7 +8740,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-083",
@@ -8753,7 +8753,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-015",
@@ -8766,7 +8766,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-137",
@@ -8779,7 +8779,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-144",
@@ -8792,7 +8792,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-070",
@@ -8805,7 +8805,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-100",
@@ -8818,7 +8818,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-098",
@@ -8831,7 +8831,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-095",
@@ -8844,7 +8844,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-078",
@@ -8857,7 +8857,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-157",
@@ -8870,7 +8870,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-085",
@@ -8883,7 +8883,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-051",
@@ -8896,7 +8896,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-101",
@@ -8909,7 +8909,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-038",
@@ -8922,7 +8922,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-151",
@@ -8935,7 +8935,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-024",
@@ -8948,7 +8948,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-131",
@@ -8961,7 +8961,7 @@
     "categories": [
       "Context API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-103",
@@ -8974,7 +8974,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-023",
@@ -8987,7 +8987,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-105",
@@ -9000,7 +9000,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-097",
@@ -9013,7 +9013,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-075",
@@ -9026,7 +9026,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-027",
@@ -9039,7 +9039,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-134",
@@ -9052,7 +9052,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-062",
@@ -9065,7 +9065,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-056",
@@ -9078,7 +9078,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-047",
@@ -9091,7 +9091,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-145",
@@ -9104,7 +9104,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-063",
@@ -9117,7 +9117,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-017",
@@ -9130,7 +9130,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-153",
@@ -9143,7 +9143,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-035",
@@ -9156,7 +9156,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-106",
@@ -9169,7 +9169,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-096",
@@ -9182,7 +9182,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-003",
@@ -9195,7 +9195,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-072",
@@ -9208,7 +9208,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-114",
@@ -9221,7 +9221,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-143",
@@ -9234,7 +9234,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-113",
@@ -9247,7 +9247,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-115",
@@ -9260,7 +9260,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-112",
@@ -9273,7 +9273,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-028",
@@ -9286,7 +9286,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-120",
@@ -9299,7 +9299,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-046",
@@ -9312,7 +9312,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-014",
@@ -9325,7 +9325,7 @@
     "categories": [
       "Props و State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-040",
@@ -9338,7 +9338,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-005",
@@ -9351,7 +9351,7 @@
     "categories": [
       "Props و State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-125",
@@ -9364,7 +9364,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-031",
@@ -9377,7 +9377,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-007",
@@ -9390,7 +9390,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-001",
@@ -9403,7 +9403,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-071",
@@ -9416,7 +9416,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-074",
@@ -9429,7 +9429,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-054",
@@ -9442,7 +9442,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-036",
@@ -9455,7 +9455,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-011",
@@ -9468,7 +9468,7 @@
     "categories": [
       "JSX و رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-133",
@@ -9481,7 +9481,7 @@
     "categories": [
       "فرم‌ها و رویدادها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-030",
@@ -9494,7 +9494,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-016",
@@ -9507,7 +9507,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-057",
@@ -9520,7 +9520,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-066",
@@ -9533,7 +9533,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-034",
@@ -9546,7 +9546,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 1
+    "readingTime": 3
   },
   {
     "id": "react-140",
@@ -9559,7 +9559,7 @@
     "categories": [
       "Server Components"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-013",
@@ -9572,7 +9572,7 @@
     "categories": [
       "رفتار رندرینگ"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-089",
@@ -9585,7 +9585,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-156",
@@ -9598,7 +9598,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-121",
@@ -9611,7 +9611,7 @@
     "categories": [
       "موارد لبه و تله‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-060",
@@ -9624,7 +9624,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-006",
@@ -9637,7 +9637,7 @@
     "categories": [
       "Props و State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-049",
@@ -9650,7 +9650,7 @@
     "categories": [
       "معماری و الگوها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-110",
@@ -9663,7 +9663,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-119",
@@ -9676,7 +9676,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-069",
@@ -9689,7 +9689,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-147",
@@ -9702,7 +9702,7 @@
     "categories": [
       "داخلی‌های React"
     ],
-    "readingTime": 2
+    "readingTime": 3
   },
   {
     "id": "react-039",
@@ -9715,7 +9715,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-090",
@@ -9728,7 +9728,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-108",
@@ -9741,7 +9741,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-111",
@@ -9754,7 +9754,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-065",
@@ -9767,7 +9767,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-021",
@@ -9780,7 +9780,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-044",
@@ -9793,7 +9793,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-033",
@@ -9806,7 +9806,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-067",
@@ -9819,7 +9819,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-041",
@@ -9832,7 +9832,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-029",
@@ -9845,7 +9845,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-043",
@@ -9858,7 +9858,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-026",
@@ -9871,7 +9871,7 @@
     "categories": [
       "Effects و چرخه حیات"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-020",
@@ -9884,7 +9884,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-064",
@@ -9897,7 +9897,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-025",
@@ -9910,7 +9910,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-019",
@@ -9923,7 +9923,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-018",
@@ -9936,7 +9936,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-042",
@@ -9949,7 +9949,7 @@
     "categories": [
       "Hooks"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-032",
@@ -9962,7 +9962,7 @@
     "categories": [
       "Concurrent React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-002",
@@ -9975,7 +9975,7 @@
     "categories": [
       "مبانی React"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-058",
@@ -9988,7 +9988,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "react-088",
@@ -10001,7 +10001,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-119",
@@ -10014,7 +10014,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-013",
@@ -10040,7 +10040,7 @@
     "categories": [
       "رندرینگ و داخلی‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-075",
@@ -10053,7 +10053,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-077",
@@ -10066,7 +10066,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-069",
@@ -10079,7 +10079,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-017",
@@ -10118,7 +10118,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-074",
@@ -10131,7 +10131,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-009",
@@ -10170,7 +10170,7 @@
     "categories": [
       "دستورات (Directives)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-005",
@@ -10222,7 +10222,7 @@
     "categories": [
       "دستورات (Directives)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-037",
@@ -10248,7 +10248,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-082",
@@ -10274,7 +10274,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-095",
@@ -10287,7 +10287,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-111",
@@ -10300,7 +10300,7 @@
     "categories": [
       "مدیریت State"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-058",
@@ -10313,7 +10313,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-114",
@@ -10326,7 +10326,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-061",
@@ -10352,7 +10352,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-102",
@@ -10365,7 +10365,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-100",
@@ -10378,7 +10378,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-087",
@@ -10391,7 +10391,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-025",
@@ -10430,7 +10430,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-044",
@@ -10456,7 +10456,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-055",
@@ -10482,7 +10482,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-027",
@@ -10599,7 +10599,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-085",
@@ -10612,7 +10612,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-101",
@@ -10625,7 +10625,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-050",
@@ -10638,7 +10638,7 @@
     "categories": [
       "مسیریابی (Routing)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-006",
@@ -10716,7 +10716,7 @@
     "categories": [
       "رندرینگ و داخلی‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-091",
@@ -10729,7 +10729,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-063",
@@ -10768,7 +10768,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-016",
@@ -10807,7 +10807,7 @@
     "categories": [
       "مبانی Vue"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-104",
@@ -10820,7 +10820,7 @@
     "categories": [
       "مبانی Vue"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-103",
@@ -10833,7 +10833,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-057",
@@ -10859,7 +10859,7 @@
     "categories": [
       "کامپوننت‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-116",
@@ -10872,7 +10872,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-034",
@@ -10924,7 +10924,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-035",
@@ -10963,7 +10963,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-045",
@@ -10989,7 +10989,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-097",
@@ -11002,7 +11002,7 @@
     "categories": [
       "بهینه‌سازی عملکرد"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-020",
@@ -11028,7 +11028,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-080",
@@ -11041,7 +11041,7 @@
     "categories": [
       "دستورات (Directives)"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-062",
@@ -11080,7 +11080,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-098",
@@ -11093,7 +11093,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-094",
@@ -11106,7 +11106,7 @@
     "categories": [
       "مبانی Vue"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-043",
@@ -11132,7 +11132,7 @@
     "categories": [
       "رندرینگ و داخلی‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-012",
@@ -11197,7 +11197,7 @@
     "categories": [
       "رندرینگ و داخلی‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-015",
@@ -11236,7 +11236,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-048",
@@ -11249,7 +11249,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-014",
@@ -11275,7 +11275,7 @@
     "categories": [
       "SSR / Hydration"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-079",
@@ -11288,7 +11288,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-030",
@@ -11314,7 +11314,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-029",
@@ -11340,7 +11340,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-032",
@@ -11353,7 +11353,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-081",
@@ -11366,7 +11366,7 @@
     "categories": [
       "الگوهای پیشرفته"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-060",
@@ -11392,7 +11392,7 @@
     "categories": [
       "Composition API"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-023",
@@ -11496,7 +11496,7 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-071",
@@ -11509,7 +11509,7 @@
     "categories": [
       "رندرینگ و داخلی‌ها"
     ],
-    "readingTime": 1
+    "readingTime": 2
   },
   {
     "id": "vue-004",
@@ -11561,6 +11561,6 @@
     "categories": [
       "سیستم واکنش‌پذیری"
     ],
-    "readingTime": 1
+    "readingTime": 2
   }
 ]
