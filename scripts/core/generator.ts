@@ -20,6 +20,8 @@ const GENERATOR = {
   schemaVersion: packageJson.schemaVersion,
 } as const;
 
+const WORDS_PER_MINUTE = 140;
+
 export class MDGenerator {
   private config: GeneratorConfig;
   private errors: string[] = [];
@@ -204,14 +206,6 @@ export class MDGenerator {
         'utf-8',
       );
 
-      const d = output.topic.stats.byDifficulty;
-      const diffSummary = Object.entries(d)
-        .map(([level, count]) => `${level} ${count}`)
-        .join(' · ');
-      console.log(
-        `     ✅ ${output.topic.stats.total} questions (${diffSummary})`,
-      );
-
       accumulator.languages.add(language);
       if (!accumulator.domains[meta.domain])
         accumulator.domains[meta.domain] = { topics: {} };
@@ -220,7 +214,7 @@ export class MDGenerator {
       }
       accumulator.domains[meta.domain].topics[topic].languages[language] = {
         path: `${meta.domain}/${topic}/${language}.json`,
-        total: output.topic.stats.total,
+        total: output.topic.questions.length,
         hash: output.topic.hash,
       };
 
@@ -243,23 +237,6 @@ export class MDGenerator {
   }
 
   // ─── File Processor ──────────────────────────────────────────────────────
-
-  private buildDifficultyStats(
-    difficulties: string[],
-    questions: GeneratedQuestion[],
-  ): Record<string, number> {
-    const stats: Record<string, number> = Object.fromEntries(
-      difficulties.map((d) => [d, 0]),
-    );
-
-    for (const q of questions) {
-      if (q.difficulty && q.difficulty !== 'unknown') {
-        stats[q.difficulty] = (stats[q.difficulty] ?? 0) + 1;
-      }
-    }
-
-    return stats;
-  }
 
   private processFile(
     filePath: string,
@@ -302,11 +279,6 @@ export class MDGenerator {
         this.reportWarning(relPath, null, 'No valid questions found');
       }
 
-      const byDifficulty = this.buildDifficultyStats(
-        availableDifficulties,
-        questions,
-      );
-
       const topicData: GeneratedTopic = {
         version,
 
@@ -324,11 +296,6 @@ export class MDGenerator {
         },
 
         hash: this.contentHash(content),
-
-        stats: {
-          total: questions.length,
-          byDifficulty,
-        },
 
         questions,
       };
@@ -474,8 +441,11 @@ export class MDGenerator {
   }
 
   private readingTime(markdown: string | null): number {
-    if (!markdown) return 1;
-    return Math.max(1, Math.round(markdown.trim().split(/\s+/).length / 200));
+    if (!markdown?.trim()) return 1;
+
+    const wordCount = markdown.trim().split(/\s+/).length;
+
+    return Math.max(1, Math.ceil(wordCount / WORDS_PER_MINUTE));
   }
 
   private contentHash(str: string): string {

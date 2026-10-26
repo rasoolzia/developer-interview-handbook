@@ -110,10 +110,6 @@ export interface GeneratedTopic {
     categories: string[];
     difficulties: string[];
   };
-  stats: {
-    total: number;
-    byDifficulty: Record<string, number>;
-  };
   questions: GeneratedQuestion[];
 }
 
